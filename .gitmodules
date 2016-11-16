@@ -1,0 +1,3 @@
+[submodule "qwc2"]
+	path = qwc2
+	url = git@github.com:sourcepole/qwc2.git
