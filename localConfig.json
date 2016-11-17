@@ -30,10 +30,10 @@
                 {"key": "share", "icon": "assets/img/share.svg"},
                 {"key": "tools", "icon": "assets/img/tools.svg", "subitems": [
                   {"key": "measure"},
-                  {"key": "draw"}
+                  {"key": "draw"},
+                  {"key": "dxfexport", "icon": "assets/img/dxfexport.svg"}
                 ]},
                 {"key": "print", "icon": "assets/img/print.svg"},
-                {"key": "dxfexport", "icon": "assets/img/dxfexport.svg"},
                 {"key": "help", "icon": "assets/img/info.svg"}
               ]
             }
@@ -101,10 +101,10 @@
                 {"key": "share", "icon": "assets/img/share.svg"},
                 {"key": "tools", "icon": "assets/img/tools.svg", "subitems": [
                   {"key": "measure"},
-                  {"key": "draw"}
+                  {"key": "draw"},
+                  {"key": "dxfexport", "icon": "assets/img/dxfexport.svg"}
                 ]},
                 {"key": "print", "icon": "assets/img/print.svg"},
-                {"key": "dxfexport", "icon": "assets/img/dxfexport.svg"},
                 {"key": "help", "icon": "assets/img/info.svg"}
               ]
             }

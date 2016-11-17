@@ -22,12 +22,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#555550"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -41,12 +41,13 @@
      showgrid="true"
      inkscape:snap-text-baseline="true"
      inkscape:zoom="16.086679"
-     inkscape:cx="1.0868766"
+     inkscape:cx="13.64385"
      inkscape:cy="1.3056037"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4507">
+     inkscape:current-layer="svg4507"
+     inkscape:pagecheckerboard="false">
     <inkscape:grid
        type="xygrid"
        id="grid5066" />
@@ -101,25 +102,25 @@
     </linearGradient>
   </defs>
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 5.5,11.5 v -9 h 10 l 5,5 v 14 h -9"
      id="path5068"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cccccc" />
   <path
-     style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 5,14 h 3 v 4 h 3 L 6.5,22.5 2,18 h 3 z"
      id="path5074"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cccccccc" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
      d="m 16.5,3.5 v 3 h 3"
      id="path5091"
      inkscape:connector-curvature="0" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:25px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:25px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
      x="17.047005"
      y="8.0498314"
      id="text5095"
@@ -128,5 +129,5 @@
        id="tspan5093"
        x="17.047005"
        y="8.0498314"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.66666651px;font-family:Monospace;-inkscape-font-specification:'Monospace Bold';fill:#4d4d4d;fill-opacity:1;">DXF</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.66666651px;font-family:Monospace;-inkscape-font-specification:'Monospace Bold';fill:#ffffff;fill-opacity:1;">DXF</tspan></text>
 </svg>
