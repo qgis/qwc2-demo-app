@@ -11,9 +11,9 @@ const {connect} = require('react-redux');
 require("babel-polyfill"); // Needed for IE11 to avoid 'Promise not defined' error in axios
 
 const {initialState, pluginsDef} = require('./appConfig');
-const Localized = require('../qwc2/MapStore2/web/client/components/I18N/Localized');
-const Main = require('./Main');
 
+const MapViewer = require('../qwc2/QWC2Components/plugins/MapViewer');
+const Localized = require('../qwc2/MapStore2/web/client/components/I18N/Localized');
 const StandardApp = require('../qwc2/MapStore2/web/client/components/app/StandardApp');
 const StandardStore = require('../qwc2/MapStore2/web/client/stores/StandardStore').bind(null, initialState, {});
 
@@ -25,7 +25,7 @@ const appComponent = React.createClass({
     render() {
         return (
             <Localized messages={this.props.locale.messages} locale={this.props.locale.current} loadingError={this.props.locale.localeError}>
-                <Main plugins={this.props.plugins}/>
+                <MapViewer plugins={this.props.plugins}/>
             </Localized>
         );
     }
