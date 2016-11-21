@@ -226,6 +226,8 @@ function getTheme(configItem, resultItem) {
             resultItem.id = themeId;
             resultItem.name = topLayer.Name;
             resultItem.title = wmsTitle;
+            resultItem.attribution = configItem.attribution;
+            resultItem.attributionUrl = configItem.attributionUrl;
             resultItem.keywords = keywords.join(', ');
             resultItem.tiled = configItem.tiled;
             // use geographic bounding box for theme, as default CRS may have inverted axis order with WMS 1.3.0
@@ -292,6 +294,8 @@ function getGroupThemes(configGroup, resultGroup) {
           "url": "<http://localhost/wms/theme>",
           "title": "<Custom theme title>",            // optional, use WMS title if not set
           "thumbnail": "<theme.png>",                 // optional image file in assets/img/mapthumbs/, use WMS GetMap if not set
+          "attribution": "<Attribution>",             // optional theme attribution
+          "attributionUrl": "<attribution URL>",      // optional theme attribution URL
           "default": true,                            // optional, set this as the initial theme
           "tiled": true,                              // optional, use tiled WMS (default is false)
           "backgroundLayers": [                       // optional background layers

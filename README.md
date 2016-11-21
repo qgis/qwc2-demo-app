@@ -48,6 +48,8 @@ Configuration format:
         "url": "<http://localhost/wms/theme>",
         "title": "<Custom theme title>",            // optional, use WMS title if not set
         "thumbnail": "<theme.png>",                 // optional image file in assets/img/mapthumbs/, use WMS GetMap if not set
+        "attribution": "<Attribution>",             // optional theme attribution
+        "attributionUrl": "<attribution URL>",      // optional theme attribution URL
         "default": true,                            // optional, set this as the initial theme
         "tiled": true,                              // optional, use tiled WMS (default is false)
         "backgroundLayers": [                       // optional background layers

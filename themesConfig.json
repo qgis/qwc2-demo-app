@@ -3,6 +3,8 @@
     "items": [
       {
         "url": "http://qwc2.sourcepole.ch/wms/wolfsburg/qwc2_demo",
+        "attribution": "Stadt Wolfsburg",
+        "attributionUrl": "https://geoportal.stadt.wolfsburg.de/",
         "default": true,
         "backgroundLayers": [
           {
@@ -14,6 +16,8 @@
       },
       {
         "url": "http://qwc2.sourcepole.ch/wms/uster/bauprojekte",
+        "attribution": "Stadt Uster",
+        "attributionUrl": "https://gis.uster.ch/",
         "backgroundLayers": [
           {
             "name": "mapnik",
