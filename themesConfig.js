@@ -89,6 +89,9 @@ function getLayerTree(layer, resultLayers, visibleLayers, printLayers) {
             visibleLayers.push(layer.Name);
         }
         layerEntry.queryable = layer.$.queryable === '1';
+        if (layerEntry.queryable) {
+            layerEntry.displayField = layer.$.displayField;
+        }
         if (layer.Attribution !== undefined) {
             layerEntry.attribution = layer.Attribution.Title;
             if (layer.Attribution.OnlineResource !== undefined) {
