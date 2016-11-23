@@ -7,8 +7,10 @@
  */
 
 const Proj4js = require('proj4');
+const SearchProviders = require('./SearchProviders');
 
 Proj4js.defs("EPSG:21781", "+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs");
+Proj4js.defs("EPSG:2056", "+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs");
 Proj4js.defs("EPSG:25832", "+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs");
 
 module.exports = {
@@ -32,7 +34,7 @@ module.exports = {
             ZoomOutPlugin: require('../qwc2/QWC2Components/plugins/ZoomButtons'),
             BackgroundSwitcherButtonPlugin: require('../qwc2/QWC2Components/plugins/BackgroundSwitcherButton'),
             BackgroundSwitcherMenuPlugin: require('../qwc2/QWC2Components/plugins/BackgroundSwitcherMenu'),
-            TopBarPlugin: require('../qwc2/QWC2Components/plugins/TopBar'),
+            TopBarPlugin: require('../qwc2/QWC2Components/plugins/TopBar')(SearchProviders),
             BottomBarPlugin: require('../qwc2/QWC2Components/plugins/BottomBar'),
             MeasurePlugin: require('../qwc2/QWC2Components/plugins/Measure'),
             ThemeSwitcherPlugin: require('../qwc2/QWC2Components/plugins/ThemeSwitcher'),
