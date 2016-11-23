@@ -31,8 +31,7 @@ The viewer application is configured in `localConfig.json`.
 
 ### Map
 
-The map and initial background layers are configured in `config.json`.
-Setting a default theme in `themesConfig.json` will override the initial center and zoom settings from this configuration.
+The map projection and scales are configured in the Map plugin in `localConfig.json`.
 
 
 ### Themes
@@ -78,7 +77,7 @@ Configuration format:
       {
         "name": "<background layer name>",             // referenced by themes
         "title": "<Background layer title>",
-        ...                                            // layer params like in config.json (excluding "group" and "visibility")
+        ...                                            // layer params (excluding "group" and "visibility")
       }
     ]
   }
