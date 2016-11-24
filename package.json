@@ -112,7 +112,7 @@
     "scripts": {
         "clean": "rimraf dist",
         "compile": "npm run clean && mkdirp ./dist && webpack --config prod-webpack.config.js",
-        "start": "npm run themesconfig && webpack-dev-server --progress --colors --host 192.168.178.163 --port 8081 --hot --inline --content-base .",
+        "start": "npm run themesconfig && webpack-dev-server --progress --colors --port 8081 --hot --inline --content-base .",
         "test": "karma start ./karma.conf.single-run.js",
         "continuoustest": "karma start ./karma.conf.continuous-test.js",
         "mvntest": "karma start ./karma.conf.single-run.js --reporters junit,dots,coverage",
