@@ -58,7 +58,8 @@ Configuration format:
             "printLayer": "<WMS layer name>",       // optional equivalent WMS layer name for printing
             "visibility": true                      // optional initial visibility on topic selection
           }
-        ]
+        ],
+        "searchProviders": ["<search provider>"]    // optional search providers
       }
     ],
     "groups": [                                     // optional, nested groups

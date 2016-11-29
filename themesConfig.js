@@ -245,6 +245,7 @@ function getTheme(configItem, resultItem) {
             // NOTE: skip root WMS layer
             resultItem.sublayers = layerTree[0].sublayers;
             resultItem.backgroundLayers = configItem.backgroundLayers;
+            resultItem.searchProviders = configItem.searchProviders;
             if (printTemplates.length > 0) {
                 resultItem.print = printTemplates;
             }
@@ -309,7 +310,8 @@ function getGroupThemes(configGroup, resultGroup) {
               "printLayer": "<WMS layer name>",       // optional equivalent WMS layer name for printing
               "visibility": true                      // optional initial visibility on topic selection
             }
-          ]
+          ],
+          "searchProviders": ["<search provider>"]    // optional search providers
         }
       ],
       "groups": [                                     // optional, nested groups

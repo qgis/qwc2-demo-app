@@ -13,7 +13,8 @@
             "printLayer": "osm_farbig",
             "visibility": true
           }
-        ]
+        ],
+        "searchProviders": ["wolfsburg"]
       },
       {
         "url": "http://qwc2.sourcepole.ch/wms/uster/bauprojekte",
@@ -25,7 +26,8 @@
             "name": "mapnik",
             "visibility": true
           }
-        ]
+        ],
+        "searchProviders": ["uster"]
       }
     ],
     "groups": [
@@ -50,7 +52,8 @@
               {
                 "name": "StamenWatercolor"
               }
-            ]
+            ],
+            "searchProviders": ["geoadmin", "glarus"]
           }
         ],
         "groups": []
