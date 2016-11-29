@@ -58,6 +58,7 @@
 
 const axios = require('axios');
 const {searchResultLoaded} = require("../qwc2/MapStore2/web/client/actions/search");
+const CoordinatesUtils = require('../qwc2/MapStore2/web/client/utils/CoordinatesUtils');
 
 function geoAdminLocationSearch(text, searchOptions, dispatch) {
     axios.get("http://api3.geo.admin.ch/rest/services/api/SearchServer?searchText="+ encodeURIComponent(text) + "&type=locations&limit=20")
@@ -263,17 +264,17 @@ function glarusResultGeometry(resultItem, callback) {
 }
 
 module.exports = {
-    /*"geoadmin": {
+    "geoadmin": {
         onSearch: geoAdminLocationSearch,
-    },*/
-    /*"uster": {
+    },
+    "uster": {
         onSearch: usterSearch,
         getResultGeometry: usterResultGeometry
-    },*/
-    /*"wolfsburg": {
+    },
+    "wolfsburg": {
         onSearch: wolfsburgSearch,
         getResultGeometry: wolfsburgResultGeometry
-    },*/
+    },
     "glarus": {
         onSearch: glarusSearch,
         getResultGeometry: glarusResultGeometry,
