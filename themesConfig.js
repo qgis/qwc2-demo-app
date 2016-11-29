@@ -241,6 +241,7 @@ function getTheme(configItem, resultItem) {
                 parseFloat(topLayer.EX_GeographicBoundingBox.eastBoundLongitude),
                 parseFloat(topLayer.EX_GeographicBoundingBox.northBoundLatitude)
             ];
+            resultItem.scales = configItem.scales;
             // NOTE: skip root WMS layer
             resultItem.sublayers = layerTree[0].sublayers;
             resultItem.backgroundLayers = configItem.backgroundLayers;
@@ -300,6 +301,7 @@ function getGroupThemes(configGroup, resultGroup) {
           "attribution": "<Attribution>",             // optional theme attribution
           "attributionUrl": "<attribution URL>",      // optional theme attribution URL
           "default": true,                            // optional, set this as the initial theme
+          "scales": [25000, 10000, 5000, 2500],       // optional custom map scales
           "tiled": true,                              // optional, use tiled WMS (default is false)
           "backgroundLayers": [                       // optional background layers
             {
@@ -323,14 +325,15 @@ function getGroupThemes(configGroup, resultGroup) {
           ]
         }
       ],
-      "backgroundLayers": [                              // optional list of background layers for themes
+      "backgroundLayers": [                           // optional list of background layers for themes
         {
-          "name": "<background layer name>",             // referenced by themes
+          "name": "<background layer name>",          // referenced by themes
           "title": "<Background layer title>",
-          ...                                            // layer params like in config.json (excluding "group" and "visibility")
+          ...                                         // layer params (excluding "group" and "visibility")
         }
       ]
-    }
+    },
+    "defaultScales": [50000, 25000, 10000, 5000]      // optional default map scales
   }
 */
 console.log("Reading themesConfig.json");
@@ -342,6 +345,7 @@ var result = {
         subdirs: [],
         items: [],
         defaultTheme: undefined,
+        defaultScales: config.defaultScales,
         backgroundLayers: config.themes.backgroundLayers
     }
 };
