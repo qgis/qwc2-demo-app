@@ -331,6 +331,7 @@ function getGroupThemes(configGroup, resultGroup) {
         {
           "name": "<background layer name>",          // referenced by themes
           "title": "<Background layer title>",
+          "thumbnail": "<background.png>",            // optional image file in assets/img/mapthumbs/, use default.jpg if not set
           ...                                         // layer params (excluding "group" and "visibility")
         }
       ]
@@ -352,6 +353,22 @@ var result = {
     }
 };
 getGroupThemes(config.themes, result.themes);
+
+if (result.themes.backgroundLayers !== undefined) {
+    // get thumbnails for background layers
+    result.themes.backgroundLayers.map((backgroundLayer) => {
+        var imgPath = "./assets/img/mapthumbs/" + backgroundLayer.thumbnail;
+        try {
+            if (!fs.existsSync(imgPath)) {
+                imgPath = "./assets/img/mapthumbs/default.jpg";
+            }
+            var data = fs.readFileSync(imgPath);
+            backgroundLayer.thumbnail = Buffer.from(data).toString('base64');
+        } catch(error) {
+            console.error("ERROR: Could not read background layer thumbnail " + imgPath);
+        }
+    });
+}
 
 Promise.all(tasks).then(() => {
     // write config file

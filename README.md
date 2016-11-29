@@ -79,6 +79,7 @@ Configuration format:
       {
         "name": "<background layer name>",          // referenced by themes
         "title": "<Background layer title>",
+        "thumbnail": "<background.png>",            // optional image file in assets/img/mapthumbs/, use default.jpg if not set
         ...                                         // layer params (excluding "group" and "visibility")
       }
     ]

@@ -64,14 +64,16 @@
         "name": "mapnik",
         "title": "Open Street Map",
         "type": "osm",
-        "source": "osm"
+        "source": "osm",
+        "thumbnail": "mapnik.jpg"
       },
       {
         "name": "Night2012",
         "title": "NASAGIBS Night 2012",
         "type": "tileprovider",
         "source": "nasagibs",
-        "provider": "NASAGIBS.ViirsEarthAtNight2012"
+        "provider": "NASAGIBS.ViirsEarthAtNight2012",
+        "thumbnail": "Night2012.jpg"
       },
       {
         "name": "StamenWatercolor",
