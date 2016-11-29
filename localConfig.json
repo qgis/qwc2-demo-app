@@ -23,10 +23,7 @@
           "name": "LocateButton"
         },
         {
-          "name": "BackgroundSwitcherButton"
-        },
-        {
-          "name": "BackgroundSwitcherMenu"
+          "name": "BackgroundSwitcher"
         },
         {
             "name": "TopBar",
@@ -100,10 +97,7 @@
           "name": "ZoomOut"
         },
         {
-          "name": "BackgroundSwitcherButton"
-        },
-        {
-          "name": "BackgroundSwitcherMenu"
+          "name": "BackgroundSwitcher"
         },
         {
             "name": "TopBar",
