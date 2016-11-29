@@ -161,6 +161,60 @@ function usterResultGeometry(resultItem, callback)
 
 ////////////////////////////////////////////////////////////////////////////////
 
+function wolfsburgSearch(text, searchOptions, dispatch) {
+    axios.get("https://geoportal.stadt.wolfsburg.de/wsgi/search.wsgi", {params: {
+        query: text,
+        searchTables: '["Infrastruktur", "Stadt- und Ortsteile"]',
+        searchFilters: '["Abfallwirtschaft,Haltestellen,Hilfsorganisationen", ""]',
+        searchArea: "Wolfsburg",
+        searchCenter: "",
+        searchRadius: "",
+        topic: "stadtplan",
+        resultLimit: 100,
+        resultLimitCategory: 100
+    }}).then(response => dispatch(wolfsburgSearchResults(response.data)));
+}
+
+function wolfsburgSearchResults(obj) {
+    let results = [];
+    let currentgroup = null;
+    let groupcounter = 0;
+    let counter = 0;
+    (obj.results || []).map(entry => {
+        if (!entry.bbox) {
+            // Is group
+            currentgroup = {
+                id: "wolfsburggroup" + (groupcounter++),
+                title: entry.displaytext,
+                items: []
+            };
+            results.push(currentgroup);
+        } else if (currentgroup) {
+            currentgroup.items.push({
+                id: "wolfsburgresult" + (counter++),
+                text: entry.displaytext,
+                searchtable: entry.searchtable,
+                oid: entry.id,
+                bbox: entry.bbox.slice(0),
+                x: 0.5 * (entry.bbox[0] + entry.bbox[2]),
+                y: 0.5 * (entry.bbox[1] + entry.bbox[3]),
+                crs: "EPSG:25832",
+                provider: "wolfsburg"
+            });
+        }
+    });
+    return searchResultLoaded({data: results}, true);
+}
+
+function wolfsburgResultGeometry(resultItem, callback) {
+    axios.get("https://geoportal.stadt.wolfsburg.de/wsgi/getSearchGeom.wsgi", {params: {
+        searchtable: resultItem.searchtable,
+        id: resultItem.oid
+    }}).then(response => callback(resultItem, response.data, "EPSG:25832"));
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
 function glarusSearch(text, searchOptions, dispatch) {
     let limit = 9;
     axios.get("https://map.geo.gl.ch/search/all?limit=" + limit + "&query="+ encodeURIComponent(text))
@@ -216,6 +270,10 @@ module.exports = {
         onSearch: usterSearch,
         getResultGeometry: usterResultGeometry
     },*/
+    /*"wolfsburg": {
+        onSearch: wolfsburgSearch,
+        getResultGeometry: wolfsburgResultGeometry
+    }*/,
     "glarus": {
         onSearch: glarusSearch,
         getResultGeometry: glarusResultGeometry,
