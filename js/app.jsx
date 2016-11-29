@@ -12,7 +12,8 @@ require("babel-polyfill"); // Needed for IE11 to avoid 'Promise not defined' err
 
 const {initialState, pluginsDef} = require('./appConfig');
 
-const MapViewer = require('../qwc2/QWC2Components/plugins/MapViewer');
+const MapViewer = require('../qwc2/MapStore2/web/client/containers/MapViewer');
+const {loadMapConfig} = require('../qwc2/QWC2Components/actions/config');
 const Localized = require('../qwc2/MapStore2/web/client/components/I18N/Localized');
 const StandardApp = require('../qwc2/MapStore2/web/client/components/app/StandardApp');
 const StandardStore = require('../qwc2/MapStore2/web/client/stores/StandardStore').bind(null, initialState, {});
@@ -35,7 +36,7 @@ const appConfig = {
     storeOpts: {},
     appStore: StandardStore,
     pluginsDef: pluginsDef,
-    initialActions: [],
+    initialActions: [loadMapConfig],
     appComponent: connect(state => ({
         locale: state.locale || {messages: {}, current: ''}
     }))(appComponent)
