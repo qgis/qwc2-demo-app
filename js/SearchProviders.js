@@ -273,7 +273,7 @@ module.exports = {
     /*"wolfsburg": {
         onSearch: wolfsburgSearch,
         getResultGeometry: wolfsburgResultGeometry
-    }*/,
+    },*/
     "glarus": {
         onSearch: glarusSearch,
         getResultGeometry: glarusResultGeometry,
