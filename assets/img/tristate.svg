@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="15.839192"
-     inkscape:cx="2.6400496"
+     inkscape:cx="-9.8605881"
      inkscape:cy="2.1243049"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -54,7 +54,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -72,7 +72,7 @@
        y="290.78229" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729151px;line-height:6.61458302px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:none;fill-opacity:1;stroke:#078aa3;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729151px;line-height:6.61458302px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:none;fill-opacity:1;stroke:#595959;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="3.3055689"
        y="296.02951"
        id="text4238"><tspan
@@ -80,6 +80,6 @@
          id="tspan4236"
          x="3.3055689"
          y="296.02951"
-         style="font-size:7.05555534px;stroke-width:0.26458332px;fill:none;fill-opacity:1;stroke:#078aa3;stroke-opacity:1;">✔</tspan></text>
+         style="font-size:7.05555534px;stroke-width:0.26458332px;fill:none;fill-opacity:1;stroke:#595959;stroke-opacity:1;">✔</tspan></text>
   </g>
 </svg>
