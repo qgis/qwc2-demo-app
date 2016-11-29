@@ -683,6 +683,7 @@
             "menulabel": "Map & Tools",
             "items": {
                 "themes": "Select Theme",
+                "layers": "Layers & Legend",
                 "share": "Share Link",
                 "tools": "Map Tools",
                 "measure": "Measure",

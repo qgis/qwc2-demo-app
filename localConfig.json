@@ -29,7 +29,8 @@
             "name": "TopBar",
             "cfg": {
               "menuItems": [
-                {"key": "themes", "icon": "assets/img/layers.svg"},
+                {"key": "themes", "icon": "assets/img/themes.svg"},
+                {"key": "layers", "icon": "assets/img/layers.svg"},
                 {"key": "share", "icon": "assets/img/share.svg"},
                 {"key": "tools", "icon": "assets/img/tools.svg", "subitems": [
                   {"key": "measure"},
@@ -103,7 +104,8 @@
             "name": "TopBar",
             "cfg": {
               "menuItems": [
-                {"key": "themes", "icon": "assets/img/layers.svg"},
+                {"key": "themes", "icon": "assets/img/themes.svg"},
+                {"key": "layers", "icon": "assets/img/layers.svg"},
                 {"key": "share", "icon": "assets/img/share.svg"},
                 {"key": "tools", "icon": "assets/img/tools.svg", "subitems": [
                   {"key": "measure"},
