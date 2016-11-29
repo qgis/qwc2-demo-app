@@ -13,7 +13,7 @@
    version="1.1"
    id="svg9"
    inkscape:version="0.92pre2 r"
-   sodipodi:docname="layers.svg">
+   sodipodi:docname="layers_white.svg">
   <metadata
      id="metadata15">
     <rdf:RDF>
@@ -54,17 +54,17 @@
        id="grid4479" />
   </sodipodi:namedview>
   <path
-     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#575757;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 4.125 14 L 1.5 15.5 L 12 21.5 L 22.5 15.5 L 19.875 14 L 12 18.5 L 4.125 14 z "
      transform="scale(0.75)"
      id="path4486" />
   <path
-     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#575757;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 4.125 11 L 1.5 12.5 L 12 18.5 L 22.5 12.5 L 19.875 11 L 12 15.5 L 4.125 11 z "
      transform="scale(0.75)"
      id="path4486-7-5" />
   <path
-     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#575757;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 8.9999999,11.625 16.874998,7.125 8.9999999,2.6250003 1.125,7.125 Z"
      id="path4486-7"
      inkscape:connector-curvature="0"
