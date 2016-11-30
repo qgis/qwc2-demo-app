@@ -106,7 +106,7 @@ function geoAdminLocationSearchResults(obj)
             x: entry.attrs.lon,
             y: entry.attrs.lat,
             crs: "EPSG:4326",
-            bbox: parseItemBBox(entry.attrs.geom_st_box2d),
+            bbox: parseItemBBox(entry.attrs.geom_st_box2d || [x, y, x, y]),
             provider: "geoadmin"
         });
     });
