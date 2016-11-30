@@ -33,8 +33,8 @@
                 {"key": "layers", "icon": "assets/img/layers.svg"},
                 {"key": "share", "icon": "assets/img/share.svg"},
                 {"key": "tools", "icon": "assets/img/tools.svg", "subitems": [
-                  {"key": "measure"},
-                  {"key": "draw"},
+                  {"key": "measure", "icon": "assets/img/measure.svg"},
+                  {"key": "draw", "icon": "assets/img/draw.svg"},
                   {"key": "dxfexport", "icon": "assets/img/dxfexport.svg"}
                 ]},
                 {"key": "print", "icon": "assets/img/print.svg"},
@@ -114,8 +114,8 @@
                 {"key": "layers", "icon": "assets/img/layers.svg"},
                 {"key": "share", "icon": "assets/img/share.svg"},
                 {"key": "tools", "icon": "assets/img/tools.svg", "subitems": [
-                  {"key": "measure"},
-                  {"key": "draw"},
+                  {"key": "measure", "icon": "assets/img/measure.svg"},
+                  {"key": "draw", "icon": "assets/img/draw.svg"},
                   {"key": "dxfexport", "icon": "assets/img/dxfexport.svg"}
                 ]},
                 {"key": "print", "icon": "assets/img/print.svg"},
