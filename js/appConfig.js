@@ -8,6 +8,7 @@
 
 const Proj4js = require('proj4');
 const SearchProviders = require('./SearchProviders');
+const renderHelp = require('./Help');
 
 Proj4js.defs("EPSG:21781", "+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.4,15.1,405.3,0,0,0,0 +units=m +no_defs");
 Proj4js.defs("EPSG:2056", "+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs");
@@ -43,6 +44,7 @@ module.exports = {
             SharePlugin: require('../qwc2/QWC2Components/plugins/Share'),
             MapCopyrightPlugin: require('../qwc2/QWC2Components/plugins/MapCopyright'),
             PrintPlugin: require('../qwc2/QWC2Components/plugins/Print'),
+            HelpPlugin: require('../qwc2/QWC2Components/plugins/Help')(renderHelp),
             DxfExportPlugin: require('../qwc2/QWC2Components/plugins/DxfExport')
         },
         requires: {}

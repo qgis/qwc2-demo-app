@@ -68,13 +68,16 @@
           "name": "Print"
         },
         {
+          "name": "Help"
+        },
+        {
           "name": "MapCopyright"
         },
         {
           "name": "LayerTree"
         },
         {
-            "name": "DxfExport"
+          "name": "DxfExport"
         }
       ],
       "desktop": [
@@ -155,10 +158,13 @@
           "name": "Print"
         },
         {
+          "name": "Help"
+        },
+        {
           "name": "MapCopyright"
         },
         {
-            "name": "DxfExport"
+          "name": "DxfExport"
         }
       ]
   }
