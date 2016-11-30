@@ -39,7 +39,10 @@
                 ]},
                 {"key": "print", "icon": "assets/img/print.svg"},
                 {"key": "help", "icon": "assets/img/info.svg"}
-              ]
+              ],
+              "search": {
+                "minScale": 1000
+              }
             }
         },
         {
@@ -114,7 +117,10 @@
                 ]},
                 {"key": "print", "icon": "assets/img/print.svg"},
                 {"key": "help", "icon": "assets/img/info.svg"}
-              ]
+              ],
+              "search": {
+                "minScale": 1000
+              }
             }
         },
         {
