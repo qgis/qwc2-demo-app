@@ -682,7 +682,7 @@
         "appmenu": {
             "menulabel": "Map & Tools",
             "items": {
-                "themes": "Select Theme",
+                "themes": "Theme",
                 "layers": "Layers & Legend",
                 "share": "Share Link",
                 "tools": "Map Tools",
