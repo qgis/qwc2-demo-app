@@ -5,13 +5,13 @@
     "repository": "git@github.com:sourcepole/qwc2-demo-app.git",
     "main": "index.js",
     "devDependencies": {
-        "babel-core": "6.8.0",
+        "babel-core": "^6.18.2",
         "babel-eslint": "4.1.8",
         "babel-loader": "6.2.4",
         "babel-plugin-add-module-exports": "0.1.4",
         "babel-plugin-object-assign": "1.2.1",
         "babel-plugin-react-transform": "2.0.2",
-        "babel-preset-es2015": "6.6.0",
+        "babel-preset-es2015": "^6.6.0",
         "babel-preset-react": "6.5.0",
         "babel-preset-stage-0": "6.5.0",
         "css-loader": "0.19.0",
@@ -56,7 +56,7 @@
         "simple-git": "1.33.1",
         "style-loader": "0.12.4",
         "url-loader": "0.5.7",
-        "webpack": "1.12.15",
+        "webpack": "beta",
         "webpack-bundle-size-analyzer": "2.0.2",
         "webpack-dev-server": "1.14.1"
     },
@@ -106,22 +106,22 @@
         "turf": "3.0.10",
         "url": "0.10.3",
         "w3c-schemas": "1.3.1",
-        "xml2js": "0.4.17",
-        "wellknown": "0.5.0"
+        "wellknown": "0.5.0",
+        "xml2js": "0.4.17"
     },
     "scripts": {
         "clean": "rimraf dist",
-        "compile": "npm run clean && mkdirp ./dist && webpack --config prod-webpack.config.js",
-        "start": "npm run themesconfig && webpack-dev-server --progress --colors --port 8081 --hot --inline --content-base .",
+        "build": "npm run clean && mkdirp ./dist && NODE_ENV='production' webpack",
+        "start": "npm run themesconfig && webpack-dev-server --progress --colors --port 8081 --inline",
         "test": "karma start ./karma.conf.single-run.js",
         "continuoustest": "karma start ./karma.conf.continuous-test.js",
         "mvntest": "karma start ./karma.conf.single-run.js --reporters junit,dots,coverage",
         "lint": "eslint js --ext .jsx,.js",
         "travis": "eslint js --ext .jsx,.js && karma start ./karma.conf.single-run.js --browsers Firefox --reporters dots,junit,coverage,coveralls",
         "themesconfig": "node themesConfig.js",
-        "prod": "npm run compile && npm run themesconfig && rimraf prod && mkdirp ./prod && cp -a ./dist ./index.html ./assets ./themes.json ./localConfig.json ./translations ./prod",
-        "analyze": "webpack --json | webpack-bundle-size-analyzer"
+        "prod": "npm run build && npm run themesconfig && rimraf prod && mkdirp ./prod && cp -a ./dist ./index.html ./assets ./themes.json ./localConfig.json ./translations ./prod",
+        "analyze": "NODE_ENV='production' webpack --json | webpack-bundle-size-analyzer"
     },
-    "author": "GeoSolutions",
+    "author": "Sourcepole",
     "license": "BSD-2-Clause"
 }
