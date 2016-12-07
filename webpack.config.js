@@ -13,14 +13,14 @@ const plugins = [
   new webpack.DefinePlugin({
     "__DEVTOOLS__": !isProd
   }),
-  new webpack.NormalModuleReplacementPlugin(/leaflet$/, path.join(__dirname, "qwc2", "MapStore2", "web", "client", "libs", "leaflet")),
   new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "qwc2", "MapStore2", "web", "client", "libs", "openlayers")),
   new webpack.NormalModuleReplacementPlugin(/proj4$/, path.join(__dirname, "qwc2", "MapStore2", "web", "client", "libs", "proj4")),
   new webpack.NoErrorsPlugin(),
   new webpack.LoaderOptionsPlugin({
       debug: !isProd,
       minimize: isProd
-  })
+  }),
+  new webpack.IgnorePlugin(/^(turf|leaflet.*)$/)
 ];
 
 if (isProd) {
