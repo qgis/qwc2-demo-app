@@ -81,5 +81,9 @@ module.exports = {
         use: 'babel-loader'
       }
     ]
+  },
+  devServer: {
+    hot: true,
+    contentBase: './'
   }
 };
