@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 const nodeEnv = process.env.NODE_ENV || 'development';
 const isProd = nodeEnv === 'production';
@@ -23,6 +24,7 @@ const plugins = [
 ];
 
 if (isProd) {
+  plugins.push(new LodashModuleReplacementPlugin());
   plugins.push(
     new webpack.optimize.UglifyJsPlugin({
       compress: {
