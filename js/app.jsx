@@ -8,7 +8,12 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 const {connect} = require('react-redux');
-require("babel-polyfill"); // Needed for IE11 to avoid 'Promise not defined' error in axios
+// Needed for IE11 to avoid 'Promise not defined' error in axios
+require("babel-polyfill");
+// Avoid Intl is not defined (Intl needed by react-intl further on)
+if (!global.Intl) {
+   require('intl')
+}
 
 const {initialState, pluginsDef} = require('./appConfig');
 
