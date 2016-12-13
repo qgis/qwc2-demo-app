@@ -15,6 +15,8 @@ if (!global.Intl) {
    require('intl')
 }
 
+const ConfigUtils = require('../qwc2/MapStore2/web/client/utils/ConfigUtils');
+ConfigUtils.setLocalConfigurationFile('config.json');
 const {initialState, pluginsDef} = require('./appConfig');
 
 const MapViewer = require('../qwc2/MapStore2/web/client/containers/MapViewer');
