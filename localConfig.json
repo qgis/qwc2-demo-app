@@ -1,8 +1,6 @@
 {
   "proxyUrl": "http://qwc2.sourcepole.ch/api/proxy?url=",
   "qwc2serverUrl": "http://qwc2.sourcepole.ch/api/",
-  "viewertitle_link": "http://qgis.org/",
-  "terms_link":  "http://qgis.org/",
   "translationsPath": "./translations",
   "plugins": {
       "mobile": [
@@ -127,7 +125,11 @@
             }
         },
         {
-            "name": "BottomBar"
+          "name": "BottomBar",
+          "cfg": {
+            "viewertitleUrl": "http://qgis.org/",
+            "termsUrl":  "http://qgis.org/"
+          }
         },
         {
           "name": "Measure"
