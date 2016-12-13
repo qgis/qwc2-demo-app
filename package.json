@@ -56,6 +56,7 @@
         "redux-immutable-state-invariant": "1.2.3",
         "rimraf": "2.5.2",
         "simple-git": "1.33.1",
+        "string-replace-loader": "^1.0.5",
         "style-loader": "0.12.4",
         "url-loader": "0.5.7",
         "webpack": "beta",
