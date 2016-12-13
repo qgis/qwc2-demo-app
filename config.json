@@ -2,6 +2,7 @@
   "proxyUrl": "http://qwc2.sourcepole.ch/api/proxy?url=",
   "qwc2serverUrl": "http://qwc2.sourcepole.ch/api/",
   "translationsPath": "./translations",
+  "assetsPath": "/assets",
   "plugins": {
       "mobile": [
         {
@@ -27,16 +28,16 @@
             "name": "TopBar",
             "cfg": {
               "menuItems": [
-                {"key": "themes", "icon": "assets/img/themes.svg"},
-                {"key": "layers", "icon": "assets/img/layers.svg"},
-                {"key": "share", "icon": "assets/img/share.svg"},
-                {"key": "tools", "icon": "assets/img/tools.svg", "subitems": [
-                  {"key": "measure", "icon": "assets/img/measure.svg"},
-                  {"key": "draw", "icon": "assets/img/draw.svg"},
-                  {"key": "dxfexport", "icon": "assets/img/dxfexport.svg"}
+                {"key": "themes", "icon": "img/themes.svg"},
+                {"key": "layers", "icon": "img/layers.svg"},
+                {"key": "share", "icon": "img/share.svg"},
+                {"key": "tools", "icon": "img/tools.svg", "subitems": [
+                  {"key": "measure", "icon": "img/measure.svg"},
+                  {"key": "draw", "icon": "img/draw.svg"},
+                  {"key": "dxfexport", "icon": "img/dxfexport.svg"}
                 ]},
-                {"key": "print", "icon": "assets/img/print.svg"},
-                {"key": "help", "icon": "assets/img/info.svg"}
+                {"key": "print", "icon": "img/print.svg"},
+                {"key": "help", "icon": "img/info.svg"}
               ],
               "search": {
                 "minScale": 1000
@@ -108,16 +109,16 @@
             "name": "TopBar",
             "cfg": {
               "menuItems": [
-                {"key": "themes", "icon": "assets/img/themes.svg"},
-                {"key": "layers", "icon": "assets/img/layers.svg"},
-                {"key": "share", "icon": "assets/img/share.svg"},
-                {"key": "tools", "icon": "assets/img/tools.svg", "subitems": [
-                  {"key": "measure", "icon": "assets/img/measure.svg"},
-                  {"key": "draw", "icon": "assets/img/draw.svg"},
-                  {"key": "dxfexport", "icon": "assets/img/dxfexport.svg"}
+                {"key": "themes", "icon": "img/themes.svg"},
+                {"key": "layers", "icon": "img/layers.svg"},
+                {"key": "share", "icon": "img/share.svg"},
+                {"key": "tools", "icon": "img/tools.svg", "subitems": [
+                  {"key": "measure", "icon": "img/measure.svg"},
+                  {"key": "draw", "icon": "img/draw.svg"},
+                  {"key": "dxfexport", "icon": "img/dxfexport.svg"}
                 ]},
-                {"key": "print", "icon": "assets/img/print.svg"},
-                {"key": "help", "icon": "assets/img/info.svg"}
+                {"key": "print", "icon": "img/print.svg"},
+                {"key": "help", "icon": "img/info.svg"}
               ],
               "search": {
                 "minScale": 1000
