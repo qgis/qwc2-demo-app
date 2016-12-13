@@ -6,33 +6,52 @@ Quick Start
 
 Clone the repository with the --recursive option to automatically clone submodules:
 
-`git clone --recursive git@github.com:sourcepole/qwc2-demo-app.git`
+    git clone --recursive git@github.com:sourcepole/qwc2-demo-app.git
 
 Install NodeJS, if needed, from [here](https://nodejs.org/en/blog/release/v0.12.7/).
 
 Start the development application locally:
 
-`npm install`
-
-`npm start`
+    npm install
+    npm start
 
 The application runs at `http://localhost:8081` afterwards.
-
-Read more on the [wiki](git@github.com:sourcepole/qwc2.git/wiki).
 
 
 Configuration
 --------------
 
-### Viewer application
+### Application
 
-The viewer application is configured in `localConfig.json`.
+There are four main configuration files:
 
+ * `js/appConfig.js`: This file configures which components and which map
+ projections are compiled into the application bundle. Changing this file will
+ require a re-deployment of the application.
 
-### Map
+ * `config.js`: This file controls the plugin configuration (whether they are
+ enabled in desktop/mobile plus plugin specific configuration) and also stores
+ some global properties. This file can be changed without re-deploying the application.
 
-The map projection is configured in the Map plugin in `localConfig.json`.
+ * `styleConfig.js`: This file contains variables for the main styling properties
+ (mainly colors). Changing this file will require a re-deployment of the application.
 
+ * `themesConfig.json`: This file configures the themes which will be available
+ in the application, see below for details.
+
+In addition, there are some additional important files (changing any of these
+files will require a re-depolyment of the application):
+
+ * `js/Help.jsx`: This component is displayed when selecting Help in the
+ Application Menu. It can be customized as desired.
+
+ * `js/SearchProviders.js`: This file contains the implementation of the search
+ providers. The key names for the providers specified in the `module.exports`
+ in this file can be listed under `searchProviders` in `themesConfig.json` to
+ control which search servies are available for which themes.
+
+ * `assets/css/qwc2.css`: This is a global style sheet which can contain any
+ desired style tweaks.
 
 ### Themes
 
@@ -88,7 +107,21 @@ Configuration format:
 }
 ```
 
-`npm run themesconfig` requests the capabilities of all WMS services and generates a runtime configuration `themes.json`.
+`npm run themesconfig` requests the capabilities of all WMS services and
+generates a runtime configuration `themes.json`. It is automatically run on
+`npm start`. To update the `themes.json` of a deployed application, just run
+`npm run themesconfig` in the development tree and copy the resulting
+`themes.json` to the production folder.
+
+
+Deployment
+----------
+
+Run
+
+    npm run prod
+
+The files created inside `./prod` can then be deployed to a web server.
 
 
 Preparation for developers
