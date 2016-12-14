@@ -100,13 +100,15 @@ function geoAdminLocationSearchResults(obj)
                 items: []
             }
         }
+        let x = entry.attrs.lon;
+        let y = entry.attrs.lat;
         resultGroups[entry.attrs.origin].items.push({
             id: entry.id,
             text: entry.attrs.label,
-            x: entry.attrs.lon,
-            y: entry.attrs.lat,
+            x: x,
+            y: y,
             crs: "EPSG:4326",
-            bbox: parseItemBBox(entry.attrs.geom_st_box2d || [x, y, x, y]),
+            bbox: parseItemBBox(entry.attrs.geom_st_box2d) || [x, y, x, y],
             provider: "geoadmin"
         });
     });
