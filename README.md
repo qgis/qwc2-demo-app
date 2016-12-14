@@ -68,7 +68,7 @@ Configuration format:
       {
         "url": "<http://localhost/wms/theme>",
         "title": "<Custom theme title>",            // optional, use WMS title if not set
-        "thumbnail": "<theme.png>",                 // optional image file in assets/img/mapthumbs/, use WMS GetMap if not set
+        "thumbnail": "<theme.png>",                 // optional image file in ./mapthumbs, use WMS GetMap if not set
         "attribution": "<Attribution>",             // optional theme attribution
         "attributionUrl": "<attribution URL>",      // optional theme attribution URL
         "default": true,                            // optional, set this as the initial theme
@@ -102,7 +102,7 @@ Configuration format:
       {
         "name": "<background layer name>",          // referenced by themes
         "title": "<Background layer title>",
-        "thumbnail": "<background.png>",            // optional image file in assets/img/mapthumbs/, use default.jpg if not set
+        "thumbnail": "<background.png>",            // optional image file in ./mapthumbs, use default.jpg if not set
         ...                                         // layer params (excluding "group" and "visibility")
       }
     ]

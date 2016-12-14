@@ -18,7 +18,7 @@ function getThumbnail(configItem, resultItem, layers, crs, extent, resolve) {
     if (configItem.thumbnail !== undefined) {
         // read thumbnail file
         try {
-            var data = fs.readFileSync("./assets/img/mapthumbs/" + configItem.thumbnail);
+            var data = fs.readFileSync("./mapthumbs/" + configItem.thumbnail);
             resultItem.thumbnail = Buffer.from(data).toString('base64');
             // finish task
             resolve(true);
@@ -299,7 +299,7 @@ function getGroupThemes(configGroup, resultGroup) {
         {
           "url": "<http://localhost/wms/theme>",
           "title": "<Custom theme title>",            // optional, use WMS title if not set
-          "thumbnail": "<theme.png>",                 // optional image file in assets/img/mapthumbs/, use WMS GetMap if not set
+          "thumbnail": "<theme.png>",                 // optional image file in ./mapthumbs, use WMS GetMap if not set
           "attribution": "<Attribution>",             // optional theme attribution
           "attributionUrl": "<attribution URL>",      // optional theme attribution URL
           "default": true,                            // optional, set this as the initial theme
@@ -333,7 +333,7 @@ function getGroupThemes(configGroup, resultGroup) {
         {
           "name": "<background layer name>",          // referenced by themes
           "title": "<Background layer title>",
-          "thumbnail": "<background.png>",            // optional image file in assets/img/mapthumbs/, use default.jpg if not set
+          "thumbnail": "<background.png>",            // optional image file in ./mapthumbs, use default.jpg if not set
           ...                                         // layer params (excluding "group" and "visibility")
         }
       ]
@@ -359,10 +359,10 @@ getGroupThemes(config.themes, result.themes);
 if (result.themes.backgroundLayers !== undefined) {
     // get thumbnails for background layers
     result.themes.backgroundLayers.map((backgroundLayer) => {
-        var imgPath = "./assets/img/mapthumbs/" + backgroundLayer.thumbnail;
+        var imgPath = "./mapthumbs/" + backgroundLayer.thumbnail;
         try {
             if (!fs.existsSync(imgPath)) {
-                imgPath = "./assets/img/mapthumbs/default.jpg";
+                imgPath = "./mapthumbs/default.jpg";
             }
             var data = fs.readFileSync(imgPath);
             backgroundLayer.thumbnail = Buffer.from(data).toString('base64');
