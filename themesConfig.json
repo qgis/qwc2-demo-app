@@ -14,7 +14,8 @@
             "visibility": true
           }
         ],
-        "searchProviders": ["wolfsburg"]
+        "searchProviders": ["wolfsburg"],
+        "additionalMouseCrs": ["EPSG:25832"]
       },
       {
         "url": "http://qwc2.sourcepole.ch/wms/uster/bauprojekte",
@@ -27,7 +28,8 @@
             "visibility": true
           }
         ],
-        "searchProviders": ["uster"]
+        "searchProviders": ["uster"],
+        "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"]
       }
     ],
     "groups": [
@@ -55,7 +57,8 @@
                 "name": "StamenWatercolor"
               }
             ],
-            "searchProviders": ["geoadmin", "glarus"]
+            "searchProviders": ["geoadmin", "glarus"],
+            "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"]
           }
         ],
         "groups": []

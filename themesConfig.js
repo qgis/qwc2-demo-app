@@ -246,6 +246,7 @@ function getTheme(configItem, resultItem) {
             resultItem.sublayers = layerTree[0].sublayers;
             resultItem.backgroundLayers = configItem.backgroundLayers;
             resultItem.searchProviders = configItem.searchProviders;
+            resultItem.additionalMouseCrs = configItem.additionalMouseCrs;
             if (printTemplates.length > 0) {
                 resultItem.print = printTemplates;
             }
@@ -311,7 +312,8 @@ function getGroupThemes(configGroup, resultGroup) {
               "visibility": true                      // optional initial visibility on topic selection
             }
           ],
-          "searchProviders": ["<search provider>"]    // optional search providers
+          "searchProviders": ["<search provider>"],   // optional search providers
+          "additionalMouseCrs": ["<epsg code>"]       // optional list of additional CRS for mouse position (map projection and WGS84 are listed by default). Make sure proj defs are loaded in js/appConfig.js.
         }
       ],
       "groups": [                                     // optional, nested groups

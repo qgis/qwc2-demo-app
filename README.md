@@ -78,7 +78,8 @@ Configuration format:
             "visibility": true                      // optional initial visibility on topic selection
           }
         ],
-        "searchProviders": ["<search provider>"]    // optional search providers
+        "searchProviders": ["<search provider>"],   // optional search providers
+        "additionalMouseCrs": ["<epsg code>"]       // optional list of additional CRS for mouse position (map projection and WGS84 are listed by default). Make sure proj defs are loaded in js/appConfig.js.
       }
     ],
     "groups": [                                     // optional, nested groups
