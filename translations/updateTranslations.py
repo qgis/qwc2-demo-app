@@ -1,16 +1,10 @@
 #!/usr/bin/python
 """
-This script extracts the subset of strings specified in the 'strings' file from
-the original upstream translations
+This script updates the local translation files by ensuring all entires
+specified in the 'strings' file exist, and pulling in the respective values
+from the upstream translations file if necessary.
 
-
-To find out which translations are needed, add
-
-  console.log(this.props.msgId)
-
-to MapStore2/web/client/components/i18N/Message.jsx@render
-
-To add a new locale, just extent the langs list below
+To add a new locale, just extend the langs list below.
 """
 
 import os
