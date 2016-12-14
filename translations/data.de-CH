@@ -25,6 +25,10 @@
             "selectinfo": "",
             "symbologyscale": ""
         },
+        "identify": {
+            "querying": ""
+        },
+        "identifyTitle": "",
         "layertree": {
             "maptip": "",
             "transparency": ""
@@ -38,8 +42,10 @@
             "lengthLabel": "",
             "pointLabel": ""
         },
+        "noFeatureInfo": "",
         "print": {
             "layout": "",
+            "nolayouts": "",
             "notheme": "",
             "resolution": "",
             "rotation": "",
@@ -53,6 +59,7 @@
             "QRCodeLinkTitle": "",
             "directLinkTitle": "",
             "generatingpermalink": "",
+            "msgToCopyUrl": "",
             "socialIntro": ""
         }
     }

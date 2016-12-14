@@ -25,9 +25,13 @@
             "selectinfo": "",
             "symbologyscale": ""
         },
+        "identify": {
+            "querying": ""
+        },
+        "identifyTitle": "Informazioni Sulle Feature",
         "layertree": {
             "maptip": "",
-            "transparency": "Trasparenza"
+            "transparency": ""
         },
         "map": {
             "loading": "In caricamento..."
@@ -38,8 +42,10 @@
             "lengthLabel": "Lunghezza",
             "pointLabel": ""
         },
+        "noFeatureInfo": "Non ci sono informazioni disponibili per il punto selezionato",
         "print": {
             "layout": "Layout",
+            "nolayouts": "",
             "notheme": "",
             "resolution": "Risoluzione:",
             "rotation": "",
@@ -53,6 +59,7 @@
             "QRCodeLinkTitle": "Usando il QR Code",
             "directLinkTitle": "Con un Link diretto",
             "generatingpermalink": "",
+            "msgToCopyUrl": "Clicca per copiare",
             "socialIntro": "Sul tuo social preferito"
         }
     }

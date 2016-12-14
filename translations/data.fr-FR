@@ -25,6 +25,10 @@
             "selectinfo": "",
             "symbologyscale": ""
         },
+        "identify": {
+            "querying": ""
+        },
+        "identifyTitle": "Informations de l'objet",
         "layertree": {
             "maptip": "",
             "transparency": ""
@@ -38,8 +42,10 @@
             "lengthLabel": "Longueur",
             "pointLabel": ""
         },
+        "noFeatureInfo": "Aucune information n'est disponible pour le point cliqu\u00e9",
         "print": {
             "layout": "Mise en page",
+            "nolayouts": "",
             "notheme": "",
             "resolution": "R\u00e9solution:",
             "rotation": "",
@@ -53,6 +59,7 @@
             "QRCodeLinkTitle": "qr code",
             "directLinkTitle": "Via un lien direct",
             "generatingpermalink": "",
+            "msgToCopyUrl": "Cliquer pour copier",
             "socialIntro": "via votre r\u00e9seau social favori"
         }
     }

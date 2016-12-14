@@ -14,6 +14,8 @@ bottombar.terms_label
 bottombar.viewertitle_label
 dxfexport.selectinfo
 dxfexport.symbologyscale
+identify.querying
+identifyTitle
 layertree.maptip
 layertree.transparency
 map.loading
@@ -21,7 +23,9 @@ measureComponent.areaLabel
 measureComponent.bearingLabel
 measureComponent.lengthLabel
 measureComponent.pointLabel
+noFeatureInfo
 print.layout
+print.nolayouts
 print.notheme
 print.resolution
 print.rotation
@@ -30,5 +34,6 @@ print.submit
 search.coordinates
 share.directLinkTitle
 share.generatingpermalink
+share.msgToCopyUrl
 share.QRCodeLinkTitle
 share.socialIntro

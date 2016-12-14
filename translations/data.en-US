@@ -25,6 +25,10 @@
             "selectinfo": "Drag a rectangle around the region to export...",
             "symbologyscale": "Symbology scale:"
         },
+        "identify": {
+            "querying": "Querying..."
+        },
+        "identifyTitle": "Feature Info",
         "layertree": {
             "maptip": "Show layer map tips",
             "transparency": "Transparency"
@@ -38,8 +42,10 @@
             "lengthLabel": "Length",
             "pointLabel": "Position"
         },
+        "noFeatureInfo": "There is no information available for the point you clicked",
         "print": {
             "layout": "Layout:",
+            "nolayouts": "The selected theme does not support printing",
             "notheme": "No theme selected",
             "resolution": "Resolution:",
             "rotation": "Rotation:",
@@ -53,6 +59,7 @@
             "QRCodeLinkTitle": "qr code",
             "directLinkTitle": "Via a direct link",
             "generatingpermalink": "Generating permalink...",
+            "msgToCopyUrl": "Click to copy",
             "socialIntro": "In your favourite social network"
         }
     }
