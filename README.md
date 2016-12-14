@@ -118,6 +118,17 @@ generates a runtime configuration `themes.json`. It is automatically run on
 `themes.json` to the production folder.
 
 
+Translations
+------------
+
+Translations are stored in the `data.<locale>` files stored under `translations`.
+These are plain text files in JSON format.
+
+The `translations/strings` file is a plain text file containing the message ids
+used in the application. The `updateTranslations.py` script creates/update
+the translation files by merging the upstream MapStore2 translations and the
+local translations. See the header in `updateTranslations.py` for more details.
+
 Deployment
 ----------
 

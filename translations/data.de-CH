@@ -1,5 +1,5 @@
 {
-    "locale": "fr-FR",
+    "locale": "de-CH",
     "messages": {
         "appmenu": {
             "items": {
@@ -30,30 +30,30 @@
             "transparency": ""
         },
         "map": {
-            "loading": "Chargement..."
+            "loading": ""
         },
         "measureComponent": {
-            "areaLabel": "Surface",
-            "bearingLabel": "Direction",
-            "lengthLabel": "Longueur",
+            "areaLabel": "",
+            "bearingLabel": "",
+            "lengthLabel": "",
             "pointLabel": ""
         },
         "print": {
-            "layout": "Mise en page",
+            "layout": "",
             "notheme": "",
-            "resolution": "R\u00e9solution:",
+            "resolution": "",
             "rotation": "",
             "scale": "",
-            "submit": "Imprimer"
+            "submit": ""
         },
         "search": {
             "coordinates": ""
         },
         "share": {
-            "QRCodeLinkTitle": "qr code",
-            "directLinkTitle": "Via un lien direct",
+            "QRCodeLinkTitle": "",
+            "directLinkTitle": "",
             "generatingpermalink": "",
-            "socialIntro": "via votre r\u00e9seau social favori"
+            "socialIntro": ""
         }
     }
 }
