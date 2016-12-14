@@ -18,8 +18,7 @@ module.exports = {
     initialState: {
         defaultState: {
             mousePosition: {
-                enabled: true,
-                crs: "EPSG:4326"
+                enabled: true
             },
             mapInfo: {
                 enabled: true
