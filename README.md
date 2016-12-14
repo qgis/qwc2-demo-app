@@ -23,13 +23,13 @@ Configuration
 
 ### Application
 
-There are four main configuration files:
+There are five main configuration files:
 
  * `js/appConfig.js`: This file configures which components and which map
  projections are compiled into the application bundle. Changing this file will
  require a re-deployment of the application.
 
- * `config.js`: This file controls the plugin configuration (whether they are
+ * `config.json`: This file controls the plugin configuration (whether they are
  enabled in desktop/mobile plus plugin specific configuration) and also stores
  some global properties. This file can be changed without re-deploying the application.
 
@@ -38,6 +38,9 @@ There are four main configuration files:
 
  * `themesConfig.json`: This file configures the themes which will be available
  in the application, see below for details.
+
+ * `index.html`: This is the main entry point of the application. Among other things,
+ the window title is set here. This file can be changed without re-deploying the application.
 
 In addition, there are some additional important files (changing any of these
 files will require a re-depolyment of the application):
