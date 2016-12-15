@@ -23,6 +23,12 @@ html, body, #map, .fill, .viewer {
     height: 100%;
 }
 
+/** Some bootstrap.min.css overrides **/
 .glyphicon {
-    position: static!important;
+    position: initial!important;
+}
+
+input[type=range] {
+    display: initial!important;
+    width: initial!important;
 }
