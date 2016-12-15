@@ -16,17 +16,16 @@ const fs = require('fs');
 // load thumbnail from file or GetMap
 function getThumbnail(configItem, resultItem, layers, crs, extent, resolve) {
     if (configItem.thumbnail !== undefined) {
-        // read thumbnail file
-        try {
-            var data = fs.readFileSync("./mapthumbs/" + configItem.thumbnail);
-            resultItem.thumbnail = Buffer.from(data).toString('base64');
+        // check if thumbnail can be read
+        if(fs.existsSync("./assets/img/mapthumbs/" + configItem.thumbnail)) {
+            resultItem.thumbnail = "img/mapthumbs/" + configItem.thumbnail;
             // finish task
             resolve(true);
             return;
-        } catch(error) {
-            console.error("ERROR: Could not read thumbnail " + configItem.thumbnail + ". Using WMS GetMap instead.");
         }
     }
+
+    console.error("Using WMS GetMap to generate thumbnail for " + configItem.url);
 
     // WMS GetMap request
     var parsedUrl = urlUtil.parse(configItem.url, true);
@@ -45,7 +44,9 @@ function getThumbnail(configItem, resultItem, layers, crs, extent, resolve) {
     const getMapUrl = urlUtil.format(parsedUrl);
 
     axios.get(getMapUrl, {responseType: "arraybuffer"}).then((response) => {
-        resultItem.thumbnail = Buffer.from(response.data).toString('base64');
+        let basename = configItem.url.replace(/.*\//, "") + ".png";
+        fs.writeFileSync("./assets/img/mapthumbs/" + basename, response.data);
+        resultItem.thumbnail = "img/mapthumbs/" + basename;
         // finish task
         resolve(true);
     }).catch((error) => {
@@ -299,7 +300,7 @@ function getGroupThemes(configGroup, resultGroup) {
         {
           "url": "<http://localhost/wms/theme>",
           "title": "<Custom theme title>",            // optional, use WMS title if not set
-          "thumbnail": "<theme.png>",                 // optional image file in ./mapthumbs, use WMS GetMap if not set
+          "thumbnail": "<filename>",                  // optional image file in assets/img/mapthumbs, if not set uses WMS GetMap to generate the thumbnail and stores it in assets/img/mapthumbs
           "attribution": "<Attribution>",             // optional theme attribution
           "attributionUrl": "<attribution URL>",      // optional theme attribution URL
           "default": true,                            // optional, set this as the initial theme
@@ -333,7 +334,7 @@ function getGroupThemes(configGroup, resultGroup) {
         {
           "name": "<background layer name>",          // referenced by themes
           "title": "<Background layer title>",
-          "thumbnail": "<background.png>",            // optional image file in ./mapthumbs, use default.jpg if not set
+          "thumbnail": "<filename>",                  // optional image file in assets/img/mapthumbs, use default.jpg if not set
           ...                                         // layer params (excluding "group" and "visibility")
         }
       ]
@@ -359,16 +360,11 @@ getGroupThemes(config.themes, result.themes);
 if (result.themes.backgroundLayers !== undefined) {
     // get thumbnails for background layers
     result.themes.backgroundLayers.map((backgroundLayer) => {
-        var imgPath = "./mapthumbs/" + backgroundLayer.thumbnail;
-        try {
-            if (!fs.existsSync(imgPath)) {
-                imgPath = "./mapthumbs/default.jpg";
-            }
-            var data = fs.readFileSync(imgPath);
-            backgroundLayer.thumbnail = Buffer.from(data).toString('base64');
-        } catch(error) {
-            console.error("ERROR: Could not read background layer thumbnail " + imgPath);
+        let imgPath = "img/mapthumbs/" + backgroundLayer.thumbnail;
+        if (!fs.existsSync("./assets/" + imgPath)) {
+            imgPath = "img/mapthumbs/default.jpg";
         }
+        backgroundLayer.thumbnail = imgPath;
     });
 }
 
