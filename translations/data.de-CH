@@ -53,7 +53,8 @@
             "submit": ""
         },
         "search": {
-            "coordinates": ""
+            "coordinates": "",
+            "placeholder": ""
         },
         "share": {
             "QRCodeLinkTitle": "",
@@ -61,6 +62,9 @@
             "generatingpermalink": "",
             "msgToCopyUrl": "",
             "socialIntro": ""
+        },
+        "themeswitcher": {
+            "filter": ""
         }
     }
 }

@@ -32,8 +32,10 @@ print.rotation
 print.scale
 print.submit
 search.coordinates
+search.placeholder
 share.directLinkTitle
 share.generatingpermalink
 share.msgToCopyUrl
 share.QRCodeLinkTitle
 share.socialIntro
+themeswitcher.filter

@@ -53,7 +53,8 @@
             "submit": "Stampa"
         },
         "search": {
-            "coordinates": ""
+            "coordinates": "",
+            "placeholder": "Cerca un indirizzo o inserisci coordinate..."
         },
         "share": {
             "QRCodeLinkTitle": "Usando il QR Code",
@@ -61,6 +62,9 @@
             "generatingpermalink": "",
             "msgToCopyUrl": "Clicca per copiare",
             "socialIntro": "Sul tuo social preferito"
+        },
+        "themeswitcher": {
+            "filter": ""
         }
     }
 }

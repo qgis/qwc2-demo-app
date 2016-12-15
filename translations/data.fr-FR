@@ -53,7 +53,8 @@
             "submit": "Imprimer"
         },
         "search": {
-            "coordinates": ""
+            "coordinates": "",
+            "placeholder": "Recherche par toponyme ou coordonn\u00e9es..."
         },
         "share": {
             "QRCodeLinkTitle": "qr code",
@@ -61,6 +62,9 @@
             "generatingpermalink": "",
             "msgToCopyUrl": "Cliquer pour copier",
             "socialIntro": "via votre r\u00e9seau social favori"
+        },
+        "themeswitcher": {
+            "filter": ""
         }
     }
 }
