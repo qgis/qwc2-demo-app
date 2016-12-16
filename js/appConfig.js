@@ -47,5 +47,23 @@ module.exports = {
             DxfExportPlugin: require('../qwc2/QWC2Components/plugins/DxfExport')
         },
         requires: {}
-    }
+    },
+    supportedLocales: {
+         "it": {
+             code: "it-IT",
+             description: "Italiano"
+         },
+         "en": {
+            code: "en-US",
+            description: "English"
+         },
+         "fr": {
+           code: "fr-FR",
+           description: "Français"
+       },
+       "de": {
+           code: "de-DE",
+           description: "Deutsch"
+       }
+   }
 };

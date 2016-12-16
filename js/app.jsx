@@ -15,9 +15,13 @@ if (!global.Intl) {
    require('intl')
 }
 
+const {initialState, pluginsDef, supportedLocales} = require('./appConfig');
+
 const ConfigUtils = require('../qwc2/MapStore2/web/client/utils/ConfigUtils');
 ConfigUtils.setLocalConfigurationFile('config.json');
-const {initialState, pluginsDef} = require('./appConfig');
+
+const LocaleUtils = require('../qwc2/MapStore2/web/client/utils/LocaleUtils');
+LocaleUtils.setSupportedLocales(supportedLocales);
 
 const MapViewer = require('../qwc2/MapStore2/web/client/containers/MapViewer');
 const {loadMapConfig} = require('../qwc2/QWC2Components/actions/config');
