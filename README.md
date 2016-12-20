@@ -10,10 +10,12 @@ Clone the repository with the --recursive option to automatically clone submodul
 
 Install NodeJS, if needed, from [here](https://nodejs.org/en/blog/release/v0.12.7/).
 
+We highly recommend using [yarn](https://yarnpkg.com/) to manage the dependencies instead of `npm`.
+
 Start the development application locally:
 
-    npm install
-    npm start
+    yarn install
+    yarn start
 
 The application runs at `http://localhost:8081` afterwards.
 
@@ -111,10 +113,10 @@ Configuration format:
 }
 ```
 
-`npm run themesconfig` requests the capabilities of all WMS services and
+`yarn run themesconfig` requests the capabilities of all WMS services and
 generates a runtime configuration `themes.json`. It is automatically run on
-`npm start`. To update the `themes.json` of a deployed application, just run
-`npm run themesconfig` in the development tree and copy the resulting
+`yarn start`. To update the `themes.json` of a deployed application, just run
+`yarn run themesconfig` in the development tree and copy the resulting
 `themes.json` to the production folder.
 
 
@@ -138,7 +140,7 @@ Deployment
 
 Run
 
-    npm run prod
+    yarn run prod
 
 The files created inside `./prod` can then be deployed to a web server.
 
