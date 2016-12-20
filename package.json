@@ -60,7 +60,7 @@
         "string-replace-loader": "^1.0.5",
         "style-loader": "0.12.4",
         "url-loader": "0.5.7",
-        "webpack": "beta",
+        "webpack": "2.2.0-rc.1",
         "webpack-bundle-size-analyzer": "^2.2.0",
         "webpack-dev-server": "beta",
         "xml2js": "0.4.17"
