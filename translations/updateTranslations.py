@@ -10,7 +10,7 @@ To add a new locale, just extend the langs list below.
 import os
 import json
 
-langs = ["en-US", "fr-FR", "it-IT", "de-CH"]
+langs = ["en-US", "fr-FR", "it-IT", "de-DE"]
 
 wd = os.path.dirname(os.path.abspath(__file__))
 
