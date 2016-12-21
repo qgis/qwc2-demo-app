@@ -22,7 +22,10 @@ Start the development application locally:
     yarn install
     yarn start
 
-The application runs at `http://localhost:8081` afterwards.
+The application runs at `http://localhost:8081` afterwards. You can change the address and port
+by tweaking the `start` script in `package.json`, i.e.
+
+    "start": "npm run themesconfig && webpack-dev-server --progress --colors --host <ip_addr> --port <port>"
 
 
 Configuration
@@ -148,6 +151,9 @@ Run
     yarn run prod
 
 The files created inside `./prod` can then be deployed to a web server.
+
+If you deploy to a folder other than the root of the web server, be sure to adjust
+the asset paths in `styleConfig.js` and `config.json`.
 
 
 Preparation for developers
