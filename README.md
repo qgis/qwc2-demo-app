@@ -7,11 +7,11 @@ Quick Start
 Clone the repository with the --recursive option to automatically clone submodules.
 * If you are a developer, use 
 
-        git clone --recursive git@github.com:sourcepole/qwc2-demo-app.git
+        git clone --recursive https://github.com/qgis/qwc2-demo-app.git
 
 * If you are an end-user and want to clone the latest stable release, use
 
-        git clone --recursive --branch stable git@github.com:sourcepole/qwc2-demo-app.git
+        git clone --recursive --branch stable https://github.com/qgis/qwc2-demo-app.git
 
 Install NodeJS, if needed, from [here](https://nodejs.org/en/blog/release/v0.12.7/).
 
