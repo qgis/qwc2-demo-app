@@ -156,6 +156,22 @@ If you deploy to a folder other than the root of the web server, be sure to adju
 the asset paths in `styleConfig.js` and `config.json`.
 
 
+HTTP headers for printing
+-------------------------
+
+QGIS Server doesn't emit a HTTP header with a file name, which usually results in an ugly file name for print outputs. Therefore the web server should add a `Content-Disposition` header.
+
+Example for Apache:
+
+    SetEnvIf Request_URI "^/wms.*/(.+)$" project_name=$1
+    Header always setifempty Content-Disposition "attachment; filename=%{project_name}e.pdf" "expr=%{CONTENT_TYPE} = 'application/pdf'"
+
+This example uses the `setenvif` and the `headers` modules:
+
+    a2enmod setenvif
+    a2enmod headers
+
+
 Preparation for developers
 --------------------------
 
