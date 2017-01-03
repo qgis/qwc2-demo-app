@@ -66,6 +66,13 @@ files will require a re-depolyment of the application):
  * `assets/css/qwc2.css`: This is a global style sheet which can contain any
  desired style tweaks.
 
+### Map projection configuration
+
+The map projection is configured in `config.json` by adjusting `projection` and `maxExtent`.
+You can look up the max extent for a specific projection at [spatialreference.org](http://www.spatialreference.org/ref/epsg/).
+Remember to register the projection you wish to use in `js/appConfig.js`.
+Note that the leaflet backent currently does not support projections other than `EPSG:3857`.
+
 ### Themes
 
 Themes and map scales are configured in `themesConfig.json`.
