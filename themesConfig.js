@@ -33,13 +33,30 @@ function getThumbnail(configItem, resultItem, layers, crs, extent, resolve) {
     parsedUrl.query.SERVICE = "WMS";
     parsedUrl.query.VERSION = "1.3.0";
     parsedUrl.query.REQUEST = "GetMap";
-    parsedUrl.query.FORMAT = "image/png; mode=8bit";
+    parsedUrl.query.FORMAT = "image/png";
     parsedUrl.query.TRANSPARENT = "TRUE";
     parsedUrl.query.STYLES = "";
     parsedUrl.query.WIDTH = 128;
     parsedUrl.query.HEIGHT = 96;
     parsedUrl.query.CRS = crs;
-    parsedUrl.query.BBOX = extent.join(',');
+    let bboxw = extent[2] - extent[0];
+    let bboxh = extent[3] - extent[1];
+    let bboxcx = 0.5 * (extent[0] + extent[2]);
+    let bboxcy = 0.5 * (extent[1] + extent[3]);
+    let imgratio = 128./96.;
+    if(bboxw > bboxh) {
+        let bboxratio = bboxw/bboxh;
+        if(bboxratio > imgratio) {
+            bboxh = bboxw / imgratio;
+        } else {
+            bboxw = bboxh * imgratio;
+        }
+    } else {
+        bboxw = bboxh * imgratio;
+    }
+    let adjustedExtent = [bboxcx - 0.5 * bboxw, bboxcy - 0.5 * bboxh,
+                          bboxcx + 0.5 * bboxw, bboxcy + 0.5 * bboxh];
+    parsedUrl.query.BBOX = adjustedExtent.join(',');
     parsedUrl.query.LAYERS = layers.join(',');
     const getMapUrl = urlUtil.format(parsedUrl);
 
@@ -173,7 +190,7 @@ function getTheme(configItem, resultItem) {
             });
 
             // use first CRS for thumbnail request
-            const crs = toArray(topLayer.CRS)[0];
+            const crs = toArray(topLayer.CRS).filter(item => item != 'CRS:84')[0];
             var extent = [];
             for (var bbox of toArray(topLayer.BoundingBox)) {
                 if (bbox.$.CRS === crs) {
