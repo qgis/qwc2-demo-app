@@ -135,6 +135,12 @@ generates a runtime configuration `themes.json`. It is automatically run on
 `themes.json` to the production folder.
 
 
+### Server
+
+A server component is necessary for generating and resolving permalinks.
+A sample server can be found [here](https://github.com/sourcepole/qwc2-server).
+The url to the server must be specified under `qwc2serverUrl` in `config.json`.
+
 Translations
 ------------
 
