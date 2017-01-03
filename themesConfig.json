@@ -55,6 +55,9 @@
               },
               {
                 "name": "StamenWatercolor"
+              },
+              {
+                "name": "Gemeindegrenzen"
               }
             ],
             "searchProviders": ["geoadmin", "glarus"],
@@ -93,6 +96,17 @@
         "type": "tileprovider",
         "source": "stamen",
         "provider": "Stamen.Toner"
+      },
+      {
+        "name": "Gemeindegrenzen",
+        "title": "Gemeindegrenzen",
+        "type": "wms",
+        "url": "http://wms.geo.admin.ch/",
+        "params": {
+          "LAYERS": "ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill",
+          "STYLES": "default"
+        },
+        "thumbnail": "img/mapthumbs/default.jpg"
       }
     ]
   },
