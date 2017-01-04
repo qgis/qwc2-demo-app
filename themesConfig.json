@@ -73,7 +73,9 @@
         "title": "Open Street Map",
         "type": "osm",
         "source": "osm",
-        "thumbnail": "mapnik.jpg"
+        "thumbnail": "mapnik.jpg",
+        "attribution": "OpenStreetMap contributors",
+        "attributionUrl": "https://www.openstreetmap.org/copyright"
       },
       {
         "name": "Night2012",
@@ -81,7 +83,8 @@
         "type": "tileprovider",
         "source": "nasagibs",
         "provider": "NASAGIBS.ViirsEarthAtNight2012",
-        "thumbnail": "Night2012.jpg"
+        "thumbnail": "Night2012.jpg",
+        "attribution": "Suomi NPP / VIIRS via NASA Earth Observatory"
       },
       {
         "name": "StamenWatercolor",
