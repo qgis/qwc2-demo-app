@@ -71,7 +71,7 @@ files will require a re-depolyment of the application):
 The map projection is configured in `config.json` by adjusting `projection` and `maxExtent`.
 You can look up the max extent for a specific projection at [spatialreference.org](http://www.spatialreference.org/ref/epsg/).
 Remember to register the projection you wish to use in `js/appConfig.js`.
-Note that the leaflet backent currently does not support projections other than `EPSG:3857`.
+Note that the leaflet backend currently does not support projections other than `EPSG:3857`.
 
 ### Themes
 
