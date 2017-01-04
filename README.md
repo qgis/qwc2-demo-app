@@ -155,6 +155,8 @@ local translations. See the header in `updateTranslations.py` for more details.
 When adding a translation, remember to add the corresponding entry to
 `supportedLocales` in `js/appConfig.js`.
 
+You can test a locale by adding the `locale` query parameter to the URL, i.e. `locale=de`.
+
 
 Deployment
 ----------
