@@ -5,6 +5,7 @@
         "url": "http://qwc2.sourcepole.ch/wms/wolfsburg/qwc2_demo",
         "attribution": "Stadt Wolfsburg",
         "attributionUrl": "https://geoportal.stadt.wolfsburg.de/",
+        "format": "image/png;mode=8bit",
         "default": true,
         "scales": [200000, 80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
         "backgroundLayers": [

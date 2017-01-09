@@ -91,6 +91,7 @@ Configuration format:
         "default": true,                            // optional, set this as the initial theme
         "scales": [25000, 10000, 5000, 2500],       // optional custom map scales
         "tiled": true,                              // optional, use tiled WMS (default is false)
+        "format": "image/png",                      // optional, the image format to use in the WMS request, defaults to image/png
         "backgroundLayers": [                       // optional background layers
           {
             "name": "<background layer name>",      // background layer name from list below
