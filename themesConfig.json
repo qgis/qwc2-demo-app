@@ -117,7 +117,6 @@
       {
         "type": "wmts",
         "url":"http://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief/default/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpeg",
-        "visibility": true,
         "title": "Blue Marble",
         "name": "bluemarble",
         "tileMatrixPrefix": "",
