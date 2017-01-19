@@ -3,15 +3,15 @@
     "messages": {
         "appmenu": {
             "items": {
-                "draw": "Draw",
-                "dxfexport": "DXF Export",
-                "help": "Help",
-                "layers": "Layers & Legend",
-                "measure": "Measure",
-                "print": "Print",
-                "share": "Share Link",
-                "themes": "Theme",
-                "tools": "Map Tools"
+                "Draw": "Draw",
+                "DxfExport": "DXF Export",
+                "Help": "Help",
+                "LayerTree": "Layers & Legend",
+                "Measure": "Measure",
+                "Print": "Print",
+                "Share": "Share Link",
+                "ThemeSwitcher": "Theme",
+                "Tools": "Map Tools"
             },
             "menulabel": "Map & Tools"
         },

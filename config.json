@@ -27,16 +27,20 @@
             "name": "TopBar",
             "cfg": {
               "menuItems": [
-                {"key": "themes", "icon": "img/themes.svg"},
-                {"key": "layers", "icon": "img/layers.svg"},
-                {"key": "share", "icon": "img/share.svg"},
-                {"key": "tools", "icon": "img/tools.svg", "subitems": [
-                  {"key": "measure", "icon": "img/measure.svg"},
-                  {"key": "draw", "icon": "img/draw.svg"},
-                  {"key": "dxfexport", "icon": "img/dxfexport.svg"}
+                {"key": "ThemeSwitcher", "icon": "img/themes.svg"},
+                {"key": "LayerTree", "icon": "img/layers.svg"},
+                {"key": "Share", "icon": "img/share.svg"},
+                {"key": "Tools", "icon": "img/tools.svg", "subitems": [
+                  {"key": "Measure", "icon": "img/measure_white.svg"},
+                  {"key": "Draw", "icon": "img/draw.svg"},
+                  {"key": "DxfExport", "icon": "img/dxfexport.svg"}
                 ]},
-                {"key": "print", "icon": "img/print.svg"},
-                {"key": "help", "icon": "img/info.svg"}
+                {"key": "Print", "icon": "img/print.svg"},
+                {"key": "Help", "icon": "img/info.svg"}
+              ],
+              "toolbarItems": [
+                {"key": "Measure", "icon": "img/measure.svg"},
+                {"key": "Print", "icon": "img/print.svg"}
               ],
               "search": {
                 "minScale": 1000
@@ -107,16 +111,20 @@
             "name": "TopBar",
             "cfg": {
               "menuItems": [
-                {"key": "themes", "icon": "img/themes.svg"},
-                {"key": "layers", "icon": "img/layers.svg"},
-                {"key": "share", "icon": "img/share.svg"},
-                {"key": "tools", "icon": "img/tools.svg", "subitems": [
-                  {"key": "measure", "icon": "img/measure.svg"},
-                  {"key": "draw", "icon": "img/draw.svg"},
-                  {"key": "dxfexport", "icon": "img/dxfexport.svg"}
+                {"key": "ThemeSwitcher", "icon": "img/themes.svg"},
+                {"key": "LayerTree", "icon": "img/layers.svg"},
+                {"key": "Share", "icon": "img/share.svg"},
+                {"key": "Tools", "icon": "img/tools.svg", "subitems": [
+                  {"key": "Measure", "icon": "img/measure_white.svg"},
+                  {"key": "Draw", "icon": "img/draw.svg"},
+                  {"key": "DxfExport", "icon": "img/dxfexport.svg"}
                 ]},
-                {"key": "print", "icon": "img/print.svg"},
-                {"key": "help", "icon": "img/info.svg"}
+                {"key": "Print", "icon": "img/print.svg"},
+                {"key": "Help", "icon": "img/info.svg"}
+              ],
+              "toolbarItems": [
+                {"key": "Measure", "icon": "img/measure.svg"},
+                {"key": "Print", "icon": "img/print.svg"}
               ],
               "search": {
                 "minScale": 1000

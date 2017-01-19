@@ -3,15 +3,15 @@
     "messages": {
         "appmenu": {
             "items": {
-                "draw": "Zeichnen",
-                "dxfexport": "DXF-Export",
-                "help": "Hilfe",
-                "layers": "Ebenen und Legende",
-                "measure": "Messen",
-                "print": "Drucken",
-                "share": "Teilen",
-                "themes": "Themen",
-                "tools": "Werkzeuge"
+                "Draw": "Zeichnen",
+                "DxfExport": "DXF-Export",
+                "Help": "Hilfe",
+                "LayerTree": "Ebenen und Legende",
+                "Measure": "Messen",
+                "Print": "Drucken",
+                "Share": "Teilen",
+                "ThemeSwitcher": "Themen",
+                "Tools": "Werkzeuge"
             },
             "menulabel": "Karte & Werkzeuge"
         },

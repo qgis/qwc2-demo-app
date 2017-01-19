@@ -12,7 +12,7 @@
    viewBox="0 0 18 18"
    version="1.1"
    id="svg11"
-   inkscape:version="0.92.0 r"
+   inkscape:version="0.92pre3 r"
    sodipodi:docname="measure.svg">
   <metadata
      id="metadata17">
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -43,7 +43,7 @@
      showgrid="true"
      units="px"
      inkscape:zoom="13.906433"
-     inkscape:cx="1.8514778"
+     inkscape:cx="13.213126"
      inkscape:cy="-0.080225988"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -54,23 +54,23 @@
        id="grid4473" />
   </sodipodi:namedview>
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#575757;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1.125,4.875 v 7.5 h 15.75 v -7.5 z"
      id="path4475"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccccc" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#575757;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 4.875,7.875 v 4.5"
      id="path4477"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#575757;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 9,7.875 v 4.5"
      id="path4479"
      inkscape:connector-curvature="0" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#575757;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 13.125,7.875 v 4.5"
      id="path4483"
      inkscape:connector-curvature="0" />

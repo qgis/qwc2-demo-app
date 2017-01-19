@@ -3,15 +3,15 @@
     "messages": {
         "appmenu": {
             "items": {
-                "draw": "",
-                "dxfexport": "",
-                "help": "",
-                "layers": "",
-                "measure": "",
-                "print": "",
-                "share": "",
-                "themes": "",
-                "tools": ""
+                "Draw": "",
+                "DxfExport": "",
+                "Help": "",
+                "LayerTree": "",
+                "Measure": "",
+                "Print": "",
+                "Share": "",
+                "ThemeSwitcher": "",
+                "Tools": ""
             },
             "menulabel": ""
         },
