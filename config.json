@@ -3,6 +3,8 @@
   "qwc2serverUrl": "http://qwc2.sourcepole.ch/api/",
   "translationsPath": "./translations",
   "assetsPath": "/assets",
+  "urlPositionFormat": "extent",
+  "__urlPositionFormatAllowedValues": ["extent", "centerAndZoom"],
   "plugins": {
       "mobile": [
         {
