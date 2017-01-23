@@ -39,7 +39,8 @@
                 {"key": "Help", "icon": "img/info.svg"}
               ],
               "toolbarItems": [
-                {"key": "Measure", "icon": "img/measure.svg"},
+                {"key": "Measure", "mode": "LineString", "icon": "img/measure_line.svg"},
+                {"key": "Measure", "mode": "Polygon", "icon": "img/measure_polygon.svg"},
                 {"key": "Print", "icon": "img/print.svg"}
               ],
               "search": {
@@ -51,7 +52,10 @@
           "name": "ThemeSwitcher"
         },
         {
-          "name": "Measure"
+          "name": "Measure",
+          "cfg": {
+            "showMeasureModeSwitcher": true
+          }
         },
         {
           "name": "Identify",
@@ -123,7 +127,8 @@
                 {"key": "Help", "icon": "img/info.svg"}
               ],
               "toolbarItems": [
-                {"key": "Measure", "icon": "img/measure.svg"},
+                {"key": "Measure", "mode": "LineString", "icon": "img/measure_line.svg"},
+                {"key": "Measure", "mode": "Polygon", "icon": "img/measure_polygon.svg"},
                 {"key": "Print", "icon": "img/print.svg"}
               ],
               "search": {
@@ -139,7 +144,10 @@
           }
         },
         {
-          "name": "Measure"
+          "name": "Measure",
+          "cfg": {
+            "showMeasureModeSwitcher": true
+          }
         },
         {
           "name": "ThemeSwitcher"
