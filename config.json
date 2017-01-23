@@ -4,7 +4,7 @@
   "translationsPath": "./translations",
   "assetsPath": "/assets",
   "urlPositionFormat": "extent",
-  "__urlPositionFormatAllowedValues": ["extent", "centerAndZoom"],
+  "urlPositionCrs": "",
   "plugins": {
       "mobile": [
         {
