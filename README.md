@@ -1,6 +1,9 @@
 QGIS Web Client 2 Demo Application
 ==================================
 
+**When upgrading, please note the changelog if incompatible changes at the
+bottom of this document**
+
 Quick Start
 -----------
 
@@ -135,6 +138,29 @@ generates a runtime configuration `themes.json`. It is automatically run on
 `yarn run themesconfig` in the development tree and copy the resulting
 `themes.json` to the production folder.
 
+### URL parameters
+The following parameters can appear in the URL:
+
+ * `t`: The active theme
+ * `l`: The visible layers in the map
+ * `bl`: The visible background layer
+ * `st`: The search text
+ * `e`: The visible extent
+ * `c`: The center of the visible extent
+ * `s`: The current scale
+ * `crs`: The CRS of extent/center coordinates
+
+The `urlPositionFormat` parameter in `config.json` determines whether extent or
+center + scale appear in the URL. Allowed values are `extent` and `centerAndZoom`.
+Default is `extent`.
+
+The `urlPositionCrs` parameter in `config.json` determines the CRS to use for the
+extent/center coordinates in the URL. The value is an EPSG code (i.e. `EPSG:4326`).
+Default is the map projection.
+
+If `urlPositionCrs` is equal to the map projection, the `crs` parameter is
+omitted in the URL, but it can be manually added to the URL to specify the initial
+extent/center in a desired CRS.
 
 ### Server
 
@@ -212,3 +238,11 @@ Preparation for developers
 * http://redux.js.org/
 * https://egghead.io/courses/getting-started-with-redux
 * https://egghead.io/courses/building-react-applications-with-idiomatic-redux
+
+List of incompatible changes between releases
+---------------------------------------------
+
+- `v0.2` -> `master`
+ * Keys of TopBar menuItems in config.js have been renamed
+ * Center/extent coordinates in URL by default in map projection instead of EPSG:4326
+ * The search text URL parameter key is now `st` instead of `s`
