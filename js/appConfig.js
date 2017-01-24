@@ -33,7 +33,12 @@ module.exports = {
             ZoomInPlugin: require('../qwc2/QWC2Components/plugins/ZoomButtons'),
             ZoomOutPlugin: require('../qwc2/QWC2Components/plugins/ZoomButtons'),
             BackgroundSwitcherPlugin: require('../qwc2/QWC2Components/plugins/BackgroundSwitcher'),
-            TopBarPlugin: require('../qwc2/QWC2Components/plugins/TopBar')(SearchProviders),
+            TopBarPlugin: require('../qwc2/QWC2Components/plugins/TopBar')({
+                 AppMenu: require("../qwc2/QWC2Components/components/AppMenu"),
+                 Search: require("../qwc2/QWC2Components/components/Search")(SearchProviders),
+                 Toolbar: require("../qwc2/QWC2Components/components/Toolbar"),
+                 FullscreenSwitcher: require("../qwc2/QWC2Components/components/FullscreenSwitcher")
+            }),
             BottomBarPlugin: require('../qwc2/QWC2Components/plugins/BottomBar'),
             MeasurePlugin: require('../qwc2/QWC2Components/plugins/Measure'),
             ThemeSwitcherPlugin: require('../qwc2/QWC2Components/plugins/ThemeSwitcher'),
