@@ -60,6 +60,59 @@ const axios = require('axios');
 const {searchResultLoaded} = require("../qwc2/MapStore2/web/client/actions/search");
 const CoordinatesUtils = require('../qwc2/MapStore2/web/client/utils/CoordinatesUtils');
 
+function coordinatesSearch(text, searchOptions, dispatch) {
+    let displaycrs = searchOptions.displaycrs || "EPSG:4326";
+    let matches = text.match(/^\s*(\d+\.?\d*),?\s*(\d+\.?\d*)\s*$/);
+    if(matches && matches.length >= 3) {
+        let x = parseFloat(matches[1]);
+        let y = parseFloat(matches[2]);
+        let items = [];
+        if(displaycrs !== "EPSG:4326") {
+            let coord = CoordinatesUtils.reproject([x, y], displaycrs, "EPSG:4326");
+            items.push({
+                id: "coord0",
+                text: x + ", " + y + " (" + displaycrs + ")",
+                x: coord.x,
+                y: coord.y,
+                crs: "EPSG:4326",
+                bbox: [x, y, x, y]
+            });
+        }
+        if(x >= -180 && x <= 180 && y >= -90 && y <= 90) {
+            let title = Math.abs(x) + (x >= 0 ? "°E" : "°W") + ", "
+                      + Math.abs(y) + (y >= 0 ? "°N" : "°S");
+            items.push({
+                id: "coord" + items.length,
+                text: title,
+                x: x,
+                y: y,
+                crs: "EPSG:4326",
+                bbox: [x, y, x, y]
+            });
+        }
+        if(x >= -90 && x <= 90 && y >= -180 && y <= 180 && x != y) {
+            let title = Math.abs(y) + (y >= 0 ? "°E" : "°W") + ", "
+                      + Math.abs(x) + (x >= 0 ? "°N" : "°S");
+            items.push({
+                id: "coord" + items.length,
+                text: title,
+                x: y,
+                y: x,
+                crs: "EPSG:4326",
+                bbox: [y, x, y, x]
+            });
+        }
+        let results = [{
+            id: "coords",
+            titlemsgid: "search.coordinates",
+            items: items
+        }];
+        dispatch(searchResultLoaded({data: results}, true));
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
 function geoAdminLocationSearch(text, searchOptions, dispatch) {
     axios.get("http://api3.geo.admin.ch/rest/services/api/SearchServer?searchText="+ encodeURIComponent(text) + "&type=locations&limit=20")
     .then(response => dispatch(geoAdminLocationSearchResults(response.data)));
@@ -266,8 +319,11 @@ function glarusResultGeometry(resultItem, callback) {
 }
 
 module.exports = {
+    "coordinates": {
+        onSearch: coordinatesSearch
+    },
     "geoadmin": {
-        onSearch: geoAdminLocationSearch,
+        onSearch: geoAdminLocationSearch
     },
     "uster": {
         onSearch: usterSearch,
