@@ -5,7 +5,6 @@
   "assetsPath": "/assets",
   "urlPositionFormat": "extent",
   "urlPositionCrs": "",
-  "minSearchZoomScale": 1000,
   "plugins": {
       "mobile": [
         {
@@ -45,7 +44,11 @@
                 {"key": "Measure", "mode": "LineString", "icon": "img/measure_line.svg"},
                 {"key": "Measure", "mode": "Polygon", "icon": "img/measure_polygon.svg"},
                 {"key": "Print", "icon": "img/print.svg"}
-              ]
+              ],
+              "searchOptions": {
+                "minScale": 1000,
+                "showProviderSelection": false
+              }
             }
         },
         {
@@ -130,7 +133,11 @@
                 {"key": "Measure", "mode": "LineString", "icon": "img/measure_line.svg"},
                 {"key": "Measure", "mode": "Polygon", "icon": "img/measure_polygon.svg"},
                 {"key": "Print", "icon": "img/print.svg"}
-              ]
+              ],
+              "searchOptions": {
+                "minScale": 1000,
+                "showProviderSelection": true
+              }
             }
         },
         {
