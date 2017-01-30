@@ -271,7 +271,7 @@ function getTheme(configItem, resultItem) {
             }
 
             // set default theme
-            if (configItem.default) {
+            if (configItem.default || !result.themes.defaultTheme) {
                 result.themes.defaultTheme = resultItem.name;
             }
 
