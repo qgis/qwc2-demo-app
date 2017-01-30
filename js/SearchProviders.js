@@ -320,20 +320,25 @@ function glarusResultGeometry(resultItem, callback) {
 
 module.exports = {
     "coordinates": {
+        label: "Coordinates",
         onSearch: coordinatesSearch
     },
     "geoadmin": {
+        label: "Swisstopo",
         onSearch: geoAdminLocationSearch
     },
     "uster": {
+        label: "Uster",
         onSearch: usterSearch,
         getResultGeometry: usterResultGeometry
     },
     "wolfsburg": {
+        label: "Wolfsburg",
         onSearch: wolfsburgSearch,
         getResultGeometry: wolfsburgResultGeometry
     },
     "glarus": {
+        label: "Glarus",
         onSearch: glarusSearch,
         getResultGeometry: glarusResultGeometry,
         getMoreResults: glarusMoreResults
