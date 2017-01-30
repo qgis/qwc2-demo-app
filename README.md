@@ -246,3 +246,5 @@ List of incompatible changes between releases
  * Keys of TopBar menuItems in config.js have been renamed
  * Center/extent coordinates in URL by default in map projection instead of EPSG:4326
  * The search text URL parameter key is now `st` instead of `s`
+ * The individual TopBar plugin components are now configured in js/appConfig.js
+ * The coordinate search provider was moved to js/SearchProviders.js
