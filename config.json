@@ -136,7 +136,7 @@
               ],
               "searchOptions": {
                 "minScale": 1000,
-                "showProviderSelection": true
+                "showProviderSelection": false
               }
             }
         },
