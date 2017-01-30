@@ -15,7 +15,7 @@
             "visibility": true
           }
         ],
-        "searchProviders": ["coordinates", "wolfsburg"]
+        "searchProviders": ["coordinates", "wolfsburg"],
         "additionalMouseCrs": ["EPSG:25832"]
       },
       {
