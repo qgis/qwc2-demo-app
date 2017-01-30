@@ -1,8 +1,5 @@
 let styleConfig = {
   assets_path: "/assets",
-
-  input_border: "#a6a6a6",
-  control_border: "#cccccc",
   // windows, dialogs
   dialog_bg: "#f2f2f2",
   dialog_fg: "#595959",
