@@ -1,7 +1,7 @@
 QGIS Web Client 2 Demo Application
 ==================================
 
-**When upgrading, please note the changelog if incompatible changes at the
+**When upgrading, please note the changelog of incompatible changes at the
 bottom of this document**
 
 Quick Start
