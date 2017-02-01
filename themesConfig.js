@@ -221,7 +221,11 @@ function getTheme(configItem, resultItem) {
             // print templates
             var printTemplates = [];
             if (capabilities.Capability.ComposerTemplates !== undefined) {
-                for (var composerTemplate of capabilities.Capability.ComposerTemplates.ComposerTemplate) {
+                let templates = capabilities.Capability.ComposerTemplates.ComposerTemplate;
+                if(!templates.length) {
+                    templates = [templates];
+                }
+                for (var composerTemplate of templates) {
                     var printTemplate = {
                         name: composerTemplate.$.name
                     };
