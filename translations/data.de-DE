@@ -55,6 +55,7 @@
         "search": {
             "coordinates": "Koordinaten",
             "placeholder": "Suche nach Objekten/Namen und Koordinaten"
+            "more": "Mehr..."
         },
         "share": {
             "QRCodeLinkTitle": "QR Code (Smartphone)",

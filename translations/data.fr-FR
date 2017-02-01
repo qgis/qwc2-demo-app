@@ -54,7 +54,8 @@
         },
         "search": {
             "coordinates": "",
-            "placeholder": "Recherche par toponyme ou coordonn\u00e9es..."
+            "placeholder": "Recherche par toponyme ou coordonn\u00e9es...",
+            "more": ""
         },
         "share": {
             "QRCodeLinkTitle": "qr code",

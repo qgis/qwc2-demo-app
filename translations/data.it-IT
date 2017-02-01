@@ -54,7 +54,8 @@
         },
         "search": {
             "coordinates": "",
-            "placeholder": "Cerca un indirizzo o inserisci coordinate..."
+            "placeholder": "Cerca un indirizzo o inserisci coordinate...",
+            "more": ""
         },
         "share": {
             "QRCodeLinkTitle": "Usando il QR Code",

@@ -54,7 +54,8 @@
         },
         "search": {
             "coordinates": "Coordinates",
-            "placeholder": "Search for locations and coordinates..."
+            "placeholder": "Search for locations and coordinates...",
+            "more": "More..."
         },
         "share": {
             "QRCodeLinkTitle": "qr code",
