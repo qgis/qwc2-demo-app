@@ -103,11 +103,16 @@ function coordinatesSearch(text, searchOptions, dispatch) {
             });
         }
     }
-    let results = [{
-        id: "coords",
-        titlemsgid: "search.coordinates",
-        items: items
-    }];
+    let results = [];
+    if(items.length > 0) {
+        results.push(
+            {
+                id: "coords",
+                titlemsgid: "search.coordinates",
+                items: items
+            }
+        );
+    }
     dispatch(searchResultLoaded({data: results}, true));
 }
 
