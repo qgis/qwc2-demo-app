@@ -1,7 +1,7 @@
 {
   "proxyUrl": "http://qwc2.sourcepole.ch/api/proxy?url=",
   "qwc2serverUrl": "http://qwc2.sourcepole.ch/api/",
-  "translationsPath": "./translations",
+  "translationsPath": "/translations",
   "assetsPath": "/assets",
   "urlPositionFormat": "extent",
   "urlPositionCrs": "",
