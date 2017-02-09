@@ -33,10 +33,10 @@ print.scale
 print.submit
 search.coordinates
 search.placeholder
+search.more
 share.directLinkTitle
 share.generatingpermalink
 share.msgToCopyUrl
 share.QRCodeLinkTitle
 share.socialIntro
-share.more
 themeswitcher.filter
