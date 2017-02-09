@@ -4565,6 +4565,10 @@ jstransform@^11.0.3:
     object-assign "^2.0.0"
     source-map "^0.4.2"
 
+jsts@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/jsts/-/jsts-1.3.0.tgz#e93a76f97ac9bda7d4625d9d6470f0d60ac80e45"
+
 junk@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/junk/-/junk-1.0.2.tgz#cc71db3c05d53b3238d0f1dec97a88267c10700e"
