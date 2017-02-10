@@ -247,6 +247,9 @@ function getTheme(configItem, resultItem) {
                 }
             }
 
+            // drawing order
+            let drawingOrder = capabilities.Capability.LayerDrawingOrder.split(",");
+
             // update theme config
             resultItem.id = themeId;
             resultItem.name = topLayer.Name;
@@ -273,6 +276,7 @@ function getTheme(configItem, resultItem) {
             if (printTemplates.length > 0) {
                 resultItem.print = printTemplates;
             }
+            resultItem.drawingOrder = drawingOrder;
 
             // set default theme
             if (configItem.default || !result.themes.defaultTheme) {
