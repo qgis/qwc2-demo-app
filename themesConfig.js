@@ -132,6 +132,7 @@ function getLayerTree(layer, resultLayers, visibleLayers, printLayers) {
     } else {
         // group
         layerEntry.sublayers = [];
+        layerEntry.expanded = true;
         for (var subLayer of toArray(layer.Layer)) {
             getLayerTree(subLayer, layerEntry.sublayers, visibleLayers, printLayers);
         }
@@ -274,6 +275,7 @@ function getTheme(configItem, resultItem) {
             resultItem.scales = configItem.scales;
             // NOTE: skip root WMS layer
             resultItem.sublayers = layerTree[0].sublayers;
+            resultItem.expanded = true;
             resultItem.backgroundLayers = configItem.backgroundLayers;
             resultItem.searchProviders = configItem.searchProviders;
             resultItem.additionalMouseCrs = configItem.additionalMouseCrs;

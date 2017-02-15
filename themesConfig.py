@@ -138,6 +138,7 @@ def getLayerTree(layer, resultLayers, visibleLayers, printLayers):
     else:
         # group
         layerEntry["sublayers"] = []
+        layerEntry["expanded"] = True
         for sublayer in layers:
             getLayerTree(sublayer, layerEntry["sublayers"], visibleLayers, printLayers)
 
@@ -234,6 +235,7 @@ def getTheme(configItem, resultItem):
             resultItem["scales"] = configItem["scales"]
         # NOTE: skip root WMS layer
         resultItem["sublayers"] = layerTree[0]["sublayers"]
+        resultItem["expanded"] = True
         resultItem["backgroundLayers"] = configItem["backgroundLayers"]
         resultItem["searchProviders"] = configItem["searchProviders"]
         resultItem["additionalMouseCrs"] = configItem["additionalMouseCrs"]
