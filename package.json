@@ -111,7 +111,7 @@
     },
     "scripts": {
         "clean": "rimraf dist",
-        "build": "npm run clean && mkdirp ./dist && NODE_ENV='production' webpack",
+        "build": "node -e \"process.exit(require('os').platform() === 'win32' ? 0 : 1)\" && package-commands.bat build || ./package-commands.sh build",
         "start": "npm run themesconfig && webpack-dev-server --progress --colors --port 8081",
         "test": "karma start ./karma.conf.single-run.js",
         "continuoustest": "karma start ./karma.conf.continuous-test.js",
@@ -119,8 +119,9 @@
         "lint": "eslint js --ext .jsx,.js",
         "travis": "eslint js --ext .jsx,.js && karma start ./karma.conf.single-run.js --browsers Firefox --reporters dots,junit,coverage,coveralls",
         "themesconfig": "node themesConfig.js",
-        "prod": "npm run build && npm run themesconfig && rimraf prod && mkdirp ./prod/translations && cp -a ./dist ./index.html ./assets ./themes.json ./config.json ./prod && cp -a ./translations/data.* ./prod/translations",
-        "analyze": "NODE_ENV='production' webpack --json | webpack-bundle-size-analyzer"
+        "prod": "node -e \"process.exit(require('os').platform() === 'win32' ? 0 : 1)\" && package-commands.bat prod || ./package-commands.sh prod",
+        "analyze": "node -e \"process.exit(require('os').platform() === 'win32' ? 0 : 1)\" && package-commands.bat analyze || ./package-commands.sh analyze",
+        "release": "node -e \"process.exit(require('os').platform() === 'win32' ? 0 : 1)\" && package-commands.bat release || ./package-commands.sh release"
     },
     "author": "Sourcepole",
     "license": "BSD-2-Clause"
