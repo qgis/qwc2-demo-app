@@ -236,6 +236,8 @@ def getTheme(configItem, resultItem):
             ]
         if "scales" in configItem:
             resultItem["scales"] = configItem["scales"]
+        if "printScales" in configItem:
+            resultItem["printScales"] = configItem["printScales"]
         # NOTE: skip root WMS layer
         resultItem["sublayers"] = layerTree[0]["sublayers"]
         resultItem["expanded"] = True
@@ -304,6 +306,7 @@ def getGroupThemes(configGroup, resultGroup):
           "attributionUrl": "<attribution URL>",      // optional theme attribution URL
           "default": true,                            // optional, set this as the initial theme
           "scales": [25000, 10000, 5000, 2500],       // optional custom map scales
+          "printScales":  [25000, 10000, 5000, 2500], // optional confined set of print scales. Freely choosable if not defined.
           "extent": [xmin, ymin, xmax, ymax],         // optional custom extent which overrides extent from WMS capabilities
           "tiled": true,                              // optional, use tiled WMS (default is false)
           "format": "image/png",                      // optional, the image format to use in the WMS request, defaults to image/png
