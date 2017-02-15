@@ -116,7 +116,11 @@ function getLayerTree(layer, resultLayers, visibleLayers, printLayers) {
                 layerEntry.attributionUrl = layer.Attribution.OnlineResource.$['xlink:href'];
             }
         }
-        layerEntry.opacity = 255;
+        if(layer.$.transparency) {
+            layerEntry.opacity = 255 - Math.floor(parseFloat(layer.$.transparency) / 100 * 255)
+        } else {
+            layerEntry.opacity = 255;
+        }
         if (layer.MinScaleDenominator !== undefined) {
             layerEntry.minScale = parseInt(layer.MinScaleDenominator, 10);
             layerEntry.maxScale = parseInt(layer.MaxScaleDenominator, 10);

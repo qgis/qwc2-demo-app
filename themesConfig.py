@@ -119,7 +119,10 @@ def getLayerTree(layer, resultLayers, visibleLayers, printLayers):
             if onlineResource:
                 layerEntry["attributionUrl"] = onlineResource.getAttribute("xlink:href")
 
-        layerEntry["opacity"] = 255
+        if layer.getAttribute("transparency"):
+            layerEntry["opacity"] = 255 - int(float(layer.getAttribute("transparency")) / 100 * 255)
+        else:
+            layerEntry["opacity"] = 255
         minScale = getChildElementValue(layer, "MinScaleDenominator")
         maxScale = getChildElementValue(layer, "MaxScaleDenominator")
         if minScale and maxScale:
