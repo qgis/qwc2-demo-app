@@ -11,7 +11,10 @@ try:
     from urllib.request import urlopen
 except:
     from urllib2 import urlopen
-from urllib import quote
+try:
+    from urllib.parse import quote
+except:
+    from urllib import quote
 from xml.dom.minidom import parseString
 import json
 import traceback
