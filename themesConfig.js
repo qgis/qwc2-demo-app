@@ -261,12 +261,16 @@ function getTheme(configItem, resultItem) {
             resultItem.tiled = configItem.tiled;
             // use geographic bounding box for theme, as default CRS may have inverted axis order with WMS 1.3.0
             resultItem.crs = "EPSG:4326";
-            resultItem.extent = [
-                parseFloat(topLayer.EX_GeographicBoundingBox.westBoundLongitude),
-                parseFloat(topLayer.EX_GeographicBoundingBox.southBoundLatitude),
-                parseFloat(topLayer.EX_GeographicBoundingBox.eastBoundLongitude),
-                parseFloat(topLayer.EX_GeographicBoundingBox.northBoundLatitude)
-            ];
+            if(configItem.extent) {
+                resultItem.extent = configItem.extent;
+            } else {
+                resultItem.extent = [
+                    parseFloat(topLayer.EX_GeographicBoundingBox.westBoundLongitude),
+                    parseFloat(topLayer.EX_GeographicBoundingBox.southBoundLatitude),
+                    parseFloat(topLayer.EX_GeographicBoundingBox.eastBoundLongitude),
+                    parseFloat(topLayer.EX_GeographicBoundingBox.northBoundLatitude)
+                ];
+            }
             resultItem.scales = configItem.scales;
             // NOTE: skip root WMS layer
             resultItem.sublayers = layerTree[0].sublayers;
@@ -331,6 +335,7 @@ function getGroupThemes(configGroup, resultGroup) {
           "attributionUrl": "<attribution URL>",      // optional theme attribution URL
           "default": true,                            // optional, set this as the initial theme
           "scales": [25000, 10000, 5000, 2500],       // optional custom map scales
+          "extent": [xmin, ymin, xmax, ymax],         // optional custom extent which overrides extent from WMS capabilities
           "tiled": true,                              // optional, use tiled WMS (default is false)
           "format": "image/png",                      // optional, the image format to use in the WMS request, defaults to image/png
           "backgroundLayers": [                       // optional background layers
