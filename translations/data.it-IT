@@ -66,6 +66,9 @@
         },
         "themeswitcher": {
             "filter": ""
+        },
+        "bgswitcher": {
+            "nobg": ""
         }
     }
 }
