@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@bokuweb/react-draggable-custom@^1.3.10":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@bokuweb/react-draggable-custom/-/react-draggable-custom-1.4.0.tgz#e563dc7e75df84fd0e45c3eff566446741654766"
+  dependencies:
+    classnames "^2.2.0"
+
 JSONStream@^1.0.3:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.2.1.tgz#32aa5790e799481083b49b4b7fa94e23bae69bf9"
@@ -4923,6 +4929,10 @@ lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
 
+lodash.isequal@^4.2.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+
 lodash.keys@^3.0.0:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/lodash.keys/-/lodash.keys-3.1.2.tgz#4dbc0472b156be50a0b286855d1bd0b0c656098a"
@@ -6415,6 +6425,19 @@ react-redux@4.4.1, react-redux@^4.0.0:
     invariant "^2.0.0"
     lodash "^4.2.0"
     loose-envify "^1.1.0"
+
+react-resizable-box@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/react-resizable-box/-/react-resizable-box-1.8.1.tgz#3713bc2327cafb9612c49c1dce0e7bf3bb56fbcb"
+  dependencies:
+    lodash.isequal "^4.2.0"
+
+react-rnd@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-rnd/-/react-rnd-4.2.0.tgz#3c7069bc2a4eda5c2b068d4645afa31f71b468e3"
+  dependencies:
+    "@bokuweb/react-draggable-custom" "^1.3.10"
+    react-resizable-box "^1.8.1"
 
 react-share@1.8.0:
   version "1.8.0"

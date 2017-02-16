@@ -116,10 +116,26 @@ function getLayerTree(layer, resultLayers, visibleLayers, printLayers) {
                 layerEntry.attributionUrl = layer.Attribution.OnlineResource.$['xlink:href'];
             }
         }
+        if (layer.Abstract) {
+            layerEntry.abstract = layer.Abstract;
+        }
+        if(layer.DataURL && layer.DataURL.OnlineResource) {
+            layerEntry.dataUrl = layer.DataURL.OnlineResource.$['xlink:href'];
+        }
+        if(layer.MetadataURL && layer.MetadataURL.OnlineResource) {
+            layerEntry.metadataUrl = layer.MetadataURL.OnlineResource.$['xlink:href'];
+        }
         if(layer.$.transparency) {
             layerEntry.opacity = 255 - Math.floor(parseFloat(layer.$.transparency) / 100 * 255)
         } else {
             layerEntry.opacity = 255;
+        }
+        if(layer.KeywordList) {
+            var keywords = [];
+            toArray(layer.KeywordList.Keyword).map((entry) => {
+                keywords.push((typeof entry === 'object') ? entry._ : entry);
+            });
+            layerEntry.keywords = keywords.join(",");
         }
         if (layer.MinScaleDenominator !== undefined) {
             layerEntry.minScale = parseInt(layer.MinScaleDenominator, 10);

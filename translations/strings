@@ -18,6 +18,13 @@ identify.querying
 identifyTitle
 layertree.maptip
 layertree.transparency
+layerinfo.title
+layerinfo.abstract
+layerinfo.attribution
+layerinfo.keywords
+layerinfo.dataUrl
+layerinfo.metadataUrl
+layerinfo.legend
 map.loading
 measureComponent.areaLabel
 measureComponent.bearingLabel

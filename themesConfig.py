@@ -112,12 +112,33 @@ def getLayerTree(layer, resultLayers, visibleLayers, printLayers):
         if layerEntry["queryable"] and layer.getAttribute("displayField"):
             layerEntry["displayField"] = layer.getAttribute("displayField")
 
-        attribution = getChildElement(layer, "Attribution")
-        if attribution:
-            layerEntry["attribution"] = getChildElementValue(attribution, "Title")
-            onlineResource = getChildElement(attribution, "OnlineResource")
-            if onlineResource:
-                layerEntry["attributionUrl"] = onlineResource.getAttribute("xlink:href")
+        try:
+            layerEntry["attribution"] = getChildElementValue(layer, "Attribution/Title")
+            onlineResource = getChildElement(layer, "Attribution/OnlineResource")
+            layerEntry["attributionUrl"] = onlineResource.getAttribute("xlink:href")
+        except:
+            pass
+        try:
+            layerEntry["abstract"] = getChildElementValue(layer, "Abstract")
+        except:
+            pass
+        try:
+            onlineResource = getChildElement(layer, "DataURL/OnlineResource")
+            layerEntry["dataUrl"] = onlineResource.getAttribute("xlink:href")
+        except:
+            pass
+        try:
+            onlineResource = getChildElement(layer, "MetadataURL/OnlineResource")
+            layerEntry["metadataUrl"] = onlineResource.getAttribute("xlink:href")
+        except:
+            pass
+        try:
+            keywords = []
+            for keyword in getChildElement(layer, "KeywordList").getElementsByTagName("Keyword"):
+                keywords.append(getElementValue(keyword))
+            layerEntry["keywords"] = ",".join(keywords)
+        except:
+            pass
 
         if layer.getAttribute("transparency"):
             layerEntry["opacity"] = 255 - int(float(layer.getAttribute("transparency")) / 100 * 255)

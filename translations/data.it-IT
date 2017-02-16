@@ -15,6 +15,9 @@
             },
             "menulabel": ""
         },
+        "bgswitcher": {
+            "nobg": ""
+        },
         "bottombar": {
             "mousepos_label": "",
             "scale_label": "",
@@ -29,6 +32,15 @@
             "querying": ""
         },
         "identifyTitle": "Informazioni Sulle Feature",
+        "layerinfo": {
+            "abstract": "",
+            "attribution": "",
+            "dataUrl": "",
+            "keywords": "",
+            "legend": "",
+            "metadataUrl": "",
+            "title": ""
+        },
         "layertree": {
             "maptip": "",
             "transparency": ""
@@ -54,8 +66,8 @@
         },
         "search": {
             "coordinates": "",
-            "placeholder": "Cerca un indirizzo o inserisci coordinate...",
-            "more": ""
+            "more": "",
+            "placeholder": "Cerca un indirizzo o inserisci coordinate..."
         },
         "share": {
             "QRCodeLinkTitle": "Usando il QR Code",
@@ -66,9 +78,6 @@
         },
         "themeswitcher": {
             "filter": ""
-        },
-        "bgswitcher": {
-            "nobg": ""
         }
     }
 }

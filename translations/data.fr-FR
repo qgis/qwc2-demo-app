@@ -5,7 +5,7 @@
             "items": {
                 "Draw": "",
                 "DxfExport": "",
-                "Delp": "",
+                "Help": "",
                 "LayerTree": "",
                 "Measure": "",
                 "Print": "",
@@ -14,6 +14,9 @@
                 "Tools": ""
             },
             "menulabel": ""
+        },
+        "bgswitcher": {
+            "nobg": ""
         },
         "bottombar": {
             "mousepos_label": "",
@@ -29,6 +32,15 @@
             "querying": ""
         },
         "identifyTitle": "Informations de l'objet",
+        "layerinfo": {
+            "abstract": "",
+            "attribution": "",
+            "dataUrl": "",
+            "keywords": "",
+            "legend": "",
+            "metadataUrl": "",
+            "title": ""
+        },
         "layertree": {
             "maptip": "",
             "transparency": ""
@@ -54,8 +66,8 @@
         },
         "search": {
             "coordinates": "",
-            "placeholder": "Recherche par toponyme ou coordonn\u00e9es...",
-            "more": ""
+            "more": "",
+            "placeholder": "Recherche par toponyme ou coordonn\u00e9es..."
         },
         "share": {
             "QRCodeLinkTitle": "qr code",
@@ -66,9 +78,6 @@
         },
         "themeswitcher": {
             "filter": ""
-        },
-        "bgswitcher": {
-            "nobg": ""
         }
     }
 }

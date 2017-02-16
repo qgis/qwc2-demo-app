@@ -97,6 +97,7 @@
         "react-draggable": "1.3.4",
         "react-intl": "https://github.com/geosolutions-it/react-intl/tarball/react_014_1x",
         "react-redux": "4.4.1",
+        "react-rnd": "^4.2.0",
         "react-share": "1.8.0",
         "react-spinkit": "1.1.6",
         "react-swipeable": "3.7.0",
