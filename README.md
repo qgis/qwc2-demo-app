@@ -104,6 +104,17 @@ Configuration format:
         ],
         "searchProviders": ["<search provider>"],   // optional search providers
         "additionalMouseCrs": ["<epsg code>"]       // optional list of additional CRS for mouse position (map projection and WGS84 are listed by default). Make sure proj defs are loaded in js/appConfig.js.
+        "printLabelForSearchResult": "<labelid>"    // optional, a labelid in the print composition where to insert the label of the selected search result
+        "watermark": {                              // optional, configuration of watermark to place on raster-export images
+          "text": "<watermark text>",
+          "texpadding": "1",                        // optional, padding between text and frame, in points
+          "fontsize": "14",                         // optional, font size
+          "fontfamily": "sans",                     // optional, font family
+          "fontcolor": "#0000FF",                   // optional, font color
+          "backgroundcolor": "#FFFFFF",             // optional, background color of the frame
+          "framecolor": "#000000",                  // optional, color of the frame border
+          "framewidth": 1                           // optional, width of the frame border, in pixels
+        }
       }
     ],
     "groups": [                                     // optional, nested groups

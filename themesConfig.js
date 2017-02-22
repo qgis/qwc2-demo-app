@@ -36,14 +36,14 @@ function getThumbnail(configItem, resultItem, layers, crs, extent, resolve) {
     parsedUrl.query.FORMAT = "image/png";
     parsedUrl.query.TRANSPARENT = "TRUE";
     parsedUrl.query.STYLES = "";
-    parsedUrl.query.WIDTH = 128;
-    parsedUrl.query.HEIGHT = 96;
+    parsedUrl.query.WIDTH = 200;
+    parsedUrl.query.HEIGHT = 100;
     parsedUrl.query.CRS = crs;
     let bboxw = extent[2] - extent[0];
     let bboxh = extent[3] - extent[1];
     let bboxcx = 0.5 * (extent[0] + extent[2]);
     let bboxcy = 0.5 * (extent[1] + extent[3]);
-    let imgratio = 128./96.;
+    let imgratio = 200./100.;
     if(bboxw > bboxh) {
         let bboxratio = bboxw/bboxh;
         if(bboxratio > imgratio) {
@@ -304,6 +304,12 @@ function getTheme(configItem, resultItem) {
                 resultItem.print = printTemplates;
             }
             resultItem.drawingOrder = drawingOrder;
+            if(configItem.printLabelForSearchResult && resultItem.print) {
+                resultItem.printLabelForSearchResult = configItem.printLabelForSearchResult;
+            }
+            if(configItem.watermark) {
+                resultItem.watermark = configItem.watermark;
+            }
 
             // set default theme
             if (configItem.default || !result.themes.defaultTheme) {
@@ -371,6 +377,17 @@ function getGroupThemes(configGroup, resultGroup) {
           ],
           "searchProviders": ["<search provider>"],   // optional search providers
           "additionalMouseCrs": ["<epsg code>"]       // optional list of additional CRS for mouse position (map projection and WGS84 are listed by default). Make sure proj defs are loaded in js/appConfig.js.
+          "printLabelForSearchResult": "<labelid>"    // optional, a labelid in the print composition where to insert the label of the selected search result
+          "watermark": {                              // optional, configuration of watermark to place on raster-export images
+            "text": "<watermark text>",
+            "texpadding": "1",                        // optional, padding between text and frame, in points
+            "fontsize": "14",                         // optional, font size
+            "fontfamily": "sans",                     // optional, font family
+            "fontcolor": "#0000FF",                   // optional, font color
+            "backgroundcolor": "#FFFFFF",             // optional, background color of the frame
+            "framecolor": "#000000",                  // optional, color of the frame border
+            "framewidth": 1                           // optional, width of the frame border, in pixels
+          }
         }
       ],
       "groups": [                                     // optional, nested groups

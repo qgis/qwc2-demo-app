@@ -30,12 +30,12 @@ def getThumbnail(configItem, resultItem, layers, crs, extent):
     print("Using WMS GetMap to generate thumbnail for " + configItem["url"])
 
     # WMS GetMap request
-    url = configItem["url"] + "?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&STYLES=&WIDTH=128&HEIGHT=96&CRS=" + crs
+    url = configItem["url"] + "?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&STYLES=&WIDTH=200&HEIGHT=100&CRS=" + crs
     bboxw = extent[2] - extent[0]
     bboxh = extent[3] - extent[1]
     bboxcx = 0.5 * (extent[0] + extent[2])
     bboxcy = 0.5 * (extent[1] + extent[3])
-    imgratio = 128. / 96.
+    imgratio = 200. / 100.
     if bboxw > bboxh:
         bboxratio = bboxw / bboxh
         if bboxratio > imgratio:
@@ -268,6 +268,11 @@ def getTheme(configItem, resultItem):
         if printTemplates:
             resultItem["print"] = printTemplates
         resultItem["drawingOrder"] = drawingOrder;
+        if "printLabelForSearchResult" in configItem and "print" in resultItem:
+            resultItem["printLabelForSearchResult"] = configItem["printLabelForSearchResult"]
+
+        if "watermark" in configItem:
+            resultItem["watermark"] = configItem["watermark"];
 
         # set default theme
         if "default" in configItem or not result["themes"]["defaultTheme"]:
@@ -340,6 +345,17 @@ def getGroupThemes(configGroup, resultGroup):
           ],
           "searchProviders": ["<search provider>"],   // optional search providers
           "additionalMouseCrs": ["<epsg code>"]       // optional list of additional CRS for mouse position (map projection and WGS84 are listed by default). Make sure proj defs are loaded in js/appConfig.js.
+          "printLabelForSearchResult": "<labelid>"    // optional, a labelid in the print composition where to insert the label of the selected search result
+          "watermark": {                              // optional, configuration of watermark to place on raster-export images
+            "text": "<watermark text>",
+            "texpadding": "1",                        // optional, padding between text and frame, in points
+            "fontsize": "14",                         // optional, font size
+            "fontfamily": "sans",                     // optional, font family
+            "fontcolor": "#0000FF",                   // optional, font color
+            "backgroundcolor": "#FFFFFF",             // optional, background color of the frame
+            "framecolor": "#000000",                  // optional, color of the frame border
+            "framewidth": 1                           // optional, width of the frame border, in pixels
+          }
         }
       ],
       "groups": [                                     // optional, nested groups

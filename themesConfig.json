@@ -2,7 +2,7 @@
   "themes": {
     "items": [
       {
-        "url": "http://qwc2.sourcepole.ch/wms/wolfsburg/qwc2_demo",
+        "url": "http://127.0.0.1/wms/wolfsburg/qwc2_demo",
         "attribution": "Stadt Wolfsburg",
         "attributionUrl": "https://geoportal.stadt.wolfsburg.de/",
         "format": "image/png;mode=8bit",
@@ -19,7 +19,7 @@
         "additionalMouseCrs": ["EPSG:25832"]
       },
       {
-        "url": "http://qwc2.sourcepole.ch/wms/uster/bauprojekte",
+        "url": "http://127.0.0.1/wms/uster/bauprojekte",
         "attribution": "Stadt Uster",
         "attributionUrl": "https://gis.uster.ch/",
         "scales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
@@ -40,9 +40,9 @@
         "items": [
           {
             "title": "QWC2 Test",
-            "url": "http://qwc2.sourcepole.ch/wms/themes/test",
+            "url": "http://127.0.0.1/wms/themes/test",
             "attribution": "Demo attribution",
-            "attributionUrl": "https://qwc2.sourcepole.ch/",
+            "attributionUrl": "https://127.0.0.1/",
             "tiled": true,
             "backgroundLayers": [
               {
@@ -66,7 +66,18 @@
               }
             ],
             "searchProviders": ["coordinates", "geoadmin", "glarus"],
-            "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"]
+            "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"],
+            "printLabelForSearchResult": "test",
+            "watermark": {
+                "text": "Watermark Test",
+                "texpadding": "1",
+                "fontsize": "14",
+                "fontfamily": "sans",
+                "fontcolor": "#0000FF",
+                "backgroundcolor": "#FFFFFF",
+                "framecolor": "#000000",
+                "framewidth": 1
+            }
           }
         ],
         "groups": []
