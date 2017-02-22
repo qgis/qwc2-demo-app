@@ -9,6 +9,7 @@
                 "LayerTree": "Ebenen und Legende",
                 "Measure": "Messen",
                 "Print": "Drucken",
+                "RasterExport": "Raster-Export",
                 "Share": "Teilen",
                 "ThemeSwitcher": "Themen",
                 "Tools": "Werkzeuge"
@@ -25,7 +26,7 @@
             "viewertitle_label": "QWC2 Demo"
         },
         "dxfexport": {
-            "selectinfo": "Rechteck aufziehen f\u00fcr die zu exportierende Region",
+            "selectinfo": "Rechteck aufziehen um die zu exportierende Region",
             "symbologyscale": "Darstellungsmassstab"
         },
         "identify": {
@@ -36,7 +37,7 @@
             "abstract": "Zusammenfassung",
             "attribution": "Attribution",
             "dataUrl": "Daten-URL",
-            "keywords": "Schlüsselwörter",
+            "keywords": "Schl\u00fcsselw\u00f6rter",
             "legend": "Legende",
             "metadataUrl": "Metadaten-URL",
             "title": "Ebeneninformationen"
@@ -63,6 +64,10 @@
             "rotation": "Rotation",
             "scale": "Massstab",
             "submit": "PDF erzeugen"
+        },
+        "rasterexport": {
+            "format": "Format:",
+            "selectinfo": "Rechteck aufziehen um die zu exportierende Region"
         },
         "search": {
             "coordinates": "Koordinaten",

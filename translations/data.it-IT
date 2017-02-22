@@ -9,6 +9,7 @@
                 "LayerTree": "",
                 "Measure": "",
                 "Print": "",
+                "RasterExport": "",
                 "Share": "",
                 "ThemeSwitcher": "",
                 "Tools": ""
@@ -63,6 +64,10 @@
             "rotation": "",
             "scale": "",
             "submit": "Stampa"
+        },
+        "rasterexport": {
+            "format": "",
+            "selectinfo": ""
         },
         "search": {
             "coordinates": "",

@@ -4,6 +4,7 @@ appmenu.items.Help
 appmenu.items.LayerTree
 appmenu.items.Measure
 appmenu.items.Print
+appmenu.items.RasterExport
 appmenu.items.Share
 appmenu.items.ThemeSwitcher
 appmenu.items.Tools
@@ -38,6 +39,8 @@ print.resolution
 print.rotation
 print.scale
 print.submit
+rasterexport.format
+rasterexport.selectinfo
 search.coordinates
 search.placeholder
 search.more

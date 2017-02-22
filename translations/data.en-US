@@ -9,6 +9,7 @@
                 "LayerTree": "Layers & Legend",
                 "Measure": "Measure",
                 "Print": "Print",
+                "RasterExport": "Raster Export",
                 "Share": "Share Link",
                 "ThemeSwitcher": "Theme",
                 "Tools": "Map Tools"
@@ -63,6 +64,10 @@
             "rotation": "Rotation:",
             "scale": "Scale:",
             "submit": "Print"
+        },
+        "rasterexport": {
+            "format": "Format:",
+            "selectinfo": "Drag a rectangle around the region to export..."
         },
         "search": {
             "coordinates": "Coordinates",

@@ -35,7 +35,8 @@
                 {"key": "Tools", "icon": "img/tools.svg", "subitems": [
                   {"key": "Measure", "icon": "img/measure_white.svg"},
                   {"key": "Draw", "icon": "img/draw.svg"},
-                  {"key": "DxfExport", "icon": "img/dxfexport.svg"}
+                  {"key": "DxfExport", "icon": "img/dxfexport.svg"},
+                  {"key": "RasterExport", "icon": "img/rasterexport.svg"}
                 ]},
                 {"key": "Print", "icon": "img/print.svg"},
                 {"key": "Help", "icon": "img/info.svg"}
@@ -90,6 +91,9 @@
         },
         {
           "name": "DxfExport"
+        },
+        {
+          "name": "RasterExport"
         }
       ],
       "desktop": [
@@ -127,7 +131,8 @@
                 {"key": "Tools", "icon": "img/tools.svg", "subitems": [
                   {"key": "Measure", "icon": "img/measure_white.svg"},
                   {"key": "Draw", "icon": "img/draw.svg"},
-                  {"key": "DxfExport", "icon": "img/dxfexport.svg"}
+                  {"key": "DxfExport", "icon": "img/dxfexport.svg"},
+                  {"key": "RasterExport", "icon": "img/rasterexport.svg"}
                 ]},
                 {"key": "Print", "icon": "img/print.svg"},
                 {"key": "Help", "icon": "img/info.svg"}
@@ -192,6 +197,9 @@
         },
         {
           "name": "DxfExport"
+        },
+        {
+          "name": "RasterExport"
         }
       ]
   }
