@@ -6,6 +6,7 @@
                 "Draw": "Zeichnen",
                 "DxfExport": "DXF-Export",
                 "Help": "Hilfe",
+                "IdentifyRegion": "Region abfragen",
                 "LayerTree": "Ebenen und Legende",
                 "Measure": "Messen",
                 "Print": "Drucken",
@@ -33,6 +34,9 @@
             "querying": "Abfragen"
         },
         "identifyTitle": "Objektinformationen",
+        "identifyregion": {
+            "info": "Polygon um die zu identifizierende Objekte zeichnen"
+        },
         "layerinfo": {
             "abstract": "Zusammenfassung",
             "attribution": "Attribution",
@@ -44,6 +48,7 @@
         },
         "layertree": {
             "maptip": "Kartentips anzeigen",
+            "printlegend": "Legende drucken",
             "transparency": "Transparenz"
         },
         "map": {
@@ -55,11 +60,11 @@
             "lengthLabel": "L\u00e4nge",
             "pointLabel": "Position"
         },
-        "noFeatureInfo": "",
+        "noFeatureInfo": "Am ausgew\u00e4hlten Punkt sind keine Informationen verf\u00fcgbar",
         "print": {
             "layout": "Format",
             "nolayouts": "Das gew\u00e4hlte Thema stellt keine Druck-Vorlagen zur Verf\u00fcgung.",
-            "notheme": "",
+            "notheme": "Kein Thema selektiert",
             "resolution": "Aufl\u00f6sung",
             "rotation": "Rotation",
             "scale": "Massstab",

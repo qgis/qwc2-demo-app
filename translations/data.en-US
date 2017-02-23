@@ -6,6 +6,7 @@
                 "Draw": "Draw",
                 "DxfExport": "DXF Export",
                 "Help": "Help",
+                "IdentifyRegion": "Identify Region",
                 "LayerTree": "Layers & Legend",
                 "Measure": "Measure",
                 "Print": "Print",
@@ -33,6 +34,9 @@
             "querying": "Querying..."
         },
         "identifyTitle": "Feature Info",
+        "identifyregion": {
+            "info": "Draw a polygon around the features to identify..."
+        },
         "layerinfo": {
             "abstract": "Abstract",
             "attribution": "Attribution",
@@ -44,6 +48,7 @@
         },
         "layertree": {
             "maptip": "Show layer map tips",
+            "printlegend": "Print legend",
             "transparency": "Transparency"
         },
         "map": {

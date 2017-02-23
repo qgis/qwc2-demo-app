@@ -6,6 +6,7 @@
                 "Draw": "",
                 "DxfExport": "",
                 "Help": "",
+                "IdentifyRegion": "",
                 "LayerTree": "",
                 "Measure": "",
                 "Print": "",
@@ -33,6 +34,9 @@
             "querying": ""
         },
         "identifyTitle": "Informazioni Sulle Feature",
+        "identifyregion": {
+            "info": ""
+        },
         "layerinfo": {
             "abstract": "",
             "attribution": "",
@@ -44,6 +48,7 @@
         },
         "layertree": {
             "maptip": "",
+            "printlegend": "",
             "transparency": ""
         },
         "map": {

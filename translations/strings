@@ -8,17 +8,18 @@ appmenu.items.RasterExport
 appmenu.items.Share
 appmenu.items.ThemeSwitcher
 appmenu.items.Tools
+appmenu.items.IdentifyRegion
 appmenu.menulabel
+bgswitcher.nobg
 bottombar.mousepos_label
 bottombar.scale_label
 bottombar.terms_label
 bottombar.viewertitle_label
 dxfexport.selectinfo
 dxfexport.symbologyscale
-identify.querying
 identifyTitle
-layertree.maptip
-layertree.transparency
+identify.querying
+identifyregion.info
 layerinfo.title
 layerinfo.abstract
 layerinfo.attribution
@@ -26,6 +27,9 @@ layerinfo.keywords
 layerinfo.dataUrl
 layerinfo.metadataUrl
 layerinfo.legend
+layertree.maptip
+layertree.transparency
+layertree.printlegend
 map.loading
 measureComponent.areaLabel
 measureComponent.bearingLabel
@@ -50,4 +54,3 @@ share.msgToCopyUrl
 share.QRCodeLinkTitle
 share.socialIntro
 themeswitcher.filter
-bgswitcher.nobg
