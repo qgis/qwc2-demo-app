@@ -7,12 +7,12 @@
  */
 
 /**
-  onSearch: function(text, searchOptions, dispatch) {
+  onSearch: function(text, requestId, searchOptions, dispatch) {
       let results = [ ... ]; // See below
-      return searchResultLoaded({data: results}, true);
+      return addSearchResults({data: results, provider: providerId, reqId: requestId}, true);
       // or
       return dispatch( (..) => {
-        return searchResultLoaded({data: results}, true);
+        return addSearchResults({data: results, provider: providerId, reqId: requestId}, true);
     });
   }
 
@@ -21,7 +21,7 @@
     callback(resultItem, geometryWktString);
   }
 
-  getMoreResults: function(moreItem, text, dispatch) {
+  getMoreResults: function(moreItem, text, requestId, dispatch) {
     // Same return object as onSearch
   }
 }
@@ -57,10 +57,10 @@
 */
 
 const axios = require('axios');
-const {searchResultLoaded} = require("../qwc2/MapStore2/web/client/actions/search");
+const {addSearchResults} = require("../qwc2/QWC2Components/actions/search");
 const CoordinatesUtils = require('../qwc2/MapStore2/web/client/utils/CoordinatesUtils');
 
-function coordinatesSearch(text, searchOptions, dispatch) {
+function coordinatesSearch(text, requestId, searchOptions, dispatch) {
     let displaycrs = searchOptions.displaycrs || "EPSG:4326";
     let matches = text.match(/^\s*(\d+\.?\d*),?\s*(\d+\.?\d*)\s*$/);
     let items = [];
@@ -113,14 +113,14 @@ function coordinatesSearch(text, searchOptions, dispatch) {
             }
         );
     }
-    dispatch(searchResultLoaded({data: results}, true));
+    dispatch(addSearchResults({data: results, provider: "coordinates", reqId: requestId}, true));
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 
-function geoAdminLocationSearch(text, searchOptions, dispatch) {
+function geoAdminLocationSearch(text, requestId, searchOptions, dispatch) {
     axios.get("http://api3.geo.admin.ch/rest/services/api/SearchServer?searchText="+ encodeURIComponent(text) + "&type=locations&limit=20")
-    .then(response => dispatch(geoAdminLocationSearchResults(response.data)));
+    .then(response => dispatch(geoAdminLocationSearchResults(response.data, requestId)));
 }
 
 function parseItemBBox(bboxstr) {
@@ -138,7 +138,7 @@ function parseItemBBox(bboxstr) {
     return CoordinatesUtils.reprojectBbox([xmin, ymin, xmax, ymax], "EPSG:21781", "EPSG:4326");
 }
 
-function geoAdminLocationSearchResults(obj)
+function geoAdminLocationSearchResults(obj, requestId)
 {
     let categoryMap = {
         gg25: "Municipalities",
@@ -174,17 +174,17 @@ function geoAdminLocationSearchResults(obj)
     for(let key in resultGroups) {
         results.push(resultGroups[key]);
     }
-    return searchResultLoaded({data: results}, true);
+    return addSearchResults({data: results, provider: "geoadmin", reqId: requestId}, true);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 
-function usterSearch(text, searchOptions, dispatch) {
+function usterSearch(text, requestId, searchOptions, dispatch) {
     axios.get("https://webgis.uster.ch/wsgi/search.wsgi?&searchtables=&query="+ encodeURIComponent(text))
-    .then(response => dispatch(usterSearchResults(response.data)));
+    .then(response => dispatch(usterSearchResults(response.data, requestId)));
 }
 
-function usterSearchResults(obj) {
+function usterSearchResults(obj, requestId) {
     let results = [];
     let currentgroup = null;
     let groupcounter = 0;
@@ -211,7 +211,7 @@ function usterSearchResults(obj) {
             });
         }
     });
-    return searchResultLoaded({data: results}, true);
+    return addSearchResults({data: results, provider: "uster", reqId: requestId}, true);
 }
 
 function usterResultGeometry(resultItem, callback)
@@ -222,7 +222,7 @@ function usterResultGeometry(resultItem, callback)
 
 ////////////////////////////////////////////////////////////////////////////////
 
-function wolfsburgSearch(text, searchOptions, dispatch) {
+function wolfsburgSearch(text, requestId, searchOptions, dispatch) {
     axios.get("https://geoportal.stadt.wolfsburg.de/wsgi/search.wsgi", {params: {
         query: text,
         searchTables: '["Infrastruktur", "Stadt- und Ortsteile"]',
@@ -233,10 +233,10 @@ function wolfsburgSearch(text, searchOptions, dispatch) {
         topic: "stadtplan",
         resultLimit: 100,
         resultLimitCategory: 100
-    }}).then(response => dispatch(wolfsburgSearchResults(response.data)));
+    }}).then(response => dispatch(wolfsburgSearchResults(response.data, requestId)));
 }
 
-function wolfsburgSearchResults(obj) {
+function wolfsburgSearchResults(obj, requestId) {
     let results = [];
     let currentgroup = null;
     let groupcounter = 0;
@@ -264,7 +264,7 @@ function wolfsburgSearchResults(obj) {
             });
         }
     });
-    return searchResultLoaded({data: results}, true);
+    return addSearchResults({data: results, provider: "wolfsburg", reqId: requestId}, true);
 }
 
 function wolfsburgResultGeometry(resultItem, callback) {
@@ -276,18 +276,18 @@ function wolfsburgResultGeometry(resultItem, callback) {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-function glarusSearch(text, searchOptions, dispatch) {
+function glarusSearch(text, requestId, searchOptions, dispatch) {
     let limit = 9;
     axios.get("https://map.geo.gl.ch/search/all?limit=" + limit + "&query="+ encodeURIComponent(text))
-    .then(response => dispatch(glarusSearchResults(response.data, limit)));
+    .then(response => dispatch(glarusSearchResults(response.data, requestId, limit)));
 }
 
-function glarusMoreResults(moreItem, text, dispatch) {
+function glarusMoreResults(moreItem, text, requestId, dispatch) {
     axios.get("https://map.geo.gl.ch/search/" + moreItem.category + "?query="+ encodeURIComponent(text))
-    .then(response => dispatch(glarusSearchResults(response.data)));
+    .then(response => dispatch(glarusSearchResults(response.data, requestId)));
 }
 
-function glarusSearchResults(obj, limit = -1) {
+function glarusSearchResults(obj, requestId, limit = -1) {
     let results = [];
     let idcounter = 0;
     (obj.results || []).map(group => {
@@ -315,7 +315,7 @@ function glarusSearchResults(obj, limit = -1) {
         }
         results.push(groupResult);
     });
-    return searchResultLoaded({data: results}, true);
+    return addSearchResults({data: results, provider: "glarus", reqId: requestId}, true);
 }
 
 function glarusResultGeometry(resultItem, callback) {
