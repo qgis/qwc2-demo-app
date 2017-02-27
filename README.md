@@ -1,8 +1,7 @@
 QGIS Web Client 2 Demo Application
 ==================================
 
-**When upgrading, please note the changelog of incompatible changes at the
-bottom of this document**
+**Consult the [ChangeLog](https://github.com/qgis/qwc2-demo-app/blob/master/ChangeLog.md) for a summary of changes between releases**
 
 Quick Start
 -----------
@@ -249,22 +248,3 @@ Preparation for developers
 * http://redux.js.org/
 * https://egghead.io/courses/getting-started-with-redux
 * https://egghead.io/courses/building-react-applications-with-idiomatic-redux
-
-List of incompatible changes between releases
----------------------------------------------
-
-- `v0.2` -> `master`
- * Keys of TopBar menuItems in config.js have been renamed
- * Center/extent coordinates in URL by default in map projection instead of EPSG:4326
- * The search text URL parameter key is now `st` instead of `s`
- * The individual TopBar plugin components are now configured in js/appConfig.js
- * The coordinate search provider was moved to js/SearchProviders.js
- * The search providers onSearch and getMoreResults take an additional requestId argument
- * The searchResultsLoaded action has changed:
-
-          -const {searchResultLoaded} = require("../qwc2/MapStore2/web/client/actions/search");
-          +const {addSearchResults} = require("../qwc2/QWC2Components/actions/search");
-
- * The search providers must return the additional fields provider and reqId:
-
-          {data: results, provider: providerId, reqId: requestId}
