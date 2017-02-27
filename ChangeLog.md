@@ -38,6 +38,7 @@ v0.3 (XXX XX 2017):
 - Automatically perform search when theme is loaded an a search text query parameter exists. If the search results in exactly one result, it will get selected.
 - Make custom commands in package.json windows compatible
 - Update all dependencies to latest version available as of Feb 27 2017
+- Add draw component
 
 **Incompatible changes**:
 - Keys of TopBar menuItems in config.js have been renamed

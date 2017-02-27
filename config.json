@@ -94,6 +94,9 @@
         },
         {
           "name": "RasterExport"
+        },
+        {
+          "name": "Draw"
         }
       ],
       "desktop": [
@@ -200,6 +203,9 @@
         },
         {
           "name": "RasterExport"
+        },
+        {
+          "name": "Draw"
         }
       ]
   }
