@@ -17,9 +17,7 @@ const plugins = [
   new webpack.DefinePlugin({
     "__DEVTOOLS__": !isProd
   }),
-  new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "qwc2", "MapStore2", "web", "client", "libs", "openlayers")),
-  new webpack.NormalModuleReplacementPlugin(/proj4$/, path.join(__dirname, "qwc2", "MapStore2", "web", "client", "libs", "proj4")),
-  new webpack.NoErrorsPlugin(),
+  new webpack.NoEmitOnErrorsPlugin(),
   new webpack.LoaderOptionsPlugin({
       debug: !isProd,
       minimize: isProd
@@ -79,18 +77,18 @@ module.exports = {
           {loader: 'string-replace-loader', options: {multiple: styleReplacements}}
         ]
       },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/, use: 'file-loader', query: {name: '[name].[ext]'} },
-      { test: /\.(png|jpg|gif)$/, use: 'url-loader', query: {name: '[path][name].[ext]', limit: 8192} }, // inline base64 URLs for <=8k images, direct URLs for the rest
+      { test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/, loader: 'file-loader', query: {name: '[name].[ext]'} },
+      { test: /\.(png|jpg|gif)$/, loader: 'url-loader', query: {name: '[path][name].[ext]', limit: 8192} }, // inline base64 URLs for <=8k images, direct URLs for the rest
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: 'react-hot-loader',
+        loader: 'react-hot-loader',
         include: [path.join(__dirname, "js"), path.join(__dirname, "qwc2", "QWC2Components"), path.join(__dirname, "qwc2", "MapStore2", "web", "client")]
       },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
+        loader: 'babel-loader'
       }
     ]
   },
