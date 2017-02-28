@@ -2,7 +2,7 @@
   "themes": {
     "items": [
       {
-        "url": "http://127.0.0.1/wms/wolfsburg/qwc2_demo",
+        "url": "http://qwc2.sourcepole.ch/wms/wolfsburg/qwc2_demo",
         "attribution": "Stadt Wolfsburg",
         "attributionUrl": "https://geoportal.stadt.wolfsburg.de/",
         "format": "image/png;mode=8bit",
@@ -19,7 +19,7 @@
         "additionalMouseCrs": ["EPSG:25832"]
       },
       {
-        "url": "http://127.0.0.1/wms/uster/bauprojekte",
+        "url": "http://qwc2.sourcepole.ch/wms/uster/bauprojekte",
         "attribution": "Stadt Uster",
         "attributionUrl": "https://gis.uster.ch/",
         "scales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
@@ -40,7 +40,7 @@
         "items": [
           {
             "title": "QWC2 Test",
-            "url": "http://127.0.0.1/wms/themes/test",
+            "url": "http://qwc2.sourcepole.ch/wms/themes/test",
             "attribution": "Demo attribution",
             "attributionUrl": "https://127.0.0.1/",
             "tiled": true,
