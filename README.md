@@ -184,13 +184,13 @@ Translations
 Translations are stored in the `data.<locale>` files stored under `translations`.
 These are plain text files in JSON format.
 
-The `translations/strings` file is a plain text file containing the message ids
-used in the application. The `updateTranslations.py` script creates/update
-the translation files by merging the upstream MapStore2 translations and the
-local translations. See the header in `updateTranslations.py` for more details.
-
-When adding a translation, remember to add the corresponding entry to
-`supportedLocales` in `js/appConfig.js`.
+When running `yarn start` (or manually `yarn run tsupdate`), translations from
+the common QWC2 components, located in `qwc2/translations`, are automatically
+merged. This ensures the translations remain up-to-date when updating the `qwc2`
+submodule. The languages for which translations need to be generated are listed
+under `translations/tsconfig.json`. If you ship applications-specific components,
+you must list the message ids in the `strings` section of `translations/tsconfig.json`,
+analogously to `qwc2/translations/tsconfig.json`.
 
 You can test a locale by adding the `locale` query parameter to the URL, i.e. `locale=de`.
 

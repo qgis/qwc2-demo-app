@@ -39,6 +39,8 @@ v0.3 (XXX XX 2017):
 - Make custom commands in package.json windows compatible
 - Update all dependencies to latest version available as of Feb 27 2017
 - Add draw component
+- Move various scripts to qwc2/scripts
+- Allow selectively overriding translation strings while importing the rest from the qwc2/translations
 
 **Incompatible changes**:
 - Keys of TopBar menuItems in config.js have been renamed
@@ -52,6 +54,8 @@ v0.3 (XXX XX 2017):
     +const {addSearchResults} = require("../qwc2/QWC2Components/actions/search");
 - The search providers must return the additional fields provider and reqId:
     {data: results, provider: providerId, reqId: requestId}
+- Various scripts have been moved to qwc2/scripts. The "scripts" section of package.json has been adapted to use these.
+- The translations/updateTranslations.py was removed in favour of qwc2/scripts/updateTranslations.js, the translation  languages now need to be specified in translations/tsconfig.json along with application specific message ids. Consult the README for more details.
 
 
 v0.2 (Jan 03 2017):
