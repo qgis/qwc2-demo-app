@@ -232,6 +232,11 @@ def getTheme(configItem, resultItem):
         # drawing order
         drawingOrder = getChildElementValue(capabilities, "Capability/LayerDrawingOrder").split(",")
 
+        # getmap formats
+        availableFormats = []
+        for format in getChildElement(capabilities, "Capability/Request/GetMap").getElementsByTagName("Format"):
+          availableFormats.append(getElementValue(format))
+
         # update theme config
         resultItem["id"] = themeId
         resultItem["name"] = getChildElementValue(topLayer, "Name")
@@ -241,6 +246,7 @@ def getTheme(configItem, resultItem):
         resultItem["keywords"] = ", ".join(keywords)
         if "format" in configItem:
             resultItem["format"] = configItem["format"]
+        resultItem["availableFormats"] = availableFormats
         if "tiled" in configItem:
             resultItem["tiled"] = configItem["tiled"]
         # use geographic bounding box for theme, as default CRS may have inverted axis order with WMS 1.3.0
