@@ -48,8 +48,6 @@
         "lodash": "^4.17.4",
         "lodash.pickby": "^4.6.0",
         "object-assign": "^4.1.1",
-        "openlayers": "^4.0.1",
-        "proj4": "^2.3.17",
         "qrcode.react": "^0.6.1",
         "react": "^15.4.2",
         "react-bootstrap": "^0.30.7",
