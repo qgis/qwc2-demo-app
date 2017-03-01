@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 if [ "$1" == "build" ]; then
     npm run clean && \
     mkdir -p ./dist && \
