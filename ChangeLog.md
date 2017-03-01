@@ -50,10 +50,14 @@ v0.3 (XXX XX 2017):
 - The coordinate search provider was moved to js/SearchProviders.js
 - The search providers onSearch and getMoreResults take an additional requestId argument
 - The searchResultsLoaded action has changed:
-    -const {searchResultLoaded} = require("../qwc2/MapStore2/web/client/actions/search");
-    +const {addSearchResults} = require("../qwc2/QWC2Components/actions/search");
+
+        -const {searchResultLoaded} = require("../qwc2/MapStore2/web/client/actions/search");
+        +const {addSearchResults} = require("../qwc2/QWC2Components/actions/search");
+
 - The search providers must return the additional fields provider and reqId:
-    {data: results, provider: providerId, reqId: requestId}
+
+        {data: results, provider: providerId, reqId: requestId}
+
 - Various scripts have been moved to qwc2/scripts. The "scripts" section of package.json has been adapted to use these.
 - The translations/updateTranslations.py was removed in favour of qwc2/scripts/updateTranslations.js, the translation  languages now need to be specified in translations/tsconfig.json along with application specific message ids. Consult the README for more details.
 
