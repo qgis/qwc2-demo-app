@@ -14,9 +14,7 @@
             "maxExtent": [
               -20037508.34, -20037508.34,
               20037508.34, 20037508.34
-            ],
-            "zoomControl": false,
-            "mapType": "openlayers"
+            ]
           }
         },
         {
@@ -107,9 +105,7 @@
             "maxExtent": [
               -20037508.34, -20037508.34,
               20037508.34, 20037508.34
-            ],
-            "zoomControl": false,
-            "mapType": "openlayers"
+            ]
           }
         },
         {
