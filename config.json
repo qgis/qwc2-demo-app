@@ -8,14 +8,7 @@
   "plugins": {
       "mobile": [
         {
-          "name": "Map",
-          "cfg": {
-            "projection": "EPSG:3857",
-            "maxExtent": [
-              -20037508.34, -20037508.34,
-              20037508.34, 20037508.34
-            ]
-          }
+          "name": "Map"
         },
         {
           "name": "LocateButton"
@@ -99,14 +92,7 @@
       ],
       "desktop": [
         {
-          "name": "Map",
-          "cfg": {
-            "projection": "EPSG:3857",
-            "maxExtent": [
-              -20037508.34, -20037508.34,
-              20037508.34, 20037508.34
-            ]
-          }
+          "name": "Map"
         },
         {
           "name": "LocateButton"

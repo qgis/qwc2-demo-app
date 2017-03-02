@@ -41,6 +41,7 @@ v0.3 (XXX XX 2017):
 - Add draw component
 - Move various scripts to qwc2/scripts
 - Allow selectively overriding translation strings while importing the rest from the qwc2/translations
+- Map projections are now set individually for each theme
 
 **Incompatible changes**:
 - Keys of TopBar menuItems in config.js have been renamed
@@ -60,6 +61,7 @@ v0.3 (XXX XX 2017):
 
 - Various scripts have been moved to qwc2/scripts. The "scripts" section of package.json has been adapted to use these.
 - The translations/updateTranslations.py was removed in favour of qwc2/scripts/updateTranslations.js, the translation  languages now need to be specified in translations/tsconfig.json along with application specific message ids. Consult the README for more details.
+- Map projections are now set individually for each theme via the mapCrs entry. If unset, it will default to EPSG:3857.
 
 
 v0.2 (Jan 03 2017):
