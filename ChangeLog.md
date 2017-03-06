@@ -44,6 +44,9 @@ v0.3 (XXX XX 2017):
 - Map projections are now set individually for each theme
 - Add preserveExtentOnThemeSwitch and preserveBackgroundOnThemeSwitch to config.json to control whether extent / background layer should be preserved (if possible) on theme switch
 - Make identify results dialog resizeable
+- Insert anchor tags for urls / email addresses in feature attributes
+- Allow configuring grid interval for print output
+
 
 **Incompatible changes**:
 - Keys of TopBar menuItems in config.js have been renamed
