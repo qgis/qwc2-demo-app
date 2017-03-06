@@ -38,8 +38,9 @@ Configuration
 There are five main configuration files:
 
  * `js/appConfig.js`: This file configures which components and which map
- projections are compiled into the application bundle as well as the available
- locales. Changing this file will require a re-deployment of the application.
+ projections are compiled into the application bundle, the human readable labels
+ for the EPSG codes as well as the available locales.
+ Changing this file will require a re-deployment of the application.
 
  * `config.json`: This file controls the plugin configuration (whether they are
  enabled in desktop/mobile plus plugin specific configuration) and also stores
