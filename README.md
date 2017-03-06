@@ -91,7 +91,7 @@ Configuration format:
         "attribution": "<Attribution>",             // optional theme attribution
         "attributionUrl": "<attribution URL>",      // optional theme attribution URL
         "default": true,                            // optional, set this as the initial theme
-        "scales": [25000, 10000, 5000, 2500],       // optional custom map scales
+        "scales": [25000, 10000, 5000, 2500],       // optional custom map scales, defaults to defaultScales (see below)
         "tiled": true,                              // optional, use tiled WMS (default is false)
         "format": "image/png",                      // optional, the image format to use in the WMS request, defaults to image/png
         "backgroundLayers": [                       // optional background layers
@@ -139,7 +139,7 @@ Configuration format:
       }
     ]
   },
-  "defaultScales": [50000, 25000, 10000, 5000]      // optional default map scales
+  "defaultScales": [50000, 25000, 10000, 5000]      // required, default map scales
 }
 ```
 

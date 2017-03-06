@@ -5,6 +5,8 @@
   "assetsPath": "/assets",
   "urlPositionFormat": "extent",
   "urlPositionCrs": "",
+  "preserveExtentOnThemeSwitch": true,
+  "preserveBackgroundOnThemeSwitch": true,
   "plugins": {
       "mobile": [
         {
