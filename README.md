@@ -106,7 +106,7 @@ Configuration format:
         "backgroundLayers": [                       // optional background layers
           {
             "name": "<background layer name>",      // background layer name from list below
-            "printLayer": "<WMS layer name>",       // optional equivalent WMS layer name for printing
+            "printLayer": "<qgis layer name>",      // optional, name of a qgis layer to use as equivalent background layer when printing
             "visibility": true                      // optional initial visibility on topic selection
           }
         ],
@@ -125,6 +125,7 @@ Configuration format:
           "framewidth": 1                           // optional, width of the frame border, in pixels
         },
         "collapseLayerGroupsBelowLevel": <level>    // optional, layer tree level below which to initially collapse groups. If unspecified, groups are not initially collapsed.
+        "skipEmptyFeatureAttributes": true          // optional, whether to skip empty feature attributes in the identify results. Default is false.
       }
     ],
     "groups": [                                     // optional, nested groups

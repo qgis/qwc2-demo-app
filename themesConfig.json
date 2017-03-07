@@ -74,15 +74,16 @@
             "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"],
             "printLabelForSearchResult": "test",
             "watermark": {
-                "text": "Watermark Test",
-                "texpadding": "1",
-                "fontsize": "14",
-                "fontfamily": "sans",
-                "fontcolor": "#0000FF",
-                "backgroundcolor": "#FFFFFF",
-                "framecolor": "#000000",
-                "framewidth": 1
-            }
+              "text": "Watermark Test",
+              "texpadding": "1",
+              "fontsize": "14",
+              "fontfamily": "sans",
+              "fontcolor": "#0000FF",
+              "backgroundcolor": "#FFFFFF",
+              "framecolor": "#000000",
+              "framewidth": 1
+            },
+            "skipEmptyFeatureAttributes": true
           }
         ],
         "groups": []

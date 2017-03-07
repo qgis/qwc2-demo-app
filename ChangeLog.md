@@ -49,6 +49,7 @@ v0.3 (XXX XX 2017):
 - Allow specifying human readable labels for the CRS EPSG codes in js/appConfig.js
 - Allow limiting availablersolutions for printing
 - Add per-theme "collapseLayerGroupsBelowLevel" setting to control level below which layer groups are collapsed by default in the layer tree
+- Add per-theme "skipEmptyFeatureAttributes" setting to control whether empty/NULL attributes should be skipped in the feature info table
 
 
 **Incompatible changes**:
