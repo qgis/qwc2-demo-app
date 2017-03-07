@@ -25,6 +25,7 @@
         "attributionUrl": "https://gis.uster.ch/",
         "scales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
         "printScales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
+        "printResolutions": [150, 300, 600],
         "backgroundLayers": [
           {
             "name": "mapnik",

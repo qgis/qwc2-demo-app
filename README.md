@@ -94,7 +94,8 @@ Configuration format:
         "default": true,                            // optional, set this as the initial theme
         "scales": [25000, 10000, 5000, 2500],       // optional, custom map scales, defaults to defaultScales (see below)
         "printScales": [25000, 10000, 5000, 2500],  // optional, confined list of available print scales, defaults to defaultPrintScales (see below)
-        "printGrid": [                              // optional, list of grid intervals to use for various scales when printing
+        "printResolutions": [150, 300, 600],        // optional, confined list of abailable print resolutions, defaults to defaultPrintResolutions (see below)
+        "printGrid": [                              // optional, list of grid intervals to use for various scales when printing.
             {"s": 10000, x: 1000, y: 1000},         //   Keep this list sorted in descending order by scale (s)
             {"s": 1000, x: 100, y: 100},            //   In this example, {x: 100, y: 100} will be used for 1000 <= scale < 10000
             ...                                     //   If not specified, defaultPrintGrid will be usd (see below)
@@ -147,8 +148,9 @@ Configuration format:
       }
     ]
   },
-  "defaultScales": [50000, 25000, 10000, 5000]      // required, default map scales
-  "defaultPrintScales": [50000, 25000, 10000, 5000] // optional, confined list of available print scales. If not specified, scale is freely choosable.
+  "defaultScales": [50000, 25000, 10000, 5000],     // required, default map scales
+  "defaultPrintScales": [50000, 25000, 10000, 5000],// optional, confined list of available print scales. If not specified, scale is freely choosable.
+  "defaultPrintResolutions": [150, 300, 600],       // optional, confined list of abailable print resolutions. If not specified, resolution is freely choosable.
   "defaultPrintGrid": [<as printGrid above>]        // optional, list of grid intervals to use for various scales when printing, no grid is primted if omitted
 }
 ```
