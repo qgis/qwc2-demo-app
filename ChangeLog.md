@@ -47,7 +47,7 @@ v0.3 (XXX XX 2017):
 - Insert anchor tags for urls / email addresses in feature attributes
 - Allow configuring grid interval for print output
 - Allow specifying human readable labels for the CRS EPSG codes in js/appConfig.js
-- Allow limiting availablersolutions for printing
+- Allow limiting available resolutions for printing
 - Add per-theme "collapseLayerGroupsBelowLevel" setting to control level below which layer groups are collapsed by default in the layer tree
 - Add per-theme "skipEmptyFeatureAttributes" setting to control whether empty/NULL attributes should be skipped in the feature info table
 
