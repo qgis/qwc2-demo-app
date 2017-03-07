@@ -51,6 +51,13 @@
       "transparency": "Transparency",
       "printlegend": "Print legend"
     },
+    "locate": {
+      "tooltip": "Locate me",
+      "metersUnit": "meters",
+      "feetUnit": "feet",
+      "popup": "You are within {distance} {unit} from this point",
+      "outsideMapBoundsMsg": "You seem located outside the boundaries of the map"
+    },
     "map": {
       "loading": "Loading..."
     },

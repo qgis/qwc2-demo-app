@@ -51,6 +51,13 @@
       "transparency": "",
       "printlegend": ""
     },
+    "locate": {
+      "tooltip": "",
+      "metersUnit": "",
+      "feetUnit": "",
+      "popup": "",
+      "outsideMapBoundsMsg": ""
+    },
     "map": {
       "loading": "In caricamento..."
     },
