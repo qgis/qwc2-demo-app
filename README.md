@@ -123,7 +123,8 @@ Configuration format:
           "backgroundcolor": "#FFFFFF",             // optional, background color of the frame
           "framecolor": "#000000",                  // optional, color of the frame border
           "framewidth": 1                           // optional, width of the frame border, in pixels
-        }
+        },
+        "collapseLayerGroupsBelowLevel": <level>    // optional, layer tree level below which to initially collapse groups. If unspecified, groups are not initially collapsed.
       }
     ],
     "groups": [                                     // optional, nested groups

@@ -48,6 +48,7 @@ v0.3 (XXX XX 2017):
 - Allow configuring grid interval for print output
 - Allow specifying human readable labels for the CRS EPSG codes in js/appConfig.js
 - Allow limiting availablersolutions for printing
+- Add per-theme "collapseLayerGroupsBelowLevel" setting to control level below which layer groups are collapsed by default in the layer tree
 
 
 **Incompatible changes**:

@@ -17,7 +17,8 @@
         ],
         "searchProviders": ["coordinates", "wolfsburg"],
         "mapCrs": "EPSG:3857",
-        "additionalMouseCrs": ["EPSG:25832"]
+        "additionalMouseCrs": ["EPSG:25832"],
+        "collapseLayerGroupsBelowLevel": 1
       },
       {
         "url": "http://qwc2.sourcepole.ch/wms/uster/bauprojekte",
