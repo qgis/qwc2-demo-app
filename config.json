@@ -13,10 +13,16 @@
           "name": "Map"
         },
         {
-          "name": "LocateButton"
+          "name": "LocateButton",
+          "cfg": {
+            "position": 1
+          }
         },
         {
-          "name": "BackgroundSwitcher"
+          "name": "BackgroundSwitcher",
+          "cfg": {
+            "position": 0
+          }
         },
         {
             "name": "TopBar",
@@ -33,11 +39,6 @@
                 ]},
                 {"key": "Print", "icon": "img/print.svg"},
                 {"key": "Help", "icon": "img/info.svg"}
-              ],
-              "toolbarItems": [
-                {"key": "Measure", "mode": "LineString", "icon": "img/measure_line.svg"},
-                {"key": "Measure", "mode": "Polygon", "icon": "img/measure_polygon.svg"},
-                {"key": "Print", "icon": "img/print.svg"}
               ],
               "searchOptions": {
                 "minScale": 1000,
@@ -98,15 +99,28 @@
         },
         {
           "name": "LocateButton"
+          ,
+          "cfg": {
+            "position": 3
+          }
         },
         {
-          "name": "ZoomIn"
+          "name": "ZoomIn",
+          "cfg": {
+            "position": 2
+          }
         },
         {
-          "name": "ZoomOut"
+          "name": "ZoomOut",
+          "cfg": {
+            "position": 1
+          }
         },
         {
-          "name": "BackgroundSwitcher"
+          "name": "BackgroundSwitcher",
+          "cfg": {
+            "position": 0
+          }
         },
         {
             "name": "TopBar",
