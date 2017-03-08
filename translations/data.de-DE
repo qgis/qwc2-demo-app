@@ -32,7 +32,7 @@
     },
     "identifyTitle": "Objektinformationen",
     "identify": {
-      "querying": "Abfragen"
+      "querying": "Objekte werden abgefragt..."
     },
     "identifyregion": {
       "info": "Polygon um die zu identifizierende Objekte zeichnen"
@@ -52,11 +52,11 @@
       "printlegend": "Legende drucken"
     },
     "locate": {
-      "tooltip": "",
-      "metersUnit": "",
-      "feetUnit": "",
-      "popup": "",
-      "outsideMapBoundsMsg": ""
+      "tooltip": "Meine Position",
+      "metersUnit": "Meter",
+      "feetUnit": "Fuss",
+      "popup": "Die Position liegt in einem Radius von {distance} {unit} von diesem Punkt",
+      "outsideMapBoundsMsg": "Die Position schient ausserhalb der Grenze der Karte zu liegen"
     },
     "map": {
       "loading": "Karte wird geladen"
