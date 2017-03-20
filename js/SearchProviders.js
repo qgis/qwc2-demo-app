@@ -34,6 +34,7 @@
             {
                 id: itemid,
                 text: display_text,
+                label: map_label_text, // optional, show display_text by default
                 x: x,
                 y: y,
                 crs: crs,
