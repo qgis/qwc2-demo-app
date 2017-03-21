@@ -9,7 +9,7 @@
         "LayerTree": "Lager & teckenförklaring",
         "Measure": "Mät",
         "Print": "Skriv ut",
-        "RasterExport": "",
+        "RasterExport": "Raster Export",
         "Share": "Dela länk",
         "ThemeSwitcher": "Tema",
         "Tools": "Kartverktyg",
@@ -18,7 +18,7 @@
       "menulabel": "Karta & Verktyg"
     },
     "bgswitcher": {
-      "nobg": ""
+      "nobg": "Ingen backgrund"
     },
     "bottombar": {
       "mousepos_label": "Koordinater",
@@ -96,6 +96,14 @@
     },
     "themeswitcher": {
       "filter": "Filtrera..."
+    },
+    "draw": {
+      "delete": "Ta bort",
+      "clearAll": "Ta bort alla",
+      "point": "Punkt",
+      "line": "Linje",
+      "polygon": "Polygon",
+      "circle": "Cirkel"
     }
   }
 }
