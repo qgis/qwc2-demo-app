@@ -73,6 +73,10 @@ v0.3 (XXX XX 2017):
 - The translations/updateTranslations.py was removed in favour of qwc2/scripts/updateTranslations.js, the translation  languages now need to be specified in translations/tsconfig.json along with application specific message ids. Consult the README for more details.
 - Map projections are now set individually for each theme via the mapCrs entry. If unset, it will default to EPSG:3857.
 - The defaultScales list in themesConfig.json is now required
+- The locale definitions under `supportedLocales` in `appConfig.js` must provide a localeData field
+
+        localeData: require('react-intl/locale-data/<lang>')
+
 
 
 v0.2 (Jan 03 2017):

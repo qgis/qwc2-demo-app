@@ -65,19 +65,23 @@ module.exports = {
     supportedLocales: {
          "it": {
              code: "it-IT",
-             description: "Italiano"
+             description: "Italiano",
+             localeData: require('react-intl/locale-data/it')
          },
          "en": {
             code: "en-US",
-            description: "English"
+            description: "English",
+            localeData: require('react-intl/locale-data/en')
          },
          "fr": {
            code: "fr-FR",
-           description: "Français"
-       },
-       "de": {
-           code: "de-DE",
-           description: "Deutsch"
-       }
+           description: "Français",
+           localeData: require('react-intl/locale-data/fr')
+        },
+        "de": {
+            code: "de-DE",
+            description: "Deutsch",
+            localeData: require('react-intl/locale-data/de')
+        }
    }
 };
