@@ -78,6 +78,10 @@ module.exports = {
        "de": {
            code: "de-DE",
            description: "Deutsch"
+       },
+  	   "sv": {
+         code: "sv-SE",
+         description: "Svenska"
        }
    }
 };
