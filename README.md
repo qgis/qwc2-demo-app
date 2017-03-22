@@ -71,8 +71,7 @@ files will require a re-depolyment of the application):
 
 ### Map projection configuration
 
-The map projection is configured in `config.json` by adjusting `projection` and `maxExtent`.
-You can look up the max extent for a specific projection at [spatialreference.org](http://www.spatialreference.org/ref/epsg/).
+The map projection is configured individually for each theme in `themesConfig.json` (see below).
 Remember to register the projection you wish to use in `js/appConfig.js`.
 Note that the leaflet backend currently does not support projections other than `EPSG:3857`.
 
@@ -197,7 +196,8 @@ Translations
 ------------
 
 Translations are stored in the `data.<locale>` files stored under `translations`.
-These are plain text files in JSON format.
+These are plain text files in JSON format. Translations available to the application
+need to be listed under `supportedLocales` in `js/appConfig.js`.
 
 When running `yarn start` (or manually `yarn run tsupdate`), translations from
 the common QWC2 components, located in `qwc2/translations`, are automatically
