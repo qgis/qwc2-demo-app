@@ -14,7 +14,7 @@
    viewBox="0 0 6.3499998 6.3499998"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92pre2 r"
+   inkscape:version="0.92.0 r"
    sodipodi:docname="tristate.svg">
   <defs
      id="defs2" />
@@ -26,14 +26,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="15.839192"
-     inkscape:cx="-9.8605881"
+     inkscape:cx="-8.7241665"
      inkscape:cy="2.1243049"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="1280"
-     inkscape:window-height="965"
-     inkscape:window-x="0"
+     inkscape:window-height="995"
+     inkscape:window-x="1600"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
@@ -72,7 +72,7 @@
        y="290.78229" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729151px;line-height:6.61458302px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:none;fill-opacity:1;stroke:#595959;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729151px;line-height:6.61458302px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:none;fill-opacity:1;stroke:#989898;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="3.3055689"
        y="296.02951"
        id="text4238"><tspan
@@ -80,6 +80,6 @@
          id="tspan4236"
          x="3.3055689"
          y="296.02951"
-         style="font-size:7.05555534px;stroke-width:0.26458332px;fill:none;fill-opacity:1;stroke:#595959;stroke-opacity:1;">✔</tspan></text>
+         style="font-size:7.05555534px;stroke-width:0.26458332px;fill:none;fill-opacity:1;stroke:#989898;stroke-opacity:1;">✔</tspan></text>
   </g>
 </svg>
