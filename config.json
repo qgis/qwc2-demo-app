@@ -43,7 +43,8 @@
               "searchOptions": {
                 "minScale": 1000,
                 "showProviderSelection": false
-              }
+              },
+              "appMenuClearsTask": true
             }
         },
         {
@@ -83,7 +84,9 @@
           "cfg": {
             "showLegendIcons": true,
             "showRootEntry": true,
-            "showQueryableIcon": true
+            "showQueryableIcon": true,
+            "groupTogglesSublayers": false,
+            "layerInfoWindowSize": {"width": 480, "height": 400}
           }
         },
         {
@@ -149,7 +152,8 @@
               "searchOptions": {
                 "minScale": 1000,
                 "showProviderSelection": false
-              }
+              },
+              "appMenuClearsTask": true
             }
         },
         {
@@ -174,7 +178,9 @@
             "showLegendIcons": true,
             "showRootEntry": true,
             "showQueryableIcon": true,
-            "allowMapTips": true
+            "allowMapTips": true,
+            "groupTogglesSublayers": false,
+            "layerInfoWindowSize": {"width": 480, "height": 400}
           }
         },
         {
