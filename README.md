@@ -193,6 +193,11 @@ If `urlPositionCrs` is equal to the map projection, the `crs` parameter is
 omitted in the URL, but it can be manually added to the URL to specify the initial
 extent/center in a desired CRS.
 
+#Toggle on/off groups sublayers
+In `config.json` by changing the boolean value of the `groupTogglesSublayers` option
+under the `LayerTree`, you can configure the wanted behavior, for mobile and for
+desktop.
+
 ### Server
 
 A server component is necessary for generating and resolving permalinks.
