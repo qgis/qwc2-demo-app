@@ -221,6 +221,8 @@ analogously to `qwc2/translations/tsconfig.json`.
 
 You can test a locale by adding the `locale` query parameter to the URL, i.e. `locale=de`.
 
+You can also override the locale in `config.json` via the `locale` setting.
+
 
 Deployment
 ----------
