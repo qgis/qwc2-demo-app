@@ -59,7 +59,7 @@
         "react-draggable": "^2.2.3",
         "react-intl": "^2.2.3",
         "react-redux": "^5.0.3",
-        "react-rnd": "^4.2.2",
+        "react-rnd": "^5.0.4",
         "react-share": "^1.12.1",
         "react-spinkit": "^2.1.1",
         "react-swipeable": "^3.9.2",
