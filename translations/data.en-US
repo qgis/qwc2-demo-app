@@ -26,6 +26,21 @@
       "terms_label": "Terms of use",
       "viewertitle_label": "QWC2 Demo"
     },
+    "draw": {
+      "delete": "Delete",
+      "clearAll": "Clear all",
+      "point": "Point",
+      "line": "Line",
+      "polygon": "Polygon",
+      "bbox": "Box",
+      "circle": "Circle",
+      "strokecolor": "Stroke color",
+      "fillcolor": "Fill color",
+      "text": "Text",
+      "strokewidth": "Stroke width",
+      "fillopacity": "Fill opacity",
+      "fontsize": "Font size"
+    },
     "dxfexport": {
       "selectinfo": "Drag a rectangle around the region to export...",
       "symbologyscale": "Symbology scale:"
@@ -56,7 +71,14 @@
       "metersUnit": "meters",
       "feetUnit": "feet",
       "popup": "You are within {distance} {unit} from this point",
-      "outsideMapBoundsMsg": "You seem located outside the boundaries of the map"
+      "outsideMapBoundsMsg": "You seem located outside the boundaries of the map",
+      "statustooltip": {
+        "DISABLED": "Disabled",
+        "LOCATING": "Locating...",
+        "ENABLED": "Enabled",
+        "FOLLOWING": "Following",
+        "PERMISSION_DENIED": "Permission denied"
+      }
     },
     "map": {
       "loading": "Loading..."
@@ -96,14 +118,6 @@
     },
     "themeswitcher": {
       "filter": "Filter..."
-    },
-    "draw": {
-      "delete": "Delete",
-      "clearAll": "Clear all",
-      "point": "Point",
-      "line": "Line",
-      "polygon": "Polygon",
-      "circle": "Circle"
     }
   }
 }
