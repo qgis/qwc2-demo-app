@@ -1,0 +1,48 @@
+{
+  "themes": {
+    "items": [],
+    "groups": [
+      {
+        "title": "Dev Tests",
+        "items": [
+          {
+            "title": "QWC2 Test",
+            "url": "http://kartor.kristianstad.se/park_qgis/",
+            "attribution": "Demo attribution",
+            "attributionUrl": "",
+            "tiled": true,
+            "version":"1.1.1", 
+            "crs":"EPSG:3008",
+            "backgroundLayers": [
+              {
+                "name": "turistkarta",
+                "visibility": true
+              }
+            ],
+            "searchProviders": ["coordinates", "geoadmin", "glarus"],
+            "mapCrs": "EPSG:3008",
+            "additionalMouseCrs": ["EPSG:3008"]
+          }
+      
+      
+    
+        ],
+        "groups": []
+      }
+    ],
+    "backgroundLayers": [
+ 
+      {
+        "name": "turistkarta",
+        "title": "Turistkarta",
+        "type": "wms",
+        "url": "http://kartor.kristianstad.se/turistkarta/",
+        "tiled": true,
+        "srs":"EPSG:3008",
+        "version":"1.1.1"
+
+      }
+    ]
+  },
+  "defaultScales": [4000000, 2000000, 1000000, 400000, 200000, 80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100]
+}
