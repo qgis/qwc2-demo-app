@@ -16,7 +16,7 @@ let styleConfig = {
   titlebar_bg: "#595959",
   titlebar_fg: "white",
   // Messagebar
-  messagebar_bg: "#fcd5b5",
+  messagebar_bg: "#eeeeee",
   // Top and bottom panels
   panel_bg: "rgba(255,255, 255, 0.75)",
   panel_fg: "#595959",
