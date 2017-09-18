@@ -68,7 +68,12 @@
           }
         },
         {
-          "name": "Share"
+          "name": "Share",
+          "cfg": {
+            "showSocials": true,
+            "showLink": true,
+            "showQRCode": true
+          }
         },
         {
           "name": "Print"
@@ -200,7 +205,12 @@
           "name": "MapTip"
         },
         {
-          "name": "Share"
+          "name": "Share",
+          "cfg": {
+            "showSocials": true,
+            "showLink": true,
+            "showQRCode": true
+          }
         },
         {
           "name": "Print"
