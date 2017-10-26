@@ -63,7 +63,7 @@ const CoordinatesUtils = require('../qwc2/MapStore2/web/client/utils/Coordinates
 
 function coordinatesSearch(text, requestId, searchOptions, dispatch) {
     let displaycrs = searchOptions.displaycrs || "EPSG:4326";
-    let matches = text.match(/^\s*(\d+\.?\d*),?\s*(\d+\.?\d*)\s*$/);
+    let matches = text.match(/^\s*([+-]?\d+\.?\d*)[,\s]\s*([+-]?\d+\.?\d*)\s*$/);
     let items = [];
     if(matches && matches.length >= 3) {
         let x = parseFloat(matches[1]);
