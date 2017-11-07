@@ -80,6 +80,7 @@ v0.3 (XXX XX 2017):
 
         localeData: require('react-intl/locale-data/<lang>')
 - The print legend functionality requires a assets/templates/legendprint.html file with an element with id="legendcontainer", which will contain the legend graphics. The HTML document title of this template **may** influence the suggested output name when printing to a file (depending on the browser).
+- The enabled MapPlugin components need to be specified in appConfig.js
 
 
 v0.2 (Jan 03 2017):

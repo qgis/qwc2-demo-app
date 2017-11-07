@@ -35,7 +35,14 @@ module.exports = {
     },
     pluginsDef: {
         plugins: {
-            MapPlugin: require('../qwc2/QWC2Components/plugins/Map'),
+            MapPlugin: require('../qwc2/QWC2Components/plugins/Map')({
+                MeasurementSupport: require('../qwc2/QWC2Components/plugins/map/MeasurementSupport'),
+                LocateSupport: require('../qwc2/QWC2Components/plugins/map/LocateSupport'),
+                OverviewSupport: require('../qwc2/QWC2Components/plugins/map/OverviewSupport'),
+                DrawSupport: require('../qwc2/QWC2Components/plugins/map/DrawSupport'),
+                ScaleBarSupport: require('../qwc2/QWC2Components/plugins/map/ScaleBarSupport'),
+                SelectionSupport: require('../qwc2/QWC2Components/plugins/map/SelectionSupport')
+            }),
             LocateButtonPlugin: require('../qwc2/QWC2Components/plugins/LocateButton'),
             ZoomInPlugin: require('../qwc2/QWC2Components/plugins/ZoomButtons'),
             ZoomOutPlugin: require('../qwc2/QWC2Components/plugins/ZoomButtons'),
