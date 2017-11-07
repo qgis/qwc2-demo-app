@@ -11,3 +11,4 @@ web/.project
 backend/.classpath
 backend/.project
 themes.json
+assets/img/mapthumbs/*
