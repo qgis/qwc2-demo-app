@@ -54,6 +54,7 @@ v0.3 (XXX XX 2017):
 - Added LayerTree config properties: showRootEntry, showQueryableIcon, allowMapTips
 - Use assets/templates/legendprint.html as a template for the map legend print.
 - Added LayerTree groupTogglesSublayers config property to control whether toggling a group toggles just the group or also all the sublayers
+- New Redlining module
 
 
 **Incompatible changes**:

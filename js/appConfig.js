@@ -39,7 +39,7 @@ module.exports = {
                 MeasurementSupport: require('../qwc2/QWC2Components/plugins/map/MeasurementSupport'),
                 LocateSupport: require('../qwc2/QWC2Components/plugins/map/LocateSupport'),
                 OverviewSupport: require('../qwc2/QWC2Components/plugins/map/OverviewSupport'),
-                DrawSupport: require('../qwc2/QWC2Components/plugins/map/DrawSupport'),
+                RedliningSupport: require('../qwc2/QWC2Components/plugins/map/RedliningSupport'),
                 ScaleBarSupport: require('../qwc2/QWC2Components/plugins/map/ScaleBarSupport'),
                 SelectionSupport: require('../qwc2/QWC2Components/plugins/map/SelectionSupport')
             }),
@@ -65,7 +65,7 @@ module.exports = {
             HelpPlugin: require('../qwc2/QWC2Components/plugins/Help')(renderHelp),
             DxfExportPlugin: require('../qwc2/QWC2Components/plugins/DxfExport'),
             RasterExportPlugin: require('../qwc2/QWC2Components/plugins/RasterExport'),
-            DrawPlugin: require('../qwc2/QWC2Components/plugins/Draw')
+            RedliningPlugin: require('../qwc2/QWC2Components/plugins/Redlining')
         },
         requires: {}
     },

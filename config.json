@@ -33,7 +33,7 @@
                 {"key": "Share", "icon": "img/share.svg"},
                 {"key": "Tools", "icon": "img/tools.svg", "subitems": [
                   {"key": "Measure", "icon": "img/measure_white.svg"},
-                  {"key": "Draw", "icon": "img/draw.svg"},
+                  {"key": "Redlining", "icon": "img/draw.svg"},
                   {"key": "DxfExport", "icon": "img/dxfexport.svg"},
                   {"key": "RasterExport", "icon": "img/rasterexport.svg"}
                 ]},
@@ -101,7 +101,7 @@
           "name": "RasterExport"
         },
         {
-          "name": "Draw"
+          "name": "Redlining"
         }
       ],
       "desktop": [
@@ -142,7 +142,7 @@
                 {"key": "Share", "icon": "img/share.svg"},
                 {"key": "Tools", "icon": "img/tools.svg", "subitems": [
                   {"key": "Measure", "icon": "img/measure_white.svg"},
-                  {"key": "Draw", "icon": "img/draw.svg"},
+                  {"key": "Redlining", "icon": "img/draw.svg"},
                   {"key": "DxfExport", "icon": "img/dxfexport.svg"},
                   {"key": "RasterExport", "icon": "img/rasterexport.svg"}
                 ]},
@@ -228,7 +228,7 @@
           "name": "RasterExport"
         },
         {
-          "name": "Draw"
+          "name": "Redlining"
         }
       ]
   }
