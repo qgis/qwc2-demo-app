@@ -55,7 +55,7 @@
     },
     "layerinfo": {
       "title": "Informations sur la couche",
-      "abstract": "Récapitulation",
+      "abstract": "Description",
       "attribution": "Attribution",
       "keywords": "Mots-clés",
       "dataUrl": "URL des données",
