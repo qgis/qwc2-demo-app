@@ -23,7 +23,7 @@
     },
     "bottombar": {
       "mousepos_label": "Coordonnées",
-      "scale_label": "Echelle",
+      "scale_label": "Échelle",
       "terms_label": "Conditions d'utilisation",
       "viewertitle_label": "Page d'accueil"
     },
@@ -54,7 +54,7 @@
       "info": "Dessiner un polygone pour identifier les objets"
     },
     "layerinfo": {
-      "title": "Informations dur la couche",
+      "title": "Informations sur la couche",
       "abstract": "Récapitulation",
       "attribution": "Attribution",
       "keywords": "Mots-clés",
