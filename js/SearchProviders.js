@@ -59,7 +59,7 @@
 
 const axios = require('axios');
 const {addSearchResults} = require("../qwc2/QWC2Components/actions/search");
-const CoordinatesUtils = require('../qwc2/MapStore2/web/client/utils/CoordinatesUtils');
+const CoordinatesUtils = require('../qwc2/MapStore2Components/utils/CoordinatesUtils');
 
 function coordinatesSearch(text, requestId, searchOptions, dispatch) {
     let displaycrs = searchOptions.displaycrs || "EPSG:4326";

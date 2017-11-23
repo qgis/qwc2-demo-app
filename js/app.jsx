@@ -6,6 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 const React = require('react');
+const PropTypes = require('prop-types');
 const ReactDOM = require('react-dom');
 const {connect} = require('react-redux');
 // Needed for IE11 to avoid 'Promise not defined' error in axios
@@ -17,23 +18,23 @@ if (!global.Intl) {
 
 const {initialState, pluginsDef, supportedLocales} = require('./appConfig');
 
-const ConfigUtils = require('../qwc2/MapStore2/web/client/utils/ConfigUtils');
+const ConfigUtils = require('../qwc2/MapStore2Components/utils/ConfigUtils');
 ConfigUtils.setLocalConfigurationFile('config.json');
 
-const LocaleUtils = require('../qwc2/MapStore2/web/client/utils/LocaleUtils');
+const LocaleUtils = require('../qwc2/MapStore2Components/utils/LocaleUtils');
 LocaleUtils.setSupportedLocales(supportedLocales);
 
-const MapViewer = require('../qwc2/MapStore2/web/client/containers/MapViewer');
+const MapViewer = require('../qwc2/MapStore2Components/containers/MapViewer');
 const {loadMapConfig} = require('../qwc2/QWC2Components/actions/config');
-const Localized = require('../qwc2/MapStore2/web/client/components/I18N/Localized');
-const StandardApp = require('../qwc2/MapStore2/web/client/components/app/StandardApp');
-const StandardStore = require('../qwc2/MapStore2/web/client/stores/StandardStore').bind(null, initialState, {});
+const Localized = require('../qwc2/MapStore2Components/components/I18N/Localized');
+const StandardApp = require('../qwc2/MapStore2Components/components/app/StandardApp');
+const StandardStore = require('../qwc2/MapStore2Components/stores/StandardStore').bind(null, initialState, {});
 
-const appComponent = React.createClass({
-    propTypes: {
-        plugins: React.PropTypes.object,
-        locale: React.PropTypes.object,
-    },
+class appComponent extends React.Component {
+    static propTypes = {
+        plugins: PropTypes.object,
+        locale: PropTypes.object,
+    }
     render() {
         return (
             <Localized messages={this.props.locale.messages} locale={this.props.locale.current} loadingError={this.props.locale.localeError}>
@@ -41,7 +42,7 @@ const appComponent = React.createClass({
             </Localized>
         );
     }
-});
+};
 
 const appConfig = {
     storeOpts: {},
