@@ -107,7 +107,7 @@ Configuration format:
               },
               ...
         }
-        "extent": [xmin, ymin, xmax, ymax],         // optional custom extent which overrides extent from WMS capabilities
+        "extent": [xmin, ymin, xmax, ymax],         // optional custom extent in mapCrs (see below) which overrides extent from WMS capabilities
         "tiled": true,                              // optional, use tiled WMS (default is false)
         "format": "image/png",                      // optional, the image format to use in the WMS request, defaults to image/png; other possible values "image/jpeg" or "image/png; mode=8bit" (1 bit or 16 bit modes also available for png)
         "backgroundLayers": [                       // optional background layers
