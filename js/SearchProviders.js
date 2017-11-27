@@ -280,12 +280,14 @@ function wolfsburgResultGeometry(resultItem, callback) {
 function glarusSearch(text, requestId, searchOptions, dispatch) {
     let limit = 9;
     axios.get("https://map.geo.gl.ch/search/all?limit=" + limit + "&query="+ encodeURIComponent(text))
-    .then(response => dispatch(glarusSearchResults(response.data, requestId, limit)));
+    .then(response => dispatch(glarusSearchResults(response.data, requestId, limit)))
+    .catch(error => dispatch(glarusSearchResults({}, requestId, limit)));
 }
 
 function glarusMoreResults(moreItem, text, requestId, dispatch) {
     axios.get("https://map.geo.gl.ch/search/" + moreItem.category + "?query="+ encodeURIComponent(text))
-    .then(response => dispatch(glarusSearchResults(response.data, requestId)));
+    .then(response => dispatch(glarusSearchResults(response.data, requestId)))
+    .catch(error => dispatch(glarusSearchResults({}, requestId)));
 }
 
 function glarusSearchResults(obj, requestId, limit = -1) {
