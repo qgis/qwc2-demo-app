@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const styleConfig = require("./styleConfig");
 
 const nodeEnv = process.env.NODE_ENV || 'development';
@@ -29,25 +30,17 @@ const plugins = [
 
 if (isProd) {
   plugins.push(new LodashModuleReplacementPlugin());
-  plugins.push(
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false,
-        screw_ie8: true,
-        conditionals: true,
-        unused: true,
-        comparisons: true,
-        sequences: true,
-        dead_code: true,
-        evaluate: true,
-        if_return: true,
-        join_vars: true,
-      },
+  plugins.push(new UglifyJsPlugin({
+    uglifyOptions: {
+      ie8: false,
+      ecma: 8,
       output: {
-        comments: false
+        comments: false,
+        beautify: false,
       },
-    })
-  );
+      warnings: false
+    }
+  }));
 } else {
   plugins.push(new webpack.HotModuleReplacementPlugin());
 }
