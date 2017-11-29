@@ -211,6 +211,11 @@ Translations are stored in the `data.<locale>` files stored under `translations`
 These are plain text files in JSON format. Translations available to the application
 need to be listed under `supportedLocales` in `js/appConfig.js`.
 
+The idea is that the translations for the common components are all in the
+https://github.com/qgis/qwc2 repo.
+The translations in the actual app (this repo) are generated from the common translations
+and possibly extended with translations for app-specific components.
+
 When running `yarn start` (or manually `yarn run tsupdate`), translations from
 the common QWC2 components, located in `qwc2/translations`, are automatically
 merged. This ensures the translations remain up-to-date when updating the `qwc2`
