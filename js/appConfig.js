@@ -66,8 +66,7 @@ module.exports = {
             DxfExportPlugin: require('../qwc2/QWC2Components/plugins/DxfExport'),
             RasterExportPlugin: require('../qwc2/QWC2Components/plugins/RasterExport'),
             RedliningPlugin: require('../qwc2/QWC2Components/plugins/Redlining')
-        },
-        requires: {}
+        }
     },
     supportedLocales: {
          "it": {
