@@ -18,9 +18,6 @@ if (!global.Intl) {
 
 const {initialState, pluginsDef, supportedLocales} = require('./appConfig');
 
-const ConfigUtils = require('../qwc2/MapStore2Components/utils/ConfigUtils');
-ConfigUtils.setLocalConfigurationFile('config.json');
-
 const LocaleUtils = require('../qwc2/MapStore2Components/utils/LocaleUtils');
 LocaleUtils.setSupportedLocales(supportedLocales);
 
