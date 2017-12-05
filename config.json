@@ -7,6 +7,16 @@
   "urlPositionCrs": "",
   "preserveExtentOnThemeSwitch": true,
   "preserveBackgroundOnThemeSwitch": true,
+  "defaultFeatureStyle": {
+    "strokeColor": [0, 0, 255, 1],
+    "strokeWidth": 1,
+    "strokeDash": [4],
+    "fillColor": [255, 0, 255, 0.33],
+    "circleRadius": 10,
+    "circleBorder": 2,
+    "textFill": "black",
+    "textStroke": "white"
+  },
   "plugins": {
       "mobile": [
         {
