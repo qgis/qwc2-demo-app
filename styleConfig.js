@@ -30,6 +30,8 @@ let styleConfig = {
   item_fg: "#595959",
   item_border: "#a6a6a6",
   item_active: "#078aa3",
+  item_active_hover: "#05768a",
+  item_inactive_hover: "#dcdcdc"
 };
 
 module.exports = styleConfig;

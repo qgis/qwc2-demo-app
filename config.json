@@ -44,6 +44,7 @@
                 {"key": "Tools", "icon": "img/tools.svg", "subitems": [
                   {"key": "Measure", "icon": "img/measure_white.svg"},
                   {"key": "Redlining", "icon": "img/draw.svg"},
+                  {"key": "Editing", "icon": "img/editing.svg"},
                   {"key": "DxfExport", "icon": "img/dxfexport.svg"},
                   {"key": "RasterExport", "icon": "img/rasterexport.svg"}
                 ]},
@@ -112,6 +113,9 @@
         },
         {
           "name": "Redlining"
+        },
+        {
+          "name": "Editing"
         }
       ],
       "desktop": [
@@ -153,6 +157,7 @@
                 {"key": "Tools", "icon": "img/tools.svg", "subitems": [
                   {"key": "Measure", "icon": "img/measure_white.svg"},
                   {"key": "Redlining", "icon": "img/draw.svg"},
+                  {"key": "Editing", "icon": "img/editing.svg"},
                   {"key": "DxfExport", "icon": "img/dxfexport.svg"},
                   {"key": "RasterExport", "icon": "img/rasterexport.svg"}
                 ]},
@@ -239,6 +244,9 @@
         },
         {
           "name": "Redlining"
+        },
+        {
+          "name": "Editing"
         }
       ]
   }

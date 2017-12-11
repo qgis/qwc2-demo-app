@@ -8,6 +8,7 @@
 
 const Proj4js = require('proj4');
 const SearchProviders = require('./SearchProviders');
+const EditingInterface = require('./EditingInterface');
 const CoordinatesUtils = require('../qwc2/MapStore2Components/utils/CoordinatesUtils');
 const renderHelp = require('./Help');
 
@@ -36,6 +37,7 @@ module.exports = {
     pluginsDef: {
         plugins: {
             MapPlugin: require('../qwc2/QWC2Components/plugins/Map')({
+                EditingSupport: require('../qwc2/QWC2Components/plugins/map/EditingSupport'),
                 MeasurementSupport: require('../qwc2/QWC2Components/plugins/map/MeasurementSupport'),
                 LocateSupport: require('../qwc2/QWC2Components/plugins/map/LocateSupport'),
                 OverviewSupport: require('../qwc2/QWC2Components/plugins/map/OverviewSupport'),
@@ -65,7 +67,8 @@ module.exports = {
             HelpPlugin: require('../qwc2/QWC2Components/plugins/Help')(renderHelp),
             DxfExportPlugin: require('../qwc2/QWC2Components/plugins/DxfExport'),
             RasterExportPlugin: require('../qwc2/QWC2Components/plugins/RasterExport'),
-            RedliningPlugin: require('../qwc2/QWC2Components/plugins/Redlining')
+            RedliningPlugin: require('../qwc2/QWC2Components/plugins/Redlining'),
+            EditingPlugin: require('../qwc2/QWC2Components/plugins/Editing')(EditingInterface)
         }
     },
     supportedLocales: {

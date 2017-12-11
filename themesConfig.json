@@ -111,7 +111,8 @@
               "framecolor": "#000000",
               "framewidth": 1
             },
-            "skipEmptyFeatureAttributes": true
+            "skipEmptyFeatureAttributes": true,
+            "editConfig": "test2056_edit.json"
           }
         ],
         "groups": [
