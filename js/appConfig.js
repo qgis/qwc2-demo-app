@@ -45,6 +45,7 @@ module.exports = {
                 ScaleBarSupport: require('../qwc2/QWC2Components/plugins/map/ScaleBarSupport'),
                 SelectionSupport: require('../qwc2/QWC2Components/plugins/map/SelectionSupport')
             }),
+            HomeButtonPlugin: require('../qwc2/QWC2Components/plugins/HomeButton'),
             LocateButtonPlugin: require('../qwc2/QWC2Components/plugins/LocateButton'),
             ZoomInPlugin: require('../qwc2/QWC2Components/plugins/ZoomButtons'),
             ZoomOutPlugin: require('../qwc2/QWC2Components/plugins/ZoomButtons'),

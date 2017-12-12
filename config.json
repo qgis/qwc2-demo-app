@@ -23,6 +23,13 @@
           "name": "Map"
         },
         {
+          "name": "HomeButton"
+          ,
+          "cfg": {
+            "position": 2
+          }
+        },
+        {
           "name": "LocateButton",
           "cfg": {
             "position": 1
@@ -121,6 +128,13 @@
       "desktop": [
         {
           "name": "Map"
+        },
+        {
+          "name": "HomeButton"
+          ,
+          "cfg": {
+            "position": 4
+          }
         },
         {
           "name": "LocateButton"
