@@ -64,6 +64,7 @@
     },
     "identifyTitle": "Informazioni Sulle Feature",
     "layertree": {
+      "addlayer": "",
       "maptip": "",
       "printlegend": "",
       "transparency": ""

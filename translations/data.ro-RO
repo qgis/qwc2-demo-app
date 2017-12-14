@@ -64,6 +64,7 @@
     },
     "identifyTitle": "Info Entități",
     "layertree": {
+      "addlayer": "",
       "maptip": "Arată indicii hartă",
       "printlegend": "Tipărește legenda",
       "transparency": "Transparență"

@@ -64,6 +64,7 @@
     },
     "identifyTitle": "Feature Info",
     "layertree": {
+      "addlayer": "Add external layer",
       "maptip": "Show layer map tips",
       "printlegend": "Print legend",
       "transparency": "Transparency"

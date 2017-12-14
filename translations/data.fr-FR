@@ -64,6 +64,7 @@
     },
     "identifyTitle": "Informations de l'objet",
     "layertree": {
+      "addlayer": "",
       "maptip": "Afficher les maptips",
       "printlegend": "Afficher la légende",
       "transparency": "Transparence"
