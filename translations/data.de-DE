@@ -78,6 +78,7 @@
     "noFeatureInfo": "Am ausgewählten Punkt sind keine Informationen verfügbar",
     "print": {
       "layout": "Format",
+      "grid": "",
       "nolayouts": "Das gewählte Thema stellt keine Druck-Vorlagen zur Verfügung.",
       "notheme": "Kein Thema selektiert",
       "resolution": "Auflösung",
