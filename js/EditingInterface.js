@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-function getFeature(layerId, mapPos, mapCrs, callback) {
+function getFeature(layerId, mapPos, mapCrs, mapScale, dpi, callback) {
     console.log("Pick " + layerId + " at (" + mapPos.x + ", " + mapPos.y + "): " + mapCrs);
     let feature = null;
     setTimeout(() => callback(feature), 500);

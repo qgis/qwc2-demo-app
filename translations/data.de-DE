@@ -91,6 +91,7 @@
       "selectinfo": "Rechteck aufziehen um die zu exportierende Region"
     },
     "redlining": {
+      "border": "",
       "fill": "Füllung",
       "label": "Beschriftung",
       "line": "Linie",
@@ -98,7 +99,9 @@
       "pick": "Auswählen",
       "point": "Punkt",
       "polygon": "Polygon",
-      "text": ""
+      "size": "",
+      "text": "",
+      "width": ""
     },
     "search": {
       "more": "Mehr...",

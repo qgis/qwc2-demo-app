@@ -91,6 +91,7 @@
       "selectinfo": "Dessiner un rectangle pour définir la zone à exporter"
     },
     "redlining": {
+      "border": "",
       "fill": "Remplissage",
       "label": "Texte",
       "line": "Ligne",
@@ -98,7 +99,9 @@
       "pick": "Choisir",
       "point": "Point",
       "polygon": "Polygone",
-      "text": ""
+      "size": "",
+      "text": "",
+      "width": ""
     },
     "search": {
       "more": "",
