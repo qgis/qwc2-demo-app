@@ -56,6 +56,9 @@
       "pick": "",
       "reallydelete": ""
     },
+    "fileselector": {
+      "placeholder": ""
+    },
     "identify": {
       "querying": "Interogare..."
     },
@@ -63,11 +66,19 @@
       "info": "Încadrați într-un poligon entitățile de identificat..."
     },
     "identifyTitle": "Info Entități",
+    "importlayer": {
+      "addlayer": "",
+      "connect": "",
+      "nofeatures": "",
+      "queryservice": "",
+      "urlplaceholder": ""
+    },
     "layertree": {
-      "addlayer": "Adaugare strat",
+      "importlayer": "",
       "maptip": "Arată indicii hartă",
       "printlegend": "Tipărește legenda",
-      "transparency": "Transparență"
+      "transparency": "Transparență",
+      "addlayer": "Adaugare strat"
     },
     "measureComponent": {
       "areaLabel": "Arie",

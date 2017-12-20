@@ -56,6 +56,9 @@
       "pick": "Pick",
       "reallydelete": "Delete"
     },
+    "fileselector": {
+      "placeholder": "Select file..."
+    },
     "identify": {
       "querying": "Querying..."
     },
@@ -63,11 +66,19 @@
       "info": "Draw a polygon around the features to identify..."
     },
     "identifyTitle": "Feature Info",
+    "importlayer": {
+      "addlayer": "Add layer",
+      "connect": "Connect",
+      "nofeatures": "No features could be imported.",
+      "queryservice": "Query service..",
+      "urlplaceholder": "Enter URL to WMS..."
+    },
     "layertree": {
-      "addlayer": "Add external layer",
+      "importlayer": "Import layer",
       "maptip": "Show layer map tips",
       "printlegend": "Print legend",
-      "transparency": "Transparency"
+      "transparency": "Transparency",
+      "addlayer": "Add external layer"
     },
     "measureComponent": {
       "areaLabel": "Area",
