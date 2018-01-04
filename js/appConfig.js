@@ -27,9 +27,6 @@ module.exports = {
         defaultState: {
             mousePosition: {
                 enabled: true
-            },
-            mapInfo: {
-                enabled: true
             }
         },
         mobile: {}

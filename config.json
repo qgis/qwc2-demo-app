@@ -7,6 +7,8 @@
   "urlPositionCrs": "",
   "preserveExtentOnThemeSwitch": true,
   "preserveBackgroundOnThemeSwitch": true,
+  "preserveNonThemeLayersOnThemeSwitch": true,
+  "allowReorderingLayers": false,
   "defaultFeatureStyle": {
     "strokeColor": [0, 0, 255, 1],
     "strokeWidth": 1,
@@ -109,6 +111,7 @@
             "showRootEntry": true,
             "showQueryableIcon": true,
             "groupTogglesSublayers": false,
+            "flattenGroups": false,
             "layerInfoWindowSize": {"width": 480, "height": 400}
           }
         },
@@ -214,6 +217,7 @@
             "showQueryableIcon": true,
             "allowMapTips": true,
             "groupTogglesSublayers": false,
+            "flattenGroups": false,
             "layerInfoWindowSize": {"width": 480, "height": 400}
           }
         },
