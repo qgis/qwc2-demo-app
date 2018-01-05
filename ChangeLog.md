@@ -58,6 +58,11 @@ v0.3 (XXX XX 2017):
 - Editing support
 - Support for importing WMS layers
 - Support for importing KML layers
+- Add option to flatten layer tree groups (config.json -> LayerTree -> flattenGroups)
+- Optionally allow reordering layers in layer tree (controlled via config.json -> allowReorderingLayers)
+- Add option to preseve non-theme layers on theme switch (config.json -> preserveNonThemeLayersOnThemeSwitch)
+- Add possibility to specify DPIs for raster export (config.json -> RasterExport -> dpis)
+- Add option to reset to default theme when logo image is clicked (config.json -> TopBar -> logoClickResetsTheme)
 
 
 **Incompatible changes**:

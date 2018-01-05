@@ -64,7 +64,8 @@
                 "minScale": 1000,
                 "showProviderSelection": false
               },
-              "appMenuClearsTask": true
+              "appMenuClearsTask": true,
+              "logoClickResetsTheme": true
             }
         },
         {
@@ -119,7 +120,10 @@
           "name": "DxfExport"
         },
         {
-          "name": "RasterExport"
+          "name": "RasterExport",
+          "cfg": {
+            "dpis": [96, 300]
+          }
         },
         {
           "name": "Redlining"
@@ -190,7 +194,8 @@
                 "minScale": 1000,
                 "showProviderSelection": false
               },
-              "appMenuClearsTask": true
+              "appMenuClearsTask": true,
+              "logoClickResetsTheme": true
             }
         },
         {
@@ -258,7 +263,10 @@
           "name": "DxfExport"
         },
         {
-          "name": "RasterExport"
+          "name": "RasterExport",
+          "cfg": {
+            "dpis": [96, 300]
+          }
         },
         {
           "name": "Redlining"
