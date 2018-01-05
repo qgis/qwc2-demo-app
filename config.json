@@ -130,6 +130,9 @@
         },
         {
           "name": "Editing"
+        },
+        {
+          "name": "MapCompare"
         }
       ],
       "desktop": [
@@ -273,6 +276,9 @@
         },
         {
           "name": "Editing"
+        },
+        {
+          "name": "MapCompare"
         }
       ]
   }
