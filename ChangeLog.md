@@ -63,6 +63,7 @@ v0.3 (XXX XX 2017):
 - Add option to preseve non-theme layers on theme switch (config.json -> preserveNonThemeLayersOnThemeSwitch)
 - Add possibility to specify DPIs for raster export (config.json -> RasterExport -> dpis)
 - Add option to reset to default theme when logo image is clicked (config.json -> TopBar -> logoClickResetsTheme)
+- Add possibility to compare top layer with remaining layers of map
 
 
 **Incompatible changes**:
