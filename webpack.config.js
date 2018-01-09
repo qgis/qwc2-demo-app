@@ -19,7 +19,6 @@ const plugins = [
     "__DEVTOOLS__": !isProd
   }),
   new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "qwc2", "libs", "openlayers")),
-  new webpack.NormalModuleReplacementPlugin(/proj4$/, path.join(__dirname, "qwc2", "libs", "proj4")),
   new webpack.NoEmitOnErrorsPlugin(),
   new webpack.LoaderOptionsPlugin({
       debug: !isProd,

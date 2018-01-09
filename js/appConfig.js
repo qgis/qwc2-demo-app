@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const Proj4js = require('proj4');
+const Proj4js = require('proj4').default;
 const SearchProviders = require('./SearchProviders');
 const EditingInterface = require('./EditingInterface');
 const CoordinatesUtils = require('../qwc2/MapStore2Components/utils/CoordinatesUtils');
