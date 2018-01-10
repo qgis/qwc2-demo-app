@@ -62,7 +62,8 @@
               ],
               "searchOptions": {
                 "minScale": 1000,
-                "showProviderSelection": false
+                "showProviderSelection": true,
+                "providerSelectionAllowAll": true
               },
               "appMenuClearsTask": true,
               "logoClickResetsTheme": true
@@ -195,7 +196,8 @@
               ],
               "searchOptions": {
                 "minScale": 1000,
-                "showProviderSelection": false
+                "showProviderSelection": true,
+                "providerSelectionAllowAll": true
               },
               "appMenuClearsTask": true,
               "logoClickResetsTheme": true
