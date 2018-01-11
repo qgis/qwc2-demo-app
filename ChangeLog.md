@@ -95,7 +95,9 @@ v0.3 (XXX XX 2017):
 - Ported react components to use class definition and ES7 syntax, see i.e. [https://babeljs.io/blog/2015/06/07/react-on-es6-plus](https://babeljs.io/blog/2015/06/07/react-on-es6-plus). **Any custom react components will need to be updated**.
 - Most of the logic in js/app.jsx was moved to the core components, the file needs to be updated according to the latest version in qwc2-demo-app
 - The stylesheet assets/css/qwc2.css needs to be updated to include the style for `#container`, accoding to the latest version in qwc2-demo-app
-- The npm packages are now used for openlayers and proj4. The corresponding `link` and `script` lines need to be removed from `index.html`, and in `js/appConfig.js` the proj import needs to be changed to `const Proj4js = require('proj4').default;`.
+- The npm packages are now used for openlayers and proj4. The corresponding `link` and `script` lines need to be removed from `index.html`, and in `js/appConfig.js` the proj import needs to be changed to `const Proj4js = require('proj4').default;`. Also, the following line needs to be removed from webpack.config.js:
+
+      new webpack.NormalModuleReplacementPlugin(/proj4$/, path.join(__dirname, "qwc2", "libs", "proj4")),
 
 
 v0.2 (Jan 03 2017):
