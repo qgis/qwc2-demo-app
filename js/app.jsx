@@ -10,10 +10,6 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 
 const appConfig = require('./appConfig');
-
-const LocaleUtils = require('../qwc2/MapStore2Components/utils/LocaleUtils');
-LocaleUtils.setSupportedLocales(appConfig.supportedLocales);
-
 const StandardApp = require('../qwc2/QWC2Components/components/StandardApp');
 
 ReactDOM.render(
