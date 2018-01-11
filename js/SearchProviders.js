@@ -326,30 +326,45 @@ function glarusResultGeometry(resultItem, callback) {
     .then(response => callback(resultItem, response.data, "EPSG:2056"));
 }
 
-module.exports = {
-    "coordinates": {
-        label: "Coordinates",
-        onSearch: coordinatesSearch
-    },
-    "geoadmin": {
-        label: "Swisstopo",
-        onSearch: geoAdminLocationSearch
-    },
-    "uster": {
-        label: "Uster",
-        onSearch: usterSearch,
-        getResultGeometry: usterResultGeometry
-    },
-    "wolfsburg": {
-        label: "Wolfsburg",
-        onSearch: wolfsburgSearch,
-        getResultGeometry: wolfsburgResultGeometry
-    },
-    "glarus": {
-        label: "Glarus",
-        onSearch: glarusSearch,
-        getResultGeometry: glarusResultGeometry,
-        getMoreResults: glarusMoreResults
+////////////////////////////////////////////////////////////////////////////////
 
+module.exports = {
+    SearchProviders: {
+        "coordinates": {
+            label: "Coordinates",
+            onSearch: coordinatesSearch
+        },
+        "geoadmin": {
+            label: "Swisstopo",
+            onSearch: geoAdminLocationSearch
+        },
+        "uster": {
+            label: "Uster",
+            onSearch: usterSearch,
+            getResultGeometry: usterResultGeometry
+        },
+        "wolfsburg": {
+            label: "Wolfsburg",
+            onSearch: wolfsburgSearch,
+            getResultGeometry: wolfsburgResultGeometry
+        },
+        "glarus": {
+            label: "Glarus",
+            onSearch: glarusSearch,
+            getResultGeometry: glarusResultGeometry,
+            getMoreResults: glarusMoreResults
+        }
+    },
+    searchProviderFactory: (cfg) => {
+        /* I.e.
+
+        return {
+            label: cfg.label,
+            onSearch: (text, requestId, searchOptions, dispatch) => mySearch(cfg, text, requestId, searchOptions, dispatch)
+        };
+
+        Note: cfg corresponds to an entry of the theme searchProviders array in themesConfig.json
+        */
+        return null;
     }
 };

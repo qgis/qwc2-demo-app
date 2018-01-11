@@ -7,7 +7,7 @@
  */
 
 const Proj4js = require('proj4').default;
-const SearchProviders = require('./SearchProviders');
+const {SearchProviders, searchProviderFactory} = require('./SearchProviders');
 const EditingInterface = require('./EditingInterface');
 const CoordinatesUtils = require('../qwc2/MapStore2Components/utils/CoordinatesUtils');
 const renderHelp = require('./Help');
@@ -49,7 +49,7 @@ module.exports = {
             BackgroundSwitcherPlugin: require('../qwc2/QWC2Components/plugins/BackgroundSwitcher'),
             TopBarPlugin: require('../qwc2/QWC2Components/plugins/TopBar')({
                  AppMenu: require("../qwc2/QWC2Components/components/AppMenu"),
-                 Search: require("../qwc2/QWC2Components/components/Search")(SearchProviders),
+                 Search: require("../qwc2/QWC2Components/components/Search")(SearchProviders, searchProviderFactory),
                  Toolbar: require("../qwc2/QWC2Components/components/Toolbar"),
                  FullscreenSwitcher: require("../qwc2/QWC2Components/components/FullscreenSwitcher")
             }),
