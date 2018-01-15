@@ -130,8 +130,9 @@ Configuration format:
           "framecolor": "#000000",                  // optional, color of the frame border
           "framewidth": 1                           // optional, width of the frame border, in pixels
         },
-        "collapseLayerGroupsBelowLevel": <level>    // optional, layer tree level below which to initially collapse groups. If unspecified, groups are not initially collapsed.
-        "skipEmptyFeatureAttributes": true          // optional, whether to skip empty feature attributes in the identify results. Default is false.
+        "collapseLayerGroupsBelowLevel": <level>,   // optional, layer tree level below which to initially collapse groups. If unspecified, groups are not initially collapsed.
+        "skipEmptyFeatureAttributes": true,         // optional, whether to skip empty feature attributes in the identify results. Default is false.
+        "extraLegendParameters": "&KEY=VALUE,..."   // optional, additional query parameters to append to the getLegendGraphics request
       }
     ],
     "groups": [                                     // optional, nested groups
