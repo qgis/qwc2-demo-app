@@ -64,6 +64,7 @@ v0.3 (XXX XX 2017):
 - Add possibility to specify DPIs for raster export (config.json -> RasterExport -> dpis)
 - Add option to reset to default theme when logo image is clicked (config.json -> TopBar -> logoClickResetsTheme)
 - Add possibility to compare top layer with remaining layers of map
+- Redlining and additional layers added by the user are sent to the permalink service and restored if the service returns them, see https://github.com/sourcepole/qwc2-server
 
 
 **Incompatible changes**:
