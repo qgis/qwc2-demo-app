@@ -65,6 +65,7 @@ v0.3 (XXX XX 2017):
 - Add option to reset to default theme when logo image is clicked (config.json -> TopBar -> logoClickResetsTheme)
 - Add possibility to compare top layer with remaining layers of map
 - Redlining and additional layers added by the user are sent to the permalink service and restored if the service returns them, see https://github.com/sourcepole/qwc2-server
+- Add height profile plugin, see https://github.com/sourcepole/qwc2-server for a sample service
 
 
 **Incompatible changes**:
@@ -99,6 +100,9 @@ v0.3 (XXX XX 2017):
 - The npm packages are now used for openlayers and proj4. The corresponding `link` and `script` lines need to be removed from `index.html`, and in `js/appConfig.js` the proj import needs to be changed to `const Proj4js = require('proj4').default;`. Also, the following line needs to be removed from webpack.config.js:
 
       new webpack.NormalModuleReplacementPlugin(/proj4$/, path.join(__dirname, "qwc2", "libs", "proj4")),
+
+- `qwc2serverUrl` in `config.json` was renamed to `permalinkServiceUrl` for clarity
+- `proxyUrl` in `config.json` was renamed to `proxyServiceUrl` for clarity, and is now only the base URL without `url` query parameter
 
 
 v0.2 (Jan 03 2017):

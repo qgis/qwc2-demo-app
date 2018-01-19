@@ -1,6 +1,7 @@
 {
-  "proxyUrl": "http://qwc2.sourcepole.ch/api/proxy?url=",
-  "qwc2serverUrl": "http://qwc2.sourcepole.ch/api/",
+  "proxyServiceUrl": "http://localhost:5000/",
+  "permalinkServiceUrl": "http://localhost:5001/",
+  "elevationServiceUrl": "http://localhost:5002/",
   "translationsPath": "/translations",
   "assetsPath": "/assets",
   "urlPositionFormat": "extent",
@@ -134,6 +135,9 @@
         },
         {
           "name": "MapCompare"
+        },
+        {
+          "name": "HeightProfile"
         }
       ],
       "desktop": [
@@ -281,6 +285,9 @@
         },
         {
           "name": "MapCompare"
+        },
+        {
+          "name": "HeightProfile"
         }
       ]
   }
