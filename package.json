@@ -42,6 +42,7 @@
         "babel-polyfill": "^6.23.0",
         "bootstrap": "^3.3.7",
         "chartist": "^0.11.0",
+        "chartist-plugin-axistitle": "^0.0.4",
         "classnames": "^2.2.5",
         "deepcopy": "^0.6.3",
         "deepmerge": "^2.0.1",

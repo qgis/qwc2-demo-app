@@ -1133,6 +1133,10 @@ chardet@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.4.0.tgz#0bbe1355ac44d7a3ed4a925707c4ef70f8190f6c"
 
+chartist-plugin-axistitle@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/chartist-plugin-axistitle/-/chartist-plugin-axistitle-0.0.4.tgz#102d7b84260061292dff666b918fedc955deb144"
+
 chartist@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/chartist/-/chartist-0.11.0.tgz#84ba5e05490d096d93dcfa9343ebc31ef6a3bd28"
