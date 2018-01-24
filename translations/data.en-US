@@ -25,6 +25,10 @@
       "terms_label": "Terms of use",
       "viewertitle_label": "QWC2 Demo"
     },
+    "copybtn": {
+      "click_to_copy": "Click to copy",
+      "copied": "Copied"
+    },
     "draw": {
       "bbox": "Box",
       "circle": "Circle",
@@ -87,6 +91,9 @@
       "transparency": "Transparency",
       "addlayer": "Add external layer"
     },
+    "mapinfotooltip": {
+      "elevation": "Elevation"
+    },
     "measureComponent": {
       "areaLabel": "Area",
       "bearingLabel": "Bearing",
@@ -132,9 +139,7 @@
       "directLinkTitle": "Via a direct link",
       "generatingpermalink": "Generating permalink...",
       "QRCodeLinkTitle": "qr code",
-      "socialIntro": "In your favourite social network",
-      "msgToCopyUrl": "Click to copy",
-      "msgCopiedUrl": "Copied"
+      "socialIntro": "In your favourite social network"
     },
     "themeswitcher": {
       "filter": "Filter..."

@@ -66,6 +66,7 @@ v0.3 (XXX XX 2017):
 - Add possibility to compare top layer with remaining layers of map
 - Redlining and additional layers added by the user are sent to the permalink service and restored if the service returns them, see https://github.com/sourcepole/qwc2-server
 - Add height profile plugin, see https://github.com/sourcepole/qwc2-server for a sample service
+- Add a plugin for displaying a map info tooltip on rightclick
 
 
 **Incompatible changes**:

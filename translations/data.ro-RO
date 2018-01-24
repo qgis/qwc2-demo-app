@@ -25,6 +25,10 @@
       "terms_label": "Termeni de utilizare",
       "viewertitle_label": "Harta GIS"
     },
+    "copybtn": {
+      "click_to_copy": "Click pt. copiere",
+      "copied": "Copiat"
+    },
     "draw": {
       "bbox": "Dreptunghi",
       "circle": "Cerc",
@@ -87,6 +91,9 @@
       "transparency": "Transparență",
       "addlayer": "Adaugare strat"
     },
+    "mapinfotooltip": {
+      "elevation": ""
+    },
     "measureComponent": {
       "areaLabel": "Arie",
       "bearingLabel": "Direcție",
@@ -133,9 +140,7 @@
       "directLinkTitle": "Via link direct",
       "generatingpermalink": "Generare permalink...",
       "QRCodeLinkTitle": "cod QR",
-      "socialIntro": "În rețeaua socială favorită",
-      "msgToCopyUrl": "Click pt. copiere",
-      "msgCopiedUrl": "Copiat"
+      "socialIntro": "În rețeaua socială favorită"
     },
     "themeswitcher": {
       "filter": "Filtrare"
