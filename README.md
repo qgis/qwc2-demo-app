@@ -201,9 +201,10 @@ desktop.
 
 ### Server
 
-A server component is necessary for generating and resolving permalinks.
-A sample server can be found [here](https://github.com/sourcepole/qwc2-server).
-The url to the server must be specified under `qwc2serverUrl` in `config.json`.
+Sever components can be used to enhance the functionality of the viewer, i.e.
+generating and resolving permalinks and querying elevations.
+A collection of sample services can be found [here](https://github.com/sourcepole/qwc2-server).
+The URLs to these services must be specified under `qwc2serverUrl` in `config.json`.
 
 Translations
 ------------
