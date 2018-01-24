@@ -7,7 +7,7 @@
  */
 
 function getFeature(layerId, mapPos, mapCrs, mapScale, dpi, callback) {
-    console.log("Pick " + layerId + " at (" + mapPos.x + ", " + mapPos.y + "): " + mapCrs);
+    console.log("Pick " + layerId + " at (" + mapPos[0] + ", " + mapPos[1] + "): " + mapCrs);
     let feature = null;
     setTimeout(() => callback(feature), 500);
 }
