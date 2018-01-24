@@ -103,6 +103,7 @@ v0.3 (XXX XX 2017):
 
 - `qwc2serverUrl` in `config.json` was renamed to `permalinkServiceUrl` for clarity
 - `proxyUrl` in `config.json` was renamed to `proxyServiceUrl` for clarity, and is now only the base URL without `url` query parameter
+- The codebase now consistently uses `[x, y]` as point format (instead of a mix of `{x: x, y: y}` and `[x, y]`). So i.e. CoordinatesUtils.reproject will also return a point in `[x, y]` format.
 
 
 v0.2 (Jan 03 2017):
