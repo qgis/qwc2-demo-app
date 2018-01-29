@@ -69,13 +69,12 @@ function coordinatesSearch(text, requestId, searchOptions, dispatch) {
         let x = parseFloat(matches[1]);
         let y = parseFloat(matches[2]);
         if(displaycrs !== "EPSG:4326") {
-            let coord = CoordinatesUtils.reproject([x, y], displaycrs, "EPSG:4326");
             items.push({
                 id: "coord0",
                 text: x + ", " + y + " (" + displaycrs + ")",
-                x: coord.x,
-                y: coord.y,
-                crs: "EPSG:4326",
+                x: x,
+                y: y,
+                crs: displaycrs,
                 bbox: [x, y, x, y]
             });
         }
