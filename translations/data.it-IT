@@ -90,6 +90,9 @@
       "printlegend": "",
       "transparency": ""
     },
+    "map": {
+      "loading": "Caricamento..."
+    },
     "mapinfotooltip": {
       "elevation": ""
     },
@@ -102,13 +105,13 @@
     "noFeatureInfo": "Non ci sono informazioni disponibili per il punto selezionato",
     "print": {
       "layout": "Layout",
+      "resolution": "Risoluzione:",
+      "submit": "Stampa",
       "grid": "",
       "nolayouts": "",
       "notheme": "",
-      "resolution": "Risoluzione:",
       "rotation": "",
-      "scale": "",
-      "submit": "Stampa"
+      "scale": ""
     },
     "rasterexport": {
       "format": "",
@@ -116,7 +119,6 @@
       "selectinfo": ""
     },
     "redlining": {
-      "border": "",
       "fill": "Riempimento",
       "label": "Ettichetta",
       "line": "Linea",
@@ -124,30 +126,28 @@
       "pick": "Seleziona",
       "point": "Punto",
       "polygon": "Poligono",
+      "border": "",
       "size": "",
       "text": "",
       "width": ""
     },
     "search": {
+      "placeholder": "Cerca un indirizzo o inserisci coordinate...",
       "more": "",
       "search": "",
-      "all": "",
-      "placeholder": "Cerca un indirizzo o inserisci coordinate..."
+      "all": ""
     },
     "share": {
       "directLinkTitle": "Con un Link diretto",
-      "generatingpermalink": "",
       "QRCodeLinkTitle": "Usando il QR Code",
-      "socialIntro": "Sul tuo social preferito"
+      "socialIntro": "Sul tuo social preferito",
+      "generatingpermalink": ""
     },
     "themeswitcher": {
       "filter": ""
     },
     "bgswitcher": {},
     "layerinfo": {},
-    "locate": {},
-    "map": {
-      "loading": "In caricamento..."
-    }
+    "locate": {}
   }
 }

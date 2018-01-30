@@ -90,6 +90,9 @@
       "printlegend": "Afficher la légende",
       "transparency": "Transparence"
     },
+    "map": {
+      "loading": "Chargement..."
+    },
     "mapinfotooltip": {
       "elevation": ""
     },
@@ -130,10 +133,10 @@
     },
     "search": {
       "more": "Plus...",
-      "search": "",
-      "all": "",
       "placeholder": "Recherche par toponyme ou coordonnées...",
-      "coordinates": "Coordonnées"
+      "coordinates": "Coordonnées",
+      "search": "",
+      "all": ""
     },
     "share": {
       "directLinkTitle": "Via un lien direct",
@@ -156,9 +159,6 @@
       "metadataUrl": "URL des métadonnées",
       "legend": "Légende"
     },
-    "locate": {},
-    "map": {
-      "loading": "Chargement de la carte..."
-    }
+    "locate": {}
   }
 }

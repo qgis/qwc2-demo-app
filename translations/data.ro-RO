@@ -84,12 +84,15 @@
       "urlplaceholder": ""
     },
     "layertree": {
-      "compare": "",
-      "importlayer": "",
       "maptip": "Arată indicii hartă",
       "printlegend": "Tipărește legenda",
       "transparency": "Transparență",
-      "addlayer": "Adaugare strat"
+      "addlayer": "Adaugare strat",
+      "compare": "",
+      "importlayer": ""
+    },
+    "map": {
+      "loading": "Se încarcă..."
     },
     "mapinfotooltip": {
       "elevation": ""
@@ -113,11 +116,10 @@
     },
     "rasterexport": {
       "format": "Format:",
-      "resolution": "",
-      "selectinfo": "Încadrați într-un dreptunghi zona de exportat.."
+      "selectinfo": "Încadrați într-un dreptunghi zona de exportat..",
+      "resolution": ""
     },
     "redlining": {
-      "border": "",
       "fill": "Umplere",
       "label": "Text",
       "line": "Linie",
@@ -125,16 +127,17 @@
       "pick": "Alege",
       "point": "Punct",
       "polygon": "Poligon",
+      "border": "",
       "size": "",
       "text": "",
       "width": ""
     },
     "search": {
       "more": "Mai multe...",
-      "search": "",
-      "all": "",
       "placeholder": "Caută locații și coordonate...",
-      "coordinates": "Coordonate"
+      "coordinates": "Coordonate",
+      "search": "",
+      "all": ""
     },
     "share": {
       "directLinkTitle": "Via link direct",
@@ -170,9 +173,6 @@
         "FOLLOWING": "Urmărește",
         "PERMISSION_DENIED": "Acces refuzat"
       }
-    },
-    "map": {
-      "loading": "Se încarcă..."
     }
   }
 }

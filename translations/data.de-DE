@@ -84,11 +84,14 @@
       "urlplaceholder": ""
     },
     "layertree": {
-      "compare": "",
-      "importlayer": "",
       "maptip": "Kartentipps anzeigen",
       "printlegend": "Legende drucken",
-      "transparency": "Transparenz"
+      "transparency": "Transparenz",
+      "compare": "",
+      "importlayer": ""
+    },
+    "map": {
+      "loading": "Laden..."
     },
     "mapinfotooltip": {
       "elevation": ""
@@ -102,21 +105,20 @@
     "noFeatureInfo": "Am ausgewählten Punkt sind keine Informationen verfügbar",
     "print": {
       "layout": "Format",
-      "grid": "",
       "nolayouts": "Das gewählte Thema stellt keine Druck-Vorlagen zur Verfügung.",
       "notheme": "Kein Thema selektiert",
       "resolution": "Auflösung",
       "rotation": "Rotation",
       "scale": "Massstab",
-      "submit": "PDF erzeugen"
+      "submit": "PDF erzeugen",
+      "grid": ""
     },
     "rasterexport": {
       "format": "Format:",
-      "resolution": "",
-      "selectinfo": "Rechteck aufziehen um die zu exportierende Region"
+      "selectinfo": "Rechteck aufziehen um die zu exportierende Region",
+      "resolution": ""
     },
     "redlining": {
-      "border": "",
       "fill": "Füllung",
       "label": "Beschriftung",
       "line": "Linie",
@@ -124,16 +126,17 @@
       "pick": "Auswählen",
       "point": "Punkt",
       "polygon": "Polygon",
+      "border": "",
       "size": "",
       "text": "",
       "width": ""
     },
     "search": {
       "more": "Mehr...",
-      "search": "",
-      "all": "",
       "placeholder": "Suche nach Objekten/Namen und Koordinaten",
-      "coordinates": "Koordinaten"
+      "coordinates": "Koordinaten",
+      "search": "",
+      "all": ""
     },
     "share": {
       "directLinkTitle": "Über einen direkten Link",
@@ -162,9 +165,6 @@
       "feetUnit": "Fuss",
       "popup": "Die Position liegt in einem Radius von {distance} {unit} von diesem Punkt",
       "outsideMapBoundsMsg": "Die Position schient ausserhalb der Grenze der Karte zu liegen"
-    },
-    "map": {
-      "loading": "Karte wird geladen"
     }
   }
 }

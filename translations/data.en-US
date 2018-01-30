@@ -91,6 +91,9 @@
       "transparency": "Transparency",
       "addlayer": "Add external layer"
     },
+    "map": {
+      "loading": "Loading..."
+    },
     "mapinfotooltip": {
       "elevation": "Elevation"
     },
@@ -169,9 +172,6 @@
         "FOLLOWING": "Following",
         "PERMISSION_DENIED": "Permission denied"
       }
-    },
-    "map": {
-      "loading": "Loading..."
     }
   }
 }
