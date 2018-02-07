@@ -15,7 +15,7 @@
         "Tools": "Unelte hartă",
         "IdentifyRegion": "Interogare regiune",
         "Redlining": "Evidențiere",
-        "Editing": ""
+        "Editing": "Editare"
       },
       "menulabel": "Hărți & Unelte"
     },
@@ -49,24 +49,24 @@
       "symbologyscale": "Scara simboluri:"
     },
     "editing": {
-      "canceldelete": "",
-      "commit": "",
-      "delete": "",
-      "discard": "",
-      "draw": "",
-      "fields": "",
-      "layer": "",
-      "noeditablelayers": "",
-      "pick": "",
-      "reallydelete": ""
+      "canceldelete": "Elimină modificările",
+      "commit": "Salvează",
+      "delete": "Șterge",
+      "discard": "Renunță",
+      "draw": "Desenează",
+      "fields": "Câmpuri",
+      "layer": "Strat",
+      "noeditablelayers": "Tema nu conține straturi ce se pot modifica",
+      "pick": "Alege",
+      "reallydelete": "Șterge"
     },
     "fileselector": {
-      "placeholder": ""
+      "placeholder": "Selectează fișierul"
     },
     "heightprofile": {
-      "asl": "",
-      "distance": "",
-      "height": ""
+      "asl": "a.s.l.",
+      "distance": "Distanța",
+      "height": "Înălțimea"
     },
     "identify": {
       "querying": "Interogare..."
@@ -76,26 +76,26 @@
     },
     "identifyTitle": "Info Entități",
     "importlayer": {
-      "addlayer": "",
-      "filter": "",
-      "connect": "",
-      "nofeatures": "",
-      "queryservice": "",
-      "urlplaceholder": ""
+      "addlayer": "Adaugă strat",
+      "filter": "Filtrare",
+      "connect": "Conectare",
+      "nofeatures": "Nu s-a putut importa nicio entitate",
+      "queryservice": "Serviciu interogare",
+      "urlplaceholder": "Introdu URL către WMS, WFS, KML..."
     },
     "layertree": {
       "maptip": "Arată indicii hartă",
       "printlegend": "Tipărește legenda",
       "transparency": "Transparență",
       "addlayer": "Adaugare strat",
-      "compare": "",
-      "importlayer": ""
+      "compare": "Compară stratul de sus",
+      "importlayer": "Import strat"
     },
     "map": {
       "loading": "Se încarcă..."
     },
     "mapinfotooltip": {
-      "elevation": ""
+      "elevation": "Altitudine"
     },
     "measureComponent": {
       "areaLabel": "Arie",
@@ -117,7 +117,7 @@
     "rasterexport": {
       "format": "Format:",
       "selectinfo": "Încadrați într-un dreptunghi zona de exportat..",
-      "resolution": ""
+      "resolution": "Rezoluție"
     },
     "redlining": {
       "fill": "Umplere",
@@ -127,17 +127,17 @@
       "pick": "Alege",
       "point": "Punct",
       "polygon": "Poligon",
-      "border": "",
-      "size": "",
-      "text": "",
-      "width": ""
+      "border": "Margine",
+      "size": "Mărime",
+      "text": "Text",
+      "width": "Lățime"
     },
     "search": {
       "more": "Mai multe...",
       "placeholder": "Caută locații și coordonate...",
       "coordinates": "Coordonate",
-      "search": "",
-      "all": ""
+      "search": "Caută",
+      "all": "Toate"
     },
     "share": {
       "directLinkTitle": "Via link direct",
