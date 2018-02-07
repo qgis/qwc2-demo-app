@@ -74,7 +74,6 @@
     "identifyregion": {
       "info": "Dessiner un polygone pour identifier les objets"
     },
-    "identifyTitle": "Informations de l'objet",
     "importlayer": {
       "addlayer": "Ajouter un calque",
       "filter": "Filtrer",
@@ -102,7 +101,6 @@
       "lengthLabel": "Longueur",
       "pointLabel": "Position"
     },
-    "noFeatureInfo": "Aucune information n'est disponible pour le point cliqué.",
     "print": {
       "layout": "Format",
       "grid": "Grille",

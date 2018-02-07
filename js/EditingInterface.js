@@ -16,20 +16,23 @@ function addFeature(layerId, feature, mapCrs, callback) {
     console.log("Add to layer " + layerId + ":");
     console.log(feature);
     let success = false;
-    setTimeout(() => callback(success), 500);
+    let errorMsg = "Commit failed";
+    setTimeout(() => callback(success, errorMsg), 500);
 }
 
 function editFeature(layerId, feature, mapCrs, callback) {
     console.log("Commit to layer " + layerId + ":");
     console.log(feature);
     let success = false;
-    setTimeout(() => callback(success), 500);
+    let errorMsg = "Commit failed";
+    setTimeout(() => callback(success, errorMsg), 500);
 }
 
 function deleteFeature(layerId, featureId, callback) {
     console.log("Delete feature from layer " + layerId + ":" + featureId);
     let success = false;
-    setTimeout(() => callback(success), 500);
+    let errorMsg = "Commit failed";
+    setTimeout(() => callback(success, errorMsg), 500);
 }
 
 module.exports = {

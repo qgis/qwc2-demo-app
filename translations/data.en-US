@@ -69,12 +69,15 @@
       "height": "Height"
     },
     "identify": {
-      "querying": "Querying..."
+      "querying": "Querying...",
+      "noresults": "No information available for the selected point",
+      "export": "Export",
+      "featureReport": "Feature report",
+      "title": "Feature Info"
     },
     "identifyregion": {
       "info": "Draw a polygon around the features to identify..."
     },
-    "identifyTitle": "Feature Info",
     "importlayer": {
       "addlayer": "Add layer",
       "filter": "Filter...",
@@ -103,7 +106,6 @@
       "lengthLabel": "Length",
       "pointLabel": "Position"
     },
-    "noFeatureInfo": "There is no information available for the point you clicked",
     "print": {
       "layout": "Layout:",
       "grid": "Grid",

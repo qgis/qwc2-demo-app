@@ -27,8 +27,3 @@ html, body, #container {
 .glyphicon {
     position: initial!important;
 }
-
-input[type=range] {
-    display: initial!important;
-    width: initial!important;
-}

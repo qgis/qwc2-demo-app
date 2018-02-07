@@ -69,12 +69,13 @@
       "height": "Înălțimea"
     },
     "identify": {
-      "querying": "Interogare..."
+      "querying": "Interogare...",
+      "noresults": "Nu există informații în punctul cerut",
+      "title": "Info Entități"
     },
     "identifyregion": {
       "info": "Încadrați într-un poligon entitățile de identificat..."
     },
-    "identifyTitle": "Info Entități",
     "importlayer": {
       "addlayer": "Adaugă strat",
       "filter": "Filtrare",
@@ -84,12 +85,12 @@
       "urlplaceholder": "Introdu URL către WMS, WFS, KML..."
     },
     "layertree": {
+      "compare": "Compară stratul de sus",
+      "importlayer": "Import strat",
       "maptip": "Arată indicii hartă",
       "printlegend": "Tipărește legenda",
       "transparency": "Transparență",
-      "addlayer": "Adaugare strat",
-      "compare": "Compară stratul de sus",
-      "importlayer": "Import strat"
+      "addlayer": "Adaugare strat"
     },
     "map": {
       "loading": "Se încarcă..."
@@ -103,7 +104,6 @@
       "lengthLabel": "Lungime",
       "pointLabel": "Poziție"
     },
-    "noFeatureInfo": "Nu există informații în punctul cerut",
     "print": {
       "layout": "Șablon:",
       "grid": "Grid",
@@ -116,10 +116,11 @@
     },
     "rasterexport": {
       "format": "Format:",
-      "selectinfo": "Încadrați într-un dreptunghi zona de exportat..",
-      "resolution": "Rezoluție"
+      "resolution": "Rezoluție",
+      "selectinfo": "Încadrați într-un dreptunghi zona de exportat.."
     },
     "redlining": {
+      "border": "Margine",
       "fill": "Umplere",
       "label": "Text",
       "line": "Linie",
@@ -127,17 +128,16 @@
       "pick": "Alege",
       "point": "Punct",
       "polygon": "Poligon",
-      "border": "Margine",
       "size": "Mărime",
       "text": "Text",
       "width": "Lățime"
     },
     "search": {
       "more": "Mai multe...",
-      "placeholder": "Caută locații și coordonate...",
-      "coordinates": "Coordonate",
       "search": "Caută",
-      "all": "Toate"
+      "all": "Toate",
+      "placeholder": "Caută locații și coordonate...",
+      "coordinates": "Coordonate"
     },
     "share": {
       "directLinkTitle": "Via link direct",

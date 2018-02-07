@@ -69,12 +69,13 @@
       "height": ""
     },
     "identify": {
-      "querying": "Objekte werden abgefragt..."
+      "querying": "Objekte werden abgefragt...",
+      "featureReport": "Objektblatt",
+      "title": "Objektinformationen"
     },
     "identifyregion": {
       "info": "Polygon um die zu identifizierende Objekte zeichnen"
     },
-    "identifyTitle": "Objektinformationen",
     "importlayer": {
       "addlayer": "",
       "filter": "",
@@ -102,7 +103,6 @@
       "lengthLabel": "Länge",
       "pointLabel": "Position"
     },
-    "noFeatureInfo": "Am ausgewählten Punkt sind keine Informationen verfügbar",
     "print": {
       "layout": "Format",
       "nolayouts": "Das gewählte Thema stellt keine Druck-Vorlagen zur Verfügung.",

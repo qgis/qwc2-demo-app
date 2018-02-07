@@ -74,7 +74,6 @@
     "identifyregion": {
       "info": ""
     },
-    "identifyTitle": "Informazioni Sulle Feature",
     "importlayer": {
       "addlayer": "",
       "filter": "",
@@ -102,7 +101,6 @@
       "lengthLabel": "Lunghezza",
       "pointLabel": ""
     },
-    "noFeatureInfo": "Non ci sono informazioni disponibili per il punto selezionato",
     "print": {
       "layout": "Layout",
       "resolution": "Risoluzione:",

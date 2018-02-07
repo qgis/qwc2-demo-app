@@ -98,6 +98,7 @@
               }
             ],
             "searchProviders": ["coordinates", "geoadmin", "glarus"],
+            "featureReport": ["a", "b"],
             "mapCrs": "EPSG:2056",
             "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"],
             "printLabelForSearchResult": "test",
