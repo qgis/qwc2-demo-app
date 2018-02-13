@@ -11,7 +11,8 @@
   "preserveExtentOnThemeSwitch": true,
   "preserveBackgroundOnThemeSwitch": true,
   "preserveNonThemeLayersOnThemeSwitch": true,
-  "allowReorderingLayers": false,
+  "allowReorderingLayers": true,
+  "allowRemovingThemeLayers": true,
   "defaultFeatureStyle": {
     "strokeColor": [0, 0, 255, 1],
     "strokeWidth": 1,
