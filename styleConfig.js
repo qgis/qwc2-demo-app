@@ -1,5 +1,4 @@
 let styleConfig = {
-  assets_path: "/assets",
   // windows, dialogs
   dialog_bg: "#f2f2f2",
   dialog_fg: "#595959",
