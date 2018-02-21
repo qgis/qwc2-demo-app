@@ -7,11 +7,14 @@
  */
 
 /**
+Search provider interface:
+--------------------------
+
   onSearch: function(text, requestId, searchOptions, dispatch) {
       let results = [ ... ]; // See below
       return addSearchResults({data: results, provider: providerId, reqId: requestId}, true);
       // or
-      return dispatch( (..) => {
+      return dispatch( (...) => {
         return addSearchResults({data: results, provider: providerId, reqId: requestId}, true);
     });
   }
@@ -24,30 +27,37 @@
   getMoreResults: function(moreItem, text, requestId, dispatch) {
     // Same return object as onSearch
   }
-}
+
+
+Format of search results:
+-------------------------
 
   results = [
     {
-        id: categoryid,
-        title: display_title,
+        id: categoryid,                     // Unique category ID
+        title: display_title,               // Text to display as group title in the search results
         items: [
-            {
-                id: itemid,
-                text: display_text,
-                label: map_label_text, // optional, show display_text by default
-                x: x,
-                y: y,
-                crs: crs,
-                bbox: [xmin, ymin, xmax, ymax],
-                provider: providerid
+            {                                 // Location search result:
+                type: SearchResultType.PLACE,   // Specifies that this is a location search result
+                id: itemid,                     // Unique item ID
+                text: display_text,             // Text to display as search result
+                label: map_label_text,          // Optional, text to show next to the position marker on the map instead of <text>
+                x: x,                           // X coordinate of result
+                y: y,                           // Y coordinate of result
+                crs: crs,                       // CRS of result coordinates and bbox
+                bbox: [xmin, ymin, xmax, ymax], // Bounding box of result (if non-empty, map will zoom to this extent when selecting result)
+                provider: providerid            // The ID of the provider which generated this result. Required if `getResultGeometry` is to be called.
             },
-            {
-                id: itemid,
-                more: true,
-                provider: providerid
+            {                                 // Theme layer search result (advanced):
+                type: SearchResultType.THEMELAYER, // Specifies that this is a theme layer search result
+                id: itemid,                        // Unique item ID
+                text: display_text,                // Text to display as search result
+                layer: {<Layer definition>}        // Layer definition, in the same format as a "sublayers" entry in themes.json.
             },
-            {
-                ...
+            {                        // Optional entry to request more results:
+                id: itemid,            // Unique item ID
+                more: true,            // Specifies that this entry is a "More..." entry
+                provider: providerid   // The ID of the provider which generated this result.
             }
         ]
     },
@@ -55,11 +65,13 @@
         ...
     }
   ]
+
 */
 
 const axios = require('axios');
-const {addSearchResults} = require("../qwc2/QWC2Components/actions/search");
+const {addSearchResults, SearchResultType} = require("../qwc2/QWC2Components/actions/search");
 const CoordinatesUtils = require('../qwc2/MapStore2Components/utils/CoordinatesUtils');
+const ProxyUtils = require('../qwc2/MapStore2Components/utils/ProxyUtils');
 
 function coordinatesSearch(text, requestId, searchOptions, dispatch) {
     let displaycrs = searchOptions.displaycrs || "EPSG:4326";
@@ -325,6 +337,44 @@ function glarusResultGeometry(resultItem, callback) {
     .then(response => callback(resultItem, response.data, "EPSG:2056"));
 }
 
+function layerSearch(text, requestId, searchOptions, dispatch) {
+    let results = [];
+    if(text === "bahnhof") {
+        let layer = {
+            sublayers: [
+                {
+                    name: "a",
+                    title: "a",
+                    visibility: true,
+                    queryable: true,
+                    displayField: "maptip",
+                    opacity: 255,
+                    bbox: {
+                        crs: "EPSG:4326",
+                        bounds: [
+                            8.53289,
+                            47.3768,
+                            8.54141,
+                            47.3803
+                        ]
+                    }
+                }
+            ]
+        };
+        results.push({
+            id: "layers",
+            title: "Layers",
+            items: [{
+                type: SearchResultType.THEMELAYER,
+                id: "bahnhof",
+                text: "Bahnhof",
+                layer: layer
+            }]
+        });
+    }
+    dispatch(addSearchResults({data: results, provider: "layers", reqId: requestId}, true));
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 
 module.exports = {
@@ -352,6 +402,10 @@ module.exports = {
             onSearch: glarusSearch,
             getResultGeometry: glarusResultGeometry,
             getMoreResults: glarusMoreResults
+        },
+        "layers": {
+            label: "Layers",
+            onSearch: layerSearch
         }
     },
     searchProviderFactory: (cfg) => {
