@@ -24,11 +24,7 @@ CoordinatesUtils.setCrsLabels({
 
 module.exports = {
     initialState: {
-        defaultState: {
-            mousePosition: {
-                enabled: true
-            }
-        },
+        defaultState: {},
         mobile: {}
     },
     pluginsDef: {
