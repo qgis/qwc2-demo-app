@@ -1,4 +1,4 @@
-v0.3 (XXX XX 2017):
+v1.0 (XXX XX 2018):
 
 **Important**:
 - Run `yarn install` to upgrade dependencies.

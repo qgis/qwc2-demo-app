@@ -1,3 +1,5 @@
+# HINWEIS: Diese Dokumentation ist obsolet und wird nicht mehr gepflegt. Bitte die [Englische Dokumentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md) verwenden.
+
 # QWC2 Dokumentation
 
 ## Voraussetzungen
@@ -45,7 +47,7 @@ Die kompilierte QWC2 Applikation hat folgende Struktur:
 Um die QWC2 auf produktiven Umgebungen zu installieren, reicht es diese
 gesamte Struktur an einen vom Webserver zugänglichen Ort zu kopieren.
 Die `index.html` Datei ist der Eingangspunkt der Applikation. Falls QWC2
-in einem Unterordner eine Website installiert wurde, müssen die
+in einem Unterordner einer Website installiert wurde, müssen die
 `assetsPath` und `translationsPath` Einstellungen in der `config.json`
 Datei entsprechend angepasst werden.
 
@@ -95,8 +97,8 @@ Relevante Parameter für die Pluginspezifische Konfiguration:
 |                                                                | toolbarItems            | Konfiguriert die Einträge, die in der Werkzeugleiste erscheinen.                                                                                                                                               |
 |                                                                | searchOptions           | `minScale`: Minimaler Massstab fürs Zoomen auf Suchresultate. `showProviderSelection`: Ob ein Suchdienstselektionsmenü angezeigt werden soll. Falls nicht werden beim Suchen alle konfigurierten Suchdienste verwendet. |
 |                                                                | appMenuClearsTask       | Ob das Öffnen des Applikationsmenü die aktuelle Aufgabe beenden soll (und somit allfällig offene Seitenleisten / Fenster schliesst). Standardmässig false.                                                     |
-| BottomBar                                                      | viewertitleUrl          | Die URL zur Homepage des Betreibers der Applikation.Das Textlabel dazu kann in den Übersetzungen unter viewertitle_label angepasst werden.                                                                     |
-|                                                                | termsUrl                | Die URL zu den Nutzungsbedingungen der Applikation. Das Textlabel dazu kann in den Übersetzungen unter terms_label angepasst werden.                                                                           |
+| BottomBar                                                      | viewertitleUrl          | Die URL zur Homepage des Betreibers der Applikation. Das Textlabel dazu kann in den Übersetzungen unter `viewertitle_label` angepasst werden.                                                                     |
+|                                                                | termsUrl                | Die URL zu den Nutzungsbedingungen der Applikation. Das Textlabel dazu kann in den Übersetzungen unter `terms_label` angepasst werden.                                                                           |
 | ZoomIn, ZoomOut, LocateButton, LayersButton,BackgroundSwitcher | position                | Die Position des jeweiligen Buttons, wobei die Positionen von unten nach oben nummeriert sind (d.h. 0 ist ganz unten).                                                                                         |
 | LayerTree                                                      | showLegendIcons         | Ob die Legendenikonen im Ebenenbaum angezeigt werden sollen.                                                                                                                                                   |
 |                                                                | showRootEntry           | Ob der Root-Eintrag vom Ebenenbaum anzegeigt werden soll.                                                                                                                                                      |
@@ -107,9 +109,6 @@ Relevante Parameter für die Pluginspezifische Konfiguration:
 | Identify                                                       | params                  | Toleranzen für die Identify abfragen für Punkt (FI_POINT_TOLERANCE), Linie (FI_LINE_TOLERANCE) und Polygon (FI_POLYGON_TOLERANCE).                                                                             |
 | Measure                                                        | showMeasureModeSwitcher | Ob die Schaltflächen zum Umstellen des Messmodus angezeigt werden sollen. Deaktivieren ist nur sinnvoll falls in menuItems oder toolbarItems separate Einträge für die jeweiligen Modi definiert sind.         |
 
-
-Weitere Plugin-Einstellungen sollten nicht verändert werden, da sie das
-korrekte Verhalten der Produktspezifischen Komponenten gewährleisten.
 
 ### Themenkonfiguration
 
@@ -253,7 +252,7 @@ Die Struktur der Thema-Definition ist folgende:
 | printResolutions              | Optional     | Verfügbare Auflösungen beim Drucken. Falls sowohl printResolutions sowie die themenunabhängigen defaultResolutions nicht definiert sind, kann beim Drucken ein beliebiger Massstab eingegeben werden.                                                                                                                                                                                                                                                         |
 | printGrid                     | Optional     | Liste von masstabsabhängige Gitterintervalle für das Gitter in der Druckausgabe. s bedeuted jeweils der Maximalmasstab bis zu welchem die angegeben x und y Intervalle verwendet werden. Somit bedeuted das obige Beispiel, dass `{x: 100, y: 100}` für den Masstabsbereich 1000 <= Massstab < 10000 verwendet wird. Falls sowohl `printGrid` sowie das themenunabhängigen `defaultPrintGrid` nicht definiert sind, wird in der Druckausgabe kein Gitter angezeigt. |
 | printLabelForSearchResult     | Optional     | Die ID von einem ComposerLabel in dem die Beschriftung des ausgewählten Suchresultats beim Drucken geschrieben werden soll. Falls nicht definiert, wird die Beschriftung in der Karte neben dem selektierten Objekt geschrieben.                                                                                                                                                                                                                              |
-| extent                        | Optional     | Benutzerdefinierte Maximalausdehnung des Thema in WGS84 Gradkoordinaten. Falls nicht definiert wird sie vom WMS-Dienst ermittelt.                                                                                                                                                                                                                                                                                                                             |
+| extent                        | Optional     | Benutzerdefinierte Maximalausdehnung des Thema in Kartenprojektion (s. mapCrs weiter unten). Falls nicht definiert wird sie vom WMS-Dienst ermittelt.                                                                                                                                                                                                                                                                                                                             |
 | tiled                         | Optional     | Ob ein tiled-WMS verwendet werden soll. Standardmässig false.                                                                                                                                                                                                                                                                                                                                                                                                 |
 | format                        | Optional     | Das Bildformat welches vom WMS-Dienst angefordert wird. Standardmässig `image/png`.                                                                                                                                                                                                                                                                                                                                                                             |
 | backgroundLayers              | Optional     | Liste von Hintergrundebenen für das Thema: `name` (Erforderlich): Name der Hintergrundebene gemäss deren Definition (s. weiter unten). `printLayer` (Optional): Name der im QGIS Projekt enthaltene Ebene, die beim Drucken verwendet werden soll (s. weiter unten). `visibility` (Optional): Die initiale Sichtbarkeit dieser Hintergrundebene beim laden des Thema.                                                                                                                 |
