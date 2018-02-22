@@ -339,8 +339,8 @@ To ensure browser use a proper filename, the following options exist:
 
 - Configure the web server running QGIS Server to add a suitable `Content-Disposition` header to the response. In the case of Apache, the rule for the print output might look as follows:
 
-    SetEnvIf Request_URI "^/wms.*/(.+)$" project_name=$1
-    Header always setifempty Content-Disposition "attachment; filename=%{project_name}.pdf" "expr=%{CONTENT_TYPE} = 'application/pdf'"
+      SetEnvIf Request_URI "^/wms.*/(.+)$" project_name=$1
+      Header always setifempty Content-Disposition "attachment; filename=%{project_name}.pdf" "expr=%{CONTENT_TYPE} = 'application/pdf'"
 
   This rule will use the last part of the URL as basename and add the `.pdf` extension, and will also ensure that the content-type is set to `application/pdf`. Note that this example uses the `setenvif` and `headers` apache modules.
 - Use a proxy service which adds a `Content-Disposition` header if necessary. QWC2 helps in this regard by automatically adding a `filename=<filename>` query parameter if `proxyServiceUrl` is set in `config.json` for requests which are expected to return a downloadable file. See the sample proxy service [in the qwc2-server repository](https://github.com/sourcepole/qwc2-server) for details.
