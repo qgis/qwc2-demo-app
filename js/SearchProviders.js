@@ -337,6 +337,18 @@ function glarusResultGeometry(resultItem, callback) {
     .then(response => callback(resultItem, response.data, "EPSG:2056"));
 }
 
+///////////////////////////////////////////////////////////////////////////////
+
+function parametrizedSearch(cfg, text, requestId, searchOptions, dispatch)
+{
+    let SEARCH_URL = ""; // ...
+    axios.get(SEARCH_URL + "?param=" + cfg.param + "&searchtext=" + encodeURIComponent(text))
+        .then(response => dispatch(addSearchResults({data: response.data, provider: cfg.key, reqId: requestId})))
+        .catch(error => dispatch(addSearchResults({data: [], provider: cfg.key, reqId: requestId})));
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
 function layerSearch(text, requestId, searchOptions, dispatch) {
     let results = [];
     if(text === "bahnhof") {
@@ -409,15 +421,12 @@ module.exports = {
         }
     },
     searchProviderFactory: (cfg) => {
-        /* I.e.
-
+        // Note: cfg corresponds to an entry of the theme searchProviders array in themesConfig.json, in this case
+        //   { key: <providerKey>, label: <label>, param: <param>, ...}
+        // The entry must have at least a `key`.
         return {
             label: cfg.label,
-            onSearch: (text, requestId, searchOptions, dispatch) => mySearch(cfg, text, requestId, searchOptions, dispatch)
+            onSearch: (text, requestId, searchOptions, dispatch) => parametrizedSearch(cfg, text, requestId, searchOptions, dispatch)
         };
-
-        Note: cfg corresponds to an entry of the theme searchProviders array in themesConfig.json
-        */
-        return null;
     }
 };
