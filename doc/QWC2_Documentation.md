@@ -101,7 +101,7 @@ The `config.json` file is the master configuration of the QWC2 application. It c
 |`permalinkServiceUrl` | Generates and resolves compact permalinks for the Share plugin. If omitted, the full URL will be used. |
 |`elevationServiceUrl` | Returns elevation values, used to generate a height profile when measuring lines and display elevation information in the map right-click information bubble. If omitted, the respective information will not be displayed in the client.|
 |`mapInfoService`      | Returns additional information to be displayed in the map right-click information bubble. If omitted, no additional information will be displayed.|
-|`featureReportService`| Returns custom document associated to a feature. See [`themesConfig.json`](#themesConfig-json).|
+|`featureReportService`| Returns a custom document associated to a feature. See [`themesConfig.json`](#themesConfig-json).|
 
 - Global settings:
 
@@ -194,7 +194,7 @@ The format of the theme definitions is as follows:
 | `},`                                          |                                                                                  |
 | `"mapCrs: "<EPSG code>",`                     | Optional, map projection, defaults to `EPSG:3857`.                               |
 | `"extent": [<xmin>, <ymin>, <xmax>, <ymax>],` | Optional, override theme extent. In `mapCrs`.                                    |
-| `"tiled": <boolean>,`                        | Optional, use tiled WMS, defaults to `false`.                                    |
+| `"tiled": <boolean>,`                         | Optional, use tiled WMS, defaults to `false`.                                    |
 | `"format": "<mimetype>",`                     | Optional, the format to use for WMS GetMap. Defaults to `image/png`.             |
 | `"backgroundLayers": [{,`                     | Optional, list of available background layers.                                   |
 | `  "name": "<Background layer name>",`        | Name of matching `BackgroundLayerDefinition`, see below.                         |
@@ -202,7 +202,9 @@ The format of the theme definitions is as follows:
 | `  "visibility": <boolean>`                   | Optional, initial visibility of the layer when theme is loaded.                  |
 | `}],`                                         |                                                                                  |
 | `"searchProviders": ["<ProviderId>"],`        | Optional, list of search providers IDs. An ID corresponds to the key of the exported `SearchProviders` object in `js/SearchProviders.js`. |
-| `"featureReport": <boolean\|[<layernames>],`  | Optional, whether feature reports are available generally, or just for a list of layer names. Defaults to `false`. |
+| `"featureReport": {`                          | Optional, available feature report templates.                                    |
+| `  "<LayerId>": "<TemplateID>"  `             | WMS sublayer ID and associated template ID to pass to the `featureReportService`.|
+| `},`                                          |                                                                                  |
 | `"additionalMouseCrs": ["<EPSG code>"],`      | Optional, list of additional projections for displaying the mouse position. WGS84 and `mapCrs` are available by default. Additional projections definitions must be added to `js/appConfig.js`.                          |
 | `"watermark": {`                              | Optional, configuration of watermark to add to raster export images.             |
 | `  "text": "<text>",`                         | Arbitrary text.                                                                  |
