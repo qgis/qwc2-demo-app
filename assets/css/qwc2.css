@@ -11,6 +11,10 @@ input[type=text], input[type=password], textarea {
     cursor:text;
 }
 
+input, select, button {
+    border-radius: 0;
+}
+
 a {
     cursor:pointer;
 }
