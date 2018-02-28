@@ -1,7 +1,17 @@
 let styleConfig = {
-  // windows, dialogs
-  dialog_bg: "#f2f2f2",
-  dialog_fg: "#595959",
+  // Base foreground (text) color
+  base_fg: "#595959",
+  // Top and bottom panels
+  panel_bg: "rgba(255, 255, 255, 0.75)",
+  panel_fg: "#595959",
+  // Titlebars
+  titlebar_bg: "#595959",
+  titlebar_fg: "white",
+  // Containers (i.e. dialogs, sidebars)
+  container_bg: "#f8f8f8",
+  // Buttonbar buttons
+  button_bg: "#e9e9e9",
+  button_hover_bg: "#dcdcdc",
   // appmenu (1: main level, 2: sublevel)
   appmenu_bg1: "#f2f2f2",
   appmenu_fg1: "#595959",
@@ -11,23 +21,13 @@ let styleConfig = {
   appmenu_fg2: "white",
   appmenu_active_bg2: "#a0a0a0",
   appmenu_active_fg2: "white",
-  // Dialog and sidepan titlebars
-  titlebar_bg: "#595959",
-  titlebar_fg: "white",
-  // Messagebar
-  messagebar_bg: "#eeeeee",
-  // Top and bottom panels
-  panel_bg: "rgba(255,255, 255, 0.75)",
-  panel_fg: "#595959",
   // Map buttons
-  button_bg: "#595959",
-  button_fg: "white",
-  button_active_bg: "#f2f2f2",
-  button_active_fg: "#595959",
-  // ThemeSwitcher items, BackgroundLayer items
-  item_bg: "white",
-  item_fg: "#595959",
-  item_border: "#a6a6a6",
+  map_button_bg: "#595959",
+  map_button_fg: "white",
+  map_button_active_bg: "#f2f2f2",
+  map_button_active_fg: "#595959",
+  // Generic
+  item_border: "#bbb",
   item_active: "#078aa3",
   item_active_hover: "#05768a",
   item_inactive_hover: "#dcdcdc"

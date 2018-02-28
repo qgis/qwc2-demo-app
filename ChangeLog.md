@@ -112,6 +112,8 @@ v1.0 (XXX XX 2018):
        -    display: initial!important;
        -    width: initial!important;
       -}
+- The assets/css/qwc2.css stylesheet is now empty by default
+- Some color keys in `styleConfig.js` have changed
 
 
 v0.2 (Jan 03 2017):
