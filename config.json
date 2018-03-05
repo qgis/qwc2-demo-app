@@ -54,6 +54,7 @@
                 {"key": "LayerTree", "icon": "img/layers.svg"},
                 {"key": "Share", "icon": "img/share.svg"},
                 {"key": "Tools", "icon": "img/tools.svg", "subitems": [
+                  {"key": "IdentifyRegion", "icon": "img/identify_region_white.svg"},
                   {"key": "Measure", "icon": "img/measure_white.svg"},
                   {"key": "Redlining", "icon": "img/draw.svg"},
                   {"key": "Editing", "icon": "img/editing.svg"},
@@ -143,6 +144,12 @@
         },
         {
           "name": "MapInfoTooltip"
+        },
+        {
+          "name": "IdentifyRegion",
+          "cfg": {
+            "useWfs": false
+          }
         }
       ],
       "desktop": [
@@ -189,6 +196,7 @@
                 {"key": "LayerTree", "icon": "img/layers.svg"},
                 {"key": "Share", "icon": "img/share.svg"},
                 {"key": "Tools", "icon": "img/tools.svg", "subitems": [
+                  {"key": "IdentifyRegion", "icon": "img/identify_region_white.svg"},
                   {"key": "Measure", "icon": "img/measure_white.svg"},
                   {"key": "Redlining", "icon": "img/draw.svg"},
                   {"key": "Editing", "icon": "img/editing.svg"},
@@ -201,7 +209,8 @@
               "toolbarItems": [
                 {"key": "Measure", "mode": "LineString", "icon": "img/measure_line.svg"},
                 {"key": "Measure", "mode": "Polygon", "icon": "img/measure_polygon.svg"},
-                {"key": "Print", "icon": "img/print.svg"}
+                {"key": "Print", "icon": "img/print.svg"},
+                {"key": "IdentifyRegion", "icon": "img/identify_region.svg"}
               ],
               "searchOptions": {
                 "minScale": 1000,
@@ -296,6 +305,12 @@
         },
         {
           "name": "MapInfoTooltip"
+        },
+        {
+          "name": "IdentifyRegion",
+          "cfg": {
+            "useWfs": false
+          }
         }
       ]
   }

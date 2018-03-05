@@ -65,7 +65,8 @@ module.exports = {
             EditingPlugin: require('../qwc2/QWC2Components/plugins/Editing')(EditingInterface),
             MapComparePlugin: require('../qwc2/QWC2Components/plugins/MapCompare'),
             HeightProfilePlugin: require('../qwc2/QWC2Components/plugins/HeightProfile'),
-            MapInfoTooltipPlugin: require('../qwc2/QWC2Components/plugins/MapInfoTooltip')
+            MapInfoTooltipPlugin: require('../qwc2/QWC2Components/plugins/MapInfoTooltip'),
+            IdentifyRegionPlugin: require('../qwc2/QWC2Components/plugins/IdentifyRegion')
         }
     },
     supportedLocales: {
