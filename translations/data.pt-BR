@@ -13,7 +13,7 @@
         "ThemeSwitcher": "Temas",
         "Tools": "Ferramentas de mapa",
         "IdentifyRegion": "Identificar Região",
-        "Redlining": "?Redlining",
+        "Redlining": "Desenhar",
         "Editing": "Editando"
       },
       "menulabel": "Mapa & Ferramentas"
@@ -51,7 +51,7 @@
       "placeholder": "Selecione arquivo..."
     },
     "heightprofile": {
-      "asl": "?a.s.l.",
+      "asl": "a.n.m.",
       "distance": "Distância",
       "height": "Altura"
     },
@@ -108,9 +108,9 @@
     },
     "measureComponent": {
       "areaLabel": "Área",
-      "bearingLabel": "?Bearing",
+      "bearingLabel": "Direção",
       "lengthLabel": "Tamanho",
-      "pointLabel": "Posição"
+      "pointLabel": "Ponto"
     },
     "print": {
       "layout": "Formato:",
@@ -146,7 +146,7 @@
       "all": "Tudo"
     },
     "share": {
-      "directLinkTitle": "?Via a direct link",
+      "directLinkTitle": "Link direto",
       "generatingpermalink": "Gerando link permanente...",
       "QRCodeLinkTitle": "qr code",
       "socialIntro": "Na sua rede social favorita"
