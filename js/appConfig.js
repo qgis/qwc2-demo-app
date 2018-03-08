@@ -70,6 +70,11 @@ module.exports = {
         }
     },
     supportedLocales: {
+         "pt": {
+             code: "pt-BR",
+             description: "Português Brasil",
+             localeData: require('react-intl/locale-data/pt')
+         },
          "it": {
              code: "it-IT",
              description: "Italiano",

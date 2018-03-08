@@ -3,29 +3,29 @@
   "messages": {
     "appmenu": {
       "items": {
-        "DxfExport": "DXF Export",
+        "DxfExport": "Exportar DXF",
         "Help": "Ajuda",
         "LayerTree": "Camadas & Legenda",
         "Measure": "Medições",
         "Print": "Imprimir",
         "RasterExport": "Exportar Raster",
         "Share": "Compartilhar",
-        "ThemeSwitcher": "Tema",
+        "ThemeSwitcher": "Temas",
         "Tools": "Ferramentas de mapa",
         "IdentifyRegion": "Identificar Região",
-        "Redlining": "!Redlining!",
+        "Redlining": "?Redlining",
         "Editing": "Editando"
       },
       "menulabel": "Mapa & Ferramentas"
     },
     "bgswitcher": {
-      "nobg": "Sem background"
+      "nobg": "Sem plano de fundo"
     },
     "bottombar": {
       "mousepos_label": "Coordenadas",
       "scale_label": "Escala",
       "terms_label": "Termos de uso",
-      "viewertitle_label": "!QWC2 Demo!"
+      "viewertitle_label": "QWC2 Demo"
     },
     "copybtn": {
       "click_to_copy": "Clique para copiar",
@@ -33,7 +33,7 @@
     },
     "dxfexport": {
       "selectinfo": "Desenhe um retângulo sobre uma região para exportar...",
-      "symbologyscale": "Escada da simbologia:"
+      "symbologyscale": "Escala da simbologia:"
     },
     "editing": {
       "canceldelete": "Não deletar",
@@ -44,14 +44,14 @@
       "fields": "Campos",
       "layer": "Camada",
       "noeditablelayers": "Camadas não editáveis.",
-      "pick": "?Pegar?",
+      "pick": "Pegar",
       "reallydelete": "Deletar"
     },
     "fileselector": {
       "placeholder": "Selecione arquivo..."
     },
     "heightprofile": {
-      "asl": "?a.s.l.?",
+      "asl": "?a.s.l.",
       "distance": "Distância",
       "height": "Altura"
     },
@@ -59,7 +59,7 @@
       "querying": "Consultando...",
       "noresults": "Nenhuma informação disponível para o ponto selecionado",
       "export": "Exportar",
-      "featureReport": "Reportar funcionalidade",
+      "featureReport": "Reportar",
       "title": "Informações da Funcionalidade"
     },
     "identifyregion": {
@@ -74,10 +74,10 @@
     },
     "layerinfo": {
       "title": "Infomações da camada",
-      "abstract": "?Abstract?",
+      "abstract": "Resumo",
       "attribution": "Atribuição",
       "keywords": "Palavras-chave",
-      "dataUrl": "?Data URL?",
+      "dataUrl": "Data URL",
       "metadataUrl": "Metadados URL",
       "legend": "Legenda"
     },
@@ -108,13 +108,13 @@
     },
     "measureComponent": {
       "areaLabel": "Área",
-      "bearingLabel": "?Bearing?",
+      "bearingLabel": "?Bearing",
       "lengthLabel": "Tamanho",
       "pointLabel": "Posição"
     },
     "print": {
-      "layout": "Layout:",
-      "grid": "Grade:",
+      "layout": "Formato:",
+      "grid": "Grade/escala:",
       "nolayouts": "O tema selecionado não suporta impressão",
       "notheme": "Nenhum tema selecionado",
       "resolution": "Resolução:",
@@ -133,9 +133,9 @@
       "label": "Rótulo",
       "line": "Linha",
       "outline": "Contorno",
-      "pick": "??Pick??",
+      "pick": "Ponteiro",
       "point": "Ponto",
-      "polygon": "Poligono",
+      "polygon": "Polígono",
       "size": "Tamanho",
       "text": "Texto",
       "width": "Largura"
@@ -143,10 +143,10 @@
     "search": {
       "more": "Mais...",
       "search": "Buscar",
-      "all": "Todos??Tudo"
+      "all": "Tudo"
     },
     "share": {
-      "directLinkTitle": "??Via a direct link??",
+      "directLinkTitle": "?Via a direct link",
       "generatingpermalink": "Gerando link permanente...",
       "QRCodeLinkTitle": "qr code",
       "socialIntro": "Na sua rede social favorita"
