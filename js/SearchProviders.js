@@ -397,7 +397,8 @@ module.exports = {
         },
         "geoadmin": {
             label: "Swisstopo",
-            onSearch: geoAdminLocationSearch
+            onSearch: geoAdminLocationSearch,
+            requiresLayer: "a" // Make provider availability depend on the presence of a theme WMS layer
         },
         "uster": {
             label: "Uster",

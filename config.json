@@ -218,7 +218,7 @@
                 "providerSelectionAllowAll": true
               },
               "appMenuClearsTask": true,
-              "logoClickResetsTheme": true
+              "logoUrl": "/"
             }
         },
         {
