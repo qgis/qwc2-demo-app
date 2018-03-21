@@ -107,7 +107,8 @@
       "loading": "Laddar..."
     },
     "mapinfotooltip": {
-      "elevation": ""
+      "elevation": "",
+      "title": "Position"
     },
     "measureComponent": {
       "areaLabel": "Area",
