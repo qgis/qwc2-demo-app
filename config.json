@@ -3,6 +3,8 @@
   "permalinkServiceUrl": "http://localhost:5001/",
   "elevationServiceUrl": "http://localhost:5002/",
   "mapInfoService":  "http://localhost:8093/",
+  "elevationPrecision": 0,
+  "heighProfilePrecision": 0,
   "featureReportService": "http://localhost:5020/",
   "translationsPath": "/translations",
   "assetsPath": "/assets",
