@@ -140,10 +140,16 @@
           "name": "MapCompare"
         },
         {
-          "name": "HeightProfile"
+          "name": "HeightProfile",
+          "cfg": {
+            "heighProfilePrecision": 0
+          }
         },
         {
-          "name": "MapInfoTooltip"
+          "name": "MapInfoTooltip",
+          "cfg": {
+            "elevationPrecision": 0
+          }
         },
         {
           "name": "IdentifyRegion",
@@ -301,10 +307,16 @@
           "name": "MapCompare"
         },
         {
-          "name": "HeightProfile"
+          "name": "HeightProfile",
+          "cfg": {
+            "heighProfilePrecision": 0
+          }
         },
         {
-          "name": "MapInfoTooltip"
+          "name": "MapInfoTooltip",
+          "cfg": {
+            "elevationPrecision": 0
+          }
         },
         {
           "name": "IdentifyRegion",
