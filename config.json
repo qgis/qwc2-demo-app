@@ -90,7 +90,8 @@
               "FI_LINE_TOLERANCE": 16,
               "FI_POLYGON_TOLERANCE": 8
             },
-            "enableExport": true
+            "enableExport": true,
+            "longAttributesDisplay": "ellipsis"
           }
         },
         {
@@ -264,6 +265,7 @@
               "FI_POLYGON_TOLERANCE": 4
             },
             "enableExport": true,
+            "longAttributesDisplay": "ellipsis",
             "initialWidth": 480,
             "initialHeight": 550
           }
