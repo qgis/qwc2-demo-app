@@ -118,7 +118,7 @@
             "showRootEntry": true,
             "showQueryableIcon": true,
             "groupTogglesSublayers": false,
-            "flattenGroups": false,
+            "flattenGroups": true,
             "layerInfoWindowSize": {"width": 480, "height": 400}
           }
         },
@@ -251,8 +251,8 @@
             "showRootEntry": true,
             "showQueryableIcon": true,
             "allowMapTips": true,
-            "groupTogglesSublayers": false,
-            "flattenGroups": false,
+            "groupTogglesSublayers": true,
+            "flattenGroups": true,
             "layerInfoWindowSize": {"width": 480, "height": 400}
           }
         },

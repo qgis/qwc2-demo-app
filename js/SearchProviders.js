@@ -48,7 +48,7 @@ Format of search results:
                 bbox: [xmin, ymin, xmax, ymax], // Bounding box of result (if non-empty, map will zoom to this extent when selecting result)
                 provider: providerid            // The ID of the provider which generated this result. Required if `getResultGeometry` is to be called.
             },
-            {                                 // Theme layer search result (advanced):
+            {                                   // Theme layer search result (advanced):
                 type: SearchResultType.THEMELAYER, // Specifies that this is a theme layer search result
                 id: itemid,                        // Unique item ID
                 text: display_text,                // Text to display as search result
@@ -192,7 +192,7 @@ function geoAdminLocationSearchResults(obj, requestId)
 ////////////////////////////////////////////////////////////////////////////////
 
 function usterSearch(text, requestId, searchOptions, dispatch) {
-    axios.get("https://webgis.uster.ch/wsgi/search.wsgi?&searchtables=&query="+ encodeURIComponent(text))
+    axios.get(ProxyUtils.addProxyIfNeeded("https://webgis.uster.ch/wsgi/search.wsgi?&searchtables=&query="+ encodeURIComponent(text)))
     .then(response => dispatch(usterSearchResults(response.data, requestId)));
 }
 
@@ -228,7 +228,7 @@ function usterSearchResults(obj, requestId) {
 
 function usterResultGeometry(resultItem, callback)
 {
-    axios.get("https://webgis.uster.ch/wsgi/getSearchGeom.wsgi?searchtable="+ encodeURIComponent(resultItem.searchtable) + "&displaytext=" + encodeURIComponent(resultItem.text))
+    axios.get(ProxyUtils.addProxyIfNeeded("https://webgis.uster.ch/wsgi/getSearchGeom.wsgi?searchtable="+ encodeURIComponent(resultItem.searchtable) + "&displaytext=" + encodeURIComponent(resultItem.text)))
     .then(response => callback(resultItem, response.data, "EPSG:21781"));
 }
 
@@ -427,7 +427,8 @@ module.exports = {
         // The entry must have at least a `key`.
         return {
             label: cfg.label,
-            onSearch: (text, requestId, searchOptions, dispatch) => parametrizedSearch(cfg, text, requestId, searchOptions, dispatch)
+            onSearch: (text, requestId, searchOptions, dispatch) => parametrizedSearch(cfg, text, requestId, searchOptions, dispatch),
+            requiresLayer: cfg.layerName
         };
     }
 };
