@@ -69,6 +69,9 @@ module.exports = {
             IdentifyRegionPlugin: require('../qwc2/QWC2Components/plugins/IdentifyRegion')
         }
     },
+    actionLogger: (action) => {
+        /* Do something with action, i.e. Piwik/Mamoto event tracking */
+    },
     supportedLocales: {
          "pt": {
              code: "pt-BR",
