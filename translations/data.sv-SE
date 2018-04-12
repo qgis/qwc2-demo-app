@@ -46,7 +46,8 @@
       "layer": "",
       "noeditablelayers": "",
       "pick": "",
-      "reallydelete": ""
+      "reallydelete": "",
+      "select": ""
     },
     "fileselector": {
       "placeholder": ""

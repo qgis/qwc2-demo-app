@@ -55,7 +55,13 @@
                 "name": "Typ",
                 "type": "list",
                 "constraints": {
-                    "values": ["ETH", "UNI"]
+                    "values": [
+                      "ETH",
+                      {
+                        "value": "UNI",
+                        "label": "University of Zürich"
+                      }
+                    ]
                 }
             }
         ]
