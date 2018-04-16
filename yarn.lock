@@ -1546,9 +1546,9 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-deasync@^0.1.7:
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/deasync/-/deasync-0.1.11.tgz#3d1f228a2fecf4a1b359da2e636889942f8bf14c"
+deasync@^0.1.12:
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/deasync/-/deasync-0.1.12.tgz#3d1f228a2fecf4a1b359da2e636889942f8bf14c"
   dependencies:
     bindings "~1.2.1"
     nan "^2.0.7"
