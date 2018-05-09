@@ -13,6 +13,7 @@
   "preserveNonThemeLayersOnThemeSwitch": true,
   "allowReorderingLayers": true,
   "allowRemovingThemeLayers": true,
+  "wmsDpi": 96,
   "defaultFeatureStyle": {
     "strokeColor": [0, 0, 255, 1],
     "strokeWidth": 1,
@@ -91,7 +92,8 @@
               "FI_POLYGON_TOLERANCE": 8
             },
             "enableExport": true,
-            "longAttributesDisplay": "ellipsis"
+            "longAttributesDisplay": "ellipsis",
+            "displayResultTree": true
           }
         },
         {
@@ -268,6 +270,7 @@
             },
             "enableExport": true,
             "longAttributesDisplay": "ellipsis",
+            "displayResultTree": true,
             "initialWidth": 480,
             "initialHeight": 550
           }
