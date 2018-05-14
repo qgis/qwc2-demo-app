@@ -36,6 +36,7 @@ Format of search results:
     {
         id: categoryid,                     // Unique category ID
         title: display_title,               // Text to display as group title in the search results
+        priority: priority_nr,              // Optional search result group priority. Groups with higher priority are displayed first in the list.
         items: [
             {                                 // Location search result:
                 type: SearchResultType.PLACE,   // Specifies that this is a location search result
