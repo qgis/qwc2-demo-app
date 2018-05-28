@@ -26,7 +26,18 @@
   "plugins": {
       "mobile": [
         {
-          "name": "Map"
+          "name": "Map",
+          "toolsOptions": {
+            "OverviewSupport": {
+              "tipLabel": "Overview"
+            },
+            "LocateSupport": {
+              "keepCurrentZoomLevel": true
+            },
+            "ScaleBarSupport": {
+              "units": "metric"
+            }
+          }
         },
         {
           "name": "HomeButton"
@@ -164,7 +175,20 @@
       ],
       "desktop": [
         {
-          "name": "Map"
+          "name": "Map",
+          "cfg": {
+            "toolsOptions": {
+              "OverviewSupport": {
+                "tipLabel": "Overview"
+              },
+              "LocateSupport": {
+                "keepCurrentZoomLevel": true
+              },
+              "ScaleBarSupport": {
+                "units": "metric"
+              }
+            }
+          }
         },
         {
           "name": "HomeButton"
