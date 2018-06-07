@@ -70,6 +70,8 @@ v1.0 (XXX XX 2018):
 - Add client-side logic to download feature reports, see https://github.com/sourcepole/qwc2-server for a sample service
 - Pure WMS identify-region tool (requires QGIS-Server 3.0.1+)
 - Add support for mutually exclusive groups in layer tree
+- Allow storing full layer state (including redlining) in Parmalink (requires server-side support by the permalink service)
+- Add option to display identify results as a flat list instead of a tree of results
 
 
 **Incompatible changes**:
