@@ -380,7 +380,9 @@ or update to the latest `master`, i.e.:
 
 The [ChangeLog in the demo application repository](https://github.com/qgis/qwc2-demo-app/blob/master/ChangeLog.md) documents major changes, and in particular all incompatible changes between releases which require changes to the application specific code and/or configuration.
 
-## Preparation for developers
+## Developing
+QWC2 is written in JavaScript using in particular the ReactJS, Redux and OpenLayers libraries. The following links point to some useful resources to learn the basics:
+
 **ECMAScript 2015**
 - https://babeljs.io/docs/learn-es2015/
 
@@ -396,3 +398,7 @@ The [ChangeLog in the demo application repository](https://github.com/qgis/qwc2-
 - http://redux.js.org/
 - https://egghead.io/courses/getting-started-with-redux
 - https://egghead.io/courses/building-react-applications-with-idiomatic-redux
+
+When developing, it is useful to add `debug=true` to the URL query parameters, which will enable logging of all application state changes to the browser console.
+
+
