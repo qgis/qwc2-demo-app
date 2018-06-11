@@ -229,7 +229,8 @@
         "provider": "OpenTopoMap",
         "title": "OpenTopoMap",
         "name": "opentopomap",
-        "thumbnail": "img/mapthumbs/default.jpg"
+        "thumbnail": "img/mapthumbs/default.jpg",
+        "attribution": "Map data: &copy; <a href=\"https://openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, SRTM | Map style: &copy; <a href=\"https://opentopomap.org\" target=\"_blank\">OpenTopoMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">CC-BY-SA</a>)"
       }
     ]
   },
