@@ -120,6 +120,8 @@
     "print": {
       "layout": "Layout:",
       "grid": "",
+      "maximize": "",
+      "minimize": "",
       "nolayouts": "Valt tema stöder inte utskrift",
       "notheme": "Inget tema valt",
       "resolution": "Upplösning:",
