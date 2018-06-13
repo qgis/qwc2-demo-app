@@ -102,6 +102,11 @@ module.exports = {
             code: "ro-RO",
             description: "Română",
             localeData: require('react-intl/locale-data/ro')
+        },
+        "ru": {
+            code: "ru-RU",
+            description: "Русский",
+            localeData: require('react-intl/locale-data/ru')
         }
    }
 };
