@@ -135,6 +135,7 @@ v1.0 (XXX XX 2018):
         +          }
         +        }
         +      }
+  * `package.json` needs to be updated with the new dependencies, and the `iconfont` script.
 
 
 v0.2 (Jan 03 2017):
