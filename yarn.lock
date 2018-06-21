@@ -1273,10 +1273,6 @@ colormin@^1.0.5:
     css-color-names "0.0.4"
     has "^1.0.1"
 
-colors@^1.2.1:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/colors/-/colors-1.3.0.tgz#5f20c9fef6945cb1134260aab33bfbdc8295e04e"
-
 colors@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
@@ -2616,15 +2612,6 @@ https-browserify@^1.0.0:
 humanize@0.0.9:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/humanize/-/humanize-0.0.9.tgz#1994ffaecdfe9c441ed2bdac7452b7bb4c9e41a4"
-
-icon-font-generator@^2.1.7:
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/icon-font-generator/-/icon-font-generator-2.1.7.tgz#db7082db590ada69c6da333f01ee4416ae45a6bd"
-  dependencies:
-    colors "^1.2.1"
-    glob "^7.1.2"
-    minimist "^1.2.0"
-    webfonts-generator "^0.4.0"
 
 iconv-lite@0.4.19, iconv-lite@^0.4.17, iconv-lite@~0.4.13:
   version "0.4.19"
