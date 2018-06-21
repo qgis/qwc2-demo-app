@@ -116,8 +116,25 @@ v1.0 (XXX XX 2018):
        -    display: initial!important;
        -    width: initial!important;
       -}
-- The assets/css/qwc2.css stylesheet is now empty by default
+- The `assets/css/qwc2.css` stylesheet is now empty by default
 - Some color keys in `styleConfig.js` have changed
+- The bootstrap stylesheet in `index.html` is not used anymore and can be removed
+- All icons are now built into a custom icon font, replacing the svgs in `assets/img` and the bootstrap glyphicons used previously. Applications will need to be updated as follows:
+  * Add the toplevel icons folder from qwc2-demo-app to your app (the svgs in `assets/img` are not used anymore)
+  * The icons in `menuItems`and `toolbarItems` in `config.json` now only need to contain the icon name, not the relative svg path. So i.e. `img/themes.svg` becomes `themes`.
+  * The font rule needs to be added to `webpack.config.js`:
+  
+        +      {
+        +        test: /\.(woff|woff2)(\?\w+)?$/,
+        +        use: {
+        +          loader: "url-loader",
+        +          options: {
+        +            limit: 50000,
+        +            mimetype: "application/font-woff",
+        +            name: "fonts/[name].[ext]",
+        +          }
+        +        }
+        +      }
 
 
 v0.2 (Jan 03 2017):

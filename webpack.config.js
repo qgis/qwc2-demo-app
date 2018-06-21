@@ -62,7 +62,20 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.json$/, loader: "json-loader" },
+      {
+        test: /\.json$/, loader: "json-loader"
+      },
+      {
+        test: /\.(woff|woff2)(\?\w+)?$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 50000,
+            mimetype: "application/font-woff",
+            name: "fonts/[name].[ext]",
+          }
+        }
+      },
       {
         test: /\.css$/,
         use: [
