@@ -184,7 +184,8 @@ The format of the theme definitions is as follows:
 | `"attributionUrl": "<URL>",`                 | Optional, link associated to the attribution                                      |
 | `"default": true,`                           | Whether to use this theme as initial theme                                        |
 | `"scales": [<Scale denominators>],`          | List of denominators of allowed map scales. If omitted, defaults to `defaultScales`. |
-| `"printScales": [<Scale denominators>],`     | List of denominators of allowed print scales. If omitted, defaults to `defaultPrintScales`. |         | `"printResolutions": [<DPIs>],`              | List of available print resolutions. If omitted, defaults to `defaultPrintResolutions`. |
+| `"printScales": [<Scale denominators>],`     | List of denominators of allowed print scales. If omitted, defaults to `defaultPrintScales`. |
+| `"printResolutions": [<DPIs>],`              | List of available print resolutions. If omitted, defaults to `defaultPrintResolutions`. |
 | `"printGrid": [`                             | List of grid scale-dependent grid intervals to use when printing. If omitted, defaults to `defaultPrintGrid`. |
 | `  {"s": <Scale1>, x: <Interval1>, y: <Interval1>},` | Keep this list sorted in descending order by scale denominator.           |
 | `  {"s": <Scale2>, x: <Interval2>, y: <Interval2>}`  | In this example, `{x: <Interval2>, y: <Interval2>}` will be used for `<Scale1> > Scale >= <Scale2>`.  |
