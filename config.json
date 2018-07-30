@@ -13,6 +13,7 @@
   "preserveNonThemeLayersOnThemeSwitch": true,
   "allowReorderingLayers": true,
   "allowRemovingThemeLayers": true,
+  "localeAwareNumbers": false,
   "wmsDpi": 96,
   "defaultFeatureStyle": {
     "strokeColor": [0, 0, 255, 1],
