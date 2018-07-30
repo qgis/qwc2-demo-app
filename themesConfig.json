@@ -17,7 +17,7 @@
         ],
         "searchProviders": ["coordinates", "wolfsburg"],
         "mapCrs": "EPSG:3857",
-        "additionalMouseCrs": ["EPSG:25832"],
+        "additionalMouseCrs": ["EPSG:25832", "EPSG:32632"],
         "collapseLayerGroupsBelowLevel": 1
       },
       {

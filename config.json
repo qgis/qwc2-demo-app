@@ -24,6 +24,13 @@
     "textFill": "black",
     "textStroke": "white"
   },
+  "projections": [
+    {
+      "code": "EPSG:32632",
+      "proj": "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs",
+      "label": "WGS 84 / UTM zone 32N"
+    }
+  ],
   "plugins": {
       "mobile": [
         {

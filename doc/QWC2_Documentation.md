@@ -89,7 +89,7 @@ The `js/appConfig.js` file controls the following:
 
       Proj4js.defs(<EPSG Code>, <proj definition>);
 
-  line. By default, only `EPSG:4326`, `EPSG:4296` and `EPSG:3857` are registered. In addition, you can associate a human readable label to a projection by extending the `CoordinatesUtils.setCrsLabels` call. These labels will be displayed for instance in the mouse coordinate switcher.
+  line. By default, only `EPSG:4326`, `EPSG:4296` and `EPSG:3857` are registered. In addition, you can associate a human readable label to a projection by extending the `CoordinatesUtils.setCrsLabels` call. These labels will be displayed for instance in the mouse coordinate switcher. Alternatively, additional projections can also be registered in `config.json`, see below.
 - Which plugins are built into the application. Plugins left out here will be completely omitted when compiling the application bundle, and will hence also reduce the size of the bundle.
 - Which locales are supported.
 
@@ -118,6 +118,7 @@ The `config.json` file is the master configuration of the QWC2 application. It c
 |`allowReorderingLayers`              | Whether to allow re-ordering layers in the layer tree.                              |
 |`allowRemovingThemeLayers`           | Whether to allow removing any theme layers from the layer tree.                     |
 |`defaultFeatureStyle`                | The default style to use for selection geometries and other unstyled features.      |
+|`projections`                        | A list of additional projections to register, in the format `{"code": "<code>", "proj": "<proj4def>", "label": "<label>"}`. |
 
 - The plugin configuration, separately for desktop and for mobile mode. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json) for a list of available configuration options. You can omit a plugin entry to disable it in desktop and/or mobile mode. To completely remove a plugin from the compiled application, remove the corresponding entry in `js/appConfig.js`.
 
@@ -207,7 +208,7 @@ The format of the theme definitions is as follows:
 | `"featureReport": {`                          | Optional, available feature report templates.                                    |
 | `  "<LayerId>": "<TemplateID>"  `             | WMS sublayer ID and associated template ID to pass to the `featureReportService`.|
 | `},`                                          |                                                                                  |
-| `"additionalMouseCrs": ["<EPSG code>"],`      | Optional, list of additional projections for displaying the mouse position. WGS84 and `mapCrs` are available by default. Additional projections definitions must be added to `js/appConfig.js`.                          |
+| `"additionalMouseCrs": ["<EPSG code>"],`      | Optional, list of additional projections for displaying the mouse position. WGS84 and `mapCrs` are available by default. Additional projections definitions must be added to `js/appConfig.js` or `config.json`.         |
 | `"watermark": {`                              | Optional, configuration of watermark to add to raster export images.             |
 | `  "text": "<text>",`                         | Arbitrary text.                                                                  |
 | `  "texpadding": <number>,`                   | Optional, padding between text and frame, in points.                             |
