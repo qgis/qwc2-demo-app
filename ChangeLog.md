@@ -72,6 +72,7 @@ v1.0 (XXX XX 2018):
 - Add support for mutually exclusive groups in layer tree
 - Allow storing full layer state (including redlining) in Parmalink (requires server-side support by the permalink service)
 - Add option to display identify results as a flat list instead of a tree of results
+- Allow displaying additional client-side computed attributes in identify results, look for `attributeCalculator` in `js/appConfig.js`.
 
 
 **Incompatible changes**:
@@ -123,7 +124,7 @@ v1.0 (XXX XX 2018):
   * Add the toplevel icons folder from qwc2-demo-app to your app (the svgs in `assets/img` are not used anymore)
   * The icons in `menuItems`and `toolbarItems` in `config.json` now only need to contain the icon name, not the relative svg path. So i.e. `img/themes.svg` becomes `themes`.
   * The font rule needs to be added to `webpack.config.js`:
-  
+
         +      {
         +        test: /\.(woff|woff2)(\?\w+)?$/,
         +        use: {

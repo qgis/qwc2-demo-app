@@ -67,6 +67,11 @@ module.exports = {
             HeightProfilePlugin: require('../qwc2/QWC2Components/plugins/HeightProfile'),
             MapInfoTooltipPlugin: require('../qwc2/QWC2Components/plugins/MapInfoTooltip'),
             IdentifyRegionPlugin: require('../qwc2/QWC2Components/plugins/IdentifyRegion')
+        },
+        cfg: {
+            IdentifyPlugin: {
+                attributeCalculator: require('./CustomAttributeCalculator')
+            }
         }
     },
     actionLogger: (action) => {
