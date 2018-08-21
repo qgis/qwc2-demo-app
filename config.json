@@ -35,6 +35,10 @@
       "mobile": [
         {
           "name": "Map",
+          "mapOptions": {
+            "zoomDuration": 250,
+            "antialiasing": true
+          },
           "toolsOptions": {
             "OverviewSupport": {
               "tipLabel": "Overview"
@@ -146,7 +150,8 @@
             "groupTogglesSublayers": false,
             "grayUnchecked": false,
             "flattenGroups": false,
-            "layerInfoWindowSize": {"width": 480, "height": 400}
+            "layerInfoWindowSize": {"width": 480, "height": 400},
+            "bboxDependentLegend": false
           }
         },
         {
@@ -176,7 +181,8 @@
         {
           "name": "MapInfoTooltip",
           "cfg": {
-            "elevationPrecision": 0
+            "elevationPrecision": 0,
+            "includeWGS84": true
           }
         },
         {
@@ -190,6 +196,10 @@
         {
           "name": "Map",
           "cfg": {
+            "mapOptions": {
+              "zoomDuration": 250,
+              "antialiasing": true
+            },
             "toolsOptions": {
               "OverviewSupport": {
                 "tipLabel": "Overview"
@@ -298,7 +308,8 @@
             "groupTogglesSublayers": true,
             "grayUnchecked": false,
             "flattenGroups": false,
-            "layerInfoWindowSize": {"width": 480, "height": 400}
+            "layerInfoWindowSize": {"width": 480, "height": 400},
+            "bboxDependentLegend": false
           }
         },
         {
@@ -363,7 +374,8 @@
         {
           "name": "MapInfoTooltip",
           "cfg": {
-            "elevationPrecision": 0
+            "elevationPrecision": 0,
+            "includeWGS84": true
           }
         },
         {
