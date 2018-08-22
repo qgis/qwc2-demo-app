@@ -77,6 +77,12 @@ module.exports = {
     actionLogger: (action) => {
         /* Do something with action, i.e. Piwik/Mamoto event tracking */
     },
+    themeLayerRestorer: (missingLayers, theme, callback) => {
+        // Invoked for layers specified in the l url parameter which are missing in the specified theme
+        // Could be used to query a search provider for the missing theme layers
+        // Return a list of theme layers to merge into the theme
+        callback([]);
+    },
     supportedLocales: {
          "pt": {
              code: "pt-BR",
