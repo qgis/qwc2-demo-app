@@ -73,6 +73,7 @@ v1.0 (XXX XX 2018):
 - Allow storing full layer state (including redlining) in Parmalink (requires server-side support by the permalink service)
 - Add option to display identify results as a flat list instead of a tree of results
 - Allow displaying additional client-side computed attributes in identify results, look for `attributeCalculator` in `js/appConfig.js`.
+- Allow controlling per-theme visibility of menu and toolbar items, by adding a `themeWhitelist` entry to the respective item in `config.json`.
 
 
 **Incompatible changes**:
