@@ -2003,10 +2003,6 @@ etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
 
-ev-emitter@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
-
 event-emitter@~0.3.5:
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/event-emitter/-/event-emitter-0.3.5.tgz#df8c69eef1647923c7157b9ce83840610b02cc39"
@@ -2647,12 +2643,6 @@ ignore@^3.3.3:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
 
-imagesloaded@^4.1.4:
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/imagesloaded/-/imagesloaded-4.1.4.tgz#1376efcd162bb768c34c3727ac89cc04051f3cc7"
-  dependencies:
-    ev-emitter "^1.0.0"
-
 import-local@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/import-local/-/import-local-0.1.1.tgz#b1179572aacdc11c6a91009fb430dbcab5f668a8"
@@ -3052,9 +3042,9 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-jsts@^1.3.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/jsts/-/jsts-1.4.0.tgz#10ac081014da89bd169c12378bcff702cacf65d4"
+jsts@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/jsts/-/jsts-1.6.1.tgz#a79874d65ec5f71efa32695122ea6c3edbbf2ebe"
 
 jsx-ast-utils@^2.0.0:
   version "2.0.1"
@@ -3615,9 +3605,9 @@ obuf@^1.0.0, obuf@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.1.tgz#104124b6c602c6796881a042541d36db43a5264e"
 
-ol@^5.1.3:
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/ol/-/ol-5.1.3.tgz#43f8fd796914c0436852cbc2087223943c0d9c7b"
+ol@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/ol/-/ol-5.2.0.tgz#5659ba9762def144deb8dcba97357aa5f8cc8a05"
   dependencies:
     pbf "3.1.0"
     pixelworks "1.1.0"

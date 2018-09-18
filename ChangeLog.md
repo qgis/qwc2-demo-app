@@ -74,6 +74,7 @@ v1.0 (XXX XX 2018):
 - Add option to display identify results as a flat list instead of a tree of results
 - Allow displaying additional client-side computed attributes in identify results, look for `attributeCalculator` in `js/appConfig.js`.
 - Allow controlling per-theme visibility of menu and toolbar items, by adding a `themeWhitelist` entry to the respective item in `config.json`.
+- External layers are now also stored in non-compact permalink
 
 
 **Incompatible changes**:
