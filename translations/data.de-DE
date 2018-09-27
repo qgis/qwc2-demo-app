@@ -74,7 +74,7 @@
       "filter": "Filter...",
       "connect": "Verbinden",
       "nofeatures": "Keine Objekte konnten importiert werden",
-      "noresults": "Keine Resultate",
+      "noresults": "Keine Resultate oder ungültige URL",
       "urlplaceholder": "WMS, WFS oder KML URL eingeben..."
     },
     "layerinfo": {
@@ -136,9 +136,11 @@
       "selectinfo": "Rechteck aufziehen um die zu exportierende Region"
     },
     "redlining": {
+      "add": "Hinzufügen",
       "border": "Rand",
       "fill": "Füllung",
       "label": "Beschriftung",
+      "layer": "Ebene",
       "line": "Linie",
       "outline": "Rand",
       "pick": "Auswählen",

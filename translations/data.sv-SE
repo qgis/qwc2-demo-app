@@ -139,9 +139,11 @@
       "selectinfo": ""
     },
     "redlining": {
+      "add": "",
       "border": "",
       "fill": "",
       "label": "",
+      "layer": "",
       "line": "",
       "outline": "",
       "pick": "",
