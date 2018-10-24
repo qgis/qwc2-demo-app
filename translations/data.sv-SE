@@ -158,6 +158,7 @@
       "search": "",
       "searchall": "",
       "all": "",
+      "themes": "",
       "coordinates": "Koordinater",
       "placeholder": "Sök efter platser och koordinater..."
     },
@@ -174,7 +175,8 @@
       "background": ""
     },
     "themeswitcher": {
-      "filter": "Filtrera..."
+      "filter": "Filtrera...",
+      "addtotheme": ""
     },
     "draw": {
       "delete": "Ta bort",
