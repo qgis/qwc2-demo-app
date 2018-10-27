@@ -83,6 +83,7 @@ function coordinatesSearch(text, requestId, searchOptions, dispatch) {
         let y = parseFloat(matches[2]);
         if(displaycrs !== "EPSG:4326") {
             items.push({
+                type: SearchResultType.PLACE,
                 id: "coord0",
                 text: x + ", " + y + " (" + displaycrs + ")",
                 x: x,
@@ -95,6 +96,7 @@ function coordinatesSearch(text, requestId, searchOptions, dispatch) {
             let title = Math.abs(x) + (x >= 0 ? "°E" : "°W") + ", "
                       + Math.abs(y) + (y >= 0 ? "°N" : "°S");
             items.push({
+                type: SearchResultType.PLACE,
                 id: "coord" + items.length,
                 text: title,
                 x: x,
@@ -107,6 +109,7 @@ function coordinatesSearch(text, requestId, searchOptions, dispatch) {
             let title = Math.abs(y) + (y >= 0 ? "°E" : "°W") + ", "
                       + Math.abs(x) + (x >= 0 ? "°N" : "°S");
             items.push({
+                type: SearchResultType.PLACE,
                 id: "coord" + items.length,
                 text: title,
                 x: y,
