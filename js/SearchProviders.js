@@ -217,6 +217,7 @@ function usterSearchResults(obj, requestId) {
             results.push(currentgroup);
         } else if(currentgroup) {
             currentgroup.items.push({
+                type: SearchResultType.PLACE,
                 id: "usterresult" + (counter++),
                 text: entry.displaytext,
                 searchtable: entry.searchtable,
@@ -269,6 +270,7 @@ function wolfsburgSearchResults(obj, requestId) {
             results.push(currentgroup);
         } else if (currentgroup) {
             currentgroup.items.push({
+                type: SearchResultType.PLACE,
                 id: "wolfsburgresult" + (counter++),
                 text: entry.displaytext,
                 searchtable: entry.searchtable,
@@ -314,6 +316,7 @@ function glarusSearchResults(obj, requestId, limit = -1) {
             id: group.category,
             title: group.name,
             items: group.features.map(item => { return {
+                type: SearchResultType.PLACE,
                 id: item.id,
                 text: item.name,
                 bbox: item.bbox.slice(0),
