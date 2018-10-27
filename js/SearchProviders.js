@@ -177,6 +177,7 @@ function geoAdminLocationSearchResults(obj, requestId)
         let x = entry.attrs.lon;
         let y = entry.attrs.lat;
         resultGroups[entry.attrs.origin].items.push({
+            type: SearchResultType.PLACE,
             id: entry.id,
             text: entry.attrs.label,
             x: x,
