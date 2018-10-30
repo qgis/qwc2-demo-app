@@ -13,7 +13,7 @@
   "preserveNonThemeLayersOnThemeSwitch": true,
   "allowReorderingLayers": true,
   "allowRemovingThemeLayers": false,
-  "allowAddingOtherThemes": false,
+  "searchThemes": true,
   "allowFractionalZoom": true,
   "localeAwareNumbers": false,
   "wmsDpi": 96,
