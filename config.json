@@ -78,8 +78,8 @@
             "cfg": {
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
-                {"key": "LayerTree", "icon": "layers"},
-                {"key": "Share", "icon": "share"},
+                {"key": "LayerTree", "icon": "layers", "identifyEnabled": true},
+                {"key": "Share", "icon": "share", "identifyEnabled": true},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "IdentifyRegion", "icon": "identify_region"},
                   {"key": "Measure", "icon": "measure"},
@@ -89,7 +89,7 @@
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
                 {"key": "Print", "icon": "print"},
-                {"key": "Help", "icon": "info"}
+                {"key": "Help", "icon": "info", "identifyEnabled": true}
               ],
               "searchOptions": {
                 "minScale": 1000,
@@ -253,8 +253,8 @@
             "cfg": {
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
-                {"key": "LayerTree", "icon": "layers"},
-                {"key": "Share", "icon": "share"},
+                {"key": "LayerTree", "icon": "layers", "identifyEnabled": true},
+                {"key": "Share", "icon": "share", "identifyEnabled": true},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "IdentifyRegion", "icon": "identify_region"},
                   {"key": "Measure", "icon": "measure"},
@@ -264,7 +264,7 @@
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
                 {"key": "Print", "icon": "print"},
-                {"key": "Help", "icon": "info"}
+                {"key": "Help", "icon": "info", "identifyEnabled": true}
               ],
               "toolbarItems": [
                 {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
