@@ -221,6 +221,7 @@ The format of the theme definitions is as follows:
 | `},`                                          |                                                                                  |
 | `"collapseLayerGroupsBelowLevel": <level>,`   | Optional, layer tree level below which to initially collapse groups. By default the tree is completely expanded. |
 | `"skipEmptyFeatureAttributes": <boolean>,`    | Optional, whether to skip empty attributes in the identify results. Default is `false`. |
+| `"allowReorderingLayers": <boolean>,`         | Optional, whether to allow reordering layers for this theme. Overrides the setting in `config.json`. |
 | `"extraLegendParameters": "<&KEY=VALUE>",`    | Optional, additional query parameters to append to WMS GetLegendGraphic.         |
 | `"editConfig": "<editConfig.json>"`           | Optional, path to a filename containing the editing configuration for the theme, see [EditingInterface.js](#editing-interface). |
 
