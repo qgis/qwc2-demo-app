@@ -46,6 +46,7 @@ if (isProd) {
 
 module.exports = {
   devtool: isProd ? 'source-map' : 'eval',
+  mode: nodeEnv === "production" ? "production" : "development",
   entry: {
     'webpack-dev-server': 'webpack-dev-server/client?http://0.0.0.0:8081',
     'webpack': 'webpack/hot/only-dev-server',
@@ -62,9 +63,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.json$/, loader: "json-loader"
-      },
       {
         test: /\.(woff|woff2)(\?\w+)?$/,
         use: {
