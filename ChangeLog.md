@@ -1,10 +1,14 @@
-v1.0 (XXX XX 2018):
+v1.0 (Feb 13 2019):
 
 **Important**:
+
 - Run `yarn install` to upgrade dependencies.
 - Consult the list of incompatible changes below.
 
 **News**:
+
+Incomplete list of changes, for full details, please consult the [commit history](see https://github.com/qgis/qwc2/compare/v0.2...v1.0)
+
 - Allow specifying WMS image format in themes configuration
 - Add Toolbar component for quick-launch buttons next to search bar
 - Add option to store current view as center + scale in URL
@@ -77,7 +81,9 @@ v1.0 (XXX XX 2018):
 - External layers are now also stored in non-compact permalink
 
 
+
 **Incompatible changes**:
+
 - Keys of TopBar menuItems in config.js have been renamed
 - Center/extent coordinates in URL by default in map projection instead of EPSG:4326
 - The search text URL parameter key is now `st` instead of `s`
