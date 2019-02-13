@@ -31,6 +31,7 @@ if (isProd) {
   plugins.push(new LodashModuleReplacementPlugin());
   plugins.push(new TerserPlugin({
     parallel: true,
+    sourceMap: true,
     terserOptions: {
       ecma: 8,
       output: {
