@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const styleConfig = require("./styleConfig");
 
 const nodeEnv = process.env.NODE_ENV || 'development';
@@ -29,15 +29,13 @@ const plugins = [
 
 if (isProd) {
   plugins.push(new LodashModuleReplacementPlugin());
-  plugins.push(new UglifyJsPlugin({
-    uglifyOptions: {
-      ie8: false,
+  plugins.push(new TerserPlugin({
+    parallel: true,
+    terserOptions: {
       ecma: 8,
       output: {
-        comments: false,
-        beautify: false,
-      },
-      warnings: false
+        comments: false
+      }
     }
   }));
 } else {
