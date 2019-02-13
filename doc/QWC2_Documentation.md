@@ -136,6 +136,7 @@ The first step is to prepare a QGIS project. Besides the common tasks of adding 
 | Title, keywords      | Project Properties &rarr; QGIS Server &rarr; Service capabilities | Theme title, displayed in the Theme Switcher, and keywords, useful for filtering. |
 | Queryable layers     | Project Properties &rarr; Identify Layers | Mark layers as identifyable by the client.       |
 | FeatureInfo geometry | Project Properties &rarr; QGIS Server &rarr; WMS Capabilities &rarr; Add geometry to feature response | Return feature geometries with the GetFeatureInfo request. Allows the client to highlight the selected features. |
+| Layer Display Field  | Vector Layer Properties &rarr; Display    | The field used in the identify results. |
 | Layer Map Tip        | Vector Layer Properties &rarr; Display    | The contents of the Map Tip shown when hovering over layers in the client, if displaying Map Tips is enabled in the Layer Tree. |
 | Layer Metadata       | Layer Properties &rarr; Metadata          | Shown in the client Layer Info dialog, invokable from the Layer Tree. |
 | Scale range          | Layer Properties &rarr; Rendering &rarr; Scale dependent visibility | The scale range within which a layer is visible, useful to improve rendering performance. |
