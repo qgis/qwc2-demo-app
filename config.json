@@ -117,11 +117,12 @@
             "params": {
               "FI_POINT_TOLERANCE": 32,
               "FI_LINE_TOLERANCE": 16,
-              "FI_POLYGON_TOLERANCE": 8
+              "FI_POLYGON_TOLERANCE": 8,
+              "feature_count": 20
             },
-            "enableExport": true,
-            "longAttributesDisplay": "ellipsis",
-            "displayResultTree": true
+            "exportFormat": "csv",
+            "longAttributesDisplay": "wrap",
+            "displayResultTree": false
           }
         },
         {
@@ -321,11 +322,12 @@
             "params": {
               "FI_POINT_TOLERANCE": 16,
               "FI_LINE_TOLERANCE": 8,
-              "FI_POLYGON_TOLERANCE": 4
+              "FI_POLYGON_TOLERANCE": 4,
+              "feature_count": 20
             },
-            "enableExport": true,
-            "longAttributesDisplay": "ellipsis",
-            "displayResultTree": true,
+            "exportFormat": "csv",
+            "longAttributesDisplay": "wrap",
+            "displayResultTree": false,
             "initialWidth": 480,
             "initialHeight": 550
           }
