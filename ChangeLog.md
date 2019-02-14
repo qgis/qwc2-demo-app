@@ -1,3 +1,22 @@
+v1.X
+
+**Important**:
+
+- Run `yarn install` to upgrade dependencies.
+- Consult the list of incompatible changes below.
+
+**News**:
+
+Incomplete list of changes, for full details, please consult the [commit history](see https://github.com/qgis/qwc2/compare/v1.0...master)
+
+- Allow exporting identify results to CSV
+
+**Incompatible changes**:
+
+- `enableExport` has been replaced by `exportFormat` in the Identify plugin configuration parameters in config.json
+
+
+
 v1.0 (Feb 13 2019):
 
 **Important**:
