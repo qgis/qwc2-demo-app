@@ -83,7 +83,6 @@
         "redux-undo": "^0.6.1",
         "reselect": "^4.0.0",
         "sortablejs": "^1.8.3",
-        "uglifyjs-webpack-plugin": "^2.1.1",
         "webfonts-generator": "^0.4.0",
         "wellknown": "^0.5.0"
     },
