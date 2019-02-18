@@ -18,6 +18,7 @@
   "allowFractionalZoom": true,
   "localeAwareNumbers": false,
   "wmsDpi": 96,
+  "wmsHidpi": true,
   "defaultFeatureStyle": {
     "strokeColor": [0, 0, 255, 1],
     "strokeWidth": 1,
