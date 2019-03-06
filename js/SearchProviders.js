@@ -70,9 +70,9 @@ Format of search results:
 */
 
 const axios = require('axios');
-const {addSearchResults, SearchResultType} = require("../qwc2/QWC2Components/actions/search");
-const CoordinatesUtils = require('../qwc2/MapStore2Components/utils/CoordinatesUtils');
-const ProxyUtils = require('../qwc2/MapStore2Components/utils/ProxyUtils');
+const {addSearchResults, SearchResultType} = require("qwc2/actions/search");
+const CoordinatesUtils = require('qwc2/utils/CoordinatesUtils');
+const ProxyUtils = require('qwc2/utils/ProxyUtils');
 
 function coordinatesSearch(text, requestId, searchOptions, dispatch) {
     let displaycrs = searchOptions.displaycrs || "EPSG:4326";

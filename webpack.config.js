@@ -58,7 +58,8 @@ module.exports = {
   },
   plugins,
   resolve: {
-    extensions: [".js", ".jsx"]
+    extensions: [".js", ".jsx"],
+    symlinks: false
   },
   module: {
     rules: [
@@ -85,14 +86,11 @@ module.exports = {
       { test: /\.(png|jpg|gif)$/, loader: 'url-loader', query: {name: '[path][name].[ext]', limit: 8192} }, // inline base64 URLs for <=8k images, direct URLs for the rest
       {
         test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'react-hot-loader/webpack',
-        include: [path.join(__dirname, "js"), path.join(__dirname, "qwc2", "QWC2Components"), path.join(__dirname, "qwc2", "MapStore2Components")]
-      },
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
+        exclude: /node_modules\/(?!(qwc2)\/).*/,
+        use: {
+            loader: 'babel-loader',
+            options: { babelrcRoots: ['.', './node_modules/qwc2'] }
+        }
       }
     ]
   },
