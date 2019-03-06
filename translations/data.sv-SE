@@ -131,7 +131,9 @@
       "resolution": "Upplösning:",
       "rotation": "Rotation:",
       "scale": "Skala:",
-      "submit": "Skriv ut"
+      "submit": "Skriv ut",
+      "output": "",
+      "wait": ""
     },
     "rasterexport": {
       "format": "",
@@ -159,6 +161,8 @@
       "searchall": "",
       "all": "",
       "themes": "",
+      "invisiblelayer": "",
+      "enablelayer": "",
       "coordinates": "Koordinater",
       "placeholder": "Sök efter platser och koordinater..."
     },

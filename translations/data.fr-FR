@@ -128,7 +128,9 @@
       "resolution": "Résolution",
       "rotation": "Rotation",
       "scale": "Echelle",
-      "submit": "Créer le PDF"
+      "submit": "Créer le PDF",
+      "output": "",
+      "wait": ""
     },
     "rasterexport": {
       "format": "Format:",
@@ -155,7 +157,9 @@
       "search": "",
       "searchall": "",
       "all": "",
-      "themes": "Cartes"
+      "themes": "Cartes",
+      "invisiblelayer": "",
+      "enablelayer": ""
     },
     "share": {
       "directLinkTitle": "Via un lien direct",
