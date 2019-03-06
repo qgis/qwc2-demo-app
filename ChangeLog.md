@@ -1,4 +1,5 @@
-v1.X
+v1.X (TBD)
+----------
 
 **Important**:
 
@@ -10,14 +11,27 @@ v1.X
 Incomplete list of changes, for full details, please consult the [commit history](see https://github.com/qgis/qwc2/compare/v1.0...master)
 
 - Allow exporting identify results to CSV
+- Allow configuring WMS hidpi from config.json
+- Allow hiding legend print button
+- Support specifying print labels to omit in the print dialog in the printLabelBlacklist array in themesConfig.json
+- Display print result in inline window
+- Allow adding external-url launcher entries to menu and toolbar
+- Support an array of background printLayers, with maxScale determining which one is used
+- Support scale in search result items if bbox is empty
+
 
 **Incompatible changes**:
 
 - `enableExport` has been replaced by `exportFormat` in the Identify plugin configuration parameters in config.json
+- The `qwc2` submodule is now registered as a yarn workspace dependency (see [`package.json`](https://github.com/qgis/qwc2-demo-app/blob/master/package.json)), all it's dependencies were moved to `qwc2/package.json`. The `webpack.config.js` also needs to be updated, see commit [6ff4ce0](https://github.com/qgis/qwc2-demo-app/commit/6ff4ce04b19043933ad177772eff21f45d721963). At the same time, the MapStore2 and QWC2Components trees were merged in the qwc2 submdoule.
+- The `qwc2-icons.css` stylesheet isn't loaded anymore by the `Icon.jsx` component in the `qwc2` submodule, but needs to be referenced in the application specific code, for instance by adding to `js/app.jsx`
+
+      require('../icons/build/qwc2-icons.css');
 
 
 
-v1.0 (Feb 13 2019):
+v1.0 (Feb 13 2019)
+------------------
 
 **Important**:
 
