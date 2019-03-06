@@ -23,8 +23,7 @@ const plugins = [
   new webpack.LoaderOptionsPlugin({
       debug: !isProd,
       minimize: isProd
-  }),
-  new webpack.IgnorePlugin(/^(turf|leaflet.*)$/)
+  })
 ];
 
 if (isProd) {
