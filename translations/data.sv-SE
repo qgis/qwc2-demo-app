@@ -143,6 +143,8 @@
     "redlining": {
       "add": "",
       "border": "",
+      "draw": "",
+      "edit": "",
       "fill": "",
       "label": "",
       "layer": "",
