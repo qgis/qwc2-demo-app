@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const os = require('os');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const styleConfig = require("./styleConfig");
@@ -85,10 +86,10 @@ module.exports = {
       { test: /\.(png|jpg|gif)$/, loader: 'url-loader', query: {name: '[path][name].[ext]', limit: 8192} }, // inline base64 URLs for <=8k images, direct URLs for the rest
       {
         test: /\.jsx?$/,
-        exclude: /node_modules\/(?!(qwc2)\/).*/,
+        exclude: os.platform() === 'win32' ? /node_modules\\(?!(qwc2)\\).*/ : /node_modules\/(?!(qwc2)\/).*/,
         use: {
             loader: 'babel-loader',
-            options: { babelrcRoots: ['.', './node_modules/qwc2'] }
+            options: { babelrcRoots: ['.', path.resolve(__dirname, 'node_modules', 'qwc2')] }
         }
       }
     ]
