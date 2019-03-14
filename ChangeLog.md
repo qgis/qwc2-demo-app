@@ -28,6 +28,8 @@ Incomplete list of changes, for full details, please consult the [commit history
 
       require('../icons/build/qwc2-icons.css');
 
+- The `Redlining` plugin import in `appConfig.js` must be invoked as a function, with the enabled plugins as argument
+
 
 
 v1.0 (Feb 13 2019)

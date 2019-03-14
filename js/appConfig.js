@@ -49,7 +49,9 @@ module.exports = {
             HelpPlugin: require('qwc2/plugins/Help')(renderHelp),
             DxfExportPlugin: require('qwc2/plugins/DxfExport'),
             RasterExportPlugin: require('qwc2/plugins/RasterExport'),
-            RedliningPlugin: require('qwc2/plugins/Redlining'),
+            RedliningPlugin: require('qwc2/plugins/Redlining')({
+                // BufferSupport: require('qwc2/plugins/redlining/RedliningBufferSupport')
+            }),
             EditingPlugin: require('qwc2/plugins/Editing')(EditingInterface),
             MapComparePlugin: require('qwc2/plugins/MapCompare'),
             HeightProfilePlugin: require('qwc2/plugins/HeightProfile'),
