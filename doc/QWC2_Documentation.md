@@ -67,7 +67,7 @@ The layout of the development tree is as follows:
 |`│  ├─ EditingInterface.js`| Interface to the service for editing features, see [EditingInterface.js](#editing-interface). |
 |`│  ├─ Help.jsx`           | Component for rendering a user-defined Help dialog                |
 |`│  └─ SearchProviders.js` | Search providers                                                  |
-|`├─ icons/`                | Application icons                                                |
+|`├─ icons/`                | Application icons                                                 |
 |`├─ qwc2/`                 | Git submodule containing the core qwc2 components                 |
 |`├─ translations/`         | Translation files                                                 |
 |`├─ config.json`           | Master configuration file                                         |
@@ -94,7 +94,9 @@ The `js/appConfig.js` file controls the following:
 - Which locales are supported.
 
 The `config.json` file is the master configuration of the QWC2 application. It contains the following settings:
-- URLs of external services used to enhance the application. Sample services are available at [https://github.com/sourcepole/qwc2-server](https://github.com/sourcepole/qwc2-server). The following services can be configured:
+
+*URLs of external services*:
+Some external services can be used to enhance the application. Sample services are available at [https://github.com/qwc-services/]https://github.com/qwc-services/). The following services can be configured:
 
 | Setting              | Description |
 |----------------------|-------------|
@@ -104,7 +106,7 @@ The `config.json` file is the master configuration of the QWC2 application. It c
 |`mapInfoService`      | Returns additional information to be displayed in the map right-click information bubble. If omitted, no additional information will be displayed.|
 |`featureReportService`| Returns a custom document associated to a feature. See [`themesConfig.json`](#themesConfig-json).|
 
-- Global settings:
+*Global settings*:
 
 | Setting                             | Description |
 |-------------------------------------|-------------|
@@ -119,8 +121,39 @@ The `config.json` file is the master configuration of the QWC2 application. It c
 |`allowRemovingThemeLayers`           | Whether to allow removing any theme layers from the layer tree.                     |
 |`defaultFeatureStyle`                | The default style to use for selection geometries and other unstyled features.      |
 |`projections`                        | A list of additional projections to register, in the format `{"code": "<code>", "proj": "<proj4def>", "label": "<label>"}`. |
+|`searchThemes`                       | Whether allow searching for themes from the global search field.                    |
+|`allowAddingOtherThemes`             | Whether to allow adding another theme to a currently loaded theme.                  |
+|`allowFractionalZoom`                | Whether to allow arbitrary scales for viewing the map.                              |
+|`localeAwareNumbers`                 | Whether to use locale aware numbers throughout.                                     |
+|`wmsDpi`                             | The DPI to pass to the WMS requests.                                                |
+|`wmsHidpi`                           | Whether to honour the device pixel ratio for WMS GetMap requests.                   |
 
-- The plugin configuration, separately for desktop and for mobile mode. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json) for a list of available configuration options. You can omit a plugin entry to disable it in desktop and/or mobile mode. To completely remove a plugin from the compiled application, remove the corresponding entry in `js/appConfig.js`.
+*Plugin configuration*:
+The plugin configuration is entered separately for desktop and for mobile mode. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json) for a list of available configuration options. You can omit a plugin entry to disable it in desktop and/or mobile mode. To completely remove a plugin from the compiled application, remove the corresponding entry in `js/appConfig.js`.
+
+A particularly interesting aspect is the configuration of the entries in the application menu and toolbar, i.e. the entries in `menuItems` and `toolbarItems` in the `TopBar` configuration. The most common format for linking an entry to an existing plugin is
+
+    {"key": "<key>", "icon": "<icon>", "themeWhitelist": ["<themename>", ...], "identifyEnabled": <true|false>, "mode": "<mode>"}
+
+where
+
+* `key`: The name of the plugin to activate when the entry is clicked, i.e. `LayerTree`. Also used to lookup the the label for the entry from the translations, using the `appmenu.items.<key>` message identifier (see <a href="#translations">Managing translations</a>).
+* `icon`: The icon of the entry, either a name (without the `.svg` extension) of an icon in `icons/`, or `:/<path_to_asset>` containing the path relative to `assetsPath` of an asset image.
+* `themeWhitelist`: Optional, allows specifying a whitelist of theme names for which the entry should be visible.
+* `identifyEnabled`: Optional, allows specifying that map identify queries should remain enabled when the plugin is active (warning: must not be enabled for plugins which handle mouse events on the map).
+* `mode`: Optional, depending on the plugin, a mode can be configured to launch the plugin directly in a specific mode. For instance, the `Measure` plugin supports specifying the measurement mode (`Point`, `LineString`, `Polygon`).
+
+Additionally, entries opening external URLs can be defined as follows:
+
+    {"key": "<key>", "icon": "<icon>", "url": "<url>"}
+
+where
+
+* `Key: An arbitrary key name (not used by existing plugins), used to lookup the the label for the entry from the translations.
+* `icon`: As above.
+* `url`: The URL to open. Can contain as placeholders the keys listed in <a href="#url-parameters">URL parameters</a>, encolsed in `$` (i.e. `$e$` for the extent). In addition, the placeholders `$x$` and `$y$` for the individual map center coordinates are also supported.
+
+
 
 ### Theme configuration: QGIS projects and the `themesConfig.json` file
 
@@ -295,7 +328,7 @@ The format of the `editConfig.json` is as follows:
 
 See the [sample `editConfig.json`](https://github.com/qgis/qwc2-demo-app/blob/master/test2056_edit.json) for a full example.
 
-### Managing translations
+### <a name="translations"></a>Managing translations
 
 The translations are managed on two levels:
 
@@ -310,6 +343,8 @@ Translations are stored inside the respective `translations` folder as regular p
 
 The `tsconfig.json` files stored inside the respective `translations` folder contains the list of languages for which translations should be generated and a list of message IDs to include in the translation. The `tsupdate` script will read this file to automatically create resp. update the translation files.
 
+In some cases, it is desired to override a translation inherited from the QWC2 components at application level. To prevent `tsupdate` from continuously reverting the overridden translation, the respective message IDs can be added to the `overrides` section in the application `tsconfig.json` file.
+
 The typical workflow for managing application translations is:
 
 - Declare all locales which should be supported in `js/appConfig.js`.
@@ -320,7 +355,7 @@ The typical workflow for managing application translations is:
 
 If translations of the QWC2 components for a desired language are missing, please create resp. update the translations respective files in `qwc2/translations` and contribute them by submitting a pull request to the [upstream qwc2 repository](https://github.com/qgis/qwc2).
 
-### Customizing the QWC2 appearance
+### <a name="appearance-customization"></a>Customizing the QWC2 appearance
 
 The following options are available for customizing the appearance of the QWC2 application while preserving compatibility with the core QWC2 components:
 
@@ -331,6 +366,8 @@ The following options are available for customizing the appearance of the QWC2 a
 - Changing the browser page title in `index.html`, and potentially adding a favicon.
 - Modifying the legend print template in `assets/templates/legendprint.html`. The only requirement for this template is that is must contain a `<div id="legendcontainer"></div>` element.
 - Modifying the custom Help component `js/Help.jsx`.
+
+*Note*: The icons in the `icons` folder are compiled into an icon font. Currently, the icons need to be black content on transparent background, and all drawings (including texts) must be converted to paths for the icons to render correctly.
 
 
 ## Server-side configuration
