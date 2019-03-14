@@ -68,8 +68,15 @@ module.exports = {
     themeLayerRestorer: (missingLayers, theme, callback) => {
         // Invoked for layers specified in the l url parameter which are missing in the specified theme
         // Could be used to query a search provider for the missing theme layers
-        // Return a list of theme layers to merge into the theme
-        callback([]);
+
+        // A list of theme layers to merge into the theme
+        let newLayers = [];
+
+        // A dictionary mapping the name of the searched layer name with the resulting layer name(s) as an array, i.e.
+        // {searchlayername: ["resultlayername1", "resultlayername2"], ...}
+        let newLayerNames = {};
+
+        callback(newLayers, newLayerNames);
     },
     supportedLocales: {
          "pt": {
