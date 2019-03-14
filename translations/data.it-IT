@@ -141,6 +141,13 @@
     "redlining": {
       "add": "Aggiungi",
       "border": "Bordo",
+      "buffer": "Buffer",
+      "bufferlayername": "Buffer",
+      "bufferdistance": "Distanza",
+      "bufferlayer": "Destinazione",
+      "buffercompute": "Calcola",
+      "bufferselectfeature": "Seleziona un oggetto...",
+      "delete": "Elimina",
       "draw": "Disegna",
       "edit": "Modifica",
       "fill": "Riempimento",

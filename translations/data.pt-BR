@@ -141,6 +141,13 @@
     "redlining": {
       "add": "",
       "border": "Borda",
+      "buffer": "",
+      "bufferlayername": "",
+      "bufferdistance": "",
+      "bufferlayer": "",
+      "buffercompute": "",
+      "bufferselectfeature": "",
+      "delete": "",
       "draw": "",
       "edit": "",
       "fill": "Preenchimento",
