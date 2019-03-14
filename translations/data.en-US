@@ -16,7 +16,8 @@
         "Redlining": "Redlining",
         "Editing": "Editing",
         "Login": "Login",
-        "Logout": "Logout"
+        "Logout": "Logout",
+        "ExternalLink": "External Link"
       },
       "menulabel": "Map & Tools"
     },

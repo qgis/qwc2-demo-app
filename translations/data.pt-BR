@@ -16,7 +16,8 @@
         "Redlining": "Desenhar",
         "Editing": "Editando",
         "Login": "",
-        "Logout": ""
+        "Logout": "",
+        "ExternalLink": ""
       },
       "menulabel": "Mapa & Ferramentas"
     },

@@ -16,7 +16,8 @@
         "Redlining": "Zeichnen",
         "Editing": "Editieren",
         "Login": "Anmelden",
-        "Logout": "Abmelden"
+        "Logout": "Abmelden",
+        "ExternalLink": "Externer Link"
       },
       "menulabel": "Karte & Werkzeuge"
     },

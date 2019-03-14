@@ -16,7 +16,8 @@
         "Redlining": "Обводка",
         "Editing": "Правка",
         "Login": "",
-        "Logout": ""
+        "Logout": "",
+        "ExternalLink": ""
       },
       "menulabel": "Карта и инструменты"
     },

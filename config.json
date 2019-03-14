@@ -281,7 +281,8 @@
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
                 {"key": "Print", "icon": "print"},
-                {"key": "Help", "icon": "info", "identifyEnabled": true}
+                {"key": "Help", "icon": "info", "identifyEnabled": true},
+                {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$"}
               ],
               "toolbarItems": [
                 {"key": "Measure", "mode": "LineString", "icon": "measure_line"},

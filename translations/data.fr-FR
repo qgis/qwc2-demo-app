@@ -16,7 +16,8 @@
         "Redlining": "Redlining",
         "Editing": "Editer",
         "Login": "Login",
-        "Logout": "Logout"
+        "Logout": "Logout",
+        "ExternalLink": ""
       },
       "menulabel": "Cartes et outils"
     },
