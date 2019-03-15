@@ -2635,6 +2635,11 @@ forever-agent@~0.6.1:
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
   integrity sha1-+8cfDEGt6zf5bFd60e1C2P2sypE=
 
+form-data-entries@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/form-data-entries/-/form-data-entries-1.0.2.tgz#8f5f4e8948ae78f095896801abb7cbb482617162"
+  integrity sha512-MEg115yxWoHdLhpZMunXgQuwyx/sPF0/GDGn/yAQU2/wNWD/f1CKTZsVeZe95zAR5yVaLlO3kII3tOVXM97hUg==
+
 form-data@~2.3.2:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.3.3.tgz#dcce52c05f644f298c6a7ab936bd724ceffbf3a6"

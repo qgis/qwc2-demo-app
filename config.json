@@ -150,7 +150,10 @@
           }
         },
         {
-          "name": "Print"
+          "name": "Print",
+          "cfg": {
+            "inlinePrintOutput": false
+          }
         },
         {
           "name": "Help"
@@ -361,7 +364,10 @@
           }
         },
         {
-          "name": "Print"
+          "name": "Print",
+          "cfg": {
+            "inlinePrintOutput": false
+          }
         },
         {
           "name": "Help"
