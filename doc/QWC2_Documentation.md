@@ -401,13 +401,25 @@ To ensure browser use a proper filename, the following options exist:
 The following parameters can appear in the URL of the QWC2 application:
 
 - `t`: The active theme
-- `l`: The visible layers in the map
+- `l`: The layers in the map, see below.
 - `bl`: The visible background layer
 - `st`: The search text
 - `e`: The visible extent
 - `c`: The center of the visible extent
 - `s`: The current scale
 - `crs`: The CRS of extent/center coordinates
+
+The `l` parameter lists all layers in the map (except redlining layers) as a comma separated list of entries of the form
+
+    <layername>[<transparency>]!
+
+where
+- `layername` is the WMS layer name of a theme layer, or a string of the format
+
+      <wms|wfs>:<service_url>#<layername>
+   for external layers, i.e. `wms:https://wms.geo.admin.ch/?#ch.are.bauzonen`.
+- `<transparency>` denotes the layer transparency, betwen 0 and 100. If the `[<transparency>]` portion is omitted, the layer is fully opaque.
+- `!` denotes that the layer is invisible. If omitted, the layer is visible.
 
 The `urlPositionFormat` parameter in `config.json` determines whether the extent or the center and scale appears in the URL.
 
