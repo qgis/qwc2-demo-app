@@ -260,7 +260,7 @@ The format of the theme definitions is as follows:
 | `"collapseLayerGroupsBelowLevel": <level>,`   | Optional, layer tree level below which to initially collapse groups. By default the tree is completely expanded. |
 | `"skipEmptyFeatureAttributes": <boolean>,`    | Optional, whether to skip empty attributes in the identify results. Default is `false`. |
 | `"allowReorderingLayers": <boolean>,`         | Optional, whether to allow reordering layers for this theme. Overrides the setting in `config.json`. |
-| `"mapTips":  <boolean>\|null,`                | Optional, per-theme setting whether map-tips are unavailable (`null`), disabled by default (`false`) or enabled by default (`true`). If missing or `undefined`, the setting in `config.json` is honoured. |
+| `"mapTips":  <boolean>\|null,`                | Optional, per-theme setting whether map-tips are unavailable (`null`), disabled by default (`false`) or enabled by default (`true`). |
 | `"extraLegendParameters": "<&KEY=VALUE>",`    | Optional, additional query parameters to append to WMS GetLegendGraphic.         |
 | `"printLabelBlacklist":  ["<LabelId>", ...]`  | Optional, list of composer label ids to not expose in the print dialog. |
 |
