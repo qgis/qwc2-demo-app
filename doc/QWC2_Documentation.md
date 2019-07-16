@@ -274,6 +274,7 @@ The format of the background layer definitions is as follows:
 | `"title": "<Title>",       ` | The title of the background layer, as displayed in the background switcher.       |
 | `"thumbnail": "<Filename>",` | Optional, image file in `assets/img/mapthumbs`. Defaults to `default.jpg`.        |
 | `"type": "<Type>",`          | The background layer type, i.e. `wms` or `wmts`.                                  |
+| `"group":  "<GroupId>",`     | Optional, a group ID string. Background layers with the same group ID will be grouped together in the background switcher. |
 | `<Layer params>`             | Parameters according to the specified layer type. Refer to the [sample `themesConfig.json`](https://github.com/qgis/qwc2-demo-app/blob/master/themesConfig.json) for some examples. |
 
 #### Generating `themes.json`

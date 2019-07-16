@@ -73,10 +73,12 @@
     },
     "importlayer": {
       "addlayer": "",
-      "filter": "",
       "connect": "",
+      "filter": "",
+      "localfile": "",
       "nofeatures": "",
       "noresults": "",
+      "url": "",
       "urlplaceholder": ""
     },
     "layerinfo": {
