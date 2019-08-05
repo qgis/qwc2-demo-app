@@ -3,6 +3,7 @@
   "messages": {
     "appmenu": {
       "items": {
+        "ExternalLink": "",
         "DxfExport": "DXF Export",
         "Help": "Hjälp",
         "LayerTree": "Lager & teckenförklaring",
@@ -16,11 +17,19 @@
         "Redlining": "",
         "Editing": "",
         "Login": "",
-        "Logout": "",
-        "ExternalLink": "",
-        "Draw": "Rita"
+        "Logout": ""
       },
       "menulabel": "Karta & Verktyg"
+    },
+    "search": {
+      "coordinates": "Koordinater",
+      "more": "Mer",
+      "search": "",
+      "searchall": "",
+      "all": "",
+      "themes": "",
+      "invisiblelayer": "",
+      "enablelayer": ""
     },
     "bgswitcher": {
       "nobg": "Ingen bakgrund"
@@ -108,9 +117,7 @@
         "ENABLED": "",
         "FOLLOWING": "",
         "PERMISSION_DENIED": ""
-      },
-      "tooltip": "Lokalisera mig",
-      "outsideMapBoundsMsg": "Du verkar befinna dig utanför kartans gränser"
+      }
     },
     "map": {
       "loading": "Laddar..."
@@ -168,17 +175,6 @@
       "text": "",
       "width": ""
     },
-    "search": {
-      "more": "Mer",
-      "search": "",
-      "searchall": "",
-      "all": "",
-      "themes": "",
-      "invisiblelayer": "",
-      "enablelayer": "",
-      "coordinates": "Koordinater",
-      "placeholder": "Sök efter platser och koordinater..."
-    },
     "share": {
       "directLinkTitle": "Via en direktlänk",
       "generatingpermalink": "Genererar permalink...",
@@ -194,22 +190,6 @@
     "themeswitcher": {
       "filter": "Filtrera...",
       "addtotheme": ""
-    },
-    "draw": {
-      "delete": "Ta bort",
-      "clearAll": "Ta bort alla",
-      "point": "Punkt",
-      "line": "Linje",
-      "polygon": "Polygon",
-      "bbox": "Rektangel",
-      "circle": "Cirkel",
-      "strokecolor": "Linjefärg",
-      "fillcolor": "Fyllfärg",
-      "text": "Text",
-      "strokewidth": "Linjebredd",
-      "fillopacity": "Transparens",
-      "fontsize": "Textstorlek"
-    },
-    "identifyTitle": "Information"
+    }
   }
 }

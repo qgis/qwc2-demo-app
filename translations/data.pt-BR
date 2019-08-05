@@ -3,6 +3,7 @@
   "messages": {
     "appmenu": {
       "items": {
+        "ExternalLink": "",
         "DxfExport": "Exportar DXF",
         "Help": "Ajuda",
         "LayerTree": "Camadas & Legenda",
@@ -16,10 +17,19 @@
         "Redlining": "Desenhar",
         "Editing": "Editando",
         "Login": "",
-        "Logout": "",
-        "ExternalLink": ""
+        "Logout": ""
       },
       "menulabel": "Mapa & Ferramentas"
+    },
+    "search": {
+      "coordinates": "",
+      "more": "Mais...",
+      "search": "Buscar",
+      "searchall": "",
+      "all": "Tudo",
+      "themes": "",
+      "invisiblelayer": "",
+      "enablelayer": ""
     },
     "bgswitcher": {
       "nobg": "Sem plano de fundo"
@@ -164,15 +174,6 @@
       "size": "Tamanho",
       "text": "Texto",
       "width": "Largura"
-    },
-    "search": {
-      "more": "Mais...",
-      "search": "Buscar",
-      "searchall": "",
-      "all": "Tudo",
-      "themes": "",
-      "invisiblelayer": "",
-      "enablelayer": ""
     },
     "share": {
       "directLinkTitle": "Link direto",

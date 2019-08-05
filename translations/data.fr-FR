@@ -3,6 +3,7 @@
   "messages": {
     "appmenu": {
       "items": {
+        "ExternalLink": "",
         "DxfExport": "Export DXF",
         "Help": "Aide",
         "LayerTree": "Couches",
@@ -16,10 +17,19 @@
         "Redlining": "Dessiner",
         "Editing": "Editer",
         "Login": "Connexion",
-        "Logout": "Déconnexion",
-        "ExternalLink": ""
+        "Logout": "Déconnexion"
       },
       "menulabel": "Cartes et outils"
+    },
+    "search": {
+      "coordinates": "Coordonnées",
+      "more": "Plus...",
+      "search": "Chercher",
+      "searchall": "Rechercher un lieu ou ajouter une carte...",
+      "all": "Tous",
+      "themes": "Cartes",
+      "invisiblelayer": "Le résultat est sur un calque désactivé",
+      "enablelayer": "Activer le calque"
     },
     "bgswitcher": {
       "nobg": "Pas de fond"
@@ -164,15 +174,6 @@
       "size": "Taille",
       "text": "Texte",
       "width": "Largeur"
-    },
-    "search": {
-      "more": "Plus...",
-      "search": "Chercher",
-      "searchall": "Rechercher un lieu ou ajouter une carte...",
-      "all": "Tous",
-      "themes": "Cartes",
-      "invisiblelayer": "Le résultat est sur un calque désactivé",
-      "enablelayer": "Activer le calque"
     },
     "share": {
       "directLinkTitle": "Via un lien direct",

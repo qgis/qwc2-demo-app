@@ -3,6 +3,7 @@
   "messages": {
     "appmenu": {
       "items": {
+        "ExternalLink": "Externer Link",
         "DxfExport": "DXF-Export",
         "Help": "Hilfe",
         "LayerTree": "Ebenen und Legende",
@@ -16,10 +17,19 @@
         "Redlining": "Zeichnen",
         "Editing": "Editieren",
         "Login": "Anmelden",
-        "Logout": "Abmelden",
-        "ExternalLink": "Externer Link"
+        "Logout": "Abmelden"
       },
       "menulabel": "Karte & Werkzeuge"
+    },
+    "search": {
+      "coordinates": "Koordinaten",
+      "more": "Mehr...",
+      "search": "Suchen",
+      "searchall": "Ort suchen oder Karte hinzufügen...",
+      "all": "Alle",
+      "themes": "Themen",
+      "invisiblelayer": "Das Resultat liegt auf einer Ebene, die ausgeschaltet ist.",
+      "enablelayer": "Ebene einschalten"
     },
     "bgswitcher": {
       "nobg": "Kein Hintergrund"
@@ -164,15 +174,6 @@
       "size": "Grösse",
       "text": "Text",
       "width": "Breite"
-    },
-    "search": {
-      "more": "Mehr...",
-      "search": "Suchen",
-      "searchall": "Ort suchen oder Karte hinzufügen...",
-      "all": "Alle",
-      "themes": "Themen",
-      "invisiblelayer": "Das Resultat liegt auf einer Ebene, die ausgeschaltet ist.",
-      "enablelayer": "Ebene einschalten"
     },
     "share": {
       "directLinkTitle": "Über einen direkten Link",

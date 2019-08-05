@@ -3,6 +3,7 @@
   "messages": {
     "appmenu": {
       "items": {
+        "ExternalLink": "Link esterno",
         "DxfExport": "Esporta a DXF",
         "Help": "Aiuto",
         "LayerTree": "Livelli",
@@ -16,10 +17,19 @@
         "Redlining": "Redlining",
         "Editing": "Edita",
         "Login": "Accedi",
-        "Logout": "Disconnetti",
-        "ExternalLink": "Link esterno"
+        "Logout": "Disconnetti"
       },
       "menulabel": "Mappa e strumenti"
+    },
+    "search": {
+      "coordinates": "Coordinate",
+      "more": "Più risultati",
+      "search": "Cerca",
+      "searchall": "Cerca località o aggiungi cartine...",
+      "all": "Tutti",
+      "themes": "Temi",
+      "invisiblelayer": "Il risultato si trova su un layer che non è visibile.",
+      "enablelayer": "Attivare il layer"
     },
     "bgswitcher": {
       "nobg": "Nessuno sfondo"
@@ -164,15 +174,6 @@
       "size": "Dimensione",
       "text": "Testo",
       "width": "Larghezza"
-    },
-    "search": {
-      "more": "Più risultati",
-      "search": "Cerca",
-      "searchall": "Cerca località o aggiungi cartine...",
-      "all": "Tutti",
-      "themes": "Temi",
-      "invisiblelayer": "Il risultato si trova su un layer che non è visibile.",
-      "enablelayer": "Attivare il layer"
     },
     "share": {
       "directLinkTitle": "Link diretto",

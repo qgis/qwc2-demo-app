@@ -3,6 +3,7 @@
   "messages": {
     "appmenu": {
       "items": {
+        "ExternalLink": "",
         "DxfExport": "Export DXF",
         "Help": "Ajutor",
         "LayerTree": "Straturi & Legendă",
@@ -16,10 +17,19 @@
         "Redlining": "Evidențiere",
         "Editing": "Editare",
         "Login": "Conectează-te",
-        "Logout": "Deconectează-te",
-        "ExternalLink": ""
+        "Logout": "Deconectează-te"
       },
       "menulabel": "Hărți & Unelte"
+    },
+    "search": {
+      "coordinates": "",
+      "more": "Mai multe...",
+      "search": "Caută",
+      "searchall": "Caută în toate",
+      "all": "Toate",
+      "themes": "Hărți tematice",
+      "invisiblelayer": "",
+      "enablelayer": ""
     },
     "bgswitcher": {
       "nobg": "Fără fundal"
@@ -164,15 +174,6 @@
       "size": "Mărime",
       "text": "Text",
       "width": "Lățime"
-    },
-    "search": {
-      "more": "Mai multe...",
-      "search": "Caută",
-      "searchall": "Caută în toate",
-      "all": "Toate",
-      "themes": "Hărți tematice",
-      "invisiblelayer": "",
-      "enablelayer": ""
     },
     "share": {
       "directLinkTitle": "Via link direct",

@@ -10,8 +10,10 @@
     "sv-SE"
   ],
   "strings": [
-    "appmenu.items.ExternalLink"
+    "appmenu.items.ExternalLink",
+    "search.coordinates"
   ],
   "overrides": [
+    "bottombar.viewertitle_label"
   ]
 }

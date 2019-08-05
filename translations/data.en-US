@@ -3,6 +3,7 @@
   "messages": {
     "appmenu": {
       "items": {
+        "ExternalLink": "External Link",
         "DxfExport": "DXF Export",
         "Help": "Help",
         "LayerTree": "Layers & Legend",
@@ -16,10 +17,19 @@
         "Redlining": "Redlining",
         "Editing": "Editing",
         "Login": "Login",
-        "Logout": "Logout",
-        "ExternalLink": "External Link"
+        "Logout": "Logout"
       },
       "menulabel": "Map & Tools"
+    },
+    "search": {
+      "coordinates": "Coordinates",
+      "more": "More...",
+      "search": "Search",
+      "searchall": "Search places or add maps...",
+      "all": "All",
+      "themes": "Themes",
+      "invisiblelayer": "The result lies on a layer which is not visible.",
+      "enablelayer": "Enable layer"
     },
     "bgswitcher": {
       "nobg": "No background"
@@ -164,15 +174,6 @@
       "size": "Size",
       "text": "Text",
       "width": "Width"
-    },
-    "search": {
-      "more": "More...",
-      "search": "Search",
-      "searchall": "Search places or add maps...",
-      "all": "All",
-      "themes": "Themes",
-      "invisiblelayer": "The result lies on a layer which is not visible.",
-      "enablelayer": "Enable layer"
     },
     "share": {
       "directLinkTitle": "Via a direct link",
