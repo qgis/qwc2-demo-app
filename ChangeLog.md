@@ -1,4 +1,4 @@
-v1.X (TBD)
+v2.0 (TBD)
 ----------
 
 **Important**:
@@ -8,17 +8,29 @@ v1.X (TBD)
 
 **News**:
 
-Incomplete list of changes, for full details, please consult the [commit history](see https://github.com/qgis/qwc2/compare/v1.0...master)
+List of major new features. For full details, please consult the [commit history](see https://github.com/qgis/qwc2/compare/v1.0...master)
 
 - Allow exporting identify results to CSV
 - Allow configuring WMS hidpi from config.json
 - Allow hiding legend print button
 - Support specifying print labels to omit in the print dialog in the printLabelBlacklist array in themesConfig.json
-- Display print result in inline window
+- Support displaying print results in an inline window
 - Allow adding external-url launcher entries to menu and toolbar
 - Support an array of background printLayers, with maxScale determining which one is used
 - Support scale in search result items if bbox is empty
-
+- Add optional buffer support to redlining plugin
+- Allow specifying translation strings overridden in application translations
+- Allow showing info button directly next to layer name instead of in the settings menu
+- Handle QGIS Server setups without rewrite rule
+- Handle printing with no theme layers
+- Support grouping background layers in switcher
+- Allow specifying a preset list for the import layer urls
+- Add checkbox to toggle entrie layertree
+- Add button to remove all layers from layertree
+- Allow reordering entire layer groups
+- Support overriding various global `config.json` settings on per-theme level.
+- Support config option preventSplittingGroupsWhenReordering to avoid splitting groups when reordering
+- Support drag-and-dropping in non-flattened layertree if preventSplittingGroupsWhenReordering=true
 
 **Incompatible changes**:
 
@@ -29,6 +41,7 @@ Incomplete list of changes, for full details, please consult the [commit history
       require('../icons/build/qwc2-icons.css');
 
 - The `Redlining` plugin import in `appConfig.js` must be invoked as a function, with the enabled plugins as argument
+- The layer order in the `l` parameter is now consistently top-to-bottom, instead of the previous hybrid order (bottom-to-top for theme sublayers, top-to-bottom for external layers). To preserve compatibility of the theme sublayer ordering when restoring permalinks created with a previous application version, you can set `urlReverseLayerOrder: true` in `config.json`. This will however result in reversed order for external layers.
 
 
 
