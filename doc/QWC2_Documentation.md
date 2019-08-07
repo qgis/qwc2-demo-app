@@ -125,17 +125,20 @@ Some external services can be used to enhance the application. Sample services a
 
 The following options can be specified globally, and also overriden per theme, see [`themesConfig.json`](#themesConfig-json).
 
-| Setting                             | Description |
-|-------------------------------------|-------------|
-|`preserveExtentOnThemeSwitch`        | Whether to preserve the current map extent when switching theme, if possible.       |
-|`preserveBackgroundOnThemeSwitch`    | Whether to preserve the current background layer when switching theme, if possible. |
-|`preserveNonThemeLayersOnThemeSwitch`| Whether to preserve non-theme layers when switching theme.                          |
-|`allowReorderingLayers`              | Whether to allow re-ordering layers in the layer tree.                              |
-|`allowRemovingThemeLayers`           | Whether to allow removing any theme layers from the layer tree.                     |
-|`searchThemes`                       | Whether allow searching for themes from the global search field.                    |
-|`allowAddingOtherThemes`             | Whether to allow adding another theme to a currently loaded theme.                  |
-|`disableImportingLocalLayers`        | Whether to hide the option to import local layers from the layer tree.              |
-|`importLayerUrlPresets`              | A list of predefined URLs from which the user can choose when importing layers from the layer tree. |
+| Setting                              | Description |
+|--------------------------------------|-------------|
+|`preserveExtentOnThemeSwitch`         | Whether to preserve the current map extent when switching theme, if possible.       |
+|`preserveBackgroundOnThemeSwitch`     | Whether to preserve the current background layer when switching theme, if possible. |
+|`preserveNonThemeLayersOnThemeSwitch` | Whether to preserve non-theme layers when switching theme.                          |
+|`allowReorderingLayers`               | Whether to allow re-ordering layers in the layer tree.                              |
+|`preventSplittingGroupsWhenReordering`| Whether to prevent splitting sibling groups or the group itself when reordering items. |
+|`allowRemovingThemeLayers`            | Whether to allow removing any theme layers from the layer tree.                     |
+|`searchThemes`                        | Whether allow searching for themes from the global search field.                    |
+|`allowAddingOtherThemes`              | Whether to allow adding another theme to a currently loaded theme.                  |
+|`disableImportingLocalLayers`         | Whether to hide the option to import local layers from the layer tree.              |
+|`importLayerUrlPresets`               | A list of predefined URLs from which the user can choose when importing layers from the layer tree. |
+
+*Note*: The layer tree supports re-ordering layers via drag-and-drop if `allowReorderingLayers = true` *and either* `preventSplittingGroupsWhenReordering = true` *or* `flattenGroups = true` in the `LayerTree` plugin configuration.
 
 *Plugin configuration*:
 The plugin configuration is entered separately for desktop and for mobile mode. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json) for a list of available configuration options. You can omit a plugin entry to disable it in desktop and/or mobile mode. To completely remove a plugin from the compiled application, remove the corresponding entry in `js/appConfig.js`.
