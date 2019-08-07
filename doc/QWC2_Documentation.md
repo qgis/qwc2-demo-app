@@ -386,6 +386,7 @@ The following options are available for customizing the appearance of the QWC2 a
 - Modifying the legend print template in `assets/templates/legendprint.html`. The only requirement for this template is that is must contain a `<div id="legendcontainer"></div>` element.
 - Modifying the custom Help component `js/Help.jsx`.
 
+*Note*: The common application icons are located in `qwc2/icons`. They can be overridden by creating an icon with the same filename in the application specific `icons` folder.
 *Note*: The icons in the `icons` folder are compiled into an icon font. Currently, the icons need to be black content on transparent background, and all drawings (including texts) must be converted to paths for the icons to render correctly.
 
 
