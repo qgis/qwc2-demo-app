@@ -58,7 +58,7 @@ module.exports = {
   },
   plugins,
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: [".mjs", ".js", ".jsx"],
     symlinks: false
   },
   module: {
@@ -91,6 +91,10 @@ module.exports = {
             loader: 'babel-loader',
             options: { babelrcRoots: ['.', path.resolve(__dirname, 'node_modules', 'qwc2')] }
         }
+      },
+      {
+        test: /\.mjs$/,
+        type: 'javascript/auto',
       }
     ]
   },
