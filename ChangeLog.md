@@ -8,7 +8,7 @@ v2.0 (TBD)
 
 **News**:
 
-List of major new features. For full details, please consult the [commit history](see https://github.com/qgis/qwc2/compare/v1.0...master)
+List of major new features. For full details, please consult the [commit history](https://github.com/qgis/qwc2/compare/v1.0...master)
 
 - Allow exporting identify results to CSV
 - Allow configuring WMS hidpi from config.json
