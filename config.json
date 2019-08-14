@@ -334,7 +334,8 @@
             "grayUnchecked": false,
             "flattenGroups": false,
             "layerInfoWindowSize": {"width": 480, "height": 400},
-            "bboxDependentLegend": false
+            "bboxDependentLegend": false,
+            "showToggleAllLayersCheckbox": true
           }
         },
         {
