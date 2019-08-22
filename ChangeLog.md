@@ -31,6 +31,7 @@ List of major new features. For full details, please consult the [commit history
 - Support overriding various global `config.json` settings on per-theme level.
 - Support config option preventSplittingGroupsWhenReordering to avoid splitting groups when reordering
 - Support drag-and-dropping in non-flattened layertree if preventSplittingGroupsWhenReordering=true
+- Allow exporting redlining layers to GeoJson
 
 **Incompatible changes**:
 
