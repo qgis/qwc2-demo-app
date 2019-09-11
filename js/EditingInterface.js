@@ -6,33 +6,81 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+const axios = require('axios');
+const assign = require('object-assign');
+const {isEmpty} = require('lodash');
+const CoordinatesUtils = require('qwc2/utils/CoordinatesUtils');
+const ConfigUtils = require('qwc2/utils/ConfigUtils');
+const ProxyUtils = require('qwc2/utils/ProxyUtils');
+
+
+function buildErrMsg(err) {
+    let message = "Commit failed";
+    if(err.response && err.response.data && err.response.data.message) {
+        message = err.response.data.message;
+        if(err.response.data.geometry_errors) {
+            message += ":\n";
+            message += err.response.data.geometry_errors.map(entry => " - " + entry.reason + " at " + entry.location);
+        }
+    }
+    return message;
+}
+
 function getFeature(layerId, mapPos, mapCrs, mapScale, dpi, callback) {
-    console.log("Pick " + layerId + " at (" + mapPos[0] + ", " + mapPos[1] + "): " + mapCrs);
-    let feature = null;
-    setTimeout(() => callback(feature), 500);
+    const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
+
+    // 5px tolerance
+    let tol = (5.0 / dpi) * 0.0254 * mapScale;
+    let bbox = (mapPos[0] - tol) + "," + (mapPos[1] - tol) + "," + (mapPos[0] + tol) + "," + (mapPos[1] + tol);
+
+    let req = SERVICE_URL + layerId + '?bbox=' + bbox + '&crs=' + mapCrs;
+    axios.get(ProxyUtils.addProxyIfNeeded(req)).then(response => {
+        if(response.data && !isEmpty(response.data.features)) {
+            let feature = response.data.features[0];
+            callback(feature);
+        } else {
+            callback(null);
+        }
+    }).catch(err => callback(null));
 }
 
 function addFeature(layerId, feature, mapCrs, callback) {
-    console.log("Add to layer " + layerId + ":");
-    console.log(feature);
-    let success = false;
-    let errorMsg = "Commit failed";
-    setTimeout(() => callback(success, errorMsg), 500);
+    const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
+    let req = SERVICE_URL + layerId + '/';
+    // Add CRS
+    let epsgCode = mapCrs.split(':')[1];
+    feature = assign({}, feature, {crs: {
+        type: "name",
+        properties: {name: "urn:ogc:def:crs:EPSG::" + epsgCode}
+    }});
+
+    axios.post(ProxyUtils.addProxyIfNeeded(req), feature).then(response => {
+        callback(true);
+    }).catch(err => callback(false, buildErrMsg(err)));
 }
 
 function editFeature(layerId, feature, mapCrs, callback) {
-    console.log("Commit to layer " + layerId + ":");
-    console.log(feature);
-    let success = false;
-    let errorMsg = "Commit failed";
-    setTimeout(() => callback(success, errorMsg), 500);
+    const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
+    let req = SERVICE_URL + layerId + '/' + feature.id;
+    // Add CRS
+    let epsgCode = mapCrs.split(':')[1];
+    feature = assign({}, feature, {crs: {
+        type: "name",
+        properties: {name: "urn:ogc:def:crs:EPSG::" + epsgCode}
+    }});
+
+    axios.put(ProxyUtils.addProxyIfNeeded(req), feature).then(response => {
+        callback(true);
+    }).catch(err => callback(false, buildErrMsg(err)));
 }
 
 function deleteFeature(layerId, featureId, callback) {
-    console.log("Delete feature from layer " + layerId + ":" + featureId);
-    let success = false;
-    let errorMsg = "Commit failed";
-    setTimeout(() => callback(success, errorMsg), 500);
+    const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
+    let req = SERVICE_URL + layerId + '/' + featureId;
+
+    axios.delete(ProxyUtils.addProxyIfNeeded(req)).then(response => {
+        callback(true);
+    }).catch(err => callback(false, buildErrMsg(err)));
 }
 
 module.exports = {
@@ -40,4 +88,4 @@ module.exports = {
     addFeature,
     editFeature,
     deleteFeature
-}
+};
