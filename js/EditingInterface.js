@@ -6,6 +6,13 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+/**
+ * NOTE: This sample editing interface is designed to work with the counterpart at
+ *       https://github.com/qwc-services/qwc-data-service
+ *
+ * You can use any other editing backend by implementing the getFeature, addFeature,
+ * editFeature and deleteFeature methods as necessary.
+ */
 const axios = require('axios');
 const assign = require('object-assign');
 const {isEmpty} = require('lodash');
