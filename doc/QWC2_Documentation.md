@@ -38,7 +38,7 @@ Then, start a local development application:
 
     $ yarn start
 
-The development application will run by default on `http://localhost:8081`.
+The development application will run by default on `http://localhost:8081`. Note: if you are behind a proxy server, you'll need to [specify the proxy settings](#themes-json).
 
 At this point, you can customize and configure the application according to your needs, as described in detail in the following chapters.
 
@@ -291,7 +291,7 @@ The format of the background layer definitions is as follows:
 | `"group":  "<GroupId>",`     | Optional, a group ID string. Background layers with the same group ID will be grouped together in the background switcher. |
 | `<Layer params>`             | Parameters according to the specified layer type. Refer to the [sample `themesConfig.json`](https://github.com/qgis/qwc2-demo-app/blob/master/themesConfig.json) for some examples. |
 
-#### Generating `themes.json`
+#### <a name="themes-json"></a>Generating `themes.json`
 
 The final step is to generate `themes.json`, the file which is ultimately read by QWC2. This file combines the input from `themesConfig.json` with the information from the WMS service capabilities and is automatically generated when starting the local development application via `yarn start`. Alternatively, it can be manually generated via
 
@@ -304,6 +304,20 @@ or, if working in an environment without node, using the equivalent command
 
 If you want to manage multiple `themesConfig.json` files, you can specify which while should be processed by the theme generation script via the `QWC2_THEMES_CONFIG` environment variable.
 
+Note: if you are behind a proxy server and your `themesConfig.json` refers to resources outside the local network, you'll need to specify the proxy settings to use in `themesConfig.json` by adding a toplevel block of the form
+
+    {
+      "proxy": {
+          "host": "<host>",
+          "port": <port>,
+          "auth": {
+              "username": "<username>",
+              "password": "<password>"
+        }
+      },
+      "themes": {...},
+      ...
+    }
 
 ### Implementing search providers in `js/SearchProviders.js`
 
