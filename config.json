@@ -139,7 +139,8 @@
             },
             "exportFormat": "csv",
             "longAttributesDisplay": "wrap",
-            "displayResultTree": false
+            "displayResultTree": false,
+            "featureInfoReturnsLayerName": true
           }
         },
         {
@@ -350,6 +351,7 @@
             "exportFormat": "csv",
             "longAttributesDisplay": "wrap",
             "displayResultTree": false,
+            "featureInfoReturnsLayerName": true,
             "initialWidth": 480,
             "initialHeight": 550
           }

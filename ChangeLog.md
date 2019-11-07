@@ -45,6 +45,7 @@ List of major new features. For full details, please consult the [commit history
 - The `Redlining` plugin import in `appConfig.js` must be invoked as a function, with the enabled plugins as argument
 - The layer order in the `l` parameter is now consistently top-to-bottom, instead of the previous hybrid order (bottom-to-top for theme sublayers, top-to-bottom for external layers). To preserve compatibility of the theme sublayer ordering when restoring permalinks created with a previous application version, you can set `urlReverseLayerOrder: true` in `config.json`. This will however result in reversed order for external layers.
 - `webpack.config.js` needs to be updated to handle `.mjs` files, see [this commit](https://github.com/qgis/qwc2-demo-app/commit/f954403d51f874c8a9f61c452e4840919874c6ec#diff-11e9f7f953edc64ba14b0cc350ae7b9d)
+- The identify viewer now assumes by default that the QGIS Server will return the technical layer names (instead of the titles) in the GetFeatureInfo responses. If that is not the case, set `"featureInfoReturnsLayerName": false` in the Identify configuration parameters in `config.json`.
 
 
 
