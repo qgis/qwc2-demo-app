@@ -116,6 +116,7 @@
                 "showProvidersInPlaceholder": false
               },
               "appMenuClearsTask": true,
+              "appMenuVisibleOnStartup": false,
               "logoClickResetsTheme": true
             }
         },
@@ -303,6 +304,7 @@
                 "showProvidersInPlaceholder": false
               },
               "appMenuClearsTask": true,
+              "appMenuVisibleOnStartup": false,
               "logoUrl": "/"
             }
         },
