@@ -54,6 +54,7 @@
       "delete": "Deletar",
       "discard": "Descartar",
       "draw": "Desenhar",
+      "feature": "",
       "fields": "Campos",
       "layer": "Camada",
       "noeditablelayers": "Camadas não editáveis.",
