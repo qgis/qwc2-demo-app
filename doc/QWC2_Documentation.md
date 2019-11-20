@@ -342,23 +342,24 @@ A skeleton for the interface to the editing service is provided in the [sample `
 
 The format of the `editConfig.json` is as follows:
 
-| Entry                            | Description                                                   |
-|----------------------------------|---------------------------------------------------------------|
-| `{`                              |                                                               |
-| `  <LayerId>: {`                 | A WMS layer ID. Should be a theme WMS layer name, to ensure the WMS is correctly refreshed. |
-| `    "layerName": "<LayerName>",`| The layer name to show in the selection combo box. |
-| `    "geomType": "<GeomType>",`  | The geometry type, either `Point`, `LineString` or `Polygon`. |
-| `    "fields": [{`               | A list of field definitions, for each exposed attribute.      |
-| `      "id": "<FieldID>",`       | The field ID.                                                 |
-| `      "name": "<FieldName>",`   | The field name, as displayed in the editing form.             |
-| `      "type": "<FieldType>",`   | A field type. Either `bool`, `list` or a regular [HTML input element type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input). |
-| `      "constraints": {`         | Constraints for the input field.                              |
-| `        "values": [<Entries>],` | Only if `type` is `list`: an array of arbitrary strings.      |
-| `        ...`                    | For regular HTML input types, the ReactJS API name of any applicable [HTML input constraint](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input), i.e. `maxLength` or `readOnly`. |
-| `      }`                        |                                                               |
-| `    }]`                         |                                                               |
-| `  }`                            |                                                               |
-| `}`                              |                                                               |
+| Entry                               | Description                                                   |
+|-------------------------------------|---------------------------------------------------------------|
+| `{`                                 |                                                               |
+| `  <LayerId>: {`                    | A WMS layer ID. Should be a theme WMS layer name, to ensure the WMS is correctly refreshed. |
+| `    "layerName": "<LayerName>",`   | The layer name to show in the selection combo box. |
+| `    "geomType": "<GeomType>",`     | The geometry type, either `Point`, `LineString` or `Polygon`. |
+| `    "displayField":  "<FieldId">",`| The ID of the field to use in the feature selection menu.     |
+| `    "fields": [{`                  | A list of field definitions, for each exposed attribute.      |
+| `      "id": "<FieldID>",`          | The field ID.                                                 |
+| `      "name": "<FieldName>",`      | The field name, as displayed in the editing form.             |
+| `      "type": "<FieldType>",`      | A field type. Either `bool`, `list` or a regular [HTML input element type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input). |
+| `      "constraints": {`            | Constraints for the input field.                              |
+| `        "values": [<Entries>],`    | Only if `type` is `list`: an array of arbitrary strings.      |
+| `        ...`                       | For regular HTML input types, the ReactJS API name of any applicable [HTML input constraint](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input), i.e. `maxLength` or `readOnly`. |
+| `      }`                           |                                                               |
+| `    }]`                            |                                                               |
+| `  }`                               |                                                               |
+| `}`                                 |                                                               |
 
 See the [sample `editConfig.json`](https://github.com/qgis/qwc2-demo-app/blob/master/test2056_edit.json) for a full example.
 

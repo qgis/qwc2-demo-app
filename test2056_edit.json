@@ -2,6 +2,7 @@
     "a": {
         "layerName": "Bahnhof",
         "geomType": "Polygon",
+	"displayField": "EGID",
         "fields": [
             {
                 "id": "EGID",
@@ -41,6 +42,7 @@
     "b": {
         "layerName": "Hochschule",
         "geomType": "Polygon",
+	"displayField": "id",
         "fields": [
             {
                 "id": "id",
