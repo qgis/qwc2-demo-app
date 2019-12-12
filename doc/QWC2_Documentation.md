@@ -96,7 +96,7 @@ The `js/appConfig.js` file controls the following:
 The `config.json` file is the master configuration of the QWC2 application. It contains the following settings:
 
 *URLs of external services*:
-Some external services can be used to enhance the application. Sample services are available at [https://github.com/qwc-services/]https://github.com/qwc-services/). The following services can be configured:
+Some external services can be used to enhance the application. Sample services are available at [https://github.com/qwc-services/](https://github.com/qwc-services/). The following services can be configured:
 
 | Setting              | Description |
 |----------------------|-------------|
