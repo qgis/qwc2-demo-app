@@ -340,6 +340,75 @@ function glarusResultGeometry(resultItem, callback) {
 
 ///////////////////////////////////////////////////////////////////////////////
 
+function nominatimSearchResults(obj, requestId) {
+    let results = [];
+    let groups = {};
+    let groupcounter = 0;
+
+    (obj || []).map(entry => {
+        if (!(entry.class in groups)) {
+            groups[entry.class] = {
+                id: "nominatimgroup" + (groupcounter++),
+                // capitalize class
+                title: entry.class.charAt(0).toUpperCase() + entry.class.slice(1),
+                items: []
+            };
+            results.push(groups[entry.class]);
+        }
+
+        // shorten display_name
+        let text = entry.display_name.split(', ').slice(0, 3).join(', ');
+        // map label
+        let label = text;
+
+        // collect address fields
+        let address = [];
+        if (entry.address.town) {
+            address.push(entry.address.town);
+        }
+        if (entry.address.city) {
+            address.push(entry.address.city);
+        }
+        if (entry.address.state) {
+            address.push(entry.address.state);
+        }
+        if (entry.address.country) {
+            address.push(entry.address.country);
+        }
+        if (address.length > 0) {
+            text += "<br/><i>" + address.join(', ') + "</i>";
+        }
+
+        // reorder coords from [miny, maxy, minx, maxx] to [minx, miny, maxx, maxy]
+        const b = entry.boundingbox.map(coord => parseFloat(coord));
+        let bbox = [b[2], b[0], b[3], b[1]];
+
+        groups[entry.class].items.push({
+            id: entry.place_id,
+            // shorten display_name
+            text: text,
+            label: label,
+            bbox: bbox,
+            x: 0.5 * (bbox[0] + bbox[2]),
+            y: 0.5 * (bbox[1] + bbox[3]),
+            crs: "EPSG:4326",
+            provider: "nominatim"
+        });
+    });
+    return addSearchResults({data: results, provider: "nominatim", reqId: requestId}, true);
+}
+
+function nominatimSearch(text, requestId, searchOptions, dispatch) {
+    axios.get("//nominatim.openstreetmap.org/search", {params: {
+        q: text,
+        addressdetails: 1,
+        limit: 20,
+        format: 'json'
+    }}).then(response => dispatch(nominatimSearchResults(response.data, requestId)));
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
 function parametrizedSearch(cfg, text, requestId, searchOptions, dispatch)
 {
     let SEARCH_URL = ""; // ...
@@ -416,6 +485,10 @@ module.exports = {
             onSearch: glarusSearch,
             getResultGeometry: glarusResultGeometry,
             getMoreResults: glarusMoreResults
+        },
+        "nominatim": {
+            label: "OpenStreetMap",
+            onSearch: nominatimSearch
         },
         "layers": {
             label: "Layers",

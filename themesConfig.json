@@ -15,7 +15,7 @@
             "visibility": true
           }
         ],
-        "searchProviders": ["coordinates", "wolfsburg"],
+        "searchProviders": ["coordinates", "wolfsburg", "nominatim"],
         "mapCrs": "EPSG:3857",
         "additionalMouseCrs": ["EPSG:25832", "EPSG:32632"],
         "collapseLayerGroupsBelowLevel": 1
@@ -36,7 +36,7 @@
             "name": "opentopomap"
           }
         ],
-        "searchProviders": ["coordinates", "uster"],
+        "searchProviders": ["coordinates", "uster", "nominatim"],
         "mapCrs": "EPSG:3857",
         "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"]
       }
@@ -100,7 +100,7 @@
                 "visibility": true
               }
             ],
-            "searchProviders": ["coordinates", "geoadmin", "glarus"],
+            "searchProviders": ["coordinates", "geoadmin", "nominatim"],
             "featureReport": {
               "a": "template_a",
               "b": "template_b"
