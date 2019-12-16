@@ -240,6 +240,13 @@
           }
         },
         {
+          "name": "LayersButton"
+          ,
+          "cfg": {
+            "position": 5
+          }
+        },
+        {
           "name": "HomeButton"
           ,
           "cfg": {
