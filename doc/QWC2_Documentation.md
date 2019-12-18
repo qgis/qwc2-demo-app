@@ -141,6 +141,7 @@ The following options can be specified globally, and also overriden per theme, s
 |`identifyTool`                        | The name of the identify tool to use. It is possible to have multiple identify tools, and i.e. on a per-theme basis select which one is active. |
 
 *Notes*:
+
 - The layer tree supports re-ordering layers via drag-and-drop if `allowReorderingLayers = true` *and either* `preventSplittingGroupsWhenReordering = true` *or* `flattenGroups = true` in the `LayerTree` plugin configuration.
 - If `preserveExtentOnThemeSwitch = true`, the current extent is preserved if it is within the new theme extent and if the current theme map projection is equal to the new theme projection. If `preserveExtentOnThemeSwitch = "force"`, the current extent is preserved regardless of whether it is within the new theme extent, but the current and new theme map projections must still match.
 
@@ -444,17 +445,19 @@ The following parameters can appear in the URL of the QWC2 application:
 - `s`: The current scale
 - `crs`: The CRS of extent/center coordinates
 
-The `l` parameter lists all layers in the map (except redlining layers) as a comma separated list of entries of the form
+The `l` parameter lists all layers in the map (redlining and background layers) as a comma separated list of entries of the form
 
     <layername>[<transparency>]!
 
 where
-- `layername` is the WMS layer name of a theme layer, or a string of the format
+- `layername` is the WMS name of a theme layer or group, or a string of the format
 
       <wms|wfs>:<service_url>#<layername>
    for external layers, i.e. `wms:https://wms.geo.admin.ch/?#ch.are.bauzonen`.
 - `<transparency>` denotes the layer transparency, betwen 0 and 100. If the `[<transparency>]` portion is omitted, the layer is fully opaque.
 - `!` denotes that the layer is invisible. If omitted, the layer is visible.
+
+*Note*: If group name is specified instead of the layer name, QWC2 will automatically resolve this to all layer names contained in that group, and will apply transparency and visibility settings as specified for the group.
 
 The `urlPositionFormat` parameter in `config.json` determines whether the extent or the center and scale appears in the URL.
 
