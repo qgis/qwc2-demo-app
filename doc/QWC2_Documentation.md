@@ -114,6 +114,7 @@ Some external services can be used to enhance the application. Sample services a
 |`assetsPath`                         | Path from the webserver root to the `assets` folder.                                |
 |`urlPositionFormat`                  | How to encode the current map extent in the URL, either `centerAndZoom` or `extent`. See [URL parameters](#url-parameters) for details. |
 |`urlPositionCrs`                     | The CRS used to encode the current map extent coordinates in the URL.               |
+|`omitUrlParameterUpdates`            | Whether to omit updating the URL parameters.                                        |
 |`defaultFeatureStyle`                | The default style to use for selection geometries and other unstyled features.      |
 |`projections`                        | A list of additional projections to register, in the format `{"code": "<code>", "proj": "<proj4def>", "label": "<label>"}`. |
 |`allowFractionalZoom`                | Whether to allow arbitrary scales for viewing the map.                              |
