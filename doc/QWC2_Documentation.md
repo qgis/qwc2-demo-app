@@ -128,7 +128,7 @@ The following options can be specified globally, and also overriden per theme, s
 
 | Setting                              | Description |
 |--------------------------------------|-------------|
-|`preserveExtentOnThemeSwitch`         | Whether to preserve the current map extent when switching theme, if possible.       |
+|`preserveExtentOnThemeSwitch`         | Whether to preserve the current map extent when switching theme, if possible (see below). |
 |`preserveBackgroundOnThemeSwitch`     | Whether to preserve the current background layer when switching theme, if possible. |
 |`preserveNonThemeLayersOnThemeSwitch` | Whether to preserve non-theme layers when switching theme.                          |
 |`allowReorderingLayers`               | Whether to allow re-ordering layers in the layer tree.                              |
@@ -140,7 +140,9 @@ The following options can be specified globally, and also overriden per theme, s
 |`importLayerUrlPresets`               | A list of predefined URLs from which the user can choose when importing layers from the layer tree. |
 |`identifyTool`                        | The name of the identify tool to use. It is possible to have multiple identify tools, and i.e. on a per-theme basis select which one is active. |
 
-*Note*: The layer tree supports re-ordering layers via drag-and-drop if `allowReorderingLayers = true` *and either* `preventSplittingGroupsWhenReordering = true` *or* `flattenGroups = true` in the `LayerTree` plugin configuration.
+*Notes*:
+- The layer tree supports re-ordering layers via drag-and-drop if `allowReorderingLayers = true` *and either* `preventSplittingGroupsWhenReordering = true` *or* `flattenGroups = true` in the `LayerTree` plugin configuration.
+- If `preserveExtentOnThemeSwitch = true`, the current extent is preserved if it is within the new theme extent and if the current theme map projection is equal to the new theme projection. If `preserveExtentOnThemeSwitch = "force"`, the current extent is preserved regardless of whether it is within the new theme extent, but the current and new theme map projections must still match.
 
 *Plugin configuration*:
 The plugin configuration is entered separately for desktop and for mobile mode. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json) for a list of available configuration options. You can omit a plugin entry to disable it in desktop and/or mobile mode. To completely remove a plugin from the compiled application, remove the corresponding entry in `js/appConfig.js`.
