@@ -463,6 +463,17 @@ The `urlPositionFormat` parameter in `config.json` determines whether the extent
 
 The `urlPositionCrs` parameter in `config.json` determines the projection to use for the extent resp. center coordinates in the URL. By default the map projection of the current theme is used. If `urlPositionCrs` is equal to the map projection, the `crs` parameter is omitted in the URL.
 
+If the search text passed via `st` results in a unique result, the viewer automatically zooms to this result on startup. If the search result does not provide a bounding box, the `minScale` defined in the `searchOptions` of the `TopBar` configuration in `config.json` is used.
+
+## Startup position
+By default, the viewer opens zooming on the respective theme extent, as defined in `themes.json` (and overrideable in `themesConfig.json`).
+
+Alternatively, the following three options exist to influence the startup position:
+
+- Pass appropriate `c`, `s` or `e` URL parameters, as documented in [URL parameters](#url-parameters).
+- Pass a search text which results in a unique result (i.e. a coordinate string) as URL parameter, as documented in [URL parameters](#url-parameters).
+- Set `startupMode` in the `LocateSupport` options of the `Map` configuration in `config.json`. Possible values are `DISABLED`, `ENABLED` or `FOLLOWING`. If a search text is passed via `st` URL parameter, the `startupMode` is ignored.
+
 ## Keeping the QWC2 application up to date
 As mentioned in the [quick start](#quick-start) chapter, QWC2 is split into a common components repository and an application specific repository. The goal of this approach is to cleanly separate user-specific configuration and components which common components which serve as a basis for all QWC2 applications, and to make it as easy as possible to rebase the application onto the latest common QWC2 components.
 
