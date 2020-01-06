@@ -1,5 +1,5 @@
 {
-  "proxyServiceUrl": "http://localhost:5000/",
+  "proxyServiceUrl": "",
   "permalinkServiceUrl": "http://localhost:5001/",
   "elevationServiceUrl": "http://localhost:5002/",
   "mapInfoService":  "http://localhost:8093/",
