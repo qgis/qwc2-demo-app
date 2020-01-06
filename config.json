@@ -65,7 +65,8 @@
               "tipLabel": "Overview"
             },
             "LocateSupport": {
-              "keepCurrentZoomLevel": true
+              "keepCurrentZoomLevel": true,
+              "startupMode": "ENABLED"
             },
             "ScaleBarSupport": {
               "units": "metric"
@@ -232,7 +233,9 @@
                 "tipLabel": "Overview"
               },
               "LocateSupport": {
-                "keepCurrentZoomLevel": true
+                "keepCurrentZoomLevel": true,
+                "stopFollowingOnDrag": true,
+                "startupMode": "DISABLED"
               },
               "ScaleBarSupport": {
                 "units": "metric"
