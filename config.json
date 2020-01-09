@@ -56,26 +56,27 @@
       "mobile": [
         {
           "name": "Map",
-          "mapOptions": {
-            "zoomDuration": 250,
-            "antialiasing": true
-          },
-          "toolsOptions": {
-            "OverviewSupport": {
-              "tipLabel": "Overview"
+          "cfg": {
+            "mapOptions": {
+              "zoomDuration": 250,
+              "antialiasing": true
             },
-            "LocateSupport": {
-              "keepCurrentZoomLevel": true,
-              "startupMode": "ENABLED"
-            },
-            "ScaleBarSupport": {
-              "units": "metric"
+            "toolsOptions": {
+              "OverviewSupport": {
+                "tipLabel": "Overview"
+              },
+              "LocateSupport": {
+                "keepCurrentZoomLevel": true,
+                "startupMode": "ENABLED"
+              },
+              "ScaleBarSupport": {
+                "units": "metric"
+              }
             }
           }
         },
         {
-          "name": "HomeButton"
-          ,
+          "name": "HomeButton",
           "cfg": {
             "position": 2
           }
