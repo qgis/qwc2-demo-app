@@ -444,6 +444,7 @@ The following parameters can appear in the URL of the QWC2 application:
 - `c`: The center of the visible extent
 - `s`: The current scale
 - `crs`: The CRS of extent/center coordinates
+- `hc`: If `c` is specified and `hc` is `true` or `1`, a marker is set at `c` when starting the application. Note: requires the `StartupMarkerPlugin` plugin to be active.
 
 The `l` parameter lists all layers in the map (redlining and background layers) as a comma separated list of entries of the form
 

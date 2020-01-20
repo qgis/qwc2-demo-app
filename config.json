@@ -6,7 +6,7 @@
   "featureReportService": "http://localhost:5020/",
   "translationsPath": "/translations",
   "assetsPath": "/assets",
-  "urlPositionFormat": "extent",
+  "urlPositionFormat": "centerAndZoom",
   "urlPositionCrs": "",
   "omitUrlParameterUpdates": false,
   "preserveExtentOnThemeSwitch": true,
@@ -219,6 +219,12 @@
           "cfg": {
             "useWfs": false
           }
+        },
+        {
+          "name": "StartupMarker",
+          "cfg": {
+            "removeMode": "onclickonmarker"
+          }
         }
       ],
       "desktop": [
@@ -428,6 +434,12 @@
           "name": "IdentifyRegion",
           "cfg": {
             "useWfs": false
+          }
+        },
+        {
+          "name": "StartupMarker",
+          "cfg": {
+            "removeMode": "onclickonmarker"
           }
         }
       ]
