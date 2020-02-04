@@ -43,7 +43,7 @@ function getFeature(layerId, mapPos, mapCrs, mapScale, dpi, callback) {
     let req = SERVICE_URL + layerId + '?bbox=' + bbox + '&crs=' + mapCrs;
     axios.get(ProxyUtils.addProxyIfNeeded(req)).then(response => {
         if(response.data && !isEmpty(response.data.features)) {
-            let feature = response.data.features[0];
+            let feature = response.data;
             callback(feature);
         } else {
             callback(null);
