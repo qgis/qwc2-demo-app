@@ -34,6 +34,15 @@ Next, install all required dependencies:
     $ cd qwc2-demo-app
     $ yarn install
 
+If you face a problem installing it on Ubuntu.
+
+    $ sudo apt remove cmdtest
+    $ sudo apt remove yarn
+    $ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    $ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    $ sudo apt-get update  
+    $ sudo apt-get install yarn
+
 Then, start a local development application:
 
     $ yarn start
