@@ -12,7 +12,7 @@ An working QGIS server environment is required. Projects which are to be offered
 
 Furthermore, a web server is required which will serve the QWC2 application.
 
-If possible, the QGIS server should run on the same scheme, hostname and port as the QWC2 application, otherwise additional measures need to be taken to allow cross-origin QWC2 requests see [Cross-Origin requests](#cross-origin-requests).
+<!-- If possible, the QGIS server should run on the same scheme, hostname and port as the QWC2 application, otherwise additional measures need to be taken to allow cross-origin QWC2 requests see [Cross-Origin requests](#cross-origin-requests). -->
 
 ## <a name="quick-start"></a>Quick start
 
@@ -295,6 +295,8 @@ The format of the background layer definitions is as follows:
 | `"type": "<Type>",`          | The background layer type, i.e. `wms` or `wmts`.                                  |
 | `"group":  "<GroupId>",`     | Optional, a group ID string. Background layers with the same group ID will be grouped together in the background switcher. |
 | `<Layer params>`             | Parameters according to the specified layer type. Refer to the [sample `themesConfig.json`](https://github.com/qgis/qwc2-demo-app/blob/master/themesConfig.json) for some examples. |
+
+*Note*: You can use the helper python script located at `qwc2/scripts/wmts_config_generator.py` to easily generate WMTS background layer configurations.
 
 #### <a name="themes-json"></a>Generating `themes.json`
 
