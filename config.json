@@ -98,8 +98,8 @@
             "cfg": {
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
-                {"key": "LayerTree", "icon": "layers", "identifyEnabled": true},
-                {"key": "Share", "icon": "share", "identifyEnabled": true},
+                {"key": "LayerTree", "icon": "layers", "mapClickAction": "unset"},
+                {"key": "Share", "icon": "share", "mapClickAction": "identify"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "IdentifyRegion", "icon": "identify_region"},
                   {"key": "Measure", "icon": "measure"},
@@ -109,7 +109,7 @@
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
                 {"key": "Print", "icon": "print"},
-                {"key": "Help", "icon": "info", "identifyEnabled": true}
+                {"key": "Help", "icon": "info", "mapClickAction": "identify"}
               ],
               "searchOptions": {
                 "minScale": 1000,
@@ -251,10 +251,12 @@
           }
         },
         {
-          "name": "LayersButton"
-          ,
+          "name": "TaskButton",
           "cfg": {
-            "position": 5
+            "position": 5,
+            "task": "LayerTree",
+            "icon": "list-alt",
+            "mapClickAction": "identify"
           }
         },
         {
@@ -294,8 +296,8 @@
             "cfg": {
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
-                {"key": "LayerTree", "icon": "layers", "identifyEnabled": true},
-                {"key": "Share", "icon": "share", "identifyEnabled": true},
+                {"key": "LayerTree", "icon": "layers", "mapClickAction": "identify"},
+                {"key": "Share", "icon": "share", "mapClickAction": "identify"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "IdentifyRegion", "icon": "identify_region"},
                   {"key": "Measure", "icon": "measure"},
@@ -305,7 +307,7 @@
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
                 {"key": "Print", "icon": "print"},
-                {"key": "Help", "icon": "info", "identifyEnabled": true},
+                {"key": "Help", "icon": "info", "mapClickAction": "identify"},
                 {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$"}
               ],
               "toolbarItems": [

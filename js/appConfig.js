@@ -30,7 +30,7 @@ module.exports = {
             LocateButtonPlugin: require('qwc2/plugins/LocateButton'),
             ZoomInPlugin: require('qwc2/plugins/ZoomButtons'),
             ZoomOutPlugin: require('qwc2/plugins/ZoomButtons'),
-            LayersButtonPlugin: require('qwc2/plugins/LayersButton'),
+            TaskButtonPlugin: require('qwc2/plugins/TaskButton'),
             BackgroundSwitcherPlugin: require('qwc2/plugins/BackgroundSwitcher'),
             TopBarPlugin: require('qwc2/plugins/TopBar')({
                  AppMenu: require("qwc2/components/AppMenu"),

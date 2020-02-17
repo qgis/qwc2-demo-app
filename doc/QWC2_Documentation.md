@@ -150,14 +150,14 @@ The plugin configuration is entered separately for desktop and for mobile mode. 
 
 A particularly interesting aspect is the configuration of the entries in the application menu and toolbar, i.e. the entries in `menuItems` and `toolbarItems` in the `TopBar` configuration. The most common format for linking an entry to an existing plugin is
 
-    {"key": "<key>", "icon": "<icon>", "themeWhitelist": ["<themename>", ...], "identifyEnabled": <true|false>, "mode": "<mode>"}
+    {"key": "<key>", "icon": "<icon>", "themeWhitelist": ["<themename>", ...], "mapClickAction": <"identify"|"unset"|null>, "mode": "<mode>"}
 
 where
 
 * `key`: The name of the plugin to activate when the entry is clicked, i.e. `LayerTree`. Also used to lookup the the label for the entry from the translations, using the `appmenu.items.<key>` message identifier (see <a href="#translations">Managing translations</a>).
 * `icon`: The icon of the entry, either a name (without the `.svg` extension) of an icon in `icons/`, or `:/<path_to_asset>` containing the path relative to `assetsPath` of an asset image.
 * `themeWhitelist`: Optional, allows specifying a whitelist of theme names for which the entry should be visible.
-* `identifyEnabled`: Optional, allows specifying that map identify queries should remain enabled when the plugin is active (warning: must not be enabled for plugins which handle mouse events on the map).
+* `mapClickAction`: Optional, allows specifying whether a click in the map while the plugin is active should result in an identify query (`"mapClickAction": "identify"`), in the plugin being deactivated (`"mapClickAction": "unset"`), or whether no particular action should be performed (default). (Warning: `"mapClickAction"` should be `null` or omitted for plugins which handle mouse events on the map themselves).
 * `mode`: Optional, depending on the plugin, a mode can be configured to launch the plugin directly in a specific mode. For instance, the `Measure` plugin supports specifying the measurement mode (`Point`, `LineString`, `Polygon`).
 
 Additionally, entries opening external URLs can be defined as follows:

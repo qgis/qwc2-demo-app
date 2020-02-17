@@ -47,6 +47,9 @@ List of major new features. For full details, please consult the [commit history
 - `webpack.config.js` needs to be updated to handle `.mjs` files, see [this commit](https://github.com/qgis/qwc2-demo-app/commit/f954403d51f874c8a9f61c452e4840919874c6ec#diff-11e9f7f953edc64ba14b0cc350ae7b9d)
 - The identify viewer now assumes by default that the QGIS Server will return the technical layer names (instead of the titles) in the GetFeatureInfo responses. If that is not the case, set `"featureInfoReturnsLayerName": false` in the Identify configuration parameters in `config.json`.
 - Overriding the initial GPS positioning mode should be done in config.json (LocateSupport -> startupMode) rather than tweaking the default application state in appConfig.js
+- Identify isn't automatically enabled anymore while the Layers panel is open. You need to explicitly set `"mapClickAction": "identify"` in the corresponding `menuItems` and/or `toolbarItems` configuration in `config.json`, as in the sample [`config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json).
+- `identifyEnabled` in the `menuItems` and `toolbarItems` items is deprecated, use `"mapClickAction": "identify"`.
+- The `LayersButton` is replaced by the more generic `TaskButton`, see the sample [`config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json).
 
 
 
