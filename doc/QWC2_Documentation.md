@@ -201,7 +201,7 @@ The second step is to configure the themes which are available to QWC2 in the `t
 
     {
       "themes": {
-            "items": [
+        "items": [
           { <ThemeDefinition> },
           ...
         ], "groups": [
@@ -213,6 +213,10 @@ The second step is to configure the themes which are available to QWC2 in the `t
            ...
         ]
       },
+      "externalLayers": [
+        { <ExternalLayerDefinition> },
+        ...
+      ],
       "backgroundLayers": [
         { <BackgroundLayerDefinition> },
         ...
@@ -254,6 +258,9 @@ The format of the theme definitions is as follows:
 | `"extent": [<xmin>, <ymin>, <xmax>, <ymax>],` | Optional, override theme extent. In `mapCrs`.                                    |
 | `"tiled": <boolean>,`                         | Optional, use tiled WMS, defaults to `false`.                                    |
 | `"format": "<mimetype>",`                     | Optional, the format to use for WMS GetMap. Defaults to `image/png`.             |
+| `"externalLayers": [{`                        | Optional, external layers to use as replacements for internal layers, see below. |
+| `  "name": "<external_layer_name>",`          | Name of the external layer, matching a `ExternalLayerDefinition`, see below.     |
+| `  "internalLayer": "<QGis_layer_name>",`     | Name of an internal layer, as contained in the QGIS project, to replace with the external layer. |
 | `"backgroundLayers": [{,`                     | Optional, list of available background layers.                                   |
 | `  "name": "<Background layer name>",`        | Name of matching `BackgroundLayerDefinition`, see below.                         |
 | `  "printLayer": "<QGis layer name>"\|[<list>],`| Optional, name of layer to use as matching background layer when printing. Alternatively, a list `[{"maxScale": <scale>, "name": "<QGis layer name>"}, ..., {"maxScale": null, "name": "<QGis layer name>"}]` can be provided, ordered in ascending order by `maxScale`. The last entry should have `maxScale` `null`, as the layer used for all remaining scales. If omitted, no background is printed. |
@@ -284,6 +291,27 @@ The format of the theme definitions is as follows:
 | `  "allowRemovingThemeLayers": <boolean>`     | See [`config.json`](#config-json-overrideable) for which settings can be specified here. |
 | `  ...`                                       |                                                                                  |
 | `}`                                           |
+
+**External layers:**
+External layers can be used to selectively replace layers in a QGIS project, for instance in the case of a WMS layer embedded in a QGIS project, to avoid cascading WMS requests. They are handled transparently by QWC2 (they are positioned in the layer tree identically to the internal layer they replace), but the `GetMap` and `GetFeatureInfo` requests are sent directly to the specified WMS Service. Only WMS layers can be specified as external layers.
+
+The format for internal layer definitions is as follows:
+
+| Entry                                                  | Description                                                                       |
+|--------------------------------------------------------|-----------------------------------------------------------------------------------|
+| `"name": "<external_layer_name>",`                     | The name of the external layer, as referenced in the theme definitions.           |
+| `"url": "<wms_baseurl>",       `                       | Base WMS URL for the external layer.                                              |
+| `"params": {`                                          | Parameters for the GetMap request.                                                |
+| `  "LAYERS": "<wms_layername>,..."`,                   | WMS layer names.                                                                  |
+| `  "OPACITIES": "<0-255>,..."`                         | Optional, if WMS server supports opacities.                                       |
+| `},`                                                   |                                                                                   |
+| `"featureInfoUrl": "<wms_featureinfo_baseurl>",`       | Optional, base URL for WMS GetFeatureInfo, if different from `url`.               |
+| `"queryLayers": ["<wms_featureinfo_layername>", ...],` | Optional, list of GetFeatureInfo query layers, if different from `params.LAYERS`. |
+| `"infoFormats": ["<featureinfo_format>", ...]`         | List of GetFeatureInfo query formats which the WMS service supports.              |
+
+
+**Background layers:**
+Background layers are handled completely client-side and do not appear in the layer tree.
 
 The format of the background layer definitions is as follows:
 
