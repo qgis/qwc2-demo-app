@@ -176,6 +176,17 @@
       "text": "Text",
       "width": "Bredd"
     },
+    "searchbox": {
+      "coordinates": "",
+      "filter": "",
+      "layers": "",
+      "more": "",
+      "morelayers": "",
+      "nodescription": "",
+      "placeholder": "",
+      "places": "",
+      "recent": ""
+    },
     "share": {
       "directLinkTitle": "Via en direktlänk",
       "generatingpermalink": "Genererar permalink...",

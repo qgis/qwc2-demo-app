@@ -176,6 +176,17 @@
       "text": "Texto",
       "width": "Largura"
     },
+    "searchbox": {
+      "coordinates": "",
+      "filter": "",
+      "layers": "",
+      "more": "",
+      "morelayers": "",
+      "nodescription": "",
+      "placeholder": "",
+      "places": "",
+      "recent": ""
+    },
     "share": {
       "directLinkTitle": "Link direto",
       "generatingpermalink": "Gerando link permanente...",

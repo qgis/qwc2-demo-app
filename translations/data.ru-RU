@@ -176,6 +176,17 @@
       "text": "Текст",
       "width": "Ширина"
     },
+    "searchbox": {
+      "coordinates": "",
+      "filter": "",
+      "layers": "",
+      "more": "",
+      "morelayers": "",
+      "nodescription": "",
+      "placeholder": "",
+      "places": "",
+      "recent": ""
+    },
     "share": {
       "directLinkTitle": "По прямой ссылке",
       "generatingpermalink": "Создание постоянной ссылки...",

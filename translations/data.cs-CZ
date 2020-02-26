@@ -176,6 +176,17 @@
       "text": "Text",
       "width": "Šířka"
     },
+    "searchbox": {
+      "coordinates": "",
+      "filter": "",
+      "layers": "",
+      "more": "",
+      "morelayers": "",
+      "nodescription": "",
+      "placeholder": "",
+      "places": "",
+      "recent": ""
+    },
     "share": {
       "directLinkTitle": "Přes přímé spojení",
       "generatingpermalink": "Generovat permalink...",
