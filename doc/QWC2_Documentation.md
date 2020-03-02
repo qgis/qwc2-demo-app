@@ -217,6 +217,10 @@ The second step is to configure the themes which are available to QWC2 in the `t
         { <ExternalLayerDefinition> },
         ...
       ],
+      "themeInfoLinks": [
+        { <ThemeInfoLinkDefinition },
+        ...
+      ],
       "backgroundLayers": [
         { <BackgroundLayerDefinition> },
         ...
@@ -261,6 +265,7 @@ The format of the theme definitions is as follows:
 | `"externalLayers": [{`                        | Optional, external layers to use as replacements for internal layers, see below. |
 | `  "name": "<external_layer_name>",`          | Name of the external layer, matching a `ExternalLayerDefinition`, see below.     |
 | `  "internalLayer": "<QGis_layer_name>",`     | Name of an internal layer, as contained in the QGIS project, to replace with the external layer. |
+| `"themeInfoLinks": ["<link_name>", ...]`      | Optional, list of theme info link names, see below.                              |
 | `"backgroundLayers": [{,`                     | Optional, list of available background layers.                                   |
 | `  "name": "<Background layer name>",`        | Name of matching `BackgroundLayerDefinition`, see below.                         |
 | `  "printLayer": "<QGis layer name>"\|[<list>],`| Optional, name of layer to use as matching background layer when printing. Alternatively, a list `[{"maxScale": <scale>, "name": "<QGis layer name>"}, ..., {"maxScale": null, "name": "<QGis layer name>"}]` can be provided, ordered in ascending order by `maxScale`. The last entry should have `maxScale` `null`, as the layer used for all remaining scales. If omitted, no background is printed. |
@@ -308,6 +313,19 @@ The format for internal layer definitions is as follows:
 | `"featureInfoUrl": "<wms_featureinfo_baseurl>",`       | Optional, base URL for WMS GetFeatureInfo, if different from `url`.               |
 | `"queryLayers": ["<wms_featureinfo_layername>", ...],` | Optional, list of GetFeatureInfo query layers, if different from `params.LAYERS`. |
 | `"infoFormats": ["<featureinfo_format>", ...]`         | List of GetFeatureInfo query formats which the WMS service supports.              |
+
+
+**Theme info links:**
+You can specify links to display in an info-menu next to the respective theme title in the theme switcher entries.
+
+The format for the theme info links is as follows:
+
+| Entry                                                  | Description                                                                       |
+|--------------------------------------------------------|-----------------------------------------------------------------------------------|
+| `"name": "<link_name>",`                               | The name of the link, as referenced in the theme definitions.                     |
+| `"title": "<link_title>",`                             | The title for the link, as displayed in the info menu of the theme entry in the theme switcher. |
+| `"url": "<link>",`                                     | A link URL.                                                                       |
+| `"target": "<link_target>"`                            | The link target, i.e. `_blank`.                                                   |
 
 
 **Background layers:**
