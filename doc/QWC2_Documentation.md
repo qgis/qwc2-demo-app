@@ -146,7 +146,23 @@ The following options can be specified globally, and also overriden per theme, s
 - If `preserveExtentOnThemeSwitch = true`, the current extent is preserved if it is within the new theme extent and if the current theme map projection is equal to the new theme projection. If `preserveExtentOnThemeSwitch = "force"`, the current extent is preserved regardless of whether it is within the new theme extent, but the current and new theme map projections must still match.
 
 *Plugin configuration*:
-The plugin configuration is entered separately for desktop and for mobile mode. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json) for a list of available configuration options. You can omit a plugin entry to disable it in desktop and/or mobile mode. To completely remove a plugin from the compiled application, remove the corresponding entry in `js/appConfig.js`.
+The plugin configuration is entered separately for desktop and for mobile mode. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json) for a list of available configuration options. Each plugin configuration block is of the format
+
+    {
+      "name": "<PluginName">,
+      "cfg": {
+        ...
+      },
+      "mapClickAction": <"identify"|"unset"|null>
+    }
+
+where
+
+* `name`: The plugin name
+* `cfg`: Optional: arbitrary configuration properties, directly passed to the relative plugin class as React props.
+* `mapClickAction`: Optional: for plugins which are associated to a viewer task (and typically linked in the `menuItems` or `toolbarItems` of the `TopBar`, see below), determines whether a click in the map will result in the identify tool being invoked, the task being unset, or whether no particular action should be performed (default). Note: `"mapClickAction"` should be `null` or omitted for plugins which handle mouse events on the map themselves. Can optionally also be specified directly in the `menuItems` or `toolbarItems` entries, see below.
+
+You can omit a plugin entry to disable it in desktop and/or mobile mode. To completely remove a plugin from the compiled application, remove the corresponding entry in `js/appConfig.js`.
 
 A particularly interesting aspect is the configuration of the entries in the application menu and toolbar, i.e. the entries in `menuItems` and `toolbarItems` in the `TopBar` configuration. The most common format for linking an entry to an existing plugin is
 
@@ -157,7 +173,7 @@ where
 * `key`: The name of the plugin to activate when the entry is clicked, i.e. `LayerTree`. Also used to lookup the the label for the entry from the translations, using the `appmenu.items.<key>` message identifier (see <a href="#translations">Managing translations</a>).
 * `icon`: The icon of the entry, either a name (without the `.svg` extension) of an icon in `icons/`, or `:/<path_to_asset>` containing the path relative to `assetsPath` of an asset image.
 * `themeWhitelist`: Optional, allows specifying a whitelist of theme names for which the entry should be visible.
-* `mapClickAction`: Optional, allows specifying whether a click in the map while the plugin is active should result in an identify query (`"mapClickAction": "identify"`), in the plugin being deactivated (`"mapClickAction": "unset"`), or whether no particular action should be performed (default). (Warning: `"mapClickAction"` should be `null` or omitted for plugins which handle mouse events on the map themselves).
+* `mapClickAction`: Optional, takes precedence over the `mapClickAction` setting specified in the plugin configuration block, if any. See above.
 * `mode`: Optional, depending on the plugin, a mode can be configured to launch the plugin directly in a specific mode. For instance, the `Measure` plugin supports specifying the measurement mode (`Point`, `LineString`, `Polygon`).
 
 Additionally, entries opening external URLs can be defined as follows:

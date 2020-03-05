@@ -98,8 +98,8 @@
             "cfg": {
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
-                {"key": "LayerTree", "icon": "layers", "mapClickAction": "unset"},
-                {"key": "Share", "icon": "share", "mapClickAction": "identify"},
+                {"key": "LayerTree", "icon": "layers"},
+                {"key": "Share", "icon": "share"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "IdentifyRegion", "icon": "identify_region"},
                   {"key": "Measure", "icon": "measure"},
@@ -109,7 +109,7 @@
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
                 {"key": "Print", "icon": "print"},
-                {"key": "Help", "icon": "info", "mapClickAction": "identify"}
+                {"key": "Help", "icon": "info"}
               ],
               "searchOptions": {
                 "minScale": 1000,
@@ -124,7 +124,10 @@
             }
         },
         {
-          "name": "ThemeSwitcher"
+          "name": "ThemeSwitcher",
+          "cfg": {
+            "collapsibleGroups": true
+          }
         },
         {
           "name": "Measure",
@@ -153,7 +156,8 @@
             "showSocials": true,
             "showLink": true,
             "showQRCode": true
-          }
+          },
+          "mapClickAction": "identify"
         },
         {
           "name": "Print",
@@ -162,7 +166,8 @@
           }
         },
         {
-          "name": "Help"
+          "name": "Help",
+          "mapClickAction": "identify"
         },
         {
           "name": "MapCopyright"
@@ -181,7 +186,8 @@
             "flattenGroups": false,
             "layerInfoWindowSize": {"width": 480, "height": 400},
             "bboxDependentLegend": false
-          }
+          },
+          "mapClickAction": "unset"
         },
         {
           "name": "DxfExport"
@@ -255,8 +261,7 @@
           "cfg": {
             "position": 5,
             "task": "LayerTree",
-            "icon": "list-alt",
-            "mapClickAction": "identify"
+            "icon": "list-alt"
           }
         },
         {
@@ -296,8 +301,8 @@
             "cfg": {
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
-                {"key": "LayerTree", "icon": "layers", "mapClickAction": "identify"},
-                {"key": "Share", "icon": "share", "mapClickAction": "identify"},
+                {"key": "LayerTree", "icon": "layers"},
+                {"key": "Share", "icon": "share"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "IdentifyRegion", "icon": "identify_region"},
                   {"key": "Measure", "icon": "measure"},
@@ -307,7 +312,7 @@
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
                 {"key": "Print", "icon": "print"},
-                {"key": "Help", "icon": "info", "mapClickAction": "identify"},
+                {"key": "Help", "icon": "info"},
                 {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$"}
               ],
               "toolbarItems": [
@@ -342,7 +347,10 @@
           }
         },
         {
-          "name": "ThemeSwitcher"
+          "name": "ThemeSwitcher",
+          "cfg": {
+            "collapsibleGroups": true
+          }
         },
         {
           "name": "LayerTree",
@@ -359,7 +367,8 @@
             "layerInfoWindowSize": {"width": 480, "height": 400},
             "bboxDependentLegend": false,
             "showToggleAllLayersCheckbox": true
-          }
+          },
+          "mapClickAction": "identify"
         },
         {
           "name": "Identify",
@@ -387,7 +396,8 @@
             "showSocials": true,
             "showLink": true,
             "showQRCode": true
-          }
+          },
+          "mapClickAction": "identify"
         },
         {
           "name": "Print",
@@ -396,7 +406,8 @@
           }
         },
         {
-          "name": "Help"
+          "name": "Help",
+          "mapClickAction": "identify"
         },
         {
           "name": "MapCopyright"
