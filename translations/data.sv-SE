@@ -107,7 +107,8 @@
       "importlayer": "Importera lager",
       "maptip": "Visa karttips för lager",
       "printlegend": "Skriv ut teckenförklaring",
-      "deletealllayers": "Ta bort alla lager"
+      "deletealllayers": "Ta bort alla lager",
+      "visiblefilter": ""
     },
     "locate": {
       "metersUnit": "meter",
@@ -202,7 +203,12 @@
     },
     "themeswitcher": {
       "filter": "Filtrera...",
-      "addtotheme": "Lägg till aktuellt tema"
+      "addtotheme": "Lägg till aktuellt tema",
+      "match": {
+        "title": "",
+        "keywords": "",
+        "abstract": ""
+      }
     }
   }
 }

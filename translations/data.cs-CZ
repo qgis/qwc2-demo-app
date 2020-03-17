@@ -107,7 +107,8 @@
       "importlayer": "Importovat vrstvu",
       "maptip": "Zobrazovat bubliny nad mapou",
       "printlegend": "Tisk legendy",
-      "deletealllayers": ""
+      "deletealllayers": "",
+      "visiblefilter": ""
     },
     "locate": {
       "metersUnit": "metry",
@@ -202,7 +203,12 @@
     },
     "themeswitcher": {
       "filter": "Filtr...",
-      "addtotheme": "Přidat k aktuálnímu tématu"
+      "addtotheme": "Přidat k aktuálnímu tématu",
+      "match": {
+        "title": "",
+        "keywords": "",
+        "abstract": ""
+      }
     }
   }
 }

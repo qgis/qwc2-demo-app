@@ -107,7 +107,8 @@
       "importlayer": "Importar capa",
       "maptip": "Mostrar sugerencias de capas en el mapa",
       "printlegend": "Imprimir leyenda",
-      "deletealllayers": ""
+      "deletealllayers": "",
+      "visiblefilter": ""
     },
     "locate": {
       "metersUnit": "metros",
@@ -202,7 +203,12 @@
     },
     "themeswitcher": {
       "filter": "Filtrar...",
-      "addtotheme": "Agregar al actual tema"
+      "addtotheme": "Agregar al actual tema",
+      "match": {
+        "title": "",
+        "keywords": "",
+        "abstract": ""
+      }
     }
   }
 }

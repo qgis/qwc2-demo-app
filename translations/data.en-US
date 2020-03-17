@@ -107,7 +107,8 @@
       "importlayer": "Import layer",
       "maptip": "Show layer map tips",
       "printlegend": "Print legend",
-      "deletealllayers": "Remove all layers"
+      "deletealllayers": "Remove all layers",
+      "visiblefilter": "Filter invisible layers"
     },
     "locate": {
       "metersUnit": "meters",
@@ -202,7 +203,12 @@
     },
     "themeswitcher": {
       "filter": "Filter...",
-      "addtotheme": "Add to current theme"
+      "addtotheme": "Add to current theme",
+      "match": {
+        "title": "Title",
+        "keywords": "Keywords",
+        "abstract": "Abstract"
+      }
     }
   }
 }

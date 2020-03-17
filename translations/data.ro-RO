@@ -107,7 +107,8 @@
       "importlayer": "Import strat",
       "maptip": "Arată indicii hartă",
       "printlegend": "Tipărește legenda",
-      "deletealllayers": ""
+      "deletealllayers": "",
+      "visiblefilter": ""
     },
     "locate": {
       "metersUnit": "metri",
@@ -202,7 +203,12 @@
     },
     "themeswitcher": {
       "filter": "Filtrare",
-      "addtotheme": "Adaugă la temă"
+      "addtotheme": "Adaugă la temă",
+      "match": {
+        "title": "",
+        "keywords": "",
+        "abstract": ""
+      }
     }
   }
 }

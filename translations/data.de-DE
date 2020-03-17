@@ -107,7 +107,8 @@
       "importlayer": "Ebene importieren",
       "maptip": "Kartentipps anzeigen",
       "printlegend": "Legende drucken",
-      "deletealllayers": "Alle Ebenen entfernen"
+      "deletealllayers": "Alle Ebenen entfernen",
+      "visiblefilter": "Unsichtbare Ebenen filtern"
     },
     "locate": {
       "metersUnit": "Meter",
@@ -202,7 +203,12 @@
     },
     "themeswitcher": {
       "filter": "Filter",
-      "addtotheme": "Dem aktuellen Thema hinzufügen"
+      "addtotheme": "Dem aktuellen Thema hinzufügen",
+      "match": {
+        "title": "Titel",
+        "keywords": "Schlüsselwörter",
+        "abstract": "Zusammenfassung"
+      }
     }
   }
 }

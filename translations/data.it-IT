@@ -107,7 +107,8 @@
       "importlayer": "Importa livello",
       "maptip": "Attiva maptip",
       "printlegend": "Stampa legenda",
-      "deletealllayers": "Rimuovi tutti i livelli"
+      "deletealllayers": "Rimuovi tutti i livelli",
+      "visiblefilter": "Filtra livelli non visibili"
     },
     "locate": {
       "metersUnit": "metri",
@@ -202,7 +203,12 @@
     },
     "themeswitcher": {
       "filter": "Filtra...",
-      "addtotheme": "Aggiungere al tema corrente"
+      "addtotheme": "Aggiungere al tema corrente",
+      "match": {
+        "title": "",
+        "keywords": "",
+        "abstract": ""
+      }
     }
   }
 }

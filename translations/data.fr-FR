@@ -107,7 +107,8 @@
       "importlayer": "Importer un calque",
       "maptip": "Afficher les infobulles",
       "printlegend": "Afficher la légende",
-      "deletealllayers": ""
+      "deletealllayers": "",
+      "visiblefilter": ""
     },
     "locate": {
       "metersUnit": "mètre",
@@ -202,7 +203,12 @@
     },
     "themeswitcher": {
       "filter": "Filtre",
-      "addtotheme": "Ajouter au thème actuel"
+      "addtotheme": "Ajouter au thème actuel",
+      "match": {
+        "title": "",
+        "keywords": "",
+        "abstract": ""
+      }
     }
   }
 }
