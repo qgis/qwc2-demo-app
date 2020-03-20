@@ -137,7 +137,7 @@ The following options can be specified globally, and also overriden per theme, s
 |`searchThemes`                        | Whether allow searching for themes from the global search field.                    |
 |`allowAddingOtherThemes`              | Whether to allow adding another theme to a currently loaded theme.                  |
 |`disableImportingLocalLayers`         | Whether to hide the option to import local layers from the layer tree.              |
-|`importLayerUrlPresets`               | A list of predefined URLs from which the user can choose when importing layers from the layer tree. |
+|`importLayerUrlPresets`               | A list of predefined URLs from which the user can choose when importing layers from the layer tree. Entries must be strings or objects of the format `{"label": "<Label>", "value": "<URL>"}`. See also [Layer catalogs](#layer-catalogs). |
 |`identifyTool`                        | The name of the identify tool to use. It is possible to have multiple identify tools, and i.e. on a per-theme basis select which one is active. |
 
 *Notes*:
@@ -538,6 +538,27 @@ Alternatively, the following three options exist to influence the startup positi
 - Pass appropriate `c`, `s` or `e` URL parameters, as documented in [URL parameters](#url-parameters).
 - Pass a search text which results in a unique result (i.e. a coordinate string) as URL parameter, as documented in [URL parameters](#url-parameters).
 - Set `startupMode` in the `LocateSupport` options of the `Map` configuration in `config.json`. Possible values are `DISABLED`, `ENABLED` or `FOLLOWING`. If a search text is passed via `st` URL parameter, the `startupMode` is ignored.
+
+### <a name="layer-catalogs"></a>Layer catalogs
+The import layer functionality in the layertree also supports loading a layer catalog document from an URL. Two catalog formats are supported:
+
+* QGIS WMS/WFS connections XML: this file is produced by exporting the configured WMS or WFS connections from the QGIS data source manager dialog.
+* JSON: a document with contents
+
+      "catalog": {
+        [
+          {
+            "title": "<Titel>",
+            "resource": "<wms|wfs>:<service_url>#<layername>"
+          },
+        ...
+        ]
+      }
+
+  where `resource` is in the same format as the serialized layer identifiers in a QWC2 URL, see [URL Parameters](#url-parameters).
+
+Note that the server serving the catalog documents needs to ensure that it sets CORS headers appropriately, if they are served from a different origin than QWC2.
+
 
 ## Keeping the QWC2 application up to date
 As mentioned in the [quick start](#quick-start) chapter, QWC2 is split into a common components repository and an application specific repository. The goal of this approach is to cleanly separate user-specific configuration and components which common components which serve as a basis for all QWC2 applications, and to make it as easy as possible to rebase the application onto the latest common QWC2 components.
