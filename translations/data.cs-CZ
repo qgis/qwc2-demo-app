@@ -109,7 +109,8 @@
       "maptip": "Zobrazovat bubliny nad mapou",
       "printlegend": "Tisk legendy",
       "deletealllayers": "",
-      "visiblefilter": ""
+      "visiblefilter": "",
+      "separator": ""
     },
     "locate": {
       "metersUnit": "metry",

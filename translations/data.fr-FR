@@ -109,7 +109,8 @@
       "maptip": "Afficher les infobulles",
       "printlegend": "Afficher la légende",
       "deletealllayers": "",
-      "visiblefilter": ""
+      "visiblefilter": "",
+      "separator": ""
     },
     "locate": {
       "metersUnit": "mètre",
