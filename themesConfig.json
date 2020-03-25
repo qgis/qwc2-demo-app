@@ -121,43 +121,6 @@
             "skipEmptyFeatureAttributes": true,
             "editConfig": "test2056_edit.json",
             "extraLegendParameters": "&LAYERTITLE=FALSE"
-          },
-          {
-            "title": "QGIS.org QGIS Server Demo",
-            "url": "http://qgis4.qgis.org:8081/qgisserver_demo",
-            "attribution": "QGIS.org",
-            "attributionUrl": "https://qgis.org",
-            "backgroundLayers": [
-              {
-                "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS",
-                "visibility": true
-              },
-              {
-                "name": "mapnik"
-              }
-            ],
-            "searchProviders": ["coordinates"],
-            "mapCrs": "EPSG:3857",
-            "scales": [
-              591658710.9091312,
-              295829355.4545656,
-              147914677.7272828,
-              73957338.8636414,
-              36978669.4318207,
-              18489334.71591035,
-              9244667.357955175,
-              4622333.678977587,
-              2311166.8394887936,
-              1155583.4197443968,
-              577791.7098721984,
-              288895.8549360992,
-              144447.9274680496,
-              72223.9637340248,
-              36111.9818670124,
-              18055.9909335062,
-              9027.9954667531,
-              4513.99773337655
-            ]
           }
         ],
         "groups": [

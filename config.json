@@ -13,7 +13,7 @@
   "preserveBackgroundOnThemeSwitch": true,
   "preserveNonThemeLayersOnThemeSwitch": true,
   "allowReorderingLayers": true,
-  "preventSplittingGroupsWhenReordering": true,
+  "preventSplittingGroupsWhenReordering": false,
   "allowRemovingThemeLayers": true,
   "searchThemes": true,
   "allowAddingOtherThemes": true,
@@ -248,7 +248,7 @@
               "LocateSupport": {
                 "keepCurrentZoomLevel": true,
                 "stopFollowingOnDrag": true,
-                "startupMode": "DISABLED"
+                "startupMode": "FOLLOWING"
               },
               "ScaleBarSupport": {
                 "units": "metric"
