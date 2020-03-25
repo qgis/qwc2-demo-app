@@ -2,7 +2,6 @@
     "a": {
         "layerName": "Bahnhof",
         "geomType": "Polygon",
-	"displayField": "EGID",
         "fields": [
             {
                 "id": "EGID",
@@ -36,13 +35,16 @@
                 "id": "date",
                 "name": "Date",
                 "type": "date"
+            },{
+                "id": "approved",
+                "name": "Approved",
+                "type": "bool"
             }
         ]
     },
     "b": {
         "layerName": "Hochschule",
         "geomType": "Polygon",
-	"displayField": "id",
         "fields": [
             {
                 "id": "id",
@@ -67,5 +69,10 @@
                 }
             }
         ]
+    },
+    "c": {
+        "layerName": "Animals",
+        "geomType": "Point",
+        "form": ":/forms/form.ui"
     }
 }
