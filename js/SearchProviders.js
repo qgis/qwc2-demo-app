@@ -462,7 +462,7 @@ function layerSearch(text, requestId, searchOptions, dispatch) {
 module.exports = {
     SearchProviders: {
         "coordinates": {
-            label: "Coordinates",
+            labelmsgid: "search.coordinates",
             onSearch: coordinatesSearch
         },
         "geoadmin": {
