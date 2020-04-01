@@ -82,6 +82,10 @@ module.exports = {
 
         callback(newLayers, newLayerNames);
     },
+    /*externalLayerRestorer: (externalLayers, themes, callback) => {
+        // Optional function to handle restoring of external layers from the l URL parameter
+        // If omitted, the default handler is used which downloads capabilities for each service to restore the layer
+    },*/
     supportedLocales: {
          "pt": {
              code: "pt-BR",

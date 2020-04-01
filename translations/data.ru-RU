@@ -110,7 +110,8 @@
       "printlegend": "Распечатать легенду",
       "deletealllayers": "",
       "visiblefilter": "",
-      "separator": ""
+      "separator": "",
+      "separatortooltip": ""
     },
     "locate": {
       "metersUnit": "метров",

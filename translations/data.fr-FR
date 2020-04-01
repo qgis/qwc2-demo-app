@@ -110,7 +110,8 @@
       "printlegend": "Afficher la légende",
       "deletealllayers": "",
       "visiblefilter": "",
-      "separator": ""
+      "separator": "",
+      "separatortooltip": ""
     },
     "locate": {
       "metersUnit": "mètre",
