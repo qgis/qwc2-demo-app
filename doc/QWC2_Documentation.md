@@ -235,7 +235,7 @@ The second step is to configure the themes which are available to QWC2 in the `t
         ...
       ],
       "themeInfoLinks": [
-        { <ThemeInfoLinkDefinition },
+        { <ThemeInfoLinkDefinition> },
         ...
       ],
       "backgroundLayers": [
@@ -317,7 +317,7 @@ The format of the theme definitions is as follows:
 **External layers:**
 External layers can be used to selectively replace layers in a QGIS project, for instance in the case of a WMS layer embedded in a QGIS project, to avoid cascading WMS requests. They are handled transparently by QWC2 (they are positioned in the layer tree identically to the internal layer they replace), but the `GetMap` and `GetFeatureInfo` requests are sent directly to the specified WMS Service. Only WMS layers can be specified as external layers.
 
-The format for internal layer definitions is as follows:
+The format for external layer definitions is as follows:
 
 | Entry                                                  | Description                                                                       |
 |--------------------------------------------------------|-----------------------------------------------------------------------------------|
