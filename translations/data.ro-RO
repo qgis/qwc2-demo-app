@@ -29,7 +29,8 @@
       "all": "Toate",
       "themes": "Hărți tematice",
       "invisiblelayer": "Rezultatul este într-un strat invizibil",
-      "enablelayer": "Activare strat"
+      "enablelayer": "Activare strat",
+      "existinglayer": ""
     },
     "bgswitcher": {
       "nobg": "Fără fundal"

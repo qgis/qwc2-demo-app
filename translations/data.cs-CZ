@@ -29,7 +29,8 @@
       "all": "Vše",
       "themes": "Témata",
       "invisiblelayer": "",
-      "enablelayer": ""
+      "enablelayer": "",
+      "existinglayer": ""
     },
     "bgswitcher": {
       "nobg": "Bez podkladu"

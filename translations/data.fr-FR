@@ -29,7 +29,8 @@
       "all": "Tous",
       "themes": "Cartes",
       "invisiblelayer": "Le résultat est sur un calque désactivé",
-      "enablelayer": "Activer le calque"
+      "enablelayer": "Activer le calque",
+      "existinglayer": ""
     },
     "bgswitcher": {
       "nobg": "Pas de fond"

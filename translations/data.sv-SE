@@ -29,7 +29,8 @@
       "all": "",
       "themes": "",
       "invisiblelayer": "",
-      "enablelayer": ""
+      "enablelayer": "",
+      "existinglayer": ""
     },
     "bgswitcher": {
       "nobg": "Ingen bakgrund"
