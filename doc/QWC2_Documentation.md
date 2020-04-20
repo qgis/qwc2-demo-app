@@ -283,7 +283,11 @@ The format of the theme definitions is as follows:
 | `"externalLayers": [{`                        | Optional, external layers to use as replacements for internal layers, see below. |
 | `  "name": "<external_layer_name>",`          | Name of the external layer, matching a `ExternalLayerDefinition`, see below.     |
 | `  "internalLayer": "<QGis_layer_name>",`     | Name of an internal layer, as contained in the QGIS project, to replace with the external layer. |
-| `"themeInfoLinks": ["<link_name>", ...]`      | Optional, list of theme info link names, see below.                              |
+| `"themeInfoLinks": {`                         | Optional, custom links to additional resources, shown as a menu in the theme selector in the theme switcher.\
+| `  "title": "<Menu title>",`                  | An arbitrary string shown as title of the menu.                                  |
+| `  "titleMsgId": "<Menu title msgID>",`       | Alternative to `title`, a message ID, translated through the translation files.  |
+| `  "entries": [<link_name>, ...]`             | List of theme info link names, see below.                                        |
+| `},`                                          |                                                                                  |
 | `"backgroundLayers": [{,`                     | Optional, list of available background layers.                                   |
 | `  "name": "<Background layer name>",`        | Name of matching `BackgroundLayerDefinition`, see below.                         |
 | `  "printLayer": "<QGis layer name>"\|[<list>],`| Optional, name of layer to use as matching background layer when printing. Alternatively, a list `[{"maxScale": <scale>, "name": "<QGis layer name>"}, ..., {"maxScale": null, "name": "<QGis layer name>"}]` can be provided, ordered in ascending order by `maxScale`. The last entry should have `maxScale` `null`, as the layer used for all remaining scales. If omitted, no background is printed. |
