@@ -102,7 +102,9 @@
       "keywords": "Keywords",
       "dataUrl": "Data URL",
       "metadataUrl": "Metadata URL",
-      "legend": "Legend"
+      "legend": "Legend",
+      "maxscale": "Max. displayscale",
+      "minscale": "Min. displayscale"
     },
     "layertree": {
       "compare": "Compare top layer",
@@ -112,7 +114,8 @@
       "deletealllayers": "Remove all layers",
       "visiblefilter": "Filter invisible layers",
       "separator": "Separator",
-      "separatortooltip": "Add separator"
+      "separatortooltip": "Add separator",
+      "zoomtolayer": "Zoom to layer"
     },
     "locate": {
       "metersUnit": "meters",

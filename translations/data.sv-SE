@@ -102,7 +102,9 @@
       "keywords": "Nyckelord",
       "dataUrl": "Datalänk",
       "metadataUrl": "Metadatalänk",
-      "legend": "Teckenförklaring"
+      "legend": "Teckenförklaring",
+      "maxscale": "",
+      "minscale": ""
     },
     "layertree": {
       "compare": "Jämför översta lagret",
@@ -112,7 +114,8 @@
       "deletealllayers": "Ta bort alla lager",
       "visiblefilter": "",
       "separator": "",
-      "separatortooltip": ""
+      "separatortooltip": "",
+      "zoomtolayer": ""
     },
     "locate": {
       "metersUnit": "meter",

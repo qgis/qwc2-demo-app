@@ -102,7 +102,9 @@
       "keywords": "Słowa kluczowe",
       "dataUrl": "URL danych",
       "metadataUrl": "URL metadanych",
-      "legend": "Legenda"
+      "legend": "Legenda",
+      "maxscale": "",
+      "minscale": ""
     },
     "layertree": {
       "compare": "Porównaj najwyższą warstwę",
@@ -112,7 +114,8 @@
       "deletealllayers": "Usuń wszystkie warstwy",
       "visiblefilter": "",
       "separator": "",
-      "separatortooltip": ""
+      "separatortooltip": "",
+      "zoomtolayer": ""
     },
     "locate": {
       "metersUnit": "metry",
