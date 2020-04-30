@@ -68,8 +68,25 @@ module.exports = {
           {loader: 'string-replace-loader', options: {multiple: styleReplacements}}
         ]
       },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/, loader: 'file-loader', query: {name: '[name].[ext]'} },
-      { test: /\.(png|jpg|gif)$/, loader: 'url-loader', query: {name: '[path][name].[ext]', limit: 8192} }, // inline base64 URLs for <=8k images, direct URLs for the rest
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/, use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            esModule: false
+          }
+        }
+      },
+      {
+        test: /\.(png|jpg|gif)$/, use: {
+          loader: 'url-loader',
+          options: {
+            name: '[path][name].[ext]',
+            limit: 8192,
+            esModule: false
+          }
+        }
+      },
       {
         test: /\.jsx?$/,
         exclude: os.platform() === 'win32' ? /node_modules\\(?!(qwc2)\\).*/ : /node_modules\/(?!(qwc2)\/).*/,
