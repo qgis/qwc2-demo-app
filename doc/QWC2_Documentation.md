@@ -294,6 +294,7 @@ The format of the theme definitions is as follows:
 | `  "visibility": <boolean>`                   | Optional, initial visibility of the layer when theme is loaded.                  |
 | `}],`                                         |                                                                                  |
 | `"searchProviders": ["<ProviderId>"],`        | Optional, list of search providers IDs. An ID corresponds to the key of the exported `SearchProviders` object in `js/SearchProviders.js`. |
+| `"minSearchScale": <number>,`                 | Optional, minimum scale to enforce when zooming to search results. Takes precedence over value in `config.json`. |
 | `"featureReport": {`                          | Optional, available feature report templates.                                    |
 | `  "<LayerId>": "<TemplateID>"  `             | WMS sublayer ID and associated template ID to pass to the `featureReportService`.|
 | `},`                                          |                                                                                  |

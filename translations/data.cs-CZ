@@ -218,6 +218,11 @@
         "abstract": ""
       },
       "openintab": ""
+    },
+    "window": {
+      "close": "",
+      "dock": "",
+      "undock": ""
     }
   }
 }
