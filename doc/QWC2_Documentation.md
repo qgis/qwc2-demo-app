@@ -133,6 +133,7 @@ The following options can be specified globally, and also overriden per theme, s
 |`preserveNonThemeLayersOnThemeSwitch` | Whether to preserve non-theme layers when switching theme.                          |
 |`allowReorderingLayers`               | Whether to allow re-ordering layers in the layer tree.                              |
 |`flattenLayerTreeGroups`              | Whether to display a flat layer tree, omitting the groups.                          |
+|`allowLayerTreeSeparators`            | Allows users to add separator items in a flat layer tree.                           |
 |`preventSplittingGroupsWhenReordering`| Whether to prevent splitting sibling groups or the group itself when reordering items. |
 |`allowRemovingThemeLayers`            | Whether to allow removing any theme layers from the layer tree.                     |
 |`searchThemes`                        | Whether allow searching for themes from the global search field.                    |

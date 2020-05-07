@@ -14,6 +14,7 @@
   "preserveNonThemeLayersOnThemeSwitch": true,
   "allowReorderingLayers": true,
   "preventSplittingGroupsWhenReordering": false,
+  "allowLayerTreeSeparators": false,
   "allowRemovingThemeLayers": true,
   "searchThemes": true,
   "allowAddingOtherThemes": true,
