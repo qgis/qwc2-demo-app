@@ -113,7 +113,7 @@
                 {"key": "Help", "icon": "info"}
               ],
               "searchOptions": {
-                "minScale": 1000,
+                "minScaleDenom": 1000,
                 "showProviderSelection": true,
                 "providerSelectionAllowAll": true,
                 "zoomToLayers": false,
@@ -323,7 +323,7 @@
                 {"key": "IdentifyRegion", "icon": "identify_region"}
               ],
               "searchOptions": {
-                "minScale": 1000,
+                "minScaleDenom": 1000,
                 "showProviderSelection": true,
                 "providerSelectionAllowAll": true,
                 "zoomToLayers": false,

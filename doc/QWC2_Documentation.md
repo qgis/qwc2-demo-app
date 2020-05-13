@@ -295,7 +295,7 @@ The format of the theme definitions is as follows:
 | `  "visibility": <boolean>`                   | Optional, initial visibility of the layer when theme is loaded.                  |
 | `}],`                                         |                                                                                  |
 | `"searchProviders": ["<ProviderId>"],`        | Optional, list of search providers IDs. An ID corresponds to the key of the exported `SearchProviders` object in `js/SearchProviders.js`. |
-| `"minSearchScale": <number>,`                 | Optional, minimum scale to enforce when zooming to search results. Takes precedence over value in `config.json`. |
+| `"minSearchScaleDenom": <number>,`                 | Optional, minimum scale to enforce when zooming to search results. Takes precedence over value in `config.json`. |
 | `"featureReport": {`                          | Optional, available feature report templates.                                    |
 | `  "<LayerId>": "<TemplateID>"  `             | WMS sublayer ID and associated template ID to pass to the `featureReportService`.|
 | `},`                                          |                                                                                  |
@@ -540,7 +540,7 @@ The `urlPositionFormat` parameter in `config.json` determines whether the extent
 
 The `urlPositionCrs` parameter in `config.json` determines the projection to use for the extent resp. center coordinates in the URL. By default the map projection of the current theme is used. If `urlPositionCrs` is equal to the map projection, the `crs` parameter is omitted in the URL.
 
-If the search text passed via `st` results in a unique result, the viewer automatically zooms to this result on startup. If the search result does not provide a bounding box, the `minScale` defined in the `searchOptions` of the `TopBar` configuration in `config.json` is used.
+If the search text passed via `st` results in a unique result, the viewer automatically zooms to this result on startup. If the search result does not provide a bounding box, the `minScaleDenom` defined in the `searchOptions` of the `TopBar` configuration in `config.json` is used.
 
 ## Startup position
 By default, the viewer opens zooming on the respective theme extent, as defined in `themes.json` (and overrideable in `themesConfig.json`).
