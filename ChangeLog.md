@@ -50,6 +50,7 @@ List of major new features. For full details, please consult the [commit history
 - Identify isn't automatically enabled anymore while the Layers panel is open. You need to explicitly set `"mapClickAction": "identify"` in the corresponding `menuItems` and/or `toolbarItems` configuration in `config.json`, as in the sample [`config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json).
 - `identifyEnabled` in the `menuItems` and `toolbarItems` items is deprecated, use `"mapClickAction": "identify"`.
 - The `LayersButton` is replaced by the more generic `TaskButton`, see the sample [`config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/config.json).
+- The `proxyServiceUrl` in `config.json` is no longer supported, and `ProxyUtils` has been removed. Usage of `ProxyUtils.addProxyIfNeeded` in `SearchProviders.js` and `EditingInterface.js` needs to be removed. (Usage of `ProxyUtils.addProxyIfNeeded` was never complete in QWC2 and worked only for a fraction of calls, for development purposes, use a CORS plugin instead).
 
 
 

@@ -72,7 +72,6 @@ Format of search results:
 const axios = require('axios');
 const {addSearchResults, SearchResultType} = require("qwc2/actions/search");
 const CoordinatesUtils = require('qwc2/utils/CoordinatesUtils');
-const ProxyUtils = require('qwc2/utils/ProxyUtils');
 
 function coordinatesSearch(text, requestId, searchOptions, dispatch) {
     let displaycrs = searchOptions.displaycrs || "EPSG:4326";
@@ -193,7 +192,7 @@ function geoAdminLocationSearchResults(obj, requestId)
 ////////////////////////////////////////////////////////////////////////////////
 
 function usterSearch(text, requestId, searchOptions, dispatch) {
-    axios.get(ProxyUtils.addProxyIfNeeded("https://webgis.uster.ch/wsgi/search.wsgi?&searchtables=&query="+ encodeURIComponent(text)))
+    axios.get("https://webgis.uster.ch/wsgi/search.wsgi?&searchtables=&query="+ encodeURIComponent(text))
     .then(response => dispatch(usterSearchResults(response.data, requestId)));
 }
 
@@ -229,7 +228,7 @@ function usterSearchResults(obj, requestId) {
 
 function usterResultGeometry(resultItem, callback)
 {
-    axios.get(ProxyUtils.addProxyIfNeeded("https://webgis.uster.ch/wsgi/getSearchGeom.wsgi?searchtable="+ encodeURIComponent(resultItem.searchtable) + "&displaytext=" + encodeURIComponent(resultItem.text)))
+    axios.get("https://webgis.uster.ch/wsgi/getSearchGeom.wsgi?searchtable="+ encodeURIComponent(resultItem.searchtable) + "&displaytext=" + encodeURIComponent(resultItem.text))
     .then(response => callback(resultItem, response.data, "EPSG:21781"));
 }
 

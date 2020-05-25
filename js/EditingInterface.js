@@ -18,7 +18,6 @@ const assign = require('object-assign');
 const {isEmpty} = require('lodash');
 const CoordinatesUtils = require('qwc2/utils/CoordinatesUtils');
 const ConfigUtils = require('qwc2/utils/ConfigUtils');
-const ProxyUtils = require('qwc2/utils/ProxyUtils');
 
 
 function buildErrMsg(err) {
@@ -41,7 +40,7 @@ function getFeature(layerId, mapPos, mapCrs, mapScale, dpi, callback) {
     let bbox = (mapPos[0] - tol) + "," + (mapPos[1] - tol) + "," + (mapPos[0] + tol) + "," + (mapPos[1] + tol);
 
     let req = SERVICE_URL + layerId + '?bbox=' + bbox + '&crs=' + mapCrs;
-    axios.get(ProxyUtils.addProxyIfNeeded(req)).then(response => {
+    axios.get(req).then(response => {
         if(response.data && !isEmpty(response.data.features)) {
             let feature = response.data;
             callback(feature);
@@ -61,7 +60,7 @@ function addFeature(layerId, feature, mapCrs, callback) {
         properties: {name: "urn:ogc:def:crs:EPSG::" + epsgCode}
     }});
 
-    axios.post(ProxyUtils.addProxyIfNeeded(req), feature).then(response => {
+    axios.post(req, feature).then(response => {
         callback(true);
     }).catch(err => callback(false, buildErrMsg(err)));
 }
@@ -76,7 +75,7 @@ function editFeature(layerId, feature, mapCrs, callback) {
         properties: {name: "urn:ogc:def:crs:EPSG::" + epsgCode}
     }});
 
-    axios.put(ProxyUtils.addProxyIfNeeded(req), feature).then(response => {
+    axios.put(req, feature).then(response => {
         callback(true);
     }).catch(err => callback(false, buildErrMsg(err)));
 }
@@ -85,7 +84,7 @@ function deleteFeature(layerId, featureId, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
     let req = SERVICE_URL + layerId + '/' + featureId;
 
-    axios.delete(ProxyUtils.addProxyIfNeeded(req)).then(response => {
+    axios.delete(req).then(response => {
         callback(true);
     }).catch(err => callback(false, buildErrMsg(err)));
 }
