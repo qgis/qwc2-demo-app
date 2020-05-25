@@ -30,7 +30,7 @@
       "themes": "Hărți tematice",
       "invisiblelayer": "Rezultatul este într-un strat invizibil",
       "enablelayer": "Activare strat",
-      "existinglayer": ""
+      "existinglayer": "Strat existent"
     },
     "bgswitcher": {
       "nobg": "Fără fundal"
@@ -91,9 +91,9 @@
       "localfile": "Fișierul local",
       "nofeatures": "Nu s-a putut importa nicio entitate",
       "noresults": "Fără rezultat sau URL invalid",
-      "loading": "",
+      "loading": "Se încarcă",
       "url": "URL",
-      "urlplaceholder": "Introdu URL către WMS, WFS..."
+      "urlplaceholder": "Introdu URL către WMS, WFS, KML, GeoJSON..."
     },
     "layerinfo": {
       "title": "Info Strat",
@@ -103,8 +103,8 @@
       "dataUrl": "URL date",
       "metadataUrl": "URL metadate",
       "legend": "Legendă",
-      "maxscale": "",
-      "minscale": ""
+      "maxscale": "Scara maximă",
+      "minscale": "Scara minimă"
     },
     "layertree": {
       "compare": "Compară stratul de sus",
@@ -113,9 +113,9 @@
       "printlegend": "Tipărește legenda",
       "deletealllayers": "Elimină toate straturile",
       "visiblefilter": "Filtrează straturile invizibile",
-      "separator": "",
-      "separatortooltip": "",
-      "zoomtolayer": ""
+      "separator": "separator",
+      "separatortooltip": "Indiciu separator",
+      "zoomtolayer": "Zoom la strat"
     },
     "locate": {
       "metersUnit": "metri",
@@ -213,16 +213,16 @@
       "filter": "Filtrare",
       "addtotheme": "Adaugă la temă",
       "match": {
-        "title": "",
-        "keywords": "",
-        "abstract": ""
+        "title": "Titlu",
+        "keywords": "Cuvinte cheie",
+        "abstract": "Abstract"
       },
-      "openintab": ""
+      "openintab": "Deschide în tab nou"
     },
     "window": {
-      "close": "",
-      "dock": "",
-      "undock": ""
+      "close": "Închide",
+      "dock": "Andocare",
+      "undock": "Anulează andocarea"
     }
   }
 }
