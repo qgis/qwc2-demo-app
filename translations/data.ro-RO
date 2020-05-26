@@ -3,7 +3,7 @@
   "messages": {
     "appmenu": {
       "items": {
-        "ExternalLink": "",
+        "ExternalLink": "Link extern",
         "DxfExport": "Export DXF",
         "Help": "Ajutor",
         "LayerTree": "Straturi & Legendă",
@@ -22,7 +22,7 @@
       "menulabel": "Hărți & Unelte"
     },
     "search": {
-      "coordinates": "",
+      "coordinates": "Coordonate",
       "more": "Mai multe...",
       "search": "Caută",
       "searchall": "Caută în toate",
@@ -39,7 +39,7 @@
       "mousepos_label": "Coordonate",
       "scale_label": "Scară",
       "terms_label": "Termeni de utilizare",
-      "viewertitle_label": "Harta GIS"
+      "viewertitle_label": "Despre"
     },
     "copybtn": {
       "click_to_copy": "Click pt. copiere",
@@ -88,7 +88,7 @@
       "addlayer": "Adaugă strat",
       "connect": "Conectare",
       "filter": "Filtrare",
-      "localfile": "Fișierul local",
+      "localfile": "Fișier local",
       "nofeatures": "Nu s-a putut importa nicio entitate",
       "noresults": "Fără rezultat sau URL invalid",
       "loading": "Se încarcă",
@@ -174,7 +174,7 @@
       "draw": "Desenează",
       "edit": "Modifică",
       "fill": "Interior",
-      "freehand": "",
+      "freehand": "Mână liberă",
       "label": "Text",
       "layer": "Strat",
       "line": "Linie",
