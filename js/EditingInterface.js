@@ -89,6 +89,31 @@ function deleteFeature(layerId, featureId, callback) {
     }).catch(err => callback(false, buildErrMsg(err)));
 }
 
+function getRelations(layerId, featureId, tables, callback) {
+    const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
+    let req = SERVICE_URL + layerId + '/' + featureId + "/relations?tables=" + tables;
+    axios.get(req).then(response => {
+        callback(response.data);
+    }).catch(err => callback({}));
+}
+
+function writeRelations(layerId, featureId, relations, callback) {
+    const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
+    let req = SERVICE_URL + layerId + '/' + featureId + "/relations";
+
+    axios.post(req, relations).then(response => {
+        callback(response.data);
+    }).catch(err => callback(false, buildErrMsg(err)));
+}
+
+function getKeyValues(keyvalues, callback) {
+    const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
+    let req = SERVICE_URL + "keyvals?tables=" + keyvalues;
+    axios.get(req).then(response => {
+        callback(response.data);
+    }).catch(err => callback({}));
+}
+
 module.exports = {
     getFeature,
     addFeature,
