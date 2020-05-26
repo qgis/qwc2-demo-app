@@ -118,5 +118,8 @@ module.exports = {
     getFeature,
     addFeature,
     editFeature,
-    deleteFeature
+    deleteFeature,
+    getRelations,
+    writeRelations,
+    getKeyValues
 };
