@@ -201,7 +201,7 @@ The first step is to prepare a QGIS project. Besides the common tasks of adding 
 |----------------------|-------------------------------------------|--------------------------------------------------|
 | Service capabilities | Project Properties &rarr; QGIS Server &rarr; Service capabilities | **Must** be checked for QGIS Server to publish the project. |
 | Title, keywords      | Project Properties &rarr; QGIS Server &rarr; Service capabilities | Theme title, displayed in the Theme Switcher, and keywords, useful for filtering. |
-| Queryable layers     | Project Properties &rarr; Identify Layers | Mark layers as identifyable by the client.       |
+| Queryable layers     | Project Properties &rarr; Data sources | Mark layers as identifyable by the client.       |
 | FeatureInfo geometry | Project Properties &rarr; QGIS Server &rarr; WMS Capabilities &rarr; Add geometry to feature response | Return feature geometries with the GetFeatureInfo request. Allows the client to highlight the selected features. |
 | Layer Display Field  | Vector Layer Properties &rarr; Display    | The field used in the identify results. |
 | Layer Map Tip        | Vector Layer Properties &rarr; Display    | The contents of the Map Tip shown when hovering over layers in the client, if displaying Map Tips is enabled in the Layer Tree. |
