@@ -10,7 +10,7 @@
 Search provider interface:
 --------------------------
 
-  onSearch: function(text, requestId, searchOptions, dispatch) {
+  onSearch: function(text, requestId, searchOptions, dispatch, state) {
       let results = [ ... ]; // See below
       return addSearchResults({data: results, provider: providerId, reqId: requestId}, true);
       // or
