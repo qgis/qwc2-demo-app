@@ -145,7 +145,7 @@
               "FI_POLYGON_TOLERANCE": 8,
               "feature_count": 20
             },
-            "exportFormat": "csv",
+            "enableExport": true,
             "longAttributesDisplay": "wrap",
             "displayResultTree": false,
             "featureInfoReturnsLayerName": true
@@ -380,7 +380,7 @@
               "FI_POLYGON_TOLERANCE": 4,
               "feature_count": 20
             },
-            "exportFormat": "csv",
+            "enableExport": true,
             "longAttributesDisplay": "wrap",
             "displayResultTree": false,
             "featureInfoReturnsLayerName": true,

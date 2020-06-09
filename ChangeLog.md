@@ -36,7 +36,7 @@ List of major new features. For full details, please consult the [commit history
 
 **Incompatible changes**:
 
-- `enableExport` has been replaced by `exportFormat` in the Identify plugin configuration parameters in config.json
+- `exportFormat` has been replaced by `enableExport` in the Identify plugin configuration parameters in config.json
 - The `qwc2` submodule is now registered as a yarn workspace dependency (see [`package.json`](https://github.com/qgis/qwc2-demo-app/blob/master/package.json)), all it's dependencies were moved to `qwc2/package.json`. The `webpack.config.js` also needs to be updated, see commit [6ff4ce0](https://github.com/qgis/qwc2-demo-app/commit/6ff4ce04b19043933ad177772eff21f45d721963). At the same time, the MapStore2 and QWC2Components trees were merged in the qwc2 submdoule.
 - The `qwc2-icons.css` stylesheet isn't loaded anymore by the `Icon.jsx` component in the `qwc2` submodule, but needs to be referenced in the application specific code, for instance by adding to `js/app.jsx`
 
