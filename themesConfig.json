@@ -79,6 +79,9 @@
               {
                 "name": "pixelkarte",
                 "visibility": true
+              },
+              {
+                "name": "group"
               }
             ],
             "searchProviders": ["coordinates", "geoadmin", "nominatim"],
@@ -145,12 +148,37 @@
         "provider": "Stamen.Toner"
       },
       {
+          "name": "group",
+          "title": "Group",
+          "type": "group",
+          "items": [
+              {
+                  "ref": "Gemeindegrenzen",
+                  "minScale": 10000,
+                  "maxScale": 300000
+              },
+              {
+                  "ref": "oevhaltestellen"
+              }
+          ]
+      },
+      {
         "name": "Gemeindegrenzen",
         "title": "Gemeindegrenzen",
         "type": "wms",
         "url": "http://wms.geo.admin.ch/",
         "params": {
           "LAYERS": "ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill",
+          "STYLES": "default"
+        }
+      },
+      {
+        "name": "oevhaltestellen",
+        "title": "Haltestellen öV",
+        "type": "wms",
+        "url": "http://wms.geo.admin.ch/",
+        "params": {
+          "LAYERS": "ch.bav.haltestellen-oev",
           "STYLES": "default"
         }
       },
