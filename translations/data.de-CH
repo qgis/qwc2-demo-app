@@ -76,7 +76,7 @@
       "querying": "Objekte werden abgefragt...",
       "noresults": "Keine Resultate an der ausgewählten Position",
       "export": "Exportieren",
-      "exportformat": "",
+      "exportformat": "Exportformat",
       "featureReport": "Objektblatt",
       "noattributes": "Keine Attribute",
       "title": "Objektinformationen",
@@ -210,9 +210,15 @@
       "zoomout": "Hinauszoomen",
       "background": "Hintergrundkarte wechseln"
     },
+    "themelayerslist": {
+      "addlayer": "",
+      "addlayerstotheme": "",
+      "addselectedlayers": ""
+    },
     "themeswitcher": {
       "filter": "Filter",
       "addtotheme": "Dem aktuellen Thema hinzufügen",
+      "addlayerstotheme": "",
       "match": {
         "title": "Titel",
         "keywords": "Schlüsselwörter",
