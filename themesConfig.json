@@ -82,6 +82,9 @@
               },
               {
                 "name": "group"
+              },
+              {
+                "name": "Gemeindegrenzen"
               }
             ],
             "searchProviders": ["coordinates", "geoadmin", "nominatim"],
@@ -167,6 +170,7 @@
         "title": "Gemeindegrenzen",
         "type": "wms",
         "url": "http://wms.geo.admin.ch/",
+        "tiled": false,
         "params": {
           "LAYERS": "ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill",
           "STYLES": "default"
