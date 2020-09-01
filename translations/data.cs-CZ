@@ -50,6 +50,8 @@
       "symbologyscale": "Meřítko symbolů:"
     },
     "editing": {
+      "maximize": "Maximální",
+      "minimize": "Minimální",
       "canceldelete": "Neodstraňovat",
       "commit": "Potvrdit",
       "delete": "Odstranit",
@@ -225,6 +227,9 @@
         "abstract": ""
       },
       "openintab": ""
+    },
+    "vectorlayerpicker": {
+      "prompt": ""
     },
     "window": {
       "close": "",

@@ -50,6 +50,8 @@
       "symbologyscale": "Darstellungsmassstab"
     },
     "editing": {
+      "maximize": "Maximieren",
+      "minimize": "Minimieren",
       "canceldelete": "Abbrechen",
       "commit": "Speichern",
       "delete": "Löschen",
@@ -225,6 +227,9 @@
         "abstract": "Zusammenfassung"
       },
       "openintab": "In Tab öffnen"
+    },
+    "vectorlayerpicker": {
+      "prompt": "Ebenenname eingeben"
     },
     "window": {
       "close": "Schließen",

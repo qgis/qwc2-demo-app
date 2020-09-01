@@ -50,6 +50,8 @@
       "symbologyscale": "Sembol Ölçeği:"
     },
     "editing": {
+      "maximize": "Büyült",
+      "minimize": "Küçült",
       "canceldelete": "Silme",
       "commit": "Onayla",
       "delete": "Sil",
@@ -225,6 +227,9 @@
         "abstract": "Özet"
       },
       "openintab": "Sekmede aç"
+    },
+    "vectorlayerpicker": {
+      "prompt": ""
     },
     "window": {
       "close": "Kapat",

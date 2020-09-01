@@ -50,6 +50,8 @@
       "symbologyscale": "Skala symbolizacji:"
     },
     "editing": {
+      "maximize": "Maksymalizuj",
+      "minimize": "Minimalizuj",
       "canceldelete": "Nie usuwaj",
       "commit": "Zatwierdź",
       "delete": "Usuń",
@@ -225,6 +227,9 @@
         "abstract": ""
       },
       "openintab": ""
+    },
+    "vectorlayerpicker": {
+      "prompt": ""
     },
     "window": {
       "close": "",

@@ -50,6 +50,8 @@
       "symbologyscale": "Escala da simbologia:"
     },
     "editing": {
+      "maximize": "",
+      "minimize": "",
       "canceldelete": "Não deletar",
       "commit": "Enviar",
       "delete": "Deletar",
@@ -225,6 +227,9 @@
         "abstract": ""
       },
       "openintab": ""
+    },
+    "vectorlayerpicker": {
+      "prompt": ""
     },
     "window": {
       "close": "",

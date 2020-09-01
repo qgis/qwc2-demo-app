@@ -50,6 +50,8 @@
       "symbologyscale": "Scala per la simbologia"
     },
     "editing": {
+      "maximize": "Massimizza",
+      "minimize": "Minimizza",
       "canceldelete": "Annulla",
       "commit": "Salva",
       "delete": "Elimina",
@@ -225,6 +227,9 @@
         "abstract": "Riassunto"
       },
       "openintab": "Apri in nuova scheda"
+    },
+    "vectorlayerpicker": {
+      "prompt": "Nome del layer"
     },
     "window": {
       "close": "Chiudi",

@@ -50,6 +50,8 @@
       "symbologyscale": "Scara simboluri:"
     },
     "editing": {
+      "maximize": "Maximizează",
+      "minimize": "Minimizează",
       "canceldelete": "Elimină modificările",
       "commit": "Salvează",
       "delete": "Șterge",
@@ -225,6 +227,9 @@
         "abstract": "Abstract"
       },
       "openintab": "Deschide în tab nou"
+    },
+    "vectorlayerpicker": {
+      "prompt": ""
     },
     "window": {
       "close": "Închide",
