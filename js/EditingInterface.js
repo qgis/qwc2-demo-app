@@ -32,6 +32,11 @@ function buildErrMsg(err) {
     return message;
 }
 
+/*
+ layerId: The edit layer id
+ featureData: a FormData instance, with a 'feature' entry containing the GeoJSON serialized feature and optionally one or more 'file:' prefixed file upload entries
+ callback: function(success, result), if success = true, result is the committed GeoJSON feature, if success = false, result is an error message
+*/
 function getFeature(layerId, mapPos, mapCrs, mapScale, dpi, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
 
@@ -39,47 +44,53 @@ function getFeature(layerId, mapPos, mapCrs, mapScale, dpi, callback) {
     let tol = (5.0 / dpi) * 0.0254 * mapScale;
     let bbox = (mapPos[0] - tol) + "," + (mapPos[1] - tol) + "," + (mapPos[0] + tol) + "," + (mapPos[1] + tol);
 
-    let req = SERVICE_URL + layerId + '?bbox=' + bbox + '&crs=' + mapCrs;
+    let req = SERVICE_URL + layerId + '/?bbox=' + bbox + '&crs=' + mapCrs;
     axios.get(req).then(response => {
         if(response.data && !isEmpty(response.data.features)) {
-            let feature = response.data;
-            callback(feature);
+            callback(response.data);
         } else {
             callback(null);
         }
     }).catch(err => callback(null));
 }
 
-function addFeature(layerId, feature, mapCrs, callback) {
+/*
+ layerId: The edit layer id
+ featureData: a FormData instance, with a 'feature' entry containing the GeoJSON serialized feature and optionally one or more 'file:' prefixed file upload entries
+ callback: function(success, result), if success = true, result is the committed GeoJSON feature, if success = false, result is an error message
+*/
+function addFeatureMultipart(layerId, featureData, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
-    let req = SERVICE_URL + layerId + '/';
-    // Add CRS
-    let epsgCode = mapCrs.split(':')[1];
-    feature = assign({}, feature, {crs: {
-        type: "name",
-        properties: {name: "urn:ogc:def:crs:EPSG::" + epsgCode}
-    }});
+    let req = SERVICE_URL + layerId + '/multipart';
 
-    axios.post(req, feature).then(response => {
-        callback(true);
+    axios.post(req, featureData, {
+        headers: {'Content-Type': 'multipart/form-data' }
+    }).then(response => {
+        callback(true, response.data);
     }).catch(err => callback(false, buildErrMsg(err)));
 }
 
-function editFeature(layerId, feature, mapCrs, callback) {
+/*
+ layerId: The edit layer id
+ featureId: The id of the feature to edit
+ featureData: a FormData instance, with a 'feature' entry containing the GeoJSON serialized feature and optionally one or more 'file:' prefixed file upload entries
+ callback: function(success, result), if success = true, result is the committed GeoJSON feature, if success = false, result is an error message
+*/
+function editFeatureMultipart(layerId, featureId, featureData, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
-    let req = SERVICE_URL + layerId + '/' + feature.id;
-    // Add CRS
-    let epsgCode = mapCrs.split(':')[1];
-    feature = assign({}, feature, {crs: {
-        type: "name",
-        properties: {name: "urn:ogc:def:crs:EPSG::" + epsgCode}
-    }});
-
-    axios.put(req, feature).then(response => {
-        callback(true);
+    let req = SERVICE_URL + layerId + '/multipart/' + featureId;
+    axios.put(req, featureData, {
+        headers: {'Content-Type': 'multipart/form-data' }
+    }).then(response => {
+        callback(true, response.data);
     }).catch(err => callback(false, buildErrMsg(err)));
 }
 
+/*
+ layerId: The edit layer id
+ featureId: The id of the feature to delete
+ callback: function(success, result), if success = true, result is null, if success = false, result is an error message
+*/
 function deleteFeature(layerId, featureId, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
     let req = SERVICE_URL + layerId + '/' + featureId;
@@ -97,11 +108,13 @@ function getRelations(layerId, featureId, tables, callback) {
     }).catch(err => callback({}));
 }
 
-function writeRelations(layerId, featureId, relations, callback) {
+function writeRelations(layerId, featureId, relationData, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
     let req = SERVICE_URL + layerId + '/' + featureId + "/relations";
 
-    axios.post(req, relations).then(response => {
+    axios.post(req, relationData, {
+        headers: {'Content-Type': 'multipart/form-data' }
+    }).then(response => {
         callback(response.data);
     }).catch(err => callback(false, buildErrMsg(err)));
 }
@@ -116,10 +129,10 @@ function getKeyValues(keyvalues, callback) {
 
 module.exports = {
     getFeature,
-    addFeature,
-    editFeature,
+    addFeatureMultipart,
+    editFeatureMultipart,
     deleteFeature,
-    getRelations,
     writeRelations,
+    getRelations,
     getKeyValues
 };
