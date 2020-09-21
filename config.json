@@ -163,7 +163,8 @@
         {
           "name": "Print",
           "cfg": {
-            "inlinePrintOutput": false
+            "inlinePrintOutput": false,
+            "gridInitiallyEnabled": false
           }
         },
         {
@@ -403,7 +404,8 @@
         {
           "name": "Print",
           "cfg": {
-            "inlinePrintOutput": false
+            "inlinePrintOutput": false,
+            "gridInitiallyEnabled": false
           }
         },
         {
