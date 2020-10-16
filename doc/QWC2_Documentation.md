@@ -111,6 +111,7 @@ Some external services can be used to enhance the application. Sample services a
 |-------------------------------------|-------------|
 |`translationsPath`                   | Path from the webserver root to the `translations` folder.                          |
 |`assetsPath`                         | Path from the webserver root to the `assets` folder.                                |
+|`fallbackLocale`                     | Fallback locale, if client locale cannot be determined or if requested locale cannot be loaded. Defaults to `"en-US"`. The translation file for the default locale must be available! |
 |`urlPositionFormat`                  | How to encode the current map extent in the URL, either `centerAndZoom` or `extent`. See [URL parameters](#url-parameters) for details. |
 |`urlPositionCrs`                     | The CRS used to encode the current map extent coordinates in the URL.               |
 |`omitUrlParameterUpdates`            | Whether to omit updating the URL parameters.                                        |
