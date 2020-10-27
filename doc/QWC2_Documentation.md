@@ -141,6 +141,7 @@ The following options can be specified globally, and also overriden per theme, s
 |`disableImportingLocalLayers`         | Whether to hide the option to import local layers from the layer tree.              |
 |`importLayerUrlPresets`               | A list of predefined URLs from which the user can choose when importing layers from the layer tree. Entries must be strings or objects of the format `{"label": "<Label>", "value": "<URL>"}`. See also [Layer catalogs](#layer-catalogs). |
 |`identifyTool`                        | The name of the identify tool to use. It is possible to have multiple identify tools, and i.e. on a per-theme basis select which one is active. |
+|`globallyDisableDockableDialogs`      | Whether to globally disable the dockable feature of popup dialogs.                  |
 
 *Notes*:
 
