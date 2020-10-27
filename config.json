@@ -17,6 +17,7 @@
   "preventSplittingGroupsWhenReordering": false,
   "allowLayerTreeSeparators": false,
   "allowRemovingThemeLayers": true,
+  "globallyDisableDockableDialogs": false,
   "searchThemes": true,
   "allowAddingOtherThemes": true,
   "allowFractionalZoom": true,
