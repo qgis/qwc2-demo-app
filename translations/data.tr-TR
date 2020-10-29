@@ -190,6 +190,9 @@
       "text": "Metin",
       "width": "Genişlik"
     },
+    "scratchdrawing": {
+      "finish": ""
+    },
     "searchbox": {
       "coordinates": "Koordinatlar",
       "filter": "Gelişmiş arama",

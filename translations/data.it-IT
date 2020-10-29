@@ -190,6 +190,9 @@
       "text": "Testo",
       "width": "Larghezza"
     },
+    "scratchdrawing": {
+      "finish": "Finito"
+    },
     "searchbox": {
       "coordinates": "Coordinate",
       "filter": "Filtro",

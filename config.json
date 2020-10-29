@@ -31,7 +31,8 @@
     "fillColor": [255, 0, 255, 0.33],
     "circleRadius": 10,
     "textFill": "black",
-    "textStroke": "white"
+    "textStroke": "white",
+    "textFont": "11pt sans-serif"
   },
   "projections": [
     {
@@ -459,7 +460,13 @@
           "cfg": {
             "removeMode": "onclickonmarker"
           }
-        }
+      },
+      {
+          "name": "API"
+      },
+      {
+          "name": "ScratchDrawing"
+      }
       ]
   }
 }

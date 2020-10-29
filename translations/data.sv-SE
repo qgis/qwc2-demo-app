@@ -190,6 +190,9 @@
       "text": "Text",
       "width": "Bredd"
     },
+    "scratchdrawing": {
+      "finish": ""
+    },
     "searchbox": {
       "coordinates": "",
       "filter": "",

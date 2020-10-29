@@ -58,7 +58,9 @@ module.exports = {
             HeightProfilePlugin: require('qwc2/plugins/HeightProfile'),
             MapInfoTooltipPlugin: require('qwc2/plugins/MapInfoTooltip'),
             IdentifyRegionPlugin: require('qwc2/plugins/IdentifyRegion'),
-            StartupMarkerPlugin: require('qwc2/plugins/StartupMarker')
+            StartupMarkerPlugin: require('qwc2/plugins/StartupMarker'),
+            ScratchDrawingPlugin: require('qwc2/plugins/ScratchDrawing'),
+            APIPlugin: require('qwc2/plugins/API')
         },
         cfg: {
             IdentifyPlugin: {

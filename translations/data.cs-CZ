@@ -190,6 +190,9 @@
       "text": "Text",
       "width": "Šířka"
     },
+    "scratchdrawing": {
+      "finish": ""
+    },
     "searchbox": {
       "coordinates": "",
       "filter": "",

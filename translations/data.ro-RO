@@ -190,6 +190,9 @@
       "text": "Text",
       "width": "Lățime"
     },
+    "scratchdrawing": {
+      "finish": ""
+    },
     "searchbox": {
       "coordinates": "Coordonate",
       "filter": "Filtrare căutare",
