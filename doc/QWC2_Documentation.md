@@ -532,7 +532,7 @@ The QGIS server response for the print, raster and DXF export requests does by d
 To ensure browsers use a proper filename, configure the web server running QGIS Server to add a suitable `Content-Disposition` header to the response. In the case of Apache, the rule for the print output might look as follows:
 
     SetEnvIf Request_URI "^/wms.*/(.+)$" project_name=$1
-    Header always setifempty Content-Disposition "attachment; filename=%{project_name}.pdf" "expr=%{CONTENT_TYPE} = 'application/pdf'"
+    Header always setifempty Content-Disposition "attachment; filename=%{project_name}e.pdf" "expr=%{CONTENT_TYPE} = 'application/pdf'"
 
 This rule will use the last part of the URL as basename and add the `.pdf` extension, and will also ensure that the content-type is set to `application/pdf`. Note that this example uses the `setenvif` and `headers` apache modules.
 
