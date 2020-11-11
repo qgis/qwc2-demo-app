@@ -9,8 +9,8 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-const appConfig = require('./appConfig');
 const StandardApp = require('qwc2/components/StandardApp');
+const appConfig = require('./appConfig');
 require('../icons/build/qwc2-icons.css');
 
 ReactDOM.render(
