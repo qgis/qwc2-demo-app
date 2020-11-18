@@ -202,12 +202,13 @@ The first step is to prepare a QGIS project. Besides the common tasks of adding 
 | What                 | Where                                     | Description                                      |
 |----------------------|-------------------------------------------|--------------------------------------------------|
 | Service capabilities | Project Properties &rarr; QGIS Server &rarr; Service capabilities | **Must** be checked for QGIS Server to publish the project. |
+| Service Metadata     | Project Properties &rarr; QGIS Server &rarr; Service capabilities | Shown in the theme info dialog, invokable from the Layer Tree panel titlebar. |
 | Title, keywords      | Project Properties &rarr; QGIS Server &rarr; Service capabilities | Theme title, displayed in the Theme Switcher, and keywords, useful for filtering. |
 | Queryable layers     | Project Properties &rarr; Data sources | Mark layers as identifyable by the client.       |
 | FeatureInfo geometry | Project Properties &rarr; QGIS Server &rarr; WMS Capabilities &rarr; Add geometry to feature response | Return feature geometries with the GetFeatureInfo request. Allows the client to highlight the selected features. |
 | Layer Display Field  | Vector Layer Properties &rarr; Display    | The field used in the identify results. |
 | Layer Map Tip        | Vector Layer Properties &rarr; Display    | The contents of the Map Tip shown when hovering over layers in the client, if displaying Map Tips is enabled in the Layer Tree. |
-| Layer Metadata       | Layer Properties &rarr; Metadata          | Shown in the client Layer Info dialog, invokable from the Layer Tree. |
+| Layer Metadata       | Layer Properties &rarr; QGIS Server       | Shown in the client Layer Info dialog, invokable from the Layer Tree. |
 | Scale range          | Layer Properties &rarr; Rendering &rarr; Scale dependent visibility | The scale range within which a layer is visible, useful to improve rendering performance. |
 | Initial visibility   | Layers Panel                              | Initial visibility of layers and groups.         |
 | Rendering order      | Layer Order Panel or Layers Panel         | Rendering order of the layers. If layer re-ordering is enabled in `config.json`, the order from the Layer Order Panel is ignored. |
@@ -338,6 +339,12 @@ The format for external layer definitions is as follows:
 | `"featureInfoUrl": "<wms_featureinfo_baseurl>",`       | Optional, base URL for WMS GetFeatureInfo, if different from `url`.               |
 | `"queryLayers": ["<wms_featureinfo_layername>", ...],` | Optional, list of GetFeatureInfo query layers, if different from `params.LAYERS`. |
 | `"infoFormats": ["<featureinfo_format>", ...]`         | List of GetFeatureInfo query formats which the WMS service supports.              |
+
+You can also set the "Data Url" for a layer in QGIS (Layer Properties &rarr; QGIS Server &rarr; -> Data Url) to a string of the form
+
+    wms:<service_url>#<layername>
+
+(for instance, `wms:http://wms.geo.admin.ch/?#ch.are.bauzonen`), and an external layer pointing to the specified WMS service will automatically be created for the corresponding QGIS layer.
 
 
 **Theme info links:**
