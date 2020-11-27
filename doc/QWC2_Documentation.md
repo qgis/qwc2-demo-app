@@ -324,14 +324,20 @@ The format of the theme definitions is as follows:
 | `}`                                           |
 
 **External layers:**
-External layers can be used to selectively replace layers in a QGIS project, for instance in the case of a WMS layer embedded in a QGIS project, to avoid cascading WMS requests. They are handled transparently by QWC2 (they are positioned in the layer tree identically to the internal layer they replace), but the `GetMap` and `GetFeatureInfo` requests are sent directly to the specified WMS Service. Only WMS layers can be specified as external layers.
+External layers can be used to selectively replace layers in a QGIS project, for instance in the case of a WMS layer embedded in a QGIS project, to avoid cascading WMS requests. They are handled transparently by QWC2 (they are positioned in the layer tree identically to the internal layer they replace), but the `GetMap` and `GetFeatureInfo` requests are sent directly to the specified WMS Service.
 
 The format for external layer definitions is as follows:
 
 | Entry                                                  | Description                                                                       |
 |--------------------------------------------------------|-----------------------------------------------------------------------------------|
 | `"name": "<external_layer_name>",`                     | The name of the external layer, as referenced in the theme definitions.           |
-| `"url": "<wms_baseurl>",       `                       | Base WMS URL for the external layer.                                              |
+| `"type": "<layer_type>",`                              | Layer type, "wms" or "wmts"                                                       |
+| `"url": "<wms_baseurl>",       `                       | The WMS URL or WMTS resource URL for the external layer.                          |
+
+For external WMS layers, the following additional parameters apply:
+
+| Entry                                                  | Description                                                                       |
+|--------------------------------------------------------|-----------------------------------------------------------------------------------|
 | `"params": {`                                          | Parameters for the GetMap request.                                                |
 | `  "LAYERS": "<wms_layername>,..."`,                   | WMS layer names.                                                                  |
 | `  "OPACITIES": "<0-255>,..."`                         | Optional, if WMS server supports opacities.                                       |
@@ -340,11 +346,23 @@ The format for external layer definitions is as follows:
 | `"queryLayers": ["<wms_featureinfo_layername>", ...],` | Optional, list of GetFeatureInfo query layers, if different from `params.LAYERS`. |
 | `"infoFormats": ["<featureinfo_format>", ...]`         | List of GetFeatureInfo query formats which the WMS service supports.              |
 
+For external WMTS layers, the following additional parameters apply (you can use the `qwc2/scripts/wmts_config_generator.py` script to obtain these values):
+
+| Entry                                                  | Description                                                                       |
+|--------------------------------------------------------|-----------------------------------------------------------------------------------|
+| `"tileMatrixSet": "<tile_matrix_set_name>",`           | The name of the tile matrix set.                                                  |
+| `"originX": <origin_x>,`                               | The X origin of the tile matrix.                                                  |
+| `"originY": <origin_y>,`                               | The Y origin of the tile matrix.                                                  |
+| `"projection": "EPSG:<code>",`                         | The layer projection.                                                             |
+| `"resolutions": [<resolution>, ...],`                  | The list of WMTS resolutions.                                                     |
+| `"tileSize": [<tile_width>, <tile_height>]`            | The tile width and height.                                                        |
+
 You can also set the "Data Url" for a layer in QGIS (Layer Properties &rarr; QGIS Server &rarr; -> Data Url) to a string of the form
 
     wms:<service_url>#<layername>
 
 (for instance, `wms:http://wms.geo.admin.ch/?#ch.are.bauzonen`), and an external layer pointing to the specified WMS service will automatically be created for the corresponding QGIS layer.
+Note that this is currently only implemented for WMS layers.
 
 
 **Theme info links:**
