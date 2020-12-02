@@ -121,6 +121,7 @@ Some external services can be used to enhance the application. Sample services a
 |`localeAwareNumbers`                 | Whether to use locale aware numbers throughout.                                     |
 |`wmsDpi`                             | The DPI to pass to the WMS requests.                                                |
 |`wmsHidpi`                           | Whether to honour the device pixel ratio for WMS GetMap requests.                   |
+|`externalLayerFeatureInfoFormats`    | A dictionary of feature info formats for external layers, in the format `{"<url>": "<format>", ...}`. If the GetFeatureInfo URL of a layer contains the specified `<url>`, the corresponding format is used. |
 
 *Global settings, overridable per theme*:<a name="config-json-overridable"></a>
 
@@ -343,6 +344,7 @@ For external WMS layers, the following additional parameters apply:
 | `  "OPACITIES": "<0-255>,..."`                         | Optional, if WMS server supports opacities.                                       |
 | `},`                                                   |                                                                                   |
 | `"featureInfoUrl": "<wms_featureinfo_baseurl>",`       | Optional, base URL for WMS GetFeatureInfo, if different from `url`.               |
+| `"legendUrl": "<wms_legendgraphic_baseurl>"   ,`       | Optional, base URL for WMS GetLegendGraphic, if different from `url`.             |
 | `"queryLayers": ["<wms_featureinfo_layername>", ...],` | Optional, list of GetFeatureInfo query layers, if different from `params.LAYERS`. |
 | `"infoFormats": ["<featureinfo_format>", ...]`         | List of GetFeatureInfo query formats which the WMS service supports.              |
 
