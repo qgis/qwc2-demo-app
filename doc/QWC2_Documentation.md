@@ -359,7 +359,7 @@ For external WMTS layers, the following additional parameters apply (you can use
 | `"resolutions": [<resolution>, ...],`                  | The list of WMTS resolutions.                                                     |
 | `"tileSize": [<tile_width>, <tile_height>]`            | The tile width and height.                                                        |
 
-You can also set the "Data Url" for a layer in QGIS (Layer Properties &rarr; QGIS Server &rarr; -> Data Url) to a string of the form
+You can also set the "Data Url" for a layer in QGIS (Layer Properties &rarr; QGIS Server &rarr; Data Url) to a string of the form
 
     wms:<service_url>#<layername>
 
