@@ -84,45 +84,9 @@ module.exports = {
 
         callback(newLayers, newLayerNames);
     },
+    defaultLocaleData: require('../translations/en-US.json')
     /*externalLayerRestorer: (externalLayers, themes, callback) => {
         // Optional function to handle restoring of external layers from the l URL parameter
         // If omitted, the default handler is used which downloads capabilities for each service to restore the layer
-    },*/
-    supportedLocales: {
-         "pt": {
-             code: "pt-BR",
-             description: "Português Brasil",
-             localeData: require('react-intl/locale-data/pt')
-         },
-         "it": {
-             code: "it-IT",
-             description: "Italiano",
-             localeData: require('react-intl/locale-data/it')
-         },
-         "en": {
-            code: "en-US",
-            description: "English",
-            localeData: require('react-intl/locale-data/en')
-         },
-         "fr": {
-           code: "fr-FR",
-           description: "Français",
-           localeData: require('react-intl/locale-data/fr')
-        },
-        "de": {
-            code: "de-DE",
-            description: "Deutsch",
-            localeData: require('react-intl/locale-data/de')
-        },
-        "ro": {
-            code: "ro-RO",
-            description: "Română",
-            localeData: require('react-intl/locale-data/ro')
-        },
-        "ru": {
-            code: "ru-RU",
-            description: "Русский",
-            localeData: require('react-intl/locale-data/ru')
-        }
-   }
+    }*/
 };
