@@ -16,15 +16,14 @@
 const axios = require('axios');
 const assign = require('object-assign');
 const {isEmpty} = require('lodash');
-const CoordinatesUtils = require('qwc2/utils/CoordinatesUtils');
 const ConfigUtils = require('qwc2/utils/ConfigUtils');
 
 
 function buildErrMsg(err) {
     let message = "Commit failed";
-    if(err.response && err.response.data && err.response.data.message) {
+    if (err.response && err.response.data && err.response.data.message) {
         message = err.response.data.message;
-        if(err.response.data.geometry_errors) {
+        if (err.response.data.geometry_errors) {
             message += ":\n";
             message += err.response.data.geometry_errors.map(entry => " - " + entry.reason + " at " + entry.location);
         }
@@ -41,17 +40,17 @@ function getFeature(layerId, mapPos, mapCrs, mapScale, dpi, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
 
     // 5px tolerance
-    let tol = (5.0 / dpi) * 0.0254 * mapScale;
-    let bbox = (mapPos[0] - tol) + "," + (mapPos[1] - tol) + "," + (mapPos[0] + tol) + "," + (mapPos[1] + tol);
+    const tol = (5.0 / dpi) * 0.0254 * mapScale;
+    const bbox = (mapPos[0] - tol) + "," + (mapPos[1] - tol) + "," + (mapPos[0] + tol) + "," + (mapPos[1] + tol);
 
-    let req = SERVICE_URL + layerId + '/?bbox=' + bbox + '&crs=' + mapCrs;
+    const req = SERVICE_URL + layerId + '/?bbox=' + bbox + '&crs=' + mapCrs;
     axios.get(req).then(response => {
-        if(response.data && !isEmpty(response.data.features)) {
+        if (response.data && !isEmpty(response.data.features)) {
             callback(response.data);
         } else {
             callback(null);
         }
-    }).catch(err => callback(null));
+    }).catch(() => callback(null));
 }
 
 /*
@@ -61,7 +60,7 @@ function getFeature(layerId, mapPos, mapCrs, mapScale, dpi, callback) {
 */
 function addFeatureMultipart(layerId, featureData, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
-    let req = SERVICE_URL + layerId + '/multipart';
+    const req = SERVICE_URL + layerId + '/multipart';
 
     axios.post(req, featureData, {
         headers: {'Content-Type': 'multipart/form-data' }
@@ -78,7 +77,7 @@ function addFeatureMultipart(layerId, featureData, callback) {
 */
 function editFeatureMultipart(layerId, featureId, featureData, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
-    let req = SERVICE_URL + layerId + '/multipart/' + featureId;
+    const req = SERVICE_URL + layerId + '/multipart/' + featureId;
     axios.put(req, featureData, {
         headers: {'Content-Type': 'multipart/form-data' }
     }).then(response => {
@@ -93,24 +92,24 @@ function editFeatureMultipart(layerId, featureId, featureData, callback) {
 */
 function deleteFeature(layerId, featureId, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
-    let req = SERVICE_URL + layerId + '/' + featureId;
+    const req = SERVICE_URL + layerId + '/' + featureId;
 
-    axios.delete(req).then(response => {
+    axios.delete(req).then(() => {
         callback(true);
     }).catch(err => callback(false, buildErrMsg(err)));
 }
 
 function getRelations(layerId, featureId, tables, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
-    let req = SERVICE_URL + layerId + '/' + featureId + "/relations?tables=" + tables;
+    const req = SERVICE_URL + layerId + '/' + featureId + "/relations?tables=" + tables;
     axios.get(req).then(response => {
         callback(response.data);
-    }).catch(err => callback({}));
+    }).catch(() => callback({}));
 }
 
 function writeRelations(layerId, featureId, relationData, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
-    let req = SERVICE_URL + layerId + '/' + featureId + "/relations";
+    const req = SERVICE_URL + layerId + '/' + featureId + "/relations";
 
     axios.post(req, relationData, {
         headers: {'Content-Type': 'multipart/form-data' }
@@ -121,10 +120,10 @@ function writeRelations(layerId, featureId, relationData, callback) {
 
 function getKeyValues(keyvalues, callback) {
     const SERVICE_URL = ConfigUtils.getConfigProp("editServiceUrl");
-    let req = SERVICE_URL + "keyvals?tables=" + keyvalues;
+    const req = SERVICE_URL + "keyvals?tables=" + keyvalues;
     axios.get(req).then(response => {
         callback(response.data);
-    }).catch(err => callback({}));
+    }).catch(() => callback({}));
 }
 
 module.exports = {

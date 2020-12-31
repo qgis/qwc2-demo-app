@@ -74,13 +74,13 @@ const {addSearchResults, SearchResultType} = require("qwc2/actions/search");
 const CoordinatesUtils = require('qwc2/utils/CoordinatesUtils');
 
 function coordinatesSearch(text, requestId, searchOptions, dispatch) {
-    let displaycrs = searchOptions.displaycrs || "EPSG:4326";
-    let matches = text.match(/^\s*([+-]?\d+\.?\d*)[,\s]\s*([+-]?\d+\.?\d*)\s*$/);
-    let items = [];
-    if(matches && matches.length >= 3) {
-        let x = parseFloat(matches[1]);
-        let y = parseFloat(matches[2]);
-        if(displaycrs !== "EPSG:4326") {
+    const displaycrs = searchOptions.displaycrs || "EPSG:4326";
+    const matches = text.match(/^\s*([+-]?\d+\.?\d*)[,\s]\s*([+-]?\d+\.?\d*)\s*$/);
+    const items = [];
+    if (matches && matches.length >= 3) {
+        const x = parseFloat(matches[1]);
+        const y = parseFloat(matches[2]);
+        if (displaycrs !== "EPSG:4326") {
             items.push({
                 id: "coord0",
                 text: x + ", " + y + " (" + displaycrs + ")",
@@ -90,8 +90,8 @@ function coordinatesSearch(text, requestId, searchOptions, dispatch) {
                 bbox: [x, y, x, y]
             });
         }
-        if(x >= -180 && x <= 180 && y >= -90 && y <= 90) {
-            let title = Math.abs(x) + (x >= 0 ? "°E" : "°W") + ", "
+        if (x >= -180 && x <= 180 && y >= -90 && y <= 90) {
+            const title = Math.abs(x) + (x >= 0 ? "°E" : "°W") + ", "
                       + Math.abs(y) + (y >= 0 ? "°N" : "°S");
             items.push({
                 id: "coord" + items.length,
@@ -102,8 +102,8 @@ function coordinatesSearch(text, requestId, searchOptions, dispatch) {
                 bbox: [x, y, x, y]
             });
         }
-        if(x >= -90 && x <= 90 && y >= -180 && y <= 180 && x != y) {
-            let title = Math.abs(y) + (y >= 0 ? "°E" : "°W") + ", "
+        if (x >= -90 && x <= 90 && y >= -180 && y <= 180 && x != y) {
+            const title = Math.abs(y) + (y >= 0 ? "°E" : "°W") + ", "
                       + Math.abs(x) + (x >= 0 ? "°N" : "°S");
             items.push({
                 id: "coord" + items.length,
@@ -115,8 +115,8 @@ function coordinatesSearch(text, requestId, searchOptions, dispatch) {
             });
         }
     }
-    let results = [];
-    if(items.length > 0) {
+    const results = [];
+    if (items.length > 0) {
         results.push(
             {
                 id: "coords",
@@ -128,31 +128,30 @@ function coordinatesSearch(text, requestId, searchOptions, dispatch) {
     dispatch(addSearchResults({data: results, provider: "coordinates", reqId: requestId}, true));
 }
 
-////////////////////////////////////////////////////////////////////////////////
+/** ************************************************************************ **/
 
 function geoAdminLocationSearch(text, requestId, searchOptions, dispatch) {
-    axios.get("http://api3.geo.admin.ch/rest/services/api/SearchServer?searchText="+ encodeURIComponent(text) + "&type=locations&limit=20")
-    .then(response => dispatch(geoAdminLocationSearchResults(response.data, requestId)));
+    axios.get("http://api3.geo.admin.ch/rest/services/api/SearchServer?searchText=" + encodeURIComponent(text) + "&type=locations&limit=20")
+        .then(response => dispatch(geoAdminLocationSearchResults(response.data, requestId)));
 }
 
 function parseItemBBox(bboxstr) {
-    if(bboxstr === undefined) {
+    if (bboxstr === undefined) {
         return null;
     }
-    let matches = bboxstr.match(/^BOX\s*\(\s*(\d+\.?\d*)\s*(\d+\.?\d*)\s*,\s*(\d+\.?\d*)\s*(\d+\.?\d*)\s*\)$/);
-    if(matches && matches.length < 5) {
+    const matches = bboxstr.match(/^BOX\s*\(\s*(\d+\.?\d*)\s*(\d+\.?\d*)\s*,\s*(\d+\.?\d*)\s*(\d+\.?\d*)\s*\)$/);
+    if (matches && matches.length < 5) {
         return null;
     }
-    let xmin = parseFloat(matches[1]);
-    let ymin = parseFloat(matches[2]);
-    let xmax = parseFloat(matches[3]);
-    let ymax = parseFloat(matches[4]);
+    const xmin = parseFloat(matches[1]);
+    const ymin = parseFloat(matches[2]);
+    const xmax = parseFloat(matches[3]);
+    const ymax = parseFloat(matches[4]);
     return CoordinatesUtils.reprojectBbox([xmin, ymin, xmax, ymax], "EPSG:21781", "EPSG:4326");
 }
 
-function geoAdminLocationSearchResults(obj, requestId)
-{
-    let categoryMap = {
+function geoAdminLocationSearchResults(obj, requestId) {
+    const categoryMap = {
         gg25: "Municipalities",
         kantone: "Cantons",
         district: "Districts",
@@ -161,17 +160,17 @@ function geoAdminLocationSearchResults(obj, requestId)
         address: "Address",
         gazetteer: "General place name directory"
     };
-    let resultGroups = {};
+    const resultGroups = {};
     (obj.results || []).map(entry => {
-        if(resultGroups[entry.attrs.origin] == undefined) {
+        if (resultGroups[entry.attrs.origin] === undefined) {
             resultGroups[entry.attrs.origin] = {
                 id: entry.attrs.origin,
                 title: categoryMap[entry.attrs.origin] || entry.attrs.origin,
                 items: []
-            }
+            };
         }
-        let x = entry.attrs.lon;
-        let y = entry.attrs.lat;
+        const x = entry.attrs.lon;
+        const y = entry.attrs.lat;
         resultGroups[entry.attrs.origin].items.push({
             id: entry.id,
             text: entry.attrs.label,
@@ -182,27 +181,27 @@ function geoAdminLocationSearchResults(obj, requestId)
             provider: "geoadmin"
         });
     });
-    let results = [];
-    for(let key in resultGroups) {
+    const results = [];
+    for (const key of resultGroups) {
         results.push(resultGroups[key]);
     }
     return addSearchResults({data: results, provider: "geoadmin", reqId: requestId}, true);
 }
 
-////////////////////////////////////////////////////////////////////////////////
+/** ************************************************************************ **/
 
 function usterSearch(text, requestId, searchOptions, dispatch) {
-    axios.get("https://webgis.uster.ch/wsgi/search.wsgi?&searchtables=&query="+ encodeURIComponent(text))
-    .then(response => dispatch(usterSearchResults(response.data, requestId)));
+    axios.get("https://webgis.uster.ch/wsgi/search.wsgi?&searchtables=&query=" + encodeURIComponent(text))
+        .then(response => dispatch(usterSearchResults(response.data, requestId)));
 }
 
 function usterSearchResults(obj, requestId) {
-    let results = [];
+    const results = [];
     let currentgroup = null;
     let groupcounter = 0;
     let counter = 0;
     (obj.results || []).map(entry => {
-        if(!entry.bbox) {
+        if (!entry.bbox) {
             // Is group
             currentgroup = {
                 id: "ustergroup" + (groupcounter++),
@@ -210,7 +209,7 @@ function usterSearchResults(obj, requestId) {
                 items: []
             };
             results.push(currentgroup);
-        } else if(currentgroup) {
+        } else if (currentgroup) {
             currentgroup.items.push({
                 id: "usterresult" + (counter++),
                 text: entry.displaytext,
@@ -226,13 +225,12 @@ function usterSearchResults(obj, requestId) {
     return addSearchResults({data: results, provider: "uster", reqId: requestId}, true);
 }
 
-function usterResultGeometry(resultItem, callback)
-{
-    axios.get("https://webgis.uster.ch/wsgi/getSearchGeom.wsgi?searchtable="+ encodeURIComponent(resultItem.searchtable) + "&displaytext=" + encodeURIComponent(resultItem.text))
-    .then(response => callback(resultItem, response.data, "EPSG:21781"));
+function usterResultGeometry(resultItem, callback) {
+    axios.get("https://webgis.uster.ch/wsgi/getSearchGeom.wsgi?searchtable=" + encodeURIComponent(resultItem.searchtable) + "&displaytext=" + encodeURIComponent(resultItem.text))
+        .then(response => callback(resultItem, response.data, "EPSG:21781"));
 }
 
-////////////////////////////////////////////////////////////////////////////////
+/** ************************************************************************ **/
 
 function wolfsburgSearch(text, requestId, searchOptions, dispatch) {
     axios.get("https://geoportal.stadt.wolfsburg.de/wsgi/search.wsgi", {params: {
@@ -249,7 +247,7 @@ function wolfsburgSearch(text, requestId, searchOptions, dispatch) {
 }
 
 function wolfsburgSearchResults(obj, requestId) {
-    let results = [];
+    const results = [];
     let currentgroup = null;
     let groupcounter = 0;
     let counter = 0;
@@ -286,40 +284,42 @@ function wolfsburgResultGeometry(resultItem, callback) {
     }}).then(response => callback(resultItem, response.data, "EPSG:25832"));
 }
 
-////////////////////////////////////////////////////////////////////////////////
+/** ************************************************************************ **/
 
 function glarusSearch(text, requestId, searchOptions, dispatch) {
-    let limit = 9;
-    axios.get("https://map.geo.gl.ch/search/all?limit=" + limit + "&query="+ encodeURIComponent(text))
-    .then(response => dispatch(glarusSearchResults(response.data, requestId, limit)))
-    .catch(error => dispatch(glarusSearchResults({}, requestId, limit)));
+    const limit = 9;
+    axios.get("https://map.geo.gl.ch/search/all?limit=" + limit + "&query=" + encodeURIComponent(text))
+        .then(response => dispatch(glarusSearchResults(response.data, requestId, limit)))
+        .catch(() => dispatch(glarusSearchResults({}, requestId, limit)));
 }
 
 function glarusMoreResults(moreItem, text, requestId, dispatch) {
-    axios.get("https://map.geo.gl.ch/search/" + moreItem.category + "?query="+ encodeURIComponent(text))
-    .then(response => dispatch(glarusSearchResults(response.data, requestId)))
-    .catch(error => dispatch(glarusSearchResults({}, requestId)));
+    axios.get("https://map.geo.gl.ch/search/" + moreItem.category + "?query=" + encodeURIComponent(text))
+        .then(response => dispatch(glarusSearchResults(response.data, requestId)))
+        .catch(() => dispatch(glarusSearchResults({}, requestId)));
 }
 
 function glarusSearchResults(obj, requestId, limit = -1) {
-    let results = [];
+    const results = [];
     let idcounter = 0;
     (obj.results || []).map(group => {
-        let groupResult = {
+        const groupResult = {
             id: group.category,
             title: group.name,
-            items: group.features.map(item => { return {
-                id: item.id,
-                text: item.name,
-                bbox: item.bbox.slice(0),
-                x: 0.5 * (item.bbox[0] + item.bbox[2]),
-                y: 0.5 * (item.bbox[1] + item.bbox[3]),
-                crs: "EPSG:2056",
-                provider: "glarus",
-                category: group.category
-            }})
+            items: group.features.map(item => {
+                return {
+                    id: item.id,
+                    text: item.name,
+                    bbox: item.bbox.slice(0),
+                    x: 0.5 * (item.bbox[0] + item.bbox[2]),
+                    y: 0.5 * (item.bbox[1] + item.bbox[3]),
+                    crs: "EPSG:2056",
+                    provider: "glarus",
+                    category: group.category
+                };
+            })
         };
-        if(limit >= 0 && group.features.length > limit) {
+        if (limit >= 0 && group.features.length > limit) {
             groupResult.items.push({
                 id: "glarusmore" + (idcounter++),
                 more: true,
@@ -334,14 +334,14 @@ function glarusSearchResults(obj, requestId, limit = -1) {
 
 function glarusResultGeometry(resultItem, callback) {
     axios.get("https://map.geo.gl.ch/search/" + resultItem.category + "/geometry?id=" + resultItem.id)
-    .then(response => callback(resultItem, response.data, "EPSG:2056"));
+        .then(response => callback(resultItem, response.data, "EPSG:2056"));
 }
 
-///////////////////////////////////////////////////////////////////////////////
+/** ************************************************************************ **/
 
 function nominatimSearchResults(obj, requestId) {
-    let results = [];
-    let groups = {};
+    const results = [];
+    const groups = {};
     let groupcounter = 0;
 
     (obj || []).map(entry => {
@@ -358,10 +358,10 @@ function nominatimSearchResults(obj, requestId) {
         // shorten display_name
         let text = entry.display_name.split(', ').slice(0, 3).join(', ');
         // map label
-        let label = text;
+        const label = text;
 
         // collect address fields
-        let address = [];
+        const address = [];
         if (entry.address.town) {
             address.push(entry.address.town);
         }
@@ -380,7 +380,7 @@ function nominatimSearchResults(obj, requestId) {
 
         // reorder coords from [miny, maxy, minx, maxx] to [minx, miny, maxx, maxy]
         const b = entry.boundingbox.map(coord => parseFloat(coord));
-        let bbox = [b[2], b[0], b[3], b[1]];
+        const bbox = [b[2], b[0], b[3], b[1]];
 
         groups[entry.class].items.push({
             id: entry.place_id,
@@ -406,22 +406,21 @@ function nominatimSearch(text, requestId, searchOptions, dispatch) {
     }}).then(response => dispatch(nominatimSearchResults(response.data, requestId)));
 }
 
-///////////////////////////////////////////////////////////////////////////////
+/** ************************************************************************ **/
 
-function parametrizedSearch(cfg, text, requestId, searchOptions, dispatch)
-{
-    let SEARCH_URL = ""; // ...
+function parametrizedSearch(cfg, text, requestId, searchOptions, dispatch) {
+    const SEARCH_URL = ""; // ...
     axios.get(SEARCH_URL + "?param=" + cfg.param + "&searchtext=" + encodeURIComponent(text))
         .then(response => dispatch(addSearchResults({data: response.data, provider: cfg.key, reqId: requestId})))
-        .catch(error => dispatch(addSearchResults({data: [], provider: cfg.key, reqId: requestId})));
+        .catch(() => dispatch(addSearchResults({data: [], provider: cfg.key, reqId: requestId})));
 }
 
-///////////////////////////////////////////////////////////////////////////////
+/** ************************************************************************ **/
 
 function layerSearch(text, requestId, searchOptions, dispatch) {
-    let results = [];
-    if(text === "bahnhof") {
-        let layer = {
+    const results = [];
+    if (text === "bahnhof") {
+        const layer = {
             sublayers: [
                 {
                     name: "a",
@@ -456,40 +455,40 @@ function layerSearch(text, requestId, searchOptions, dispatch) {
     dispatch(addSearchResults({data: results, provider: "layers", reqId: requestId}, true));
 }
 
-////////////////////////////////////////////////////////////////////////////////
+/** ************************************************************************ **/
 
 module.exports = {
     SearchProviders: {
-        "coordinates": {
+        coordinates: {
             labelmsgid: "search.coordinates",
             onSearch: coordinatesSearch
         },
-        "geoadmin": {
+        geoadmin: {
             label: "Swisstopo",
             onSearch: geoAdminLocationSearch,
             requiresLayer: "a" // Make provider availability depend on the presence of a theme WMS layer
         },
-        "uster": {
+        uster: {
             label: "Uster",
             onSearch: usterSearch,
             getResultGeometry: usterResultGeometry
         },
-        "wolfsburg": {
+        wolfsburg: {
             label: "Wolfsburg",
             onSearch: wolfsburgSearch,
             getResultGeometry: wolfsburgResultGeometry
         },
-        "glarus": {
+        glarus: {
             label: "Glarus",
             onSearch: glarusSearch,
             getResultGeometry: glarusResultGeometry,
             getMoreResults: glarusMoreResults
         },
-        "nominatim": {
+        nominatim: {
             label: "OpenStreetMap",
             onSearch: nominatimSearch
         },
-        "layers": {
+        layers: {
             label: "Layers",
             onSearch: layerSearch
         }

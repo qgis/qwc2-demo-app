@@ -33,10 +33,10 @@ module.exports = {
             TaskButtonPlugin: require('qwc2/plugins/TaskButton'),
             BackgroundSwitcherPlugin: require('qwc2/plugins/BackgroundSwitcher'),
             TopBarPlugin: require('qwc2/plugins/TopBar')({
-                 AppMenu: require("qwc2/components/AppMenu"),
-                 Search: require("qwc2/components/Search")(SearchProviders, searchProviderFactory),
-                 Toolbar: require("qwc2/components/Toolbar"),
-                 FullscreenSwitcher: require("qwc2/components/FullscreenSwitcher")
+                AppMenu: require("qwc2/components/AppMenu"),
+                Search: require("qwc2/components/Search")(SearchProviders, searchProviderFactory),
+                Toolbar: require("qwc2/components/Toolbar"),
+                FullscreenSwitcher: require("qwc2/components/FullscreenSwitcher")
             }),
             BottomBarPlugin: require('qwc2/plugins/BottomBar'),
             MeasurePlugin: require('qwc2/plugins/Measure'),
