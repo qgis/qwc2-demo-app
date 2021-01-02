@@ -102,7 +102,7 @@ function coordinatesSearch(text, requestId, searchOptions, dispatch) {
                 bbox: [x, y, x, y]
             });
         }
-        if (x >= -90 && x <= 90 && y >= -180 && y <= 180 && x != y) {
+        if (x >= -90 && x <= 90 && y >= -180 && y <= 180 && x !== y) {
             const title = Math.abs(y) + (y >= 0 ? "°E" : "°W") + ", "
                       + Math.abs(x) + (x >= 0 ? "°N" : "°S");
             items.push({
@@ -181,10 +181,7 @@ function geoAdminLocationSearchResults(obj, requestId) {
             provider: "geoadmin"
         });
     });
-    const results = [];
-    for (const key of resultGroups) {
-        results.push(resultGroups[key]);
-    }
+    const results = Object.values(resultGroups);
     return addSearchResults({data: results, provider: "geoadmin", reqId: requestId}, true);
 }
 
