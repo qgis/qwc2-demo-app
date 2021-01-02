@@ -12,7 +12,7 @@ Some examples of QWC2 production deployments:
 
 ## [Quick start](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md#quick-start)
 ## [Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md)
-## [Change log](https://github.com/qgis/qwc2-demo-app/blob/master/ChangeLog.md)
+## [Upgrade notes](https://github.com/qgis/qwc2-demo-app/blob/master/UpgradeNotes.md)
 ## [Mailing list](https://lists.osgeo.org/mailman/listinfo/qgis-qwc2)
 
 ![Screenshot](https://github.com/qgis/qwc2-demo-app/blob/gh-pages/Screenshot.jpg?raw=true)
