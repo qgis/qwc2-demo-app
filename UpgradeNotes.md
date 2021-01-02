@@ -3,8 +3,18 @@ Upgrade notes
 
 This document describes incompatibilites and other aspects which QWC2 applications need to address when updating against the latest qwc2 submodule.
 
+When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
+
 Update to qwc2 submodule revison [e8176bd](https://github.com/qgis/qwc2/tree/e8176bd) (03.01.2021)
 --------------------------------------------------------------------------------------------------
+
+**Updated dependencies**
+
+Many dependencies in the `qwc2` submodule have been update, please run `yarn install` to update them in your application.
+
+In the demo app, also many dependencies in the application `package.json` have been updated.
+It's recommended to synchronize the application `package.json` and `webpack.config.js` with the ones of the demo app.
+
 
 **Plugins do not need to specify the reducers they use anymore**
 
