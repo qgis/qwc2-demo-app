@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 const os = require('os');
 const styleConfig = require("./styleConfig");
 
@@ -13,16 +14,8 @@ const plugins = [
   new webpack.DefinePlugin({
     'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }
   }),
-  new webpack.NamedModulesPlugin(),
-  new webpack.DefinePlugin({
-    "__DEVTOOLS__": !isProd
-  }),
   new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "qwc2", "libs", "openlayers")),
-  new webpack.NoEmitOnErrorsPlugin(),
-  new webpack.LoaderOptionsPlugin({
-      debug: !isProd,
-      minimize: isProd
-  })
+  new webpack.NoEmitOnErrorsPlugin()
 ];
 
 if (!isProd) {
@@ -31,7 +24,7 @@ if (!isProd) {
 
 module.exports = {
   devtool: isProd ? 'source-map' : 'eval',
-  mode: nodeEnv === "production" ? "production" : "development",
+  mode: isProd ? "production" : "development",
   entry: {
     'webpack-dev-server': 'webpack-dev-server/client?http://0.0.0.0:8081',
     'webpack': 'webpack/hot/only-dev-server',
@@ -105,5 +98,11 @@ module.exports = {
     hot: true,
     contentBase: './',
     publicPath: '/dist'
+  },
+  optimization: {
+    minimize: isProd,
+    minimizer: [
+      new TerserPlugin({parallel: true})
+    ]
   }
 };

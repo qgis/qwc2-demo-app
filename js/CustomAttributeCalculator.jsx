@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-function customAttributeCalculator(layer, feature) {
+export function customAttributeCalculator(layer, feature) {
     // Here you can dynamically return additional attribute values for the
     // identify dialog, possibly depending on the passed layer and feature.
     // Return a list of <tr> elements i.e.:
@@ -19,5 +19,3 @@ function customAttributeCalculator(layer, feature) {
     //   )];
     return [];
 }
-
-module.exports = customAttributeCalculator;

@@ -6,12 +6,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require('react');
-const ReactDOM = require('react-dom');
-
-const StandardApp = require('qwc2/components/StandardApp');
-const appConfig = require('./appConfig');
-require('../icons/build/qwc2-icons.css');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import StandardApp from 'qwc2/components/StandardApp';
+import appConfig from './appConfig';
+import '../icons/build/qwc2-icons.css';
 
 ReactDOM.render(
     <StandardApp appConfig={appConfig}/>,

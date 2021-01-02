@@ -6,65 +6,111 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const {SearchProviders, searchProviderFactory} = require('./SearchProviders');
-const EditingInterface = require('./EditingInterface');
-const renderHelp = require('./Help');
+import {SearchProviders, searchProviderFactory} from './SearchProviders';
+import {renderHelp} from './Help';
 
-module.exports = {
+import MapPlugin from 'qwc2/plugins/Map';
+import EditingSupport from 'qwc2/plugins/map/EditingSupport';
+import MeasurementSupport from 'qwc2/plugins/map/MeasurementSupport';
+import LocateSupport from 'qwc2/plugins/map/LocateSupport';
+import OverviewSupport from 'qwc2/plugins/map/OverviewSupport';
+import RedliningSupport from 'qwc2/plugins/map/RedliningSupport';
+import ScaleBarSupport from 'qwc2/plugins/map/ScaleBarSupport';
+import SelectionSupport from 'qwc2/plugins/map/SelectionSupport';
+import HomeButtonPlugin from 'qwc2/plugins/HomeButton';
+import LocateButtonPlugin from 'qwc2/plugins/LocateButton';
+import {ZoomInPlugin, ZoomOutPlugin} from 'qwc2/plugins/ZoomButtons';
+import TaskButtonPlugin from 'qwc2/plugins/TaskButton';
+import BackgroundSwitcherPlugin from 'qwc2/plugins/BackgroundSwitcher';
+import TopBarPlugin from 'qwc2/plugins/TopBar';
+import AppMenu from 'qwc2/components/AppMenu';
+import Search from 'qwc2/components/Search';
+import Toolbar from 'qwc2/components/Toolbar';
+import FullscreenSwitcher from 'qwc2/components/FullscreenSwitcher';
+import BottomBarPlugin from 'qwc2/plugins/BottomBar';
+import MeasurePlugin from 'qwc2/plugins/Measure';
+import ThemeSwitcherPlugin from 'qwc2/plugins/ThemeSwitcher';
+import LayerTreePlugin from 'qwc2/plugins/LayerTree';
+import IdentifyPlugin from 'qwc2/plugins/Identify';
+import MapTipPlugin from 'qwc2/plugins/MapTip';
+import SharePlugin from 'qwc2/plugins/Share';
+import MapCopyrightPlugin from 'qwc2/plugins/MapCopyright';
+import PrintPlugin from 'qwc2/plugins/Print';
+import HelpPlugin from 'qwc2/plugins/Help';
+import DxfExportPlugin from 'qwc2/plugins/DxfExport';
+import RasterExportPlugin from 'qwc2/plugins/RasterExport';
+import RedliningPlugin from 'qwc2/plugins/Redlining';
+import BufferSupport from 'qwc2/plugins/redlining/RedliningBufferSupport';
+import EditingPlugin from 'qwc2/plugins/Editing';
+import MapComparePlugin from 'qwc2/plugins/MapCompare';
+import HeightProfilePlugin from 'qwc2/plugins/HeightProfile';
+import MapInfoTooltipPlugin from 'qwc2/plugins/MapInfoTooltip';
+import IdentifyRegionPlugin from 'qwc2/plugins/IdentifyRegion';
+import StartupMarkerPlugin from 'qwc2/plugins/StartupMarker';
+import ScratchDrawingPlugin from 'qwc2/plugins/ScratchDrawing';
+import APIPlugin from 'qwc2/plugins/API';
+import {customAttributeCalculator} from './CustomAttributeCalculator';
+
+import defaultLocaleData from '../translations/en-US.json';
+
+export default {
+    defaultLocaleData: defaultLocaleData,
     initialState: {
         defaultState: {},
         mobile: {}
     },
     pluginsDef: {
         plugins: {
-            MapPlugin: require('qwc2/plugins/Map')({
-                EditingSupport: require('qwc2/plugins/map/EditingSupport'),
-                MeasurementSupport: require('qwc2/plugins/map/MeasurementSupport'),
-                LocateSupport: require('qwc2/plugins/map/LocateSupport'),
-                OverviewSupport: require('qwc2/plugins/map/OverviewSupport'),
-                RedliningSupport: require('qwc2/plugins/map/RedliningSupport'),
-                ScaleBarSupport: require('qwc2/plugins/map/ScaleBarSupport'),
-                SelectionSupport: require('qwc2/plugins/map/SelectionSupport')
+            MapPlugin: MapPlugin({
+                EditingSupport: EditingSupport,
+                MeasurementSupport: MeasurementSupport,
+                LocateSupport: LocateSupport,
+                OverviewSupport: OverviewSupport,
+                RedliningSupport: RedliningSupport,
+                ScaleBarSupport: ScaleBarSupport,
+                SelectionSupport: SelectionSupport
             }),
-            HomeButtonPlugin: require('qwc2/plugins/HomeButton'),
-            LocateButtonPlugin: require('qwc2/plugins/LocateButton'),
-            ZoomInPlugin: require('qwc2/plugins/ZoomButtons'),
-            ZoomOutPlugin: require('qwc2/plugins/ZoomButtons'),
-            TaskButtonPlugin: require('qwc2/plugins/TaskButton'),
-            BackgroundSwitcherPlugin: require('qwc2/plugins/BackgroundSwitcher'),
-            TopBarPlugin: require('qwc2/plugins/TopBar')({
-                AppMenu: require("qwc2/components/AppMenu"),
-                Search: require("qwc2/components/Search")(SearchProviders, searchProviderFactory),
-                Toolbar: require("qwc2/components/Toolbar"),
-                FullscreenSwitcher: require("qwc2/components/FullscreenSwitcher")
+            HomeButtonPlugin: HomeButtonPlugin,
+            LocateButtonPlugin: LocateButtonPlugin,
+            ZoomInPlugin: ZoomInPlugin,
+            ZoomOutPlugin: ZoomOutPlugin,
+            TaskButtonPlugin: TaskButtonPlugin,
+            BackgroundSwitcherPlugin: BackgroundSwitcherPlugin,
+            TopBarPlugin: TopBarPlugin({
+                AppMenu: AppMenu,
+                Search: Search(SearchProviders, searchProviderFactory),
+                Toolbar: Toolbar,
+                FullscreenSwitcher: FullscreenSwitcher
             }),
-            BottomBarPlugin: require('qwc2/plugins/BottomBar'),
-            MeasurePlugin: require('qwc2/plugins/Measure'),
-            ThemeSwitcherPlugin: require('qwc2/plugins/ThemeSwitcher'),
-            LayerTreePlugin: require('qwc2/plugins/LayerTree'),
-            IdentifyPlugin: require('qwc2/plugins/Identify'),
-            MapTipPlugin: require('qwc2/plugins/MapTip'),
-            SharePlugin: require('qwc2/plugins/Share'),
-            MapCopyrightPlugin: require('qwc2/plugins/MapCopyright'),
-            PrintPlugin: require('qwc2/plugins/Print'),
-            HelpPlugin: require('qwc2/plugins/Help')(renderHelp),
-            DxfExportPlugin: require('qwc2/plugins/DxfExport'),
-            RasterExportPlugin: require('qwc2/plugins/RasterExport'),
-            RedliningPlugin: require('qwc2/plugins/Redlining')({
-                // BufferSupport: require('qwc2/plugins/redlining/RedliningBufferSupport')
+            BottomBarPlugin: BottomBarPlugin,
+            MeasurePlugin: MeasurePlugin,
+            ThemeSwitcherPlugin: ThemeSwitcherPlugin,
+            LayerTreePlugin: LayerTreePlugin,
+            IdentifyPlugin: IdentifyPlugin,
+            MapTipPlugin: MapTipPlugin,
+            SharePlugin: SharePlugin,
+            MapCopyrightPlugin: MapCopyrightPlugin,
+            PrintPlugin: PrintPlugin,
+            HelpPlugin: HelpPlugin(renderHelp),
+            DxfExportPlugin: DxfExportPlugin,
+            RasterExportPlugin: RasterExportPlugin,
+            RedliningPlugin: RedliningPlugin({
+                BufferSupport: BufferSupport
             }),
-            EditingPlugin: require('qwc2/plugins/Editing')(EditingInterface),
-            MapComparePlugin: require('qwc2/plugins/MapCompare'),
-            HeightProfilePlugin: require('qwc2/plugins/HeightProfile'),
-            MapInfoTooltipPlugin: require('qwc2/plugins/MapInfoTooltip'),
-            IdentifyRegionPlugin: require('qwc2/plugins/IdentifyRegion'),
-            StartupMarkerPlugin: require('qwc2/plugins/StartupMarker'),
-            ScratchDrawingPlugin: require('qwc2/plugins/ScratchDrawing'),
-            APIPlugin: require('qwc2/plugins/API')
+            // Per default the editing interface qwc2/utils/EditingInterface.js is used
+            // You can pass a custom editing interface here if desired
+            EditingPlugin: EditingPlugin(/* CustomEditingInterface */),
+            MapComparePlugin: MapComparePlugin,
+            HeightProfilePlugin: HeightProfilePlugin,
+            MapInfoTooltipPlugin: MapInfoTooltipPlugin,
+            IdentifyRegionPlugin: IdentifyRegionPlugin,
+            StartupMarkerPlugin: StartupMarkerPlugin,
+            ScratchDrawingPlugin: ScratchDrawingPlugin,
+            APIPlugin: APIPlugin
         },
         cfg: {
             IdentifyPlugin: {
-                attributeCalculator: require('./CustomAttributeCalculator')
+                attributeCalculator: customAttributeCalculator
             }
         }
     },
@@ -83,8 +129,7 @@ module.exports = {
         let newLayerNames = {};
 
         callback(newLayers, newLayerNames);
-    },
-    defaultLocaleData: require('../translations/en-US.json')
+    }
     /*externalLayerRestorer: (externalLayers, themes, callback) => {
         // Optional function to handle restoring of external layers from the l URL parameter
         // If omitted, the default handler is used which downloads capabilities for each service to restore the layer

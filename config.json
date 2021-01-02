@@ -1,8 +1,8 @@
 {
-  "proxyServiceUrl": "",
-  "permalinkServiceUrl": "http://localhost:5001/",
+  "editServiceUrl": "http://localhost:5012/",
+  "mapInfoService":  "http://localhost:5016/",
+  "permalinkServiceUrl": "http://localhost:5018/",
   "elevationServiceUrl": "http://localhost:5002/",
-  "mapInfoService":  "http://localhost:8093/",
   "featureReportService": "http://localhost:5020/",
   "translationsPath": "/translations",
   "fallbackLocale": "en-US",
@@ -35,6 +35,9 @@
     "textStroke": "white",
     "textFont": "11pt sans-serif"
   },
+  "importLayerUrlPresets": [
+      {"label": "Swisstopo WMTS", "value": "https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml"}
+  ],
   "projections": [
     {
       "code": "EPSG:32632",

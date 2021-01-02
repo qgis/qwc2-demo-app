@@ -69,9 +69,9 @@ Format of search results:
 
 */
 
-const axios = require('axios');
-const {addSearchResults, SearchResultType} = require("qwc2/actions/search");
-const CoordinatesUtils = require('qwc2/utils/CoordinatesUtils');
+import axios from 'axios';
+import {addSearchResults, SearchResultType} from "qwc2/actions/search";
+import CoordinatesUtils from 'qwc2/utils/CoordinatesUtils';
 
 function coordinatesSearch(text, requestId, searchOptions, dispatch) {
     const displaycrs = searchOptions.displaycrs || "EPSG:4326";
@@ -457,50 +457,49 @@ function layerSearch(text, requestId, searchOptions, dispatch) {
 
 /** ************************************************************************ **/
 
-module.exports = {
-    SearchProviders: {
-        coordinates: {
-            labelmsgid: "search.coordinates",
-            onSearch: coordinatesSearch
-        },
-        geoadmin: {
-            label: "Swisstopo",
-            onSearch: geoAdminLocationSearch,
-            requiresLayer: "a" // Make provider availability depend on the presence of a theme WMS layer
-        },
-        uster: {
-            label: "Uster",
-            onSearch: usterSearch,
-            getResultGeometry: usterResultGeometry
-        },
-        wolfsburg: {
-            label: "Wolfsburg",
-            onSearch: wolfsburgSearch,
-            getResultGeometry: wolfsburgResultGeometry
-        },
-        glarus: {
-            label: "Glarus",
-            onSearch: glarusSearch,
-            getResultGeometry: glarusResultGeometry,
-            getMoreResults: glarusMoreResults
-        },
-        nominatim: {
-            label: "OpenStreetMap",
-            onSearch: nominatimSearch
-        },
-        layers: {
-            label: "Layers",
-            onSearch: layerSearch
-        }
+export const SearchProviders = {
+    coordinates: {
+        labelmsgid: "search.coordinates",
+        onSearch: coordinatesSearch
     },
-    searchProviderFactory: (cfg) => {
-        // Note: cfg corresponds to an entry of the theme searchProviders array in themesConfig.json, in this case
-        //   { key: <providerKey>, label: <label>, param: <param>, ...}
-        // The entry must have at least a `key`.
-        return {
-            label: cfg.label,
-            onSearch: (text, requestId, searchOptions, dispatch) => parametrizedSearch(cfg, text, requestId, searchOptions, dispatch),
-            requiresLayer: cfg.layerName
-        };
+    geoadmin: {
+        label: "Swisstopo",
+        onSearch: geoAdminLocationSearch,
+        requiresLayer: "a" // Make provider availability depend on the presence of a theme WMS layer
+    },
+    uster: {
+        label: "Uster",
+        onSearch: usterSearch,
+        getResultGeometry: usterResultGeometry
+    },
+    wolfsburg: {
+        label: "Wolfsburg",
+        onSearch: wolfsburgSearch,
+        getResultGeometry: wolfsburgResultGeometry
+    },
+    glarus: {
+        label: "Glarus",
+        onSearch: glarusSearch,
+        getResultGeometry: glarusResultGeometry,
+        getMoreResults: glarusMoreResults
+    },
+    nominatim: {
+        label: "OpenStreetMap",
+        onSearch: nominatimSearch
+    },
+    layers: {
+        label: "Layers",
+        onSearch: layerSearch
     }
 };
+
+export function searchProviderFactory(cfg) {
+    // Note: cfg corresponds to an entry of the theme searchProviders array in themesConfig.json, in this case
+    //   { key: <providerKey>, label: <label>, param: <param>, ...}
+    // The entry must have at least a `key`.
+    return {
+        label: cfg.label,
+        onSearch: (text, requestId, searchOptions, dispatch) => parametrizedSearch(cfg, text, requestId, searchOptions, dispatch),
+        requiresLayer: cfg.layerName
+    };
+}
