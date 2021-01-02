@@ -53,6 +53,12 @@ becomes
 
 In particular, `js/appConfig.js` needs to be heavily adapted.
 
+**Update to React 16.14**
+
+As per React 16.3, various component lifecycle methods have been deprecated.
+All qwc2 core components are updated to avoid their use. Custom components should also be updated.
+See [https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html) for details.
+
 **New translation filenames**
 
 The translation files are now called `translations/<lang>-<COUNTRY>.json` rather than `translations/data.<lang>-<COUNTRY>`.
