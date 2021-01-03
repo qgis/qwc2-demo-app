@@ -47,6 +47,8 @@ The final step is to compile a deployable application bundle for production:
 
 You can then deploy the contents of the `prod` folder to your web server root. If you opt to deploy the application to a subfolder of the web server root, you will need to adjust the `assetsPath` and` translationsPath` settings in `config.json` accordingly.
 
+*Note*: On some Linux distributions, `yarn` may refer to the tool of the `cmdtest` software package, not the Yarn package manager. The latter might instead be called `yarnpkg`.
+
 
 ## QWC2 configuration
 

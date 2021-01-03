@@ -3476,6 +3476,11 @@ gensync@^1.0.0-beta.1:
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
   integrity sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==
 
+geojson-bounding-box@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/geojson-bounding-box/-/geojson-bounding-box-0.2.0.tgz#724b2e1be12671a07bea729da758d038d7d876ca"
+  integrity sha512-VmBZ1DC8q+0dNlphppacim000KUQU9Yw+Q8A8m8zuQ3D6zNdp3RGFZPI8zdTLaPXK6dCfJWuDYwle3t/iYWUYw==
+
 get-caller-file@^2.0.1:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
