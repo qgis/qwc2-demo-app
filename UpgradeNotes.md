@@ -5,7 +5,7 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
-Update to qwc2 submodule revison [e8176bd](https://github.com/qgis/qwc2/tree/e8176bd) (03.01.2021)
+Update to qwc2 submodule revision [e8176bd](https://github.com/qgis/qwc2/tree/e8176bd) (03.01.2021)
 --------------------------------------------------------------------------------------------------
 
 **Updated dependencies**
