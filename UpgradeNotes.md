@@ -69,12 +69,14 @@ As per React 16.3, various component lifecycle methods have been deprecated.
 All qwc2 core components are updated to avoid their use. Custom components should also be updated.
 See [https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html) for details.
 
-**React-intl upgrade, new translation filenames**
+**React-intl upgrade, new translation filenames, fallback locale**
 
 The translation files are now called `translations/<lang>-<COUNTRY>.json` rather than `translations/data.<lang>-<COUNTRY>`.
 The format of the files remains unchanged.
 
 The `supportedLocales` section in `appConfig.js` needs to be dropped.
+
+Previously, the fallback locale was specified as `fallbacklocale` in config.json. Now, it must be specified as `defaultLocaleData` in `appConfig.js`.
 
 **Default editing interface now shipped in the qwc2 submodule**
 
@@ -85,11 +87,10 @@ If you want to use a custom editing interface, you can still do so, passing it t
 **Assets and translations path now optional**
 
 Assets and translations path can now be omitted from the `config.json`, and are resolved to `assets` resp `translations` relative to the `index.html` path of the QWC2 application by default.
-You can still specify them in the `config.json` to override the default values.
 
-**Specifying the fallback locale**
+Use `ConfigUtils.getAssetsPath()` and `ConfigUtils.getTranslationsPath()` in your custom components instead of `ConfigUtils.getConfigProp`.
 
-Previously, the fallback locale was specified as `fallbacklocale` in config.json. Now, it must be specified as `defaultLocaleData` in `appConfig.js`.
+You can still specify `assetsPath` and `translationsPath` in `config.json` to override the default values.
 
 **Changes to map click point/feature state**
 
