@@ -509,18 +509,19 @@ A script will take care of merging the component translations into the applicati
 
     yarn run tsupdate
 
-Translations are stored inside the respective `translations` folder as regular plain-text JSON files, named `data.<locale>` and can be freely edited with any text editor.
+Translations are stored inside the respective `translations` folder as regular plain-text JSON files, named `<locale>.json` and can be freely edited with any text editor.
 
-The `tsconfig.json` files stored inside the respective `translations` folder contains the list of languages for which translations should be generated and a list of message IDs to include in the translation. The `tsupdate` script will read this file to automatically create resp. update the translation files.
+The `tsconfig.json` files stored inside the respective `translations` folder contains the list of languages for which translations should be generated and a list of message IDs to include in the translation. The `tsupdate` script will automatically scan for message IDs (looking for static strings passed to `LocaleUtils.tr` and `LocaleUtils.trmsg`), store these in `tsconfig.json` and automatically create resp. update the translation files.
 
-In some cases, it is desired to override a translation inherited from the QWC2 components at application level. To prevent `tsupdate` from continuously reverting the overridden translation, the respective message IDs can be added to the `overrides` section in the application `tsconfig.json` file.
+In some cases `tsconfig.json` will not pick up a message ID (for instance, if it is computed at runtime). In these cases, the message IDs can be added manually to the `extra_strings` section of the `tsconfig.json`.
+
+Also it may be desired to override a translation inherited from the QWC2 components at application level. To prevent `tsupdate` from continuously reverting the overridden translation, the respective message IDs can be added to the `overrides` section in the application `tsconfig.json` file.
 
 The typical workflow for managing application translations is:
 
 - Declare all locales which should be supported in `js/appConfig.js`.
 - Ensure these locales are listed in `translations/tsconfig.json`.
-- Add message IDs of any custom components (which are not part of the common QWC2 components) in `translations/tsconfig.json`.
-- Write the translated strings to the respective `data.<locale>` files.
+- Write the translated strings to the respective `<locale>.json` files.
 - Test the translation, specifying `locale=<locale>` in the QWC2 application URL.
 
 If translations of the QWC2 components for a desired language are missing, please create resp. update the translations respective files in `qwc2/translations` and contribute them by submitting a pull request to the [upstream qwc2 repository](https://github.com/qgis/qwc2).

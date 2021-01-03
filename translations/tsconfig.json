@@ -14,11 +14,12 @@
     "tr-TR",
     "cs-CZ"
   ],
-  "strings": [
+  "extra_strings": [
     "appmenu.items.ExternalLink",
     "search.coordinates"
   ],
   "overrides": [
     "bottombar.viewertitle_label"
-  ]
+  ],
+  "strings": []
 }

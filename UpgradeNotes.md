@@ -5,7 +5,7 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
-Update to qwc2 submodule revision [e8176bd](https://github.com/qgis/qwc2/tree/e8176bd) (03.01.2021)
+Update to qwc2 submodule revision [317eea3](https://github.com/qgis/qwc2/tree/317eea3) (03.01.2021)
 --------------------------------------------------------------------------------------------------
 
 **Updated dependencies**
@@ -69,14 +69,17 @@ As per React 16.3, various component lifecycle methods have been deprecated.
 All qwc2 core components are updated to avoid their use. Custom components should also be updated.
 See [https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html) for details.
 
-**React-intl upgrade, new translation filenames, fallback locale**
+**Reworked localization**
 
-The translation files are now called `translations/<lang>-<COUNTRY>.json` rather than `translations/data.<lang>-<COUNTRY>`.
-The format of the files remains unchanged.
-
-The `supportedLocales` section in `appConfig.js` needs to be dropped.
-
-Previously, the fallback locale was specified as `fallbacklocale` in config.json. Now, it must be specified as `defaultLocaleData` in `appConfig.js`.
+Localization in QWC2 has been reworked:
+- Instead of `<Message msgId="<msgid>" />` and `LocaleUtils.getMessageById()`, use `LocaleUtils.tr(<msgid>)`.
+- For message IDs which are not translated directly via `LocaleUtils.tr`, use `LocaleUtils.trmsg` to mark the string as a message ID.
+- The `Message` component has been dropped.
+- Static message IDs are now picked up automatically by `updateTranslations.js` (invoked by `yarn run tsupdate`).
+- Message IDs built at runtime will beed to be specified manually in `tsconfig.json` in the `extra_strings` section.
+- The translation files are now called `translations/<lang>-<COUNTRY>.json` rather than `translations/data.<lang>-<COUNTRY>`. The format of the files remains unchanged.
+- The `supportedLocales` section in `appConfig.js` needs to be dropped.
+- Previously, the fallback locale was specified as `fallbacklocale` in config.json. Now, it must be specified as `defaultLocaleData` in `appConfig.js`.
 
 **Default editing interface now shipped in the qwc2 submodule**
 
