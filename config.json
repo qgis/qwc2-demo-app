@@ -4,9 +4,6 @@
   "permalinkServiceUrl": "http://localhost:5018/",
   "elevationServiceUrl": "http://localhost:5002/",
   "featureReportService": "http://localhost:5020/",
-  "translationsPath": "/translations",
-  "fallbackLocale": "en-US",
-  "assetsPath": "/assets",
   "urlPositionFormat": "centerAndZoom",
   "urlPositionCrs": "",
   "omitUrlParameterUpdates": false,
@@ -144,6 +141,15 @@
           }
         },
         {
+          "name": "BottomBar",
+          "cfg": {
+            "displayCoordinates": false,
+            "displayScales": false,
+            "viewertitleUrl": "http://qgis.org/",
+            "termsUrl":  "http://qgis.org/"
+          }
+        },
+        {
           "name": "Identify",
           "cfg": {
             "params": {
@@ -192,7 +198,6 @@
             "allowImport": true,
             "groupTogglesSublayers": false,
             "grayUnchecked": false,
-            "flattenGroups": false,
             "layerInfoWindowSize": {"width": 480, "height": 400},
             "bboxDependentLegend": false
           },
@@ -372,7 +377,6 @@
             "allowImport": true,
             "groupTogglesSublayers": true,
             "grayUnchecked": false,
-            "flattenGroups": false,
             "layerInfoWindowSize": {"width": 480, "height": 400},
             "bboxDependentLegend": false,
             "showToggleAllLayersCheckbox": true
