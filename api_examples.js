@@ -102,6 +102,7 @@ window.onload = function() {
         <div><a href='#' onclick='toggleapidemo(event)'>Toggle API demo</a></div>\
         <div id='apidemo' style='display: none; padding: 0.25em;'>\
         <div><b>Note: These examples work with the <i>QWC2 Test 2056</i> theme</b></div>\
+        <div><i>You can remove this box by removing api_examples.js from index.html.</i></div>\
         <div>\
             <button onclick='addmarker(event)'>Add marker</button>\
             <button onclick='addpoly(event)'>Add poly</button>\
