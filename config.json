@@ -109,7 +109,7 @@
                   {"key": "IdentifyRegion", "icon": "identify_region"},
                   {"key": "Measure", "icon": "measure"},
                   {"key": "Redlining", "icon": "draw"},
-                  {"key": "Editing", "icon": "editing", "themeWhitelist": ["QWC2 Test 2056"]},
+                  {"key": "Editing", "icon": "editing", "themeWhitelist": ["Test"]},
                   {"key": "DxfExport", "icon": "dxfexport"},
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
@@ -323,7 +323,7 @@
                   {"key": "IdentifyRegion", "icon": "identify_region"},
                   {"key": "Measure", "icon": "measure"},
                   {"key": "Redlining", "icon": "draw"},
-                  {"key": "Editing", "icon": "editing", "themeWhitelist": ["QWC2 Test 2056"]},
+                  {"key": "Editing", "icon": "editing", "themeWhitelist": ["Test"]},
                   {"key": "DxfExport", "icon": "dxfexport"},
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},

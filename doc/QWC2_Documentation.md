@@ -175,7 +175,7 @@ where
 
 * `key`: The name of the plugin to activate when the entry is clicked, i.e. `LayerTree`. Also used to lookup the the label for the entry from the translations, using the `appmenu.items.<key>` message identifier (see <a href="#translations">Managing translations</a>).
 * `icon`: The icon of the entry, either a name (without the `.svg` extension) of an icon in `icons/`, or `:/<path_to_asset>` containing the path relative to `assetsPath` of an asset image.
-* `themeWhitelist`: Optional, allows specifying a whitelist of theme names for which the entry should be visible.
+* `themeWhitelist`: Optional, allows specifying a whitelist of theme names or titles for which the entry should be visible.
 * `mapClickAction`: Optional, takes precedence over the `mapClickAction` setting specified in the plugin configuration block, if any. See above.
 * `mode`: Optional, depending on the plugin, a mode can be configured to launch the plugin directly in a specific mode. For instance, the `Measure` plugin supports specifying the measurement mode (`Point`, `LineString`, `Polygon`).
 
