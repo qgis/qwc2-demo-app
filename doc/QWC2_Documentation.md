@@ -285,7 +285,8 @@ The format of the theme definitions is as follows:
 | `"format": "<mimetype>",`                     | Optional, the format to use for WMS GetMap. Defaults to `image/png`.             |
 | `"externalLayers": [{`                        | Optional, external layers to use as replacements for internal layers, see below. |
 | `  "name": "<external_layer_name>",`          | Name of the external layer, matching a `ExternalLayerDefinition`, see below.     |
-| `  "internalLayer": "<QGis_layer_name>",`     | Name of an internal layer, as contained in the QGIS project, to replace with the external layer. |
+| `  "internalLayer": "<QGis_layer_name>"`      | Name of an internal layer, as contained in the QGIS project, to replace with the external layer. |
+| `}],`                                         |                                                                                  |
 | `"themeInfoLinks": {`                         | Optional, custom links to additional resources, shown as a menu in the theme selector in the theme switcher.\
 | `  "title": "<Menu title>",`                  | An arbitrary string shown as title of the menu.                                  |
 | `  "titleMsgId": "<Menu title msgID>",`       | Alternative to `title`, a message ID, translated through the translation files.  |
