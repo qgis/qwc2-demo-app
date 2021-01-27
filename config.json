@@ -262,12 +262,14 @@
               "LocateSupport": {
                 "keepCurrentZoomLevel": true,
                 "stopFollowingOnDrag": true,
-                "startupMode": "FOLLOWING"
+                "startupMode": "DISABLED"
               },
               "ScaleBarSupport": {
                 "units": "metric"
               }
-            }
+            },
+            "swipeGeometryTypeBlacklist": ["Point"],
+            "swipeLayerNameBlacklist": ["*_noswipe"]
           }
         },
         {
