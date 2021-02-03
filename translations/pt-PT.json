@@ -1,5 +1,5 @@
 {
-  "locale": "pt-BR",
+  "locale": "pt-PT",
   "messages": {
     "appmenu": {
       "items": {
@@ -39,7 +39,7 @@
       "mousepos_label": "Coordenadas",
       "scale_label": "Scale",
       "terms_label": "Termos de uso",
-      "viewertitle_label": "QWC2 Demo"
+      "viewertitle_label": ""
     },
     "copybtn": {
       "click_to_copy": "Clique para copiar",
