@@ -570,6 +570,7 @@ The following parameters can appear in the URL of the QWC2 application:
 - `l`: The layers in the map, see below.
 - `bl`: The visible background layer
 - `st`: The search text
+- `sp`: Applied search provider when using `st` Parameter
 - `e`: The visible extent
 - `c`: The center of the visible extent
 - `s`: The current scale
