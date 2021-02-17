@@ -49,7 +49,9 @@
         }
         </style>
         <script type="text/javascript">
-        window.onload = function() { document.getElementById('splash').style.display = 'none'; }
+        window.addEventListener("load", function(ev) {
+            document.getElementById('splash').style.display = 'none';
+        }, false);
         </script>
         <script type="text/javascript" src="api_examples.js"></script>
     </head>
