@@ -38,7 +38,12 @@ module.exports = {
   plugins,
   resolve: {
     extensions: [".mjs", ".js", ".jsx"],
-    symlinks: false
+    symlinks: false,
+    fallback: {
+      "timers": false,
+      "stream": require.resolve("stream-browserify"),
+      "buffer": false
+    }
   },
   module: {
     rules: [
@@ -90,7 +95,12 @@ module.exports = {
       },
       {
         test: /\.mjs$/,
-        type: 'javascript/auto',
+        type: 'javascript/auto'
+    },
+    {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"]
       }
     ]
   },
