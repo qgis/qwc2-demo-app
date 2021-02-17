@@ -57,27 +57,27 @@ function zoomtohb(ev) {
     window.qwc2.zoomToExtent([2682576, 1247916, 2683339, 1248222], "EPSG:2056");
 }
 function drawpoint(ev) {
-    window.qwc2.drawScratch("Point", "Draw a point", true, (result, crs) => { console.log(result); console.log(crs); });
+    window.qwc2.drawScratch("Point", "Draw a point", true, function(result, crs) { console.log(result); console.log(crs); });
 }
 function drawline(ev) {
-    window.qwc2.drawScratch("LineString", "Draw a line", false, (result, crs) => { console.log(result); console.log(crs); });
+    window.qwc2.drawScratch("LineString", "Draw a line", false, function(result, crs) { console.log(result); console.log(crs); });
 }
 function drawpoly(ev) {
-    window.qwc2.drawScratch("Polygon", "Draw a polygon", false, (result, crs) => { console.log(result); console.log(crs); }, {
+    window.qwc2.drawScratch("Polygon", "Draw a polygon", false, function(result, crs) { console.log(result); console.log(crs); }, {
         borderColor: [0, 0, 255, 1],
         size: 2,
         fillColor:  [255, 255, 255, 0.5]
     });
 }
 function drawcircle(ev) {
-    window.qwc2.drawScratch("Circle", "Draw a circle", false, (result, crs) => { console.log(result); console.log(crs); }, {
+    window.qwc2.drawScratch("Circle", "Draw a circle", false, function(result, crs) { console.log(result); console.log(crs); }, {
         borderColor: [0, 0, 255, 1],
         size: 2,
         fillColor:  [255, 255, 255, 0.5]
     });
 }
 function drawbox(ev) {
-    window.qwc2.drawScratch("Box", "Draw a box", false, (result, crs) => { console.log(result); console.log(crs); }, {
+    window.qwc2.drawScratch("Box", "Draw a box", false, function(result, crs) { console.log(result); console.log(crs); }, {
         borderColor: [0, 0, 255, 1],
         size: 2,
         fillColor:  [255, 255, 255, 0.5]
