@@ -43,20 +43,5 @@
         "tsupdate": "node qwc2/scripts/updateTranslations.js",
         "analyze": "node -e \"process.exit(require('os').platform() === 'win32' ? 0 : 1)\" && qwc2\\scripts\\package-commands.bat analyze || ./qwc2/scripts/package-commands.sh analyze",
         "release": "node -e \"process.exit(require('os').platform() === 'win32' ? 0 : 1)\" && qwc2\\scripts\\package-commands.bat release || ./qwc2/scripts/package-commands.sh release"
-    },
-    "babel": {
-        "plugins": [
-            "@babel/plugin-proposal-class-properties",
-            "@babel/plugin-proposal-object-rest-spread"
-        ],
-        "presets": [
-            [
-                "@babel/preset-env",
-                {
-                    "modules": false
-                }
-            ],
-            "@babel/preset-react"
-        ]
     }
 }

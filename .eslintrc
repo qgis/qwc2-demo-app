@@ -1,5 +1,10 @@
 {
-  "parser": "babel-eslint",          // https://github.com/babel/babel-eslint
+  "parser": "@babel/eslint-parser",  // https://github.com/babel/babel/tree/main/eslint/babel-eslint-parser
+  "parserOptions": {
+    "babelOptions": {
+      "configFile": "./.babelrc.json"
+    },
+  },
   "plugins": [
     "react"                          // https://github.com/yannickcr/eslint-plugin-react
   ],
