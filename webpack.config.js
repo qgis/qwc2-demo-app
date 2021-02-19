@@ -38,12 +38,7 @@ module.exports = {
   plugins,
   resolve: {
     extensions: [".mjs", ".js", ".jsx"],
-    symlinks: false,
-    fallback: {
-      "timers": false,
-      "stream": require.resolve("stream-browserify"),
-      "buffer": false
-    }
+    symlinks: false
   },
   module: {
     rules: [
