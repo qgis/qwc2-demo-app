@@ -17,7 +17,8 @@
         "Redlining": "Redlining",
         "Share": "Udostępnij Link",
         "ThemeSwitcher": "Motyw",
-        "Tools": "Narzędzia Mapy"
+        "Tools": "Narzędzia Mapy",
+        "Bookmark": ""
       },
       "menulabel": "Zawartość mapy i narzędzia"
     },
@@ -34,6 +35,14 @@
     },
     "bgswitcher": {
       "nobg": "Bez tła"
+    },
+    "bookmark": {
+      "add": "",
+      "description": "",
+      "manage": "",
+      "openintab": "",
+      "remove": "",
+      "update": ""
     },
     "bottombar": {
       "mousepos_label": "Współrzędne",
