@@ -236,7 +236,9 @@
         {
           "name": "IdentifyRegion",
           "cfg": {
-            "useWfs": false
+            "params": {
+              "feature_count": 100
+            }
           }
         },
         {
@@ -464,7 +466,9 @@
         {
           "name": "IdentifyRegion",
           "cfg": {
-            "useWfs": false
+            "params": {
+              "feature_count": 100
+            }
           }
         },
         {
