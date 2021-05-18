@@ -47,6 +47,7 @@ import HeightProfilePlugin from 'qwc2/plugins/HeightProfile';
 import MapInfoTooltipPlugin from 'qwc2/plugins/MapInfoTooltip';
 import StartupMarkerPlugin from 'qwc2/plugins/StartupMarker';
 import ScratchDrawingPlugin from 'qwc2/plugins/ScratchDrawing';
+import AuthenticationPlugin from 'qwc2/plugins/Authentication';
 import APIPlugin from 'qwc2/plugins/API';
 import {customAttributeCalculator} from './CustomAttributeCalculator';
 
@@ -104,6 +105,7 @@ export default {
             MapInfoTooltipPlugin: MapInfoTooltipPlugin,
             StartupMarkerPlugin: StartupMarkerPlugin,
             ScratchDrawingPlugin: ScratchDrawingPlugin,
+            AuthenticationPlugin: AuthenticationPlugin,
             APIPlugin: APIPlugin
         },
         cfg: {
