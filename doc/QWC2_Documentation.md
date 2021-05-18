@@ -656,7 +656,7 @@ The API plugin binds many application actions to the `window.qwc2` object and ma
   - `window.qwc2.addExternalLayer(resource, beforeLayerName=null)`
   - `window.qwc2.drawScratch(geomType, message, drawMultiple, callback, style = null)`
 
-See the docstrings in [API.js](https://github.com/qgis/qwc2/tree/master/plugins/API.js) as well as the actions functions linked above for more information.
+See the docstrings in [API.js](https://github.com/qgis/qwc2/blob/master/plugins/API.jsx) as well as the actions functions linked above for more information.
 
 See [api_examples.js](https://github.com/qgis/qwc2-demo-app/blob/master/api_examples.js) for some concrete examples.
 
