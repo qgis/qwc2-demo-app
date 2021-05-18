@@ -5,8 +5,24 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
+Update to qwc2 submodule revision [e08aed5](https://github.com/qgis/qwc2/tree/e08aed5) (18.05.2021)
+---------------------------------------------------------------------------------------------------
+
+**Reworked Identify plugin**
+
+The Identify plugin has been completely reworked, and the IdentifyRegion plugin has been merged into the Identify plugin:
+
+- Remove the IdentifyRegion plugin from `js/appConfig.js` and `config.json`
+- Create menu/toolbar entries in config.json for the region identify tool mode by specifying `"mode": "Region"`, i.e.:
+
+      {"key": "Identify", "icon": "identify_region", "mode": "Region"},
+
+- The translation message id `identifyregion.info` has been changed to `infotool.clickhelpPolygon` (unless the string is overridden, `yarn run tsupdate` will take care of this automatically).
+- *Note*: The identify tool state is now handled internally by the Identify component, it does not store the results in the global application state anymore.
+
+
 Update to qwc2 submodule revision [317eea3](https://github.com/qgis/qwc2/tree/317eea3) (03.01.2021)
---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 **Updated dependencies**
 

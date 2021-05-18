@@ -21,7 +21,8 @@
   "localeAwareNumbers": false,
   "identifyTool": "Identify",
   "wmsDpi": 96,
-  "wmsHidpi": true,
+  "wmsHidpi": false,
+  "qgisServerVersion": 2,
   "defaultFeatureStyle": {
     "strokeColor": [0, 0, 255, 1],
     "strokeWidth": 1,
@@ -33,7 +34,8 @@
     "textFont": "11pt sans-serif"
   },
   "importLayerUrlPresets": [
-      {"label": "Swisstopo WMTS", "value": "https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml"}
+      {"label": "Swisstopo WMTS", "value": "https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml"},
+      {"label": "Test", "value": "https://ycas.ch/130_alkis_nrw.xml"}
   ],
   "projections": [
     {
@@ -55,6 +57,11 @@
       "code": "EPSG:25832",
       "proj": "+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
       "label": "ETRS89 / UTM 32N"
+    },
+    {
+      "code": "EPSG:31983",
+      "proj": "+proj=utm +zone=23 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+      "label": "SIRGAS 2000 / UTM zone 23S"
     }
   ],
   "plugins": {
@@ -72,7 +79,7 @@
               },
               "LocateSupport": {
                 "keepCurrentZoomLevel": true,
-                "startupMode": "ENABLED"
+                "startupMode": "DISABLED"
               },
               "ScaleBarSupport": {
                 "units": "metric"
@@ -106,10 +113,10 @@
                 {"key": "LayerTree", "icon": "layers"},
                 {"key": "Share", "icon": "share"},
                 {"key": "Tools", "icon": "tools", "subitems": [
-                  {"key": "IdentifyRegion", "icon": "identify_region"},
+                  {"key": "Identify", "icon": "identify_region", "mode": "Region"},
                   {"key": "Measure", "icon": "measure"},
                   {"key": "Redlining", "icon": "draw"},
-                  {"key": "Editing", "icon": "editing", "themeWhitelist": ["Test"]},
+                  {"key": "Editing", "icon": "editing"},
                   {"key": "DxfExport", "icon": "dxfexport"},
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
@@ -155,7 +162,8 @@
               "FI_POINT_TOLERANCE": 32,
               "FI_LINE_TOLERANCE": 16,
               "FI_POLYGON_TOLERANCE": 8,
-              "feature_count": 20
+              "feature_count": 20,
+              "region_feature_count": 100
             },
             "enableExport": true,
             "longAttributesDisplay": "wrap",
@@ -234,14 +242,6 @@
           }
         },
         {
-          "name": "IdentifyRegion",
-          "cfg": {
-            "params": {
-              "feature_count": 100
-            }
-          }
-        },
-        {
           "name": "StartupMarker",
           "cfg": {
             "removeMode": "onclickonmarker"
@@ -279,6 +279,14 @@
             "position": 5,
             "task": "LayerTree",
             "icon": "list-alt"
+          }
+        },
+        {
+          "name": "TaskButton",
+          "cfg": {
+            "position": 6,
+            "task": "Editing",
+            "icon": "editing"
           }
         },
         {
@@ -321,10 +329,10 @@
                 {"key": "LayerTree", "icon": "layers"},
                 {"key": "Share", "icon": "share"},
                 {"key": "Tools", "icon": "tools", "subitems": [
-                  {"key": "IdentifyRegion", "icon": "identify_region"},
+                  {"key": "Identify", "icon": "identify_region", "mode": "Region"},
                   {"key": "Measure", "icon": "measure"},
                   {"key": "Redlining", "icon": "draw"},
-                  {"key": "Editing", "icon": "editing", "themeWhitelist": ["Test"]},
+                  {"key": "Editing", "icon": "editing"},
                   {"key": "DxfExport", "icon": "dxfexport"},
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
@@ -336,7 +344,7 @@
                 {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
                 {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
                 {"key": "Print", "icon": "print"},
-                {"key": "IdentifyRegion", "icon": "identify_region"}
+                {"key": "Identify", "icon": "identify_region", "mode": "Region"}
               ],
               "searchOptions": {
                 "minScaleDenom": 1000,
@@ -393,7 +401,8 @@
               "FI_POINT_TOLERANCE": 16,
               "FI_LINE_TOLERANCE": 8,
               "FI_POLYGON_TOLERANCE": 4,
-              "feature_count": 20
+              "feature_count": 20,
+              "region_feature_count": 100
             },
             "enableExport": true,
             "longAttributesDisplay": "wrap",
@@ -429,7 +438,7 @@
         {
           "name": "MapCopyright",
           "cfg": {
-              "showThemeCopyrightOnly": false
+              "showThemeCopyrightOnly": true
           }
         },
         {
@@ -461,14 +470,6 @@
           "cfg": {
             "elevationPrecision": 0,
             "includeWGS84": true
-          }
-        },
-        {
-          "name": "IdentifyRegion",
-          "cfg": {
-            "params": {
-              "feature_count": 100
-            }
           }
         },
         {

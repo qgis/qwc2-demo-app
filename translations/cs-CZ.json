@@ -92,7 +92,7 @@
       "title": "Informace o prvku"
     },
     "identifyregion": {
-      "info": "Nakreslete polygon pro identifikaci..."
+      "info": ""
     },
     "importlayer": {
       "addlayer": "Přidat vrstvu",
@@ -106,7 +106,8 @@
       "urlplaceholder": "Vložit URL pro WMS, WMTS, WFS..."
     },
     "infotool": {
-      "clickhelpPoint": ""
+      "clickhelpPoint": "",
+      "clickhelpPolygon": "Nakreslete polygon pro identifikaci..."
     },
     "layerinfo": {
       "abstract": "Abstraktní",

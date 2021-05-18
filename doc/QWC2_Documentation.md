@@ -318,7 +318,7 @@ The format of the theme definitions is as follows:
 | `"mapTips":  <boolean>\|null,`                | Optional, per-theme setting whether map-tips are unavailable (`null`), disabled by default (`false`) or enabled by default (`true`). |
 | `"extraLegendParameters": "<&KEY=VALUE>",`    | Optional, additional query parameters to append to WMS GetLegendGraphic.         |
 | `"printLabelBlacklist":  ["<LabelId>", ...]`  | Optional, list of composer label ids to not expose in the print dialog. |
-| `"editConfig": "<editConfig.json>"`           | Optional, path to a filename containing the editing configuration for the theme, see [EditingInterface.js](#editing-interface). |
+| `"editConfig": "<editConfig.json>"`           | Optional, object or path to a filename containing the editing configuration for the theme, see [EditingInterface.js](#editing-interface). |
 | `"config": {`                                 | Optional, per-theme configuration entries which override the global entries in `config.json`.|
 | `  "allowRemovingThemeLayers": <boolean>`     | See [`config.json`](#config-json-overrideable) for which settings can be specified here. |
 | `  ...`                                       |                                                                                  |

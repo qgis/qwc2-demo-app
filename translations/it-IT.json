@@ -92,7 +92,7 @@
       "title": "Titolo"
     },
     "identifyregion": {
-      "info": "Disegna un poligono attorno all'area da identificare"
+      "info": ""
     },
     "importlayer": {
       "addlayer": "Aggiungi livello",
@@ -106,7 +106,8 @@
       "urlplaceholder": "Indirizzo WMS, WMTS, WFS..."
     },
     "infotool": {
-      "clickhelpPoint": "Seleziona un luogo da identificare sulla mappa..."
+      "clickhelpPoint": "Seleziona un luogo da identificare sulla mappa...",
+      "clickhelpPolygon": "Disegna un poligono attorno all'area da identificare"
     },
     "layerinfo": {
       "abstract": "Riassunto",

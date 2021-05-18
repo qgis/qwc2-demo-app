@@ -1,292 +1,470 @@
 {
-  "themes": {
-    "items": [
-      {
-        "url": "http://qwc2.sourcepole.ch/wms/uster/bauprojekte",
-        "attribution": "Stadt Uster",
-        "attributionUrl": "https://gis.uster.ch/",
-        "scales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
-        "printScales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
-        "printResolutions": [150, 300, 600],
-        "backgroundLayers": [
-          {
-            "name": "mapnik",
-            "visibility": true
-          },
-          {
-            "name": "opentopomap"
-          }
+    "themes":{
+        "items":[
+            {
+                "url":"http://qwc2.sourcepole.ch/wms/uster/bauprojekte",
+                "attribution":"Stadt Uster",
+                "attributionUrl":"https://gis.uster.ch/",
+                "scales":[
+                    80000,
+                    40000,
+                    20000,
+                    10000,
+                    8000,
+                    6000,
+                    4000,
+                    2000,
+                    1000,
+                    500,
+                    250,
+                    100
+                ],
+                "printScales":[
+                    80000,
+                    40000,
+                    20000,
+                    10000,
+                    8000,
+                    6000,
+                    4000,
+                    2000,
+                    1000,
+                    500,
+                    250,
+                    100
+                ],
+                "printResolutions":[
+                    150,
+                    300,
+                    600
+                ],
+                "backgroundLayers":[
+                    {
+                        "name":"mapnik",
+                        "visibility":true
+                    },
+                    {
+                        "name":"opentopomap"
+                    }
+                ],
+                "searchProviders":[
+                    "coordinates",
+                    "uster",
+                    "nominatim"
+                ],
+                "mapCrs":"EPSG:3857",
+                "additionalMouseCrs":[
+                    "EPSG:21781",
+                    "EPSG:2056"
+                ]
+            }
         ],
-        "searchProviders": ["coordinates", "uster", "nominatim"],
-        "mapCrs": "EPSG:3857",
-        "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"]
-      }
-    ],
-    "groups": [
-      {
-        "title": "Dev Tests",
-        "items": [
-          {
-            "title": "QWC2 Test",
-            "url": "http://qwc2.sourcepole.ch/wms/themes/test",
-            "attribution": "Demo attribution",
-            "attributionUrl": "https://127.0.0.1/",
-            "tiled": true,
-            "backgroundLayers": [
-              {
-                "name": "mapnik",
-                "visibility": true
-              },
-              {
-                "name": "Night2012"
-              },
-              {
-                "name": "StamenToner"
-              },
-              {
-                "name": "StamenWatercolor"
-              },
-              {
-                "name": "Gemeindegrenzen"
-              },
-              {
-                "name": "bluemarble"
-              }
-            ],
-            "searchProviders": ["coordinates", "geoadmin", "glarus"],
-            "mapCrs": "EPSG:4326",
-            "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"],
-            "printLabelForSearchResult": "test",
-            "watermark": {
-              "text": "Watermark Test",
-              "texpadding": "1",
-              "fontsize": "14",
-              "fontfamily": "sans",
-              "fontcolor": "#0000FF",
-              "backgroundcolor": "#FFFFFF",
-              "framecolor": "#000000",
-              "framewidth": 1
-            },
-            "skipEmptyFeatureAttributes": true
-          },
-          {
-            "title": "QWC2 Test 2056",
-            "url": "http://qwc2.sourcepole.ch/wms/themes/test",
-            "attribution": "Demo attribution",
-            "attributionUrl": "https://127.0.0.1/",
-            "tiled": true,
-            "backgroundLayers": [
-              {
-                "name": "pixelkarte",
-                "visibility": true
-              },
-              {
-                "name": "group"
-              },
-              {
-                "name": "Gemeindegrenzen"
-              }
-            ],
-            "searchProviders": ["coordinates", "geoadmin", "nominatim"],
-            "featureReport": {
-              "a": "template_a",
-              "b": "template_b"
-            },
-            "mapCrs": "EPSG:2056",
-            "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"],
-            "printLabelForSearchResult": "test",
-            "watermark": {
-              "text": "Watermark Test",
-              "texpadding": "1",
-              "fontsize": "14",
-              "fontfamily": "sans",
-              "fontcolor": "#0000FF",
-              "backgroundcolor": "#FFFFFF",
-              "framecolor": "#000000",
-              "framewidth": 1
-            },
-            "skipEmptyFeatureAttributes": true,
-            "editConfig": "test2056_edit.json",
-            "extraLegendParameters": "&LAYERTITLE=FALSE"
-          }
-        ],
-        "groups": [
+        "groups":[
+            {
+                "title":"Dev Tests",
+                "items":[
+                    {
+                        "title":"QWC2 Test",
+                        "url":"http://qwc2.sourcepole.ch/wms/themes/test",
+                        "attribution":"Demo attribution",
+                        "attributionUrl":"https://127.0.0.1/",
+                        "tiled":true,
+                        "backgroundLayers":[
+                            {
+                                "name":"mapnik",
+                                "visibility":true
+                            },
+                            {
+                                "name":"Night2012"
+                            },
+                            {
+                                "name":"StamenToner"
+                            },
+                            {
+                                "name":"StamenWatercolor"
+                            },
+                            {
+                                "name":"Gemeindegrenzen"
+                            },
+                            {
+                                "name":"bluemarble"
+                            },
+                            {
+                                "name":"luftbild_zh_2015"
+                            }
+                        ],
+                        "searchProviders":[
+                            "coordinates",
+                            "geoadmin",
+                            "glarus"
+                        ],
+                        "mapCrs":"EPSG:4326",
+                        "additionalMouseCrs":[
+                            "EPSG:21781",
+                            "EPSG:2056"
+                        ],
+                        "printLabelForSearchResult":"test",
+                        "watermark":{
+                            "text":"Watermark Test",
+                            "texpadding":"1",
+                            "fontsize":"14",
+                            "fontfamily":"sans",
+                            "fontcolor":"#0000FF",
+                            "backgroundcolor":"#FFFFFF",
+                            "framecolor":"#000000",
+                            "framewidth":1
+                        },
+                        "skipEmptyFeatureAttributes":true
+                    },
+                    {
+                        "title":"QWC2 Test 2056",
+                        "url":"http://qwc2.sourcepole.ch/wms/themes/test",
+                        "attribution":"Demo attribution",
+                        "attributionUrl":"https://127.0.0.1/",
+                        "tiled":true,
+                        "backgroundLayers":[
+                            {
+                                "name":"pixelkarte",
+                                "visibility":true
+                            },
+                            {
+                                "name":"group"
+                            },
+                            {
+                                "name":"Gemeindegrenzen"
+                            }
+                        ],
+                        "searchProviders":[
+                            "coordinates",
+                            "geoadmin",
+                            "nominatim"
+                        ],
+                        "featureReport":{
+                            "a":"template_a",
+                            "b":"template_b"
+                        },
+                        "mapCrs":"EPSG:2056",
+                        "additionalMouseCrs":[
+                            "EPSG:21781",
+                            "EPSG:2056"
+                        ],
+                        "printLabelForSearchResult":"test",
+                        "watermark":{
+                            "text":"Watermark Test",
+                            "texpadding":"1",
+                            "fontsize":"14",
+                            "fontfamily":"sans",
+                            "fontcolor":"#0000FF",
+                            "backgroundcolor":"#FFFFFF",
+                            "framecolor":"#000000",
+                            "framewidth":1
+                        },
+                        "skipEmptyFeatureAttributes":true,
+                        "editConfig":"test2056_edit.json",
+                        "extraLegendParameters":"&LAYERTITLE=FALSE",
+                        "externalLayers":[
+                            {"name":"bauzonen","internalLayer":"c"}
+                        ]
+                    }
+                ],
+                "groups":[
 
+                ]
+            }
+        ],
+        "externalLayers":[
+            {
+                "name":"bauzonen",
+                "type":"wms",
+                "tiled": true,
+                "url":"https://wms.geo.admin.ch",
+                "params":{"LAYERS":"ch.are.bauzonen"},
+                "infoFormats":["text/plain"]
+            }
+        ],
+        "backgroundLayers":[
+            {
+                "name":"mapnik",
+                "title":"Open Street Map",
+                "type":"osm",
+                "source":"osm",
+                "thumbnail":"mapnik.jpg",
+                "attribution":"OpenStreetMap contributors",
+                "attributionUrl":"https://www.openstreetmap.org/copyright"
+            },
+            {
+                "name":"Night2012",
+                "title":"NASAGIBS Night 2012",
+                "type":"tileprovider",
+                "source":"nasagibs",
+                "provider":"NASAGIBS.ViirsEarthAtNight2012",
+                "thumbnail":"Night2012.jpg",
+                "attribution":"Suomi NPP / VIIRS via NASA Earth Observatory"
+            },
+            {
+                "name":"StamenWatercolor",
+                "title":"Stamen Watercolor/OSM",
+                "group":"stamen",
+                "type":"tileprovider",
+                "source":"stamen",
+                "provider":"Stamen.Watercolor"
+            },
+            {
+                "name":"StamenToner",
+                "title":"Stamen Toner/OSM",
+                "group":"stamen",
+                "type":"tileprovider",
+                "source":"stamen",
+                "provider":"Stamen.Toner"
+            },
+            {
+                "name":"group",
+                "title":"Group",
+                "type":"group",
+                "items":[
+                    {
+                        "ref":"Gemeindegrenzen",
+                        "minScale":10000,
+                        "maxScale":300000
+                    },
+                    {
+                        "ref":"oevhaltestellen"
+                    }
+                ]
+            },
+            {
+                "name":"Gemeindegrenzen",
+                "title":"Gemeindegrenzen",
+                "type":"wms",
+                "url":"http://wms.geo.admin.ch/",
+                "tiled":false,
+                "params":{
+                    "LAYERS":"ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill",
+                    "STYLES":"default"
+                }
+            },
+            {
+                "name":"oevhaltestellen",
+                "title":"Haltestellen öV",
+                "type":"wms",
+                "url":"http://wms.geo.admin.ch/",
+                "tiled": true,
+                "params": {
+                    "LAYERS":"ch.bav.haltestellen-oev",
+                    "STYLES":"default"
+                }
+            },
+            {
+                "type":"wmts",
+                "url":"http://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief/default/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpeg",
+                "title":"Blue Marble",
+                "name":"bluemarble",
+                "tileMatrixPrefix":"",
+                "tileMatrixSet":"GoogleMapsCompatible_Level8",
+                "originX":-20037508.34278925,
+                "originY":20037508.34278925,
+                "projection:":"EPSG:3857",
+                "resolutions":[
+                    156543.03390625,
+                    78271.516953125,
+                    39135.7584765625,
+                    19567.87923828125,
+                    9783.939619140625,
+                    4891.9698095703125,
+                    2445.9849047851562,
+                    1222.9924523925781
+                ],
+                "tileSize":[
+                    256,
+                    256
+                ],
+                "thumbnail":"img/mapthumbs/default.jpg"
+            },
+            {
+                "type":"wms",
+                "url":"https://maps.omniscale.net/v2/swl-33d96aa8/style.default/map",
+                "title":"osm",
+                "name":"osm",
+                "srs":"EPSG:25832",
+                "params":{
+                    "LAYERS":"osm",
+                    "STYLES":"",
+                    "VERSION":"1.1.1"
+                },
+                "thumbnail":"img/mapthumbs/default2.jpg"
+            },
+            {
+                "type":"tileprovider",
+                "provider":"OpenTopoMap",
+                "title":"OpenTopoMap",
+                "name":"opentopomap",
+                "thumbnail":"img/mapthumbs/default.jpg",
+                "attribution":"Map data: &copy; <a href=\"https://openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, SRTM | Map style: &copy; <a href=\"https://opentopomap.org\" target=\"_blank\">OpenTopoMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">CC-BY-SA</a>)"
+            },
+            {
+                "type":"wmts",
+                "url":"https://wxs.ign.fr/pratique/geoportail/wmts",
+                "title":"IGN",
+                "name":"GEOGRAPHICALGRIDSYSTEMS.MAPS",
+                "format":"image/jpeg",
+                "style":"normal",
+                "originX":-20037508,
+                "originY":20037508,
+                "projection":"EPSG:3857",
+                "resolutions":[
+                    156543.03392804097,
+                    78271.51696402048,
+                    39135.75848201024,
+                    19567.87924100512,
+                    9783.93962050256,
+                    4891.96981025128,
+                    2445.98490512564,
+                    1222.99245256282,
+                    611.49622628141,
+                    305.748113140705,
+                    152.8740565703525,
+                    76.43702828517625,
+                    38.21851414258813,
+                    19.109257071294063,
+                    9.554628535647032,
+                    4.777314267823516,
+                    2.388657133911758,
+                    1.194328566955879
+                ],
+                "tileSize":[
+                    256,
+                    256
+                ],
+                "requestEncoding":"KVP",
+                "tileMatrixSet":"PM",
+                "tileMatrixPrefix":"",
+                "thumbnail":"ign.png",
+                "attribution":"<a href=\"http://www.geoportail.fr/\" target=\"_blank\"><img src=\"https://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif\"></a>"
+            },
+            {
+                "type":"group",
+                "title":"Karte farbig",
+                "name":"pixelkarte",
+                "items":[
+                    {
+                        "ref":"av_grundbuchplan-color",
+                        "minScale":0,
+                        "maxScale":2000
+                    },
+                    {
+                        "ref":"swisstopo.pixelkarte-farbe",
+                        "minScale":2001
+                    }
+                ],
+                "thumbnail":"img/mapthumbs/default.jpg"
+            },
+            {
+                "type":"wmts",
+                "url":"https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/2056/{TileMatrix}/{TileCol}/{TileRow}.jpeg",
+                "title":"swisstopo.pixelkarte-farbe",
+                "name":"swisstopo.pixelkarte-farbe",
+                "tileMatrixPrefix":"",
+                "tileMatrixSet":"2056_26",
+                "originX":2420000.0,
+                "originY":1350000.0,
+                "projection:":"EPSG:2056",
+                "resolutions":[
+                    4000,
+                    3750,
+                    3500,
+                    3250,
+                    3000,
+                    2750,
+                    2500,
+                    2250,
+                    2000,
+                    1750,
+                    1500,
+                    1250,
+                    1000,
+                    750,
+                    650,
+                    500,
+                    250,
+                    100,
+                    50,
+                    20,
+                    10,
+                    5,
+                    2.5,
+                    2,
+                    1.5,
+                    1,
+                    0.5,
+                    0.25
+                ],
+                "tileSize":[
+                    256,
+                    256
+                ],
+                "attribution":{
+                    "Title":"Hintergrundkarte &copy; <a href=\"https://www.swisstopo.ch\" target=\"_blank\">swisstopo</a>"
+                }
+            },
+            {
+                "type":"wms",
+                "name":"av_grundbuchplan-color",
+                "title":"av_grundbuchplan-color",
+                "url":"https://iap-map.gl.ch/ows/mainmap",
+                "params":{
+                    "LAYERS":"ch.gl.cadastre.av_grundbuchplan-color",
+                    "STYLES":"default"
+                }
+            },
+            {
+                "name":"luftbild_zh_2015",
+                "title":"Luftbild ZH 2015",
+                "type":"wms",
+                "url":"http://localhost/qgis/qgis_mapserv.fcgi",
+                "params":{
+                    "LAYERS":"Orthofoto_2015_stdzh_0.5_jpeg",
+                    "STYLES":"default",
+                    "VERSION":"1.3.0",
+                    "MAP": "/home/sandro/wms/luftbild_zh.qgs"
+                }
+            }
         ]
-      }
+    },
+    "defaultScales":[
+        4000000,
+        2000000,
+        1000000,
+        400000,
+        200000,
+        80000,
+        40000,
+        20000,
+        10000,
+        8000,
+        6000,
+        4000,
+        2000,
+        1000,
+        500,
+        250,
+        100
     ],
-    "backgroundLayers": [
-      {
-        "name": "mapnik",
-        "title": "Open Street Map",
-        "type": "osm",
-        "source": "osm",
-        "thumbnail": "mapnik.jpg",
-        "attribution": "OpenStreetMap contributors",
-        "attributionUrl": "https://www.openstreetmap.org/copyright"
-      },
-      {
-        "name": "Night2012",
-        "title": "NASAGIBS Night 2012",
-        "type": "tileprovider",
-        "source": "nasagibs",
-        "provider": "NASAGIBS.ViirsEarthAtNight2012",
-        "thumbnail": "Night2012.jpg",
-        "attribution": "Suomi NPP / VIIRS via NASA Earth Observatory"
-      },
-      {
-        "name": "StamenWatercolor",
-        "title": "Stamen Watercolor/OSM",
-        "group": "stamen",
-        "type": "tileprovider",
-        "source": "stamen",
-        "provider": "Stamen.Watercolor"
-      },
-      {
-        "name": "StamenToner",
-        "title": "Stamen Toner/OSM",
-        "group": "stamen",
-        "type": "tileprovider",
-        "source": "stamen",
-        "provider": "Stamen.Toner"
-      },
-      {
-          "name": "group",
-          "title": "Group",
-          "type": "group",
-          "items": [
-              {
-                  "ref": "Gemeindegrenzen",
-                  "minScale": 10000,
-                  "maxScale": 300000
-              },
-              {
-                  "ref": "oevhaltestellen"
-              }
-          ]
-      },
-      {
-        "name": "Gemeindegrenzen",
-        "title": "Gemeindegrenzen",
-        "type": "wms",
-        "url": "http://wms.geo.admin.ch/",
-        "tiled": false,
-        "params": {
-          "LAYERS": "ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill",
-          "STYLES": "default"
-        }
-      },
-      {
-        "name": "oevhaltestellen",
-        "title": "Haltestellen öV",
-        "type": "wms",
-        "url": "http://wms.geo.admin.ch/",
-        "params": {
-          "LAYERS": "ch.bav.haltestellen-oev",
-          "STYLES": "default"
-        }
-      },
-      {
-        "type": "wmts",
-        "url": "http://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief/default/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpeg",
-        "title": "Blue Marble",
-        "name": "bluemarble",
-        "tileMatrixPrefix": "",
-        "tileMatrixSet": "GoogleMapsCompatible_Level8",
-        "originX": -20037508.34278925,
-        "originY": 20037508.34278925,
-        "projection:": "EPSG:3857",
-        "resolutions": [
-          156543.03390625,
-          78271.516953125,
-          39135.7584765625,
-          19567.87923828125,
-          9783.939619140625,
-          4891.9698095703125,
-          2445.9849047851562,
-          1222.9924523925781
-        ],
-        "tileSize": [
-          256,
-          256
-        ],
-        "thumbnail": "img/mapthumbs/default.jpg"
-      },
-      {
-        "type": "wms",
-        "url": "https://maps.omniscale.net/v2/swl-33d96aa8/style.default/map",
-        "title": "osm",
-        "name": "osm",
-        "srs": "EPSG:25832",
-        "params": {
-          "LAYERS": "osm",
-          "STYLES": "",
-          "VERSION": "1.1.1"
+    "defaultPrintGrid":[
+        {
+            "s":10000,
+            "x":1000,
+            "y":1000
         },
-        "thumbnail": "img/mapthumbs/default2.jpg"
-      },
-      {
-        "type": "wmts",
-        "url":"https://wmts20.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/2056/{TileMatrix}/{TileCol}/{TileRow}.jpeg",
-        "title": "Landeskarte",
-        "name": "pixelkarte",
-        "tileMatrixPrefix": "",
-        "tileMatrixSet": "2056_27",
-        "originX": 2420000.0,
-        "originY": 1350000.0,
-        "projection:": "EPSG:2056",
-        "resolutions": [4000,3750,3500,3250,3000,2750,2500,2250,2000,1750,1500,1250,1000,750,650,500,250,100,50,20,10,5,2.5,2,1.5,1,0.5,0.25],
-        "tileSize": [256, 256],
-        "thumbnail": "img/mapthumbs/default.jpg"
-      },
-      {
-        "type": "tileprovider",
-        "provider": "OpenTopoMap",
-        "title": "OpenTopoMap",
-        "name": "opentopomap",
-        "thumbnail": "img/mapthumbs/default.jpg",
-        "attribution": "Map data: &copy; <a href=\"https://openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, SRTM | Map style: &copy; <a href=\"https://opentopomap.org\" target=\"_blank\">OpenTopoMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">CC-BY-SA</a>)"
-      },
-      {
-        "type": "wmts",
-        "url": "https://wxs.ign.fr/pratique/geoportail/wmts",
-        "title": "IGN",
-        "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS",
-        "format": "image/jpeg",
-        "style": "normal",
-        "originX": -20037508,
-        "originY": 20037508,
-        "projection": "EPSG:3857",
-        "resolutions": [
-          156543.03392804097,
-          78271.51696402048,
-          39135.75848201024,
-          19567.87924100512,
-          9783.93962050256,
-          4891.96981025128,
-          2445.98490512564,
-          1222.99245256282,
-          611.49622628141,
-          305.748113140705,
-          152.8740565703525,
-          76.43702828517625,
-          38.21851414258813,
-          19.109257071294063,
-          9.554628535647032,
-          4.777314267823516,
-          2.388657133911758,
-          1.194328566955879
-        ],
-        "tileSize": [256, 256],
-        "requestEncoding": "KVP",
-        "tileMatrixSet": "PM",
-        "tileMatrixPrefix": "",
-        "thumbnail": "ign.png",
-        "attribution": "<a href=\"http://www.geoportail.fr/\" target=\"_blank\"><img src=\"https://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif\"></a>"
-      }
-    ]
-  },
-  "defaultScales": [4000000, 2000000, 1000000, 400000, 200000, 80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
-  "defaultPrintGrid": [{"s": 10000, "x": 1000, "y": 1000}, {"s": 1000, "x": 100, "y": 100}, {"s": 100, "x": 10, "y": 10}],
-  "defaultWMSVersion":"1.3.0"
+        {
+            "s":1000,
+            "x":100,
+            "y":100
+        },
+        {
+            "s":100,
+            "x":10,
+            "y":10
+        }
+    ],
+    "defaultWMSVersion":"1.3.0"
 }

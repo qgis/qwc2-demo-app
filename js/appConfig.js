@@ -45,7 +45,6 @@ import EditingPlugin from 'qwc2/plugins/Editing';
 import MapComparePlugin from 'qwc2/plugins/MapCompare';
 import HeightProfilePlugin from 'qwc2/plugins/HeightProfile';
 import MapInfoTooltipPlugin from 'qwc2/plugins/MapInfoTooltip';
-import IdentifyRegionPlugin from 'qwc2/plugins/IdentifyRegion';
 import StartupMarkerPlugin from 'qwc2/plugins/StartupMarker';
 import ScratchDrawingPlugin from 'qwc2/plugins/ScratchDrawing';
 import APIPlugin from 'qwc2/plugins/API';
@@ -103,7 +102,6 @@ export default {
             MapComparePlugin: MapComparePlugin,
             HeightProfilePlugin: HeightProfilePlugin,
             MapInfoTooltipPlugin: MapInfoTooltipPlugin,
-            IdentifyRegionPlugin: IdentifyRegionPlugin,
             StartupMarkerPlugin: StartupMarkerPlugin,
             ScratchDrawingPlugin: ScratchDrawingPlugin,
             APIPlugin: APIPlugin
