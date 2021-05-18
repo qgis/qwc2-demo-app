@@ -91,9 +91,6 @@
       "querying": "Выполняется запрос...",
       "title": "Информация об объекте"
     },
-    "identifyregion": {
-      "info": ""
-    },
     "importlayer": {
       "addlayer": "Добавить слой",
       "connect": "Подключиться",
