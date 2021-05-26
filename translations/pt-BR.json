@@ -55,6 +55,7 @@
       "copied": "Copiado"
     },
     "dxfexport": {
+      "layers": "",
       "selectinfo": "Arraste um rectângulo ao redor da região para exportar...",
       "symbologyscale": "Escala de simbología:"
     },

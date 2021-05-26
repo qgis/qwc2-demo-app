@@ -206,7 +206,8 @@
             "groupTogglesSublayers": false,
             "grayUnchecked": false,
             "layerInfoWindowSize": {"width": 480, "height": 400},
-            "bboxDependentLegend": false
+            "bboxDependentLegend": true,
+            "scaleDependentLegend": "theme"
           },
           "mapClickAction": "unset"
         },
@@ -389,7 +390,8 @@
             "groupTogglesSublayers": true,
             "grayUnchecked": false,
             "layerInfoWindowSize": {"width": 480, "height": 400},
-            "bboxDependentLegend": false,
+            "bboxDependentLegend": true,
+            "scaleDependentLegend": "theme",
             "showToggleAllLayersCheckbox": true
           },
           "mapClickAction": "identify"

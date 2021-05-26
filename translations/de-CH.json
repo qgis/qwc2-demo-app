@@ -55,6 +55,7 @@
       "copied": "Kopiert"
     },
     "dxfexport": {
+      "layers": "Ebenen",
       "selectinfo": "Rechteck aufziehen um die zu exportierende Region",
       "symbologyscale": "Darstellungsmassstab"
     },

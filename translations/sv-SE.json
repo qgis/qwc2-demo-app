@@ -55,6 +55,7 @@
       "copied": "Kopierade"
     },
     "dxfexport": {
+      "layers": "",
       "selectinfo": "Rita en rektangel runt området som ska exporteras...",
       "symbologyscale": "Symbolskala:"
     },
