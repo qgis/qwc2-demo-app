@@ -61,6 +61,7 @@
     },
     "editing": {
       "canceldelete": "Nie usuwaj",
+      "clearpicture": "",
       "commit": "Zatwierdź",
       "delete": "Usuń",
       "discard": "Odrzuć",
@@ -72,7 +73,8 @@
       "pick": "Wybierz",
       "reallydelete": "Usuń",
       "relationcommitfailed": "",
-      "select": "Zaznacz"
+      "select": "Zaznacz",
+      "takepicture": ""
     },
     "fileselector": {
       "placeholder": "Wybierz plik..."
