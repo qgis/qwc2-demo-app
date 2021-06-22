@@ -161,6 +161,7 @@
     "print": {
       "grid": "Grid",
       "layout": "Șablon:",
+      "legend": "",
       "maximize": "Maximizează",
       "minimize": "Minimizează",
       "nolayouts": "Această temă nu are șabloane de print",

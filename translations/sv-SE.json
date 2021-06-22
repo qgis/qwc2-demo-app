@@ -161,6 +161,7 @@
     "print": {
       "grid": "Rutnät",
       "layout": "Layout:",
+      "legend": "",
       "maximize": "Maximera",
       "minimize": "Minimera",
       "nolayouts": "Valt tema stöder inte utskrift",
