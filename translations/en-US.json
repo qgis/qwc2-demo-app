@@ -159,8 +159,8 @@
       "pointLabel": "Position"
     },
     "print": {
-      "grid": "Grid:",
-      "layout": "Layout:",
+      "grid": "Grid",
+      "layout": "Layout",
       "legend": "Legend",
       "maximize": "Maximize",
       "minimize": "Minimize",
@@ -168,8 +168,8 @@
       "notheme": "No theme selected",
       "output": "Print output",
       "resolution": "Resolution:",
-      "rotation": "Rotation:",
-      "scale": "Scale:",
+      "rotation": "Rotation",
+      "scale": "Scale",
       "submit": "Print",
       "wait": "Please wait..."
     },
