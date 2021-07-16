@@ -587,7 +587,7 @@ where
       <wms|wfs>:<service_url>#<layername>
    for external layers, i.e. `wms:https://wms.geo.admin.ch/?#ch.are.bauzonen`.
 - `<transparency>` denotes the layer transparency, betwen 0 and 100. If the `[<transparency>]` portion is omitted, the layer is fully opaque.
-- `!` denotes that the layer is invisible. If omitted, the layer is visible.
+- `!` denotes that the layer is invisible. If omitted, the layer is visible. If the layer is visible in an invisible parent group, `~` is used.
 
 *Note*: If group name is specified instead of the layer name, QWC2 will automatically resolve this to all layer names contained in that group, and will apply transparency and visibility settings as specified for the group.
 
