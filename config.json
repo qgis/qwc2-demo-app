@@ -184,6 +184,7 @@
           "name": "Print",
           "cfg": {
             "inlinePrintOutput": false,
+            "printExternalLayers": true,
             "gridInitiallyEnabled": false
           }
         },
@@ -217,7 +218,8 @@
         {
           "name": "RasterExport",
           "cfg": {
-            "dpis": [96, 300]
+            "dpis": [96, 300],
+            "exportExternalLayers": true
           }
         },
         {
@@ -430,6 +432,7 @@
           "name": "Print",
           "cfg": {
             "inlinePrintOutput": false,
+            "printExternalLayers": true,
             "gridInitiallyEnabled": false
           }
         },
@@ -449,7 +452,8 @@
         {
           "name": "RasterExport",
           "cfg": {
-            "dpis": [96, 300]
+            "dpis": [96, 300],
+            "exportExternalLayers": true
           }
         },
         {

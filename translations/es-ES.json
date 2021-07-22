@@ -82,6 +82,7 @@
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Distancia",
+      "export": "",
       "height": "Altura",
       "loading": "Cálculo del perfil de altura..."
     },
