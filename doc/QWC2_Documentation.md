@@ -169,15 +169,16 @@ You can omit a plugin entry to disable it in desktop and/or mobile mode. To comp
 
 A particularly interesting aspect is the configuration of the entries in the application menu and toolbar, i.e. the entries in `menuItems` and `toolbarItems` in the `TopBar` configuration. The most common format for linking an entry to an existing plugin is
 
-    {"key": "<key>", "icon": "<icon>", "themeWhitelist": ["<themename>", ...], "mapClickAction": <"identify"|"unset"|null>, "mode": "<mode>"}
+    {"key": "<key>", "icon": "<icon>", "themeWhitelist": ["<themename>", ...], "mapClickAction": <"identify"|"unset"|null>, "mode": "<mode>", "requireAuth": <true|false>}
 
 where
 
-* `key`: The name of the plugin to activate when the entry is clicked, i.e. `LayerTree`. Also used to lookup the the label for the entry from the translations, using the `appmenu.items.<key>` message identifier (see <a href="#translations">Managing translations</a>).
+* `key`: The name of the plugin to activate when the entry is clicked, i.e. `LayerTree`. Also used to lookup the label for the entry from the translations, using the `appmenu.items.<key>` message identifier (see <a href="#translations">Managing translations</a>).
 * `icon`: The icon of the entry, either a name (without the `.svg` extension) of an icon in `icons/`, or `:/<path_to_asset>` containing the path relative to `assetsPath` of an asset image.
 * `themeWhitelist`: Optional, allows specifying a whitelist of theme names or titles for which the entry should be visible.
 * `mapClickAction`: Optional, takes precedence over the `mapClickAction` setting specified in the plugin configuration block, if any. See above.
 * `mode`: Optional, depending on the plugin, a mode can be configured to launch the plugin directly in a specific mode. For instance, the `Measure` plugin supports specifying the measurement mode (`Point`, `LineString`, `Polygon`).
+* `requireAuth`: Optional, the entry is only visible when user is logged-in when true (works with qwc-services).
 
 Additionally, entries opening external URLs can be defined as follows:
 
