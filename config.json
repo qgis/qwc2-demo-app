@@ -1,4 +1,6 @@
 {
+  "searchServiceUrl": "http://localhost:5011/",
+  "searchDataServiceUrl": "http://localhost:5011/geom/",
   "editServiceUrl": "http://localhost:5012/",
   "mapInfoService":  "http://localhost:5016/",
   "permalinkServiceUrl": "http://localhost:5018/",
