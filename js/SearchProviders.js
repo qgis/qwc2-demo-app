@@ -458,6 +458,7 @@ export const SearchProviders = {
     coordinates: {
         labelmsgid: "search.coordinates",
         onSearch: coordinatesSearch
+    /*
     },
     geoadmin: {
         label: "Swisstopo",
@@ -487,6 +488,7 @@ export const SearchProviders = {
     layers: {
         label: "Layers",
         onSearch: layerSearch
+    */
     }
 };
 
