@@ -24,7 +24,7 @@ import TaskButtonPlugin from 'qwc2/plugins/TaskButton';
 import BackgroundSwitcherPlugin from 'qwc2/plugins/BackgroundSwitcher';
 import TopBarPlugin from 'qwc2/plugins/TopBar';
 import AppMenu from 'qwc2/components/AppMenu';
-import Search from 'qwc2/components/Search';
+import SearchBox from 'qwc2/components/SearchBox';
 import Toolbar from 'qwc2/components/Toolbar';
 import FullscreenSwitcher from 'qwc2/components/FullscreenSwitcher';
 import BottomBarPlugin from 'qwc2/plugins/BottomBar';
@@ -78,7 +78,7 @@ export default {
             BackgroundSwitcherPlugin: BackgroundSwitcherPlugin,
             TopBarPlugin: TopBarPlugin({
                 AppMenu: AppMenu,
-                Search: Search(SearchProviders, searchProviderFactory),
+                Search: SearchBox(SearchProviders, searchProviderFactory),
                 Toolbar: Toolbar,
                 FullscreenSwitcher: FullscreenSwitcher
             }),
