@@ -29,8 +29,11 @@
       "existinglayer": "Il livello esiste già nella mappa",
       "invisiblelayer": "Il risultato si trova su un livello che non è visibile.",
       "more": "Altri risultati",
+      "providerselection": "",
       "search": "Cerca",
       "searchall": "Cerca località o aggiungi cartine...",
+      "searchinprogress": "",
+      "searchreset": "",
       "themes": "Temi"
     },
     "bgswitcher": {
@@ -147,7 +150,8 @@
       }
     },
     "map": {
-      "loading": "In caricamento..."
+      "loading": "In caricamento...",
+      "resetrotation": ""
     },
     "mapinfotooltip": {
       "elevation": "Altitudine",
@@ -253,6 +257,8 @@
     },
     "tooltip": {
       "background": "Cambia sfondo",
+      "fullscreendisable": "",
+      "fullscreenenable": "",
       "home": "Mostra tutta la mappa intera",
       "zoomin": "Ingrandisci",
       "zoomout": "Rimpicciolisci"

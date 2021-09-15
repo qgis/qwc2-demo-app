@@ -29,8 +29,11 @@
       "existinglayer": "Die Ebene existiert bereits in der Karte",
       "invisiblelayer": "Das Resultat liegt auf einer Ebene, die ausgeschaltet ist.",
       "more": "Mehr...",
+      "providerselection": "Suchdienste",
       "search": "Suchen",
       "searchall": "Ort suchen oder Karte hinzufügen...",
+      "searchinprogress": "Suche läuft",
+      "searchreset": "Suche zurücksetzen",
       "themes": "Themen"
     },
     "bgswitcher": {
@@ -46,7 +49,7 @@
     },
     "bottombar": {
       "mousepos_label": "Koordinaten",
-      "scale_label": "Massstab",
+      "scale_label": "Maßstab",
       "terms_label": "Nutzungsbedingungen",
       "viewertitle_label": "QWC2 Demo"
     },
@@ -57,7 +60,7 @@
     "dxfexport": {
       "layers": "Ebenen",
       "selectinfo": "Rechteck aufziehen um die zu exportierende Region",
-      "symbologyscale": "Darstellungsmassstab"
+      "symbologyscale": "Darstellungsmaßstab"
     },
     "editing": {
       "canceldelete": "Abbrechen",
@@ -80,7 +83,7 @@
       "placeholder": "Datei auswählen"
     },
     "heightprofile": {
-      "asl": "ü.M.",
+      "asl": "ü. NHN",
       "distance": "Distanz",
       "export": "",
       "height": "Höhe",
@@ -147,7 +150,8 @@
       }
     },
     "map": {
-      "loading": "Karte wird geladen..."
+      "loading": "Karte wird geladen...",
+      "resetrotation": "Drehung zurücksetzen"
     },
     "mapinfotooltip": {
       "elevation": "Höhe",
@@ -170,7 +174,7 @@
       "output": "Druckausgabe",
       "resolution": "Auflösung",
       "rotation": "Rotation",
-      "scale": "Massstab",
+      "scale": "Maßstab",
       "submit": "PDF erzeugen",
       "wait": "Bitte warten..."
     },
@@ -253,6 +257,8 @@
     },
     "tooltip": {
       "background": "Hintergrundkarte wechseln",
+      "fullscreendisable": "Vollbildmodus deaktivieren",
+      "fullscreenenable": "Vollbildmodus aktivieren",
       "home": "Ganze Karte anzeigen",
       "zoomin": "Hineinzoomen",
       "zoomout": "Hinauszoomen"

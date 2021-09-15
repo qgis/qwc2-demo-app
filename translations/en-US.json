@@ -29,8 +29,11 @@
       "existinglayer": "The layer already exists in the map",
       "invisiblelayer": "The result lies on a layer which is not visible.",
       "more": "More...",
+      "providerselection": "Search providers",
       "search": "Search",
       "searchall": "Search places or add maps...",
+      "searchinprogress": "Search in progress",
+      "searchreset": "Reset search",
       "themes": "Themes"
     },
     "bgswitcher": {
@@ -147,7 +150,8 @@
       }
     },
     "map": {
-      "loading": "Loading..."
+      "loading": "Loading...",
+      "resetrotation": "Reset rotation"
     },
     "mapinfotooltip": {
       "elevation": "Elevation",
@@ -253,6 +257,8 @@
     },
     "tooltip": {
       "background": "Switch background",
+      "fullscreendisable": "Disable full screen mode",
+      "fullscreenenable": "Enable full screen mode",
       "home": "Show entire map",
       "zoomin": "Zoom in",
       "zoomout": "Zoom out"
