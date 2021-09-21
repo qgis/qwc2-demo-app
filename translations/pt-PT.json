@@ -236,6 +236,7 @@
       "QRCodeLinkTitle": "Código QR",
       "directLinkTitle": "Via uma ligação direta",
       "generatingpermalink": "Gerar permalink...",
+      "showpin": "",
       "socialIntro": "Na sua rede social favorita"
     },
     "themelayerslist": {
@@ -246,6 +247,7 @@
     "themeswitcher": {
       "addlayerstotheme": "Adicionar camadas ao mapa atual",
       "addtotheme": "Adicione ao tema atual",
+      "confirmswitch": "",
       "filter": "Filtro...",
       "match": {
         "abstract": "Resumo",
@@ -269,7 +271,9 @@
     "window": {
       "close": "Fechar",
       "dock": "Juntar",
-      "undock": "Desencaixar"
+      "maximize": "",
+      "undock": "Desencaixar",
+      "unmaximize": ""
     }
   }
 }

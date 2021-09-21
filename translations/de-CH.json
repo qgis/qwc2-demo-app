@@ -85,7 +85,7 @@
     "heightprofile": {
       "asl": "ü.M.",
       "distance": "Distanz",
-      "export": "",
+      "export": "Exportieren",
       "height": "Höhe",
       "loading": "Höhenprofil wird berechnet..."
     },
@@ -236,6 +236,7 @@
       "QRCodeLinkTitle": "QR Code (Smartphone)",
       "directLinkTitle": "Über einen direkten Link",
       "generatingpermalink": "Permalink wird erzeugt",
+      "showpin": "Pin anzeigen",
       "socialIntro": "In den sozialen Medien"
     },
     "themelayerslist": {
@@ -246,6 +247,7 @@
     "themeswitcher": {
       "addlayerstotheme": "Ebenen der Karte hinzufügen",
       "addtotheme": "Dem aktuellen Thema hinzufügen",
+      "confirmswitch": "Ebenen, die nicht Teil des Themas sind, werden entfernt werden. Fortsetzen?",
       "filter": "Filter",
       "match": {
         "abstract": "Zusammenfassung",
@@ -269,7 +271,9 @@
     "window": {
       "close": "Schliessen",
       "dock": "Andocken",
-      "undock": "Abdocken"
+      "maximize": "Maximieren",
+      "undock": "Abdocken",
+      "unmaximize": "Wiederherstellen"
     }
   }
 }

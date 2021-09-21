@@ -236,6 +236,7 @@
       "QRCodeLinkTitle": "QR kód",
       "directLinkTitle": "Přes přímé spojení",
       "generatingpermalink": "Generovat permalink...",
+      "showpin": "",
       "socialIntro": "Ve vaší oblíbené sociální síti"
     },
     "themelayerslist": {
@@ -246,6 +247,7 @@
     "themeswitcher": {
       "addlayerstotheme": "",
       "addtotheme": "Přidat k aktuálnímu tématu",
+      "confirmswitch": "",
       "filter": "Filtr...",
       "match": {
         "abstract": "",
@@ -269,7 +271,9 @@
     "window": {
       "close": "",
       "dock": "",
-      "undock": ""
+      "maximize": "",
+      "undock": "",
+      "unmaximize": ""
     }
   }
 }

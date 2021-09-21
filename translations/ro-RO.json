@@ -236,6 +236,7 @@
       "QRCodeLinkTitle": "Cod QR",
       "directLinkTitle": "Via link direct",
       "generatingpermalink": "Generare permalink...",
+      "showpin": "",
       "socialIntro": "În rețeaua socială favorită"
     },
     "themelayerslist": {
@@ -246,6 +247,7 @@
     "themeswitcher": {
       "addlayerstotheme": "",
       "addtotheme": "Adaugă la temă",
+      "confirmswitch": "",
       "filter": "Filtrare",
       "match": {
         "abstract": "Abstract",
@@ -269,7 +271,9 @@
     "window": {
       "close": "Închide",
       "dock": "Andocare",
-      "undock": "Anulează andocarea"
+      "maximize": "",
+      "undock": "Anulează andocarea",
+      "unmaximize": ""
     }
   }
 }
