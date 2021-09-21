@@ -20,6 +20,7 @@
         "Tools": "Herramientas de Mapa",
         "Bookmark": ""
       },
+      "filter": "",
       "menulabel": "Mapa & Herramientas"
     },
     "search": {

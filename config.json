@@ -133,6 +133,7 @@
                 "showProvidersInPlaceholder": false
               },
               "appMenuClearsTask": true,
+              "appMenuFilterField": false,
               "appMenuVisibleOnStartup": false
             }
         },
@@ -359,6 +360,7 @@
                 "showProvidersInPlaceholder": false
               },
               "appMenuClearsTask": true,
+              "appMenuFilterField": false,
               "appMenuVisibleOnStartup": false,
               "logoUrl": "/"
             }

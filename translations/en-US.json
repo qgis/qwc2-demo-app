@@ -20,6 +20,7 @@
         "Tools": "Map Tools",
         "Bookmark": "Bookmarks"
       },
+      "filter": "",
       "menulabel": "Map & Tools"
     },
     "search": {
