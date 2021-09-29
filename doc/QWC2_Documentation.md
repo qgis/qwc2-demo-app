@@ -613,13 +613,13 @@ The import layer functionality in the layertree also supports loading a layer ca
 * QGIS WMS/WFS connections XML: this file is produced by exporting the configured WMS or WFS connections from the QGIS data source manager dialog.
 * JSON: a document with contents
 
-      "catalog": {
-        [
+      {
+        "catalog": [
           {
             "title": "<Titel>",
             "resource": "<wms|wfs>:<service_url>#<layername>"
           },
-        ...
+          ...
         ]
       }
 
