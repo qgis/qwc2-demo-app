@@ -8,6 +8,7 @@
         "Editing": "Strumenti di modifica",
         "Help": "Aiuto",
         "IdentifyRegion": "Identifica in un poligono",
+        "LayerCatalog": "Catalogo livelli",
         "LayerTree": "Livelli",
         "Login": "Accedi",
         "Logout": "Disconnetti",
@@ -20,7 +21,7 @@
         "Tools": "Strumenti",
         "Bookmark": "Segnalibri"
       },
-      "filter": "",
+      "filter": "Filtra menü...",
       "menulabel": "Mappa e strumenti"
     },
     "search": {
@@ -114,6 +115,9 @@
     "infotool": {
       "clickhelpPoint": "Seleziona un luogo da identificare sulla mappa...",
       "clickhelpPolygon": "Disegna un poligono attorno all'area da identificare"
+    },
+    "layercatalog": {
+      "windowtitle": "Catalogo livelli"
     },
     "layerinfo": {
       "abstract": "Riassunto",

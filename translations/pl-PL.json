@@ -8,6 +8,7 @@
         "Editing": "Edycja",
         "Help": "Pomoc",
         "IdentifyRegion": "Identifikuj Obszar",
+        "LayerCatalog": "",
         "LayerTree": "Warstwy i ich legendy",
         "Login": "Zaloguj",
         "Logout": "Wyloguj",
@@ -114,6 +115,9 @@
     "infotool": {
       "clickhelpPoint": "",
       "clickhelpPolygon": "Narysuj poligon wokół obiektów, aby zidentyfikować..."
+    },
+    "layercatalog": {
+      "windowtitle": ""
     },
     "layerinfo": {
       "abstract": "Abstrakt",

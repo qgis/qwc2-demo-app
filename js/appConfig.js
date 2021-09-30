@@ -31,6 +31,7 @@ import BottomBarPlugin from 'qwc2/plugins/BottomBar';
 import MeasurePlugin from 'qwc2/plugins/Measure';
 import ThemeSwitcherPlugin from 'qwc2/plugins/ThemeSwitcher';
 import LayerTreePlugin from 'qwc2/plugins/LayerTree';
+import LayerCatalogPlugin from 'qwc2/plugins/LayerCatalog';
 import IdentifyPlugin from 'qwc2/plugins/Identify';
 import MapTipPlugin from 'qwc2/plugins/MapTip';
 import SharePlugin from 'qwc2/plugins/Share';
@@ -86,6 +87,7 @@ export default {
             MeasurePlugin: MeasurePlugin,
             ThemeSwitcherPlugin: ThemeSwitcherPlugin,
             LayerTreePlugin: LayerTreePlugin,
+            LayerCatalogPlugin: LayerCatalogPlugin,
             IdentifyPlugin: IdentifyPlugin,
             MapTipPlugin: MapTipPlugin,
             SharePlugin: SharePlugin,

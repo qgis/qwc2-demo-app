@@ -8,6 +8,7 @@
         "Editing": "Úpravy",
         "Help": "Nápověda",
         "IdentifyRegion": "Určit oblast",
+        "LayerCatalog": "",
         "LayerTree": "Vrstvy & Legenda",
         "Login": "Přihlášení",
         "Logout": "Odhlášení",
@@ -114,6 +115,9 @@
     "infotool": {
       "clickhelpPoint": "",
       "clickhelpPolygon": "Nakreslete polygon pro identifikaci..."
+    },
+    "layercatalog": {
+      "windowtitle": ""
     },
     "layerinfo": {
       "abstract": "Abstraktní",

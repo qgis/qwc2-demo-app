@@ -8,6 +8,7 @@
         "Editing": "Editing",
         "Help": "Help",
         "IdentifyRegion": "Identify Region",
+        "LayerCatalog": "Layer catalog",
         "LayerTree": "Layers & Legend",
         "Login": "Login",
         "Logout": "Logout",
@@ -20,7 +21,7 @@
         "Tools": "Map Tools",
         "Bookmark": "Bookmarks"
       },
-      "filter": "",
+      "filter": "Filter menu...",
       "menulabel": "Map & Tools"
     },
     "search": {
@@ -114,6 +115,9 @@
     "infotool": {
       "clickhelpPoint": "Click a location to identify in the map...",
       "clickhelpPolygon": "Draw a polygon around the features to identify..."
+    },
+    "layercatalog": {
+      "windowtitle": "Layer catalog"
     },
     "layerinfo": {
       "abstract": "Abstract",

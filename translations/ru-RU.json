@@ -8,6 +8,7 @@
         "Editing": "Правка",
         "Help": "Помощь",
         "IdentifyRegion": "Определить регион",
+        "LayerCatalog": "",
         "LayerTree": "Слои и легенда",
         "Login": "",
         "Logout": "",
@@ -114,6 +115,9 @@
     "infotool": {
       "clickhelpPoint": "",
       "clickhelpPolygon": "Для получения информации обведите регион многоугольником..."
+    },
+    "layercatalog": {
+      "windowtitle": ""
     },
     "layerinfo": {
       "abstract": "Abstract",

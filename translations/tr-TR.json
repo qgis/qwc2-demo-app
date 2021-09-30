@@ -8,6 +8,7 @@
         "Editing": "Düzenleme",
         "Help": "Yardım",
         "IdentifyRegion": "Bölgeden Bilgi Al",
+        "LayerCatalog": "",
         "LayerTree": "Katmanlar & Gösterim",
         "Login": "Giriş",
         "Logout": "Çıkış",
@@ -114,6 +115,9 @@
     "infotool": {
       "clickhelpPoint": "",
       "clickhelpPolygon": "Bilgi alınacak alanı poligon çizerek belirleyiniz..."
+    },
+    "layercatalog": {
+      "windowtitle": ""
     },
     "layerinfo": {
       "abstract": "Özet",

@@ -11,7 +11,7 @@
   "omitUrlParameterUpdates": false,
   "preserveExtentOnThemeSwitch": true,
   "preserveBackgroundOnThemeSwitch": true,
-  "preserveNonThemeLayersOnThemeSwitch": true,
+  "preserveNonThemeLayersOnThemeSwitch": false,
   "allowReorderingLayers": true,
   "preventSplittingGroupsWhenReordering": false,
   "allowLayerTreeSeparators": false,
@@ -19,12 +19,12 @@
   "globallyDisableDockableDialogs": false,
   "searchThemes": true,
   "allowAddingOtherThemes": true,
-  "allowFractionalZoom": true,
+  "allowFractionalZoom": false,
   "localeAwareNumbers": false,
   "identifyTool": "Identify",
   "wmsDpi": 96,
   "wmsHidpi": false,
-  "qgisServerVersion": 2,
+  "qgisServerVersion": 3,
   "defaultFeatureStyle": {
     "strokeColor": [0, 0, 255, 1],
     "strokeWidth": 1,
@@ -37,7 +37,7 @@
   },
   "importLayerUrlPresets": [
       {"label": "Swisstopo WMTS", "value": "https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml"},
-      {"label": "Test", "value": "https://ycas.ch/130_alkis_nrw.xml"}
+      {"label": "Test", "value": "https://ycas.ch/qwc/catalog.json"}
   ],
   "projections": [
     {
@@ -113,6 +113,7 @@
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
                 {"key": "LayerTree", "icon": "layers"},
+                {"key": "LayerCatalog", "icon": "catalog"},
                 {"key": "Share", "icon": "share"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "Identify", "icon": "identify_region", "mode": "Region"},
@@ -133,7 +134,7 @@
                 "showProvidersInPlaceholder": false
               },
               "appMenuClearsTask": true,
-              "appMenuFilterField": false,
+              "appMenuFilterField": true,
               "appMenuVisibleOnStartup": false
             }
         },
@@ -252,6 +253,12 @@
           "cfg": {
             "removeMode": "onclickonmarker"
           }
+        },
+        {
+          "name": "LayerCatalog",
+          "cfg": {
+              "catalogUrl": "http://qwc2.sourcepole.ch/catalog.json"
+          }
         }
       ],
       "desktop": [
@@ -333,6 +340,7 @@
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
                 {"key": "LayerTree", "icon": "layers"},
+                {"key": "LayerCatalog", "icon": "catalog"},
                 {"key": "Share", "icon": "share"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "Identify", "icon": "identify_region", "mode": "Region"},
@@ -360,7 +368,7 @@
                 "showProvidersInPlaceholder": false
               },
               "appMenuClearsTask": true,
-              "appMenuFilterField": false,
+              "appMenuFilterField": true,
               "appMenuVisibleOnStartup": false,
               "logoUrl": "/"
             }
@@ -393,7 +401,7 @@
             "allowMapTips": true,
             "allowCompare": true,
             "allowImport": true,
-            "groupTogglesSublayers": true,
+            "groupTogglesSublayers": false,
             "grayUnchecked": false,
             "layerInfoWindowSize": {"width": 480, "height": 400},
             "bboxDependentLegend": true,
@@ -451,7 +459,15 @@
           }
         },
         {
-          "name": "DxfExport"
+          "name": "DxfExport",
+          "cfg": {
+              "serviceUrl": "http://127.0.0.1:8001/ows/dxf_geobau",
+              "layerOptions": [
+                  {"label": "Geobau", "layers": "dxfgeobau"},
+                  {"label": "Geobau + Höhenkurven", "layers": "dxfgeobau,hoehenkurven"}
+              ],
+              "formatOptions": "MODE:SYMBOLLAYERSYMBOLOGY;SCALE:500;NO_MTEXT:TEXT"
+          }
         },
         {
           "name": "RasterExport",
@@ -493,6 +509,12 @@
       },
       {
           "name": "ScratchDrawing"
+      },
+      {
+          "name": "LayerCatalog",
+          "cfg": {
+              "catalogUrl": "http://qwc2.sourcepole.ch/catalog.json"
+          }
       }
       ]
   }
