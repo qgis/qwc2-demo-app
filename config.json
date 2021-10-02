@@ -3,7 +3,7 @@
   "searchDataServiceUrl": "http://localhost:5011/geom/",
   "editServiceUrl": "http://localhost:5012/",
   "mapInfoService":  "http://localhost:5016/",
-  "permalinkServiceUrl": "http://localhost:5018/",
+  "permalinkServiceUrl": "http://localhost:5001/",
   "elevationServiceUrl": "http://localhost:5002/",
   "featureReportService": "http://localhost:5020/",
   "urlPositionFormat": "centerAndZoom",
@@ -115,6 +115,7 @@
                 {"key": "LayerTree", "icon": "layers"},
                 {"key": "LayerCatalog", "icon": "catalog"},
                 {"key": "Share", "icon": "share"},
+                {"key": "Bookmark", "icon": "bookmark"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "Identify", "icon": "identify_region", "mode": "Region"},
                   {"key": "Measure", "icon": "measure"},
@@ -259,6 +260,9 @@
           "cfg": {
               "catalogUrl": "http://qwc2.sourcepole.ch/catalog.json"
           }
+        },
+        {
+          "name": "Bookmark"
         }
       ],
       "desktop": [
@@ -342,6 +346,7 @@
                 {"key": "LayerTree", "icon": "layers"},
                 {"key": "LayerCatalog", "icon": "catalog"},
                 {"key": "Share", "icon": "share"},
+                {"key": "Bookmark", "icon": "bookmark"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "Identify", "icon": "identify_region", "mode": "Region"},
                   {"key": "Measure", "icon": "measure"},
@@ -515,6 +520,9 @@
           "cfg": {
               "catalogUrl": "http://qwc2.sourcepole.ch/catalog.json"
           }
+      },
+      {
+          "name": "Bookmark"
       }
       ]
   }
