@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "AttributeTable": "",
         "DxfExport": "Eksport DXF",
         "Editing": "Edycja",
         "Help": "Pomoc",
@@ -37,6 +38,15 @@
       "searchinprogress": "",
       "searchreset": "",
       "themes": "Motywy"
+    },
+    "attribtable": {
+      "commit": "",
+      "discard": "",
+      "layer": "",
+      "loading": "",
+      "reload": "",
+      "selectlayer": "",
+      "title": ""
     },
     "bgswitcher": {
       "nobg": "Bez tła"

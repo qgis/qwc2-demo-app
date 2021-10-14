@@ -352,6 +352,7 @@
                   {"key": "Measure", "icon": "measure"},
                   {"key": "Redlining", "icon": "draw"},
                   {"key": "Editing", "icon": "editing"},
+                  {"key": "AttributeTable", "icon": "editing"},
                   {"key": "DxfExport", "icon": "dxfexport"},
                   {"key": "RasterExport", "icon": "rasterexport"}
                 ]},
@@ -523,6 +524,9 @@
       },
       {
           "name": "Bookmark"
+      },
+      {
+          "name": "AttributeTable"
       }
       ]
   }

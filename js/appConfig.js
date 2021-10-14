@@ -50,6 +50,7 @@ import StartupMarkerPlugin from 'qwc2/plugins/StartupMarker';
 import ScratchDrawingPlugin from 'qwc2/plugins/ScratchDrawing';
 import AuthenticationPlugin from 'qwc2/plugins/Authentication';
 import BookmarkPlugin from 'qwc2/plugins/Bookmark';
+import AttributeTablePlugin from 'qwc2/plugins/AttributeTable';
 import APIPlugin from 'qwc2/plugins/API';
 import {customAttributeCalculator} from './CustomAttributeCalculator';
 
@@ -110,6 +111,7 @@ export default {
             ScratchDrawingPlugin: ScratchDrawingPlugin,
             AuthenticationPlugin: AuthenticationPlugin,
             BookmarkPlugin: BookmarkPlugin,
+            AttributeTablePlugin: AttributeTablePlugin(),
             APIPlugin: APIPlugin
         },
         cfg: {

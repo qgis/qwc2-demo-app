@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "AttributeTable": "",
         "DxfExport": "Export DXF",
         "Editing": "Editer",
         "Help": "Aide",
@@ -37,6 +38,15 @@
       "searchinprogress": "",
       "searchreset": "",
       "themes": "Cartes"
+    },
+    "attribtable": {
+      "commit": "",
+      "discard": "",
+      "layer": "",
+      "loading": "",
+      "reload": "",
+      "selectlayer": "",
+      "title": ""
     },
     "bgswitcher": {
       "nobg": "Pas de fond"

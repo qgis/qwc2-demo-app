@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "Externer Link",
+        "AttributeTable": "Attributtabelle",
         "DxfExport": "DXF-Export",
         "Editing": "Editieren",
         "Help": "Hilfe",
@@ -37,6 +38,15 @@
       "searchinprogress": "Suche läuft",
       "searchreset": "Suche zurücksetzen",
       "themes": "Themen"
+    },
+    "attribtable": {
+      "commit": "Geänderte Zeile speichern",
+      "discard": "Geänderte Zeile zurücksetzen",
+      "layer": "Ebene",
+      "loading": "Laden...",
+      "reload": "Daten neu laden",
+      "selectlayer": "Ebene auswählen...",
+      "title": "Attributtabelle"
     },
     "bgswitcher": {
       "nobg": "Kein Hintergrund"

@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "Collegamento esterno",
+        "AttributeTable": "Tabella attributi",
         "DxfExport": "Esporta su DXF",
         "Editing": "Strumenti di modifica",
         "Help": "Aiuto",
@@ -37,6 +38,15 @@
       "searchinprogress": "Ricerca in corso...",
       "searchreset": "Resetta ricerca",
       "themes": "Temi"
+    },
+    "attribtable": {
+      "commit": "Salva riga modificata",
+      "discard": "Ripristina riga modificata",
+      "layer": "Livello",
+      "loading": "Caricamento...",
+      "reload": "Ricarica dati",
+      "selectlayer": "Seleziona livello...",
+      "title": "Tabella attributi"
     },
     "bgswitcher": {
       "nobg": "Nessuno sfondo"

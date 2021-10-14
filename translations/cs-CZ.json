@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "AttributeTable": "",
         "DxfExport": "DXF Export",
         "Editing": "Úpravy",
         "Help": "Nápověda",
@@ -37,6 +38,15 @@
       "searchinprogress": "",
       "searchreset": "",
       "themes": "Témata"
+    },
+    "attribtable": {
+      "commit": "",
+      "discard": "",
+      "layer": "",
+      "loading": "",
+      "reload": "",
+      "selectlayer": "",
+      "title": ""
     },
     "bgswitcher": {
       "nobg": "Bez podkladu"
