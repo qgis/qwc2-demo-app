@@ -9,5 +9,5 @@
 import React from 'react';
 
 export function renderHelp() {
-    return (<div>Help</div>);
+    return (<div>QWC2 Demo build {process.env.BuildDate}</div>);
 }
