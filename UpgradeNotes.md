@@ -5,6 +5,20 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
+Update to qwc2 submodule revision [eb5e358](https://github.com/qgis/qwc2/tree/eb5e358) (25.10.2021)
+---------------------------------------------------------------------------------------------------
+
+**Update to Webpack 5, React 17**
+
+- Synchronize the `webpack.config.js` and the dependencies and package scripts from the demo app `package.json`. Note that the `build` package script is now an alias with the `prod` script.
+- Remove the `dist/App.js` script include from `index.html`, it is now added automatically by Webpack.
+- All static files of the app need to be placed below a toplevel `static` folder, which will contain `assets`, `translations`, `config.json`, `themes.json`, etc. The `themesConfig` script will write `themes.json` to that folder.
+- In custom components, replace any use of `Swipeable` from `react-swipeable`:
+
+      - import {Swipeable} from 'react-swipeable';
+      + import {Swipeable} from 'qwc2/components/Swipeable';
+
+
 Update to qwc2 submodule revision [e08aed5](https://github.com/qgis/qwc2/tree/e08aed5) (18.05.2021)
 ---------------------------------------------------------------------------------------------------
 

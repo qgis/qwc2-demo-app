@@ -54,7 +54,7 @@ import AttributeTablePlugin from 'qwc2/plugins/AttributeTable';
 import APIPlugin from 'qwc2/plugins/API';
 import {customAttributeCalculator} from './CustomAttributeCalculator';
 
-import defaultLocaleData from '../translations/en-US.json';
+import defaultLocaleData from '../static/translations/en-US.json';
 
 export default {
     defaultLocaleData: defaultLocaleData,

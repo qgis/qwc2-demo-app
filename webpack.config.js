@@ -1,113 +1,105 @@
 const webpack = require('webpack');
 const path = require('path');
-const TerserPlugin = require('terser-webpack-plugin');
-const os = require('os');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const styleConfig = require("./styleConfig");
 
-const nodeEnv = process.env.NODE_ENV || 'development';
-const isProd = nodeEnv === 'production';
+const styleReplacements = Object.keys(styleConfig).map(key => ({search: "@" + key + "@", replace: styleConfig[key], flags: "g"}));
+const today = new Date();
+const buildDate = today.getFullYear() + "." + String(1 + today.getMonth()).padStart(2, '0') + "." + String(today.getDate()).padStart(2, '0');
 
+module.exports = (env, argv) => {
+    const isProd = argv.mode === "production";
 
-let styleReplacements = Object.keys(styleConfig).map(key => ({search: "@" + key + "@", replace: styleConfig[key], flags: "g"}));
-
-const plugins = [
-  new webpack.DefinePlugin({
-    'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }
-  }),
-  new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "qwc2", "libs", "openlayers")),
-  new webpack.NoEmitOnErrorsPlugin()
-];
-
-if (!isProd) {
-  plugins.push(new webpack.HotModuleReplacementPlugin());
-}
-
-module.exports = {
-  devtool: isProd ? 'source-map' : 'eval',
-  mode: isProd ? "production" : "development",
-  entry: {
-    'webpack-dev-server': 'webpack-dev-server/client?http://0.0.0.0:8081',
-    'webpack': 'webpack/hot/only-dev-server',
-    'QWC2App': path.join(__dirname, "js", "app")
-  },
-  output: {
-    path: path.join(__dirname, './dist'),
-    publicPath: "/dist/",
-    filename: '[name].js'
-  },
-  plugins,
-  resolve: {
-    extensions: [".mjs", ".js", ".jsx"],
-    symlinks: false
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(woff|woff2)(\?\w+)?$/,
-        use: {
-          loader: "url-loader",
-          options: {
-            limit: 50000,
-            mimetype: "application/font-woff",
-            name: "fonts/[name].[ext]",
-          }
+    return {
+        entry: {
+            App: path.resolve(__dirname, 'js', 'app.jsx')
+        },
+        output: {
+            path: path.resolve(__dirname, 'prod')
+        },
+        watchOptions: {
+            ignored: /node_modules(\\|\/)(?!qwc2)/
+        },
+        devtool: isProd ? 'source-map' : 'eval',
+        optimization: {
+            minimize: isProd
+        },
+        devServer: {
+            static: [
+                {
+                    directory: path.resolve(__dirname, 'static'),
+                    publicPath: '/'
+                }
+            ],
+            compress: true,
+            hot: true,
+            port: 8080
+        },
+        resolve: {
+            extensions: [".mjs", ".js", ".jsx"],
+            fallback: {
+                stream: require.resolve("stream-browserify"),
+                buffer: require.resolve("buffer/"),
+                path: require.resolve("path-browserify"),
+                timers: require.resolve("timers-browserify")
+            }
+        },
+        snapshot: {
+            managedPaths: [/(.*(\\|\/)node_modules(\\|\/)(?!qwc2))/]
+        },
+        plugins: [
+            new CleanWebpackPlugin(),
+            new webpack.DefinePlugin({
+                'process.env': {
+                    NODE_ENV: JSON.stringify(argv.mode),
+                    BuildDate: JSON.stringify(buildDate)
+                }
+            }),
+            new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "qwc2", "libs", "openlayers")),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, "index.html"),
+                build: buildDate
+            }),
+            new CopyWebpackPlugin({
+                patterns: [
+                    { from: 'static' }
+                ]
+            })
+        ],
+        module: {
+            rules: [
+                {
+                    test: /\.css$/,
+                    use: [
+                        {loader: 'style-loader'},
+                        {loader: 'css-loader'},
+                        {loader: 'string-replace-loader', options: {multiple: styleReplacements}}
+                    ]
+                },
+                {
+                    test: /(.woff|.woff2|.png|.jpg|.gif)/,
+                    type: 'asset/resource'
+                },
+                {
+                    test: /\.jsx?$/,
+                    exclude: /node_modules(\\|\/)(?!qwc2)/,
+                    use: {
+                        loader: 'babel-loader',
+                        options: { babelrcRoots: ['.', path.resolve(__dirname, 'node_modules', 'qwc2')] }
+                    }
+                },
+                {
+                    test: /\.mjs$/,
+                    type: 'javascript/auto'
+                },
+                {
+                    test: /\.js$/,
+                    enforce: "pre",
+                    use: ["source-map-loader"]
+                }
+            ]
         }
-      },
-      {
-        test: /\.css$/,
-        use: [
-          {loader: 'style-loader'},
-          {loader: 'css-loader'},
-          {loader: 'string-replace-loader', options: {multiple: styleReplacements}}
-        ]
-      },
-      {
-        test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/, use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            esModule: false
-          }
-        }
-      },
-      {
-        test: /\.(png|jpg|gif)$/, use: {
-          loader: 'url-loader',
-          options: {
-            name: '[path][name].[ext]',
-            limit: 8192,
-            esModule: false
-          }
-        }
-      },
-      {
-        test: /\.jsx?$/,
-        exclude: os.platform() === 'win32' ? /node_modules\\(?!(qwc2)\\).*/ : /node_modules\/(?!(qwc2)\/).*/,
-        use: {
-            loader: 'babel-loader',
-            options: { babelrcRoots: ['.', path.resolve(__dirname, 'node_modules', 'qwc2')] }
-        }
-      },
-      {
-        test: /\.mjs$/,
-        type: 'javascript/auto'
-    },
-    {
-        test: /\.js$/,
-        enforce: "pre",
-        use: ["source-map-loader"]
-      }
-    ]
-  },
-  devServer: {
-    hot: true,
-    contentBase: './',
-    publicPath: '/dist'
-  },
-  optimization: {
-    minimize: isProd,
-    minimizer: [
-      new TerserPlugin({parallel: true})
-    ]
-  }
+    };
 };
