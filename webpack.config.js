@@ -17,6 +17,7 @@ module.exports = (env, argv) => {
             App: path.resolve(__dirname, 'js', 'app.jsx')
         },
         output: {
+            hashFunction: 'sha256',
             path: path.resolve(__dirname, 'prod')
         },
         watchOptions: {
