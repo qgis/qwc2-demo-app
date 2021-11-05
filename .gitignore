@@ -4,5 +4,5 @@ prod/
 icons/build
 npm-debug.log
 themes.json
-assets/img/genmapthumbs/*
+static/assets/img/genmapthumbs/*
 yarn-error.log
