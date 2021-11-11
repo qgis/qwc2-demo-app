@@ -608,7 +608,7 @@ Alternatively, the following three options exist to influence the startup positi
 - Pass a search text which results in a unique result (i.e. a coordinate string) as URL parameter, as documented in [URL parameters](#url-parameters).
 - Set `startupMode` in the `LocateSupport` options of the `Map` configuration in `config.json`. Possible values are `DISABLED`, `ENABLED` or `FOLLOWING`. If a search text is passed via `st` URL parameter or `hc=1` is specified in the URL, the `startupMode` is ignored.
 
-### <a name="layer-catalogs"></a>Layer catalogs
+## <a name="layer-catalogs"></a>Layer catalogs
 The import layer functionality in the layertree also supports loading a layer catalog document from an URL. Two catalog formats are supported:
 
 * QGIS WMS/WFS connections XML: this file is produced by exporting the configured WMS or WFS connections from the QGIS data source manager dialog.
@@ -627,6 +627,22 @@ The import layer functionality in the layertree also supports loading a layer ca
   where `resource` is in the same format as the serialized layer identifiers in a QWC2 URL, see [URL Parameters](#url-parameters).
 
 Note that the server serving the catalog documents needs to ensure that it sets CORS headers appropriately, if they are served from a different origin than QWC2.
+
+## Links in identify results
+
+Links in attributes of GetFeatureInfo reponses are parsed and displayed as clickable links in the identify results window. You can also have links open in an inline dialog using the following format:
+
+    <a href="<url>" target=":iframedialog:<name>:<option1=value1>:<option2=value2>:...">Text</a>
+
+Where:
+
+* `name` The name of the dialog. All links with the same name will open in the same dialog (resp. re-use an already visible dialog). Note that the title of the window will be the translation message ID `windows.<name>`, which should be added to `extra_strings` in `tsconfig.json` and translated in the respective language files.
+* Supported options include:
+  - `width=<integer>`: Initial window width
+  - `height=<integer>`: Initial window height
+  - `print=<boolean>`: Whether to display a print icon in the window title bar
+  - `dockable=<boolean>`: Whether the window is dockable
+  - `docked=<boolean>`: Whether the window is initially docked
 
 
 ## Keeping the QWC2 application up to date
