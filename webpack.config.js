@@ -18,7 +18,9 @@ module.exports = (env, argv) => {
         },
         output: {
             hashFunction: 'sha256',
-            path: path.resolve(__dirname, 'prod')
+            path: path.resolve(__dirname, 'prod'),
+            filename: 'dist/App.js',
+            assetModuleFilename: 'dist/[hash][ext][query]'
         },
         watchOptions: {
             ignored: /node_modules(\\|\/)(?!qwc2)/
