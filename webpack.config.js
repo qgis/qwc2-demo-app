@@ -83,7 +83,7 @@ module.exports = (env, argv) => {
                 },
                 {
                     test: /(.woff|.woff2|.png|.jpg|.gif)/,
-                    type: 'asset/resource'
+                    type: 'asset/inline'
                 },
                 {
                     test: /\.jsx?$/,
