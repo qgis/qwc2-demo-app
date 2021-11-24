@@ -309,15 +309,13 @@
           }
         },
         {
-          "name": "HomeButton"
-          ,
+          "name": "HomeButton",
           "cfg": {
             "position": 4
           }
         },
         {
-          "name": "LocateButton"
-          ,
+          "name": "LocateButton",
           "cfg": {
             "position": 3
           }
