@@ -45,9 +45,11 @@
       "layer": "",
       "loadfailed": "",
       "loading": "",
+      "pleasereload": "",
       "reload": "",
       "selectlayer": "",
-      "title": ""
+      "title": "",
+      "zoomtoselection": ""
     },
     "bgswitcher": {
       "nobg": "Fără fundal"
@@ -55,10 +57,10 @@
     "bookmark": {
       "add": "Adaugă",
       "description": "Descriere",
+      "lastUpdate": "",
       "manage": "Gestionează",
       "notloggedin": "Nelogat",
       "open": "Deschide",
-      "openintab": "Deschide în tab",
       "remove": "Elimină",
       "update": "Actualizează"
     },
