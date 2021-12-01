@@ -63,7 +63,8 @@ module.exports = (env, argv) => {
             new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "qwc2", "libs", "openlayers")),
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, "index.html"),
-                build: buildDate
+                build: buildDate,
+                hash: true
             }),
             new CopyWebpackPlugin({
                 patterns: [
