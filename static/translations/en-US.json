@@ -45,9 +45,11 @@
       "layer": "Layer",
       "loadfailed": "Failed to load the feature data",
       "loading": "Loading...",
-      "reload": "Reload data",
+      "pleasereload": "Press 'Reload' to load the attribute table...",
+      "reload": "Reload",
       "selectlayer": "Select layer...",
-      "title": "Attribute Table"
+      "title": "Attribute Table",
+      "zoomtoselection": "Zoom to selected features"
     },
     "bgswitcher": {
       "nobg": "No background"
@@ -55,10 +57,10 @@
     "bookmark": {
       "add": "Add bookmark for current map",
       "description": "Description",
+      "lastUpdate": "Last saved",
       "manage": "Manage your bookmarks",
       "notloggedin": "You need to be logged in to store bookmarks",
       "open": "Open bookmark",
-      "openintab": "Open bookmark in a new tab",
       "remove": "Remove bookmark",
       "update": "Update bookmark"
     },

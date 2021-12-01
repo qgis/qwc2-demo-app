@@ -1,7 +1,7 @@
 {
   "searchServiceUrl": "http://localhost:5011/",
   "searchDataServiceUrl": "http://localhost:5011/geom/",
-  "editServiceUrl": "http://localhost:5012/",
+  "editServiceUrl": "http://localhost:8088/api/v1/data/",
   "mapInfoService":  "http://localhost:5016/",
   "permalinkServiceUrl": "http://localhost:5001/",
   "elevationServiceUrl": "http://localhost:5002/",
@@ -12,6 +12,7 @@
   "preserveExtentOnThemeSwitch": true,
   "preserveBackgroundOnThemeSwitch": true,
   "preserveNonThemeLayersOnThemeSwitch": false,
+  "storeAllLayersInPermalink": false,
   "allowReorderingLayers": true,
   "preventSplittingGroupsWhenReordering": false,
   "allowLayerTreeSeparators": false,
@@ -25,6 +26,7 @@
   "wmsDpi": 96,
   "wmsHidpi": false,
   "qgisServerVersion": 3,
+  "username": "admin",
   "defaultFeatureStyle": {
     "strokeColor": [0, 0, 255, 1],
     "strokeWidth": 1,

@@ -121,6 +121,7 @@ All settings are optional, with fallback to the default values as documented.
 |`wmsDpi`                             | The DPI to pass to the WMS requests. Default value: `96`.                           |
 |`wmsHidpi`                           | Whether to honour the device pixel ratio for WMS GetMap requests. Default value: `true`. |
 |`externalLayerFeatureInfoFormats`    | A dictionary of feature info formats for external layers, in the format `{"<url>": "<format>", ...}`. If the GetFeatureInfo URL of a layer contains the specified `<url>`, the corresponding format is used. |
+|`storeAllLayersInPermalink`          | Whether to store the full layertree in the permalink data, rather than only local (i.e. redlining) layers. If false, remote layers are re-queried from the respective services, if true, they are statically reloaded (meaning restored layers may be outdated compared to current service capabilities).
 
 *Global settings, overridable per theme*:<a name="config-json-overridable"></a>
 

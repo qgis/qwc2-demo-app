@@ -45,9 +45,11 @@
       "layer": "Ebene",
       "loadfailed": "Die Objektdaten konnten nicht geladen werden",
       "loading": "Laden...",
-      "reload": "Daten neu laden",
+      "pleasereload": "Auf 'Neu laden' drücken, um die Attributtabelle zu laden...",
+      "reload": " Neu laden",
       "selectlayer": "Ebene auswählen...",
-      "title": "Attributtabelle"
+      "title": "Attributtabelle",
+      "zoomtoselection": "Auf ausgewählte Objekte zoomen"
     },
     "bgswitcher": {
       "nobg": "Kein Hintergrund"
@@ -55,10 +57,10 @@
     "bookmark": {
       "add": "Hinzufügen",
       "description": "Beschreibung",
+      "lastUpdate": "Zuletzt gespeichert",
       "manage": "Verwalten",
       "notloggedin": "Sie müssen angemeldet sein, um Lesezeichen zu verwenden",
       "open": "Öffnen",
-      "openintab": "In Tab öffnen",
       "remove": "Entfernen",
       "update": "Aktualisieren"
     },

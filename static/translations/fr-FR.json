@@ -45,9 +45,11 @@
       "layer": "",
       "loadfailed": "",
       "loading": "",
+      "pleasereload": "",
       "reload": "",
       "selectlayer": "",
-      "title": ""
+      "title": "",
+      "zoomtoselection": ""
     },
     "bgswitcher": {
       "nobg": "Pas de fond"
@@ -55,10 +57,10 @@
     "bookmark": {
       "add": "Ajouter un marque-page",
       "description": "Description",
+      "lastUpdate": "",
       "manage": "Gérer les marque-pages",
       "notloggedin": "",
       "open": "",
-      "openintab": "Ouvrir dans un nouvel onglet",
       "remove": "Supprimer le marque-page",
       "update": "Sauvegarder le marque-page"
     },

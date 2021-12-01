@@ -45,9 +45,11 @@
       "layer": "",
       "loadfailed": "",
       "loading": "",
+      "pleasereload": "",
       "reload": "",
       "selectlayer": "",
-      "title": ""
+      "title": "",
+      "zoomtoselection": ""
     },
     "bgswitcher": {
       "nobg": "Bez tła"
@@ -55,10 +57,10 @@
     "bookmark": {
       "add": "",
       "description": "",
+      "lastUpdate": "",
       "manage": "",
       "notloggedin": "",
       "open": "",
-      "openintab": "",
       "remove": "",
       "update": ""
     },

@@ -43,11 +43,13 @@
       "commit": "Salva riga modificata",
       "discard": "Ripristina riga modificata",
       "layer": "Livello",
-      "loadfailed": "",
+      "loadfailed": "Errore nel caricamento dei dati",
       "loading": "Caricamento...",
-      "reload": "Ricarica dati",
+      "pleasereload": "Premere 'Ricarica' per caricare la tabella attributi...",
+      "reload": "Ricarica",
       "selectlayer": "Seleziona livello...",
-      "title": "Tabella attributi"
+      "title": "Tabella attributi",
+      "zoomtoselection": "Zoomare sugli oggetti selezionati"
     },
     "bgswitcher": {
       "nobg": "Nessuno sfondo"
@@ -55,10 +57,10 @@
     "bookmark": {
       "add": "Aggiungi",
       "description": "Descrizione",
+      "lastUpdate": "Ultimo salvataggio",
       "manage": "Gestisci",
       "notloggedin": "È necessario aver effettuato l'accesso per utilizzare i segnalibri",
       "open": "Apri",
-      "openintab": "Apri in nuova scheda",
       "remove": "Rimuovi",
       "update": "Aggiorna"
     },
