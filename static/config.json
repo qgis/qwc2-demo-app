@@ -383,7 +383,9 @@
           "name": "BottomBar",
           "cfg": {
             "viewertitleUrl": "http://qgis.org/",
-            "termsUrl":  "http://qgis.org/"
+            "viewertitleUrlTarget": "iframe",
+            "termsUrl":  "http://qgis.org/",
+            "viewertitleUrlTarget": "_blank"
           }
         },
         {
