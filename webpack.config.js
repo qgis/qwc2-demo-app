@@ -14,12 +14,12 @@ module.exports = (env, argv) => {
 
     return {
         entry: {
-            App: path.resolve(__dirname, 'js', 'app.jsx')
+            QWC2App: path.resolve(__dirname, 'js', 'app.jsx')
         },
         output: {
             hashFunction: 'sha256',
             path: path.resolve(__dirname, 'prod'),
-            filename: 'dist/App.js',
+            filename: 'dist/QWC2App.js',
             assetModuleFilename: 'dist/[hash][ext][query]'
         },
         watchOptions: {
