@@ -385,6 +385,7 @@ function nominatimSearchResults(obj, requestId) {
             text: text,
             label: label,
             bbox: bbox,
+            geometry: entry.geojson,
             x: 0.5 * (bbox[0] + bbox[2]),
             y: 0.5 * (bbox[1] + bbox[3]),
             crs: "EPSG:4326",
@@ -398,6 +399,7 @@ function nominatimSearch(text, requestId, searchOptions, dispatch) {
     axios.get("//nominatim.openstreetmap.org/search", {params: {
         q: text,
         addressdetails: 1,
+        polygon_geojson: 1,
         limit: 20,
         format: 'json'
     }}).then(response => dispatch(nominatimSearchResults(response.data, requestId)));
