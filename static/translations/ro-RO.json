@@ -56,12 +56,16 @@
     },
     "bookmark": {
       "add": "Adaugă",
+      "addfailed": "",
       "description": "Descriere",
       "lastUpdate": "Ultima actualizare",
       "manage": "Gestionează",
       "notloggedin": "Nelogat",
       "open": "Deschide",
+      "openTab": "",
       "remove": "Elimină",
+      "removefailed": "",
+      "savefailed": "",
       "update": "Actualizează"
     },
     "bottombar": {
