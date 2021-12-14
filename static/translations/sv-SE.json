@@ -56,12 +56,16 @@
     },
     "bookmark": {
       "add": "",
+      "addfailed": "",
       "description": "",
       "lastUpdate": "",
       "manage": "",
       "notloggedin": "",
       "open": "",
+      "openTab": "",
       "remove": "",
+      "removefailed": "",
+      "savefailed": "",
       "update": ""
     },
     "bottombar": {

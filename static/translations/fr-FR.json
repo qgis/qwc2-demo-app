@@ -56,12 +56,16 @@
     },
     "bookmark": {
       "add": "Ajouter un marque-page",
+      "addfailed": "",
       "description": "Description",
       "lastUpdate": "",
       "manage": "Gérer les marque-pages",
       "notloggedin": "",
       "open": "",
+      "openTab": "",
       "remove": "Supprimer le marque-page",
+      "removefailed": "",
+      "savefailed": "",
       "update": "Sauvegarder le marque-page"
     },
     "bottombar": {

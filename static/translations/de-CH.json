@@ -55,14 +55,18 @@
       "nobg": "Kein Hintergrund"
     },
     "bookmark": {
-      "add": "Hinzufügen",
+      "add": "Neues Lesezeichen anlegen",
+      "addfailed": "Lesezeichen konnte nicht angelegt werden",
       "description": "Beschreibung",
       "lastUpdate": "Zuletzt gespeichert",
-      "manage": "Verwalten",
+      "manage": "Lesezeichen verwalten",
       "notloggedin": "Sie müssen angemeldet sein, um Lesezeichen zu verwenden",
-      "open": "Öffnen",
-      "remove": "Entfernen",
-      "update": "Aktualisieren"
+      "open": "In aktuellem Fenster Öffnen",
+      "openTab": "In neuem Fenster öffnen",
+      "remove": "Lesezeichen entfernen",
+      "removefailed": "Lesezeichen konnte nicht entfernt werden",
+      "savefailed": "Lesezeichen konnte nicht aktualisiert werden",
+      "update": "Lesezeichen aktualisieren"
     },
     "bottombar": {
       "mousepos_label": "Koordinaten",
