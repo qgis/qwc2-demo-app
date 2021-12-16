@@ -229,113 +229,6 @@ function usterResultGeometry(resultItem, callback) {
 
 /** ************************************************************************ **/
 
-function wolfsburgSearch(text, requestId, searchOptions, dispatch) {
-    axios.get("https://geoportal.stadt.wolfsburg.de/wsgi/search.wsgi", {params: {
-        query: text,
-        searchTables: '["Infrastruktur", "Stadt- und Ortsteile"]',
-        searchFilters: '["Abfallwirtschaft,Haltestellen,Hilfsorganisationen", ""]',
-        searchArea: "Wolfsburg",
-        searchCenter: "",
-        searchRadius: "",
-        topic: "stadtplan",
-        resultLimit: 100,
-        resultLimitCategory: 100
-    }}).then(response => dispatch(wolfsburgSearchResults(response.data, requestId)));
-}
-
-function wolfsburgSearchResults(obj, requestId) {
-    const results = [];
-    let currentgroup = null;
-    let groupcounter = 0;
-    let counter = 0;
-    (obj.results || []).map(entry => {
-        if (!entry.bbox) {
-            // Is group
-            currentgroup = {
-                id: "wolfsburggroup" + (groupcounter++),
-                title: entry.displaytext,
-                items: []
-            };
-            results.push(currentgroup);
-        } else if (currentgroup) {
-            currentgroup.items.push({
-                id: "wolfsburgresult" + (counter++),
-                text: entry.displaytext,
-                searchtable: entry.searchtable,
-                oid: entry.id,
-                bbox: entry.bbox.slice(0),
-                x: 0.5 * (entry.bbox[0] + entry.bbox[2]),
-                y: 0.5 * (entry.bbox[1] + entry.bbox[3]),
-                crs: "EPSG:25832",
-                provider: "wolfsburg"
-            });
-        }
-    });
-    return addSearchResults({data: results, provider: "wolfsburg", reqId: requestId}, true);
-}
-
-function wolfsburgResultGeometry(resultItem, callback) {
-    axios.get("https://geoportal.stadt.wolfsburg.de/wsgi/getSearchGeom.wsgi", {params: {
-        searchtable: resultItem.searchtable,
-        id: resultItem.oid
-    }}).then(response => callback(resultItem, response.data, "EPSG:25832"));
-}
-
-/** ************************************************************************ **/
-
-function glarusSearch(text, requestId, searchOptions, dispatch) {
-    const limit = 9;
-    axios.get("https://map.geo.gl.ch/search/all?limit=" + limit + "&query=" + encodeURIComponent(text))
-        .then(response => dispatch(glarusSearchResults(response.data, requestId, limit)))
-        .catch(() => dispatch(glarusSearchResults({}, requestId, limit)));
-}
-
-function glarusMoreResults(moreItem, text, requestId, dispatch) {
-    axios.get("https://map.geo.gl.ch/search/" + moreItem.category + "?query=" + encodeURIComponent(text))
-        .then(response => dispatch(glarusSearchResults(response.data, requestId)))
-        .catch(() => dispatch(glarusSearchResults({}, requestId)));
-}
-
-function glarusSearchResults(obj, requestId, limit = -1) {
-    const results = [];
-    let idcounter = 0;
-    (obj.results || []).map(group => {
-        const groupResult = {
-            id: group.category,
-            title: group.name,
-            items: group.features.map(item => {
-                return {
-                    id: item.id,
-                    text: item.name,
-                    bbox: item.bbox.slice(0),
-                    x: 0.5 * (item.bbox[0] + item.bbox[2]),
-                    y: 0.5 * (item.bbox[1] + item.bbox[3]),
-                    crs: "EPSG:2056",
-                    provider: "glarus",
-                    category: group.category
-                };
-            })
-        };
-        if (limit >= 0 && group.features.length > limit) {
-            groupResult.items.push({
-                id: "glarusmore" + (idcounter++),
-                more: true,
-                provider: "glarus",
-                category: group.category
-            });
-        }
-        results.push(groupResult);
-    });
-    return addSearchResults({data: results, provider: "glarus", reqId: requestId}, true);
-}
-
-function glarusResultGeometry(resultItem, callback) {
-    axios.get("https://map.geo.gl.ch/search/" + resultItem.category + "/geometry?id=" + resultItem.id)
-        .then(response => callback(resultItem, response.data, "EPSG:2056"));
-}
-
-/** ************************************************************************ **/
-
 function nominatimSearchResults(obj, requestId) {
     const results = [];
     const groups = {};
@@ -470,17 +363,6 @@ export const SearchProviders = {
         label: "Uster",
         onSearch: usterSearch,
         getResultGeometry: usterResultGeometry
-    },
-    wolfsburg: {
-        label: "Wolfsburg",
-        onSearch: wolfsburgSearch,
-        getResultGeometry: wolfsburgResultGeometry
-    },
-    glarus: {
-        label: "Glarus",
-        onSearch: glarusSearch,
-        getResultGeometry: glarusResultGeometry,
-        getMoreResults: glarusMoreResults
     },
     nominatim: {
         label: "OpenStreetMap",
