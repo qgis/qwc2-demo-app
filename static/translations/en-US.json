@@ -27,6 +27,18 @@
     },
     "search": {
       "coordinates": "Coordinates",
+      "nominatim": {
+        "amenity": "Amenity",
+        "boundary": "Boundary",
+        "building": "Building",
+        "landuse": "Land use",
+        "leisure": "Leisure",
+        "place": "Place",
+        "highway": "Highway",
+        "natural": "Natural",
+        "railway": "Railway",
+        "tourism": "Tourism"
+      },
       "all": "All",
       "enablelayer": "Enable layer",
       "existinglayer": "The layer already exists in the map",

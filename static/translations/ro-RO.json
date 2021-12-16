@@ -27,6 +27,18 @@
     },
     "search": {
       "coordinates": "Coordonate",
+      "nominatim": {
+        "amenity": "",
+        "boundary": "",
+        "building": "",
+        "landuse": "",
+        "leisure": "",
+        "place": "",
+        "highway": "",
+        "natural": "",
+        "railway": "",
+        "tourism": ""
+      },
       "all": "Toate",
       "enablelayer": "Activare strat",
       "existinglayer": "Strat existent",

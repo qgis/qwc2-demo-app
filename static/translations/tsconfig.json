@@ -17,7 +17,17 @@
   ],
   "extra_strings": [
     "appmenu.items.ExternalLink",
-    "search.coordinates"
+    "search.coordinates",
+    "search.nominatim.amenity",
+    "search.nominatim.boundary",
+    "search.nominatim.building",
+    "search.nominatim.landuse",
+    "search.nominatim.leisure",
+    "search.nominatim.place",
+    "search.nominatim.highway",
+    "search.nominatim.natural",
+    "search.nominatim.railway",
+    "search.nominatim.tourism"
   ],
   "overrides": [
     "bottombar.viewertitle_label"
