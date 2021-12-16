@@ -27,6 +27,18 @@
     },
     "search": {
       "coordinates": "Coordonnées",
+      "nominatim": {
+        "amenity": "",
+        "boundary": "",
+        "building": "",
+        "landuse": "",
+        "leisure": "",
+        "place": "",
+        "highway": "",
+        "natural": "",
+        "railway": "",
+        "tourism": ""
+      },
       "all": "Tous",
       "enablelayer": "Activer la couche",
       "existinglayer": "La couche existe déjà dans la carte",

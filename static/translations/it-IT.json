@@ -27,6 +27,18 @@
     },
     "search": {
       "coordinates": "Coordinate",
+      "nominatim": {
+        "amenity": "Amenità",
+        "boundary": "Confine",
+        "building": "Costruzione",
+        "landuse": "Utilizzo terreno",
+        "leisure": "Svago",
+        "place": "Località",
+        "highway": "Autostrata",
+        "natural": "Natura",
+        "railway": "Ferrovia",
+        "tourism": "Turismo"
+      },
       "all": "Tutti",
       "enablelayer": "Attivare il livello",
       "existinglayer": "Il livello esiste già nella mappa",

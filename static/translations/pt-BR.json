@@ -27,6 +27,18 @@
     },
     "search": {
       "coordinates": "",
+      "nominatim": {
+        "amenity": "",
+        "boundary": "",
+        "building": "",
+        "landuse": "",
+        "leisure": "",
+        "place": "",
+        "highway": "",
+        "natural": "",
+        "railway": "",
+        "tourism": ""
+      },
       "all": "Todos",
       "enablelayer": "Ativar a camada",
       "existinglayer": "A camada já existe no mapa",

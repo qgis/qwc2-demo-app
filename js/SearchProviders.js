@@ -72,6 +72,7 @@ Format of search results:
 import axios from 'axios';
 import {addSearchResults, SearchResultType} from "qwc2/actions/search";
 import CoordinatesUtils from 'qwc2/utils/CoordinatesUtils';
+import LocaleUtils from 'qwc2/utils/LocaleUtils';
 
 function coordinatesSearch(text, requestId, searchOptions, dispatch) {
     const displaycrs = searchOptions.displaycrs || "EPSG:4326";
@@ -239,7 +240,7 @@ function nominatimSearchResults(obj, requestId) {
             groups[entry.class] = {
                 id: "nominatimgroup" + (groupcounter++),
                 // capitalize class
-                title: entry.class.charAt(0).toUpperCase() + entry.class.slice(1),
+                title: LocaleUtils.trWithFallback("search.nominatim." + entry.class, entry.class.charAt(0).toUpperCase() + entry.class.slice(1)),
                 items: []
             };
             results.push(groups[entry.class]);
@@ -290,11 +291,12 @@ function nominatimSearchResults(obj, requestId) {
 
 function nominatimSearch(text, requestId, searchOptions, dispatch) {
     axios.get("//nominatim.openstreetmap.org/search", {params: {
-        q: text,
-        addressdetails: 1,
-        polygon_geojson: 1,
-        limit: 20,
-        format: 'json'
+        'q': text,
+        'addressdetails': 1,
+        'polygon_geojson': 1,
+        'limit': 20,
+        'format': 'json',
+        'accept-language': LocaleUtils.lang()
     }}).then(response => dispatch(nominatimSearchResults(response.data, requestId)));
 }
 
