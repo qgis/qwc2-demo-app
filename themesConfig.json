@@ -95,8 +95,7 @@
                         ],
                         "searchProviders":[
                             "coordinates",
-                            "geoadmin",
-                            "glarus"
+                            "geoadmin"
                         ],
                         "mapCrs":"EPSG:4326",
                         "additionalMouseCrs":[
