@@ -52,11 +52,17 @@
       "themes": "Temas"
     },
     "attribtable": {
+      "addfeature": "",
       "commit": "",
+      "delete": "",
+      "deletefailed": "",
+      "deletefeatures": "",
+      "deleting": "",
       "discard": "",
       "layer": "",
       "loadfailed": "",
       "loading": "",
+      "nodelete": "",
       "pleasereload": "",
       "reload": "",
       "selectlayer": "",
@@ -198,6 +204,9 @@
       "bearingLabel": "Dirección",
       "lengthLabel": "Longitud",
       "pointLabel": "Posição"
+    },
+    "navbar": {
+      "perpage": ""
     },
     "print": {
       "grid": "Rede:",
