@@ -52,11 +52,17 @@
       "themes": "Temalar"
     },
     "attribtable": {
+      "addfeature": "",
       "commit": "",
+      "delete": "",
+      "deletefailed": "",
+      "deletefeatures": "",
+      "deleting": "",
       "discard": "",
       "layer": "",
       "loadfailed": "",
       "loading": "",
+      "nodelete": "",
       "pleasereload": "",
       "reload": "",
       "selectlayer": "",
@@ -198,6 +204,9 @@
       "bearingLabel": "Doğrultu",
       "lengthLabel": "Uzunluk",
       "pointLabel": "Konum"
+    },
+    "navbar": {
+      "perpage": ""
     },
     "print": {
       "grid": "Grid:",

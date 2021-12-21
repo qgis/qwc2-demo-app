@@ -52,11 +52,17 @@
       "themes": "Motywy"
     },
     "attribtable": {
+      "addfeature": "",
       "commit": "",
+      "delete": "",
+      "deletefailed": "",
+      "deletefeatures": "",
+      "deleting": "",
       "discard": "",
       "layer": "",
       "loadfailed": "",
       "loading": "",
+      "nodelete": "",
       "pleasereload": "",
       "reload": "",
       "selectlayer": "",
@@ -198,6 +204,9 @@
       "bearingLabel": "Bearing",
       "lengthLabel": "Odległość",
       "pointLabel": "Pozycja"
+    },
+    "navbar": {
+      "perpage": ""
     },
     "print": {
       "grid": "Siatka:",

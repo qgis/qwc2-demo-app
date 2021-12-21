@@ -52,11 +52,17 @@
       "themes": "Témata"
     },
     "attribtable": {
+      "addfeature": "",
       "commit": "",
+      "delete": "",
+      "deletefailed": "",
+      "deletefeatures": "",
+      "deleting": "",
       "discard": "",
       "layer": "",
       "loadfailed": "",
       "loading": "",
+      "nodelete": "",
       "pleasereload": "",
       "reload": "",
       "selectlayer": "",
@@ -198,6 +204,9 @@
       "bearingLabel": "Ložisko",
       "lengthLabel": "Délka",
       "pointLabel": "Poloha"
+    },
+    "navbar": {
+      "perpage": ""
     },
     "print": {
       "grid": "Mřížka:",
