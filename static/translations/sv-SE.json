@@ -103,6 +103,7 @@
       "symbologyscale": "Symbolskala:"
     },
     "editing": {
+      "attrtable": "",
       "canceldelete": "Radera inte",
       "clearpicture": "",
       "commit": "Skicka",
