@@ -103,6 +103,7 @@
       "symbologyscale": "Sembol Ölçeği:"
     },
     "editing": {
+      "attrtable": "",
       "canceldelete": "Silme",
       "clearpicture": "",
       "commit": "Onayla",

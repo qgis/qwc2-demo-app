@@ -103,6 +103,7 @@
       "symbologyscale": "Meřítko symbolů:"
     },
     "editing": {
+      "attrtable": "",
       "canceldelete": "Neodstraňovat",
       "clearpicture": "",
       "commit": "Potvrdit",

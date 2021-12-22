@@ -103,6 +103,7 @@
       "symbologyscale": "Escala de simbología:"
     },
     "editing": {
+      "attrtable": "",
       "canceldelete": "Não apagues",
       "clearpicture": "",
       "commit": "Comprometer-se",
