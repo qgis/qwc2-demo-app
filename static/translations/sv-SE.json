@@ -282,7 +282,7 @@
     "share": {
       "QRCodeLinkTitle": "QR kod",
       "directLinkTitle": "Via en direktlänk",
-      "generatingpermalink": "Genererar permalink...",
+      "refresh": "",
       "showpin": "",
       "socialIntro": "I ditt favoritnätverk"
     },
