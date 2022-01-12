@@ -107,7 +107,7 @@
     "editing": {
       "attrtable": "Table",
       "canceldelete": "Don't delete",
-      "capturedpicture": "",
+      "capturedpicture": "Captured picture",
       "clearpicture": "Clear",
       "commit": "Commit",
       "delete": "Delete",
