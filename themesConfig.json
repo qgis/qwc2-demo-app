@@ -2,7 +2,7 @@
     "themes":{
         "items":[
             {
-                "url":"http://qwc2.sourcepole.ch/wms/uster/bauprojekte",
+                "url":"http://qwc2.sourcepole.ch/ows/uster/bauprojekte",
                 "attribution":"Stadt Uster",
                 "attributionUrl":"https://gis.uster.ch/",
                 "scales":[
