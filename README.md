@@ -7,6 +7,7 @@ This repository contains a sample QWC2 application.
 
 Some examples of QWC2 production deployments:
 
+- [QWC2 demo server](http://qwc2.sourcepole.ch)
 - [GeoViewer Kanton Glarus](https://map.geo.gl.ch/)
 - [Web GIS Client Kanton Solothurn](https://geo.so.ch/map/)
 
