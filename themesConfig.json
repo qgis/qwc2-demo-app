@@ -64,106 +64,32 @@
                 "title":"Dev Tests",
                 "items":[
                     {
-                        "title":"QWC2 Test",
-                        "url":"http://qwc2.sourcepole.ch/wms/themes/test",
-                        "attribution":"Demo attribution",
-                        "attributionUrl":"https://127.0.0.1/",
-                        "tiled":true,
-                        "backgroundLayers":[
-                            {
-                                "name":"mapnik",
-                                "visibility":true
-                            },
-                            {
-                                "name":"Night2012"
-                            },
-                            {
-                                "name":"StamenToner"
-                            },
-                            {
-                                "name":"StamenWatercolor"
-                            },
-                            {
-                                "name":"Gemeindegrenzen"
-                            },
-                            {
-                                "name":"bluemarble"
-                            },
-                            {
-                                "name":"luftbild_zh_2015"
-                            }
+                        "title": "Demo",
+                        "url": "http://qwc2.sourcepole.ch/ows/qwc_demo",
+                        "default": true,
+                        "attribution": "Demo attribution",
+                        "attributionUrl": "https://127.0.0.1/",
+                        "backgroundLayers": [
+                          {
+                            "name": "bluemarble",
+                            "printLayer": "bluemarble_bg",
+                            "visibility": true
+                          },
+                          {
+                            "name": "mapnik",
+                            "printLayer": "osm_bg"
+                          }
                         ],
-                        "searchProviders":[
-                            "coordinates",
-                            "geoadmin"
+                        "searchProviders": [
+                          "coordinates",
+                          "nominatim"
                         ],
-                        "mapCrs":"EPSG:4326",
-                        "additionalMouseCrs":[
-                            "EPSG:21781",
-                            "EPSG:2056"
-                        ],
-                        "printLabelForSearchResult":"test",
-                        "watermark":{
-                            "text":"Watermark Test",
-                            "texpadding":"1",
-                            "fontsize":"14",
-                            "fontfamily":"sans",
-                            "fontcolor":"#0000FF",
-                            "backgroundcolor":"#FFFFFF",
-                            "framecolor":"#000000",
-                            "framewidth":1
-                        },
-                        "skipEmptyFeatureAttributes":true
-                    },
-                    {
-                        "title":"QWC2 Test 2056",
-                        "url":"http://qwc2.sourcepole.ch/wms/themes/test",
-                        "attribution":"Demo attribution",
-                        "attributionUrl":"https://127.0.0.1/",
-                        "tiled":true,
-                        "backgroundLayers":[
-                            {
-                                "name":"pixelkarte",
-                                "visibility":true
-                            },
-                            {
-                                "name":"group"
-                            },
-                            {
-                                "name":"Gemeindegrenzen"
-                            }
-                        ],
-                        "searchProviders":[
-                            "coordinates",
-                            "geoadmin",
-                            "nominatim"
-                        ],
-                        "featureReport":{
-                            "a":"template_a",
-                            "b":"template_b"
-                        },
-                        "mapCrs":"EPSG:2056",
-                        "additionalMouseCrs":[
-                            "EPSG:21781",
-                            "EPSG:2056"
-                        ],
-                        "printLabelForSearchResult":"test",
-                        "watermark":{
-                            "text":"Watermark Test",
-                            "texpadding":"1",
-                            "fontsize":"14",
-                            "fontfamily":"sans",
-                            "fontcolor":"#0000FF",
-                            "backgroundcolor":"#FFFFFF",
-                            "framecolor":"#000000",
-                            "framewidth":1
-                        },
-                        "skipEmptyFeatureAttributes":true,
-                        "editConfig":"test2056_edit.json",
-                        "extraLegendParameters":"&LAYERTITLE=FALSE",
-                        "externalLayers":[
-                            {"name":"bauzonen","internalLayer":"c"}
-                        ]
+                        "mapCrs": "EPSG:3857",
+                        "additionalMouseCrs": [],
+                        "extent": [-1000000, 4000000, 3000000, 8000000],
+                        "skipEmptyFeatureAttributes": true,
+                        "printResolutions": [300],
+                        "thumbnail": "default.jpg"
                     }
                 ],
                 "groups":[
