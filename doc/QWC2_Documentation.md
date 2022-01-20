@@ -22,7 +22,7 @@ QWC2 is divided into two repositories:
 
 Additionally, some QWC2 components (such as permalink generation, elevation queries, editing, etc) require external services. The reference implementation of these services are hosted at [https://github.com/qwc-services/](https://github.com/qwc-services/).
 
-To work with QWC2, you will need a minimal development environment consisting of [git](https://git-scm.com/), [node](https://nodejs.org/) and [yarn](https://yarnpkg.com).
+To work with QWC2, you will need a minimal development environment consisting of [git](https://git-scm.com/), [node](https://nodejs.org/) and [yarn 1.x](https://classic.yarnpkg.com).
 
 The fastest way to get started is by recursively cloning the demo application repository:
 
