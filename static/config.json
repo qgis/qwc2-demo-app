@@ -38,8 +38,7 @@
     "textFont": "11pt sans-serif"
   },
   "importLayerUrlPresets": [
-      {"label": "Swisstopo WMTS", "value": "https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml"},
-      {"label": "Test", "value": "https://ycas.ch/qwc/catalog.json"}
+      {"label": "Swisstopo WMTS", "value": "https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml"}
   ],
   "projections": [
     {
@@ -523,7 +522,7 @@
       {
           "name": "LayerCatalog",
           "cfg": {
-              "catalogUrl": "http://qwc2.sourcepole.ch/catalog.json"
+              "catalogUrl": "http://qwc2.sourcepole.ch/assets/catalog.json"
           }
       },
       {
