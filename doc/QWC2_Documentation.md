@@ -97,10 +97,10 @@ Some external services can be used to enhance the application. The reference imp
 
 | Setting              | Description |
 |----------------------|-------------|
-|`permalinkServiceUrl` | Generates and resolves compact permalinks for the Share plugin. If omitted, the full URL will be used. |
-|`elevationServiceUrl` | Returns elevation values, used to generate a height profile when measuring lines and display elevation information in the map right-click information bubble. If omitted, the respective information will not be displayed in the client. |
+|`permalinkServiceUrl` | Generates and resolves compact permalinks for the Share plugin. If empty, the full URL will be used. |
+|`elevationServiceUrl` | Returns elevation values, used to generate a height profile when measuring lines and display elevation information in the map right-click information bubble. If empty, the respective information will not be displayed in the client. |
 |`editServiceUrl`      | Service for editing features of layers served by QGIS Server. Required by the Editing plugin. |
-|`mapInfoService`      | Returns additional information to be displayed in the map right-click information bubble. If omitted, no additional information will be displayed. |
+|`mapInfoService`      | Returns additional information to be displayed in the map right-click information bubble. If empty, no additional information will be displayed. |
 |`featureReportService`| Returns a custom document associated to a feature. See [`themesConfig.json`](#themesConfig-json). |
 
 *Global settings*:
