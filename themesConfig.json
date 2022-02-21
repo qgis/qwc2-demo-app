@@ -50,7 +50,12 @@
                 "searchProviders":[
                     "coordinates",
                     "uster",
-                    "nominatim"
+                    {
+                        "key": "nominatim",
+                        "params": {
+                            "countrycodes": "ch"
+                        }
+                    }
                 ],
                 "mapCrs":"EPSG:3857",
                 "additionalMouseCrs":[

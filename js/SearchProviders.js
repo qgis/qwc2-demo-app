@@ -289,20 +289,21 @@ function nominatimSearchResults(obj, requestId) {
     return addSearchResults({data: results, provider: "nominatim", reqId: requestId}, true);
 }
 
-function nominatimSearch(text, requestId, searchOptions, dispatch) {
+function nominatimSearch(text, requestId, searchOptions, dispatch, cfg) {
     axios.get("//nominatim.openstreetmap.org/search", {params: {
         'q': text,
         'addressdetails': 1,
         'polygon_geojson': 1,
         'limit': 20,
         'format': 'json',
-        'accept-language': LocaleUtils.lang()
+        'accept-language': LocaleUtils.lang(),
+        ...(cfg.params || {})
     }}).then(response => dispatch(nominatimSearchResults(response.data, requestId)));
 }
 
 /** ************************************************************************ **/
 
-function parametrizedSearch(cfg, text, requestId, searchOptions, dispatch) {
+function parametrizedSearch(text, requestId, searchOptions, dispatch, cfg) {
     const SEARCH_URL = ""; // ...
     axios.get(SEARCH_URL + "?param=" + cfg.param + "&searchtext=" + encodeURIComponent(text))
         .then(response => dispatch(addSearchResults({data: response.data, provider: cfg.key, reqId: requestId})))
@@ -379,10 +380,20 @@ export const SearchProviders = {
 export function searchProviderFactory(cfg) {
     // Note: cfg corresponds to an entry of the theme searchProviders array in themesConfig.json, in this case
     //   { key: <providerKey>, label: <label>, param: <param>, ...}
-    // The entry must have at least a `key`.
+    // The entry must have at least a `key`
+    if (!cfg.key) {
+        return null;
+    }
+    if (cfg.key in SearchProviders) {
+        return {
+            label: cfg.label || cfg.key,
+            onSearch: (text, requestId, searchOptions, dispatch) => SearchProviders[cfg.key].onSearch(text, requestId, searchOptions, dispatch, cfg),
+            requiresLayer: cfg.layerName || SearchProviders[cfg.key].requiresLayer
+        };
+    }
     return {
-        label: cfg.label,
-        onSearch: (text, requestId, searchOptions, dispatch) => parametrizedSearch(cfg, text, requestId, searchOptions, dispatch),
+        label: cfg.label || cfg.key,
+        onSearch: (text, requestId, searchOptions, dispatch) => parametrizedSearch(text, requestId, searchOptions, dispatch, cfg),
         requiresLayer: cfg.layerName
     };
 }
