@@ -289,7 +289,7 @@ function nominatimSearchResults(obj, requestId) {
     return addSearchResults({data: results, provider: "nominatim", reqId: requestId}, true);
 }
 
-function nominatimSearch(text, requestId, searchOptions, dispatch, cfg) {
+function nominatimSearch(text, requestId, searchOptions, dispatch, cfg = {}) {
     axios.get("//nominatim.openstreetmap.org/search", {params: {
         'q': text,
         'addressdetails': 1,
