@@ -526,7 +526,7 @@ The typical workflow for managing application translations is:
 - Declare all locales which should be supported in `js/appConfig.js`.
 - Ensure these locales are listed in `translations/tsconfig.json`.
 - Write the translated strings to the respective `<locale>.json` files.
-- Test the translation, specifying `locale=<locale>` in the QWC2 application URL.
+- Test the translation, specifying `lang=<locale>` in the QWC2 application URL.
 
 If translations of the QWC2 components for a desired language are missing, please create resp. update the translations respective files in `qwc2/translations` and contribute them by submitting a pull request to the [upstream qwc2 repository](https://github.com/qgis/qwc2).
 
