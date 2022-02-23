@@ -184,13 +184,14 @@ where
 
 Additionally, entries opening external URLs can be defined as follows:
 
-    {"key": "<key>", "icon": "<icon>", "url": "<url>"}
+    {"key": "<key>", "icon": "<icon>", "url": "<url>", "target": "<target>"}
 
 where
 
 * `Key: An arbitrary key name (not used by existing plugins), used to lookup the the label for the entry from the translations.
 * `icon`: As above.
 * `url`: The URL to open. Can contain as placeholders the keys listed in <a href="#url-parameters">URL parameters</a>, encolsed in `$` (i.e. `$e$` for the extent). In addition, the placeholders `$x$` and `$y$` for the individual map center coordinates are also supported.
+* `target`: The target where to open the URL, if empty, `_blank` is assumed. Can be `iframe` to open the link in a iframe window inside QWC2.
 
 
 

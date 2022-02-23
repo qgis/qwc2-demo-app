@@ -357,7 +357,7 @@
                 ]},
                 {"key": "Print", "icon": "print"},
                 {"key": "Help", "icon": "info"},
-                {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$"}
+                {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$", "target": "iframe"}
               ],
               "toolbarItems": [
                 {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
