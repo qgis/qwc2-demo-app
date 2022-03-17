@@ -14,13 +14,16 @@
         "Login": "",
         "Logout": "",
         "Measure": "Измерения",
+        "MeasureLineString": "измерить линию",
+        "MeasurePolygon": "измерить многоугольник",
         "Print": "Печать",
         "RasterExport": "Экспорт в растровый Формат бумаги",
         "Redlining": "Обводка",
         "Share": "Поделиться ссылкой",
         "ThemeSwitcher": "Тема",
         "Tools": "Средства картографии",
-        "Bookmark": ""
+        "Bookmark": "",
+        "TimeManager": ""
       },
       "filter": "",
       "menulabel": "Карта и инструменты"
@@ -308,6 +311,24 @@
       },
       "openintab": "",
       "restrictedthemeinfo": ""
+    },
+    "timemanager": {
+      "animspeed": "",
+      "notemporaldata": "",
+      "persecond": "",
+      "play": "",
+      "rewind": "",
+      "stop": "",
+      "title": "",
+      "toggle": "",
+      "unit": {
+        "days": "",
+        "hours": "",
+        "minutes": "",
+        "months": "",
+        "seconds": "",
+        "years": ""
+      }
     },
     "tooltip": {
       "background": "Сменить фон",

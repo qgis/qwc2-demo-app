@@ -14,13 +14,16 @@
         "Login": "Zaloguj",
         "Logout": "Wyloguj",
         "Measure": "Pomiary",
+        "MeasureLineString": "Zmierzyć linię",
+        "MeasurePolygon": "Zmierzyć wielokąt",
         "Print": "Drukuj",
         "RasterExport": "Eksport Rastra",
         "Redlining": "Redlining",
         "Share": "Udostępnij Link",
         "ThemeSwitcher": "Motyw",
         "Tools": "Narzędzia Mapy",
-        "Bookmark": ""
+        "Bookmark": "",
+        "TimeManager": ""
       },
       "filter": "",
       "menulabel": "Zawartość mapy i narzędzia"
@@ -308,6 +311,24 @@
       },
       "openintab": "",
       "restrictedthemeinfo": ""
+    },
+    "timemanager": {
+      "animspeed": "",
+      "notemporaldata": "",
+      "persecond": "",
+      "play": "",
+      "rewind": "",
+      "stop": "",
+      "title": "",
+      "toggle": "",
+      "unit": {
+        "days": "",
+        "hours": "",
+        "minutes": "",
+        "months": "",
+        "seconds": "",
+        "years": ""
+      }
     },
     "tooltip": {
       "background": "Zmień podkład map",

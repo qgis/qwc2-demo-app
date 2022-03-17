@@ -14,13 +14,16 @@
         "Login": "Inicio de sesión",
         "Logout": "Cierre de sesión",
         "Measure": "Medida",
+        "MeasureLineString": "Medir una línea",
+        "MeasurePolygon": "Medir un polígono",
         "Print": "Imprimir",
         "RasterExport": "Exportar trama",
         "Redlining": "Línea de demarcación",
         "Share": "Compartir enlace",
         "ThemeSwitcher": "Tema",
         "Tools": "Herramientas de Mapa",
-        "Bookmark": ""
+        "Bookmark": "",
+        "TimeManager": ""
       },
       "filter": "",
       "menulabel": "Mapa & Herramientas"
@@ -308,6 +311,24 @@
       },
       "openintab": "Abrir en pestaña",
       "restrictedthemeinfo": "Ud. no tiene permitido ver el tema o no está conectado"
+    },
+    "timemanager": {
+      "animspeed": "",
+      "notemporaldata": "",
+      "persecond": "",
+      "play": "",
+      "rewind": "",
+      "stop": "",
+      "title": "",
+      "toggle": "",
+      "unit": {
+        "days": "",
+        "hours": "",
+        "minutes": "",
+        "months": "",
+        "seconds": "",
+        "years": ""
+      }
     },
     "tooltip": {
       "background": "Cambiar fondo",

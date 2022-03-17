@@ -51,6 +51,7 @@ import ScratchDrawingPlugin from 'qwc2/plugins/ScratchDrawing';
 import AuthenticationPlugin from 'qwc2/plugins/Authentication';
 import BookmarkPlugin from 'qwc2/plugins/Bookmark';
 import AttributeTablePlugin from 'qwc2/plugins/AttributeTable';
+import TimeManagerPlugin from 'qwc2/plugins/TimeManager';
 import APIPlugin from 'qwc2/plugins/API';
 import {customAttributeCalculator} from './CustomAttributeCalculator';
 
@@ -112,7 +113,8 @@ export default {
             AuthenticationPlugin: AuthenticationPlugin,
             BookmarkPlugin: BookmarkPlugin,
             AttributeTablePlugin: AttributeTablePlugin(),
-            APIPlugin: APIPlugin
+            APIPlugin: APIPlugin,
+            TimeManagerPlugin: TimeManagerPlugin
         },
         cfg: {
             IdentifyPlugin: {

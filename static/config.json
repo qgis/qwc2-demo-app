@@ -119,6 +119,7 @@
                 {"key": "Bookmark", "icon": "bookmark"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "Identify", "icon": "identify_region", "mode": "Region"},
+                  {"key": "TimeManager", "icon": "clock"},
                   {"key": "Measure", "icon": "measure"},
                   {"key": "Redlining", "icon": "draw"},
                   {"key": "Editing", "icon": "editing"},
@@ -264,7 +265,10 @@
         },
         {
           "name": "Bookmark"
-        }
+      },
+      {
+          "name": "TimeManager"
+      }
       ],
       "desktop": [
         {
@@ -348,6 +352,7 @@
                 {"key": "Bookmark", "icon": "bookmark"},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "Identify", "icon": "identify_region", "mode": "Region"},
+                  {"key": "TimeManager", "icon": "clock"},
                   {"key": "Measure", "icon": "measure"},
                   {"key": "Redlining", "icon": "draw"},
                   {"key": "Editing", "icon": "editing"},
@@ -530,6 +535,9 @@
       },
       {
           "name": "AttributeTable"
+      },
+      {
+          "name": "TimeManager"
       }
       ]
   }

@@ -14,13 +14,16 @@
         "Login": "Conectează-te",
         "Logout": "Deconectează-te",
         "Measure": "Măsoară",
+        "MeasureLineString": "Măsoară o linie",
+        "MeasurePolygon": "Măsoară un poligon",
         "Print": "Tipărire",
         "RasterExport": "Export Raster",
         "Redlining": "Evidențiere",
         "Share": "Trimite Link",
         "ThemeSwitcher": "Hărți tematice",
         "Tools": "Unelte hartă",
-        "Bookmark": "Marcaj"
+        "Bookmark": "Marcaj",
+        "TimeManager": ""
       },
       "filter": "",
       "menulabel": "Hărți & Unelte"
@@ -308,6 +311,24 @@
       },
       "openintab": "Deschide în tab nou",
       "restrictedthemeinfo": "Nu ai permisiunea de a accesa tema sau nu ești logat."
+    },
+    "timemanager": {
+      "animspeed": "",
+      "notemporaldata": "",
+      "persecond": "",
+      "play": "",
+      "rewind": "",
+      "stop": "",
+      "title": "",
+      "toggle": "",
+      "unit": {
+        "days": "",
+        "hours": "",
+        "minutes": "",
+        "months": "",
+        "seconds": "",
+        "years": ""
+      }
     },
     "tooltip": {
       "background": "Straturi suport",

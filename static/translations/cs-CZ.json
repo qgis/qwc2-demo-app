@@ -14,13 +14,16 @@
         "Login": "Přihlášení",
         "Logout": "Odhlášení",
         "Measure": "Měření",
+        "MeasureLineString": "Změřit čáru",
+        "MeasurePolygon": "Měřit mnohoúhelník",
         "Print": "Tisk",
         "RasterExport": "Rastr Export",
         "Redlining": "Připomínkování",
         "Share": "Nasdílet Odkaz",
         "ThemeSwitcher": "Téma",
         "Tools": "Nástroje Mapy",
-        "Bookmark": ""
+        "Bookmark": "",
+        "TimeManager": ""
       },
       "filter": "",
       "menulabel": "Mapa & Nástroje"
@@ -308,6 +311,24 @@
       },
       "openintab": "",
       "restrictedthemeinfo": ""
+    },
+    "timemanager": {
+      "animspeed": "",
+      "notemporaldata": "",
+      "persecond": "",
+      "play": "",
+      "rewind": "",
+      "stop": "",
+      "title": "",
+      "toggle": "",
+      "unit": {
+        "days": "",
+        "hours": "",
+        "minutes": "",
+        "months": "",
+        "seconds": "",
+        "years": ""
+      }
     },
     "tooltip": {
       "background": "Přepnout podkladovou mapu",
