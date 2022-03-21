@@ -366,9 +366,9 @@ For external WMTS layers, the following additional parameters apply (you can use
 
 You can also set the "Data Url" for a layer in QGIS (Layer Properties &rarr; QGIS Server &rarr; Data Url) to a string of the form
 
-    wms:<service_url>#<layername>
+    wms:<service_url>#<layername>?<options>
 
-(for instance, `wms:http://wms.geo.admin.ch/?#ch.are.bauzonen`), and an external layer pointing to the specified WMS service will automatically be created for the corresponding QGIS layer.
+(for instance, `wms:http://wms.geo.admin.ch#ch.are.bauzonen?tiled=false`), and an external layer pointing to the specified WMS service will automatically be created for the corresponding QGIS layer.
 Note that this is currently only implemented for WMS layers.
 
 
@@ -589,8 +589,8 @@ The `l` parameter lists all layers in the map (redlining and background layers) 
 where
 - `layername` is the WMS name of a theme layer or group, or a string of the format
 
-      <wms|wfs>:<service_url>#<layername>
-   for external layers, i.e. `wms:https://wms.geo.admin.ch/?#ch.are.bauzonen`.
+      <wms|wfs>:<service_url>#<layername>?<options>
+   for external layers, i.e. `wms:https://wms.geo.admin.ch#ch.are.bauzonen?tiled=true`.
 - `<transparency>` denotes the layer transparency, betwen 0 and 100. If the `[<transparency>]` portion is omitted, the layer is fully opaque.
 - `!` denotes that the layer is invisible. If omitted, the layer is visible. If the layer is visible in an invisible parent group, `~` is used.
 
