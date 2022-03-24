@@ -313,11 +313,13 @@
       "restrictedthemeinfo": ""
     },
     "timemanager": {
-      "animspeed": "",
+      "animationinterval": "",
       "notemporaldata": "",
-      "persecond": "",
       "play": "",
       "rewind": "",
+      "stepback": "",
+      "stepfwd": "",
+      "stepsize": "",
       "stop": "",
       "title": "",
       "toggle": "",

@@ -313,11 +313,13 @@
       "restrictedthemeinfo": "Não está autorizado a ver o tema ou não iniciar sessão"
     },
     "timemanager": {
-      "animspeed": "",
+      "animationinterval": "",
       "notemporaldata": "",
-      "persecond": "",
       "play": "",
       "rewind": "",
+      "stepback": "",
+      "stepfwd": "",
+      "stepsize": "",
       "stop": "",
       "title": "",
       "toggle": "",
