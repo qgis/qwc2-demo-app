@@ -267,7 +267,8 @@
           "name": "Bookmark"
       },
       {
-          "name": "TimeManager"
+          "name": "TimeManager",
+          "mapClickAction": "identify"
       }
       ],
       "desktop": [
@@ -537,7 +538,8 @@
           "name": "AttributeTable"
       },
       {
-          "name": "TimeManager"
+          "name": "TimeManager",
+          "mapClickAction": "identify"
       }
       ]
   }
