@@ -149,6 +149,7 @@
       "title": "Informace o prvku"
     },
     "importlayer": {
+      "addfailed": "",
       "addlayer": "Přidat vrstvu",
       "connect": "Připojit",
       "filter": "Filtr...",

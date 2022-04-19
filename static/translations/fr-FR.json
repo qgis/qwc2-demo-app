@@ -4,12 +4,12 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
-        "AttributeTable": "",
+        "AttributeTable": "Table d'attributs",
         "DxfExport": "Export DXF",
         "Editing": "Editer",
         "Help": "Aide",
         "IdentifyRegion": "Interroger la région",
-        "LayerCatalog": "",
+        "LayerCatalog": "Catalogue des couches",
         "LayerTree": "Couches",
         "Login": "Connexion",
         "Logout": "Déconnexion",
@@ -25,7 +25,7 @@
         "Bookmark": "Marque-pages",
         "TimeManager": ""
       },
-      "filter": "",
+      "filter": "Filtrer le menu...",
       "menulabel": "Cartes et outils"
     },
     "search": {
@@ -50,46 +50,46 @@
       "providerselection": "",
       "search": "Chercher",
       "searchall": "Rechercher un lieu ou ajouter une carte...",
-      "searchinprogress": "",
-      "searchreset": "",
+      "searchinprogress": "Recherche en cours",
+      "searchreset": "Réinitialiser la recherche",
       "themes": "Cartes"
     },
     "attribtable": {
-      "addfeature": "",
-      "commit": "",
-      "delete": "",
-      "deletefailed": "",
-      "deletefeatures": "",
-      "deleting": "",
-      "discard": "",
-      "formeditmode": "",
-      "geomnoadd": "",
-      "layer": "",
-      "loadfailed": "",
-      "loading": "",
-      "nodelete": "",
-      "nogeomnoform": "",
-      "pleasereload": "",
-      "reload": "",
-      "selectlayer": "",
-      "title": "",
-      "zoomtoselection": ""
+      "addfeature": "Ajouter un objet",
+      "commit": "Enregistrer les modifications",
+      "delete": "Supprimer",
+      "deletefailed": "Un ou plusieurs objets n'ont pas pu être supprimés",
+      "deletefeatures": "Supression des objets sélectionnés",
+      "deleting": "Suppression en cours...",
+      "discard": "Abandonner les modifications",
+      "formeditmode": "Basculter sur la vue formulaire",
+      "geomnoadd": "Veuillez utiliser le formulaire d'édition pour ajouter de nouveaux objets à cette couche",
+      "layer": "Couche",
+      "loadfailed": "Echec du chargement de l'objet",
+      "loading": "Chargement en cours...",
+      "nodelete": "Ne pas supprimer",
+      "nogeomnoform": "Le formulaire d'édition n'est pas disponible pour les couches sans géométrie",
+      "pleasereload": "Veuillez cliquer sur 'Actualiser' pour charger la table d'attributs",
+      "reload": "Actualiser",
+      "selectlayer": "Sélectionner une couche...",
+      "title": "Table d'attributs",
+      "zoomtoselection": "Zommer sur les objets sélectionnés"
     },
     "bgswitcher": {
       "nobg": "Pas de fond"
     },
     "bookmark": {
       "add": "Ajouter un marque-page",
-      "addfailed": "",
+      "addfailed": "Echec de création du marque-page",
       "description": "Description",
-      "lastUpdate": "",
+      "lastUpdate": "Dernier enregistrement",
       "manage": "Gérer les marque-pages",
-      "notloggedin": "",
-      "open": "",
-      "openTab": "",
+      "notloggedin": "Vous avez besoin d'être authentifié pour pouvoir enregistrer des marques-pages",
+      "open": "Ouvrir le marque-page dans l'onglet courant",
+      "openTab": "Ouvrir le marque-page dans un nouvel onglet",
       "remove": "Supprimer le marque-page",
-      "removefailed": "",
-      "savefailed": "",
+      "removefailed": "Echec de suppression du marque-page",
+      "savefailed": "Echec d'enregistrement du marque-page",
       "update": "Sauvegarder le marque-page"
     },
     "bottombar": {
@@ -108,7 +108,7 @@
       "symbologyscale": "Echelle"
     },
     "editing": {
-      "attrtable": "",
+      "attrtable": "Table",
       "canceldelete": "Annuler la suppression",
       "capturedpicture": "",
       "clearpicture": "",
@@ -119,14 +119,14 @@
       "feature": "Objet",
       "maximize": "Maximiser",
       "minimize": "Minimiser",
-      "nocompatpick": "",
+      "nocompatpick": "Aucune géométrie compatible trouvée",
       "noeditablelayers": "Il n'y a pas de couche éditable pour ce thème",
       "pick": "Choisir",
-      "pickdrawfeature": "",
+      "pickdrawfeature": "Copier la géométrie existante",
       "reallydelete": "Supprimer",
-      "relationcommitfailed": "",
+      "relationcommitfailed": "Certaines relations n'ont pas pu être enregistrées. Pour plus de détails consulter le boutons d'informations",
       "select": "Sélectionner",
-      "takepicture": ""
+      "takepicture": "Ajouter une photo"
     },
     "fileselector": {
       "placeholder": "Choisir un fichier..."
@@ -149,14 +149,15 @@
       "title": "Informations sur l'objet"
     },
     "importlayer": {
+      "addfailed": "",
       "addlayer": "Ajouter une couche",
       "connect": "Connecter",
       "filter": "Filtrer",
-      "loading": "",
+      "loading": "Chargement...",
       "localfile": "Fichier local",
       "nofeatures": "Aucune entité ne peut être importée.",
       "noresults": "Pas de résultat ou URL non valide",
-      "url": "",
+      "url": "URL",
       "urlplaceholder": "Entrer l'URL d'un WMS, WMTS, WFS..."
     },
     "infotool": {
@@ -164,7 +165,7 @@
       "clickhelpPolygon": "Dessiner un polygone pour identifier les objets"
     },
     "layercatalog": {
-      "windowtitle": ""
+      "windowtitle": "Catalogue de couches"
     },
     "layerinfo": {
       "abstract": "Récapitulation",
@@ -172,9 +173,9 @@
       "dataUrl": "URL des données",
       "keywords": "Mots-clés",
       "legend": "Légende",
-      "maxscale": "",
+      "maxscale": "Echelle max",
       "metadataUrl": "URL des métadonnées",
-      "minscale": "",
+      "minscale": "Echelle min",
       "title": "Informations sur la couche"
     },
     "layertree": {
@@ -203,7 +204,7 @@
     },
     "map": {
       "loading": "Chargement de la carte...",
-      "resetrotation": ""
+      "resetrotation": "Réinitialiser la rotation"
     },
     "mapinfotooltip": {
       "elevation": "Altitude",
@@ -216,12 +217,12 @@
       "pointLabel": "Position"
     },
     "navbar": {
-      "perpage": ""
+      "perpage": "Par page"
     },
     "print": {
       "grid": "Grille",
       "layout": "Format",
-      "legend": "",
+      "legend": "Légende",
       "maximize": "Maximiser",
       "minimize": "Minimiser",
       "nolayouts": "Il n'y a pas de mise en page disponible pour le thème choisi.",
@@ -290,8 +291,8 @@
     "share": {
       "QRCodeLinkTitle": "QR code",
       "directLinkTitle": "Via un lien direct",
-      "refresh": "",
-      "showpin": "",
+      "refresh": "Générer un lien permanent",
+      "showpin": "Afficher les épingles",
       "socialIntro": "Via votre réseau social favori"
     },
     "themelayerslist": {
@@ -302,7 +303,7 @@
     "themeswitcher": {
       "addlayerstotheme": "Ajouter des couches à la carte",
       "addtotheme": "Ajouter au thème actuel",
-      "confirmswitch": "",
+      "confirmswitch": "Les couches ajoutées par vos soins seront perdues en changeant de thème. Voulez-vous continuer ?",
       "filter": "Filtre...",
       "match": {
         "abstract": "Résumé",
@@ -314,28 +315,28 @@
     },
     "timemanager": {
       "animationinterval": "",
-      "notemporaldata": "",
-      "play": "",
+      "notemporaldata": "Aucune couche temporelle n'est visible sur la carte.",
+      "play": "Jouer",
       "rewind": "",
       "stepback": "",
       "stepfwd": "",
       "stepsize": "",
-      "stop": "",
+      "stop": "Stop",
       "title": "",
       "toggle": "",
       "unit": {
-        "days": "",
-        "hours": "",
-        "minutes": "",
-        "months": "",
-        "seconds": "",
-        "years": ""
+        "days": "jours",
+        "hours": "heures",
+        "minutes": "minutes",
+        "months": "mois",
+        "seconds": "secondes",
+        "years": "années"
       }
     },
     "tooltip": {
       "background": "Changer de fond",
-      "fullscreendisable": "",
-      "fullscreenenable": "",
+      "fullscreendisable": "Désactiver le mode plein écran",
+      "fullscreenenable": "Activer le mode plein écran",
       "home": "Afficher toute la carte",
       "zoomin": "Zoomer",
       "zoomout": "Dézoomer"
@@ -345,10 +346,10 @@
     },
     "window": {
       "close": "Fermer",
-      "dock": "attacher",
-      "maximize": "",
-      "undock": "détacher",
-      "unmaximize": ""
+      "dock": "Attacher",
+      "maximize": "Agrandir",
+      "undock": "Détacher",
+      "unmaximize": "Réduire"
     }
   }
 }

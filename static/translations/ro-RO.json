@@ -149,6 +149,7 @@
       "title": "Info Entități"
     },
     "importlayer": {
+      "addfailed": "",
       "addlayer": "Adaugă strat",
       "connect": "Conectare",
       "filter": "Filtrare",

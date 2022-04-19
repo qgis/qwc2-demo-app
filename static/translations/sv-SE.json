@@ -149,6 +149,7 @@
       "title": "Objektinformation"
     },
     "importlayer": {
+      "addfailed": "",
       "addlayer": "Lägg till lager",
       "connect": "Anslut",
       "filter": "Filter...",
