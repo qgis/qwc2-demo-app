@@ -5,6 +5,17 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
+Update to qwc2 submodule revision [7929587](https://github.com/qgis/qwc2/tree/7929587) (21.04.2022)
+---------------------------------------------------------------------------------------------------
+
+**Format change for external layer resource strings**
+
+For a short period of time (after submodule revision [cb870a1](https://github.com/qgis/qwc2/tree/cb870a1)), QWC2 supported external resource strings in the form `wms:<service_url>#<layername>?<options>`. The format has been changed to
+
+    wms:<service_url>?<options>#<layername>
+
+i.e. by moving the query portion before the hash portion, which is inline with the URL scheme format.
+
 Update to qwc2 submodule revision [eb5e358](https://github.com/qgis/qwc2/tree/eb5e358) (25.10.2021)
 ---------------------------------------------------------------------------------------------------
 

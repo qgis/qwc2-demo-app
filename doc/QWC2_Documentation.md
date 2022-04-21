@@ -366,9 +366,9 @@ For external WMTS layers, the following additional parameters apply (you can use
 
 You can also set the "Data Url" for a layer in QGIS (Layer Properties &rarr; QGIS Server &rarr; Data Url) to a string of the form
 
-    wms:<service_url>#<layername>?<options>
+    wms:<service_url>?<options>#<layername>
 
-(for instance, `wms:http://wms.geo.admin.ch#ch.are.bauzonen?tiled=false`), and an external layer pointing to the specified WMS service will automatically be created for the corresponding QGIS layer.
+(for instance, `wms:http://wms.geo.admin.ch?tiled=false#ch.are.bauzonen`), and an external layer pointing to the specified WMS service will automatically be created for the corresponding QGIS layer.
 Note that this is currently only implemented for WMS layers.
 
 
