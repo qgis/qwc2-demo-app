@@ -295,6 +295,10 @@
       "showpin": "",
       "socialIntro": "I ditt favoritnätverk"
     },
+    "snapping": {
+      "loading": "",
+      "snappingenabled": ""
+    },
     "themelayerslist": {
       "addlayer": "",
       "addlayerstotheme": "",

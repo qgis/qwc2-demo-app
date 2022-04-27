@@ -295,6 +295,10 @@
       "showpin": "Show pin",
       "socialIntro": "In your favourite social network"
     },
+    "snapping": {
+      "loading": "Loading snapping geometries...",
+      "snappingenabled": "Snapping enabled"
+    },
     "themelayerslist": {
       "addlayer": "Add layer",
       "addlayerstotheme": "Add layers to current map",

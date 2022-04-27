@@ -295,6 +295,10 @@
       "showpin": "",
       "socialIntro": "Favori sosyal ağınıza"
     },
+    "snapping": {
+      "loading": "",
+      "snappingenabled": ""
+    },
     "themelayerslist": {
       "addlayer": "Katman ekle",
       "addlayerstotheme": "Geçerli haritaya katman ekle",

@@ -295,6 +295,10 @@
       "showpin": "",
       "socialIntro": "В Вашей любимой соцсети"
     },
+    "snapping": {
+      "loading": "",
+      "snappingenabled": ""
+    },
     "themelayerslist": {
       "addlayer": "",
       "addlayerstotheme": "",
