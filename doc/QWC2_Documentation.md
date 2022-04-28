@@ -529,7 +529,7 @@ where:
 - `max` is the maximum scale denominator from which this layer should be used for snapping
 - `feature_count` is the maximum number of snapping geometries to retreive for the current map extent (default: 500).
 
-Snapping works by querying the geometries of all snapping layers inside the scale range via WMS GetFeatureInfo and refreshing the geometries every time the map extent changes. Therefore, it is recommended to ensure the geometry complexity of the snap layers is appropriate for the specified scale ranges to avoid overloading the server with the GetFeatureInfo requests.
+Snapping works by querying the geometries of all snapping layers inside the scale range via WMS GetFeatureInfo and refreshing the geometries every time the map extent changes. Therefore, it is recommended to ensure the geometry complexity of the snap layers is appropriate for the specified scale ranges to avoid overloading the server with the GetFeatureInfo requests. Also, the QGIS project will need to be configured to add geometries to the feature info responses.
 
 For the `Redlining`, `Measure` and `Editing` plugins, the availability of snapping can be independently configured:
 
