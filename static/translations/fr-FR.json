@@ -117,6 +117,7 @@
       "discard": "Rejeter",
       "draw": "Dessiner",
       "feature": "Objet",
+      "geomreadonly": "",
       "maximize": "Maximiser",
       "minimize": "Minimiser",
       "nocompatpick": "Aucune géométrie compatible trouvée",
