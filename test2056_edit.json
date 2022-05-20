@@ -45,6 +45,12 @@
     "b": {
         "layerName": "Hochschule",
         "geomType": "Polygon",
+        "permissions":
+            {
+                "creatable": true,
+                "updatable": false,
+                "deletable": true
+            },
         "fields": [
             {
                 "id": "id",

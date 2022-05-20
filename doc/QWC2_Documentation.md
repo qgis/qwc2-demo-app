@@ -487,7 +487,12 @@ The format of the `editConfig.json` is as follows:
 | `  <LayerId>: {`                    | A WMS layer ID. Should be a theme WMS layer name, to ensure the WMS is correctly refreshed. |
 | `    "layerName": "<LayerName>",`   | The layer name to show in the selection combo box. |
 | `    "geomType": "<GeomType>",`     | The geometry type, either `Point`, `LineString` or `Polygon`. |
-| `    "displayField":  "<FieldId">",`| The ID of the field to use in the feature selection menu.     |
+| `    "displayField":  "<FieldId>",` | The ID of the field to use in the feature selection menu.     |
+| `    "permissions": {`              | A list of different write permissions to specify rights and buttons. |
+| `      "creatable": <boolean>,`     | If `true`, `Draw` button will appear in Editing interface and `Add` button in Attribute Table. |
+| `      "updatable": <boolean>,`     | If `true`, `Pick` button will appear in Editing interface.    |
+| `      "deletable": <boolean>,`     | If `true`, `Delete` button will appear in Editing interface and Attribute Table. |
+| `      },`                           |                                                               |
 | `    "fields": [{`                  | A list of field definitions, for each exposed attribute.      |
 | `      "id": "<FieldID>",`          | The field ID.                                                 |
 | `      "name": "<FieldName>",`      | The field name, as displayed in the editing form.             |
