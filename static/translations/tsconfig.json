@@ -13,7 +13,8 @@
     "ru-RU",
     "sv-SE",
     "tr-TR",
-    "cs-CZ"
+    "cs-CZ",
+    "ca-ES"
   ],
   "extra_strings": [
     "appmenu.items.ExternalLink",
