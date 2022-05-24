@@ -323,6 +323,7 @@
       "markers": "",
       "notemporaldata": "",
       "play": "",
+      "playrev": "",
       "rewind": "",
       "stepback": "",
       "stepfwd": "",
@@ -333,6 +334,7 @@
       "unit": {
         "days": "",
         "hours": "",
+        "milliseconds": "",
         "minutes": "",
         "months": "",
         "seconds": "",

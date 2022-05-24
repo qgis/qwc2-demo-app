@@ -323,6 +323,7 @@
       "markers": "Markers",
       "notemporaldata": "No temporal layers are visible in the map.",
       "play": "Play",
+      "playrev": "Play backwards",
       "rewind": "Rewind",
       "stepback": "Step back",
       "stepfwd": "Step forward",
@@ -333,6 +334,7 @@
       "unit": {
         "days": "days",
         "hours": "hours",
+        "milliseconds": "milliseconds",
         "minutes": "minutes",
         "months": "months",
         "seconds": "seconds",

@@ -388,7 +388,6 @@
         "name": "BottomBar",
         "cfg": {
           "viewertitleUrl": "http://qgis.org/",
-          "viewertitleUrlTarget": "iframe",
           "termsUrl": "http://qgis.org/",
           "viewertitleUrlTarget": "_blank"
         }
@@ -539,7 +538,17 @@
       },
       {
         "name": "TimeManager",
-        "mapClickAction": "identify"
+        "mapClickAction": "identify",
+        "cfg": {
+            "blockColors": [
+                "#f7af7d", "#eacc6e", "#fef89a", "#c5e09b", "#a3d29c", "#7cc096", "#79c8c5", "#34afce"
+            ],
+            "defaultAnimationInterval": 1,
+            "defaultStepSize": 1,
+            "defaultStepUnit": "d",
+            "markersAvailable": true,
+            "stepUnits": ["s", "m", "h", "d", "M", "y"]
+        }
       }
     ]
   }

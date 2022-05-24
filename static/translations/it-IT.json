@@ -322,7 +322,8 @@
       "animationinterval": "Intervallo animazione",
       "markers": "Marker",
       "notemporaldata": "Nessun layer con dimensioni temporali è attivo nella cartina.",
-      "play": "Avvia animazione",
+      "play": "Anima",
+      "playrev": "Anima indietro",
       "rewind": "Resetta animazione",
       "stepback": "Passo indietro",
       "stepfwd": "Passo avanti",
@@ -333,6 +334,7 @@
       "unit": {
         "days": "giorni",
         "hours": "ore",
+        "milliseconds": "millisecondi",
         "minutes": "minuti",
         "months": "mesi",
         "seconds": "secondi",

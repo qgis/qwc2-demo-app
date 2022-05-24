@@ -322,7 +322,8 @@
       "animationinterval": "Animationsintervall",
       "markers": "Marker",
       "notemporaldata": "Keine sichtbaren Ebenen in der Karte sind mit Zeitinformationen versehen.",
-      "play": "Starten",
+      "play": "Abspielen",
+      "playrev": "Zurück abspielen",
       "rewind": "Zurücksetzten",
       "stepback": "Schritt zurück",
       "stepfwd": "Schritt vorwärts",
@@ -333,6 +334,7 @@
       "unit": {
         "days": "Tage",
         "hours": "Stunden",
+        "milliseconds": "Millisekunden",
         "minutes": "Minuten",
         "months": "Monate",
         "seconds": "Sekunden",

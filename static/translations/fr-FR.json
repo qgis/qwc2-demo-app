@@ -323,6 +323,7 @@
       "markers": "",
       "notemporaldata": "Aucune couche temporelle n'est visible sur la carte.",
       "play": "Jouer",
+      "playrev": "",
       "rewind": "",
       "stepback": "",
       "stepfwd": "",
@@ -333,6 +334,7 @@
       "unit": {
         "days": "jours",
         "hours": "heures",
+        "milliseconds": "",
         "minutes": "minutes",
         "months": "mois",
         "seconds": "secondes",
