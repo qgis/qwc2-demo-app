@@ -108,6 +108,7 @@
       "symbologyscale": "Масштаб символики:"
     },
     "editing": {
+      "add": "",
       "attrtable": "",
       "canceldelete": "Не удалять",
       "capturedpicture": "",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "",
       "select": "Выберите...",
       "takepicture": ""
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Выберите файл..."

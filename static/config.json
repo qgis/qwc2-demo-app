@@ -123,6 +123,7 @@
               {"key": "Measure", "icon": "measure"},
               {"key": "Redlining", "icon": "draw"},
               {"key": "Editing", "icon": "editing"},
+              {"key": "FeatureForm", "icon": "featureform"},
               {"key": "DxfExport", "icon": "dxfexport"},
               {"key": "RasterExport", "icon": "rasterexport"}
             ]},
@@ -234,6 +235,9 @@
       },
       {
         "name": "Editing"
+      },
+      {
+          "name": "FeatureForm"
       },
       {
         "name": "MapCompare"
@@ -360,6 +364,7 @@
               {"key": "Measure", "icon": "measure"},
               {"key": "Redlining", "icon": "draw"},
               {"key": "Editing", "icon": "editing"},
+              {"key": "FeatureForm", "icon": "featureform"},
               {"key": "AttributeTable", "icon": "editing"},
               {"key": "DxfExport", "icon": "dxfexport"},
               {"key": "RasterExport", "icon": "rasterexport"}
@@ -372,7 +377,8 @@
             {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
             {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
             {"key": "Print", "icon": "print"},
-            {"key": "Identify", "icon": "identify_region", "mode": "Region"}
+            {"key": "Identify", "icon": "identify_region", "mode": "Region"},
+            {"key": "FeatureForm", "icon": "featureform"}
           ],
           "searchOptions": {
             "minScaleDenom": 1000,
@@ -498,6 +504,9 @@
       },
       {
         "name": "Editing"
+      },
+      {
+          "name": "FeatureForm"
       },
       {
         "name": "MapCompare"

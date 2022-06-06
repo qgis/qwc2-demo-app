@@ -108,6 +108,7 @@
       "symbologyscale": "Symbology scale"
     },
     "editing": {
+      "add": "Add",
       "attrtable": "Table",
       "canceldelete": "Don't delete",
       "capturedpicture": "Captured picture",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "Some relation values could not be committed, check the icon tooltips for details",
       "select": "Select",
       "takepicture": "Take picture"
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Select file..."

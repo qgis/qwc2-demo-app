@@ -108,6 +108,7 @@
       "symbologyscale": "Darstellungsmaßstab"
     },
     "editing": {
+      "add": "Hinzufügen",
       "attrtable": "Tabelle",
       "canceldelete": "Abbrechen",
       "capturedpicture": "Aufgenommenes Bild",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "Einige Relationen konnten nicht gespeichert werden, siehe Tooltips der Icons für mehr Details.",
       "select": "Auswählen",
       "takepicture": "Bild schießen"
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Datei auswählen"

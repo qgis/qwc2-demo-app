@@ -108,6 +108,7 @@
       "symbologyscale": "Symbolskala:"
     },
     "editing": {
+      "add": "",
       "attrtable": "",
       "canceldelete": "Radera inte",
       "capturedpicture": "",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "",
       "select": "Välj",
       "takepicture": ""
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Välj fil..."

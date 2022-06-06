@@ -53,6 +53,7 @@ import AuthenticationPlugin from 'qwc2/plugins/Authentication';
 import BookmarkPlugin from 'qwc2/plugins/Bookmark';
 import AttributeTablePlugin from 'qwc2/plugins/AttributeTable';
 import TimeManagerPlugin from 'qwc2/plugins/TimeManager';
+import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
 import APIPlugin from 'qwc2/plugins/API';
 import {customAttributeCalculator} from './CustomAttributeCalculator';
 
@@ -116,7 +117,8 @@ export default {
             BookmarkPlugin: BookmarkPlugin,
             AttributeTablePlugin: AttributeTablePlugin(),
             APIPlugin: APIPlugin,
-            TimeManagerPlugin: TimeManagerPlugin
+            TimeManagerPlugin: TimeManagerPlugin,
+            FeatureFormPlugin: FeatureFormPlugin()
         },
         cfg: {
             IdentifyPlugin: {

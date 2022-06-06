@@ -108,6 +108,7 @@
       "symbologyscale": "Scala per la simbologia"
     },
     "editing": {
+      "add": "Aggiungi",
       "attrtable": "Tabella",
       "canceldelete": "Annulla",
       "capturedpicture": "Foto catturata",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "Alcune relazioni non sono state salvate, consultare i tooltip delle icone per i dettagli.",
       "select": "Seleziona...",
       "takepicture": "Foto"
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Seleziona file..."

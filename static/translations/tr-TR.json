@@ -108,6 +108,7 @@
       "symbologyscale": "Sembol Ölçeği:"
     },
     "editing": {
+      "add": "",
       "attrtable": "",
       "canceldelete": "Silme",
       "capturedpicture": "",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "",
       "select": "Seçim",
       "takepicture": ""
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Dosya seç..."

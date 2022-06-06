@@ -108,6 +108,7 @@
       "symbologyscale": "Echelle"
     },
     "editing": {
+      "add": "",
       "attrtable": "Table",
       "canceldelete": "Annuler la suppression",
       "capturedpicture": "",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "Certaines relations n'ont pas pu être enregistrées. Pour plus de détails consulter le boutons d'informations",
       "select": "Sélectionner",
       "takepicture": "Ajouter une photo"
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Choisir un fichier..."

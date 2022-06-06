@@ -108,6 +108,7 @@
       "symbologyscale": "Scara simboluri:"
     },
     "editing": {
+      "add": "",
       "attrtable": "",
       "canceldelete": "Elimină modificările",
       "capturedpicture": "",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "Salvarea relației a eșuat",
       "select": "Selectează",
       "takepicture": "Fotografiază"
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Selectează fișierul"

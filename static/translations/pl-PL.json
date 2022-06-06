@@ -108,6 +108,7 @@
       "symbologyscale": "Skala symbolizacji:"
     },
     "editing": {
+      "add": "",
       "attrtable": "",
       "canceldelete": "Nie usuwaj",
       "capturedpicture": "",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "",
       "select": "Zaznacz",
       "takepicture": ""
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Wybierz plik..."

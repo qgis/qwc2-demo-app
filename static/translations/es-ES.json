@@ -108,6 +108,7 @@
       "symbologyscale": "Escala de la simbología:"
     },
     "editing": {
+      "add": "",
       "attrtable": "",
       "canceldelete": "No borrar",
       "capturedpicture": "",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "",
       "select": "Seleccionar",
       "takepicture": ""
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Seleccionar archivo..."

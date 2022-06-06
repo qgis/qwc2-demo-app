@@ -108,6 +108,7 @@
       "symbologyscale": "Meřítko symbolů:"
     },
     "editing": {
+      "add": "",
       "attrtable": "",
       "canceldelete": "Neodstraňovat",
       "capturedpicture": "",
@@ -128,6 +129,12 @@
       "relationcommitfailed": "",
       "select": "Vybrat",
       "takepicture": ""
+    },
+    "featureform": {
+      "feature": "",
+      "noresults": "",
+      "querying": "",
+      "title": ""
     },
     "fileselector": {
       "placeholder": "Vybrat soubor..."
