@@ -481,30 +481,31 @@ The QWC2 Editing plugin allows to add, remove and edit features from the map. Fo
 
 The format of the `editConfig.json` is as follows:
 
-| Entry                               | Description                                                   |
-|-------------------------------------|---------------------------------------------------------------|
-| `{`                                 |                                                               |
-| `  <LayerId>: {`                    | A WMS layer ID. Should be a theme WMS layer name, to ensure the WMS is correctly refreshed. |
-| `    "layerName": "<LayerName>",`   | The layer name to show in the selection combo box. |
-| `    "geomType": "<GeomType>",`     | The geometry type, either `Point`, `LineString` or `Polygon`. |
-| `    "displayField":  "<FieldId>",` | The ID of the field to use in the feature selection menu.     |
-| `    "permissions": {`              | A list of different write permissions to specify rights and buttons. |
-| `      "creatable": <boolean>,`     | If `true`, `Draw` button will appear in Editing interface and `Add` button in Attribute Table. |
-| `      "updatable": <boolean>,`     | If `true`, `Pick` button will appear in Editing interface.    |
-| `      "deletable": <boolean>,`     | If `true`, `Delete` button will appear in Editing interface and Attribute Table. |
+| Entry                                | Description                                                   |
+|--------------------------------------|---------------------------------------------------------------|
+| `{`                                  |                                                               |
+| `  <LayerId>: {`                     | A WMS layer ID. Should be a theme WMS layer name, to ensure the WMS is correctly refreshed. |
+| `    "layerName": "<LayerName>",`    | The layer name to show in the selection combo box. |
+| `    "editDataset": "<DatasetName>",`| The name of the edit dataset passed to the editing interface. |
+| `    "geomType": "<GeomType>",`      | The geometry type, either `Point`, `LineString` or `Polygon`. |
+| `    "displayField":  "<FieldId>",`  | The ID of the field to use in the feature selection menu.     |
+| `    "permissions": {`               | A list of different write permissions to specify rights and buttons. |
+| `      "creatable": <boolean>,`      | If `true`, `Draw` button will appear in Editing interface and `Add` button in Attribute Table. |
+| `      "updatable": <boolean>,`      | If `true`, `Pick` button will appear in Editing interface.    |
+| `      "deletable": <boolean>,`      | If `true`, `Delete` button will appear in Editing interface and Attribute Table. |
 | `      },`                           |                                                               |
-| `    "fields": [{`                  | A list of field definitions, for each exposed attribute.      |
-| `      "id": "<FieldID>",`          | The field ID.                                                 |
-| `      "name": "<FieldName>",`      | The field name, as displayed in the editing form.             |
-| `      "type": "<FieldType>",`      | A field type. Either `bool`, `list` or a regular [HTML input element type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input). |
-| `      "constraints": {`            | Constraints for the input field.                              |
-| `        "values": [<Entries>],`    | Only if `type` is `list`: an array of arbitrary strings.      |
-| `        ...`                       | For regular HTML input types, the ReactJS API name of any applicable [HTML input constraint](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input), i.e. `maxLength` or `readOnly`. |
-| `      }`                           |                                                               |
-| `    }],`                           |                                                               |
-| `    "form": "<PathToUiFile>",`     | As alternative to `fields`, a QtDesigner UI file. See below.  |
-| `  }`                               |                                                               |
-| `}`                                 |                                                               |
+| `    "fields": [{`                   | A list of field definitions, for each exposed attribute.      |
+| `      "id": "<FieldID>",`           | The field ID.                                                 |
+| `      "name": "<FieldName>",`       | The field name, as displayed in the editing form.             |
+| `      "type": "<FieldType>",`       | A field type. Either `bool`, `list` or a regular [HTML input element type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input). |
+| `      "constraints": {`             | Constraints for the input field.                              |
+| `        "values": [<Entries>],`     | Only if `type` is `list`: an array of arbitrary strings.      |
+| `        ...`                        | For regular HTML input types, the ReactJS API name of any applicable [HTML input constraint](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input), i.e. `maxLength` or `readOnly`. |
+| `      }`                            |                                                               |
+| `    }],`                            |                                                               |
+| `    "form": "<PathToUiFile>",`      | As alternative to `fields`, a QtDesigner UI file. See below.  |
+| `  }`                                |                                                               |
+| `}`                                  |                                                               |
 
 * If you specify `fields`, a simple form is autogenerated based on the field definitions.
 * If you specify `form`, you can specify the URL to a Qt Designer UI form (use `:/<path>` to specify a path below the `assets` folder). Most basic input elements provided by QtDesigner are supported, see [this sample form](https://github.com/qgis/qwc2-demo-app/blob/master/assets/forms/form.ui). The widget names must be set equal to the attribute names.
