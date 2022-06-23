@@ -312,7 +312,7 @@
     },
     "snapping": {
       "loading": "Einrastrungsgeometrien werden geladen...",
-      "snappingenabled": "Einrasten aktiviert"
+      "snappingenabled": "Einrasten"
     },
     "themelayerslist": {
       "addlayer": "Layer hinzufügen",
