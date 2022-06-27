@@ -115,6 +115,7 @@
       "capturedpicture": "Foto catturata",
       "clearpicture": "Cancella",
       "commit": "Salva",
+      "create": "Crea",
       "delete": "Elimina",
       "discard": "Annulla",
       "draw": "Disegna",
@@ -201,8 +202,8 @@
     },
     "linkfeatureform": {
       "cancel": "Annulla",
+      "close": "Chiudi",
       "drawhint": "Disegnare l'oggetto sulla mappa...",
-      "finish": "Finisci",
       "pickhint": "Seleziona un oggetto sulla mappa..."
     },
     "locate": {

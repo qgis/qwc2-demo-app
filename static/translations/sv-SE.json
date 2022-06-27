@@ -115,6 +115,7 @@
       "capturedpicture": "",
       "clearpicture": "",
       "commit": "Skicka",
+      "create": "",
       "delete": "Radera",
       "discard": "Förkasta",
       "draw": "Rita",
@@ -201,8 +202,8 @@
     },
     "linkfeatureform": {
       "cancel": "",
+      "close": "",
       "drawhint": "",
-      "finish": "",
       "pickhint": ""
     },
     "locate": {

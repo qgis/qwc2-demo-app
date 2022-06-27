@@ -115,6 +115,7 @@
       "capturedpicture": "",
       "clearpicture": "",
       "commit": "Appliquer",
+      "create": "",
       "delete": "Supprimer",
       "discard": "Rejeter",
       "draw": "Dessiner",
@@ -201,8 +202,8 @@
     },
     "linkfeatureform": {
       "cancel": "",
+      "close": "",
       "drawhint": "",
-      "finish": "",
       "pickhint": ""
     },
     "locate": {

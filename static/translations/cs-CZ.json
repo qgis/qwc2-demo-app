@@ -115,6 +115,7 @@
       "capturedpicture": "",
       "clearpicture": "",
       "commit": "Potvrdit",
+      "create": "",
       "delete": "Odstranit",
       "discard": "Vyřadit",
       "draw": "Kreslit",
@@ -201,8 +202,8 @@
     },
     "linkfeatureform": {
       "cancel": "",
+      "close": "",
       "drawhint": "",
-      "finish": "",
       "pickhint": ""
     },
     "locate": {

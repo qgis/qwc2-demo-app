@@ -115,6 +115,7 @@
       "capturedpicture": "",
       "clearpicture": "",
       "commit": "Подтвердить изменения",
+      "create": "",
       "delete": "Удалить",
       "discard": "Отменить изменения",
       "draw": "Нарисовать",
@@ -201,8 +202,8 @@
     },
     "linkfeatureform": {
       "cancel": "",
+      "close": "",
       "drawhint": "",
-      "finish": "",
       "pickhint": ""
     },
     "locate": {

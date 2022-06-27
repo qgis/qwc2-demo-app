@@ -1,0 +1,529 @@
+{
+  "#translationsPath": "translations",
+  "assetsPath": "assets",
+  "urlPositionFormat": "extent",
+  "urlPositionCrs": "",
+  "omitUrlParameterUpdates": false,
+  "dontLoadDefaultTheme": true,
+  "preserveExtentOnThemeSwitch": true,
+  "preserveBackgroundOnThemeSwitch": true,
+  "preserveNonThemeLayersOnThemeSwitch": true,
+  "allowReorderingLayers": true,
+  "preventSplittingGroupsWhenReordering": true,
+  "allowLayerTreeSeparators": false,
+  "allowRemovingThemeLayers": false,
+  "searchThemes": true,
+  "allowAddingOtherThemes": true,
+  "allowFractionalZoom": true,
+  "flattenLayerTreeGroups": false,
+  "localeAwareNumbers": false,
+  "importLayerUrlPresets":[{"label": "Verwaltungsgrenzen NRW", "value": "https://www.wms.nrw.de/geobasis/wms_nw_dvg?"},
+		{"label": "Freizeitkarte NRW", "value": "https://www.wms.nrw.de/geobasis/wms_nw_tfis"},
+		{"label": "DGM Schummerung", "value": "https://www.wms.nrw.de/geobasis/wms_nw_dgm-schummerung"}
+		],
+  "wmsDpi": 96,
+  "wmsHidpi": true,
+  "defaultFeatureStyle": {
+    "strokeColor": [0, 0, 255, 1],
+    "strokeWidth": 1,
+    "strokeDash": [4],
+    "fillColor": [255, 0, 255, 0.33],
+    "circleRadius": 10,
+    "textFill": "black",
+    "textStroke": "white"
+  },
+  "projections": [
+    {
+      "code": "EPSG:32632",
+      "proj": "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs",
+      "label": "WGS 84 / UTM zone 32N"
+    },
+    {
+      "code": "EPSG:25832",
+      "proj": "+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+      "label": "ETRS89 / UTM 32N"
+    },
+	{
+      "code": "urn:ogc:def:crs:EPSG::25832",
+      "proj": "+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+      "label": "ETRS89 / UTM 32N"
+    },
+    {
+      "code": "EPSG:31467",
+      "proj": "+proj=tmerc +lat_0=0 +lon_0=9 +k=1.000000 +x_0=3500000 +y_0=0 +ellps=bessel +datum=potsdam +units=m +no_defs",
+      "label": "DHDN / Gauss-Krüger Zone3"
+    }
+  ],
+  "plugins": {
+      "mobile": [
+        {
+          "name": "Map",
+          "mapOptions": {
+            "zoomDuration": 250,
+            "antialiasing": true
+          },
+          "toolsOptions": {
+            "OverviewSupport": {
+              "tipLabel": "Overview"
+            },
+            "LocateSupport": {
+              "keepCurrentZoomLevel": true
+            },
+            "ScaleBarSupport": {
+              "units": "metric"
+            }
+        },
+        "swipeGeometryTypeBlacklist": ["Point"],
+        "#swipeLayerNameBlacklist": ["*_noswipe"]
+        },
+        {
+          "name": "HomeButton"
+          ,
+          "cfg": {
+            "position": 2
+          }
+        },
+        {
+          "name": "LocateButton",
+          "cfg": {
+            "position": 1
+          }
+        },
+        {
+          "name": "BackgroundSwitcher",
+          "cfg": {
+            "position": 0
+          }
+        },
+        {
+            "name": "TopBar",
+            "cfg": {
+              "menuItems": [
+                {"key": "ThemeSwitcher", "icon": "themes"},
+                {"key": "LayerTree", "icon": "layers"},
+                {"key": "Share", "icon": "share"},
+                {"key": "Tools", "icon": "tools", "subitems": [
+                  {"key": "IdentifyRegion", "icon": "identify_region"},
+                  {"key": "Measure", "icon": "measure"},
+                  {"key": "Redlining", "icon": "draw"},
+                  {"key": "Editing", "icon": "editing"},
+                  {"key": "DxfExport", "icon": "dxfexport"},
+                  {"key": "RasterExport", "icon": "rasterexport"}
+                ]},
+                {"key": "Print", "icon": "print"},
+                {"key": "Help", "icon": "info"}
+              ],
+              "searchOptions": {
+                "minScaleDenom": 1000,
+                "showProviderSelection": true,
+                "providerSelectionAllowAll": true,
+                "zoomToLayers": false,
+                "showProvidersInPlaceholder": false
+              },
+              "appMenuClearsTask": true,
+			  "appMenuVisibleOnStartup": true
+            }
+        },
+        {
+          "name": "ThemeSwitcher",
+          "cfg": {
+              "collapsibleGroups": true
+          }
+        },
+        {
+          "name": "Measure",
+          "cfg": {
+            "showMeasureModeSwitcher": true
+          }
+        },
+        {
+          "name": "Identify",
+          "cfg": {
+            "params": {
+              "FI_POINT_TOLERANCE": 32,
+              "FI_LINE_TOLERANCE": 16,
+              "FI_POLYGON_TOLERANCE": 8,
+              "feature_count": 20
+            },
+            "enableExport": true,
+            "longAttributesDisplay": "wrap",
+            "displayResultTree": false,
+			"featureInfoReturnsLayerName": true,
+            "initialWidth": 800,
+            "initialHeight": 500
+          }
+        },
+        {
+          "name": "Share",
+          "cfg": {
+            "showSocials": false,
+            "showLink": true,
+            "showQRCode": true
+          },
+          "mapClickAction": "identify"
+        },
+        {
+          "name": "Print",
+          "cfg": {
+            "inlinePrintOutput": false,
+            "printExternalLayers": true
+          }
+        },
+        {
+          "name": "Help",
+          "mapClickAction": "identify"
+        },
+        {
+          "name": "MapCopyright"
+        },
+        {
+          "name": "LayerTree",
+          "cfg": {
+            "showLegendIcons": true,
+            "showRootEntry": true,
+            "showQueryableIcon": true,
+            "allowMapTips": true,
+            "allowCompare": true,
+            "allowImport": true,
+            "groupTogglesSublayers": false,
+            "grayUnchecked": false,
+            "layerInfoWindowSize": {"width": 480, "height": 400},
+            "bboxDependentLegend": false,
+			"scaleDependentLegend": true
+          },
+          "mapClickAction": "unset"
+        },
+        {
+          "name": "DxfExport"
+        },
+        {
+          "name": "RasterExport",
+          "cfg": {
+            "dpis": [96, 300]
+          }
+        },
+        {
+          "name": "Redlining"
+        },
+        {
+          "name": "GeometryDigitizer",
+		  "cfg": {
+            "styleActive":{
+                "strokeColor": [0, 0, 255, 1],
+                "strokeWidth": 2,
+                "fillColor": [255, 255, 0, 0.5]
+                },
+            "styleInactive":{
+                "strokeColor": [127, 127, 127, 1],
+                "strokeWidth": 2,
+                "fillColor": [127, 127, 127, 0.5]
+            }
+          }
+        },
+        {
+          "name": "Editing"
+        },
+        {
+          "name": "MapCompare"
+        },
+        {
+          "name": "HeightProfile",
+          "cfg": {
+            "heighProfilePrecision": 0
+          }
+        },
+        {
+          "name": "MapInfoTooltip",
+          "cfg": {
+            "elevationPrecision": 0,
+            "includeWGS84": true
+          }
+        },
+        {
+          "name": "IdentifyRegion",
+          "cfg": {
+            "useWfs": false
+          }
+        },
+        {
+          "name": "LoginUser"
+        }
+
+      ],
+      "desktop": [
+        {
+          "name": "Map",
+          "cfg": {
+            "mapOptions": {
+              "zoomDuration": 250,
+              "antialiasing": true
+            },
+            "toolsOptions": {
+              "OverviewSupport": {
+                "tipLabel": "Navigator"
+              },
+              "LocateSupport": {
+                "keepCurrentZoomLevel": true
+              },
+              "ScaleBarSupport": {
+                "units": "metric"
+              }
+          },
+          "swipeGeometryTypeBlacklist": ["Point","LineString"],
+          "#swipeLayerNameBlacklist": ["*_noswipe"]
+          }
+        },
+		{
+          "name": "TaskButton",
+          "cfg": {
+            "position": 4,
+            "task": "LayerTree",
+            "icon": "list-alt"
+          }
+        },
+        {
+          "name": "HomeButton",
+          "cfg": {
+            "position": 3
+          }
+        },
+        {
+          "name": "ZoomIn",
+          "cfg": {
+            "position": 2
+          }
+        },
+        {
+          "name": "ZoomOut",
+          "cfg": {
+            "position": 1
+          }
+        },
+        {
+          "name": "BackgroundSwitcher",
+          "cfg": {
+            "position": 0
+          }
+        },
+        {
+            "name": "TopBar",
+            "cfg": {
+              "menuItems": [
+                {"key": "Portal", "icon": "themes"},
+                {"key": "ThemeSwitcher", "icon": "themes"},
+                {"key": "LayerTree", "icon": "layers"},
+                {"key": "Share", "icon": "share"},
+                {"key": "Tools", "icon": "tools", "subitems": [
+                  {"key": "IdentifyRegion", "icon": "identify_region"},
+                  {"key": "Measure", "icon": "measure"},
+                  {"key": "Redlining", "icon": "draw"},
+                  {"key": "GeometryDigitizer", "icon": "draw"},
+                  {"key": "Editing", "icon": "editing", "themeWhitelist": ["Wahlbezirke 2020","Adressen (Erfassung)"]},
+                  {"key": "DxfExport", "icon": "dxfexport"},
+                  {"key": "RasterExport", "icon": "rasterexport"}
+                ]},
+                {"key": "Print", "icon": "print"},
+                {"key": "Help", "icon": "info"},
+                {"key": "ExternalLink", "icon": "link", "url": "https://open.nrw/suche"},
+                {"key": "Login", "icon": "login"}
+              ],
+              "toolbarItems": [
+                {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
+                {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
+                {"key": "Print", "icon": "print"},
+                {"key": "IdentifyRegion", "icon": "identify_region"}
+              ],
+              "searchOptions": {
+                "minScaleDenom": 2000,
+                "showProviderSelection": true,
+                "providerSelectionAllowAll": true,
+                "zoomToLayers": false,
+                "showProvidersInPlaceholder": false
+              },
+              "appMenuClearsTask": true,
+			  "appMenuVisibleOnStartup": false,
+              "logoUrl": "/"
+            }
+        },
+        {
+          "name": "BottomBar",
+          "cfg": {
+            "viewertitleUrl": "http://map.krz.de/?Impressum",
+            "termsUrl":  "http://map.krz.de/?Datenschutzerklaerung"
+          }
+        },
+        {
+          "name": "Measure",
+          "cfg": {
+            "showMeasureModeSwitcher": true
+          }
+        },
+        {
+          "name": "ThemeSwitcher",
+          "cfg": {
+              "collapsibleGroups": true
+          },
+		  "mapClickAction": "identify"
+        },
+        {
+          "name": "LayerTree",
+          "cfg": {
+            "showLegendIcons": true,
+            "showRootEntry": false,
+            "showQueryableIcon": true,
+            "allowMapTips": true,
+            "allowCompare": true,
+            "allowImport": true,
+            "groupTogglesSublayers": false,
+            "grayUnchecked": false,
+			"infoInSettings": false,
+            "layerInfoWindowSize": {"width": 480, "height": 400},
+            "bboxDependentLegend": true,
+			"scaleDependentLegend": false,
+			"showToggleAllLayersCheckbox": true
+          },
+          "mapClickAction": "unset"
+        },
+        {
+          "name": "Identify",
+          "cfg": {
+            "params": {
+              "FI_POINT_TOLERANCE": 16,
+              "FI_LINE_TOLERANCE": 8,
+              "FI_POLYGON_TOLERANCE": 4,
+              "feature_count": 20
+            },
+            "enableExport": true,
+            "longAttributesDisplay": "wrap",
+            "displayResultTree": false,
+			"featureInfoReturnsLayerName": true,
+            "initialWidth": 480,
+            "initialHeight": 550,
+			"initiallyDocked": true
+          }
+        },
+        {
+          "name": "MapTip"
+        },
+        {
+          "name": "Share",
+          "cfg": {
+            "showSocials": false,
+            "showLink": true,
+            "showQRCode": true
+          },
+          "mapClickAction": "identify"
+        },
+        {
+          "name": "Print",
+          "cfg": {
+            "inlinePrintOutput": false,
+            "printExternalLayers": true
+          }
+        },
+        {
+          "name": "Help",
+          "mapClickAction": "identify"
+        },
+        {
+          "name": "MapCopyright"
+        },
+        {
+          "name": "DxfExport"
+        },
+        {
+          "name": "RasterExport",
+          "cfg": {
+            "dpis": [96, 300]
+          }
+        },
+        {
+          "name": "Redlining"
+        },
+        {
+          "name": "GeometryDigitizer",
+		  "cfg": {
+            "styleActive":{
+                "strokeColor": [0, 0, 255, 1],
+                "strokeWidth": 2,
+                "fillColor": [255, 255, 0, 0.5]
+                },
+            "styleInactive":{
+                "strokeColor": [127, 127, 127, 1],
+                "strokeWidth": 2,
+                "fillColor": [127, 127, 127, 0.5]
+            }
+          }
+        },
+        {
+          "name": "Editing",
+		  "cfg": {
+              "width": "40em"
+          }
+        },
+        {
+          "name": "MapCompare"
+        },
+        {
+          "name": "Authentication",
+		  "cfg": {
+            "idleTimeout": 2700,
+			"clearLayerParam": true
+          }
+        },
+        {
+          "name": "HeightProfile",
+          "cfg": {
+            "heighProfilePrecision": 0
+          }
+        },
+        {
+          "name": "MapInfoTooltip",
+          "cfg": {
+            "elevationPrecision": 0,
+            "includeWGS84": true
+          }
+        },
+        {
+          "name": "IdentifyRegion",
+          "cfg": {
+            "useWfs": false
+          }
+        },
+        {
+          "name": "LoginUser"
+        },
+        {
+          "name": "Portal",
+          "cfg": {
+              "logo": "logo.svg",
+              "newsDocument": "140news.html",
+              "newsRev": "202003192321",
+              "topBarText": "GeoPortal Horn-Bad Meinberg",
+              "showMenuOnStartup": true,
+			  "keepMenuOpen": true,
+              "bottomBarLinks": [
+                  {"href": "http://map.krz.de/?Impressum", "label": "Impressum (vorläufig)"},
+                  {"href": "http://map.krz.de/?Datenschutzerklaerung", "label": "Datenschutzerklärung (vorläufig)"}
+              ],
+              "menuItems": [
+                  {"key": "Help", "icon": "info", "url": "http://example.com"},
+                  {"key": "MyPage", "icon": "link", "url": "https://www.krz.de"},
+                  {"key": "Tools", "icon": "tools", "subitems": [
+                    {"key": "MyPage2", "icon": "link", "url": "https://www.offenedaten-owl.de/"},
+                    {"key": "ExternalLink3", "icon": "link", "url": "http://example.com?extent=$e$"}
+                  ]},
+				  {"key": "ExternalLink", "icon": "link", "url": "https://open.nrw/suche"},
+                  {"key": "Login", "icon": "login"}
+              ]
+          }
+        },
+        {
+          "name": "CookiePopup"
+        },
+        {
+          "name": "API"
+        }
+      ]
+  }
+}

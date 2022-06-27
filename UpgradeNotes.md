@@ -5,8 +5,15 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
+Update to qwc2 submodule revision [e357152](https://github.com/qgis/qwc2/tree/e357152) (27.06.2022)
+---------------------------------------------------------------------------------------------------
+
+**Reworked interface for handling 1:N relations between qwc2 and qwc-data-service**
+
+The interface for reading and writing 1:n relations between the qwc2 and the qwc-data-service was reworked. If you are using the qwc-data-service, make sure to update to qwc-data-service-v2022.06.27 or later when updating to qwc2 submodule revision [e357152](https://github.com/qgis/qwc2/tree/e357152) or later.
+
 Update to qwc2 submodule revision [76ec566](https://github.com/qgis/qwc2/tree/76ec566) (17.06.2022)
----------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 **Refactoring of editing components**
 

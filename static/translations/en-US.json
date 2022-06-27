@@ -115,6 +115,7 @@
       "capturedpicture": "Captured picture",
       "clearpicture": "Clear",
       "commit": "Commit",
+      "create": "Create",
       "delete": "Delete",
       "discard": "Discard",
       "draw": "Draw",
@@ -201,8 +202,8 @@
     },
     "linkfeatureform": {
       "cancel": "Cancel",
+      "close": "Close",
       "drawhint": "Draw the feature on the map...",
-      "finish": "Finish",
       "pickhint": "Pick a feature on the map..."
     },
     "locate": {
