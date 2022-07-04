@@ -125,6 +125,7 @@
       "minimize": "Küçült",
       "nocompatpick": "",
       "noeditablelayers": "Düzenlenebilir katman yok.",
+      "paint": "",
       "pick": "Seç",
       "pickdrawfeature": "",
       "reallydelete": "Sil",
@@ -157,6 +158,10 @@
       "noresults": "Seçilen nokta için geçerli bilgi yok",
       "querying": "Sorgulanıyor...",
       "title": "Obje Bilgisi"
+    },
+    "imageeditor": {
+      "confirmclose": "",
+      "title": ""
     },
     "importlayer": {
       "addfailed": "",

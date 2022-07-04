@@ -2433,6 +2433,11 @@ core-js@3.19.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.0.tgz#9e40098a9bc326c7e81b486abbd5e12b9d275176"
   integrity sha512-L1TpFRWXZ76vH1yLM+z6KssLZrP8Z6GxxW4auoCj+XiViOzNPJCAuTIkn03BGdFe6Z5clX5t64wRIRypsZQrUg==
 
+core-js@^3.11.0:
+  version "3.23.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.23.3.tgz#3b977612b15da6da0c9cc4aec487e8d24f371112"
+  integrity sha512-oAKwkj9xcWNBAvGbT//WiCdOMpb9XQG92/Fe3ABFM/R16BsHgePG00mFOgKf7IsCtfj8tA1kHtf/VwErhriz5Q==
+
 core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -2738,6 +2743,11 @@ dom-serializer@^1.0.1:
     domelementtype "^2.0.1"
     domhandler "^4.2.0"
     entities "^2.0.0"
+
+dom-to-image@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/dom-to-image/-/dom-to-image-2.6.0.tgz#8a503608088c87b1c22f9034ae032e1898955867"
+  integrity sha512-Dt0QdaHmLpjURjU7Tnu3AgYSF2LuOmksSGsUcE6ItvJoCWTBEmiMXcqBdNSAm9+QbbwD7JMoVsuuKX6ZVQv1qA==
 
 domelementtype@1, domelementtype@^1.3.1:
   version "1.3.1"
@@ -5176,6 +5186,14 @@ package-hash@^4.0.0:
     hasha "^5.0.0"
     lodash.flattendeep "^4.4.0"
     release-zalgo "^1.0.0"
+
+painterro@^1.2.78:
+  version "1.2.78"
+  resolved "https://registry.yarnpkg.com/painterro/-/painterro-1.2.78.tgz#b9542b15ed8c55b19320ad04046a415ae1987ab1"
+  integrity sha512-50c5V+OP2YImMzEe5RjkSAYyAuZ3WWZODaq7UmY0wWjJ294fCvadkge0InWbg3kme2HBtdO1mEzqoRaV8ppe9A==
+  dependencies:
+    core-js "^3.11.0"
+    dom-to-image "^2.6.0"
 
 pako@^1.0.0, pako@~1.0.2:
   version "1.0.11"

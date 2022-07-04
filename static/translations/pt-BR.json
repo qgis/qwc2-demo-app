@@ -125,6 +125,7 @@
       "minimize": "Minimizar",
       "nocompatpick": "",
       "noeditablelayers": "Não camadas editadas.",
+      "paint": "",
       "pick": "Elegir",
       "pickdrawfeature": "",
       "reallydelete": "Excluir",
@@ -157,6 +158,10 @@
       "noresults": "Nenhuma informação disponível para o ponto selecionado",
       "querying": "Consulta...",
       "title": "Información de recurso"
+    },
+    "imageeditor": {
+      "confirmclose": "",
+      "title": ""
     },
     "importlayer": {
       "addfailed": "",
