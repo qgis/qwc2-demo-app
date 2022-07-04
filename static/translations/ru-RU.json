@@ -112,7 +112,6 @@
       "add": "",
       "attrtable": "",
       "canceldelete": "Не удалять",
-      "capturedpicture": "",
       "clearpicture": "",
       "commit": "Подтвердить изменения",
       "create": "",
@@ -131,6 +130,7 @@
       "reallydelete": "Удалить",
       "relationcommitfailed": "",
       "select": "Выберите...",
+      "selectedpicture": "",
       "takepicture": ""
     },
     "featureform": {

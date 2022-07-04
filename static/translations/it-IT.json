@@ -112,7 +112,6 @@
       "add": "Aggiungi",
       "attrtable": "Tabella",
       "canceldelete": "Annulla",
-      "capturedpicture": "Foto catturata",
       "clearpicture": "Cancella",
       "commit": "Salva",
       "create": "Crea",
@@ -131,6 +130,7 @@
       "reallydelete": "Elimina",
       "relationcommitfailed": "Alcune relazioni non sono state salvate, consultare i tooltip delle icone per i dettagli.",
       "select": "Seleziona...",
+      "selectedpicture": "Immagine selezionata",
       "takepicture": "Foto"
     },
     "featureform": {
