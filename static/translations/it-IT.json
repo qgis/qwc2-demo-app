@@ -120,6 +120,7 @@
       "draw": "Disegna",
       "feature": "Oggetto",
       "geomreadonly": "La geometria contiene valori Z non nulli ed è quindi di sola lettura.",
+      "invalidform": "Formulario invalido",
       "maximize": "Massimizza",
       "minimize": "Minimizza",
       "nocompatpick": "Nessuna geometria compatibile",
@@ -381,8 +382,10 @@
       "close": "Chiudi",
       "dock": "Aggancia",
       "maximize": "Massimizza",
+      "minimize": "Minimizza",
       "undock": "Sgancia",
-      "unmaximize": "Ripristina"
+      "unmaximize": "Ripristina",
+      "unminimize": "Ingrandisci"
     }
   }
 }

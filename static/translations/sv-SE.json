@@ -120,6 +120,7 @@
       "draw": "Rita",
       "feature": "Objekt",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Maximera",
       "minimize": "Minimera",
       "nocompatpick": "",
@@ -381,8 +382,10 @@
       "close": "",
       "dock": "",
       "maximize": "",
+      "minimize": "",
       "undock": "",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }

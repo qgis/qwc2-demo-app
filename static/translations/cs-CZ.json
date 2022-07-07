@@ -120,6 +120,7 @@
       "draw": "Kreslit",
       "feature": "",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Maximální",
       "minimize": "Minimální",
       "nocompatpick": "",
@@ -381,8 +382,10 @@
       "close": "",
       "dock": "",
       "maximize": "",
+      "minimize": "",
       "undock": "",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }

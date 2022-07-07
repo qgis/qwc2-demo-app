@@ -120,6 +120,7 @@
       "draw": "Desenhar",
       "feature": "Recurso",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Maximizar",
       "minimize": "Minimizar",
       "nocompatpick": "",
@@ -381,8 +382,10 @@
       "close": "Fechar",
       "dock": "Juntar",
       "maximize": "",
+      "minimize": "",
       "undock": "Desencaixar",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }

@@ -120,6 +120,7 @@
       "draw": "Rysuj",
       "feature": "",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Maksymalizuj",
       "minimize": "Minimalizuj",
       "nocompatpick": "",
@@ -381,8 +382,10 @@
       "close": "",
       "dock": "",
       "maximize": "",
+      "minimize": "",
       "undock": "",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }

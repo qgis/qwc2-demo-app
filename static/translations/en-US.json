@@ -120,6 +120,7 @@
       "draw": "Draw",
       "feature": "Feature",
       "geomreadonly": "The geometry contains non-zero Z values and is therefore read only.",
+      "invalidform": "Invalid form",
       "maximize": "Maximize",
       "minimize": "Minimize",
       "nocompatpick": "No compatible geometry found",
@@ -381,8 +382,10 @@
       "close": "Close",
       "dock": "Dock",
       "maximize": "Maximize",
+      "minimize": "Minimize",
       "undock": "Undock",
-      "unmaximize": "Restore"
+      "unmaximize": "Restore",
+      "unminimize": "Unminimize"
     }
   }
 }

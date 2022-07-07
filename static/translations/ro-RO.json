@@ -120,6 +120,7 @@
       "draw": "Adaugă",
       "feature": "Entitate",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Maximizează",
       "minimize": "Minimizează",
       "nocompatpick": "",
@@ -381,8 +382,10 @@
       "close": "Închide",
       "dock": "Andocare",
       "maximize": "Maximizează",
+      "minimize": "",
       "undock": "Anulează andocarea",
-      "unmaximize": "Revenire"
+      "unmaximize": "Revenire",
+      "unminimize": ""
     }
   }
 }

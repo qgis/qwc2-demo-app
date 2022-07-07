@@ -120,6 +120,7 @@
       "draw": "Trazar",
       "feature": "Elemento",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Maximizar",
       "minimize": "Minimizar",
       "nocompatpick": "",
@@ -381,8 +382,10 @@
       "close": "Cerrar",
       "dock": "Acoplar",
       "maximize": "",
+      "minimize": "",
       "undock": "Desacoplar",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }

@@ -120,6 +120,7 @@
       "draw": "Çiz",
       "feature": "Obje",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Büyült",
       "minimize": "Küçült",
       "nocompatpick": "",
@@ -381,8 +382,10 @@
       "close": "Kapat",
       "dock": "Sabitle",
       "maximize": "",
+      "minimize": "",
       "undock": "Çöz",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }

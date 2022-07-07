@@ -120,6 +120,7 @@
       "draw": "Нарисовать",
       "feature": "",
       "geomreadonly": "",
+      "invalidform": "",
       "maximize": "Развернуть",
       "minimize": "Свернуть",
       "nocompatpick": "",
@@ -381,8 +382,10 @@
       "close": "",
       "dock": "",
       "maximize": "",
+      "minimize": "",
       "undock": "",
-      "unmaximize": ""
+      "unmaximize": "",
+      "unminimize": ""
     }
   }
 }
