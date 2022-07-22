@@ -132,7 +132,8 @@
       "relationcommitfailed": "Salvarea relației a eșuat",
       "select": "Selectează",
       "selectedpicture": "",
-      "takepicture": "Fotografiază"
+      "takepicture": "Fotografiază",
+      "unsavedchanged": ""
     },
     "featureform": {
       "feature": "",

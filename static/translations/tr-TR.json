@@ -132,7 +132,8 @@
       "relationcommitfailed": "",
       "select": "Seçim",
       "selectedpicture": "",
-      "takepicture": ""
+      "takepicture": "",
+      "unsavedchanged": ""
     },
     "featureform": {
       "feature": "",

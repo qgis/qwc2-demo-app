@@ -132,7 +132,8 @@
       "relationcommitfailed": "",
       "select": "Выберите...",
       "selectedpicture": "",
-      "takepicture": ""
+      "takepicture": "",
+      "unsavedchanged": ""
     },
     "featureform": {
       "feature": "",
