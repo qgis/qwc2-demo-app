@@ -7,7 +7,7 @@
         "AttributeTable": "Table d'attributs",
         "DxfExport": "Export DXF",
         "Editing": "Editer",
-        "FeatureForm": "",
+        "FeatureForm": "Formulaire d'objet",
         "Help": "Aide",
         "IdentifyRegion": "Interroger la région",
         "LayerCatalog": "Catalogue des couches",
@@ -24,7 +24,7 @@
         "ThemeSwitcher": "Thèmes",
         "Tools": "Outils",
         "Bookmark": "Marque-pages",
-        "TimeManager": ""
+        "TimeManager": "Ligne du temps"
       },
       "filter": "Filtrer le menu...",
       "menulabel": "Cartes et outils"
@@ -48,7 +48,7 @@
       "existinglayer": "La couche existe déjà dans la carte",
       "invisiblelayer": "Le résultat est sur une couche désactivé",
       "more": "Plus...",
-      "providerselection": "",
+      "providerselection": "Services de recherche",
       "search": "Chercher",
       "searchall": "Rechercher un lieu ou ajouter une carte...",
       "searchinprogress": "Recherche en cours",
@@ -109,37 +109,37 @@
       "symbologyscale": "Echelle"
     },
     "editing": {
-      "add": "",
+      "add": "Ajouter",
       "attrtable": "Table",
       "canceldelete": "Annuler la suppression",
-      "clearpicture": "",
+      "clearpicture": "Réinitialiser",
       "commit": "Appliquer",
-      "create": "",
+      "create": "Créer",
       "delete": "Supprimer",
       "discard": "Rejeter",
       "draw": "Dessiner",
       "feature": "Objet",
-      "geomreadonly": "",
-      "invalidform": "",
+      "geomreadonly": "La géométrie contient des valeurs Z non nulles et ne peut donc pas être modifiée.",
+      "invalidform": "Formulaire non valide",
       "maximize": "Maximiser",
       "minimize": "Minimiser",
       "nocompatpick": "Aucune géométrie compatible trouvée",
       "noeditablelayers": "Il n'y a pas de couche éditable pour ce thème",
-      "paint": "",
+      "paint": "Éditer",
       "pick": "Choisir",
       "pickdrawfeature": "Copier la géométrie existante",
       "reallydelete": "Supprimer",
       "relationcommitfailed": "Certaines relations n'ont pas pu être enregistrées. Pour plus de détails consulter le boutons d'informations",
       "select": "Sélectionner",
-      "selectedpicture": "",
+      "selectedpicture": "Image sélectionnée",
       "takepicture": "Ajouter une photo",
-      "unsavedchanged": "Il y a des changements non sauvegardés. Voulez-vous quitter la page de toute façon?"
+      "unsavedchanged": "Il y a des modifications non enregistrées. Faut-il quand même quitter la page?"
     },
     "featureform": {
-      "feature": "",
-      "noresults": "",
-      "querying": "",
-      "title": ""
+      "feature": "Object",
+      "noresults": "Pas de résultats",
+      "querying": "Identification en cours...",
+      "title": "Formulaire d'objet"
     },
     "fileselector": {
       "placeholder": "Choisir un fichier..."
@@ -162,11 +162,11 @@
       "title": "Informations sur l'objet"
     },
     "imageeditor": {
-      "confirmclose": "",
-      "title": ""
+      "confirmclose": "Fermer sans enregistrer?",
+      "title": "Traitement des images"
     },
     "importlayer": {
-      "addfailed": "",
+      "addfailed": "La couche n'a pas pu être ajoutée",
       "addlayer": "Ajouter une couche",
       "connect": "Connecter",
       "filter": "Filtrer",
@@ -208,10 +208,10 @@
       "zoomtolayer": "Zoomer sur la couche"
     },
     "linkfeatureform": {
-      "cancel": "",
-      "close": "",
-      "drawhint": "",
-      "pickhint": ""
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "drawhint": "Dessiner un objet sur la carte...",
+      "pickhint": "Sélectionner un objet sur la carte..."
     },
     "locate": {
       "feetUnit": "pieds",
@@ -258,7 +258,7 @@
       "wait": "Veuillez patienter..."
     },
     "qtdesignerform": {
-      "loading": ""
+      "loading": "Chargement du formulaire..."
     },
     "rasterexport": {
       "format": "Format:",
@@ -322,8 +322,8 @@
       "socialIntro": "Via votre réseau social favori"
     },
     "snapping": {
-      "loading": "",
-      "snappingenabled": ""
+      "loading": "Chargement",
+      "snappingenabled": "Snapping activé"
     },
     "themelayerslist": {
       "addlayer": "Ajouter la couche",
@@ -344,24 +344,24 @@
       "restrictedthemeinfo": "Vous n'êtes pas autorisé à voir le thème ou vous n'êtes pas connecté"
     },
     "timemanager": {
-      "animationinterval": "",
-      "markers": "",
+      "animationinterval": "Intervalle d'animation",
+      "markers": "Marqueurs",
       "notemporaldata": "Aucune couche temporelle n'est visible sur la carte.",
       "play": "Jouer",
-      "playrev": "",
-      "rewind": "",
-      "stepback": "",
-      "stepfwd": "",
-      "stepsize": "",
+      "playrev": "Jouer en sens inverse",
+      "rewind": "Rembobiner",
+      "stepback": "Pas en arrière",
+      "stepfwd": "Pas en avant",
+      "stepsize": "aille de pas",
       "stop": "Stop",
-      "title": "",
-      "toggle": "",
+      "title": "Ligne du temps",
+      "toggle": "Activer le contrôle du temps",
       "unit": {
-        "century": "",
+        "century": "siècles",
         "days": "jours",
-        "decade": "",
+        "decade": "décennies",
         "hours": "heures",
-        "milliseconds": "",
+        "milliseconds": "millisecondes",
         "minutes": "minutes",
         "months": "mois",
         "seconds": "secondes",
@@ -383,10 +383,10 @@
       "close": "Fermer",
       "dock": "Attacher",
       "maximize": "Agrandir",
-      "minimize": "",
+      "minimize": "Minimiser",
       "undock": "Détacher",
       "unmaximize": "Réduire",
-      "unminimize": ""
+      "unminimize": "Agrandir"
     }
   }
 }

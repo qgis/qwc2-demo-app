@@ -392,16 +392,17 @@ Background layers are handled completely client-side and do not appear in the la
 
 The format of the background layer definitions is as follows:
 
-| Entry                        | Description                                                                       |
-|------------------------------|-----------------------------------------------------------------------------------|
-| `"name": "<Name>",`          | The name of the background layer, used in the theme definitions.                  |
-| `"title": "<Title>",       ` | The title of the background layer, as displayed in the background switcher.       |
-| `"thumbnail": "<Filename>",` | Optional, image file in `assets/img/mapthumbs`. Defaults to `default.jpg`.        |
-| `"type": "<Type>",`          | The background layer type, i.e. `wms` or `wmts`.                                  |
-| `"group":  "<GroupId>",`     | Optional, a group ID string. Background layers with the same group ID will be grouped together in the background switcher. |
-| `"minScale": <min_scale>,`   | Optional, minimum scale denominator from which to render the layer.               |
-| `"maxScale": <max_scale>,`   | Optional, maximum scale denominator from which to render the layer.               |
-| `<Layer params>`             | Parameters according to the specified layer type. Refer to the [sample `themesConfig.json`](https://github.com/qgis/qwc2-demo-app/blob/master/themesConfig.json) for some examples. |
+| Entry                                 | Description                                                                       |
+|---------------------------------------|-----------------------------------------------------------------------------------|
+| `"name": "<Name>",`                   | The name of the background layer, used in the theme definitions.                  |
+| `"title": "<Title>",`                 | The title of the background layer, as displayed in the background switcher.       |
+| `"titleMsgId": "<Menu title msgID>",` | Alternative to `title`, a message ID, translated through the translation files.  |
+| `"thumbnail": "<Filename>",`          | Optional, image file in `assets/img/mapthumbs`. Defaults to `default.jpg`.        |
+| `"type": "<Type>",`                   | The background layer type, i.e. `wms` or `wmts`.                                  |
+| `"group":  "<GroupId>",`              | Optional, a group ID string. Background layers with the same group ID will be grouped together in the background switcher. |
+| `"minScale": <min_scale>,`            | Optional, minimum scale denominator from which to render the layer.               |
+| `"maxScale": <max_scale>,`            | Optional, maximum scale denominator from which to render the layer.               |
+| `<Layer params>`                      | Parameters according to the specified layer type. Refer to the [sample `themesConfig.json`](https://github.com/qgis/qwc2-demo-app/blob/master/themesConfig.json) for some examples. |
 
 *Note*: You can use the helper python script located at `qwc2/scripts/wmts_config_generator.py` to easily generate WMTS background layer configurations.
 
