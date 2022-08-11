@@ -114,6 +114,7 @@
       "canceldelete": "Don't delete",
       "clearpicture": "Clear",
       "commit": "Commit",
+      "commitfailed": "Commit failed",
       "create": "Create",
       "delete": "Delete",
       "discard": "Discard",
@@ -318,6 +319,7 @@
       "QRCodeLinkTitle": "QR Code",
       "directLinkTitle": "Via a direct link",
       "refresh": "Generate permalink",
+      "shareTitle": "QWC2",
       "showpin": "Show pin",
       "socialIntro": "In your favourite social network"
     },

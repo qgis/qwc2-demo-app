@@ -114,6 +114,7 @@
       "canceldelete": "Annuler la suppression",
       "clearpicture": "Réinitialiser",
       "commit": "Appliquer",
+      "commitfailed": "Échec de l'enregistrement",
       "create": "Créer",
       "delete": "Supprimer",
       "discard": "Rejeter",
@@ -318,6 +319,7 @@
       "QRCodeLinkTitle": "QR code",
       "directLinkTitle": "Via un lien direct",
       "refresh": "Générer un lien permanent",
+      "shareTitle": "QWC2",
       "showpin": "Afficher les épingles",
       "socialIntro": "Via votre réseau social favori"
     },

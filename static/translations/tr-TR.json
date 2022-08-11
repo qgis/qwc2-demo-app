@@ -114,6 +114,7 @@
       "canceldelete": "Silme",
       "clearpicture": "",
       "commit": "Onayla",
+      "commitfailed": "",
       "create": "",
       "delete": "Sil",
       "discard": "İptal",
@@ -318,6 +319,7 @@
       "QRCodeLinkTitle": "Karekod",
       "directLinkTitle": "Doğrudan bağlantı yolu ile",
       "refresh": "",
+      "shareTitle": "QWC2",
       "showpin": "",
       "socialIntro": "Favori sosyal ağınıza"
     },

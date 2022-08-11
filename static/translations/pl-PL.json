@@ -114,6 +114,7 @@
       "canceldelete": "Nie usuwaj",
       "clearpicture": "",
       "commit": "Zatwierdź",
+      "commitfailed": "",
       "create": "",
       "delete": "Usuń",
       "discard": "Odrzuć",
@@ -318,6 +319,7 @@
       "QRCodeLinkTitle": "QR code",
       "directLinkTitle": "Poprzez link bezpośredni",
       "refresh": "",
+      "shareTitle": "QWC2",
       "showpin": "",
       "socialIntro": "W twoich ulubionych mediach społecznościowych"
     },

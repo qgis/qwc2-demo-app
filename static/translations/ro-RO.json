@@ -114,6 +114,7 @@
       "canceldelete": "Elimină modificările",
       "clearpicture": "Elimină poza",
       "commit": "Salvează",
+      "commitfailed": "",
       "create": "",
       "delete": "Șterge",
       "discard": "Renunță",
@@ -318,6 +319,7 @@
       "QRCodeLinkTitle": "Cod QR",
       "directLinkTitle": "Via link direct",
       "refresh": "",
+      "shareTitle": "QWC2",
       "showpin": "Arată pin",
       "socialIntro": "În rețeaua socială favorită"
     },

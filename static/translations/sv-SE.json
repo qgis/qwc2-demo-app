@@ -114,6 +114,7 @@
       "canceldelete": "Radera inte",
       "clearpicture": "",
       "commit": "Skicka",
+      "commitfailed": "",
       "create": "",
       "delete": "Radera",
       "discard": "Förkasta",
@@ -318,6 +319,7 @@
       "QRCodeLinkTitle": "QR kod",
       "directLinkTitle": "Via en direktlänk",
       "refresh": "",
+      "shareTitle": "QWC2",
       "showpin": "",
       "socialIntro": "I ditt favoritnätverk"
     },

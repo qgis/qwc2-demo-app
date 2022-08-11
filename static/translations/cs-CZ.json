@@ -114,6 +114,7 @@
       "canceldelete": "Neodstraňovat",
       "clearpicture": "",
       "commit": "Potvrdit",
+      "commitfailed": "",
       "create": "",
       "delete": "Odstranit",
       "discard": "Vyřadit",
@@ -318,6 +319,7 @@
       "QRCodeLinkTitle": "QR kód",
       "directLinkTitle": "Přes přímé spojení",
       "refresh": "",
+      "shareTitle": "QWC2",
       "showpin": "",
       "socialIntro": "Ve vaší oblíbené sociální síti"
     },
