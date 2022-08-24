@@ -301,7 +301,8 @@ The format of the theme definitions is as follows:
 | `"backgroundLayers": [{,`                     | Optional, list of available background layers.                                   |
 | `  "name": "<Background layer name>",`        | Name of matching `BackgroundLayerDefinition`, see below.                         |
 | `  "printLayer": "<QGis layer name>"\|[<list>],`| Optional, name of layer to use as matching background layer when printing. Alternatively, a list `[{"maxScale": <scale>, "name": "<QGis layer name>"}, ..., {"maxScale": null, "name": "<QGis layer name>"}]` can be provided, ordered in ascending order by `maxScale`. The last entry should have `maxScale` `null`, as the layer used for all remaining scales. If omitted, no background is printed, unless layer is of type "wms" and `printExternalLayers` is `true` in the Print plugin configuration. |
-| `  "visibility": <boolean>`                   | Optional, initial visibility of the layer when theme is loaded.                  |
+| `  "visibility": <boolean>`,                  | Optional, initial visibility of the layer when theme is loaded.                  |
+| `  "overview": <boolean>`,                    | Optional, set the layer as the overview map layer (i.e. this layer will be displayed in the overview map regardless of the background layer visible in the main map).                  |
 | `}],`                                         |                                                                                  |
 | `"searchProviders": ["<ProviderId>"],`        | Optional, list of search providers IDs. An ID corresponds to the key of the exported `SearchProviders` object in `js/SearchProviders.js`. |
 | `"minSearchScaleDenom": <number>,`                 | Optional, minimum scale to enforce when zooming to search results. Takes precedence over value in `config.json`. |
