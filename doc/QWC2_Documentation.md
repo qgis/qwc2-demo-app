@@ -99,7 +99,7 @@ Some external services can be used to enhance the application. The reference imp
 |----------------------|-------------|
 |`permalinkServiceUrl` | Generates and resolves compact permalinks for the Share plugin. If empty, the full URL will be used. |
 |`elevationServiceUrl` | Returns elevation values, used to generate a height profile when measuring lines and display elevation information in the map right-click information bubble. If empty, the respective information will not be displayed in the client. |
-|`editServiceUrl`      | Service for editing features of layers served by QGIS Server. Required by the Editing plugin. |
+|`editServiceUrl`      | Service for editing features of layers served by QGIS Server. See [Editing](#editing). |
 |`mapInfoService`      | Returns additional information to be displayed in the map right-click information bubble. If empty, no additional information will be displayed. |
 |`featureReportService`| Returns a custom document associated to a feature. See [`themesConfig.json`](#themesConfig-json). |
 
@@ -325,7 +325,7 @@ The format of the theme definitions is as follows:
 | `"mapTips":  <boolean>\|null,`                | Optional, per-theme setting whether map-tips are unavailable (`null`), disabled by default (`false`) or enabled by default (`true`). |
 | `"extraLegendParameters": "<&KEY=VALUE>",`    | Optional, additional query parameters to append to WMS GetLegendGraphic.         |
 | `"printLabelBlacklist":  ["<LabelId>", ...]`  | Optional, list of composer label ids to not expose in the print dialog. |
-| `"editConfig": "<editConfig.json>"`           | Optional, object or path to a filename containing the editing configuration for the theme, see [EditingInterface.js](#editing-interface). |
+| `"editConfig": "<editConfig.json>"`           | Optional, object or path to a filename containing the editing configuration for the theme, see [Editing](#editing). |
 | `"snapping": {...},`                          | Optional, snapping configuration, see [Snapping](#snapping). |                   |
 | `"config": {`                                 | Optional, per-theme configuration entries which override the global entries in `config.json`.|
 | `  "allowRemovingThemeLayers": <boolean>`     | See [`config.json`](#config-json-overrideable) for which settings can be specified here. |
@@ -472,16 +472,25 @@ An advanced feature is the possibility to define parametrized search providers. 
 
 Such entries are passed to the method `searchProviderFactory` in `js/SearchProviders.js`, which you can tweak to dynamically create a search provider definition based on the parameters specified in the entry. Refer to the [sample  `js/SearchProviders.js`](https://github.com/qgis/qwc2-demo-app/blob/master/js/SearchProviders.js) for an example.
 
-### <a name="editing-interface"></a>Implementing the editing interface in `js/EditingInterface.js`
+### <a name="editing"></a>Editing support
 
-The QWC2 Editing plugin allows to add, remove and edit features from the map. For this to work, the following steps need to be performed:
+QWC2 offers comprehensive editing support through a variety of plugins:
 
-- The Editing plugin needs to be enabled in `config.json` and `appConfig.js`.
-- The `editServiceUrl` needs to be specified in `config.json`.
-- The server-side service needs to be set up. The [default editing interface](https://github.com/qgis/qwc2/tree/master/utils/EditingInterface.js) is the conterpart for the [QWC data service](https://github.com/qwc-services/qwc-data-service). You can also use a custom editing service, in which case you need to implement a custom EditingInterface and pass it to the Editing plugin in `appConfig.js`.
-- For every theme for which editing is allowed, a matching `editConfig.json` needs to be implemented and specified in the corresponding entry in `themesConfig.json`.
+- The `Editing` plugin allows creating, editing and removing features of an editable vector layer. It supports editing both geometry and attributes, displaying customizeable attribute forms.
+- The `AttributeTable` plugin also allows creating, editing and removing features of an editable vector layer. It displays all features of the editable layer in a tabularized view, and allows editing attributes, but not geometries.
+- The `FeatureForm` works similarly to the feature-info, but also allows editing the attributes and geometry of a picked feature. It can be used as `identifyTool` instead of the standard `Identify` plugin.
 
-The format of the `editConfig.json` is as follows:
+To configure editing in QWC2, you need to follow the following steps:
+
+- Set up an editing backend. You can use the readily available [QWC data service](https://github.com/qwc-services/qwc-data-service), or a custom backend.
+- Enable the desired editing plugins in `appConfig.js`. If you use a custom editing backend, you'll most likely need to implement a custom editing interface and specify it in `appConfig.json`, see the comment above `EditingPlugin` in [`js/appConfig.js`](https://github.com/qgis/qwc2-demo-app/blob/master/js/appConfig.js).
+- If you are using qwc-services, the [QWC config generator](https://github.com/qwc-services/qwc-config-generator) and [QWC map viewer](https://github.com/qwc-services/qwc-map-viewer) will automatically generate a suitable `editConfig` for each editable layer and embed it in the `themes.json`, otherwise you need to write a custom `editConfig` in `themesConfig.json` as described below.
+
+As a backend, you can use the readily available [QWC data service](https://github.com/qwc-services/qwc-data-service). Please consult its README detailed information including how to set up the edit forms.
+
+If you use a custom backend, you will need to implement a corresponding editing interface in `js/EditingInterface.js`.
+
+If you don't use the [QWC config generator](https://github.com/qwc-services/qwc-config-generator) and [QWC map viewer](https://github.com/qwc-services/qwc-map-viewer), you will also need to write the `editConfig` block in `themesConfig.json` as follows:
 
 | Entry                                | Description                                                   |
 |--------------------------------------|---------------------------------------------------------------|
@@ -512,7 +521,7 @@ The format of the `editConfig.json` is as follows:
 * If you specify `fields`, a simple form is autogenerated based on the field definitions.
 * If you specify `form`, you can specify the URL to a Qt Designer UI form (use `:/<path>` to specify a path below the `assets` folder). Most basic input elements provided by QtDesigner are supported, see [this sample form](https://github.com/qgis/qwc2-demo-app/blob/master/assets/forms/form.ui). The widget names must be set equal to the attribute names.
 
-See the [sample `editConfig.json`](https://github.com/qgis/qwc2-demo-app/blob/master/test2056_edit.json) for a full example. See also the [QWC data service README](https://github.com/qwc-services/qwc-data-service/blob/master/README.md).
+See the [sample `editConfig.json`](https://github.com/qgis/qwc2-demo-app/blob/master/test2056_edit.json) for a full example.
 
 ### <a name="snapping"></a>Snapping support
 

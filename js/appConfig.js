@@ -115,10 +115,10 @@ export default {
             ScratchDrawingPlugin: ScratchDrawingPlugin,
             AuthenticationPlugin: AuthenticationPlugin,
             BookmarkPlugin: BookmarkPlugin,
-            AttributeTablePlugin: AttributeTablePlugin(),
+            AttributeTablePlugin: AttributeTablePlugin(/* CustomEditingInterface */),
             APIPlugin: APIPlugin,
             TimeManagerPlugin: TimeManagerPlugin,
-            FeatureFormPlugin: FeatureFormPlugin()
+            FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */)
         },
         cfg: {
             IdentifyPlugin: {
