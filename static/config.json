@@ -211,6 +211,7 @@
         "name": "LayerTree",
         "cfg": {
           "showLegendIcons": true,
+          "showCustomLegendIcon": false,
           "showRootEntry": true,
           "showQueryableIcon": true,
           "allowMapTips": true,
