@@ -348,6 +348,7 @@
     },
     "timemanager": {
       "animationinterval": "",
+      "loop": "",
       "markers": "",
       "notemporaldata": "",
       "play": "",
