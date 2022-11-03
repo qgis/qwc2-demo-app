@@ -21,7 +21,7 @@ Search provider interface:
 
   getResultGeometry: function(resultItem, callback) {
     // ...
-    callback(resultItem, geometryWktString);
+    callback(resultItem, geometryWktString, crs, hidemarker=false);
   }
 
   getMoreResults: function(moreItem, text, requestId, dispatch) {
