@@ -73,6 +73,7 @@ import axios from 'axios';
 import {addSearchResults, SearchResultType} from "qwc2/actions/search";
 import CoordinatesUtils from 'qwc2/utils/CoordinatesUtils';
 import LocaleUtils from 'qwc2/utils/LocaleUtils';
+import yaml from 'js-yaml';
 
 function coordinatesSearch(text, requestId, searchOptions, dispatch) {
     const displaycrs = searchOptions.displaycrs || "EPSG:4326";
@@ -225,80 +226,131 @@ function usterSearchResults(obj, requestId) {
 
 function usterResultGeometry(resultItem, callback) {
     axios.get("https://webgis.uster.ch/wsgi/getSearchGeom.wsgi?searchtable=" + encodeURIComponent(resultItem.searchtable) + "&displaytext=" + encodeURIComponent(resultItem.text))
-        .then(response => callback(resultItem, response.data, "EPSG:21781"));
+        .then(response => callback(resultItem, response.data, "EPSG:21781", true));
 }
 
 /** ************************************************************************ **/
 
-function nominatimSearchResults(obj, requestId) {
-    const results = [];
-    const groups = {};
-    let groupcounter = 0;
+class NominatimSearch {
+    static TRANSLATIONS = {};
 
-    (obj || []).map(entry => {
-        if (!(entry.class in groups)) {
-            groups[entry.class] = {
-                id: "nominatimgroup" + (groupcounter++),
-                // capitalize class
-                title: LocaleUtils.trWithFallback("search.nominatim." + entry.class, entry.class.charAt(0).toUpperCase() + entry.class.slice(1)),
-                items: []
-            };
-            results.push(groups[entry.class]);
-        }
-
-        // shorten display_name
-        let text = entry.display_name.split(', ').slice(0, 3).join(', ');
-        // map label
-        const label = text;
-
-        // collect address fields
-        const address = [];
-        if (entry.address.town) {
-            address.push(entry.address.town);
-        }
-        if (entry.address.city) {
-            address.push(entry.address.city);
-        }
-        if (entry.address.state) {
-            address.push(entry.address.state);
-        }
-        if (entry.address.country) {
-            address.push(entry.address.country);
-        }
-        if (address.length > 0) {
-            text += "<br/><i>" + address.join(', ') + "</i>";
-        }
-
-        // reorder coords from [miny, maxy, minx, maxx] to [minx, miny, maxx, maxy]
-        const b = entry.boundingbox.map(coord => parseFloat(coord));
-        const bbox = [b[2], b[0], b[3], b[1]];
-
-        groups[entry.class].items.push({
-            id: entry.place_id,
-            // shorten display_name
-            text: text,
-            label: label,
-            bbox: bbox,
-            geometry: entry.geojson,
-            x: 0.5 * (bbox[0] + bbox[2]),
-            y: 0.5 * (bbox[1] + bbox[3]),
-            crs: "EPSG:4326",
-            provider: "nominatim"
+    static search(text, requestId, searchOptions, dispatch, cfg = {}) {
+        axios.get("//nominatim.openstreetmap.org/search", {params: {
+            'q': text,
+            'addressdetails': 1,
+            'polygon_geojson': 1,
+            'limit': 20,
+            'format': 'json',
+            'accept-language': LocaleUtils.lang(),
+            ...(cfg.params || {})
+        }}).then(response => {
+            const locale = LocaleUtils.lang();
+            if (NominatimSearch.TRANSLATIONS[locale] === undefined) {
+                NominatimSearch.TRANSLATIONS[locale] = {promise: NominatimSearch.loadLocale(locale)};
+                NominatimSearch.TRANSLATIONS[locale].promise.then(() => {
+                    dispatch(NominatimSearch.parseResults(response.data, requestId, NominatimSearch.TRANSLATIONS[locale].strings));
+                });
+            } else if (NominatimSearch.TRANSLATIONS[locale].promise) {
+                NominatimSearch.TRANSLATIONS[locale].promise.then(() => {
+                    dispatch(NominatimSearch.parseResults(response.data, requestId, NominatimSearch.TRANSLATIONS[locale].strings));
+                });
+            } else if (NominatimSearch.TRANSLATIONS[locale].strings) {
+                dispatch(NominatimSearch.parseResults(response.data, requestId, NominatimSearch.TRANSLATIONS[locale].strings));
+            }
         });
-    });
-    return addSearchResults({data: results, provider: "nominatim", reqId: requestId}, true);
-}
+    }
+    static parseResults(obj, requestId, translations) {
+        const results = [];
+        const groups = {};
+        let groupcounter = 0;
 
-function nominatimSearch(text, requestId, searchOptions, dispatch, cfg = {}) {
-    axios.get("//nominatim.openstreetmap.org/search", {params: {
-        'q': text,
-        'addressdetails': 1,
-        'polygon_geojson': 1,
-        'limit': 20,
-        'format': 'json',
-        'accept-language': LocaleUtils.lang(),
-        ...(cfg.params || {})
-    }}).then(response => dispatch(nominatimSearchResults(response.data, requestId)));
+        (obj || []).map(entry => {
+            if (!(entry.class in groups)) {
+                let title = entry.type;
+                try {
+                    title = translations[entry.class][entry.type];
+                } catch (e) {
+                    /* pass */
+                }
+                groups[entry.class] = {
+                    id: "nominatimgroup" + (groupcounter++),
+                    // capitalize class
+                    title: title,
+                    items: []
+                };
+                results.push(groups[entry.class]);
+            }
+
+            // shorten display_name
+            let text = entry.display_name.split(', ').slice(0, 3).join(', ');
+            // map label
+            const label = text;
+
+            // collect address fields
+            const address = [];
+            if (entry.address.town) {
+                address.push(entry.address.town);
+            }
+            if (entry.address.city) {
+                address.push(entry.address.city);
+            }
+            if (entry.address.state) {
+                address.push(entry.address.state);
+            }
+            if (entry.address.country) {
+                address.push(entry.address.country);
+            }
+            if (address.length > 0) {
+                text += "<br/><i>" + address.join(', ') + "</i>";
+            }
+
+            // reorder coords from [miny, maxy, minx, maxx] to [minx, miny, maxx, maxy]
+            const b = entry.boundingbox.map(coord => parseFloat(coord));
+            const bbox = [b[2], b[0], b[3], b[1]];
+
+            groups[entry.class].items.push({
+                id: entry.place_id,
+                // shorten display_name
+                text: text,
+                label: label,
+                bbox: bbox,
+                geometry: entry.geojson,
+                x: 0.5 * (bbox[0] + bbox[2]),
+                y: 0.5 * (bbox[1] + bbox[3]),
+                crs: "EPSG:4326",
+                provider: "nominatim"
+            });
+        });
+        return addSearchResults({data: results, provider: "nominatim", reqId: requestId}, true);
+    }
+    static loadLocale(locale) {
+        return new Promise((resolve) => {
+            axios.get('https://raw.githubusercontent.com/openstreetmap/openstreetmap-website/master/config/locales/' + locale + '.yml')
+                .then(resp2 => {
+                    NominatimSearch.TRANSLATIONS[locale] = {strings: NominatimSearch.parseLocale(resp2.data, locale)};
+                    resolve(true);
+                }).catch(() => {
+                    NominatimSearch.TRANSLATIONS[locale] = {
+                        promise: axios.get('https://raw.githubusercontent.com/openstreetmap/openstreetmap-website/master/config/locales/' + locale.slice(0, 2) + '.yml')
+                            .then(resp3 => {
+                                NominatimSearch.TRANSLATIONS[locale] = {strings: NominatimSearch.parseLocale(resp3.data, locale.slice(0, 2))};
+                                resolve(true);
+                            }).catch(() => {
+                                NominatimSearch.TRANSLATIONS[locale] = {strings: {}};
+                                resolve(true);
+                            })
+                    };
+                });
+        });
+    }
+    static parseLocale(data, locale) {
+        const doc = yaml.load(data);
+        try {
+            return doc[locale].geocoder.search_osm_nominatim.prefix;
+        } catch (e) {
+            return {};
+        }
+    }
 }
 
 /** ************************************************************************ **/
@@ -369,7 +421,7 @@ export const SearchProviders = {
     },
     nominatim: {
         label: "OpenStreetMap",
-        onSearch: nominatimSearch
+        onSearch: NominatimSearch.search
     },
     layers: {
         label: "Layers",

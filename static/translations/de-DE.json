@@ -31,18 +31,6 @@
     },
     "search": {
       "coordinates": "Koordinaten",
-      "nominatim": {
-        "amenity": "Annehmlichkeit",
-        "boundary": "Grenze",
-        "building": "Gebäude",
-        "landuse": "Landnutzung",
-        "leisure": "Freizeit",
-        "place": "Ort",
-        "highway": "Autobahn",
-        "natural": "Natur",
-        "railway": "Eisenbahn",
-        "tourism": "Tourismus"
-      },
       "all": "Alle",
       "enablelayer": "Ebene einschalten",
       "existinglayer": "Die Ebene existiert bereits in der Karte",

@@ -11,19 +11,19 @@
     ],
     "devDependencies": {
         "babel-loader": "8.2.3",
+        "clean-webpack-plugin": "4.0.0",
+        "copy-webpack-plugin": "9.0.0",
         "css-loader": "6.4.0",
         "eslint": "7.32.0",
         "eslint-plugin-react": "7.26.1",
+        "html-webpack-plugin": "5.4.0",
         "source-map-loader": "3.0.0",
         "string-replace-loader": "3.0.3",
         "style-loader": "3.3.1",
         "webpack": "5.59.1",
         "webpack-bundle-size-analyzer": "3.1.0",
         "webpack-cli": "4.9.1",
-        "webpack-dev-server": "4.3.1",
-        "html-webpack-plugin": "5.4.0",
-        "clean-webpack-plugin": "4.0.0",
-        "copy-webpack-plugin": "9.0.0"
+        "webpack-dev-server": "4.3.1"
     },
     "scripts": {
         "prod": "npm run tsupdate && npm run themesconfig && npm run iconfont && webpack --mode production --progress",
@@ -34,5 +34,8 @@
         "build": "npm run prod",
         "analyze": "webpack --mode production --json | webpack-bundle-size-analyzer",
         "release": "node -e \"process.exit(require('os').platform() === 'win32' ? 0 : 1)\" && qwc2\\scripts\\package-commands.bat release || ./qwc2/scripts/package-commands.sh release"
+    },
+    "dependencies": {
+        "js-yaml": "^4.1.0"
     }
 }

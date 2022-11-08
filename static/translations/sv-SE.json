@@ -31,18 +31,6 @@
     },
     "search": {
       "coordinates": "Koordinater",
-      "nominatim": {
-        "amenity": "",
-        "boundary": "",
-        "building": "",
-        "landuse": "",
-        "leisure": "",
-        "place": "",
-        "highway": "",
-        "natural": "",
-        "railway": "",
-        "tourism": ""
-      },
       "all": "",
       "enablelayer": "",
       "existinglayer": "",
