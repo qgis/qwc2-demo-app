@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Téma",
         "Tools": "Nástroje Mapy",
         "Bookmark": "",
-        "TimeManager": ""
+        "TimeManager": "",
+        "Settings": ""
       },
       "filter": "",
       "menulabel": "Mapa & Nástroje"
@@ -43,6 +44,11 @@
       "searchinprogress": "",
       "searchreset": "",
       "themes": "Témata"
+    },
+    "colorschemes": {
+      "default": "",
+      "dark": "",
+      "highcontrast": ""
     },
     "attribtable": {
       "addfeature": "",
@@ -74,6 +80,7 @@
       "description": "",
       "lastUpdate": "",
       "manage": "",
+      "nobookmarks": "",
       "notloggedin": "",
       "open": "",
       "openTab": "",
@@ -241,9 +248,9 @@
       "nolayouts": "Vybrané téma nepodporuje tisk",
       "notheme": "Není vybráno téma",
       "output": "",
-      "resolution": "Rozlišení:",
-      "rotation": "Rotace:",
-      "scale": "Měřítko:",
+      "resolution": "Rozlišení",
+      "rotation": "Rotace",
+      "scale": "Měřítko",
       "submit": "Tisk",
       "wait": ""
     },
@@ -304,6 +311,12 @@
       "onlineResource": "",
       "title": ""
     },
+    "settings": {
+      "colorscheme": "",
+      "confirmlang": "",
+      "language": "",
+      "systemlang": ""
+    },
     "share": {
       "QRCodeLinkTitle": "QR kód",
       "directLinkTitle": "Přes přímé spojení",
@@ -336,6 +349,7 @@
     },
     "timemanager": {
       "animationinterval": "",
+      "home": "",
       "loop": "",
       "markers": "",
       "notemporaldata": "",
@@ -346,6 +360,10 @@
       "stepfwd": "",
       "stepsize": "",
       "stop": "",
+      "timeline": "",
+      "timeline_continuous": "",
+      "timeline_fixed": "",
+      "timelinescale": "",
       "title": "",
       "toggle": "",
       "unit": {
@@ -358,7 +376,9 @@
         "months": "",
         "seconds": "",
         "years": ""
-      }
+      },
+      "zoomin": "",
+      "zoomout": ""
     },
     "tooltip": {
       "background": "Přepnout podkladovou mapu",

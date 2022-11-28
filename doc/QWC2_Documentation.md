@@ -75,7 +75,6 @@ The layout of the development tree is as follows:
 |`├─ qwc2/`                    | Git submodule containing the core qwc2 components                 |
 |`├─ index.html`               | Entry point                                                       |
 |`├─ package.json`             | NodeJS configuration file                                         |
-|`├─ styleConfig.json`         | Configuration of some application-wide styles                     |
 |`├─ themesConfig.json`        | Themes configuration                                              |
 |`└─ webpack.config.js`        | Webpack configuration                                             |
 
@@ -109,8 +108,8 @@ All settings are optional, with fallback to the default values as documented.
 
 | Setting                             | Description |
 |-------------------------------------|-------------|
-|`translationsPath`                   | Path from to the `translations` folder. Default value: `translations`.   |
-|`assetsPath`                         | Path from to the `assets` folder. Default value: `assets`.               |
+|`translationsPath`                   | Relative path to the `translations` folder. Default value: `translations`.   |
+|`assetsPath`                         | Relative path to the `assets` folder. Default value: `assets`.               |
 |`urlPositionFormat`                  | How to encode the current map extent in the URL, either `centerAndZoom` or `extent`. See [URL parameters](#url-parameters) for details. Default value: `extent`. |
 |`urlPositionCrs`                     | The CRS used to encode the current map extent coordinates in the URL. Default value: the map projection. |
 |`omitUrlParameterUpdates`            | Whether to omit updating the URL parameters. Default value: `false`.      |
@@ -120,7 +119,9 @@ All settings are optional, with fallback to the default values as documented.
 |`localeAwareNumbers`                 | Whether to use locale aware numbers throughout. Default value: `false`.             |
 |`wmsDpi`                             | The DPI to pass to the WMS requests. Default value: `96`.                           |
 |`wmsHidpi`                           | Whether to honour the device pixel ratio for WMS GetMap requests. Default value: `true`. |
+|`wmsMaxGetUrlLength`                    | URL length limit before switching to a POST request for GetMap and GetFeatureInfo. Default: 2048. |
 |`qgisServerVersion`                  | The QGIS Server major version in use, i.e. `3`.|
+|`defaultColorScheme`                 | The color scheme to use. See [Color schemes](#color-schemes) for details. |
 |`externalLayerFeatureInfoFormats`    | A dictionary of feature info formats for external layers, in the format `{"<url>": "<format>", ...}`. If the GetFeatureInfo URL of a layer contains the specified `<url>`, the corresponding format is used. |
 |`storeAllLayersInPermalink`          | Whether to store the full layertree in the permalink data, rather than only local (i.e. redlining) layers. If false, remote layers are re-queried from the respective services, if true, they are statically reloaded (meaning restored layers may be outdated compared to current service capabilities).
 
@@ -151,7 +152,7 @@ All settings are optional, with fallback to the default values as documented.
 - The layer tree supports re-ordering layers via drag-and-drop if `allowReorderingLayers = true` *and either* `preventSplittingGroupsWhenReordering = true` *or* `flattenLayerTreeGroups = true`.
 - If `preserveExtentOnThemeSwitch = true`, the current extent is preserved if it is within the new theme extent and if the current theme map projection is equal to the new theme projection. If `preserveExtentOnThemeSwitch = "force"`, the current extent is preserved regardless of whether it is within the new theme extent, but the current and new theme map projections must still match.
 
-*Plugin configuration*:
+*Plugin configuration*:<a name="config-json-plugin-conf"></a>
 The plugin configuration is entered separately for desktop and for mobile mode. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/static/config.json) for a list of available configuration options. Each plugin configuration block is of the format
 
     {
@@ -172,7 +173,7 @@ You can omit a plugin entry to disable it in desktop and/or mobile mode. To comp
 
 A particularly interesting aspect is the configuration of the entries in the application menu and toolbar, i.e. the entries in `menuItems` and `toolbarItems` in the `TopBar` configuration. The most common format for linking an entry to an existing plugin is
 
-    {"key": "<key>", "icon": "<icon>", "themeWhitelist": ["<themename>", ...], "mapClickAction": <"identify"|"unset"|null>, "mode": "<mode>", "requireAuth": <true|false>}
+    {"key": "<key>", "icon": "<icon>", "themeWhitelist": ["<themename>", ...], "mapClickAction": <"identify"|"unset"|null>, "mode": "<mode>", "requireAuth": <true|false>, "shortcut: "<shortcut>"}
 
 where
 
@@ -182,6 +183,7 @@ where
 * `mapClickAction`: Optional, takes precedence over the `mapClickAction` setting specified in the plugin configuration block, if any. See above.
 * `mode`: Optional, depending on the plugin, a mode can be configured to launch the plugin directly in a specific mode. For instance, the `Measure` plugin supports specifying the measurement mode (`Point`, `LineString`, `Polygon`).
 * `requireAuth`: Optional, the entry is only visible when user is logged-in when true (works with qwc-services).
+* `shortcut`: Optional, keyboard shortcut which triggers the entry
 
 Additionally, entries opening external URLs can be defined as follows:
 
@@ -462,7 +464,7 @@ Note: if you are behind a proxy server and your `themesConfig.json` refers to re
       ...
     }
 
-### Implementing search providers in `js/SearchProviders.js`
+## Implementing search providers in `js/SearchProviders.js`
 
 Search providers are typically application specific, and hence need to be implemented in the application specific `js/SearchProviders.js` file. The [sample `js/SearchProviders.js`](https://github.com/qgis/qwc2-demo-app/blob/master/js/SearchProviders.js) documents how to implement search providers and contains some examples.
 
@@ -472,7 +474,7 @@ An advanced feature is the possibility to define parametrized search providers. 
 
 Such entries are passed to the method `searchProviderFactory` in `js/SearchProviders.js`, which you can tweak to dynamically create a search provider definition based on the parameters specified in the entry. Refer to the [sample  `js/SearchProviders.js`](https://github.com/qgis/qwc2-demo-app/blob/master/js/SearchProviders.js) for an example.
 
-### <a name="editing"></a>Editing support
+## <a name="editing"></a>Editing support
 
 QWC2 offers comprehensive editing support through a variety of plugins:
 
@@ -523,7 +525,7 @@ If you don't use the [QWC config generator](https://github.com/qwc-services/qwc-
 
 See the [sample `editConfig.json`](https://github.com/qgis/qwc2-demo-app/blob/master/test2056_edit.json) for a full example.
 
-### <a name="snapping"></a>Snapping support
+## <a name="snapping"></a>Snapping support
 
 QWC2 ships a plugin for snapping support while drawing (redlining / measuring / editing). To enable it, make sure the `SnappingSupport` plugin is enabled in `appConfig.js` (see the sample [sample `js/appConfig.js`](https://github.com/qgis/qwc2-demo-app/blob/master/js/appConfig.js)). Then, for each theme for which you want snapping to be available, you can add a `snapping` block to your theme item in `themesConfig.json` as follows:
 
@@ -567,7 +569,7 @@ where:
 
 When snapping is available, a small toolbar appears on the bottom border of the map with the possibility to toggle snapping.
 
-### <a name="translations"></a>Managing translations
+## <a name="translations"></a>Managing translations
 
 The translations are managed on two levels:
 
@@ -595,13 +597,13 @@ The typical workflow for managing application translations is:
 
 If translations of the QWC2 components for a desired language are missing, please create resp. update the translations respective files in `qwc2/translations` and contribute them by submitting a pull request to the [upstream qwc2 repository](https://github.com/qgis/qwc2).
 
-### <a name="appearance-customization"></a>Customizing the QWC2 appearance
+## <a name="appearance-customization"></a>Customizing the QWC2 appearance
 
 The following options are available for customizing the appearance of the QWC2 application while preserving compatibility with the core QWC2 components:
 
 - Modifying the logo in `assets/img/`.
 - Modifying the application icons in `icons`.
-- Tweaking the colors in `styleConfig.js`.
+- Defining new color schemes, see [Color schemes](#color-schemes).
 - Adding style declarations to the master CSS stylesheet `assets/css/qwc2.css`. This however is potentially fragile and should only be done as a last resort.
 - Changing the browser page title in `index.html`, and potentially adding a favicon.
 - Modifying the legend print template in `assets/templates/legendprint.html`. The only requirement for this template is that is must contain a `<div id="legendcontainer"></div>` element.
@@ -610,26 +612,17 @@ The following options are available for customizing the appearance of the QWC2 a
 *Note*: The common application icons are located in `qwc2/icons`. They can be overridden by creating an icon with the same filename in the application specific `icons` folder.
 *Note*: The icons in the `icons` folder are compiled into an icon font. Currently, the icons need to be black content on transparent background, and all drawings (including texts) must be converted to paths for the icons to render correctly.
 
+## <a name="color-schemes"></a>Color schemes
+The QWC2 color scheme is fully customizeable via CSS. A default color-scheme is built-in (see [DefaultColorScheme.css](https://github.com/qgis/qwc2/blob/master/components/style/DefaultColorScheme.css)). To define a custom color scheme, copy the default color scheme, add an appropriate class name to the `:root` selector, and modify the colors as desided. There are two examples (`highcontrast` and `dark` in [DefaultColorScheme.css](https://github.com/qgis/qwc2-demo-app/blob/master/static/assets/css/colorschemes.css)).
 
-## Server-side configuration
-### <a name="cross-origin-requests"></a>Cross-Origin requests
-All modern browsers will block a page from requesting resources from another origin (except for images, stylesheets, scripts, iframes and videos), unless the response from the remote origin contains a matching `Access-Control-Allow-Origin` header. An origin is defined as `<scheme>://<hostname>:<port>`.
+You can then modify the color scheme which is applied by default by setting `defaultColorScheme` to an appropriate class name (i.e. `highcontrast` or `dark`).
 
-For each service QWC2 interacts with, in particular the QGIS Server, one has to ensure that this interaction isn't blocked by the browser. The following options exist:
+To change the color scheme at runtime in QWC2, make sure the Settings plugin is enabled, and in the Settings plugin configuration block in `config.json` list the color schemes below `colorSchemes`. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/static/config.json).
 
-- Ensure that the service runs on the same origin as the web server which serves the QWC2 application.
-- Ensure that the service sends a `Access-Control-Allow-Origin` header with matching origin with each response.
-- For development purposes, use a browser plugin which adds the CORS headers, i.e. [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/).
+*Note*: When changing the color scheme via Settings dialog in QWC2, the picked color scheme is stored in the browser local storage, and this setting will override the `defaultColorScheme` setting.
 
-### Filenames of print and raster and DXF export
-The QGIS server response for the print, raster and DXF export requests does by default not contain any `Content-Disposition` header, meaning that browsers will attempt to guess a filename, which typically is the last part of the URL, without any extension.
 
-To ensure browsers use a proper filename, configure the web server running QGIS Server to add a suitable `Content-Disposition` header to the response. In the case of Apache, the rule for the print output might look as follows:
 
-    SetEnvIf Request_URI "^/wms.*/(.+)$" project_name=$1
-    Header always setifempty Content-Disposition "attachment; filename=%{project_name}e.pdf" "expr=%{CONTENT_TYPE} = 'application/pdf'"
-
-This rule will use the last part of the URL as basename and add the `.pdf` extension, and will also ensure that the content-type is set to `application/pdf`. Note that this example uses the `setenvif` and `headers` apache modules.
 
 ## <a name="url-parameters"></a>URL parameters
 The following parameters can appear in the URL of the QWC2 application:
@@ -694,9 +687,8 @@ The import layer functionality in the layertree also supports loading a layer ca
 
 Note that the server serving the catalog documents needs to ensure that it sets CORS headers appropriately, if they are served from a different origin than QWC2.
 
-## Links in identify results
-
-Links in attributes of GetFeatureInfo reponses are parsed and displayed as clickable links in the identify results window. You can also have links open in an inline dialog using the following format:
+## Links in identify results and maptips
+Links in attributes of GetFeatureInfo reponses are parsed and displayed as clickable links in the identify results window and maptip popup. You can also have links open in an inline dialog using the following format:
 
     <a href="<url>" target=":iframedialog:<name>:<option1=value1>:<option2=value2>:...">Text</a>
 
@@ -709,6 +701,35 @@ Where:
   - `print=<boolean>`: Whether to display a print icon in the window title bar
   - `dockable=<boolean>`: Whether the window is dockable
   - `docked=<boolean>`: Whether the window is initially docked
+
+
+## Accessibility
+QWC2 provides some accessibility options:
+
+- Toolbar item shortcuts: by setting `toolbarItemsShortcutPrefix` in the `TopBar` configuration block in `config.json`, you can set the keyboard shortcut modifier prefix for triggering the topbar toolbar items via `<prefix>-{1,2,3,...}`. I.e. if `toolbarItemsShortcutPrefix=alt+shift`, then `alt+shift+1` will trigger the first topbar toolbar item.
+- Menu item shortcuts: by setting `shortcut` in the menu item configuration in the `TopBar` `menuItems` configuration block in `config.json`, you can set the keyboard shortcut which triggers the respective menu entry, see [Plugin configuration](#config-json-plugin-conf) for details.
+- Color schemes: `qwc2-demo-app` provides an example of a `highcontrast` color scheme, see [Color schemes](#color-schemes) for details.
+
+
+## Server-side configuration
+### <a name="cross-origin-requests"></a>Cross-Origin requests
+All modern browsers will block a page from requesting resources from another origin (except for images, stylesheets, scripts, iframes and videos), unless the response from the remote origin contains a matching `Access-Control-Allow-Origin` header. An origin is defined as `<scheme>://<hostname>:<port>`.
+
+For each service QWC2 interacts with, in particular the QGIS Server, one has to ensure that this interaction isn't blocked by the browser. The following options exist:
+
+- Ensure that the service runs on the same origin as the web server which serves the QWC2 application.
+- Ensure that the service sends a `Access-Control-Allow-Origin` header with matching origin with each response.
+- For development purposes, use a browser plugin which adds the CORS headers, i.e. [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/).
+
+### Filenames of print and raster and DXF export
+The QGIS server response for the print, raster and DXF export requests does by default not contain any `Content-Disposition` header, meaning that browsers will attempt to guess a filename, which typically is the last part of the URL, without any extension.
+
+To ensure browsers use a proper filename, configure the web server running QGIS Server to add a suitable `Content-Disposition` header to the response. In the case of Apache, the rule for the print output might look as follows:
+
+    SetEnvIf Request_URI "^/wms.*/(.+)$" project_name=$1
+    Header always setifempty Content-Disposition "attachment; filename=%{project_name}e.pdf" "expr=%{CONTENT_TYPE} = 'application/pdf'"
+
+This rule will use the last part of the URL as basename and add the `.pdf` extension, and will also ensure that the content-type is set to `application/pdf`. Note that this example uses the `setenvif` and `headers` apache modules.
 
 
 ## Keeping the QWC2 application up to date

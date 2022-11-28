@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Tema",
         "Tools": "Ferramentas de mapa",
         "Bookmark": "",
-        "TimeManager": ""
+        "TimeManager": "",
+        "Settings": ""
       },
       "filter": "",
       "menulabel": "Mapas & Ferramentas"
@@ -43,6 +44,11 @@
       "searchinprogress": "",
       "searchreset": "",
       "themes": "Temas"
+    },
+    "colorschemes": {
+      "default": "",
+      "dark": "",
+      "highcontrast": ""
     },
     "attribtable": {
       "addfeature": "",
@@ -74,6 +80,7 @@
       "description": "",
       "lastUpdate": "",
       "manage": "",
+      "nobookmarks": "",
       "notloggedin": "",
       "open": "",
       "openTab": "",
@@ -233,17 +240,17 @@
       "perpage": ""
     },
     "print": {
-      "grid": "Rede:",
-      "layout": "Desenho:",
+      "grid": "Rede",
+      "layout": "Desenho",
       "legend": "",
       "maximize": "Maximizar",
       "minimize": "Minimizar",
       "nolayouts": "O tema selecionado não suporta a impressão",
       "notheme": "Sem tema selecionado",
       "output": "Impressão de saída",
-      "resolution": "Resolução:",
-      "rotation": "Rotação:",
-      "scale": "Escala:",
+      "resolution": "Resolução",
+      "rotation": "Rotação",
+      "scale": "Escala",
       "submit": "Imprimir",
       "wait": "Por favor, espera..."
     },
@@ -304,6 +311,12 @@
       "onlineResource": "Recurso online",
       "title": "Informação temática"
     },
+    "settings": {
+      "colorscheme": "",
+      "confirmlang": "",
+      "language": "",
+      "systemlang": ""
+    },
     "share": {
       "QRCodeLinkTitle": "Código QR",
       "directLinkTitle": "Via uma ligação direta",
@@ -336,6 +349,7 @@
     },
     "timemanager": {
       "animationinterval": "",
+      "home": "",
       "loop": "",
       "markers": "",
       "notemporaldata": "",
@@ -346,6 +360,10 @@
       "stepfwd": "",
       "stepsize": "",
       "stop": "",
+      "timeline": "",
+      "timeline_continuous": "",
+      "timeline_fixed": "",
+      "timelinescale": "",
       "title": "",
       "toggle": "",
       "unit": {
@@ -358,7 +376,9 @@
         "months": "",
         "seconds": "",
         "years": ""
-      }
+      },
+      "zoomin": "",
+      "zoomout": ""
     },
     "tooltip": {
       "background": "Mudar de fundo",

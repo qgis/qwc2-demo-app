@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Tema",
         "Tools": "Herramientas de Mapa",
         "Bookmark": "Marcadores",
-        "TimeManager": "Gestor de Tiempo"
+        "TimeManager": "Gestor de Tiempo",
+        "Settings": ""
       },
       "filter": "Menú de filtros...",
       "menulabel": "Mapa & Herramientas"
@@ -43,6 +44,11 @@
       "searchinprogress": "Buscando...",
       "searchreset": "Reiniciar búsqueda",
       "themes": "Temas"
+    },
+    "colorschemes": {
+      "default": "",
+      "dark": "",
+      "highcontrast": ""
     },
     "attribtable": {
       "addfeature": "Añadir elemento",
@@ -74,6 +80,7 @@
       "description": "Descripción",
       "lastUpdate": "Último guardado",
       "manage": "Administrar",
+      "nobookmarks": "",
       "notloggedin": "Se necesita tener sesión iniciada para guardar marcadores",
       "open": "Abrir en la pestaña actual",
       "openTab": "Abrir en pestaña",
@@ -241,8 +248,8 @@
       "nolayouts": "El tema seleccionado no admite su impresión",
       "notheme": "No hay tema seleccionado",
       "output": "Salida de impresión",
-      "resolution": "Resolución:",
-      "rotation": "Rotación:",
+      "resolution": "Resolución",
+      "rotation": "Rotación",
       "scale": "Escala:",
       "submit": "Imprimir",
       "wait": "Por favor espere..."
@@ -304,6 +311,12 @@
       "onlineResource": "Recurso en línea",
       "title": "Información del tema"
     },
+    "settings": {
+      "colorscheme": "",
+      "confirmlang": "",
+      "language": "",
+      "systemlang": ""
+    },
     "share": {
       "QRCodeLinkTitle": "Código QR",
       "directLinkTitle": "Vía un vínculo directo",
@@ -336,6 +349,7 @@
     },
     "timemanager": {
       "animationinterval": "Intervalo de la animación",
+      "home": "",
       "loop": "",
       "markers": "Marcadores",
       "notemporaldata": "No hay capas temporales visibles en el mapa",
@@ -346,6 +360,10 @@
       "stepfwd": "Saltar hacia delante",
       "stepsize": "Tamaño del salto",
       "stop": "Parar",
+      "timeline": "",
+      "timeline_continuous": "",
+      "timeline_fixed": "",
+      "timelinescale": "",
       "title": "Gestor de tiempo",
       "toggle": "Navegación temporal",
       "unit": {
@@ -358,7 +376,9 @@
         "months": "meses",
         "seconds": "segundos",
         "years": "años"
-      }
+      },
+      "zoomin": "",
+      "zoomout": ""
     },
     "tooltip": {
       "background": "Cambiar fondo",

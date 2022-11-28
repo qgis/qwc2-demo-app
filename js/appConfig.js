@@ -55,6 +55,7 @@ import AttributeTablePlugin from 'qwc2/plugins/AttributeTable';
 import TimeManagerPlugin from 'qwc2/plugins/TimeManager';
 import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
 import APIPlugin from 'qwc2/plugins/API';
+import SettingsPlugin from 'qwc2/plugins/Settings';
 import {customAttributeCalculator} from './CustomAttributeCalculator';
 
 import defaultLocaleData from '../static/translations/en-US.json';
@@ -118,7 +119,8 @@ export default {
             AttributeTablePlugin: AttributeTablePlugin(/* CustomEditingInterface */),
             APIPlugin: APIPlugin,
             TimeManagerPlugin: TimeManagerPlugin,
-            FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */)
+            FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */),
+            SettingsPlugin: SettingsPlugin
         },
         cfg: {
             IdentifyPlugin: {

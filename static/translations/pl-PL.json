@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Motyw",
         "Tools": "Narzędzia Mapy",
         "Bookmark": "",
-        "TimeManager": ""
+        "TimeManager": "",
+        "Settings": ""
       },
       "filter": "",
       "menulabel": "Zawartość mapy i narzędzia"
@@ -43,6 +44,11 @@
       "searchinprogress": "",
       "searchreset": "",
       "themes": "Motywy"
+    },
+    "colorschemes": {
+      "default": "",
+      "dark": "",
+      "highcontrast": ""
     },
     "attribtable": {
       "addfeature": "",
@@ -74,6 +80,7 @@
       "description": "",
       "lastUpdate": "",
       "manage": "",
+      "nobookmarks": "",
       "notloggedin": "",
       "open": "",
       "openTab": "",
@@ -233,17 +240,17 @@
       "perpage": ""
     },
     "print": {
-      "grid": "Siatka:",
-      "layout": "Layout:",
+      "grid": "Siatka",
+      "layout": "Layout",
       "legend": "",
       "maximize": "Maksymalizuj",
       "minimize": "Minimalizuj",
       "nolayouts": "Wybrany motyw nie umożliwia drukowania",
       "notheme": "Brak wybranego motywu",
       "output": "Drukuj output",
-      "resolution": "Rozdzielczość:",
-      "rotation": "Obrót:",
-      "scale": "Skala:",
+      "resolution": "Rozdzielczość",
+      "rotation": "Obrót",
+      "scale": "Skala",
       "submit": "Drukuj",
       "wait": "Proszę czekać..."
     },
@@ -304,6 +311,12 @@
       "onlineResource": "",
       "title": ""
     },
+    "settings": {
+      "colorscheme": "",
+      "confirmlang": "",
+      "language": "",
+      "systemlang": ""
+    },
     "share": {
       "QRCodeLinkTitle": "QR code",
       "directLinkTitle": "Poprzez link bezpośredni",
@@ -336,6 +349,7 @@
     },
     "timemanager": {
       "animationinterval": "",
+      "home": "",
       "loop": "",
       "markers": "",
       "notemporaldata": "",
@@ -346,6 +360,10 @@
       "stepfwd": "",
       "stepsize": "",
       "stop": "",
+      "timeline": "",
+      "timeline_continuous": "",
+      "timeline_fixed": "",
+      "timelinescale": "",
       "title": "",
       "toggle": "",
       "unit": {
@@ -358,7 +376,9 @@
         "months": "",
         "seconds": "",
         "years": ""
-      }
+      },
+      "zoomin": "",
+      "zoomout": ""
     },
     "tooltip": {
       "background": "Zmień podkład map",

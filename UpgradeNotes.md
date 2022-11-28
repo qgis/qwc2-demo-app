@@ -5,6 +5,16 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
+Update to qwc2 submodule revision [90c613a](https://github.com/qgis/qwc2/tree/90c613a) (28.11.2022)
+---------------------------------------------------------------------------------------------------
+
+**Reworked color scheme support**
+
+The `styleConfig.js` file is deprecated and won't be honoured anymore for the styling of core QWC2 components. Instead, base theme colors can be defined via CSS, refer to [documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md#color-schemes) for details.
+
+**Renamed config variable**
+The `maxGetUrlLength` variable in `config.json` has been renamed to `wmsMaxGetUrlLength`.
+
 Update to qwc2 submodule revision [e357152](https://github.com/qgis/qwc2/tree/e357152) (27.06.2022)
 ---------------------------------------------------------------------------------------------------
 

@@ -25,7 +25,9 @@
   "identifyTool": "Identify",
   "wmsDpi": 96,
   "wmsHidpi": false,
+  "wmsMaxGetUrlLength": 2048,
   "qgisServerVersion": 3,
+  "defaultColorScheme": "default",
   "username": "admin",
   "defaultFeatureStyle": {
     "strokeColor": [0, 0, 255, 1],
@@ -140,6 +142,39 @@
           "appMenuClearsTask": true,
           "appMenuFilterField": true,
           "appMenuVisibleOnStartup": false
+        }
+      },
+      {
+        "name": "Settings",
+        "cfg": {
+          "languages": [
+            {
+              "title": "English",
+              "value": "en-US"
+            },
+            {
+              "title": "Deutsch",
+              "value": "de-CH"
+            },
+            {
+              "title": "Italiano",
+              "value": "it-IT"
+            }
+          ],
+          "colorSchemes": [
+            {
+              "titleMsgId": "colorschemes.default",
+              "value": "default"
+            },
+            {
+              "titleMsgId": "colorschemes.highcontrast",
+              "value": "highcontrast"
+            },
+            {
+              "titleMsgId": "colorschemes.dark",
+              "value": "dark"
+            }
+          ]
         }
       },
       {
@@ -357,11 +392,11 @@
         "name": "TopBar",
         "cfg": {
           "menuItems": [
-            {"key": "ThemeSwitcher", "icon": "themes"},
-            {"key": "LayerTree", "icon": "layers"},
-            {"key": "LayerCatalog", "icon": "catalog"},
-            {"key": "Share", "icon": "share"},
-            {"key": "Bookmark", "icon": "bookmark"},
+            {"key": "ThemeSwitcher", "icon": "themes", "shortcut": "alt+shift+t"},
+            {"key": "LayerTree", "icon": "layers", "shortcut": "alt+shift+l"},
+            {"key": "LayerCatalog", "icon": "catalog", "shortcut": "alt+shift+c"},
+            {"key": "Share", "icon": "share", "shortcut": "alt+shift+s"},
+            {"key": "Bookmark", "icon": "bookmark", "shortcut": "alt+shift+b"},
             {"key": "Tools", "icon": "tools", "subitems": [
               {"key": "Identify", "icon": "identify_region", "mode": "Region"},
               {"key": "TimeManager", "icon": "clock"},
@@ -373,8 +408,9 @@
               {"key": "DxfExport", "icon": "dxfexport"},
               {"key": "RasterExport", "icon": "rasterexport"}
             ]},
-            {"key": "Print", "icon": "print"},
-            {"key": "Help", "icon": "info"},
+            {"key": "Print", "icon": "print", "shortcut": "alt+shift+p"},
+            {"key": "Help", "icon": "info", "shortcut": "alt+shift+h"},
+            {"key": "Settings", "icon": "cog"},
             {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$", "target": "iframe"}
           ],
           "toolbarItems": [
@@ -382,7 +418,8 @@
             {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
             {"key": "Print", "icon": "print"},
             {"key": "Identify", "icon": "identify_region", "mode": "Region"},
-            {"key": "FeatureForm", "icon": "featureform"}
+            {"key": "FeatureForm", "icon": "featureform"},
+            {"key": "TimeManager", "icon": "clock"}
           ],
           "searchOptions": {
             "minScaleDenom": 1000,
@@ -394,7 +431,42 @@
           "appMenuClearsTask": true,
           "appMenuFilterField": true,
           "appMenuVisibleOnStartup": false,
-          "logoUrl": "/"
+          "logoUrl": "/",
+          "appMenuShortcut": "alt+shift+m",
+          "toolbarItemsShortcutPrefix": "alt+shift"
+        }
+      },
+      {
+        "name": "Settings",
+        "cfg": {
+          "languages": [
+            {
+              "title": "English",
+              "value": "en-US"
+            },
+            {
+              "title": "Deutsch",
+              "value": "de-CH"
+            },
+            {
+              "title": "Italiano",
+              "value": "it-IT"
+            }
+          ],
+          "colorSchemes": [
+            {
+              "titleMsgId": "colorschemes.default",
+              "value": "default"
+            },
+            {
+              "titleMsgId": "colorschemes.highcontrast",
+              "value": "highcontrast"
+            },
+            {
+              "titleMsgId": "colorschemes.dark",
+              "value": "dark"
+            }
+          ]
         }
       },
       {

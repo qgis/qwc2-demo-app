@@ -24,7 +24,8 @@
         "ThemeSwitcher": "Themen",
         "Tools": "Werkzeuge",
         "Bookmark": "Lesezeichen",
-        "TimeManager": "Zeitleiste"
+        "TimeManager": "Zeitleiste",
+        "Settings": "Einstellungen"
       },
       "filter": "Menü filtern...",
       "menulabel": "Karte & Werkzeuge"
@@ -43,6 +44,11 @@
       "searchinprogress": "Suche läuft",
       "searchreset": "Suche zurücksetzen",
       "themes": "Themen"
+    },
+    "colorschemes": {
+      "default": "Standard",
+      "dark": "Dunkel",
+      "highcontrast": "Hochkontrast"
     },
     "attribtable": {
       "addfeature": "Objekt hinzufügen",
@@ -71,9 +77,10 @@
     "bookmark": {
       "add": "Neues Lesezeichen anlegen",
       "addfailed": "Lesezeichen konnte nicht angelegt werden",
-      "description": "Beschreibung",
+      "description": "Beschreibung eingeben...",
       "lastUpdate": "Zuletzt gespeichert",
       "manage": "Lesezeichen verwalten",
+      "nobookmarks": "Keine Lesezeichen",
       "notloggedin": "Sie müssen angemeldet sein, um Lesezeichen zu verwenden",
       "open": "In aktuellem Fenster öffnen",
       "openTab": "In neuem Fenster öffnen",
@@ -252,7 +259,7 @@
     },
     "rasterexport": {
       "format": "Format:",
-      "resolution": "Auflösung",
+      "resolution": "Auflösung:",
       "selectinfo": "Rechteck um die zu exportierende Region aufziehen"
     },
     "redlining": {
@@ -304,6 +311,12 @@
       "onlineResource": "Online Ressource",
       "title": "Informationen zum Thema"
     },
+    "settings": {
+      "colorscheme": "Farbschema",
+      "confirmlang": "Die Anwendung wird neugeladen, um die Sprache zu wechseln. Fortsetzen?",
+      "language": "Sprache",
+      "systemlang": "Systemsprache"
+    },
     "share": {
       "QRCodeLinkTitle": "QR Code (Smartphone)",
       "directLinkTitle": "Über einen direkten Link",
@@ -336,9 +349,10 @@
     },
     "timemanager": {
       "animationinterval": "Animationsintervall",
+      "home": "Zeitleiste zurücksetzten",
       "loop": "Schleife",
       "markers": "Marker",
-      "notemporaldata": "Keine sichtbaren Ebenen in der Karte sind mit Zeitinformationen versehen.",
+      "notemporaldata": "Keine sichtbare Ebenen in der Karte sind mit Zeitinformationen versehen.",
       "play": "Abspielen",
       "playrev": "Zurück abspielen",
       "rewind": "Zurücksetzten",
@@ -346,6 +360,10 @@
       "stepfwd": "Schritt vorwärts",
       "stepsize": "Schritt",
       "stop": "Stoppen",
+      "timeline": "Zeitstrahl",
+      "timeline_continuous": "Kontinuierlich",
+      "timeline_fixed": "Fix",
+      "timelinescale": "Zeitskala (nichtlinearität)",
       "title": "Zeitleiste",
       "toggle": "Zeitsteuerung aktivieren",
       "unit": {
@@ -358,7 +376,9 @@
         "months": "Monate",
         "seconds": "Sekunden",
         "years": "Jahre"
-      }
+      },
+      "zoomin": "Vergrössern",
+      "zoomout": "Verkleinern"
     },
     "tooltip": {
       "background": "Hintergrundkarte wechseln",

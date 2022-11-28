@@ -1,3 +1,5 @@
+/* WARNING This file is deprecated, see https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md#color-schemes for the new color scheme support */
+
 const styleConfig = {
     // Base foreground (text) color
     base_fg: "#595959",
