@@ -619,7 +619,7 @@ You can then modify the color scheme which is applied by default by setting `def
 
 To change the color scheme at runtime in QWC2, make sure the Settings plugin is enabled, and in the Settings plugin configuration block in `config.json` list the color schemes below `colorSchemes`. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/static/config.json).
 
-*Note*: When changing the color scheme via Settings dialog in QWC2, the picked color scheme is stored in the browser local storage, and this setting will override the `defaultColorScheme` setting.
+*Note*: When changing the color scheme via Settings dialog in QWC2, the picked color scheme is stored in the browser local storage, and this setting will override the `defaultColorScheme` setting. Specifying the `style` URL-parameter (see [URL parameters](#url-parameters)) will take precedence over all other settings.
 
 
 
@@ -637,6 +637,7 @@ The following parameters can appear in the URL of the QWC2 application:
 - `s`: The current scale
 - `crs`: The CRS of extent/center coordinates
 - `hc`: If `c` is specified and `hc` is `true` or `1`, a marker is set at `c` when starting the application. Note: requires the `StartupMarkerPlugin` plugin to be active.
+- `style`: The name of the QWC2 color scheme to use. See [Color schemes](#color-schemes).
 
 The `l` parameter lists all layers in the map (redlining and background layers) as a comma separated list of entries of the form
 
