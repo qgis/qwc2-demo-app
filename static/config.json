@@ -629,16 +629,17 @@
         "name": "TimeManager",
         "mapClickAction": "identify",
         "cfg": {
-            "blockColors": [
-                "#f7af7d", "#eacc6e", "#fef89a", "#c5e09b", "#a3d29c", "#7cc096", "#79c8c5", "#34afce"
-            ],
-            "defaultAnimationInterval": 1,
-            "defaultStepSize": 1,
-            "defaultStepUnit": "d",
+          "markerConfiguration": {
             "markersAvailable": true,
-            "stepUnits": ["s", "m", "h", "d", "M", "y", "10y", "100y"],
-            "drawMarkerPins": true,
-            "drawMarkerOffset": [0, 0]
+            "gradient": ["#f7af7d", "#eacc6e", "#fef89a", "#c5e09b", "#a3d29c", "#7cc096", "#79c8c5", "#34afce"],
+            "markerOffset": [0, 0],
+            "markerPins": true
+          },
+          "defaultAnimationInterval": 1,
+          "defaultStepSize": 1,
+          "defaultStepUnit": "d",
+          "defaultTimelineMode": "infinite",
+          "stepUnits": ["s", "m", "h", "d", "M", "y", "10y", "100y"]
         }
       }
     ]
