@@ -41,6 +41,8 @@ Some examples of QWC2 production deployments:
 - DXF export
 - Raster export
 - Printing
+- Time manager for temporal layers
+- Themeable with color schemes
 
 # License
 
