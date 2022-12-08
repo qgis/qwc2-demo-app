@@ -639,7 +639,8 @@
           "defaultStepSize": 1,
           "defaultStepUnit": "d",
           "defaultTimelineMode": "infinite",
-          "stepUnits": ["s", "m", "h", "d", "M", "y", "10y", "100y"]
+          "stepUnits": ["s", "m", "h", "d", "M", "y", "10y", "100y"],
+          "featureTimelineAvailable": true
         }
       }
     ]
