@@ -613,13 +613,13 @@ The following options are available for customizing the appearance of the QWC2 a
 *Note*: The icons in the `icons` folder are compiled into an icon font. Currently, the icons need to be black content on transparent background, and all drawings (including texts) must be converted to paths for the icons to render correctly.
 
 ## <a name="color-schemes"></a>Color schemes
-The QWC2 color scheme is fully customizeable via CSS. A default color-scheme is built-in (see [DefaultColorScheme.css](https://github.com/qgis/qwc2/blob/master/components/style/DefaultColorScheme.css)). To define a custom color scheme, copy the default color scheme, add an appropriate class name to the `:root` selector, and modify the colors as desided. There are two examples (`highcontrast` and `dark` in [DefaultColorScheme.css](https://github.com/qgis/qwc2-demo-app/blob/master/static/assets/css/colorschemes.css)).
+The QWC2 color scheme is fully customizeable via CSS. A default color-scheme is built-in (see [DefaultColorScheme.css](https://github.com/qgis/qwc2/blob/master/components/style/DefaultColorScheme.css)). To define a custom color scheme, copy the default color scheme, add an appropriate class name to the `:root` selector, and modify the colors as desided. There are two examples (`highcontrast` and `dark`) in [DefaultColorScheme.css](https://github.com/qgis/qwc2-demo-app/blob/master/static/assets/css/colorschemes.css).
 
-You can then modify the color scheme which is applied by default by setting `defaultColorScheme` to an appropriate class name (i.e. `highcontrast` or `dark`).
+You can then modify the color scheme which is applied by default by setting `defaultColorScheme` in `config.json` to an appropriate class name (i.e. `highcontrast` or `dark`).
 
 To change the color scheme at runtime in QWC2, make sure the Settings plugin is enabled, and in the Settings plugin configuration block in `config.json` list the color schemes below `colorSchemes`. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/static/config.json).
 
-*Note*: When changing the color scheme via Settings dialog in QWC2, the picked color scheme is stored in the browser local storage, and this setting will override the `defaultColorScheme` setting. Specifying the `style` URL-parameter (see [URL parameters](#url-parameters)) will take precedence over all other settings.
+*Note*: When changing the color scheme via Settings dialog in QWC2, the picked color scheme is stored in the browser local storage, and this setting will override the `defaultColorScheme` setting from . Specifying the `style` URL-parameter (see [URL parameters](#url-parameters)) will take precedence over all other settings.
 
 
 
