@@ -640,7 +640,7 @@
           "defaultStepUnit": "d",
           "defaultTimelineMode": "infinite",
           "stepUnits": ["s", "m", "h", "d", "M", "y", "10y", "100y"],
-          "featureTimelineAvailable": true
+          "defaultTimelineDisplay": "features"
         }
       }
     ]
