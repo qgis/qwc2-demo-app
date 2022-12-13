@@ -635,6 +635,7 @@
             "markerOffset": [0, 0],
             "markerPins": true
           },
+          "dateFormat": "DD.MM.YYYY[\n]HH:mm:ss",
           "defaultAnimationInterval": 1,
           "defaultStepSize": 1,
           "defaultStepUnit": "d",
