@@ -321,7 +321,9 @@
         "cfg": {
           "mapOptions": {
             "zoomDuration": 250,
-            "enableRotation": true
+            "enableRotation": true,
+            "panStepSize": 0.25,
+            "panPageSize": 0.1
           },
           "toolsOptions": {
             "OverviewSupport": {
