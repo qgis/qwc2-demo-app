@@ -583,7 +583,10 @@
         "name": "Redlining"
       },
       {
-        "name": "Editing"
+        "name": "Editing",
+        "cfg": {
+          "allowCloneGeometry": true
+        }
       },
       {
           "name": "FeatureForm"
