@@ -641,6 +641,7 @@
             "markerOffset": [0, 0],
             "markerPins": true
           },
+          "cursorFormat": "datetime",
           "dateFormat": "DD.MM.YYYY[\n]HH:mm:ss",
           "defaultAnimationInterval": 1,
           "defaultStepSize": 1,
