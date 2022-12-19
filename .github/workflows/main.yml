@@ -46,8 +46,8 @@ jobs:
             git tag -m $VERSION $VERSION
             git push --tags
           fi
-          echo "##[set-output name=version;]$VERSION"
-          echo "##[set-output name=prev_release;]${PREV_RELEASE/null/}"
+          echo "version=$VERSION" >>$GITHUB_OUTPUT
+          echo "prev_release=${PREV_RELEASE/null/}" >>$GITHUB_OUTPUT
         env:
           # This token is provided by Actions, you do not need to create your own token.
           # The token is only valid for one hour.
