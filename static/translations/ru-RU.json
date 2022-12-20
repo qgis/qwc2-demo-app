@@ -176,7 +176,9 @@
     },
     "infotool": {
       "clickhelpPoint": "",
-      "clickhelpPolygon": "Для получения информации обведите регион многоугольником..."
+      "clickhelpPolygon": "Для получения информации обведите регион многоугольником...",
+      "clickhelpRadius": "",
+      "radius": ""
     },
     "layercatalog": {
       "windowtitle": ""

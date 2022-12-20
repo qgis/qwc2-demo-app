@@ -176,7 +176,9 @@
     },
     "infotool": {
       "clickhelpPoint": "",
-      "clickhelpPolygon": "Narysuj poligon wokół obiektów, aby zidentyfikować..."
+      "clickhelpPolygon": "Narysuj poligon wokół obiektów, aby zidentyfikować...",
+      "clickhelpRadius": "",
+      "radius": ""
     },
     "layercatalog": {
       "windowtitle": ""

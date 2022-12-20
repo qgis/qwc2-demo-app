@@ -176,7 +176,9 @@
     },
     "infotool": {
       "clickhelpPoint": "",
-      "clickhelpPolygon": "Nakreslete polygon pro identifikaci..."
+      "clickhelpPolygon": "Nakreslete polygon pro identifikaci...",
+      "clickhelpRadius": "",
+      "radius": ""
     },
     "layercatalog": {
       "windowtitle": ""
