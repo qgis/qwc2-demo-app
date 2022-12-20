@@ -176,7 +176,9 @@
     },
     "infotool": {
       "clickhelpPoint": "Seleziona un luogo da identificare sulla mappa...",
-      "clickhelpPolygon": "Disegna un poligono attorno all'area da identificare"
+      "clickhelpPolygon": "Disegna un poligono attorno all'area da identificare",
+      "clickhelpRadius": "",
+      "radius": ""
     },
     "layercatalog": {
       "windowtitle": "Catalogo livelli"

@@ -176,7 +176,9 @@
     },
     "infotool": {
       "clickhelpPoint": "",
-      "clickhelpPolygon": "Rita en polygon runt objektn som ska identifieras"
+      "clickhelpPolygon": "Rita en polygon runt objektn som ska identifieras",
+      "clickhelpRadius": "",
+      "radius": ""
     },
     "layercatalog": {
       "windowtitle": ""
