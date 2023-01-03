@@ -149,6 +149,7 @@
       "loading": "Beräknar höjdprofil..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Exportera",
       "exportformat": "",
       "featureReport": "Objektrapport",

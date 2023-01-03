@@ -149,6 +149,7 @@
       "loading": "Obliczanie profilu wysokości..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Eksport",
       "exportformat": "",
       "featureReport": "Feature report",

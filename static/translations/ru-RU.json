@@ -149,6 +149,7 @@
       "loading": "Расчет высоты профиля..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Экспорт",
       "exportformat": "",
       "featureReport": "Отчёт об объекте",

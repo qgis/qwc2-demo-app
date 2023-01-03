@@ -149,6 +149,7 @@
       "loading": "Calcularea profilului înălțimii..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Export",
       "exportformat": "Formatul de export",
       "featureReport": "Raport entitate",
