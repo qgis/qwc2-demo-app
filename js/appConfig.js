@@ -56,7 +56,7 @@ import TimeManagerPlugin from 'qwc2/plugins/TimeManager';
 import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
 import APIPlugin from 'qwc2/plugins/API';
 import SettingsPlugin from 'qwc2/plugins/Settings';
-import {customAttributeCalculator} from './CustomAttributeCalculator';
+import {customAttributeCalculator, customExporters} from './IdentifyExtensions';
 
 import defaultLocaleData from '../static/translations/en-US.json';
 
@@ -124,7 +124,8 @@ export default {
         },
         cfg: {
             IdentifyPlugin: {
-                attributeCalculator: customAttributeCalculator
+                attributeCalculator: customAttributeCalculator,
+                customExporters: customExporters
             }
         }
     },

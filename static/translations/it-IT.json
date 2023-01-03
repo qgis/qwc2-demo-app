@@ -149,6 +149,7 @@
       "loading": "Calcolo del profilo di altezza..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Esporta",
       "exportformat": "Formato d'esportazione",
       "featureReport": "Oggetto formulario",

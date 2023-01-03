@@ -19,3 +19,20 @@ export function customAttributeCalculator(layer, feature) {
     //   )];
     return [];
 }
+
+
+export const customExporters = [
+    /*
+    {
+        id: "myexport",
+        title: "My Format",
+        allowClipboard: true,
+        export: (features, callback) => {
+            const data = convertToMyFormat(features);
+            callback({
+                data: data, type: "mime/type", filename: "export.ext"
+            });
+        }
+    }
+    */
+];

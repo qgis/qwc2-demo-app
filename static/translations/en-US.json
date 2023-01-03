@@ -149,6 +149,7 @@
       "loading": "Calculating height profile..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Export",
       "exportformat": "Export format:",
       "featureReport": "Feature report",

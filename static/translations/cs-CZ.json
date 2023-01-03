@@ -149,6 +149,7 @@
       "loading": "Výpočet výškového profilu..."
     },
     "identify": {
+      "clipboard": "",
       "export": "Export",
       "exportformat": "",
       "featureReport": "Report prvku",
