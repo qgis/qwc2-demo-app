@@ -149,7 +149,7 @@
       "loading": "Höhenprofil wird berechnet..."
     },
     "identify": {
-      "clipboard": "",
+      "clipboard": "Nach Zwischenablage kopieren",
       "export": "Exportieren",
       "exportformat": "Exportformat",
       "featureReport": "Objektblatt",
