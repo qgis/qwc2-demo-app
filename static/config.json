@@ -304,7 +304,7 @@
       {
         "name": "LayerCatalog",
         "cfg": {
-          "catalogUrl": "http://qwc2.sourcepole.ch/catalog.json"
+          "catalogUrl": "http://qwc2.sourcepole.ch/assets/catalog.json"
         }
       },
       {
