@@ -212,7 +212,8 @@
           "enableExport": true,
           "longAttributesDisplay": "wrap",
           "displayResultTree": false,
-          "featureInfoReturnsLayerName": true
+          "featureInfoReturnsLayerName": true,
+          "clearResultsOnClose": true
         }
       },
       {
@@ -524,6 +525,7 @@
           "longAttributesDisplay": "wrap",
           "displayResultTree": false,
           "featureInfoReturnsLayerName": true,
+          "clearResultsOnClose": true,
           "initialWidth": 480,
           "initialHeight": 550,
           "initialX": 0,
