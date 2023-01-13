@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {SearchProviders, searchProviderFactory} from './SearchProviders';
+import {SearchProviders} from './SearchProviders';
 import {renderHelp} from './Help';
 
 import MapPlugin from 'qwc2/plugins/Map';
@@ -86,7 +86,7 @@ export default {
             BackgroundSwitcherPlugin: BackgroundSwitcherPlugin,
             TopBarPlugin: TopBarPlugin({
                 AppMenu: AppMenu,
-                Search: SearchBox(SearchProviders, searchProviderFactory),
+                Search: SearchBox(SearchProviders),
                 Toolbar: Toolbar,
                 FullscreenSwitcher: FullscreenSwitcher
             }),

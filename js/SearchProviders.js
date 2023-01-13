@@ -6,77 +6,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-/**
-Search provider interface:
---------------------------
 
-  onSearch: function(text, requestId, searchOptions, dispatch, state) {
-      let results = [ ... ]; // See below
-      return addSearchResults({data: results, provider: providerId, reqId: requestId}, true);
-      // or
-      return dispatch( (...) => {
-        return addSearchResults({data: results, provider: providerId, reqId: requestId}, true);
-    });
-  }
-
-  getResultGeometry: function(resultItem, callback) {
-    // ...
-    callback(resultItem, geometryWktString, crs, hidemarker=false);
-  }
-
-  getMoreResults: function(moreItem, text, requestId, dispatch) {
-    // Same return object as onSearch
-  }
-
-
-Format of search results:
--------------------------
-
-  results = [
-    {
-        id: categoryid,                     // Unique category ID
-        title: display_title,               // Text to display as group title in the search results
-        priority: priority_nr,              // Optional search result group priority. Groups with higher priority are displayed first in the list.
-        items: [
-            {                                 // Location search result:
-                type: SearchResultType.PLACE,   // Specifies that this is a location search result
-                id: itemid,                     // Unique item ID
-                text: display_text,             // Text to display as search result
-                label: map_label_text,          // Optional, text to show next to the position marker on the map instead of <text>
-                x: x,                           // X coordinate of result
-                y: y,                           // Y coordinate of result
-                crs: crs,                       // CRS of result coordinates and bbox
-                bbox: [xmin, ymin, xmax, ymax], // Bounding box of result (if non-empty, map will zoom to this extent when selecting result)
-                provider: providerid            // The ID of the provider which generated this result. Required if `getResultGeometry` is to be called.
-            },
-            {                                   // Theme layer search result (advanced):
-                type: SearchResultType.THEMELAYER, // Specifies that this is a theme layer search result
-                id: itemid,                        // Unique item ID
-                text: display_text,                // Text to display as search result
-                layer: {<Layer definition>}        // Layer definition, in the same format as a "sublayers" entry in themes.json.
-            },
-            {                        // Optional entry to request more results:
-                id: itemid,            // Unique item ID
-                more: true,            // Specifies that this entry is a "More..." entry
-                provider: providerid   // The ID of the provider which generated this result.
-            }
-        ]
-    },
-    {
-        ...
-    }
-  ]
-
-*/
-
-import axios from 'axios';
-import {addSearchResults, SearchResultType} from "qwc2/actions/search";
-import CoordinatesUtils from 'qwc2/utils/CoordinatesUtils';
-import LocaleUtils from 'qwc2/utils/LocaleUtils';
 import yaml from 'js-yaml';
 
-function coordinatesSearch(text, requestId, searchOptions, dispatch) {
-    const displaycrs = searchOptions.displaycrs || "EPSG:4326";
+function coordinatesSearch(text, searchParams, callback) {
+    const displaycrs = searchParams.displaycrs || "EPSG:4326";
     const matches = text.match(/^\s*([+-]?\d+\.?\d*)[,\s]\s*([+-]?\d+\.?\d*)\s*$/);
     const items = [];
     if (matches && matches.length >= 3) {
@@ -127,106 +61,8 @@ function coordinatesSearch(text, requestId, searchOptions, dispatch) {
             }
         );
     }
-    dispatch(addSearchResults({data: results, provider: "coordinates", reqId: requestId}, true));
-}
-
-/** ************************************************************************ **/
-
-function geoAdminLocationSearch(text, requestId, searchOptions, dispatch) {
-    axios.get("http://api3.geo.admin.ch/rest/services/api/SearchServer?searchText=" + encodeURIComponent(text) + "&type=locations&limit=20")
-        .then(response => dispatch(geoAdminLocationSearchResults(response.data, requestId)));
-}
-
-function parseItemBBox(bboxstr) {
-    if (bboxstr === undefined) {
-        return null;
-    }
-    const matches = bboxstr.match(/^BOX\s*\(\s*(\d+\.?\d*)\s*(\d+\.?\d*)\s*,\s*(\d+\.?\d*)\s*(\d+\.?\d*)\s*\)$/);
-    if (matches && matches.length < 5) {
-        return null;
-    }
-    const xmin = parseFloat(matches[1]);
-    const ymin = parseFloat(matches[2]);
-    const xmax = parseFloat(matches[3]);
-    const ymax = parseFloat(matches[4]);
-    return CoordinatesUtils.reprojectBbox([xmin, ymin, xmax, ymax], "EPSG:21781", "EPSG:4326");
-}
-
-function geoAdminLocationSearchResults(obj, requestId) {
-    const categoryMap = {
-        gg25: "Municipalities",
-        kantone: "Cantons",
-        district: "Districts",
-        sn25: "Places",
-        zipcode: "Zip Codes",
-        address: "Address",
-        gazetteer: "General place name directory"
-    };
-    const resultGroups = {};
-    (obj.results || []).map(entry => {
-        if (resultGroups[entry.attrs.origin] === undefined) {
-            resultGroups[entry.attrs.origin] = {
-                id: entry.attrs.origin,
-                title: categoryMap[entry.attrs.origin] || entry.attrs.origin,
-                items: []
-            };
-        }
-        const x = entry.attrs.lon;
-        const y = entry.attrs.lat;
-        resultGroups[entry.attrs.origin].items.push({
-            id: entry.id,
-            text: entry.attrs.label,
-            x: x,
-            y: y,
-            crs: "EPSG:4326",
-            bbox: parseItemBBox(entry.attrs.geom_st_box2d) || [x, y, x, y],
-            provider: "geoadmin"
-        });
-    });
-    const results = Object.values(resultGroups);
-    return addSearchResults({data: results, provider: "geoadmin", reqId: requestId}, true);
-}
-
-/** ************************************************************************ **/
-
-function usterSearch(text, requestId, searchOptions, dispatch) {
-    axios.get("https://webgis.uster.ch/wsgi/search.wsgi?&searchtables=&query=" + encodeURIComponent(text))
-        .then(response => dispatch(usterSearchResults(response.data, requestId)));
-}
-
-function usterSearchResults(obj, requestId) {
-    const results = [];
-    let currentgroup = null;
-    let groupcounter = 0;
-    let counter = 0;
-    (obj.results || []).map(entry => {
-        if (!entry.bbox) {
-            // Is group
-            currentgroup = {
-                id: "ustergroup" + (groupcounter++),
-                title: entry.displaytext,
-                items: []
-            };
-            results.push(currentgroup);
-        } else if (currentgroup) {
-            currentgroup.items.push({
-                id: "usterresult" + (counter++),
-                text: entry.displaytext,
-                searchtable: entry.searchtable,
-                bbox: entry.bbox.slice(0),
-                x: 0.5 * (entry.bbox[0] + entry.bbox[2]),
-                y: 0.5 * (entry.bbox[1] + entry.bbox[3]),
-                crs: "EPSG:21781",
-                provider: "uster"
-            });
-        }
-    });
-    return addSearchResults({data: results, provider: "uster", reqId: requestId}, true);
-}
-
-function usterResultGeometry(resultItem, callback) {
-    axios.get("https://webgis.uster.ch/wsgi/getSearchGeom.wsgi?searchtable=" + encodeURIComponent(resultItem.searchtable) + "&displaytext=" + encodeURIComponent(resultItem.text))
-        .then(response => callback(resultItem, response.data, "EPSG:21781", true));
+    callback({results: results});
+    // dispatch(addSearchResults({data: results, provider: "coordinates", reqId: requestId}, true));
 }
 
 /** ************************************************************************ **/
@@ -234,32 +70,32 @@ function usterResultGeometry(resultItem, callback) {
 class NominatimSearch {
     static TRANSLATIONS = {};
 
-    static search(text, requestId, searchOptions, dispatch, cfg = {}) {
+    static search(text, searchParams, callback, axios) {
         axios.get("//nominatim.openstreetmap.org/search", {params: {
             'q': text,
             'addressdetails': 1,
             'polygon_geojson': 1,
             'limit': 20,
             'format': 'json',
-            'accept-language': LocaleUtils.lang(),
-            ...(cfg.params || {})
+            'accept-language': searchParams.lang,
+            ...(searchParams.cfgParams || {})
         }}).then(response => {
-            const locale = LocaleUtils.lang();
+            const locale = searchParams.lang;
             if (NominatimSearch.TRANSLATIONS[locale] === undefined) {
-                NominatimSearch.TRANSLATIONS[locale] = {promise: NominatimSearch.loadLocale(locale)};
+                NominatimSearch.TRANSLATIONS[locale] = {promise: NominatimSearch.loadLocale(locale, axios)};
                 NominatimSearch.TRANSLATIONS[locale].promise.then(() => {
-                    dispatch(NominatimSearch.parseResults(response.data, requestId, NominatimSearch.TRANSLATIONS[locale].strings));
+                    NominatimSearch.parseResults(response.data, NominatimSearch.TRANSLATIONS[locale].strings, callback);
                 });
             } else if (NominatimSearch.TRANSLATIONS[locale].promise) {
                 NominatimSearch.TRANSLATIONS[locale].promise.then(() => {
-                    dispatch(NominatimSearch.parseResults(response.data, requestId, NominatimSearch.TRANSLATIONS[locale].strings));
+                    NominatimSearch.parseResults(response.data, NominatimSearch.TRANSLATIONS[locale].strings, callback);
                 });
             } else if (NominatimSearch.TRANSLATIONS[locale].strings) {
-                dispatch(NominatimSearch.parseResults(response.data, requestId, NominatimSearch.TRANSLATIONS[locale].strings));
+                NominatimSearch.parseResults(response.data, NominatimSearch.TRANSLATIONS[locale].strings, callback);
             }
         });
     }
-    static parseResults(obj, requestId, translations) {
+    static parseResults(obj, translations, callback) {
         const results = [];
         const groups = {};
         let groupcounter = 0;
@@ -321,9 +157,9 @@ class NominatimSearch {
                 provider: "nominatim"
             });
         });
-        return addSearchResults({data: results, provider: "nominatim", reqId: requestId}, true);
+        callback({results: results});
     }
-    static loadLocale(locale) {
+    static loadLocale(locale, axios) {
         return new Promise((resolve) => {
             axios.get('https://raw.githubusercontent.com/openstreetmap/openstreetmap-website/master/config/locales/' + locale + '.yml')
                 .then(resp2 => {
@@ -344,7 +180,7 @@ class NominatimSearch {
         });
     }
     static parseLocale(data, locale) {
-        const doc = yaml.load(data);
+        const doc = yaml.load(data, {json: true});
         try {
             return doc[locale].geocoder.search_osm_nominatim.prefix;
         } catch (e) {
@@ -355,97 +191,13 @@ class NominatimSearch {
 
 /** ************************************************************************ **/
 
-function parametrizedSearch(text, requestId, searchOptions, dispatch, cfg) {
-    const SEARCH_URL = ""; // ...
-    axios.get(SEARCH_URL + "?param=" + cfg.param + "&searchtext=" + encodeURIComponent(text))
-        .then(response => dispatch(addSearchResults({data: response.data, provider: cfg.key, reqId: requestId})))
-        .catch(() => dispatch(addSearchResults({data: [], provider: cfg.key, reqId: requestId})));
-}
-
-/** ************************************************************************ **/
-
-function layerSearch(text, requestId, searchOptions, dispatch) {
-    const results = [];
-    if (text === "bahnhof") {
-        const layer = {
-            sublayers: [
-                {
-                    name: "a",
-                    title: "a",
-                    visibility: true,
-                    queryable: true,
-                    displayField: "maptip",
-                    opacity: 255,
-                    bbox: {
-                        crs: "EPSG:4326",
-                        bounds: [
-                            8.53289,
-                            47.3768,
-                            8.54141,
-                            47.3803
-                        ]
-                    }
-                }
-            ]
-        };
-        results.push({
-            id: "layers",
-            title: "Layers",
-            items: [{
-                type: SearchResultType.THEMELAYER,
-                id: "bahnhof",
-                text: "Bahnhof",
-                layer: layer
-            }]
-        });
-    }
-    dispatch(addSearchResults({data: results, provider: "layers", reqId: requestId}, true));
-}
-
-/** ************************************************************************ **/
-
 export const SearchProviders = {
     coordinates: {
         labelmsgid: "search.coordinates",
         onSearch: coordinatesSearch
     },
-    geoadmin: {
-        label: "Swisstopo",
-        onSearch: geoAdminLocationSearch,
-        requiresLayer: "a" // Make provider availability depend on the presence of a theme WMS layer
-    },
-    uster: {
-        label: "Uster",
-        onSearch: usterSearch,
-        getResultGeometry: usterResultGeometry
-    },
     nominatim: {
         label: "OpenStreetMap",
         onSearch: NominatimSearch.search
-    },
-    layers: {
-        label: "Layers",
-        onSearch: layerSearch
     }
 };
-
-export function searchProviderFactory(cfg) {
-    // Note: cfg corresponds to an entry of the theme searchProviders array in themesConfig.json, in this case
-    //   { key: <providerKey>, label: <label>, param: <param>, ...}
-    // The entry must have at least a `key`
-    if (!cfg.key) {
-        return null;
-    }
-    if (cfg.key in SearchProviders) {
-        return {
-            label: cfg.label || cfg.key,
-            onSearch: (text, requestId, searchOptions, dispatch) => SearchProviders[cfg.key].onSearch(text, requestId, searchOptions, dispatch, cfg),
-            requiresLayer: cfg.layerName || SearchProviders[cfg.key].requiresLayer
-        };
-    }
-    return {
-        label: cfg.label || cfg.key,
-        onSearch: (text, requestId, searchOptions, dispatch) => parametrizedSearch(text, requestId, searchOptions, dispatch, cfg),
-        requiresLayer: cfg.layerName
-    };
-}

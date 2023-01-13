@@ -5,6 +5,30 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
+Update to qwc2 submodule revision [753b7ed](https://github.com/qgis/qwc2/tree/753b7ed) (13.01.2023)
+---------------------------------------------------------------------------------------------------
+
+**Reworked search provider support**
+
+The arguments and expected behaviour of the provider `onSearch` and `getResultGeometry` have changed. Please refer to the documentation chapter in the [Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md#search-providers). Consult [js/SearchProviders.js](https://github.com/qgis/qwc2-demo-app/blob/master/js/SearchProviders.js) and [static/assets/searchProviders.js](https://github.com/qgis/qwc2-demo-app/blob/master/static/assets/searchProviders.js) for full examples.
+
+It is now possible to define search providers in a external JS file loaded at runtime rather than compiled into the application bundle. See [static/assets/searchProviders.js](https://github.com/qgis/qwc2-demo-app/blob/master/static/assets/searchProviders.js), which is loaded by [index.html](https://github.com/qgis/qwc2-demo-app/blob/master/index.html).
+
+`js/SearchProviders.js` now only includes `coordinates` and `nominatim` as built-in search providers for the demo application.
+
+The `searchProviderFactory` function has been removed from `js/SearchProviders.js`. Instead, custom parameters to be passed to a provider can be specified directly in the theme item `searchProviders` entry:
+
+    {
+      key: "<providerkey2>",
+      params: {...}
+    }
+
+and read from `searchParams.cfgParams` in the provider `onSearch` function.
+
+**Load Help dialog contents from HTML fragment**
+
+Instead of requiring users to implement the `renderHelp` function in `js/Help.jsx`, for simple cases the users can provide a plain HTML fragment which is loaded at runtime from the assets. Consult the [Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md#help-dialog).
+
 Update to qwc2 submodule revision [90c613a](https://github.com/qgis/qwc2/tree/90c613a) (28.11.2022)
 ---------------------------------------------------------------------------------------------------
 
