@@ -41,7 +41,7 @@ function usterResultGeometry(resultItem, callback, axios) {
 /** ************************************************************************ **/
 
 function geoAdminLocationSearch(text, searchParams, callback, axios) {
-    const url = "http://api3.geo.admin.ch/rest/services/api/SearchServer?searchText=" + encodeURIComponent(text) + "&type=locations&limit=20&sr=2056";
+    const url = "https://api3.geo.admin.ch/rest/services/api/SearchServer?searchText=" + encodeURIComponent(text) + "&type=locations&limit=20&sr=2056";
     axios.get(url).then(response => {
         const categoryMap = {
             gg25: "Municipalities",
