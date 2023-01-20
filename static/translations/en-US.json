@@ -14,6 +14,7 @@
         "LayerTree": "Layers & Legend",
         "Login": "Login",
         "Logout": "Logout",
+        "MapLegend": "Legend",
         "Measure": "Measure",
         "MeasureLineString": "Measure a line",
         "MeasurePolygon": "Measure a polygon",
@@ -232,6 +233,12 @@
     "mapinfotooltip": {
       "elevation": "Elevation",
       "title": "Position"
+    },
+    "maplegend": {
+      "bboxdependent": "Map extent dependent legend",
+      "onlyvisible": "Only visibile layers",
+      "scaledependent": "Map scale depdendent legend",
+      "windowtitle": "Legend"
     },
     "measureComponent": {
       "areaLabel": "Area",

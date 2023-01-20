@@ -14,6 +14,7 @@
         "LayerTree": "Слои и легенда",
         "Login": "",
         "Logout": "",
+        "MapLegend": "",
         "Measure": "Измерения",
         "MeasureLineString": "измерить линию",
         "MeasurePolygon": "измерить многоугольник",
@@ -232,6 +233,12 @@
     "mapinfotooltip": {
       "elevation": "Высота над уровнем моря",
       "title": "Позиция"
+    },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
     },
     "measureComponent": {
       "areaLabel": "Площадь",

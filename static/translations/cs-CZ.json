@@ -14,6 +14,7 @@
         "LayerTree": "Vrstvy & Legenda",
         "Login": "Přihlášení",
         "Logout": "Odhlášení",
+        "MapLegend": "",
         "Measure": "Měření",
         "MeasureLineString": "Změřit čáru",
         "MeasurePolygon": "Měřit mnohoúhelník",
@@ -232,6 +233,12 @@
     "mapinfotooltip": {
       "elevation": "Nadmořská výška",
       "title": "Poloha"
+    },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
     },
     "measureComponent": {
       "areaLabel": "Plocha",

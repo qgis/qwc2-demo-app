@@ -14,6 +14,7 @@
         "LayerTree": "Lager & teckenförklaring",
         "Login": "Logga in",
         "Logout": "Logga ut",
+        "MapLegend": "",
         "Measure": "Mät",
         "MeasureLineString": "Mäta en linje",
         "MeasurePolygon": "Mäta en polygon",
@@ -232,6 +233,12 @@
     "mapinfotooltip": {
       "elevation": "Höjd",
       "title": "Position"
+    },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
     },
     "measureComponent": {
       "areaLabel": "Area",

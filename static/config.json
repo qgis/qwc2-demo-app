@@ -354,7 +354,7 @@
         "cfg": {
           "position": 5,
           "task": "LayerTree",
-          "icon": "list-alt"
+          "icon": "layers"
         }
       },
       {
@@ -401,6 +401,7 @@
           "menuItems": [
             {"key": "ThemeSwitcher", "icon": "themes", "shortcut": "alt+shift+t"},
             {"key": "LayerTree", "icon": "layers", "shortcut": "alt+shift+l"},
+            {"key": "MapLegend", "icon": "list-alt"},
             {"key": "LayerCatalog", "icon": "catalog", "shortcut": "alt+shift+c"},
             {"key": "Share", "icon": "share", "shortcut": "alt+shift+s"},
             {"key": "Bookmark", "icon": "bookmark", "shortcut": "alt+shift+b"},
@@ -657,6 +658,16 @@
           "defaultTimelineMode": "infinite",
           "stepUnits": ["s", "m", "h", "d", "M", "y", "10y", "100y"],
           "defaultTimelineDisplay": "features"
+        }
+      },
+      {
+        "name": "MapLegend",
+        "cfg": {
+          "addLayerTitles": false,
+          "bboxDependentLegend": false,
+          "onlyVisibleLegend": false,
+          "scaleDependentLegend": false,
+          "extraLegendParams": "LAYERTITLE=FALSE"
         }
       }
     ]

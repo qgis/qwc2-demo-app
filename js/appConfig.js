@@ -45,6 +45,7 @@ import RedliningPlugin from 'qwc2/plugins/Redlining';
 import BufferSupport from 'qwc2/plugins/redlining/RedliningBufferSupport';
 import EditingPlugin from 'qwc2/plugins/Editing';
 import MapComparePlugin from 'qwc2/plugins/MapCompare';
+import MapLegendPlugin from 'qwc2/plugins/MapLegend';
 import HeightProfilePlugin from 'qwc2/plugins/HeightProfile';
 import MapInfoTooltipPlugin from 'qwc2/plugins/MapInfoTooltip';
 import StartupMarkerPlugin from 'qwc2/plugins/StartupMarker';
@@ -56,6 +57,7 @@ import TimeManagerPlugin from 'qwc2/plugins/TimeManager';
 import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
 import APIPlugin from 'qwc2/plugins/API';
 import SettingsPlugin from 'qwc2/plugins/Settings';
+import ProcessNotificationsPlugin from 'qwc2/plugins/ProcessNotifications';
 import {customAttributeCalculator, customExporters} from './IdentifyExtensions';
 
 import defaultLocaleData from '../static/translations/en-US.json';
@@ -97,6 +99,7 @@ export default {
             LayerCatalogPlugin: LayerCatalogPlugin,
             IdentifyPlugin: IdentifyPlugin,
             MapTipPlugin: MapTipPlugin,
+            MapLegendPlugin: MapLegendPlugin,
             SharePlugin: SharePlugin,
             MapCopyrightPlugin: MapCopyrightPlugin,
             PrintPlugin: PrintPlugin,
@@ -120,7 +123,8 @@ export default {
             APIPlugin: APIPlugin,
             TimeManagerPlugin: TimeManagerPlugin,
             FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */),
-            SettingsPlugin: SettingsPlugin
+            SettingsPlugin: SettingsPlugin,
+            ProcessNotificationsPlugin: ProcessNotificationsPlugin
         },
         cfg: {
             IdentifyPlugin: {

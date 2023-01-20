@@ -14,6 +14,7 @@
         "LayerTree": "Katmanlar & Gösterim",
         "Login": "Giriş",
         "Logout": "Çıkış",
+        "MapLegend": "",
         "Measure": "Ölç",
         "MeasureLineString": "Bir çizgiyi ölçmek",
         "MeasurePolygon": "Bir çokgen ölçmek",
@@ -232,6 +233,12 @@
     "mapinfotooltip": {
       "elevation": "Yükseklik",
       "title": "Konum"
+    },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
     },
     "measureComponent": {
       "areaLabel": "Alan",

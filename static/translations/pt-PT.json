@@ -14,6 +14,7 @@
         "LayerTree": "Camadas & Leyenda",
         "Login": "Inicio de sesión",
         "Logout": "Cierre de sesión",
+        "MapLegend": "",
         "Measure": "Medir",
         "MeasureLineString": "Medir uma linha",
         "MeasurePolygon": "Medir um polígono",
@@ -232,6 +233,12 @@
     "mapinfotooltip": {
       "elevation": "Elevação",
       "title": "Posição"
+    },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
     },
     "measureComponent": {
       "areaLabel": "Área",

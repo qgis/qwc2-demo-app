@@ -14,6 +14,7 @@
         "LayerTree": "Straturi & Legendă",
         "Login": "Conectează-te",
         "Logout": "Deconectează-te",
+        "MapLegend": "",
         "Measure": "Măsoară",
         "MeasureLineString": "Măsoară o linie",
         "MeasurePolygon": "Măsoară un poligon",
@@ -232,6 +233,12 @@
     "mapinfotooltip": {
       "elevation": "Altitudine",
       "title": "Poziție"
+    },
+    "maplegend": {
+      "bboxdependent": "",
+      "onlyvisible": "",
+      "scaledependent": "",
+      "windowtitle": ""
     },
     "measureComponent": {
       "areaLabel": "Arie",
