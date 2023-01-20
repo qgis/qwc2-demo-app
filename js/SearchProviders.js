@@ -62,7 +62,6 @@ function coordinatesSearch(text, searchParams, callback) {
         );
     }
     callback({results: results});
-    // dispatch(addSearchResults({data: results, provider: "coordinates", reqId: requestId}, true));
 }
 
 /** ************************************************************************ **/
