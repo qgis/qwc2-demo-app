@@ -12,7 +12,7 @@ Some examples of QWC2 production deployments:
 - [Web GIS Client Kanton Solothurn](https://geo.so.ch/map/)
 
 ## [Quick start](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md#quick-start)
-## [Documentation](https://github.com/qgis/qwc2-demo-app/blob/master/doc/QWC2_Documentation.md)
+## [Documentation](https://github.com/qgis/qwc2-demo-app/tree/master/doc)
 ## [QWC2 extended with microservices](https://github.com/qwc-services/qwc-docker)
 ## [Upgrade notes](https://github.com/qgis/qwc2-demo-app/blob/master/UpgradeNotes.md)
 ## [Mailing list](https://lists.osgeo.org/mailman/listinfo/qgis-qwc2)
