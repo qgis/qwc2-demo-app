@@ -1,0 +1,24 @@
+site_name: QGIS Web Client 2
+docs_dir: src
+nav:
+    - Index: index.md
+    - Requirements: requirements.md
+    - Quick start: quick_start.md
+    - QWC2 configuration: qwc_configuration.md
+    - URL parameters: url_parameters.md
+    - Startup position: startup_position.md
+    - Server-side configuration: server_side_configuration.md
+    - Keeping the QWC2 application up to date: keeping_qwc_up_to_date.md
+    - Developing: developing.md
+
+theme:
+    name: readthedocs
+    include_homepage_in_sidebar: false
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
