@@ -46,7 +46,8 @@ module.exports = (env, argv) => {
                 stream: require.resolve("stream-browserify"),
                 buffer: require.resolve("buffer/"),
                 path: require.resolve("path-browserify"),
-                timers: require.resolve("timers-browserify")
+                timers: require.resolve("timers-browserify"),
+                url: require.resolve("url/")
             }
         },
         snapshot: {
@@ -95,7 +96,7 @@ module.exports = (env, argv) => {
                     }
                 },
                 {
-                    test: /\.mjs$/,
+                    test: /(.mjs|.js)$/,
                     type: 'javascript/auto'
                 },
                 {

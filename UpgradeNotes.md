@@ -5,6 +5,36 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
+Update to qwc2 submodule revision [7a474e3](https://github.com/qgis/qwc2/tree/7a474e3) (23.01.2023)
+---------------------------------------------------------------------------------------------------
+
+**Dependency update**
+
+Most dependencies have been updated to the latest version. The following adjustments need to be performed by hand:
+
+* Use `createRoot` in `app.jsx`, see the [demo `app.jsx`](https://github.com/qgis/qwc2-demo-app/blob/932b755bd06b4727ecb2ac532cc6b196f9054821/js/appConfig.js).
+* Update `uuid` imports in external components, examples:
+
+      import {v1 as uuidv1} from 'uuid';
+      import {v4 as uuidv4} from 'uuid';
+
+  and then instead of `uuid.v1()` use `uuidv1()` etc.
+
+* Adjust `webpack.config.js` from
+
+      {
+        test: /\.mjs$/,
+        type: 'javascript/auto'
+      }
+
+  to
+
+      {
+        test: /(.mjs|.js)$/,
+        type: 'javascript/auto'
+      }
+
+
 Update to qwc2 submodule revision [fe063b6](https://github.com/qgis/qwc2/tree/fe063b6) (13.01.2023)
 ---------------------------------------------------------------------------------------------------
 

@@ -7,12 +7,11 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {createRoot} from 'react-dom/client';
 import StandardApp from 'qwc2/components/StandardApp';
 import appConfig from './appConfig';
 import '../icons/build/qwc2-icons.css';
 
-ReactDOM.render(
-    <StandardApp appConfig={appConfig}/>,
-    document.getElementById('container')
-);
+const container = document.getElementById('container');
+const root = createRoot(container);
+root.render(<StandardApp appConfig={appConfig}/>);
