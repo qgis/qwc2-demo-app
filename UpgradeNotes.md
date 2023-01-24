@@ -12,7 +12,7 @@ Update to qwc2 submodule revision [7a474e3](https://github.com/qgis/qwc2/tree/7a
 
 Most dependencies have been updated to the latest version. The following adjustments need to be performed by hand:
 
-* Use `createRoot` in `app.jsx`, see the [demo `app.jsx`](https://github.com/qgis/qwc2-demo-app/blob/932b755bd06b4727ecb2ac532cc6b196f9054821/js/appConfig.js).
+* Use `createRoot` in `app.jsx`, see the [demo `app.jsx`](https://github.com/qgis/qwc2-demo-app/blob/1ec0a2ba614ddfb2bc30ab0d3db083fbcc5da524/js/app.jsx).
 * Update `uuid` imports in external components, examples:
 
       import {v1 as uuidv1} from 'uuid';
