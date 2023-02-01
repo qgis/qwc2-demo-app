@@ -205,6 +205,7 @@ The second step is to configure the themes which are available to QWC2 in the `t
       "defaultScales": [<Scale denominators>],
       "defaultPrintScales" [<Scale denominators>],
       "defaultPrintResolutions": [<DPIs>],
+      "defaultSearchProviders": [<Search providers>],
       "defaultPrintGrid": [<Print grid, see below>]
     }
 
