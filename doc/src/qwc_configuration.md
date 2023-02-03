@@ -466,12 +466,12 @@ Notes:
 
 * The format of `searchParams` is
 
-      {
-        displaycrs: "EPSG:XXXX", // Currently selected mouse coordinate display CRS
-        mapcrs: "EPSG:XXXX", // The current map CRS
-        lang: "<code>", // The current application language, i.e. en-US or en
-        cfgParams: <params> // Additional parameters passed in the theme search provider configuration, see below
-      }
+        {
+          displaycrs: "EPSG:XXXX", // Currently selected mouse coordinate display CRS
+          mapcrs: "EPSG:XXXX", // The current map CRS
+          lang: "<code>", // The current application language, i.e. en-US or en
+          cfgParams: <params> // Additional parameters passed in the theme search provider configuration, see below
+        }
 
 * `axios` is passed for convenience so that providers can use the compiled-in `axios` library for network requests.
 
