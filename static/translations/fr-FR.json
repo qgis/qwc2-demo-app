@@ -290,6 +290,7 @@
       "label": "Texte",
       "layer": "Couche",
       "line": "Ligne",
+      "measurements": "Montrer les mesures",
       "outline": "Contour",
       "pick": "Choisir",
       "point": "Point",
