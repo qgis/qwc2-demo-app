@@ -243,7 +243,9 @@
     "measureComponent": {
       "areaLabel": "Área",
       "bearingLabel": "Dirección",
+      "imperial": "",
       "lengthLabel": "Longitud",
+      "metric": "",
       "pointLabel": "Posição"
     },
     "navbar": {
