@@ -5,6 +5,13 @@ This document describes incompatibilites and other aspects which QWC2 applicatio
 
 When updating the `qwc2` submodule, run `yarn install` to ensure the dependencies are up to date!
 
+Update to qwc2 submodule revision [96aaa51](https://github.com/qgis/qwc2/tree/96aaa51) (09.02.2023)
+---------------------------------------------------------------------------------------------------
+
+**Config setting change**
+
+* Geodesic measurement mode is now configured at toplevel in `config.json` via `geodesicMeasurements: true|false` rather than below `Map -> cfg -> toolsOptions -> MeasurementSupport`.
+
 Update to qwc2 submodule revision [7a474e3](https://github.com/qgis/qwc2/tree/7a474e3) (23.01.2023)
 ---------------------------------------------------------------------------------------------------
 

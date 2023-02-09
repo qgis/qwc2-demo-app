@@ -23,6 +23,7 @@
   "allowAddingOtherThemes": true,
   "allowFractionalZoom": false,
   "localeAwareNumbers": false,
+  "geodesicMeasurements": true,
   "identifyTool": "Identify",
   "wmsDpi": 96,
   "wmsHidpi": false,
