@@ -590,7 +590,7 @@ QWC2 ships a plugin for snapping support while drawing (redlining / measuring / 
       "snaplayers": [
         {
           "name": "<layername>",
-          "min": <min_scale>
+          "min": <min_scale>,
           "max": <max_scale>
         }
       ],
