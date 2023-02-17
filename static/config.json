@@ -261,7 +261,8 @@
           "grayUnchecked": false,
           "layerInfoWindowSize": {"width": 480, "height": 400},
           "bboxDependentLegend": true,
-          "scaleDependentLegend": "theme"
+          "scaleDependentLegend": "theme",
+          "extraLegendParams": ""
         },
         "mapClickAction": "unset"
       },
@@ -512,7 +513,8 @@
           "layerInfoWindowSize": {"width": 480, "height": 400},
           "bboxDependentLegend": true,
           "scaleDependentLegend": "theme",
-          "showToggleAllLayersCheckbox": true
+          "showToggleAllLayersCheckbox": true,
+          "extraLegendParams": ""
         },
         "mapClickAction": "identify"
       },
