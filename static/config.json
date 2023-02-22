@@ -7,6 +7,7 @@
   "elevationServiceUrl": "http://localhost:8088/elevation/",
   "featureReportService": "http://localhost:8088/api/v1/document/",
   "authServiceUrl": "http://localhost:8088/api/v1/auth/",
+  "routingServiceUrl": "https://valhalla1.openstreetmap.de",
   "urlPositionFormat": "centerAndZoom",
   "urlPositionCrs": "",
   "omitUrlParameterUpdates": false,
@@ -415,7 +416,8 @@
               {"key": "FeatureForm", "icon": "featureform"},
               {"key": "AttributeTable", "icon": "editing"},
               {"key": "DxfExport", "icon": "dxfexport"},
-              {"key": "RasterExport", "icon": "rasterexport"}
+              {"key": "RasterExport", "icon": "rasterexport"},
+              {"key": "Routing", "icon": "routing"}
             ]},
             {"key": "Print", "icon": "print", "shortcut": "alt+shift+p"},
             {"key": "Help", "icon": "info", "shortcut": "alt+shift+h"},
@@ -671,6 +673,9 @@
           "scaleDependentLegend": false,
           "extraLegendParams": "LAYERTITLE=FALSE"
         }
+      },
+      {
+        "name": "Routing"
       }
     ]
   }

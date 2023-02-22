@@ -58,6 +58,7 @@ import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
 import APIPlugin from 'qwc2/plugins/API';
 import SettingsPlugin from 'qwc2/plugins/Settings';
 import ProcessNotificationsPlugin from 'qwc2/plugins/ProcessNotifications';
+import RoutingPlugin from 'qwc2/plugins/Routing';
 import {customAttributeCalculator, customExporters} from './IdentifyExtensions';
 
 import defaultLocaleData from '../static/translations/en-US.json';
@@ -124,6 +125,7 @@ export default {
             TimeManagerPlugin: TimeManagerPlugin,
             FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */),
             SettingsPlugin: SettingsPlugin,
+            RoutingPlugin: RoutingPlugin(SearchProviders),
             ProcessNotificationsPlugin: ProcessNotificationsPlugin
         },
         cfg: {
