@@ -233,7 +233,8 @@
           "inlinePrintOutput": false,
           "printExternalLayers": true,
           "gridInitiallyEnabled": false
-        }
+        },
+        "mapClickAction": "identify"
       },
       {
         "name": "Help",
@@ -339,9 +340,6 @@
               "keepCurrentZoomLevel": true,
               "stopFollowingOnDrag": true,
               "startupMode": "DISABLED"
-            },
-            "MeasurementSupport": {
-              "geodesic": true
             },
             "ScaleBarSupport": {
               "units": "metric"
@@ -557,7 +555,8 @@
           "inlinePrintOutput": false,
           "printExternalLayers": true,
           "gridInitiallyEnabled": false
-        }
+        },
+        "mapClickAction": "identify"
       },
       {
         "name": "Help",
@@ -634,7 +633,7 @@
       {
         "name": "LayerCatalog",
         "cfg": {
-          "catalogUrl": "http://qwc2.sourcepole.ch/assets/catalog.json"
+          "catalogUrl": "https://qwc2.sourcepole.ch/assets/catalog.json"
         }
       },
       {
