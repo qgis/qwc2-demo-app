@@ -307,9 +307,11 @@
     },
     "routing": {
       "add": "",
+      "addviapoint": "",
       "compute": "",
       "computefailed": "",
       "export": "",
+      "fromhere": "",
       "iso_intervals": "",
       "iso_mode": "",
       "iso_mode_distance": "",
@@ -317,6 +319,8 @@
       "maxspeed": "",
       "reachability": "",
       "route": "",
+      "setcenter": "",
+      "tohere": "",
       "windowtitle": ""
     },
     "scratchdrawing": {
