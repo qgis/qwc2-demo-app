@@ -263,7 +263,8 @@
           "grayUnchecked": false,
           "layerInfoWindowSize": {"width": 480, "height": 400},
           "bboxDependentLegend": true,
-          "scaleDependentLegend": "theme"
+          "scaleDependentLegend": "theme",
+          "extraLegendParameters": ""
         },
         "mapClickAction": "unset"
       },
@@ -512,7 +513,8 @@
           "layerInfoWindowSize": {"width": 480, "height": 400},
           "bboxDependentLegend": true,
           "scaleDependentLegend": "theme",
-          "showToggleAllLayersCheckbox": true
+          "showToggleAllLayersCheckbox": true,
+          "extraLegendParameters": ""
         },
         "mapClickAction": "identify"
       },
@@ -670,7 +672,7 @@
           "bboxDependentLegend": false,
           "onlyVisibleLegend": false,
           "scaleDependentLegend": false,
-          "extraLegendParams": "LAYERTITLE=FALSE"
+          "extraLegendParameters": ""
         }
       },
       {
