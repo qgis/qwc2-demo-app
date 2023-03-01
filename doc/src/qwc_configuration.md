@@ -689,7 +689,7 @@ The following options are available for customizing the appearance of the QWC2 a
 *Note*: The icons in the `icons` folder are compiled into an icon font. Currently, the icons need to be black content on transparent background, and all drawings (including texts) must be converted to paths for the icons to render correctly.
 
 ## <a name="color-schemes"></a>Color schemes
-The QWC2 color scheme is fully customizeable via CSS. A default color-scheme is built-in (see [DefaultColorScheme.css](https://github.com/qgis/qwc2/blob/master/components/style/DefaultColorScheme.css)). To define a custom color scheme, copy the default color scheme, add an appropriate class name to the `:root` selector, and modify the colors as desided. There are two examples (`highcontrast` and `dark`) in [DefaultColorScheme.css](https://github.com/qgis/qwc2-demo-app/blob/master/static/assets/css/colorschemes.css).
+The QWC2 color scheme is fully customizeable via CSS. A default color-scheme is built-in (see [DefaultColorScheme.css](https://github.com/qgis/qwc2/blob/master/components/style/DefaultColorScheme.css)). To define a custom color scheme, copy the default color scheme, add an appropriate class name to the `:root` selector, and modify the colors as desided. There are two examples (`highcontrast` and `dark`) in [colorschemes.css](https://github.com/qgis/qwc2-demo-app/blob/master/static/assets/css/colorschemes.css).
 
 You can then modify the color scheme which is applied by default by setting `defaultColorScheme` in `config.json` to an appropriate class name (i.e. `highcontrast` or `dark`).
 
