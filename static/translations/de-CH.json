@@ -252,6 +252,15 @@
     "navbar": {
       "perpage": "pro Seite"
     },
+    "numericinput": {
+      "angle": "Winkel",
+      "featureunsupported": "Numerische Eingabe nicht verfügbar für dieses Objekt",
+      "height": "Höhe",
+      "nofeature": "Kein Objekt aktiv",
+      "side": "Seite",
+      "width": "Breite",
+      "windowtitle": "Numerische Eingabe"
+    },
     "print": {
       "grid": "Gitter",
       "layout": "Format",
@@ -294,6 +303,7 @@
       "layer": "Ebene",
       "line": "Linie",
       "measurements": "Messungen anzeigen",
+      "numericinput": "Numerische Eingabe",
       "outline": "Rand",
       "pick": "Auswählen",
       "point": "Punkt",
@@ -308,18 +318,23 @@
     "routing": {
       "add": "Hinzufügen",
       "addviapoint": "Routenpunkt hinzufügen",
-      "compute": "Berechnen",
+      "clear": "Zurücksetzen",
       "computefailed": "Berechnung fehlgeschlagen",
+      "computing": "Berechnung...",
       "export": "Exportieren",
+      "fastest": "Schnellste",
       "fromhere": "Route von hier",
       "iso_intervals": "Intervalle",
       "iso_mode": "Modus",
       "iso_mode_distance": "Distanz",
       "iso_mode_time": "Zeit",
+      "isocenter": "Mittelpunkt hier",
       "maxspeed": "Max. Geschwindigkeit",
+      "method": "Methode",
       "reachability": "Erreichbarkeit",
+      "roundtrip": "Rundweg",
       "route": "Route",
-      "setcenter": "Mittelpunkt hier setzten",
+      "shortest": "Kürzeste",
       "tohere": "Route nach hier",
       "windowtitle": "Routing"
     },

@@ -252,6 +252,15 @@
     "navbar": {
       "perpage": ""
     },
+    "numericinput": {
+      "angle": "",
+      "featureunsupported": "",
+      "height": "",
+      "nofeature": "",
+      "side": "",
+      "width": "",
+      "windowtitle": ""
+    },
     "print": {
       "grid": "Siatka",
       "layout": "Layout",
@@ -294,6 +303,7 @@
       "layer": "Warstwa",
       "line": "Linia",
       "measurements": "",
+      "numericinput": "",
       "outline": "Szkic",
       "pick": "Wybierz",
       "point": "Punkt",
@@ -308,18 +318,23 @@
     "routing": {
       "add": "",
       "addviapoint": "",
-      "compute": "",
+      "clear": "",
       "computefailed": "",
+      "computing": "",
       "export": "",
+      "fastest": "",
       "fromhere": "",
       "iso_intervals": "",
       "iso_mode": "",
       "iso_mode_distance": "",
       "iso_mode_time": "",
+      "isocenter": "",
       "maxspeed": "",
+      "method": "",
       "reachability": "",
+      "roundtrip": "",
       "route": "",
-      "setcenter": "",
+      "shortest": "",
       "tohere": "",
       "windowtitle": ""
     },

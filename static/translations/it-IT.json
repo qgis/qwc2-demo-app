@@ -252,6 +252,15 @@
     "navbar": {
       "perpage": "per pagina"
     },
+    "numericinput": {
+      "angle": "Angolo",
+      "featureunsupported": "Formulario numerico non disponibile per questa geometria",
+      "height": "Altezza",
+      "nofeature": "Nessun oggetto attivo",
+      "side": "Lato",
+      "width": "Larghezza",
+      "windowtitle": "Formulario numerico"
+    },
     "print": {
       "grid": "Griglia",
       "layout": "Layout",
@@ -294,6 +303,7 @@
       "layer": "Layer",
       "line": "Linea",
       "measurements": "Mostra misurazioni",
+      "numericinput": "Formulario numerico",
       "outline": "Contorno",
       "pick": "Seleziona",
       "point": "Punto",
@@ -307,20 +317,25 @@
     },
     "routing": {
       "add": "Aggiungi",
-      "addviapoint": "Aggiungi punto di itinerario",
-      "compute": "Calcola",
+      "addviapoint": "Via qui",
+      "clear": "Azzera",
       "computefailed": "Errore durante il calcolo",
+      "computing": "Calcolo...",
       "export": "Esporta",
-      "fromhere": "Percorso da qui",
+      "fastest": "Più veloce",
+      "fromhere": "Da qui",
       "iso_intervals": "Intervalli",
       "iso_mode": "Modalità",
       "iso_mode_distance": "Distanza",
       "iso_mode_time": "Tempo",
+      "isocenter": "Centro qui",
       "maxspeed": "Velocità massima",
+      "method": "Metodo",
       "reachability": "Raggiungibilità",
+      "roundtrip": "Andata e ritorno",
       "route": "Rotta",
-      "setcenter": "Imposta il centro qui",
-      "tohere": "Percorso fino a qui",
+      "shortest": "Più corta",
+      "tohere": "A qui",
       "windowtitle": "Routing"
     },
     "scratchdrawing": {

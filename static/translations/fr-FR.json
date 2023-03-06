@@ -252,6 +252,15 @@
     "navbar": {
       "perpage": "Par page"
     },
+    "numericinput": {
+      "angle": "Angle",
+      "featureunsupported": "Entrée numérique non disponible pour cette géométrie",
+      "height": "Hauteur",
+      "nofeature": "Aucune objet active",
+      "side": "Côté",
+      "width": "Largeur",
+      "windowtitle": "Entrée numérique"
+    },
     "print": {
       "grid": "Grille",
       "layout": "Format",
@@ -294,6 +303,7 @@
       "layer": "Couche",
       "line": "Ligne",
       "measurements": "Montrer les mesures",
+      "numericinput": "Entrée numérique",
       "outline": "Contour",
       "pick": "Choisir",
       "point": "Point",
@@ -307,20 +317,25 @@
     },
     "routing": {
       "add": "Ajouter",
-      "addviapoint": "Ajouter un point d'itinéraire",
-      "compute": "Calculer",
+      "addviapoint": "Par ici",
+      "clear": "Réinitialiser",
       "computefailed": "Échec du calcul",
+      "computing": "Calculation...",
       "export": "Exporter",
-      "fromhere": "Itinéraire à partir d'ici",
+      "fastest": "Plus rapide",
+      "fromhere": "À partir d'ici",
       "iso_intervals": "Intervalles",
       "iso_mode": "Mode",
       "iso_mode_distance": "Distance",
       "iso_mode_time": "Temps",
+      "isocenter": "Centre ici",
       "maxspeed": "Vitesse maximale",
+      "method": "Méthode",
       "reachability": "Accessibilité",
+      "roundtrip": "Aller-retour",
       "route": "Route",
-      "setcenter": "Fixez le centre ici",
-      "tohere": "Itinéraire jusqu'ici",
+      "shortest": "Plus courte",
+      "tohere": "Jusqu'ici",
       "windowtitle": "Routage"
     },
     "scratchdrawing": {
