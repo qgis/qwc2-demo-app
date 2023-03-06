@@ -95,6 +95,7 @@
     "no-eval": 2,                    // http://eslint.org/docs/rules/no-eval
     "no-extend-native": 2,           // http://eslint.org/docs/rules/no-extend-native
     "no-extra-bind": 2,              // http://eslint.org/docs/rules/no-extra-bind
+    "no-extra-semi": "warn",
     "no-floating-decimal": 2,        // http://eslint.org/docs/rules/no-floating-decimal
     "no-implied-eval": 2,            // http://eslint.org/docs/rules/no-implied-eval
     "no-lone-blocks": 2,             // http://eslint.org/docs/rules/no-lone-blocks
@@ -174,6 +175,7 @@
     "react/sort-prop-types": 2,      // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
     "react/no-did-mount-set-state": [2, "disallow-in-func"], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
     "react/self-closing-comp": 2,    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
-    "react/jsx-wrap-multilines": 2   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
+    "react/jsx-wrap-multilines": 2,   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
+    "react/no-access-state-in-setstate": "error"
   }
 }
