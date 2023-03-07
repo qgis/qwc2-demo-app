@@ -18,8 +18,10 @@
   "allowReorderingLayers": true,
   "preventSplittingGroupsWhenReordering": false,
   "allowLayerTreeSeparators": false,
+  "flattenLayerTreeGroups": false,
   "allowRemovingThemeLayers": true,
   "globallyDisableDockableDialogs": false,
+  "globallyDisableMaximizeableDialogs": false,
   "searchThemes": true,
   "allowAddingOtherThemes": true,
   "allowFractionalZoom": false,
@@ -73,257 +75,7 @@
     }
   ],
   "plugins": {
-    "mobile": [
-      {
-        "name": "Map",
-        "cfg": {
-          "mapOptions": {
-            "zoomDuration": 250,
-            "enableRotation": true
-          },
-          "toolsOptions": {
-            "OverviewSupport": {
-              "tipLabel": "Overview"
-            },
-            "LocateSupport": {
-              "keepCurrentZoomLevel": true,
-              "startupMode": "DISABLED"
-            },
-            "ScaleBarSupport": {
-              "units": "metric"
-            }
-          }
-        }
-      },
-      {
-        "name": "HomeButton",
-        "cfg": {
-          "position": 2
-        }
-      },
-      {
-        "name": "LocateButton",
-        "cfg": {
-          "position": 1
-        }
-      },
-      {
-        "name": "BackgroundSwitcher",
-        "cfg": {
-          "position": 0
-        }
-      },
-      {
-        "name": "TopBar",
-        "cfg": {
-          "menuItems": [
-            {"key": "ThemeSwitcher", "icon": "themes"},
-            {"key": "LayerTree", "icon": "layers"},
-            {"key": "LayerCatalog", "icon": "catalog"},
-            {"key": "Share", "icon": "share"},
-            {"key": "Bookmark", "icon": "bookmark"},
-            {"key": "Tools", "icon": "tools", "subitems": [
-              {"key": "Identify", "icon": "identify_region", "mode": "Region"},
-              {"key": "TimeManager", "icon": "clock"},
-              {"key": "Measure", "icon": "measure"},
-              {"key": "Redlining", "icon": "draw"},
-              {"key": "Editing", "icon": "editing"},
-              {"key": "FeatureForm", "icon": "featureform"},
-              {"key": "DxfExport", "icon": "dxfexport"},
-              {"key": "RasterExport", "icon": "rasterexport"}
-            ]},
-            {"key": "Print", "icon": "print"},
-            {"key": "Help", "icon": "info"}
-          ],
-          "searchOptions": {
-            "minScaleDenom": 1000,
-            "showProviderSelection": true,
-            "providerSelectionAllowAll": true,
-            "zoomToLayers": false,
-            "showProvidersInPlaceholder": false
-          },
-          "appMenuClearsTask": true,
-          "appMenuFilterField": true,
-          "appMenuVisibleOnStartup": false
-        }
-      },
-      {
-        "name": "Settings",
-        "cfg": {
-          "languages": [
-            {
-              "title": "English",
-              "value": "en-US"
-            },
-            {
-              "title": "Deutsch",
-              "value": "de-CH"
-            },
-            {
-              "title": "Italiano",
-              "value": "it-IT"
-            }
-          ],
-          "colorSchemes": [
-            {
-              "titleMsgId": "colorschemes.default",
-              "value": "default"
-            },
-            {
-              "titleMsgId": "colorschemes.highcontrast",
-              "value": "highcontrast"
-            },
-            {
-              "titleMsgId": "colorschemes.dark",
-              "value": "dark"
-            }
-          ]
-        }
-      },
-      {
-        "name": "ThemeSwitcher",
-        "cfg": {
-          "collapsibleGroups": true
-        }
-      },
-      {
-        "name": "Measure",
-        "cfg": {
-          "showMeasureModeSwitcher": true
-        }
-      },
-      {
-        "name": "BottomBar",
-        "cfg": {
-          "displayCoordinates": false,
-          "displayScales": false,
-          "viewertitleUrl": "http://qgis.org/",
-          "termsUrl": "http://qgis.org/"
-        }
-      },
-      {
-        "name": "Identify",
-        "cfg": {
-          "params": {
-            "FI_POINT_TOLERANCE": 32,
-            "FI_LINE_TOLERANCE": 16,
-            "FI_POLYGON_TOLERANCE": 8,
-            "feature_count": 20,
-            "region_feature_count": 100
-          },
-          "enableExport": true,
-          "longAttributesDisplay": "wrap",
-          "displayResultTree": false,
-          "featureInfoReturnsLayerName": true,
-          "clearResultsOnClose": true
-        }
-      },
-      {
-        "name": "Share",
-        "cfg": {
-          "showSocials": true,
-          "showLink": true,
-          "showQRCode": true
-        },
-        "mapClickAction": "identify"
-      },
-      {
-        "name": "Print",
-        "cfg": {
-          "inlinePrintOutput": false,
-          "printExternalLayers": true,
-          "gridInitiallyEnabled": false
-        },
-        "mapClickAction": "identify"
-      },
-      {
-        "name": "Help",
-        "cfg": {
-          "bodyContentsFragmentUrl": "assets/help.html"
-        },
-        "mapClickAction": "identify"
-      },
-      {
-        "name": "MapCopyright",
-        "cfg": {
-          "showThemeCopyrightOnly": false,
-          "prefixCopyrightsWithLayerName": false
-        }
-      },
-      {
-        "name": "LayerTree",
-        "cfg": {
-          "showLegendIcons": true,
-          "showRootEntry": true,
-          "showQueryableIcon": true,
-          "allowMapTips": true,
-          "allowCompare": true,
-          "allowImport": true,
-          "groupTogglesSublayers": false,
-          "grayUnchecked": false,
-          "layerInfoWindowSize": {"width": 480, "height": 400},
-          "bboxDependentLegend": true,
-          "scaleDependentLegend": "theme",
-          "extraLegendParameters": ""
-        },
-        "mapClickAction": "unset"
-      },
-      {
-        "name": "DxfExport"
-      },
-      {
-        "name": "RasterExport",
-        "cfg": {
-          "dpis": [96, 300],
-          "exportExternalLayers": true
-        }
-      },
-      {
-        "name": "Redlining"
-      },
-      {
-        "name": "Editing"
-      },
-      {
-          "name": "FeatureForm"
-      },
-      {
-        "name": "MapCompare"
-      },
-      {
-        "name": "HeightProfile",
-        "cfg": {
-          "heighProfilePrecision": 0
-        }
-      },
-      {
-        "name": "MapInfoTooltip",
-        "cfg": {
-          "elevationPrecision": 0,
-          "includeWGS84": true
-        }
-      },
-      {
-        "name": "StartupMarker",
-        "cfg": {
-          "removeMode": "onclickonmarker"
-        }
-      },
-      {
-        "name": "LayerCatalog",
-        "cfg": {
-          "catalogUrl": "http://qwc2.sourcepole.ch/assets/catalog.json"
-        }
-      },
-      {
-        "name": "Bookmark"
-      },
-      {
-        "name": "TimeManager",
-        "mapClickAction": "identify"
-      }
-    ],
-    "desktop": [
+    "common": [
       {
         "name": "Map",
         "cfg": {
@@ -351,22 +103,6 @@
         }
       },
       {
-        "name": "TaskButton",
-        "cfg": {
-          "position": 5,
-          "task": "LayerTree",
-          "icon": "layers"
-        }
-      },
-      {
-        "name": "TaskButton",
-        "cfg": {
-          "position": 6,
-          "task": "Editing",
-          "icon": "editing"
-        }
-      },
-      {
         "name": "HomeButton",
         "cfg": {
           "position": 4
@@ -376,18 +112,6 @@
         "name": "LocateButton",
         "cfg": {
           "position": 3
-        }
-      },
-      {
-        "name": "ZoomIn",
-        "cfg": {
-          "position": 2
-        }
-      },
-      {
-        "name": "ZoomOut",
-        "cfg": {
-          "position": 1
         }
       },
       {
@@ -422,14 +146,6 @@
             {"key": "Help", "icon": "info", "shortcut": "alt+shift+h"},
             {"key": "Settings", "icon": "cog"},
             {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$", "target": "iframe"}
-          ],
-          "toolbarItems": [
-            {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
-            {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
-            {"key": "Print", "icon": "print"},
-            {"key": "Identify", "icon": "identify_region", "mode": "Region"},
-            {"key": "FeatureForm", "icon": "featureform"},
-            {"key": "TimeManager", "icon": "clock"}
           ],
           "searchOptions": {
             "minScaleDenom": 1000,
@@ -602,7 +318,7 @@
         }
       },
       {
-          "name": "FeatureForm"
+        "name": "FeatureForm"
       },
       {
         "name": "MapCompare"
@@ -665,18 +381,71 @@
         }
       },
       {
+        "name": "ProcessNotifications"
+      },
+      {
         "name": "MapLegend",
         "cfg": {
-          "addGroupTitles": false,
-          "addLayerTitles": false,
+          "addGroupTitles": true,
+          "addLayerTitles": true,
           "bboxDependentLegend": false,
           "onlyVisibleLegend": false,
           "scaleDependentLegend": false,
-          "extraLegendParameters": ""
+          "extraLegendParameters": "LAYERTITLE=FALSE"
         }
       },
       {
         "name": "Routing"
+      }
+    ],
+    "mobile": [
+      {
+        "name": "BottomBar",
+        "cfg": {
+          "displayCoordinates": false,
+          "displayScales": false
+        }
+      }
+    ],
+    "desktop": [
+      {
+        "name": "TaskButton",
+        "cfg": {
+          "position": 5,
+          "task": "LayerTree",
+          "icon": "layers"
+        }
+      },
+      {
+        "name": "TaskButton",
+        "cfg": {
+          "position": 6,
+          "task": "Editing",
+          "icon": "editing"
+        }
+      },
+      {
+        "name": "ZoomIn",
+        "cfg": {
+          "position": 2
+        }
+      },
+      {
+        "name": "ZoomOut",
+        "cfg": {
+          "position": 1
+        }
+      },
+      {
+        "name": "TopBar",
+        "cfg": {
+          "toolbarItems": [
+            {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
+            {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
+            {"key": "Print", "icon": "print"},
+            {"key": "Identify", "icon": "identify_region", "mode": "Region"}
+          ]
+        }
       }
     ]
   }
