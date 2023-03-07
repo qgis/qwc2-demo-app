@@ -96,6 +96,7 @@ All settings are optional, with fallback to the default values as documented.
 |`importLayerUrlPresets`               | A list of predefined URLs from which the user can choose when importing layers from the layer tree. Entries must be strings or objects of the format `{"label": "<Label>", "value": "<URL>"}`. |
 |`identifyTool`                        | The name of the identify plugin to use. It is possible to have multiple identify tools, and i.e. on a per-theme basis select which one is active. Default value: `Identify`. |
 |`globallyDisableDockableDialogs`      | Whether to globally disable the dockable feature of popup dialogs. Default value: `false`. |
+|`globallyDisableMaximizeableDialogs`      | Whether to globally disable the maximizeable feature of popup dialogs. Default value: `false`. |
 
 *Notes*:
 
@@ -103,7 +104,27 @@ All settings are optional, with fallback to the default values as documented.
 - If `preserveExtentOnThemeSwitch = true`, the current extent is preserved if it is within the new theme extent and if the current theme map projection is equal to the new theme projection. If `preserveExtentOnThemeSwitch = "force"`, the current extent is preserved regardless of whether it is within the new theme extent, but the current and new theme map projections must still match.
 
 *Plugin configuration*:<a name="config-json-plugin-conf"></a>
-The plugin configuration is entered separately for desktop and for mobile mode. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/static/config.json) for a list of available configuration options. Each plugin configuration block is of the format
+The plugin configuration is entered as follows:
+
+    "plugins": {
+      "common": [
+        {<PluginConfig>},
+        {<PluginConfig>},
+        ...
+      ],
+      "mobile": [
+        {<PluginConfig>},
+        {<PluginConfig>},
+        ...
+      ],
+      "desktop": [
+        {<PluginConfig>},
+        {<PluginConfig>},
+        ...
+      ]
+    }
+
+The final `mobile` and `desktop` configurations will be computed by merging the `common` configuration with the respective specific configuration. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/static/config.json) for a list of available configuration options. Each `<PluginConfig>` block is of the format
 
     {
       "name": "<PluginName">,
