@@ -69,8 +69,8 @@ function geoAdminLocationSearch(text, searchParams, callback, axios) {
                     items: []
                 };
             }
-            const x = entry.attrs.x;
-            const y = entry.attrs.y;
+            const x = entry.attrs.y;
+            const y = entry.attrs.x;
             resultGroups[entry.attrs.origin].items.push({
                 id: entry.id,
                 text: entry.attrs.label,
