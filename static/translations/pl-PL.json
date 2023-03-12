@@ -319,6 +319,7 @@
       "clear": "",
       "computefailed": "",
       "computing": "",
+      "excludepolygons": "",
       "export": "",
       "fastest": "",
       "fromhere": "",
@@ -329,6 +330,10 @@
       "isocenter": "",
       "maxspeed": "",
       "method": "",
+      "mode_auto": "",
+      "mode_bicycle": "",
+      "mode_bus": "",
+      "mode_walking": "",
       "reachability": "",
       "roundtrip": "",
       "route": "",
@@ -455,6 +460,7 @@
       "zoomout": "Oddal"
     },
     "vectorlayerpicker": {
+      "none": "",
       "prompt": ""
     },
     "window": {

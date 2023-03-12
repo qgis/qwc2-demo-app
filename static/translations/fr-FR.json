@@ -319,6 +319,7 @@
       "clear": "Réinitialiser",
       "computefailed": "Échec du calcul",
       "computing": "Calculation...",
+      "excludepolygons": "",
       "export": "Exporter",
       "fastest": "Plus rapide",
       "fromhere": "À partir d'ici",
@@ -329,6 +330,10 @@
       "isocenter": "Centre ici",
       "maxspeed": "Vitesse maximale",
       "method": "Méthode",
+      "mode_auto": "Automobile",
+      "mode_bicycle": "Bicyclette",
+      "mode_bus": "Car",
+      "mode_walking": "Marcher",
       "reachability": "Accessibilité",
       "roundtrip": "Aller-retour",
       "route": "Route",
@@ -455,6 +460,7 @@
       "zoomout": "Dézoomer"
     },
     "vectorlayerpicker": {
+      "none": "Aucune",
       "prompt": "Entrez le nom de la couche"
     },
     "window": {
