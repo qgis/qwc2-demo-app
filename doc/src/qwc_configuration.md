@@ -345,8 +345,9 @@ You can also set the "Data Url" for a layer in QGIS (Layer Properties &rarr; QGI
 
     wms:<service_url>?<options>#<layername>
 
-(for instance, `wms:http://wms.geo.admin.ch?tiled=false#ch.are.bauzonen`), and an external layer pointing to the specified WMS service will automatically be created for the corresponding QGIS layer.
-Note that this is currently only implemented for WMS layers.
+(for instance, `wms:http://wms.geo.admin.ch?tiled=false&infoFormat=application/geojson#ch.are.bauzonen`), and an external layer pointing to the specified WMS service will automatically be created for the corresponding QGIS layer.
+Note: `infoFormat` is a special parameter through which the GetFeatureInfo query format is controled. If omitted, the default format is `text/plain`.
+This is currently only implemented for WMS layers.
 
 
 **Theme info links:**
