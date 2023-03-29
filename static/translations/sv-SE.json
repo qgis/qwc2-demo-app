@@ -282,7 +282,11 @@
     "rasterexport": {
       "format": "Format:",
       "resolution": "Upplösning:",
-      "selectinfo": "Dra en rektangel runt området som ska exporteras..."
+      "scale": "",
+      "size": "",
+      "submit": "",
+      "usersize": "",
+      "wait": ""
     },
     "redlining": {
       "border": "Kant",
