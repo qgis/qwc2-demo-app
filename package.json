@@ -18,6 +18,7 @@
         "eslint": "8.32.0",
         "eslint-plugin-react": "7.32.1",
         "html-webpack-plugin": "5.5.0",
+        "react-docgen": "^5.4.3",
         "source-map-loader": "4.0.1",
         "string-replace-loader": "3.1.0",
         "style-loader": "3.3.1",
@@ -32,6 +33,7 @@
         "iconfont": "node qwc2/scripts/makeIconkit.js",
         "themesconfig": "node qwc2/scripts/themesConfig.js",
         "tsupdate": "node qwc2/scripts/updateTranslations.js",
+        "plugindoc": "node doc/gen-plugin-docs.js",
         "build": "npm run prod",
         "analyze": "webpack --mode production --json | webpack-bundle-size-analyzer",
         "release": "node -e \"process.exit(require('os').platform() === 'win32' ? 0 : 1)\" && qwc2\\scripts\\package-commands.bat release || ./qwc2/scripts/package-commands.sh release"

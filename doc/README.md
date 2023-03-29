@@ -3,6 +3,7 @@
 - [Requirements](src/requirements.md)
 - [Quick start](src/quick_start.md)
 - [QWC configuration](src/qwc_configuration.md)
+- [Plugin reference](src/plugins.md)
 - [Url parameters](src/url_parameters.md)
 - [Startup position](src/startup_position.md)
 - [Server side configuration](src/server_side_configuration.md)

@@ -124,7 +124,7 @@ The plugin configuration is entered as follows:
       ]
     }
 
-The final `mobile` and `desktop` configurations will be computed by merging the `common` configuration with the respective specific configuration. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/static/config.json) for a list of available configuration options. Each `<PluginConfig>` block is of the format
+The final `mobile` and `desktop` configurations will be computed by merging the `common` configuration with the respective specific configuration. Each `<PluginConfig>` block is of the format
 
     {
       "name": "<PluginName">,
@@ -139,6 +139,8 @@ where
 * `name`: The plugin name
 * `cfg`: Optional: arbitrary configuration properties, directly passed to the relative plugin class as React props.
 * `mapClickAction`: Optional: for plugins which are associated to a viewer task (and typically linked in the `menuItems` or `toolbarItems` of the `TopBar`, see below), determines whether a click in the map will result in the identify tool being invoked, the task being unset, or whether no particular action should be performed (default). Note: `"mapClickAction"` should be `null` or omitted for plugins which handle mouse events on the map themselves. Can optionally also be specified directly in the `menuItems` or `toolbarItems` entries, see below.
+
+The [Plugin reference](plugins.md) lists all available stock plugins and configuration options. Also refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/static/config.json) for a concrete example.
 
 You can omit a plugin entry to disable it in desktop and/or mobile mode. To completely remove a plugin from the compiled application, remove the corresponding entry in `js/appConfig.js`.
 

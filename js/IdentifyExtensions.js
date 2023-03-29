@@ -20,7 +20,10 @@ export function customAttributeCalculator(layer, feature) {
     return [];
 }
 
-
+export function attributeTransform(name, value, layer, feature) {
+    // Here you can transform the attribute value.
+    return value;
+}
 export const customExporters = [
     /*
     {

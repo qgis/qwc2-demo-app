@@ -59,7 +59,7 @@ import APIPlugin from 'qwc2/plugins/API';
 import SettingsPlugin from 'qwc2/plugins/Settings';
 import ProcessNotificationsPlugin from 'qwc2/plugins/ProcessNotifications';
 import RoutingPlugin from 'qwc2/plugins/Routing';
-import {customAttributeCalculator, customExporters} from './IdentifyExtensions';
+import {customAttributeCalculator, attributeTransform, customExporters} from './IdentifyExtensions';
 
 import defaultLocaleData from '../static/translations/en-US.json';
 
@@ -131,6 +131,7 @@ export default {
         cfg: {
             IdentifyPlugin: {
                 attributeCalculator: customAttributeCalculator,
+                attributeTransform: attributeTransform,
                 customExporters: customExporters
             }
         }
