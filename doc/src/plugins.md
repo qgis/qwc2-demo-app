@@ -116,7 +116,7 @@ Uses the DXF format support of QGIS Server.
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
 | formatOptions | `string` | Optional format options to pass to QGIS Server via FORMAT_OPTIONS. | `undefined` |
-| layerOptions | `[{,  label: string,,  layers: string,,}]` | Optional choice of layer sets to pass to QGIS Server via LAYERS. | `undefined` |
+| layerOptions | `[{`<br />`  label: string,`<br />`  layers: string,`<br />`}]` | Optional choice of layer sets to pass to QGIS Server via LAYERS. | `undefined` |
 | serviceUrl | `string` | Optional URL invoked on export instead of the default QGIS Server URL. | `undefined` |
 
 Editing
@@ -231,7 +231,7 @@ See [https://qwc2.sourcepole.ch/assets/catalog.json](https://qwc2.sourcepole.ch/
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
 | catalogUrl | `string` | The URL to the catalog JSON file. | `undefined` |
-| windowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size. | `{width: 320, height: 320}` |
+| windowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size. | `{width: 320, height: 320}` |
 
 LayerTree
 ----------------------------------------------------------------
@@ -252,7 +252,7 @@ Displays the map layer tree in a sidebar.
 | grayUnchecked | `bool` | Whether to display unchecked layers gray in the layertree. | `true` |
 | groupTogglesSublayers | `bool` | Whether toggling a group also toggles all sublayers. | `false` |
 | infoInSettings | `bool` | Whether to display the layer info button inside the layer settings menu rather than next to the layer title. | `true` |
-| layerInfoWindowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The initial size of the layer info window. | `{width: 320, height: 480}` |
+| layerInfoWindowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The initial size of the layer info window. | `{width: 320, height: 480}` |
 | mapTipsEnabled | `bool` | Whether map tips are enabled by default. | `undefined` |
 | scaleDependentLegend | `{bool, string}` | Whether to display a scale dependent legend. Can be `true|false|"theme"`, latter means only for theme layers. | `undefined` |
 | showLegendIcons | `bool` | Whether to display legend icons. | `true` |
@@ -284,7 +284,7 @@ The main map component.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
-| mapOptions | `{`<br />`  zoomDuration: number,`<br />`  enableRotation: bool,`<br />`  rotation: number,`<br />`  panStepSize: number,`<br />`  panPageSize: number,`<br />`}` | Zoom duration in ms, rotation in degrees, panStepSize and panPageSize as fraction of map width/height. | `{}` |
+| mapOptions | `{`<br />`  zoomDuration: number,`<br />`  enableRotation: bool,`<br />`  rotation: number,`<br />`  panStepSize: number,`<br />`  panPageSize: number,`<br />`}` | Zoom duration in ms, rotation in degrees, panStepSize and panPageSize as fraction of map width/height. | `{}` |
 | showLoading | `bool` | Whether to display the loading spinner when layers are loading. | `true` |
 | swipeGeometryTypeBlacklist | `[string]` | A list of layer geometry types to ignore when determining the top-most layer to compare. | `[]` |
 | swipeLayerNameBlacklist | `[string]` | A list of layer names to ignore when determining the top-most layer to compare. You can use `*` as a whildcard character. | `[]` |
@@ -331,7 +331,7 @@ The user can toggle whether to display only layers which are enabled, visible in
 | extraLegendParameters | `string` | Extra parameters to add to the GetLegendGraphics request. | `undefined` |
 | onlyVisibleLegend | `bool` | Whether to only include enabled layers in the legend by default. | `false` |
 | scaleDependentLegend | `bool` | Whether to display a scale-dependent legend by default. | `false` |
-| windowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size. | `{width: 320, height: 320}` |
+| windowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size. | `{width: 320, height: 320}` |
 
 MapTip
 ----------------------------------------------------------------
@@ -388,7 +388,7 @@ Allows exporting a selected portion of the map to an image ("screenshot").
 | defaultScaleFactor | `number` | The factor to apply to the map scale to determine the initial export map scale. | `0.5` |
 | dpis | `[number]` | List of dpis at which to export the map. If empty, the default server dpi is used. | `undefined` |
 | exportExternalLayers | `bool` | Whether to include external layers in the image. Requires QGIS Server 3.x! | `true` |
-| pageSizes | `[{,  name: string,,  width: number,,  height: number,,}]` | List of image sizes to offer, in addition to the free-hand selection. The width and height are in millimeters. | `[`<br />`    {name: '15 x 15 cm', width: 150, height: 150},`<br />`    {name: '30 x 30 cm', width: 300, height: 300}`<br />`]` |
+| pageSizes | `[{`<br />`  name: string,`<br />`  width: number,`<br />`  height: number,`<br />`}]` | List of image sizes to offer, in addition to the free-hand selection. The width and height are in millimeters. | `[`<br />`    {name: '15 x 15 cm', width: 150, height: 150},`<br />`    {name: '30 x 30 cm', width: 300, height: 300}`<br />`]` |
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
 Redlining
@@ -410,7 +410,7 @@ Uses Valhalla as backend by default, with `routingServiceUrl` pointing to a Valh
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
 | enabledProviders | `[string]` | List of search providers to use for routing location search. | `["coordinates", "nominatim"]` |
-| geometry | `{`<br />`  initialWidth: number,`<br />`  initialHeight: number,`<br />`  initialX: number,`<br />`  initialY: number,`<br />`  initiallyDocked: bool,`<br />`}` | Default window geometry. | `{`<br />`    initialWidth: 320,`<br />`    initialHeight: 640,`<br />`    initialX: 0,`<br />`    initialY: 0,`<br />`    initiallyDocked: true`<br />`}` |
+| geometry | `{`<br />`  initialWidth: number,`<br />`  initialHeight: number,`<br />`  initialX: number,`<br />`  initialY: number,`<br />`  initiallyDocked: bool,`<br />`}` | Default window geometry. | `{`<br />`    initialWidth: 320,`<br />`    initialHeight: 640,`<br />`    initialX: 0,`<br />`    initialY: 0,`<br />`    initiallyDocked: true`<br />`}` |
 
 ScratchDrawing
 ----------------------------------------------------------------
@@ -430,9 +430,9 @@ Allows configuring language and color scheme.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
-| colorSchemes | `[{,  title: string,,  titleMsgId: string,,  value: string,,}]` | List of available color schemes. Value is the css class name, title/titleMsgId the display name. | `[]` |
+| colorSchemes | `[{`<br />`  title: string,`<br />`  titleMsgId: string,`<br />`  value: string,`<br />`}]` | List of available color schemes. Value is the css class name, title/titleMsgId the display name. | `[]` |
 | languages | `array` | List of available languages. Value is the lang code, title/titleMsgId the display name. | `[]` |
-| side | `string` | Whether snapping is enabled by default when editing. | `'right'` |
+| side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
 Share
 ----------------------------------------------------------------
@@ -443,7 +443,7 @@ Share the current map as a URL/permalink.
 | showLink | `bool` | Show the map URL. | `true` |
 | showQRCode | `bool` | Show the QR code of the map URL. | `true` |
 | showSocials | `{bool, [string]}` | Show the social buttons. Either `true` or `false`to enable/disable all, or an array of specific buttons to display (possible choices: `email`, `facebook`, `twitter`, `linkedin`, `whatsapp`). | `true` |
-| side | `string` | Whether snapping is enabled by default when editing. | `'right'` |
+| side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
 StartupMarker
 ----------------------------------------------------------------
@@ -472,8 +472,8 @@ Theme switcher panel.
 |----------|------|-------------|---------------|
 | collapsibleGroups | `bool` | Whether to allow collapsing theme groups. | `undefined` |
 | showLayerAfterChangeTheme | `bool` | Whether to show the LayerTree by default after switching the theme. | `false` |
-| side | `string` | Whether snapping is enabled by default when editing. | `'right'` |
-| themeLayersListWindowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size for the theme layers dialog. | `{width: 400, height: 300}` |
+| side | `string` | The side of the application on which to display the sidebar. | `'right'` |
+| themeLayersListWindowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size for the theme layers dialog. | `{width: 400, height: 300}` |
 | width | `string` | Default width as a CSS string. | `"50%"` |
 
 TimeManager
@@ -489,7 +489,7 @@ Allows controling the time dimension of temporal WMS layers.
 | defaultStepUnit | `string` | The default step unit for the temporal animation, one of `ms`, `s`, `m`, `d`, `M`, `y`, `10y`, `100y` | `"d"` |
 | defaultTimelineDisplay | `string` | The default timeline display mode. One of `hidden`, `minimal`, `features`, `layers`. | `undefined` |
 | defaultTimelineMode | `string` | The default timeline mode. One of `fixed`, `infinite`. | `"fixed"` |
-| markerConfiguration | `{`<br />`  markersAvailable: bool,`<br />`  gradient: [string],`<br />`  markerOffset: array,`<br />`  markerPins: bool,`<br />`}` | The feature marker configuration. | `{`<br />`    markersAvailable: true,`<br />`    gradient: ["#f7af7d", "#eacc6e", "#fef89a", "#c5e09b", "#a3d29c", "#7cc096", "#79c8c5", "#34afce"],`<br />`    markerOffset: [0, 0],`<br />`    markerPins: true`<br />`}` |
+| markerConfiguration | `{`<br />`  markersAvailable: bool,`<br />`  gradient: [string],`<br />`  markerOffset: array,`<br />`  markerPins: bool,`<br />`}` | The feature marker configuration. | `{`<br />`    markersAvailable: true,`<br />`    gradient: ["#f7af7d", "#eacc6e", "#fef89a", "#c5e09b", "#a3d29c", "#7cc096", "#79c8c5", "#34afce"],`<br />`    markerOffset: [0, 0],`<br />`    markerPins: true`<br />`}` |
 | stepUnits | `[string]` | The available temporal anumation step units. | `["s", "m", "h", "d", "M", "y"]` |
 
 TopBar
@@ -506,7 +506,7 @@ Top bar, containing the logo, searchbar, task buttons and app menu.
 | logoSrc | `string` | The logo image URL if a different source than the default assets/img/logo.<ext> and assets/img/logo-mobile.<ext> is desired. | `undefined` |
 | logoUrl | `string` | The hyperlink to open when the logo is clicked. | `undefined` |
 | menuItems | `array` | The menu items. Refer to the corresponding chapter of the viewer documentation and the sample config.json. | `[]` |
-| searchOptions | `object` | Options passed down to the search component. | `{}` |
+| searchOptions | `object` | Options passed down to the search component. See the searchOption propType of the used search component. | `{}` |
 | toolbarItems | `array` | The toolbar. Refer to the corresponding chapter of the viewer documentation and the sample config.json. | `[]` |
 | toolbarItemsShortcutPrefix | `string` | The keyboard shortcut prefix for triggering toolbar tasks. I.e. alt+shift. The task are then triggered by <prefix>+{1,2,3,...} for the 1st, 2nd, 3rd... toolbar icon. | `undefined` |
 

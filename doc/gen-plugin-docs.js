@@ -16,17 +16,15 @@ pluginData = pluginData.flat();
 
 function parsePropType(type) {
     if (type.name === 'shape') {
-        return [
-            '{',
-            ...Object.entries(type.value).map(([key, value]) => { return '  ' + key + ": " + parsePropType(value) + ','; }),
-            '}'
-        ];
+        return '{\n' +
+                Object.entries(type.value).map(([key, value]) => { return '  ' + key + ": " + parsePropType(value) + ',\n'; }).join('') +
+                '}';
     } else if (type.name === 'arrayOf') {
-        return ['[' + parsePropType(type.value) + "]"];
+        return '[' + parsePropType(type.value) + "]";
     } else if (type.name === 'union') {
-        return ['{' + type.value.map(entry => parsePropType(entry)).join(", ") + '}'];
+        return '{' + type.value.map(entry => parsePropType(entry)).join(", ") + '}';
     } else {
-        return [type.name];
+        return type.name;
     }
 }
 
@@ -55,7 +53,7 @@ pluginData.forEach(plugin => {
         }
         ++documentedProps;
         const defaultValue = prop.defaultValue ? prop.defaultValue.value.split("\n").map(x => '`' + x.replace(' ', ' ') + '`').join("<br />") : "`undefined`";
-        const type = parsePropType(prop.type).map(x => '`' + x.replace(' ', ' ') + '`').join("<br />");
+        const type = "`" + parsePropType(prop.type).replaceAll(' ', ' ').replaceAll("\n", "`<br />`") + "`";
         output += `| ${name} | ${type} | ${prop.description} | ${defaultValue} |\n`;
     });
     if (documentedProps === 0) {
