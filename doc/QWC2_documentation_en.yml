@@ -5,6 +5,7 @@ nav:
     - Requirements: requirements.md
     - Quick start: quick_start.md
     - QWC2 configuration: qwc_configuration.md
+    - Plugin reference: plugins.md
     - URL parameters: url_parameters.md
     - Startup position: startup_position.md
     - Server-side configuration: server_side_configuration.md
