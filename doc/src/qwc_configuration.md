@@ -60,7 +60,7 @@ All settings are optional, with fallback to the default values as documented.
 |-------------------------------------|-------------|
 |`translationsPath`                   | Relative path to the `translations` folder. Default value: `translations`.   |
 |`assetsPath`                         | Relative path to the `assets` folder. Default value: `assets`.               |
-|`urlPositionFormat`                  | How to encode the current map extent in the URL, either `centerAndZoom` or `extent`. See [URL parameters](#url-parameters) for details. Default value: `extent`. |
+|`urlPositionFormat`                  | How to encode the current map extent in the URL, either `centerAndZoom` or `extent`. See [URL parameters](url_parameters.md) for details. Default value: `extent`. |
 |`urlPositionCrs`                     | The CRS used to encode the current map extent coordinates in the URL. Default value: the map projection. |
 |`omitUrlParameterUpdates`            | Whether to omit updating the URL parameters. Default value: `false`.      |
 |`defaultFeatureStyle`                | The default style to use for selection geometries and other unstyled features. Default value: see `qwc2/utils/FeatureStyles.js`. |
@@ -104,6 +104,7 @@ All settings are optional, with fallback to the default values as documented.
 - If `preserveExtentOnThemeSwitch = true`, the current extent is preserved if it is within the new theme extent and if the current theme map projection is equal to the new theme projection. If `preserveExtentOnThemeSwitch = "force"`, the current extent is preserved regardless of whether it is within the new theme extent, but the current and new theme map projections must still match.
 
 *Plugin configuration*:<a name="config-json-plugin-conf"></a>
+
 The plugin configuration is entered as follows:
 
     "plugins": {
@@ -166,7 +167,7 @@ where
 
 * `Key`: An arbitrary key name (not used by existing plugins), used to lookup the label for the entry from the translations.
 * `icon`: As above.
-* `url`: The URL to open. Can contain as placeholders the keys listed in <a href="#url-parameters">URL parameters</a>, encolsed in `$` (i.e. `$e$` for the extent). In addition, the placeholders `$x$` and `$y$` for the individual map center coordinates are also supported.
+* `url`: The URL to open. Can contain as placeholders the keys listed in [URL parameters](url_parameters.md), encolsed in `$` (i.e. `$e$` for the extent). In addition, the placeholders `$x$` and `$y$` for the individual map center coordinates are also supported.
 * `target`: The target where to open the URL, if empty, `_blank` is assumed. Can be `iframe` to open the link in a iframe window inside QWC2.
 
 
@@ -719,4 +720,4 @@ You can then modify the color scheme which is applied by default by setting `def
 
 To change the color scheme at runtime in QWC2, make sure the Settings plugin is enabled, and in the Settings plugin configuration block in `config.json` list the color schemes below `colorSchemes`. Refer to the [sample `config.json`](https://github.com/qgis/qwc2-demo-app/blob/master/static/config.json).
 
-*Note*: When changing the color scheme via Settings dialog in QWC2, the picked color scheme is stored in the browser local storage, and this setting will override the `defaultColorScheme` setting from `config.json. Specifying the `style` URL-parameter (see [URL parameters](#url-parameters)) will take precedence over all other settings.
+*Note*: When changing the color scheme via Settings dialog in QWC2, the picked color scheme is stored in the browser local storage, and this setting will override the `defaultColorScheme` setting from `config.json. Specifying the `style` URL-parameter (see [URL parameters](url_parameters.md)) will take precedence over all other settings.

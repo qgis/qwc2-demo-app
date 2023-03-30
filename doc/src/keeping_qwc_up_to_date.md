@@ -14,4 +14,4 @@ or update to the latest `master`, i.e.:
     git checkout master
     git pull
 
-The [ChangeLog in the demo application repository](https://github.com/qgis/qwc2-demo-app/blob/master/ChangeLog.md) documents major changes, and in particular all incompatible changes between releases which require changes to the application specific code and/or configuration.
+The [UpgradeNotes in the demo application repository](https://github.com/qgis/qwc2-demo-app/blob/master/UpgradeNotes.md) documents major changes, and in particular all incompatible changes between releases which require changes to the application specific code and/or configuration.
