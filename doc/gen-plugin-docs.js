@@ -34,20 +34,20 @@ function parsePropType(type) {
 let output = "";
 output += "Plugin reference\n";
 output += "================\n";
-output += "\n"
+output += "\n";
 
 pluginData.forEach(plugin => {
-    output += `* <a href="#plugin-${plugin.displayName}">${plugin.displayName}</a>\n`;
+    output += `* [${plugin.displayName}](#${plugin.displayName.toLowerCase()})\n`;
 });
-output += "\n"
-output += "---\n"
+output += "\n";
+output += "---\n";
 pluginData.forEach(plugin => {
-    output += `${plugin.displayName}<a name="plugin-${plugin.displayName}"></a>\n`;
+    output += `${plugin.displayName}\n`;
     output += "----------------------------------------------------------------\n";
     output += plugin.description + "\n";
-    output += "\n"
-    output += "| Property | Type | Description | Default value |\n"
-    output += "|----------|------|-------------|---------------|\n"
+    output += "\n";
+    output += "| Property | Type | Description | Default value |\n";
+    output += "|----------|------|-------------|---------------|\n";
     let documentedProps = 0;
     Object.entries(plugin.props || {}).forEach(([name, prop]) => {
         if (!prop.description) {
@@ -58,11 +58,11 @@ pluginData.forEach(plugin => {
         const type = parsePropType(prop.type).map(x => '`' + x.replace(' ', ' ') + '`').join("<br />");
         output += `| ${name} | ${type} | ${prop.description} | ${defaultValue} |\n`;
     });
-    if (documentedProps == 0) {
+    if (documentedProps === 0) {
         output += "|\n";
     }
-    output += "\n"
+    output += "\n";
 });
 
 fs.writeFileSync('./doc/src/plugins.md', output);
-console.log("Plugin documentation written to doc/src/plugins.md!")
+console.log("Plugin documentation written to doc/src/plugins.md!");

@@ -1,47 +1,47 @@
 Plugin reference
 ================
 
-* <a href="#plugin-API">API</a>
-* <a href="#plugin-AttributeTable">AttributeTable</a>
-* <a href="#plugin-Authentication">Authentication</a>
-* <a href="#plugin-BackgroundSwitcher">BackgroundSwitcher</a>
-* <a href="#plugin-Bookmark">Bookmark</a>
-* <a href="#plugin-BottomBar">BottomBar</a>
-* <a href="#plugin-DxfExport">DxfExport</a>
-* <a href="#plugin-Editing">Editing</a>
-* <a href="#plugin-FeatureForm">FeatureForm</a>
-* <a href="#plugin-HeightProfile">HeightProfile</a>
-* <a href="#plugin-Help">Help</a>
-* <a href="#plugin-HomeButton">HomeButton</a>
-* <a href="#plugin-Identify">Identify</a>
-* <a href="#plugin-LayerCatalog">LayerCatalog</a>
-* <a href="#plugin-LayerTree">LayerTree</a>
-* <a href="#plugin-LocateButton">LocateButton</a>
-* <a href="#plugin-LoginUser">LoginUser</a>
-* <a href="#plugin-MapPlugin">MapPlugin</a>
-* <a href="#plugin-MapComparePlugin">MapComparePlugin</a>
-* <a href="#plugin-MapCopyright">MapCopyright</a>
-* <a href="#plugin-MapInfoTooltip">MapInfoTooltip</a>
-* <a href="#plugin-MapLegend">MapLegend</a>
-* <a href="#plugin-MapTip">MapTip</a>
-* <a href="#plugin-Measure">Measure</a>
-* <a href="#plugin-Print">Print</a>
-* <a href="#plugin-ProcessNotifications">ProcessNotifications</a>
-* <a href="#plugin-RasterExport">RasterExport</a>
-* <a href="#plugin-Redlining">Redlining</a>
-* <a href="#plugin-Routing">Routing</a>
-* <a href="#plugin-ScratchDrawing">ScratchDrawing</a>
-* <a href="#plugin-Settings">Settings</a>
-* <a href="#plugin-Share">Share</a>
-* <a href="#plugin-StartupMarker">StartupMarker</a>
-* <a href="#plugin-TaskButton">TaskButton</a>
-* <a href="#plugin-ThemeSwitcher">ThemeSwitcher</a>
-* <a href="#plugin-TimeManager">TimeManager</a>
-* <a href="#plugin-TopBar">TopBar</a>
-* <a href="#plugin-ZoomButton">ZoomButton</a>
+* [API](#api)
+* [AttributeTable](#attributetable)
+* [Authentication](#authentication)
+* [BackgroundSwitcher](#backgroundswitcher)
+* [Bookmark](#bookmark)
+* [BottomBar](#bottombar)
+* [DxfExport](#dxfexport)
+* [Editing](#editing)
+* [FeatureForm](#featureform)
+* [HeightProfile](#heightprofile)
+* [Help](#help)
+* [HomeButton](#homebutton)
+* [Identify](#identify)
+* [LayerCatalog](#layercatalog)
+* [LayerTree](#layertree)
+* [LocateButton](#locatebutton)
+* [LoginUser](#loginuser)
+* [MapPlugin](#mapplugin)
+* [MapComparePlugin](#mapcompareplugin)
+* [MapCopyright](#mapcopyright)
+* [MapInfoTooltip](#mapinfotooltip)
+* [MapLegend](#maplegend)
+* [MapTip](#maptip)
+* [Measure](#measure)
+* [Print](#print)
+* [ProcessNotifications](#processnotifications)
+* [RasterExport](#rasterexport)
+* [Redlining](#redlining)
+* [Routing](#routing)
+* [ScratchDrawing](#scratchdrawing)
+* [Settings](#settings)
+* [Share](#share)
+* [StartupMarker](#startupmarker)
+* [TaskButton](#taskbutton)
+* [ThemeSwitcher](#themeswitcher)
+* [TimeManager](#timemanager)
+* [TopBar](#topbar)
+* [ZoomButton](#zoombutton)
 
 ---
-API<a name="plugin-API"></a>
+API
 ----------------------------------------------------------------
 Exposes an API for interacting with QWC2 to `window.qwc2`.
 
@@ -49,7 +49,7 @@ Exposes an API for interacting with QWC2 to `window.qwc2`.
 |----------|------|-------------|---------------|
 |
 
-AttributeTable<a name="plugin-AttributeTable"></a>
+AttributeTable
 ----------------------------------------------------------------
 Displaying the attribute table of layers in a dialog.
 
@@ -63,7 +63,7 @@ The attribute table works for both read-only as well as read-write data resource
 | showEditFormButton | `bool` | Whether to show a button to open the edit form for selected layer. Requires the Editing plugin to be enabled. | `true` |
 | zoomLevel | `number` | The zoom level for zooming to point features. | `1000` |
 
-Authentication<a name="plugin-Authentication"></a>
+Authentication
 ----------------------------------------------------------------
 Handles authentication via the authentication service specified by `authServiceUrl`.
 
@@ -74,7 +74,7 @@ Handles authentication via the authentication service specified by `authServiceU
 | logoutTargetUrl | `string` | An URL to redirect to on logout, instead of the viewer URL. | `undefined` |
 | requireLogin | `bool` | Whether authentication is required, i.e. the viewer automatically redirects to the login page if no user is authenticated. | `undefined` |
 
-BackgroundSwitcher<a name="plugin-BackgroundSwitcher"></a>
+BackgroundSwitcher
 ----------------------------------------------------------------
 Map button for switching the background layer.
 
@@ -82,7 +82,7 @@ Map button for switching the background layer.
 |----------|------|-------------|---------------|
 | position | `number` | The position slot index of the map button, from the bottom (0: bottom slot). | `0` |
 
-Bookmark<a name="plugin-Bookmark"></a>
+Bookmark
 ----------------------------------------------------------------
 Allows managing user bookmarks.
 
@@ -94,7 +94,7 @@ Requires `permalinkServiceUrl` to point to a qwc-permalink-service.
 |----------|------|-------------|---------------|
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
-BottomBar<a name="plugin-BottomBar"></a>
+BottomBar
 ----------------------------------------------------------------
 Bottom bar, displaying mouse coordinate, scale, etc.
 
@@ -107,7 +107,7 @@ Bottom bar, displaying mouse coordinate, scale, etc.
 | viewertitleUrl | `string` | The URL of the viewer title label anchor. | `undefined` |
 | viewertitleUrlTarget | `string` | The target where to open the viewer title URL. If `iframe`, it will be displayed in an inline window, otherwise in a new tab. | `undefined` |
 
-DxfExport<a name="plugin-DxfExport"></a>
+DxfExport
 ----------------------------------------------------------------
 Allows exporting a selected extent of the map as DXF.
 
@@ -119,7 +119,7 @@ Uses the DXF format support of QGIS Server.
 | layerOptions | `[{,  label: string,,  layers: string,,}]` | Optional choice of layer sets to pass to QGIS Server via LAYERS. | `undefined` |
 | serviceUrl | `string` | Optional URL invoked on export instead of the default QGIS Server URL. | `undefined` |
 
-Editing<a name="plugin-Editing"></a>
+Editing
 ----------------------------------------------------------------
 Allows editing geometries and attributes of datasets.
 
@@ -137,7 +137,7 @@ for more information.
 | snappingActive | `bool` | Whether snapping is enabled by default when editing. | `true` |
 | width | `string` | The default width of the editing sidebar, as a CSS width string. | `"30em"` |
 
-FeatureForm<a name="plugin-FeatureForm"></a>
+FeatureForm
 ----------------------------------------------------------------
 Displays queried feature attributes in a form.
 
@@ -159,7 +159,7 @@ Can be used as default identify tool by setting `"identifyTool": "FeatureForm"` 
 | initialX | `number` | Initial x position of the form window. | `0` |
 | initialY | `number` | Initial y position of the form window. | `0` |
 
-HeightProfile<a name="plugin-HeightProfile"></a>
+HeightProfile
 ----------------------------------------------------------------
 Displays a height profile along a measured line.
 
@@ -173,7 +173,7 @@ Requires `elevationServiceUrl` to point to a qwc-elevation-service.
 | height | `number` | The height of the height profile widget in pixels. | `100` |
 | samples | `number` | The number of elevation samples to query. | `500` |
 
-Help<a name="plugin-Help"></a>
+Help
 ----------------------------------------------------------------
 Displays a custom help dialog in a sidebar.
 
@@ -185,7 +185,7 @@ See also https://github.com/qgis/qwc2-demo-app/blob/master/doc/src/qwc_configura
 | bodyContentsFragmentUrl | `string` | URL to a document containing a HTML fragment to display in the Help sidebar. | `undefined` |
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
-HomeButton<a name="plugin-HomeButton"></a>
+HomeButton
 ----------------------------------------------------------------
 Map button for reverting to the home extent of the theme.
 
@@ -193,7 +193,7 @@ Map button for reverting to the home extent of the theme.
 |----------|------|-------------|---------------|
 | position | `number` | The position slot index of the map button, from the bottom (0: bottom slot). | `5` |
 
-Identify<a name="plugin-Identify"></a>
+Identify
 ----------------------------------------------------------------
 Displays queried feature attributes.
 
@@ -220,7 +220,7 @@ for customized queries and templates for the result presentation.
 | initiallyDocked | `bool` | Whether the identify dialog should be initially docked. | `undefined` |
 | replaceImageUrls | `bool` | Whether to replace an attribute value containing an URL to an image with an inline image. | `true` |
 
-LayerCatalog<a name="plugin-LayerCatalog"></a>
+LayerCatalog
 ----------------------------------------------------------------
 Displays a pre-configured catalog of external layers in a window.
 
@@ -233,7 +233,7 @@ See [https://qwc2.sourcepole.ch/assets/catalog.json](https://qwc2.sourcepole.ch/
 | catalogUrl | `string` | The URL to the catalog JSON file. | `undefined` |
 | windowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size. | `{width: 320, height: 320}` |
 
-LayerTree<a name="plugin-LayerTree"></a>
+LayerTree
 ----------------------------------------------------------------
 Displays the map layer tree in a sidebar.
 
@@ -262,7 +262,7 @@ Displays the map layer tree in a sidebar.
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 | width | `string` | The initial width of the layertree, as a CSS width string. | `"25em"` |
 
-LocateButton<a name="plugin-LocateButton"></a>
+LocateButton
 ----------------------------------------------------------------
 Map button for controling the locate (GPS) state.
 
@@ -270,7 +270,7 @@ Map button for controling the locate (GPS) state.
 |----------|------|-------------|---------------|
 | position | `number` | The position slot index of the map button, from the bottom (0: bottom slot). | `2` |
 
-LoginUser<a name="plugin-LoginUser"></a>
+LoginUser
 ----------------------------------------------------------------
 Displays the currently logged in user.
 
@@ -278,7 +278,7 @@ Displays the currently logged in user.
 |----------|------|-------------|---------------|
 |
 
-MapPlugin<a name="plugin-MapPlugin"></a>
+MapPlugin
 ----------------------------------------------------------------
 The main map component.
 
@@ -290,7 +290,7 @@ The main map component.
 | swipeLayerNameBlacklist | `[string]` | A list of layer names to ignore when determining the top-most layer to compare. You can use `*` as a whildcard character. | `[]` |
 | toolsOptions | `object` | Map tool configuraiton options. Refer to the sample config.json. | `{}` |
 
-MapComparePlugin<a name="plugin-MapComparePlugin"></a>
+MapComparePlugin
 ----------------------------------------------------------------
 Allows comparing the top layer with the rest of the map.
 
@@ -300,7 +300,7 @@ Activated through a checkbox in the LayerTree.
 |----------|------|-------------|---------------|
 |
 
-MapCopyright<a name="plugin-MapCopyright"></a>
+MapCopyright
 ----------------------------------------------------------------
 Displays layer attributions in the bottom right corner of the map.
 
@@ -309,7 +309,7 @@ Displays layer attributions in the bottom right corner of the map.
 | prefixCopyrightsWithLayerNames | `bool` | Whether to prepend the layer name to the attribution string. | `undefined` |
 | showThemeCopyrightOnly | `bool` | Whether to only display the attribution of the theme, omitting external layers. | `undefined` |
 
-MapInfoTooltip<a name="plugin-MapInfoTooltip"></a>
+MapInfoTooltip
 ----------------------------------------------------------------
 
 
@@ -317,7 +317,7 @@ MapInfoTooltip<a name="plugin-MapInfoTooltip"></a>
 |----------|------|-------------|---------------|
 |
 
-MapLegend<a name="plugin-MapLegend"></a>
+MapLegend
 ----------------------------------------------------------------
 Displays the map legend in a floating dialog.
 
@@ -333,7 +333,7 @@ The user can toggle whether to display only layers which are enabled, visible in
 | scaleDependentLegend | `bool` | Whether to display a scale-dependent legend by default. | `false` |
 | windowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size. | `{width: 320, height: 320}` |
 
-MapTip<a name="plugin-MapTip"></a>
+MapTip
 ----------------------------------------------------------------
 Displays maptips by hovering over features on the map.
 
@@ -343,7 +343,7 @@ Queries the map tips configured in the QGIS layer properites over GetFeatureInfo
 |----------|------|-------------|---------------|
 | layerFeatureCount | `number` | The maximum number of feature maptips to display for a single layer. | `5` |
 
-Measure<a name="plugin-Measure"></a>
+Measure
 ----------------------------------------------------------------
 Allows measuring points/lines/areas on the map.
 
@@ -353,7 +353,7 @@ Allows measuring points/lines/areas on the map.
 | snapping | `bool` | Whether snapping is available when editing. | `true` |
 | snappingActive | `bool` | Whether snapping is enabled by default when editing. | `true` |
 
-Print<a name="plugin-Print"></a>
+Print
 ----------------------------------------------------------------
 Invokes QGIS Server WMS GetPrint to print the map to PDF.
 
@@ -369,7 +369,7 @@ Invokes QGIS Server WMS GetPrint to print the map to PDF.
 | scaleFactor | `number` | Scale factor to apply to line widths, font sizes, ... of redlining drawings passed to GetPrint. | `1.9` |
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
-ProcessNotifications<a name="plugin-ProcessNotifications"></a>
+ProcessNotifications
 ----------------------------------------------------------------
 
 
@@ -377,21 +377,21 @@ ProcessNotifications<a name="plugin-ProcessNotifications"></a>
 |----------|------|-------------|---------------|
 |
 
-RasterExport<a name="plugin-RasterExport"></a>
+RasterExport
 ----------------------------------------------------------------
 Allows exporting a selected portion of the map to an image ("screenshot").
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
 | allowedFormats | `[string]` | Whitelist of allowed export format mimetypes. If empty, supported formats are listed. | `undefined` |
-| allowedScales | `array` | List of scales at which to export the map. | `undefined` |
+| allowedScales | `[number]` | List of scales at which to export the map. | `undefined` |
 | defaultScaleFactor | `number` | The factor to apply to the map scale to determine the initial export map scale. | `0.5` |
 | dpis | `[number]` | List of dpis at which to export the map. If empty, the default server dpi is used. | `undefined` |
 | exportExternalLayers | `bool` | Whether to include external layers in the image. Requires QGIS Server 3.x! | `true` |
 | pageSizes | `[{,  name: string,,  width: number,,  height: number,,}]` | List of image sizes to offer, in addition to the free-hand selection. The width and height are in millimeters. | `[`<br />`    {name: '15 x 15 cm', width: 150, height: 150},`<br />`    {name: '30 x 30 cm', width: 300, height: 300}`<br />`]` |
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
-Redlining<a name="plugin-Redlining"></a>
+Redlining
 ----------------------------------------------------------------
 Allows drawing figures and text labels on the map.
 
@@ -401,7 +401,7 @@ Allows drawing figures and text labels on the map.
 | snapping | `bool` | Whether snapping is available when editing. | `true` |
 | snappingActive | `bool` | Whether snapping is enabled by default when editing. | `true` |
 
-Routing<a name="plugin-Routing"></a>
+Routing
 ----------------------------------------------------------------
 Compute routes and isochrones.
 
@@ -412,7 +412,7 @@ Uses Valhalla as backend by default, with `routingServiceUrl` pointing to a Valh
 | enabledProviders | `[string]` | List of search providers to use for routing location search. | `["coordinates", "nominatim"]` |
 | geometry | `{`<br />`  initialWidth: number,`<br />`  initialHeight: number,`<br />`  initialX: number,`<br />`  initialY: number,`<br />`  initiallyDocked: bool,`<br />`}` | Default window geometry. | `{`<br />`    initialWidth: 320,`<br />`    initialHeight: 640,`<br />`    initialX: 0,`<br />`    initialY: 0,`<br />`    initiallyDocked: true`<br />`}` |
 
-ScratchDrawing<a name="plugin-ScratchDrawing"></a>
+ScratchDrawing
 ----------------------------------------------------------------
 Task which which can be invoked by other tools to draw a geometry and pass it to a callback.
 
@@ -422,7 +422,7 @@ Invoke as setCurrentTask("ScratchDrawing", null, null, {callback: <function(feat
 |----------|------|-------------|---------------|
 |
 
-Settings<a name="plugin-Settings"></a>
+Settings
 ----------------------------------------------------------------
 Settings panel.
 
@@ -434,7 +434,7 @@ Allows configuring language and color scheme.
 | languages | `array` | List of available languages. Value is the lang code, title/titleMsgId the display name. | `[]` |
 | side | `string` | Whether snapping is enabled by default when editing. | `'right'` |
 
-Share<a name="plugin-Share"></a>
+Share
 ----------------------------------------------------------------
 Share the current map as a URL/permalink.
 
@@ -445,7 +445,7 @@ Share the current map as a URL/permalink.
 | showSocials | `{bool, [string]}` | Show the social buttons. Either `true` or `false`to enable/disable all, or an array of specific buttons to display (possible choices: `email`, `facebook`, `twitter`, `linkedin`, `whatsapp`). | `true` |
 | side | `string` | Whether snapping is enabled by default when editing. | `'right'` |
 
-StartupMarker<a name="plugin-StartupMarker"></a>
+StartupMarker
 ----------------------------------------------------------------
 Displays a marker in the center of the map if c=<x>,<y>&hc=1 is set in the URL.
 
@@ -453,7 +453,7 @@ Displays a marker in the center of the map if c=<x>,<y>&hc=1 is set in the URL.
 |----------|------|-------------|---------------|
 | removeMode | `string` | When to remove the marker. Possible choices: onpan, onzoom, onclickonmarker. | `'onpan'` |
 
-TaskButton<a name="plugin-TaskButton"></a>
+TaskButton
 ----------------------------------------------------------------
 Generic map button to launch a task.
 
@@ -464,7 +464,7 @@ Generic map button to launch a task.
 | position | `number` | The position slot index of the map button, from the bottom (0: bottom slot). | `1` |
 | task | `string` | The task name. | `undefined` |
 
-ThemeSwitcher<a name="plugin-ThemeSwitcher"></a>
+ThemeSwitcher
 ----------------------------------------------------------------
 Theme switcher panel.
 
@@ -476,7 +476,7 @@ Theme switcher panel.
 | themeLayersListWindowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size for the theme layers dialog. | `{width: 400, height: 300}` |
 | width | `string` | Default width as a CSS string. | `"50%"` |
 
-TimeManager<a name="plugin-TimeManager"></a>
+TimeManager
 ----------------------------------------------------------------
 Allows controling the time dimension of temporal WMS layers.
 
@@ -492,7 +492,7 @@ Allows controling the time dimension of temporal WMS layers.
 | markerConfiguration | `{`<br />`  markersAvailable: bool,`<br />`  gradient: [string],`<br />`  markerOffset: array,`<br />`  markerPins: bool,`<br />`}` | The feature marker configuration. | `{`<br />`    markersAvailable: true,`<br />`    gradient: ["#f7af7d", "#eacc6e", "#fef89a", "#c5e09b", "#a3d29c", "#7cc096", "#79c8c5", "#34afce"],`<br />`    markerOffset: [0, 0],`<br />`    markerPins: true`<br />`}` |
 | stepUnits | `[string]` | The available temporal anumation step units. | `["s", "m", "h", "d", "M", "y"]` |
 
-TopBar<a name="plugin-TopBar"></a>
+TopBar
 ----------------------------------------------------------------
 Top bar, containing the logo, searchbar, task buttons and app menu.
 
@@ -510,7 +510,7 @@ Top bar, containing the logo, searchbar, task buttons and app menu.
 | toolbarItems | `array` | The toolbar. Refer to the corresponding chapter of the viewer documentation and the sample config.json. | `[]` |
 | toolbarItemsShortcutPrefix | `string` | The keyboard shortcut prefix for triggering toolbar tasks. I.e. alt+shift. The task are then triggered by <prefix>+{1,2,3,...} for the 1st, 2nd, 3rd... toolbar icon. | `undefined` |
 
-ZoomButton<a name="plugin-ZoomButton"></a>
+ZoomButton
 ----------------------------------------------------------------
 Map button for zooming the map.
 
