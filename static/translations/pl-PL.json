@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "": "",
         "AttributeTable": "",
         "DxfExport": "Eksport DXF",
         "Editing": "Edycja",
@@ -262,6 +263,7 @@
       "windowtitle": ""
     },
     "print": {
+      "atlasfeature": "",
       "grid": "Siatka",
       "layout": "Layout",
       "legend": "",
@@ -270,6 +272,7 @@
       "nolayouts": "Wybrany motyw nie umożliwia drukowania",
       "notheme": "Brak wybranego motywu",
       "output": "Drukuj output",
+      "pickatlasfeature": "",
       "resolution": "Rozdzielczość",
       "rotation": "Obrót",
       "scale": "Skala",

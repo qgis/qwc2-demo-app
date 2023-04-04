@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "": "",
         "AttributeTable": "",
         "DxfExport": "Экспорт в DXF",
         "Editing": "Правка",
@@ -262,6 +263,7 @@
       "windowtitle": ""
     },
     "print": {
+      "atlasfeature": "",
       "grid": "Сетка",
       "layout": "Формат бумаги",
       "legend": "",
@@ -270,6 +272,7 @@
       "nolayouts": "Выбранная тема не поддерживает печать",
       "notheme": "Тема не выбрана",
       "output": "",
+      "pickatlasfeature": "",
       "resolution": "Разрешение",
       "rotation": "Поворот",
       "scale": "Масштаб",

@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "Externer Link",
+        "": "",
         "AttributeTable": "Attributtabelle",
         "DxfExport": "DXF-Export",
         "Editing": "Editieren",
@@ -262,6 +263,7 @@
       "windowtitle": "Numerische Eingabe"
     },
     "print": {
+      "atlasfeature": "Atlasobjekt",
       "grid": "Gitter",
       "layout": "Format",
       "legend": "Legende",
@@ -270,6 +272,7 @@
       "nolayouts": "Das gewählte Thema stellt keine Druck-Vorlagen zur Verfügung.",
       "notheme": "Kein Thema selektiert",
       "output": "Druckausgabe",
+      "pickatlasfeature": "In Ebene {0} auswählen...",
       "resolution": "Auflösung",
       "rotation": "Rotation",
       "scale": "Maßstab",

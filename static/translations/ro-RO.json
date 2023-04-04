@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "Link extern",
+        "": "",
         "AttributeTable": "Tabela de atribute",
         "DxfExport": "Export DXF",
         "Editing": "Editare",
@@ -262,6 +263,7 @@
       "windowtitle": ""
     },
     "print": {
+      "atlasfeature": "",
       "grid": "Grid",
       "layout": "Șablon",
       "legend": "Legendă",
@@ -270,6 +272,7 @@
       "nolayouts": "Această temă nu are șabloane de print",
       "notheme": "Nu avem selectată tema",
       "output": "Rezultat tipărire",
+      "pickatlasfeature": "",
       "resolution": "Rezoluție",
       "rotation": "Rotație",
       "scale": "Scară",

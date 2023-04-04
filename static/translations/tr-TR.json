@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "": "",
         "AttributeTable": "",
         "DxfExport": "DXF'e Veri Aktar",
         "Editing": "Düzenleme",
@@ -262,6 +263,7 @@
       "windowtitle": ""
     },
     "print": {
+      "atlasfeature": "",
       "grid": "Grid",
       "layout": "Yazdırma düzeni",
       "legend": "",
@@ -270,6 +272,7 @@
       "nolayouts": "Seçili tema yazdırma işlemini desteklemiyor",
       "notheme": "Tema seçilmedi",
       "output": "Yazıcı çıktısı",
+      "pickatlasfeature": "",
       "resolution": "Çözünürlük",
       "rotation": "Döndürme",
       "scale": "Ölçek:",

@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "": "",
         "AttributeTable": "",
         "DxfExport": "DXF Export",
         "Editing": "Úpravy",
@@ -262,6 +263,7 @@
       "windowtitle": ""
     },
     "print": {
+      "atlasfeature": "",
       "grid": "Mřížka:",
       "layout": "Rovržení:",
       "legend": "",
@@ -270,6 +272,7 @@
       "nolayouts": "Vybrané téma nepodporuje tisk",
       "notheme": "Není vybráno téma",
       "output": "",
+      "pickatlasfeature": "",
       "resolution": "Rozlišení",
       "rotation": "Rotace",
       "scale": "Měřítko",

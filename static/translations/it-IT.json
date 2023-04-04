@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "Collegamento esterno",
+        "": "",
         "AttributeTable": "Tabella attributi",
         "DxfExport": "Esporta su DXF",
         "Editing": "Strumenti di modifica",
@@ -262,6 +263,7 @@
       "windowtitle": "Formulario numerico"
     },
     "print": {
+      "atlasfeature": "Oggetto atlante",
       "grid": "Griglia",
       "layout": "Layout",
       "legend": "Legenda",
@@ -270,6 +272,7 @@
       "nolayouts": "Nessun layout di stampa",
       "notheme": "Nessun tema selezionato",
       "output": "Stampa",
+      "pickatlasfeature": "Seleziona nel livello {1}...",
       "resolution": "Risoluzione",
       "rotation": "Rotazione",
       "scale": "Scala",

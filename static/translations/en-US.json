@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "External Link",
+        "": "",
         "AttributeTable": "Attribute Table",
         "DxfExport": "DXF Export",
         "Editing": "Editing",
@@ -262,6 +263,7 @@
       "windowtitle": "Numeric input"
     },
     "print": {
+      "atlasfeature": "Atlas feature",
       "grid": "Grid",
       "layout": "Layout",
       "legend": "Legend",
@@ -270,6 +272,7 @@
       "nolayouts": "The selected theme does not support printing",
       "notheme": "No theme selected",
       "output": "Print output",
+      "pickatlasfeature": "Pick in layer {0}...",
       "resolution": "Resolution",
       "rotation": "Rotation",
       "scale": "Scale",

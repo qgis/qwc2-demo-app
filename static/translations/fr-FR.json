@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "": "",
         "AttributeTable": "Table d'attributs",
         "DxfExport": "Export DXF",
         "Editing": "Editer",
@@ -262,6 +263,7 @@
       "windowtitle": "Entrée numérique"
     },
     "print": {
+      "atlasfeature": "Objet atlas",
       "grid": "Grille",
       "layout": "Format",
       "legend": "Légende",
@@ -270,6 +272,7 @@
       "nolayouts": "Il n'y a pas de mise en page disponible pour le thème choisi.",
       "notheme": "Pas de thème sélectionné",
       "output": "Impression",
+      "pickatlasfeature": "Choisir dans la couche {0}",
       "resolution": "Résolution",
       "rotation": "Rotation",
       "scale": "Echelle",

@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "": "",
         "AttributeTable": "Tabla de Atributos",
         "DxfExport": "Exportar DXF",
         "Editing": "Editando",
@@ -262,6 +263,7 @@
       "windowtitle": ""
     },
     "print": {
+      "atlasfeature": "",
       "grid": "Grilla:",
       "layout": "Diseño:",
       "legend": "Leyenda",
@@ -270,6 +272,7 @@
       "nolayouts": "El tema seleccionado no admite su impresión",
       "notheme": "No hay tema seleccionado",
       "output": "Salida de impresión",
+      "pickatlasfeature": "",
       "resolution": "Resolución",
       "rotation": "Rotación",
       "scale": "Escala:",

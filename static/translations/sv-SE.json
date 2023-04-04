@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "": "",
         "AttributeTable": "",
         "DxfExport": "DXF Export",
         "Editing": "Redigera",
@@ -262,6 +263,7 @@
       "windowtitle": ""
     },
     "print": {
+      "atlasfeature": "",
       "grid": "Rutnät",
       "layout": "Layout:",
       "legend": "",
@@ -270,6 +272,7 @@
       "nolayouts": "Valt tema stöder inte utskrift",
       "notheme": "Inget tema valt",
       "output": "Utskrift",
+      "pickatlasfeature": "",
       "resolution": "Upplösning",
       "rotation": "Rotation",
       "scale": "Skala",

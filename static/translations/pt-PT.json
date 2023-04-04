@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "": "",
         "AttributeTable": "",
         "DxfExport": "Exportar DXF",
         "Editing": "Editando",
@@ -262,6 +263,7 @@
       "windowtitle": ""
     },
     "print": {
+      "atlasfeature": "",
       "grid": "Rede",
       "layout": "Desenho",
       "legend": "",
@@ -270,6 +272,7 @@
       "nolayouts": "O tema selecionado não suporta a impressão",
       "notheme": "Sem tema selecionado",
       "output": "Impressão de saída",
+      "pickatlasfeature": "",
       "resolution": "Resolução",
       "rotation": "Rotação",
       "scale": "Escala",
