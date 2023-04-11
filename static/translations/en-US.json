@@ -4,7 +4,6 @@
     "appmenu": {
       "items": {
         "ExternalLink": "External Link",
-        "": "",
         "AttributeTable": "Attribute Table",
         "DxfExport": "DXF Export",
         "Editing": "Editing",
@@ -142,6 +141,7 @@
       "title": "Feature form"
     },
     "fileselector": {
+      "files": "files",
       "placeholder": "Select file..."
     },
     "heightprofile": {
@@ -252,6 +252,11 @@
     },
     "navbar": {
       "perpage": "per page"
+    },
+    "newspopup": {
+      "dialogclose": "Close",
+      "dontshowagain": "Don't show again",
+      "title": "News"
     },
     "numericinput": {
       "angle": "Angle",

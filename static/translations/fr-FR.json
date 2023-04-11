@@ -4,7 +4,6 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
-        "": "",
         "AttributeTable": "Table d'attributs",
         "DxfExport": "Export DXF",
         "Editing": "Editer",
@@ -142,6 +141,7 @@
       "title": "Formulaire d'objet"
     },
     "fileselector": {
+      "files": "Fichiers",
       "placeholder": "Choisir un fichier..."
     },
     "heightprofile": {
@@ -252,6 +252,11 @@
     },
     "navbar": {
       "perpage": "Par page"
+    },
+    "newspopup": {
+      "dialogclose": "Fermer",
+      "dontshowagain": "Ne plus montrer",
+      "title": "Actualités"
     },
     "numericinput": {
       "angle": "Angle",

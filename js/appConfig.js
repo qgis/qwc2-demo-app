@@ -60,6 +60,7 @@ import SettingsPlugin from 'qwc2/plugins/Settings';
 import ProcessNotificationsPlugin from 'qwc2/plugins/ProcessNotifications';
 import RoutingPlugin from 'qwc2/plugins/Routing';
 import LoginUserPlugin from 'qwc2/plugins/LoginUser';
+import NewsPopupPlugin from 'qwc2/plugins/NewsPopup';
 import {customAttributeCalculator, attributeTransform, customExporters} from './IdentifyExtensions';
 
 import defaultLocaleData from '../static/translations/en-US.json';
@@ -128,7 +129,8 @@ export default {
             SettingsPlugin: SettingsPlugin,
             RoutingPlugin: RoutingPlugin(SearchProviders),
             ProcessNotificationsPlugin: ProcessNotificationsPlugin,
-            LoginUserPlugin: LoginUserPlugin
+            LoginUserPlugin: LoginUserPlugin,
+            NewsPopupPlugin: NewsPopupPlugin
         },
         cfg: {
             IdentifyPlugin: {

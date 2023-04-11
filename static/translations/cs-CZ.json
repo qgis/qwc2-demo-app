@@ -4,7 +4,6 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
-        "": "",
         "AttributeTable": "",
         "DxfExport": "DXF Export",
         "Editing": "Úpravy",
@@ -142,6 +141,7 @@
       "title": ""
     },
     "fileselector": {
+      "files": "",
       "placeholder": "Vybrat soubor..."
     },
     "heightprofile": {
@@ -252,6 +252,11 @@
     },
     "navbar": {
       "perpage": ""
+    },
+    "newspopup": {
+      "dialogclose": "",
+      "dontshowagain": "",
+      "title": ""
     },
     "numericinput": {
       "angle": "",

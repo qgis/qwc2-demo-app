@@ -4,7 +4,6 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
-        "": "",
         "AttributeTable": "",
         "DxfExport": "DXF Export",
         "Editing": "Redigera",
@@ -142,6 +141,7 @@
       "title": ""
     },
     "fileselector": {
+      "files": "",
       "placeholder": "Välj fil..."
     },
     "heightprofile": {
@@ -252,6 +252,11 @@
     },
     "navbar": {
       "perpage": ""
+    },
+    "newspopup": {
+      "dialogclose": "",
+      "dontshowagain": "",
+      "title": ""
     },
     "numericinput": {
       "angle": "",
