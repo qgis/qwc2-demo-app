@@ -25,6 +25,7 @@ Plugin reference
 * [MapLegend](#maplegend)
 * [MapTip](#maptip)
 * [Measure](#measure)
+* [NewsPopup](#newspopup)
 * [Print](#print)
 * [ProcessNotifications](#processnotifications)
 * [RasterExport](#rasterexport)
@@ -353,6 +354,18 @@ Allows measuring points/lines/areas on the map.
 | snapping | `bool` | Whether snapping is available when editing. | `true` |
 | snappingActive | `bool` | Whether snapping is enabled by default when editing. | `true` |
 
+NewsPopup
+----------------------------------------------------------------
+Displays a newsletter in a popup dialog.
+
+The popup won't be dispayed anymore, if the user chooses so, until a newer
+revision is published (specified via newsRev prop).
+
+| Property | Type | Description | Default value |
+|----------|------|-------------|---------------|
+| newsDocument | `string` | URL to the news HTML document to display in the popup. | `undefined` |
+| newsRev | `string` | Revision of the document. | `undefined` |
+
 Print
 ----------------------------------------------------------------
 Invokes QGIS Server WMS GetPrint to print the map to PDF.
@@ -488,6 +501,7 @@ Allows controling the time dimension of temporal WMS layers.
 | defaultStepSize | `number` | The default step size for the temporal animation, in step units. | `1` |
 | defaultStepUnit | `string` | The default step unit for the temporal animation, one of `ms`, `s`, `m`, `d`, `M`, `y`, `10y`, `100y` | `"d"` |
 | defaultTimelineDisplay | `string` | The default timeline display mode. One of `hidden`, `minimal`, `features`, `layers`. | `undefined` |
+| defaultFeatureCount | `number` | The default number of features that will be requested. | `100` |
 | defaultTimelineMode | `string` | The default timeline mode. One of `fixed`, `infinite`. | `"fixed"` |
 | markerConfiguration | `{`<br />`  markersAvailable: bool,`<br />`  gradient: [string],`<br />`  markerOffset: array,`<br />`  markerPins: bool,`<br />`}` | The feature marker configuration. | `{`<br />`    markersAvailable: true,`<br />`    gradient: ["#f7af7d", "#eacc6e", "#fef89a", "#c5e09b", "#a3d29c", "#7cc096", "#79c8c5", "#34afce"],`<br />`    markerOffset: [0, 0],`<br />`    markerPins: true`<br />`}` |
 | stepUnits | `[string]` | The available temporal anumation step units. | `["s", "m", "h", "d", "M", "y"]` |
