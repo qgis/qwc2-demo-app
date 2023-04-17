@@ -73,6 +73,7 @@ All settings are optional, with fallback to the default values as documented.
 |`qgisServerVersion`                  | The QGIS Server major version in use, i.e. `3`.|
 |`defaultColorScheme`                 | The color scheme to use. See [Color schemes](#color-schemes) for details. |
 |`externalLayerFeatureInfoFormats`    | A dictionary of feature info formats for external layers, in the format `{"<url>": "<format>", ...}`. If the GetFeatureInfo URL of a layer contains the specified `<url>`, the corresponding format is used. |
+|`startupTask`                        | Taks to automatically aktivate on application start. |
 |`storeAllLayersInPermalink`          | Whether to store the full layertree in the permalink data, rather than only local (i.e. redlining) layers. If false, remote layers are re-queried from the respective services, if true, they are statically reloaded (meaning restored layers may be outdated compared to current service capabilities).
 
 *Global settings, overridable per theme*:<a name="config-json-overridable"></a>
