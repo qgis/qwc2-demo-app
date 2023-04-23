@@ -94,7 +94,11 @@
                         "extent": [-1000000, 4000000, 3000000, 8000000],
                         "skipEmptyFeatureAttributes": true,
                         "printResolutions": [300],
-                        "thumbnail": "default.jpg"
+                        "thumbnail": "default.jpg",
+                        "themeInfoLinks": {
+                          "title":"Info links",
+                          "entries":["example_link","example_link2"]
+                        }
                     }
                 ],
                 "groups":[
@@ -358,6 +362,10 @@
                     "MAP": "/home/sandro/wms/luftbild_zh.qgs"
                 }
             }
+        ],
+        "themeInfoLinks":[
+          {"name":"example_link","title":"Example link","url":"https://example.com","target":"mydialogname"},
+          {"name":"example_link2","title":"Example link 2","url":"https://example.com/","target":"_blank"}
         ]
     },
     "defaultScales":[
