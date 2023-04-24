@@ -352,6 +352,9 @@ You can also set the "Data Url" for a layer in QGIS (Layer Properties &rarr; QGI
 (for instance, `wms:http://wms.geo.admin.ch?tiled=false&infoFormat=application/geojson#ch.are.bauzonen`), and an external layer pointing to the specified WMS service will automatically be created for the corresponding QGIS layer.
 Note: `infoFormat` is a special parameter through which the GetFeatureInfo query format is controled. If omitted, the default format is `text/plain`.
 This is currently only implemented for WMS layers.
+Note: You can pass parameters which control the behaviour of the WMS client in QGIS Server by prefexing the parameters with `extwms.` when the layer is requested by QGIS Server, i.e. when printing. Example to override the step width/heigth of the QGIS WMS Client:
+
+    wms:http://wms.geo.admin.ch?extwms.stepWidth=4096&extwms.stepHeight=4096#ch.swisstopo.pixelkarte-farbe-pk1000.noscale
 
 
 **Theme info links:**
