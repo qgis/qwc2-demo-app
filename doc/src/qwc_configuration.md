@@ -213,20 +213,20 @@ The second step is to configure the themes which are available to QWC2 in the `t
             "groups": [ { <Group> }, ...]
            },
            ...
-        ]
+        ],
+        "externalLayers": [
+          { <ExternalLayerDefinition> },
+          ...
+        ],
+        "themeInfoLinks": [
+          { <ThemeInfoLinkDefinition> },
+          ...
+        ],
+        "backgroundLayers": [
+          { <BackgroundLayerDefinition> },
+          ...
+        ],
       },
-      "externalLayers": [
-        { <ExternalLayerDefinition> },
-        ...
-      ],
-      "themeInfoLinks": [
-        { <ThemeInfoLinkDefinition> },
-        ...
-      ],
-      "backgroundLayers": [
-        { <BackgroundLayerDefinition> },
-        ...
-      ],
       "defaultScales": [<Scale denominators>],
       "defaultPrintScales" [<Scale denominators>],
       "defaultPrintResolutions": [<DPIs>],
