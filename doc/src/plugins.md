@@ -316,7 +316,9 @@ MapInfoTooltip
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
-|
+| cooPrecision | `number` | The number of decimal places to display for metric/imperial coordinates. | `0` |
+| degreeCooPrecision | `number` | The number of decimal places to display for degree coordinates. | `4` |
+| elevationPrecision | `number` | The number of decimal places to display for elevation values. | `0` |
 
 MapLegend
 ----------------------------------------------------------------
@@ -498,10 +500,11 @@ Allows controling the time dimension of temporal WMS layers.
 | cursorFormat | `string` | The format of the time cursor label. Either `date`, `time` or `datetime`. | `"datetime"` |
 | dateFormat | `string` | The date format in the time controls, i.e. YYYY-MM-DD. | `"YYYY-MM-DD[\n]HH:mm:ss"` |
 | defaultAnimationInterval | `number` | The default interval for the temporal animation, in seconds. | `1` |
+| defaultEnabled | `bool` | Default for TimeManager enabled when loading application. `true` or `false` | `false` |
+| defaultFeatureCount | `number` | The default number of features that will be requested. | `100` |
 | defaultStepSize | `number` | The default step size for the temporal animation, in step units. | `1` |
 | defaultStepUnit | `string` | The default step unit for the temporal animation, one of `ms`, `s`, `m`, `d`, `M`, `y`, `10y`, `100y` | `"d"` |
 | defaultTimelineDisplay | `string` | The default timeline display mode. One of `hidden`, `minimal`, `features`, `layers`. | `undefined` |
-| defaultFeatureCount | `number` | The default number of features that will be requested. | `100` |
 | defaultTimelineMode | `string` | The default timeline mode. One of `fixed`, `infinite`. | `"fixed"` |
 | markerConfiguration | `{`<br />`  markersAvailable: bool,`<br />`  gradient: [string],`<br />`  markerOffset: array,`<br />`  markerPins: bool,`<br />`}` | The feature marker configuration. | `{`<br />`    markersAvailable: true,`<br />`    gradient: ["#f7af7d", "#eacc6e", "#fef89a", "#c5e09b", "#a3d29c", "#7cc096", "#79c8c5", "#34afce"],`<br />`    markerOffset: [0, 0],`<br />`    markerPins: true`<br />`}` |
 | stepUnits | `[string]` | The available temporal anumation step units. | `["s", "m", "h", "d", "M", "y"]` |
