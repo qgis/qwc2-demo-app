@@ -28,6 +28,7 @@ import BackgroundSwitcherPlugin from 'qwc2/plugins/BackgroundSwitcher';
 import BookmarkPlugin from 'qwc2/plugins/Bookmark';
 import BottomBarPlugin from 'qwc2/plugins/BottomBar';
 import BufferSupport from 'qwc2/plugins/redlining/RedliningBufferSupport';
+import CyclomediaPlugin from 'qwc2/plugins/Cyclomedia';
 import DxfExportPlugin from 'qwc2/plugins/DxfExport';
 import EditingPlugin from 'qwc2/plugins/Editing';
 import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
@@ -90,6 +91,7 @@ export default {
             BackgroundSwitcherPlugin: BackgroundSwitcherPlugin,
             BookmarkPlugin: BookmarkPlugin,
             BottomBarPlugin: BottomBarPlugin,
+            CyclomediaPlugin: CyclomediaPlugin,
             DxfExportPlugin: DxfExportPlugin,
             EditingPlugin: EditingPlugin(/* CustomEditingInterface */),
             FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */),
