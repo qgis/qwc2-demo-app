@@ -5,6 +5,7 @@
       "items": {
         "ExternalLink": "External Link",
         "AttributeTable": "Attribute Table",
+        "Cyclomedia": "Cyclomedia",
         "DxfExport": "DXF Export",
         "Editing": "Editing",
         "FeatureForm": "Feature Form",
@@ -27,9 +28,7 @@
         "Tools": "Map Tools",
         "Bookmark": "Bookmarks",
         "TimeManager": "Time Manager",
-        "Settings": "Settings",
-        "Cyclomedia": "Cyclomedia",
-        "PlotInfoTool": "Real Estate Information"
+        "Settings": "Settings"
       },
       "filter": "Filter menu...",
       "menulabel": "Map & Tools"
@@ -502,36 +501,6 @@
       "undock": "Undock",
       "unmaximize": "Restore",
       "unminimize": "Unminimize"
-    },
-    "oereb": {
-      "concernedThemes": "Concerned themes",
-      "fundationdatastate": "Cadastral surveying data. Status of the cadastral survey:",
-      "fundations": "Fundations",
-      "generalInformation": "General and legal information",
-      "generalinfo": "General information",
-      "hidefulllegend": "Hide full legend",
-      "hints": "Additional information and hints",
-      "legalbasis": "Legal bases",
-      "notConcernedThemes": "Not concerned themes",
-      "nrpoints": "point(s)",
-      "perc": "Share in %",
-      "regulations": "Regulations",
-      "responsibleauthority": "Responsible authority",
-      "responsibleoffice": "Responsible office",
-      "share": "Share",
-      "showfulllegend": "Show full legend",
-      "themeWithoutData": "Themes without data",
-      "type": "Type",
-      "title": "ÖREB cadastre",
-      "failed": "Failed to load OEREB extract"
-    },
-    "plotinfotool": {
-      "failed": "Failed to load data",
-      "loading": "Loading data..."
-    },
-    "plotdescr": {
-      "title": "Plot description",
-      "requestPdf": "Create land register plan (PDF)"
     }
   }
 }
