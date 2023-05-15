@@ -7,6 +7,7 @@ Plugin reference
 * [BackgroundSwitcher](#backgroundswitcher)
 * [Bookmark](#bookmark)
 * [BottomBar](#bottombar)
+* [Cyclomedia](#cyclomedia)
 * [DxfExport](#dxfexport)
 * [Editing](#editing)
 * [FeatureForm](#featureform)
@@ -107,6 +108,17 @@ Bottom bar, displaying mouse coordinate, scale, etc.
 | termsUrlTarget | `string` | The target where to open the terms URL. If `iframe`, it will be displayed in an inline window, otherwise in a new tab. | `undefined` |
 | viewertitleUrl | `string` | The URL of the viewer title label anchor. | `undefined` |
 | viewertitleUrlTarget | `string` | The target where to open the viewer title URL. If `iframe`, it will be displayed in an inline window, otherwise in a new tab. | `undefined` |
+
+Cyclomedia
+----------------------------------------------------------------
+Cyclomedia integration for QWC2.
+
+| Property | Type | Description | Default value |
+|----------|------|-------------|---------------|
+| apikey | `string` | The Cyclomedia API key | `undefined` |
+| cyclomediaVersion | `string` | The cyclomedia version. | `'22.17'` |
+| geometry | `{`<br />`  initialWidth: number,`<br />`  initialHeight: number,`<br />`  initialX: number,`<br />`  initialY: number,`<br />`  initiallyDocked: bool,`<br />`}` | Default window geometry. | `{`<br />`    initialWidth: 480,`<br />`    initialHeight: 640,`<br />`    initialX: 0,`<br />`    initialY: 0,`<br />`    initiallyDocked: true`<br />`}` |
+| maxMapScale | `number` | The maximum map scale above which the recordings WFS won't be displayed. | `undefined` |
 
 DxfExport
 ----------------------------------------------------------------

@@ -1,5 +1,5 @@
 {
-  "locale": "de-CH",
+  "locale": "de-DE",
   "messages": {
     "appmenu": {
       "items": {
@@ -27,7 +27,9 @@
         "Tools": "Werkzeuge",
         "Bookmark": "Lesezeichen",
         "TimeManager": "Zeitleiste",
-        "Settings": "Einstellungen"
+        "Settings": "Einstellungen",
+        "Cyclomedia": "Cyclomedia",
+        "PlotInfoTool": "Grundstücksinformation"
       },
       "filter": "Menü filtern...",
       "menulabel": "Karte & Werkzeuge"
@@ -100,6 +102,14 @@
     "copybtn": {
       "click_to_copy": "In Zwischenablage kopieren",
       "copied": "Kopiert"
+    },
+    "cyclomedia": {
+      "clickonmap": "Wähle eine Aufnahme in der Karte aus",
+      "loaderror": "Fehler beim Initialisieren von Cyclomedia",
+      "loading": "Cyclomedia wird initialisiert...",
+      "login": "Anmelden",
+      "scalehint": "Die Aufnahmen sind nur ab Massstab 1:{0} auf der Karte sichtbar.",
+      "title": "Cyclomedia Viewer"
     },
     "dxfexport": {
       "layers": "Ebenen",
@@ -492,6 +502,36 @@
       "undock": "Abdocken",
       "unmaximize": "Wiederherstellen",
       "unminimize": "Vergrössern"
+    },
+    "oereb": {
+      "concernedThemes": "Betroffene Themen",
+      "fundationdatastate": "Daten der amtlichen Vermessung. Stand der amtlichen Vermessung:",
+      "fundations": "Grundlagedaten",
+      "generalInformation": "Allgemeine und rechtliche Informationen",
+      "generalinfo": "Allgemeine Informationen",
+      "hidefulllegend": "Vollständige Legende ausblenden",
+      "hints": "Weitere Informationen und Hinweise",
+      "legalbasis": "Gesetzliche Grundlagen",
+      "notConcernedThemes": "Nicht betroffene Themen",
+      "nrpoints": "Punkt(e)",
+      "perc": "Anteil in %",
+      "regulations": "Rechtsvorschriften",
+      "responsibleauthority": "Katasterverantwortliche Stelle",
+      "responsibleoffice": "Zuständige Stelle",
+      "share": "Anteil",
+      "showfulllegend": "Vollständige Legende einblenden",
+      "themeWithoutData": "Nicht verfügbare Themen",
+      "type": "Typ",
+      "title": "Öffentlich-rechtliche Eigentumsbeschränkungen",
+      "failed": "Fehler beim Laden des OEREB Auszug"
+    },
+    "plotinfotool": {
+      "failed": "Datenabfrage gescheitert",
+      "loading": "Daten werden geladen..."
+    },
+    "plotdescr": {
+      "title": "Grundstücksbeschrieb",
+      "requestPdf": "Grundbuchplan (PDF) erstellen"
     }
   }
 }

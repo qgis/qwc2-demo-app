@@ -27,7 +27,9 @@
         "Tools": "Map Tools",
         "Bookmark": "Bookmarks",
         "TimeManager": "Time Manager",
-        "Settings": "Settings"
+        "Settings": "Settings",
+        "Cyclomedia": "Cyclomedia",
+        "PlotInfoTool": "Real Estate Information"
       },
       "filter": "Filter menu...",
       "menulabel": "Map & Tools"
@@ -100,6 +102,14 @@
     "copybtn": {
       "click_to_copy": "Click to copy",
       "copied": "Copied"
+    },
+    "cyclomedia": {
+      "clickonmap": "Click on a recording on the map",
+      "loaderror": "Failed to initialize Cyclomedia",
+      "loading": "Initializing Cyclomedia...",
+      "login": "Login",
+      "scalehint": "The recordings are only visible on the map below scale 1:{0}.",
+      "title": "Cyclomedia Viewer"
     },
     "dxfexport": {
       "layers": "Layers",
@@ -492,6 +502,36 @@
       "undock": "Undock",
       "unmaximize": "Restore",
       "unminimize": "Unminimize"
+    },
+    "oereb": {
+      "concernedThemes": "Concerned themes",
+      "fundationdatastate": "Cadastral surveying data. Status of the cadastral survey:",
+      "fundations": "Fundations",
+      "generalInformation": "General and legal information",
+      "generalinfo": "General information",
+      "hidefulllegend": "Hide full legend",
+      "hints": "Additional information and hints",
+      "legalbasis": "Legal bases",
+      "notConcernedThemes": "Not concerned themes",
+      "nrpoints": "point(s)",
+      "perc": "Share in %",
+      "regulations": "Regulations",
+      "responsibleauthority": "Responsible authority",
+      "responsibleoffice": "Responsible office",
+      "share": "Share",
+      "showfulllegend": "Show full legend",
+      "themeWithoutData": "Themes without data",
+      "type": "Type",
+      "title": "ÖREB cadastre",
+      "failed": "Failed to load OEREB extract"
+    },
+    "plotinfotool": {
+      "failed": "Failed to load data",
+      "loading": "Loading data..."
+    },
+    "plotdescr": {
+      "title": "Plot description",
+      "requestPdf": "Create land register plan (PDF)"
     }
   }
 }
