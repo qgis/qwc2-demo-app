@@ -117,11 +117,12 @@ Cyclomedia integration for QWC2.
 |----------|------|-------------|---------------|
 | apikey | `string` | The Cyclomedia API key | `undefined` |
 | clientId | `string` | OAuth client ID. | `undefined` |
-| cyclomediaVersion | `string` | The cyclomedia version. | `'22.17'` |
+| cyclomediaVersion | `string` | The cyclomedia version. | `'23.6'` |
 | geometry | `{`<br />`  initialWidth: number,`<br />`  initialHeight: number,`<br />`  initialX: number,`<br />`  initialY: number,`<br />`  initiallyDocked: bool,`<br />`}` | Default window geometry. | `{`<br />`    initialWidth: 480,`<br />`    initialHeight: 640,`<br />`    initialX: 0,`<br />`    initialY: 0,`<br />`    initiallyDocked: true`<br />`}` |
 | loginRedirectUri | `string` | The relative path to the redirect login handling of oauth. | `undefined` |
 | logoutRedirectUri | `string` | The relative path to the redirect logout handling of oauth. | `undefined` |
 | maxMapScale | `number` | The maximum map scale above which the recordings WFS won't be displayed. | `10000` |
+| projection | `string` | The projection to use for Cyclomedia. | `'EPSG:3857'` |
 
 DxfExport
 ----------------------------------------------------------------
