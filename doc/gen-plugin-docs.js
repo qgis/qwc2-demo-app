@@ -40,7 +40,7 @@ pluginData.forEach(plugin => {
 output += "\n";
 output += "---\n";
 pluginData.forEach(plugin => {
-    output += `${plugin.displayName}\n`;
+    output += `${plugin.displayName}<a name="${plugin.displayName.toLowerCase()}"></a>\n`;
     output += "----------------------------------------------------------------\n";
     output += plugin.description + "\n";
     output += "\n";
