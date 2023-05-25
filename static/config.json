@@ -10,6 +10,7 @@
   "routingServiceUrl": "https://valhalla1.openstreetmap.de",
   "urlPositionFormat": "centerAndZoom",
   "urlPositionCrs": "",
+  "loadTranslationOverrides": false,
   "omitUrlParameterUpdates": false,
   "preserveExtentOnThemeSwitch": true,
   "preserveBackgroundOnThemeSwitch": true,
