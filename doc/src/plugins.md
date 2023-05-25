@@ -440,6 +440,7 @@ Uses Valhalla as backend by default, with `routingServiceUrl` pointing to a Valh
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
+| enabledModes | `[string]` | List of enabled routing modes. | `["auto", "heavyvehicle", "transit", "bicycle", "pedestrian"]` |
 | enabledProviders | `[string]` | List of search providers to use for routing location search. | `["coordinates", "nominatim"]` |
 | geometry | `{`<br />`  initialWidth: number,`<br />`  initialHeight: number,`<br />`  initialX: number,`<br />`  initialY: number,`<br />`  initiallyDocked: bool,`<br />`}` | Default window geometry. | `{`<br />`    initialWidth: 320,`<br />`    initialHeight: 640,`<br />`    initialX: 0,`<br />`    initialY: 0,`<br />`    initiallyDocked: true`<br />`}` |
 
