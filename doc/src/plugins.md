@@ -43,15 +43,56 @@ Plugin reference
 * [ZoomButton](#zoombutton)
 
 ---
-API
+API<a name="api"></a>
 ----------------------------------------------------------------
 Exposes an API for interacting with QWC2 to `window.qwc2`.
+
+All following action functions are available:
+
+- [display](https://github.com/qgis/qwc2/blob/master/actions/display.js)
+- [layers](https://github.com/qgis/qwc2/blob/master/actions/layers.js)
+- [locate](https://github.com/qgis/qwc2/blob/master/actions/locate.js)
+- [map](https://github.com/qgis/qwc2/blob/master/actions/map.js)
+- [task](https://github.com/qgis/qwc2/blob/master/actions/task.js)
+- [theme](https://github.com/qgis/qwc2/blob/master/actions/theme.js)
+- [windows](https://github.com/qgis/qwc2/blob/master/actions/windows.js)
+
+I.e. `setCurrentTask` is available via `window.qwc2.setCurrentTask`.
+
+Additionally, the following functions are available:
+
+---
+
+`window.qwc2.addExternalLayer(resource, beforeLayerName = null)`
+
+Convenience method for adding an external layer.
+
+  * `resource`: An external resource of the form `wms:<service_url>#<layername>` or `wmts:<capabilities_url>#<layername>`.
+  * `beforeLayerName`: Insert the new layer before the layer with the specified name. If `null` or the layer does not exist, the layer is inserted on top.
+
+---
+
+`window.qwc2.drawScratch(geomType, message, drawMultiple, callback, style = null)`
+
+ Draw scratch geometries, and return these as GeoJSON to the calling application.
+
+  * `geomType`: `Point`, `LineString`, `Polygon`, `Circle` or `Box`.
+  * `message`: A descriptive string to display in the tool taskbar.
+  * `drawMultiple`: Whether to allow drawing multiple geometries.
+  * `callback`: A `function(result, crs)`, the `result` being an array of GeoJSON features, and `crs` the projection of the feature coordinates.
+  * `style`: Optional, a custom style object to use for the drawn features, in the same format as `DEFAULT_FEATURE_STYLE` in `qwc2/utils/FeatureStyles.js`.
+
+---
+
+`window.qwc2.getState()`
+
+Return the current application state.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
 |
 
-AttributeTable
+AttributeTable<a name="attributetable"></a>
 ----------------------------------------------------------------
 Displaying the attribute table of layers in a dialog.
 
@@ -65,7 +106,7 @@ The attribute table works for both read-only as well as read-write data resource
 | showEditFormButton | `bool` | Whether to show a button to open the edit form for selected layer. Requires the Editing plugin to be enabled. | `true` |
 | zoomLevel | `number` | The zoom level for zooming to point features. | `1000` |
 
-Authentication
+Authentication<a name="authentication"></a>
 ----------------------------------------------------------------
 Handles authentication via the authentication service specified by `authServiceUrl`.
 
@@ -76,7 +117,7 @@ Handles authentication via the authentication service specified by `authServiceU
 | logoutTargetUrl | `string` | An URL to redirect to on logout, instead of the viewer URL. | `undefined` |
 | requireLogin | `bool` | Whether authentication is required, i.e. the viewer automatically redirects to the login page if no user is authenticated. | `undefined` |
 
-BackgroundSwitcher
+BackgroundSwitcher<a name="backgroundswitcher"></a>
 ----------------------------------------------------------------
 Map button for switching the background layer.
 
@@ -84,7 +125,7 @@ Map button for switching the background layer.
 |----------|------|-------------|---------------|
 | position | `number` | The position slot index of the map button, from the bottom (0: bottom slot). | `0` |
 
-Bookmark
+Bookmark<a name="bookmark"></a>
 ----------------------------------------------------------------
 Allows managing user bookmarks.
 
@@ -96,7 +137,7 @@ Requires `permalinkServiceUrl` to point to a qwc-permalink-service.
 |----------|------|-------------|---------------|
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
-BottomBar
+BottomBar<a name="bottombar"></a>
 ----------------------------------------------------------------
 Bottom bar, displaying mouse coordinate, scale, etc.
 
@@ -109,7 +150,7 @@ Bottom bar, displaying mouse coordinate, scale, etc.
 | viewertitleUrl | `string` | The URL of the viewer title label anchor. | `undefined` |
 | viewertitleUrlTarget | `string` | The target where to open the viewer title URL. If `iframe`, it will be displayed in an inline window, otherwise in a new tab. | `undefined` |
 
-Cyclomedia
+Cyclomedia<a name="cyclomedia"></a>
 ----------------------------------------------------------------
 Cyclomedia integration for QWC2.
 
@@ -124,7 +165,7 @@ Cyclomedia integration for QWC2.
 | maxMapScale | `number` | The maximum map scale above which the recordings WFS won't be displayed. | `10000` |
 | projection | `string` | The projection to use for Cyclomedia. | `'EPSG:3857'` |
 
-DxfExport
+DxfExport<a name="dxfexport"></a>
 ----------------------------------------------------------------
 Allows exporting a selected extent of the map as DXF.
 
@@ -136,7 +177,7 @@ Uses the DXF format support of QGIS Server.
 | layerOptions | `[{`<br />`  label: string,`<br />`  layers: string,`<br />`}]` | Optional choice of layer sets to pass to QGIS Server via LAYERS. | `undefined` |
 | serviceUrl | `string` | Optional URL invoked on export instead of the default QGIS Server URL. | `undefined` |
 
-Editing
+Editing<a name="editing"></a>
 ----------------------------------------------------------------
 Allows editing geometries and attributes of datasets.
 
@@ -154,7 +195,7 @@ for more information.
 | snappingActive | `bool` | Whether snapping is enabled by default when editing. | `true` |
 | width | `string` | The default width of the editing sidebar, as a CSS width string. | `"30em"` |
 
-FeatureForm
+FeatureForm<a name="featureform"></a>
 ----------------------------------------------------------------
 Displays queried feature attributes in a form.
 
@@ -176,7 +217,7 @@ Can be used as default identify tool by setting `"identifyTool": "FeatureForm"` 
 | initialX | `number` | Initial x position of the form window. | `0` |
 | initialY | `number` | Initial y position of the form window. | `0` |
 
-HeightProfile
+HeightProfile<a name="heightprofile"></a>
 ----------------------------------------------------------------
 Displays a height profile along a measured line.
 
@@ -190,7 +231,7 @@ Requires `elevationServiceUrl` to point to a qwc-elevation-service.
 | height | `number` | The height of the height profile widget in pixels. | `100` |
 | samples | `number` | The number of elevation samples to query. | `500` |
 
-Help
+Help<a name="help"></a>
 ----------------------------------------------------------------
 Displays a custom help dialog in a sidebar.
 
@@ -202,7 +243,7 @@ See also https://github.com/qgis/qwc2-demo-app/blob/master/doc/src/qwc_configura
 | bodyContentsFragmentUrl | `string` | URL to a document containing a HTML fragment to display in the Help sidebar. | `undefined` |
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
-HomeButton
+HomeButton<a name="homebutton"></a>
 ----------------------------------------------------------------
 Map button for reverting to the home extent of the theme.
 
@@ -210,7 +251,7 @@ Map button for reverting to the home extent of the theme.
 |----------|------|-------------|---------------|
 | position | `number` | The position slot index of the map button, from the bottom (0: bottom slot). | `5` |
 
-Identify
+Identify<a name="identify"></a>
 ----------------------------------------------------------------
 Displays queried feature attributes.
 
@@ -237,7 +278,7 @@ for customized queries and templates for the result presentation.
 | initiallyDocked | `bool` | Whether the identify dialog should be initially docked. | `undefined` |
 | replaceImageUrls | `bool` | Whether to replace an attribute value containing an URL to an image with an inline image. | `true` |
 
-LayerCatalog
+LayerCatalog<a name="layercatalog"></a>
 ----------------------------------------------------------------
 Displays a pre-configured catalog of external layers in a window.
 
@@ -250,7 +291,7 @@ See [https://qwc2.sourcepole.ch/assets/catalog.json](https://qwc2.sourcepole.ch/
 | catalogUrl | `string` | The URL to the catalog JSON file. | `undefined` |
 | windowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size. | `{width: 320, height: 320}` |
 
-LayerTree
+LayerTree<a name="layertree"></a>
 ----------------------------------------------------------------
 Displays the map layer tree in a sidebar.
 
@@ -279,7 +320,7 @@ Displays the map layer tree in a sidebar.
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 | width | `string` | The initial width of the layertree, as a CSS width string. | `"25em"` |
 
-LocateButton
+LocateButton<a name="locatebutton"></a>
 ----------------------------------------------------------------
 Map button for controling the locate (GPS) state.
 
@@ -287,7 +328,7 @@ Map button for controling the locate (GPS) state.
 |----------|------|-------------|---------------|
 | position | `number` | The position slot index of the map button, from the bottom (0: bottom slot). | `2` |
 
-LoginUser
+LoginUser<a name="loginuser"></a>
 ----------------------------------------------------------------
 Displays the currently logged in user.
 
@@ -295,7 +336,7 @@ Displays the currently logged in user.
 |----------|------|-------------|---------------|
 |
 
-MapPlugin
+MapPlugin<a name="mapplugin"></a>
 ----------------------------------------------------------------
 The main map component.
 
@@ -307,7 +348,7 @@ The main map component.
 | swipeLayerNameBlacklist | `[string]` | A list of layer names to ignore when determining the top-most layer to compare. You can use `*` as a whildcard character. | `[]` |
 | toolsOptions | `object` | Map tool configuraiton options. Refer to the sample config.json. | `{}` |
 
-MapComparePlugin
+MapComparePlugin<a name="mapcompareplugin"></a>
 ----------------------------------------------------------------
 Allows comparing the top layer with the rest of the map.
 
@@ -317,7 +358,7 @@ Activated through a checkbox in the LayerTree.
 |----------|------|-------------|---------------|
 |
 
-MapCopyright
+MapCopyright<a name="mapcopyright"></a>
 ----------------------------------------------------------------
 Displays layer attributions in the bottom right corner of the map.
 
@@ -326,7 +367,7 @@ Displays layer attributions in the bottom right corner of the map.
 | prefixCopyrightsWithLayerNames | `bool` | Whether to prepend the layer name to the attribution string. | `undefined` |
 | showThemeCopyrightOnly | `bool` | Whether to only display the attribution of the theme, omitting external layers. | `undefined` |
 
-MapInfoTooltip
+MapInfoTooltip<a name="mapinfotooltip"></a>
 ----------------------------------------------------------------
 
 
@@ -336,7 +377,7 @@ MapInfoTooltip
 | degreeCooPrecision | `number` | The number of decimal places to display for degree coordinates. | `4` |
 | elevationPrecision | `number` | The number of decimal places to display for elevation values. | `0` |
 
-MapLegend
+MapLegend<a name="maplegend"></a>
 ----------------------------------------------------------------
 Displays the map legend in a floating dialog.
 
@@ -352,7 +393,7 @@ The user can toggle whether to display only layers which are enabled, visible in
 | scaleDependentLegend | `bool` | Whether to display a scale-dependent legend by default. | `false` |
 | windowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size. | `{width: 320, height: 320}` |
 
-MapTip
+MapTip<a name="maptip"></a>
 ----------------------------------------------------------------
 Displays maptips by hovering over features on the map.
 
@@ -362,7 +403,7 @@ Queries the map tips configured in the QGIS layer properites over GetFeatureInfo
 |----------|------|-------------|---------------|
 | layerFeatureCount | `number` | The maximum number of feature maptips to display for a single layer. | `5` |
 
-Measure
+Measure<a name="measure"></a>
 ----------------------------------------------------------------
 Allows measuring points/lines/areas on the map.
 
@@ -372,7 +413,7 @@ Allows measuring points/lines/areas on the map.
 | snapping | `bool` | Whether snapping is available when editing. | `true` |
 | snappingActive | `bool` | Whether snapping is enabled by default when editing. | `true` |
 
-NewsPopup
+NewsPopup<a name="newspopup"></a>
 ----------------------------------------------------------------
 Displays a newsletter in a popup dialog.
 
@@ -384,7 +425,7 @@ revision is published (specified via newsRev prop).
 | newsDocument | `string` | URL to the news HTML document to display in the popup. | `undefined` |
 | newsRev | `string` | Revision of the document. | `undefined` |
 
-Print
+Print<a name="print"></a>
 ----------------------------------------------------------------
 Invokes QGIS Server WMS GetPrint to print the map to PDF.
 
@@ -400,7 +441,7 @@ Invokes QGIS Server WMS GetPrint to print the map to PDF.
 | scaleFactor | `number` | Scale factor to apply to line widths, font sizes, ... of redlining drawings passed to GetPrint. | `1.9` |
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
-ProcessNotifications
+ProcessNotifications<a name="processnotifications"></a>
 ----------------------------------------------------------------
 
 
@@ -408,7 +449,7 @@ ProcessNotifications
 |----------|------|-------------|---------------|
 |
 
-RasterExport
+RasterExport<a name="rasterexport"></a>
 ----------------------------------------------------------------
 Allows exporting a selected portion of the map to an image ("screenshot").
 
@@ -422,7 +463,7 @@ Allows exporting a selected portion of the map to an image ("screenshot").
 | pageSizes | `[{`<br />`  name: string,`<br />`  width: number,`<br />`  height: number,`<br />`}]` | List of image sizes to offer, in addition to the free-hand selection. The width and height are in millimeters. | `[`<br />`    {name: '15 x 15 cm', width: 150, height: 150},`<br />`    {name: '30 x 30 cm', width: 300, height: 300}`<br />`]` |
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
-Redlining
+Redlining<a name="redlining"></a>
 ----------------------------------------------------------------
 Allows drawing figures and text labels on the map.
 
@@ -432,7 +473,7 @@ Allows drawing figures and text labels on the map.
 | snapping | `bool` | Whether snapping is available when editing. | `true` |
 | snappingActive | `bool` | Whether snapping is enabled by default when editing. | `true` |
 
-Routing
+Routing<a name="routing"></a>
 ----------------------------------------------------------------
 Compute routes and isochrones.
 
@@ -444,7 +485,7 @@ Uses Valhalla as backend by default, with `routingServiceUrl` pointing to a Valh
 | enabledProviders | `[string]` | List of search providers to use for routing location search. | `["coordinates", "nominatim"]` |
 | geometry | `{`<br />`  initialWidth: number,`<br />`  initialHeight: number,`<br />`  initialX: number,`<br />`  initialY: number,`<br />`  initiallyDocked: bool,`<br />`}` | Default window geometry. | `{`<br />`    initialWidth: 320,`<br />`    initialHeight: 640,`<br />`    initialX: 0,`<br />`    initialY: 0,`<br />`    initiallyDocked: true`<br />`}` |
 
-ScratchDrawing
+ScratchDrawing<a name="scratchdrawing"></a>
 ----------------------------------------------------------------
 Task which which can be invoked by other tools to draw a geometry and pass it to a callback.
 
@@ -454,7 +495,7 @@ Invoke as setCurrentTask("ScratchDrawing", null, null, {callback: <function(feat
 |----------|------|-------------|---------------|
 |
 
-Settings
+Settings<a name="settings"></a>
 ----------------------------------------------------------------
 Settings panel.
 
@@ -466,7 +507,7 @@ Allows configuring language and color scheme.
 | languages | `array` | List of available languages. Value is the lang code, title/titleMsgId the display name. | `[]` |
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
-Share
+Share<a name="share"></a>
 ----------------------------------------------------------------
 Share the current map as a URL/permalink.
 
@@ -477,7 +518,7 @@ Share the current map as a URL/permalink.
 | showSocials | `{bool, [string]}` | Show the social buttons. Either `true` or `false`to enable/disable all, or an array of specific buttons to display (possible choices: `email`, `facebook`, `twitter`, `linkedin`, `whatsapp`). | `true` |
 | side | `string` | The side of the application on which to display the sidebar. | `'right'` |
 
-StartupMarker
+StartupMarker<a name="startupmarker"></a>
 ----------------------------------------------------------------
 Displays a marker in the center of the map if c=<x>,<y>&hc=1 is set in the URL.
 
@@ -485,7 +526,7 @@ Displays a marker in the center of the map if c=<x>,<y>&hc=1 is set in the URL.
 |----------|------|-------------|---------------|
 | removeMode | `string` | When to remove the marker. Possible choices: onpan, onzoom, onclickonmarker. | `'onpan'` |
 
-TaskButton
+TaskButton<a name="taskbutton"></a>
 ----------------------------------------------------------------
 Generic map button to launch a task.
 
@@ -496,7 +537,7 @@ Generic map button to launch a task.
 | position | `number` | The position slot index of the map button, from the bottom (0: bottom slot). | `1` |
 | task | `string` | The task name. | `undefined` |
 
-ThemeSwitcher
+ThemeSwitcher<a name="themeswitcher"></a>
 ----------------------------------------------------------------
 Theme switcher panel.
 
@@ -508,7 +549,7 @@ Theme switcher panel.
 | themeLayersListWindowSize | `{`<br />`  width: number,`<br />`  height: number,`<br />`}` | The default window size for the theme layers dialog. | `{width: 400, height: 300}` |
 | width | `string` | Default width as a CSS string. | `"50%"` |
 
-TimeManager
+TimeManager<a name="timemanager"></a>
 ----------------------------------------------------------------
 Allows controling the time dimension of temporal WMS layers.
 
@@ -526,7 +567,7 @@ Allows controling the time dimension of temporal WMS layers.
 | markerConfiguration | `{`<br />`  markersAvailable: bool,`<br />`  gradient: [string],`<br />`  markerOffset: array,`<br />`  markerPins: bool,`<br />`}` | The feature marker configuration. | `{`<br />`    markersAvailable: true,`<br />`    gradient: ["#f7af7d", "#eacc6e", "#fef89a", "#c5e09b", "#a3d29c", "#7cc096", "#79c8c5", "#34afce"],`<br />`    markerOffset: [0, 0],`<br />`    markerPins: true`<br />`}` |
 | stepUnits | `[string]` | The available temporal anumation step units. | `["s", "m", "h", "d", "M", "y"]` |
 
-TopBar
+TopBar<a name="topbar"></a>
 ----------------------------------------------------------------
 Top bar, containing the logo, searchbar, task buttons and app menu.
 
@@ -544,7 +585,7 @@ Top bar, containing the logo, searchbar, task buttons and app menu.
 | toolbarItems | `array` | The toolbar. Refer to the corresponding chapter of the viewer documentation and the sample config.json. | `[]` |
 | toolbarItemsShortcutPrefix | `string` | The keyboard shortcut prefix for triggering toolbar tasks. I.e. alt+shift. The task are then triggered by <prefix>+{1,2,3,...} for the 1st, 2nd, 3rd... toolbar icon. | `undefined` |
 
-ZoomButton
+ZoomButton<a name="zoombutton"></a>
 ----------------------------------------------------------------
 Map button for zooming the map.
 
