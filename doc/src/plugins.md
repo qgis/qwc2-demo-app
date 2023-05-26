@@ -45,7 +45,7 @@ Plugin reference
 ---
 API<a name="api"></a>
 ----------------------------------------------------------------
-Exposes an API for interacting with QWC2 to `window.qwc2`.
+Exposes an API for interacting with QWC2 via `window.qwc2`.
 
 All following action functions are available:
 
