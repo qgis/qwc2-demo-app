@@ -96,9 +96,12 @@ AttributeTable<a name="attributetable"></a>
 ----------------------------------------------------------------
 Displaying the attribute table of layers in a dialog.
 
-To make a layer available in the attribute table, create a a data resource and matching permissions for it in the qwc-admin-gui.
+To make a layer available in the attribute table, create a a data resource and matching permissions for it in the `qwc-admin-gui`.
 
 The attribute table works for both read-only as well as read-write data resources.
+
+This plugin queries the dataset via the editing service specified by
+`editServiceUrl` in `config.json` (by default the `qwc-data-service`).
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -108,7 +111,9 @@ The attribute table works for both read-only as well as read-write data resource
 
 Authentication<a name="authentication"></a>
 ----------------------------------------------------------------
-Handles authentication via the authentication service specified by `authServiceUrl`.
+Handles authentication
+
+Invokes the the authentication service specified by `authServiceUrl` in `config.json`.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -131,7 +136,7 @@ Allows managing user bookmarks.
 
 Bookmarks are only allowed for authenticated users.
 
-Requires `permalinkServiceUrl` to point to a qwc-permalink-service.
+Requires `permalinkServiceUrl` to point to a `qwc-permalink-service`.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -183,9 +188,8 @@ Allows editing geometries and attributes of datasets.
 
 The attribute form is generated from the QGIS attribute form configuration.
 
-By default, requires `editServiceUrl` to point to a qwc-data-service. See
-[https://github.com/qwc-services/qwc-data-service](https://github.com/qwc-services/qwc-data-service)
-for more information.
+This plugin queries the dataset via the editing service specified by
+`editServiceUrl` in `config.json` (by default the `qwc-data-service`).
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -205,7 +209,7 @@ If the dataset it editable, allows editing the attributes directly in the
 displayed form.
 
 This plugin queries the feature via the editing service specified by
-`editServiceUrl` (by default the qwc-data-service), rather than over WMS
+`editServiceUrl` in `config.json` (by default the `qwc-data-service`), rather than over WMS
 GetFeatureInfo like the `Identify` plugin.
 
 Can be used as default identify tool by setting `"identifyTool": "FeatureForm"` in `config.json`.
@@ -223,7 +227,7 @@ Displays a height profile along a measured line.
 
 Triggered automatically when a line is measured via the `Measure` plugin.
 
-Requires `elevationServiceUrl` to point to a qwc-elevation-service.
+Requires `elevationServiceUrl` in `config.json` to point to a `qwc-elevation-service`.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -236,7 +240,6 @@ Help<a name="help"></a>
 Displays a custom help dialog in a sidebar.
 
 Define the help contents by specifying the `bodyContentsFragmentUrl` prop.
-See also https://github.com/qgis/qwc2-demo-app/blob/master/doc/src/qwc_configuration.md#help-dialog.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -284,7 +287,34 @@ Displays a pre-configured catalog of external layers in a window.
 
 Configured through a catalog JSON containing a tree of external layer identifiers.
 
-See [https://qwc2.sourcepole.ch/assets/catalog.json](https://qwc2.sourcepole.ch/assets/catalog.json) for an example.
+Example:
+```json
+{
+  "catalog": [
+    {
+      "title": "Bauzonen",
+      "resource": "wms:http://wms.geo.admin.ch#ch.are.bauzonen"
+    },
+    {
+      "title": "Gewässerschutz",
+       "resource": "wms:https://geo.so.ch/api/wms#ch.so.afu.gewaesserschutz[50]"
+    },
+    {
+      "title": "Landeskarten",
+      "sublayers": [
+        {
+          "title": "Landeskarte 1:1 Million | LK1000",
+          "resource": "wms:http://wms.geo.admin.ch#ch.swisstopo.pixelkarte-farbe-pk1000.noscale"
+        },
+        {
+          "title": "Landeskarte 1:100`000 | LK100",
+          "resource": "wms:http://wms.geo.admin.ch#ch.swisstopo.pixelkarte-farbe-pk100.noscale"
+        }
+      ]
+    }
+  ]
+}
+```
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -369,7 +399,15 @@ Displays layer attributions in the bottom right corner of the map.
 
 MapInfoTooltip<a name="mapinfotooltip"></a>
 ----------------------------------------------------------------
+Provides map context information when right-clicking on the map.
 
+Displays the coordinates at the picked position by default.
+
+If `elevationServiceUrl` in `config.json` to points to a `qwc-elevation-service`,
+the height at the picked position is also displayed.
+
+If `mapInfoService` in `config.json` points to a `qwc-mapinfo-service`, additional
+custom information according to the `qwc-mapinfo-service` configuration is returned.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -398,6 +436,8 @@ MapTip<a name="maptip"></a>
 Displays maptips by hovering over features on the map.
 
 Queries the map tips configured in the QGIS layer properites over GetFeatureInfo.
+
+The map tip needs to be configured in QGIS Layer Properties &rarr; Display.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -429,6 +469,8 @@ Print<a name="print"></a>
 ----------------------------------------------------------------
 Invokes QGIS Server WMS GetPrint to print the map to PDF.
 
+Uses the print layouts defined in the QGIS project.
+
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
 | defaultDpi | `number` | The default print dpi. | `300` |
@@ -443,7 +485,9 @@ Invokes QGIS Server WMS GetPrint to print the map to PDF.
 
 ProcessNotifications<a name="processnotifications"></a>
 ----------------------------------------------------------------
+Adds support for displaying notifications of background processes.
 
+Only useful for third-party plugins which use this functionality.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -477,7 +521,7 @@ Routing<a name="routing"></a>
 ----------------------------------------------------------------
 Compute routes and isochrones.
 
-Uses Valhalla as backend by default, with `routingServiceUrl` pointing to a Valhalla server.
+Requites `routingServiceUrl` in `config.json` pointing to a Valhalla routing service.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -489,7 +533,9 @@ ScratchDrawing<a name="scratchdrawing"></a>
 ----------------------------------------------------------------
 Task which which can be invoked by other tools to draw a geometry and pass it to a callback.
 
-Invoke as setCurrentTask("ScratchDrawing", null, null, {callback: <function(features, crs)>});
+Only useful for third-party code, i.e. over the JavaScript API.
+
+Invoke as `setCurrentTask("ScratchDrawing", null, null, {callback: <function(features, crs)>});`
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
@@ -511,6 +557,8 @@ Share<a name="share"></a>
 ----------------------------------------------------------------
 Share the current map as a URL/permalink.
 
+Compact permalinks will be generated if `permalinkServiceUrl` in `config.json` points to a `qwc-permalink-service`.
+
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
 | showLink | `bool` | Show the map URL. | `true` |
@@ -520,7 +568,9 @@ Share the current map as a URL/permalink.
 
 StartupMarker<a name="startupmarker"></a>
 ----------------------------------------------------------------
-Displays a marker in the center of the map if c=<x>,<y>&hc=1 is set in the URL.
+Displays a marker when starting up the viewer.
+
+The marked is displayed in the center of the map if `c=<x>,<y>&hc=1` is set in the URL.
 
 | Property | Type | Description | Default value |
 |----------|------|-------------|---------------|
