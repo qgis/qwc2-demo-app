@@ -1,5 +1,5 @@
 {
-  "locale": "en-US",
+  "locale": "pl-PL",
   "messages": {
     "appmenu": {
       "items": {
@@ -10,6 +10,7 @@
         "Editing": "Edycja",
         "FeatureForm": "",
         "Help": "Pomoc",
+        "IdentifyPoint": "",
         "IdentifyRegion": "Identifikuj Obszar",
         "LayerCatalog": "",
         "LayerTree": "Warstwy i ich legendy",
