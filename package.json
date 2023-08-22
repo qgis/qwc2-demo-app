@@ -1,6 +1,6 @@
 {
     "name": "QWC2App",
-    "version": "2021.11.24",
+    "version": "2023.08.22-master",
     "description": "QGIS Web Client 2 application",
     "author": "Sourcepole",
     "license": "BSD-2-Clause",
@@ -10,22 +10,22 @@
         "qwc2"
     ],
     "devDependencies": {
-        "babel-loader": "9.1.2",
+        "babel-loader": "^9.1.2",
         "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-        "clean-webpack-plugin": "4.0.0",
-        "copy-webpack-plugin": "11.0.0",
-        "css-loader": "6.7.3",
-        "eslint": "8.32.0",
-        "eslint-plugin-react": "7.32.1",
-        "html-webpack-plugin": "5.5.0",
+        "clean-webpack-plugin": "^4.0.0",
+        "copy-webpack-plugin": "^11.0.0",
+        "css-loader": "^6.7.3",
+        "eslint": "^8.32.0",
+        "eslint-plugin-react": "^7.32.1",
+        "html-webpack-plugin": "^5.5.0",
         "react-docgen": "^5.4.3",
-        "source-map-loader": "4.0.1",
-        "string-replace-loader": "3.1.0",
-        "style-loader": "3.3.1",
-        "webpack": "5.76.0",
-        "webpack-bundle-size-analyzer": "3.1.0",
-        "webpack-cli": "5.0.1",
-        "webpack-dev-server": "4.11.1"
+        "source-map-loader": "^4.0.1",
+        "string-replace-loader": "^3.1.0",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.76.0",
+        "webpack-bundle-size-analyzer": "^3.1.0",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.11.1"
     },
     "scripts": {
         "prod": "npm run tsupdate && npm run themesconfig && npm run iconfont && webpack --mode production --progress",
@@ -39,6 +39,9 @@
         "release": "node -e \"process.exit(require('os').platform() === 'win32' ? 0 : 1)\" && qwc2\\scripts\\package-commands.bat release || ./qwc2/scripts/package-commands.sh release"
     },
     "dependencies": {
-        "js-yaml": "^4.1.0"
+        "@giro3d/giro3d": "^0.26.0",
+        "js-yaml": "^4.1.0",
+        "three": "^0.148.0",
+        "three.meshline": "^1.0.3"
     }
 }
