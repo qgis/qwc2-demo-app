@@ -105,7 +105,7 @@ export default {
             LoginUserPlugin: LoginUserPlugin,
             MapComparePlugin: MapComparePlugin,
             MapCopyrightPlugin: MapCopyrightPlugin,
-            MapInfoTooltipPlugin: MapInfoTooltipPlugin,
+            MapInfoTooltipPlugin: MapInfoTooltipPlugin(),
             MapLegendPlugin: MapLegendPlugin,
             MapTipPlugin: MapTipPlugin,
             MeasurePlugin: MeasurePlugin,

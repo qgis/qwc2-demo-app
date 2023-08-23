@@ -250,10 +250,12 @@
           "displayResultTree": false,
           "featureInfoReturnsLayerName": true,
           "clearResultsOnClose": true,
-          "initialWidth": 480,
-          "initialHeight": 550,
-          "initialX": 0,
-          "initialY": 0
+          "geometry": {
+            "initialWidth": 480,
+            "initialHeight": 550,
+            "initialX": 0,
+            "initialY": 0
+          }
         }
       },
       {
