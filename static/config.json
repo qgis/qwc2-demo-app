@@ -84,7 +84,8 @@
             "zoomDuration": 250,
             "enableRotation": true,
             "panStepSize": 0.25,
-            "panPageSize": 0.1
+            "panPageSize": 0.1,
+            "constrainExtent": false
           },
           "toolsOptions": {
             "OverviewSupport": {
