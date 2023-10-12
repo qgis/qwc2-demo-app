@@ -140,8 +140,7 @@
               {"key": "Editing", "icon": "editing"},
               {"key": "FeatureForm", "icon": "featureform"},
               {"key": "AttributeTable", "icon": "editing"},
-              {"key": "DxfExport", "icon": "dxfexport"},
-              {"key": "RasterExport", "icon": "rasterexport"},
+              {"key": "MapExport", "icon": "rasterexport"},
               {"key": "Routing", "icon": "routing"}
             ]},
             {"key": "Print", "icon": "print", "shortcut": "alt+shift+p"},
@@ -295,21 +294,13 @@
         }
       },
       {
-        "name": "DxfExport",
-        "cfg": {
-          "serviceUrl": "http://127.0.0.1:8001/ows/dxf_geobau",
-          "layerOptions": [
-            {"label": "Geobau", "layers": "dxfgeobau"},
-            {"label": "Geobau + Höhenkurven", "layers": "dxfgeobau,hoehenkurven"}
-          ],
-          "formatOptions": "MODE:SYMBOLLAYERSYMBOLOGY;SCALE:500;NO_MTEXT:TEXT"
-        }
-      },
-      {
-        "name": "RasterExport",
+        "name": "MapExport",
         "cfg": {
           "dpis": [96, 300],
-          "exportExternalLayers": true
+          "exportExternalLayers": true,
+          "defaultFormat": "image/png",
+          "formatConfiguration": {
+          }
         }
       },
       {

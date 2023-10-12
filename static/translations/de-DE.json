@@ -22,6 +22,7 @@
         "MeasurePolygon": "Messen Polygon",
         "Print": "Drucken",
         "RasterExport": "Raster-Export",
+        "MapExport": "Karte exportieren",
         "Redlining": "Zeichnen",
         "Routing": "Routing",
         "Share": "Teilen",
@@ -241,6 +242,16 @@
     "map": {
       "loading": "Karte wird geladen...",
       "resetrotation": "Drehung zurücksetzen"
+    },
+    "mapexport": {
+      "configuration": "Konfiguration",
+      "format": "Format",
+      "resolution": "Auflösung",
+      "scale": "Maßstab",
+      "size": "Dimensionen",
+      "submit": "Exportieren",
+      "usersize": "Auf Karte auswählen...",
+      "wait": "Bitte warten..."
     },
     "mapinfotooltip": {
       "elevation": "Höhe",
