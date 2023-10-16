@@ -55,6 +55,7 @@ import RedliningPlugin from 'qwc2/plugins/Redlining';
 import RoutingPlugin from 'qwc2/plugins/Routing';
 import ScratchDrawingPlugin from 'qwc2/plugins/ScratchDrawing';
 import SearchBox from 'qwc2/components/SearchBox';
+import FeatureSearchPlugin from 'qwc2/plugins/FeatureSearch';
 import SettingsPlugin from 'qwc2/plugins/Settings';
 import SharePlugin from 'qwc2/plugins/Share';
 import StartupMarkerPlugin from 'qwc2/plugins/StartupMarker';
@@ -119,6 +120,7 @@ export default {
                 BufferSupport: BufferSupport
             }),
             RoutingPlugin: RoutingPlugin(SearchProviders),
+            FeatureSearchPlugin: FeatureSearchPlugin,
             ScratchDrawingPlugin: ScratchDrawingPlugin,
             SettingsPlugin: SettingsPlugin,
             SharePlugin: SharePlugin,

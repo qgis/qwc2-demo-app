@@ -9,6 +9,7 @@
         "DxfExport": "Экспорт в DXF",
         "Editing": "Правка",
         "FeatureForm": "",
+        "FeatureSearch": "",
         "Help": "Помощь",
         "IdentifyPoint": "",
         "IdentifyRegion": "Определить регион",
@@ -149,6 +150,12 @@
       "feature": "",
       "noresults": "",
       "querying": "",
+      "title": ""
+    },
+    "featuresearch": {
+      "noresults": "",
+      "query": "",
+      "select": "",
       "title": ""
     },
     "fileselector": {

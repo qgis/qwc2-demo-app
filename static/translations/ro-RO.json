@@ -9,6 +9,7 @@
         "DxfExport": "Export DXF",
         "Editing": "Editare",
         "FeatureForm": "Editare atribute",
+        "FeatureSearch": "",
         "Help": "Ajutor",
         "IdentifyPoint": "Interogare punct",
         "IdentifyRegion": "Interogare regiune",
@@ -150,6 +151,12 @@
       "noresults": "Nu există rezultate",
       "querying": "Interogare...",
       "title": "Formular obiecte spațiale"
+    },
+    "featuresearch": {
+      "noresults": "",
+      "query": "",
+      "select": "",
+      "title": ""
     },
     "fileselector": {
       "files": "fișiere",

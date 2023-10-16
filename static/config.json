@@ -130,6 +130,7 @@
             {"key": "LayerTree", "icon": "layers", "shortcut": "alt+shift+l"},
             {"key": "MapLegend", "icon": "list-alt"},
             {"key": "LayerCatalog", "icon": "catalog", "shortcut": "alt+shift+c"},
+            {"key": "FeatureSearch", "icon": "search"},
             {"key": "Share", "icon": "share", "shortcut": "alt+shift+s"},
             {"key": "Bookmark", "icon": "bookmark", "shortcut": "alt+shift+b"},
             {"key": "Tools", "icon": "tools", "subitems": [
@@ -391,6 +392,9 @@
       },
       {
         "name": "Routing"
+      },
+      {
+        "name": "FeatureSearch"
       }
     ],
     "mobile": [

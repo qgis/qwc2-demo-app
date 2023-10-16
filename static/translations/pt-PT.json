@@ -9,6 +9,7 @@
         "DxfExport": "Exportar DXF",
         "Editing": "Editando",
         "FeatureForm": "",
+        "FeatureSearch": "",
         "Help": "Ajuda",
         "IdentifyPoint": "",
         "IdentifyRegion": "Identificar zona",
@@ -149,6 +150,12 @@
       "feature": "",
       "noresults": "",
       "querying": "",
+      "title": ""
+    },
+    "featuresearch": {
+      "noresults": "",
+      "query": "",
+      "select": "",
       "title": ""
     },
     "fileselector": {
