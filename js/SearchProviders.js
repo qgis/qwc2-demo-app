@@ -8,6 +8,8 @@
 
 
 import yaml from 'js-yaml';
+import CoordinatesUtils from '../qwc2/utils/CoordinatesUtils';
+import IdentifyUtils from '../qwc2/utils/IdentifyUtils';
 
 function coordinatesSearch(text, searchParams, callback) {
     const displaycrs = searchParams.displaycrs || "EPSG:4326";
@@ -190,6 +192,73 @@ class NominatimSearch {
 
 /** ************************************************************************ **/
 
+class QgisSearch {
+
+    static search(text, searchParams, callback, axios) {
+
+        const filter = {...searchParams.cfgParams.expression};
+        const values = {TEXT: text};
+        const bbox = CoordinatesUtils.reprojectBbox(searchParams.theme.bbox.bounds, searchParams.theme.bbox.crs, searchParams.theme.mapCrs);
+        const params = {
+            SERVICE: 'WMS',
+            VERSION: searchParams.theme.version,
+            REQUEST: 'GetFeatureInfo',
+            CRS: searchParams.theme.mapCrs,
+            BBOX: bbox.join(","),
+            WIDTH: 100,
+            HEIGHT: 100,
+            LAYERS: [],
+            FILTER: [],
+            WITH_MAPTIP: false,
+            WITH_GEOMETRY: true
+        };
+        Object.keys(filter).forEach(layer => {
+            Object.entries(values).forEach(([key, value]) => {
+                filter[layer] = filter[layer].replace(`$${key}$`, value.replace("'", "\\'"));
+            });
+            params.LAYERS.push(layer);
+            params.FILTER.push(layer + ":" + filter[layer]);
+        });
+        params.LAYERS = params.LAYERS.join(",");
+        params.FILTER = params.FILTER.join(";");
+        axios.get(searchParams.theme.featureInfoUrl, {params}).then(response => {
+            callback(QgisSearch.searchResults(
+                IdentifyUtils.parseResponse(response.data, null, 'text/xml', null, searchParams.mapcrs),
+                searchParams.cfgParams.title
+            ));
+        }).catch(() => {
+            callback({results: []});
+        });
+    }
+    static searchResults(features, title) {
+        const results = [];
+        Object.entries(features).forEach(([layername, layerfeatures]) => {
+            const items = layerfeatures.map(feature => ({
+                id: "qgis." + layername + "." + feature.id,
+                text: feature.properties[feature.displayfield],
+                x: 0.5 * (feature.bbox[0] + feature.bbox[2]),
+                y: 0.5 * (feature.bbox[1] + feature.bbox[3]),
+                crs: feature.crs,
+                bbox: feature.bbox,
+                geometry: feature.geometry
+            }));
+            results.push(
+                {
+                    id: "qgis." + layername,
+                    title: title + ": " + layername,
+                    items: items
+                }
+            );
+        });
+        return {results};
+    }
+    static getResultGeometry(resultItem, callback) {
+        callback({geometry: resultItem.geometry, crs: resultItem.crs});
+    }
+}
+
+/** ************************************************************************ **/
+
 export const SearchProviders = {
     coordinates: {
         labelmsgid: "search.coordinates",
@@ -198,5 +267,10 @@ export const SearchProviders = {
     nominatim: {
         label: "OpenStreetMap",
         onSearch: NominatimSearch.search
+    },
+    qgis: {
+        label: "QGIS",
+        onSearch: QgisSearch.search,
+        getResultGeometry: QgisSearch.getResultGeometry
     }
 };
