@@ -28,6 +28,7 @@
   "allowFractionalZoom": false,
   "localeAwareNumbers": false,
   "geodesicMeasurements": true,
+  "trustWmsCapabilityURLs": false,
   "identifyTool": "Identify",
   "wmsDpi": 96,
   "wmsHidpi": false,
