@@ -147,7 +147,8 @@ export default {
     },
     actionLogger: (action) => {
         /* Do something with action, i.e. Piwik/Mamoto event tracking */
-    },
+    }
+    /*
     themeLayerRestorer: (missingLayers, theme, callback) => {
         // Invoked for layers specified in the l url parameter which are missing in the specified theme
         // Could be used to query a search provider for the missing theme layers
@@ -160,7 +161,7 @@ export default {
         const newLayerNames = {};
 
         callback(newLayers, newLayerNames);
-    }
+    }*/
     /* externalLayerRestorer: (externalLayers, themes, callback) => {
         // Optional function to handle restoring of external layers from the l URL parameter
         // If omitted, the default handler is used which downloads capabilities for each service to restore the layer
