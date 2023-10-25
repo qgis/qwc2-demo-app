@@ -56,6 +56,11 @@
       "dark": "Dunkel",
       "highcontrast": "Hochkontrast"
     },
+    "app": {
+      "missingbg": "Der Hintergrund \"{0}\" konnte nicht gefunden werden, der Standardhintergrund wird angezeigt.",
+      "missinglayers": "Die folgenden Ebenen können nicht gefunden werden: {0}.",
+      "missingtheme": "Das Thema \"{0}\" konnte nicht gefunden werden, das Standardthema wurde geladen."
+    },
     "attribtable": {
       "addfeature": "Objekt hinzufügen",
       "commit": "Geänderte Zeile speichern",
@@ -418,10 +423,15 @@
       "title": "Informationen zum Thema"
     },
     "settings": {
+      "bookmarks": "Lesezeichen",
       "colorscheme": "Farbschema",
       "confirmlang": "Die Anwendung wird neugeladen, um die Sprache zu wechseln. Fortsetzen?",
+      "default": "Standard",
+      "defaulttheme": "Standardthema",
+      "defaultthemefailed": "Konnte das Standardthema nicht ändern: {0}",
       "language": "Sprache",
-      "systemlang": "Systemsprache"
+      "systemlang": "Systemsprache",
+      "themes": "Themen"
     },
     "share": {
       "QRCodeLinkTitle": "QR Code (Smartphone)",

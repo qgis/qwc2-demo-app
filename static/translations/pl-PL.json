@@ -56,6 +56,11 @@
       "dark": "",
       "highcontrast": ""
     },
+    "app": {
+      "missingbg": "",
+      "missinglayers": "",
+      "missingtheme": ""
+    },
     "attribtable": {
       "addfeature": "",
       "commit": "",
@@ -418,10 +423,15 @@
       "title": ""
     },
     "settings": {
+      "bookmarks": "",
       "colorscheme": "",
       "confirmlang": "",
+      "default": "",
+      "defaulttheme": "",
+      "defaultthemefailed": "",
       "language": "",
-      "systemlang": ""
+      "systemlang": "",
+      "themes": ""
     },
     "share": {
       "QRCodeLinkTitle": "QR code",

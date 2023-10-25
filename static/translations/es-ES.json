@@ -56,6 +56,11 @@
       "dark": "",
       "highcontrast": ""
     },
+    "app": {
+      "missingbg": "",
+      "missinglayers": "",
+      "missingtheme": ""
+    },
     "attribtable": {
       "addfeature": "Añadir elemento",
       "commit": "Commit de la fila modificada",
@@ -418,10 +423,15 @@
       "title": "Información del tema"
     },
     "settings": {
+      "bookmarks": "",
       "colorscheme": "Tema",
       "confirmlang": "La aplicación se reiniciará para cambiar de idioma. Quiere continuar?",
+      "default": "",
+      "defaulttheme": "",
+      "defaultthemefailed": "",
       "language": "Idioma",
-      "systemlang": "Idioma del sistema"
+      "systemlang": "Idioma del sistema",
+      "themes": ""
     },
     "share": {
       "QRCodeLinkTitle": "Código QR",

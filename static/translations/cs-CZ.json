@@ -56,6 +56,11 @@
       "dark": "",
       "highcontrast": ""
     },
+    "app": {
+      "missingbg": "",
+      "missinglayers": "",
+      "missingtheme": ""
+    },
     "attribtable": {
       "addfeature": "Přidat prvek",
       "commit": "Uložit změněný řádek",
@@ -418,10 +423,15 @@
       "title": "Informace o tématu"
     },
     "settings": {
+      "bookmarks": "",
       "colorscheme": "Barevné schéma",
       "confirmlang": "Pro změnu jazyka je třeba aplikaci znovu načíst. Pokračovat?",
+      "default": "",
+      "defaulttheme": "",
+      "defaultthemefailed": "",
       "language": "Jazyk",
-      "systemlang": "Systémový jazyk"
+      "systemlang": "Systémový jazyk",
+      "themes": ""
     },
     "share": {
       "QRCodeLinkTitle": "QR kód",

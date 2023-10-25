@@ -56,6 +56,11 @@
       "dark": "Dark",
       "highcontrast": "High contrast"
     },
+    "app": {
+      "missingbg": "Unable to find the background \"{0}\", displaying the default background.",
+      "missinglayers": "Unable to find the following layers: {0}.",
+      "missingtheme": "Unable to find the theme \"{0}\", loading the default theme."
+    },
     "attribtable": {
       "addfeature": "Add feature",
       "commit": "Commit changed row",
@@ -418,10 +423,15 @@
       "title": "Theme Information"
     },
     "settings": {
+      "bookmarks": "Bookmarks",
       "colorscheme": "Color scheme",
       "confirmlang": "The application will be reloaded to change the language. Proceed?",
+      "default": "Default",
+      "defaulttheme": "Default theme",
+      "defaultthemefailed": "Failed to set the default theme: {0}",
       "language": "Language",
-      "systemlang": "System language"
+      "systemlang": "System language",
+      "themes": "Themes"
     },
     "share": {
       "QRCodeLinkTitle": "QR Code",
