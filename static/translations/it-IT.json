@@ -59,6 +59,7 @@
     "app": {
       "missingbg": "Impossibile trovare lo sfondo \"{0}\", viene visualizzato lo sfondo predefinito.",
       "missinglayers": "Impossibile trovare i seguenti livelli: {0}.",
+      "missingpermalink": "Il permalink o il segnalibro non è valido o è scaduto.",
       "missingtheme": "Impossibile trovare il tema \"{0}\", è stato caricato il tema predefinito."
     },
     "attribtable": {
@@ -436,6 +437,7 @@
     "share": {
       "QRCodeLinkTitle": "Codice QR",
       "directLinkTitle": "Collegamento diretto",
+      "expires": "Questo permalink è valido fino al {0}.",
       "refresh": "Genera permalink",
       "shareTitle": "QWC2",
       "showpin": "Mostra pin",
