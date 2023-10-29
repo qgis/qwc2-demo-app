@@ -171,9 +171,11 @@
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Distancia",
+      "error": "",
       "export": "Exportar perfil",
       "height": "Altura",
-      "loading": "Cálculo del perfil de altura..."
+      "loading": "Cálculo del perfil de altura...",
+      "title": ""
     },
     "identify": {
       "clipboard": "",

@@ -171,9 +171,11 @@
     "heightprofile": {
       "asl": "над у.м.",
       "distance": "Дистанция",
+      "error": "",
       "export": "",
       "height": "Высота",
-      "loading": "Расчет высоты профиля..."
+      "loading": "Расчет высоты профиля...",
+      "title": ""
     },
     "identify": {
       "clipboard": "",

@@ -171,9 +171,11 @@
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Mesafe",
+      "error": "",
       "export": "",
       "height": "Yükseklik",
-      "loading": "Yükseklik profili hesaplanıyor..."
+      "loading": "Yükseklik profili hesaplanıyor...",
+      "title": ""
     },
     "identify": {
       "clipboard": "",
