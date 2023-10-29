@@ -168,13 +168,18 @@
       "files": "",
       "placeholder": "Välj fil..."
     },
+    "heigghtprofile": {
+      "title": ""
+    },
     "heightprofile": {
       "asl": "m.ö.h.",
       "distance": "Avstånd",
+      "drawnodes": "",
       "error": "",
       "export": "",
       "height": "Höjd",
       "loading": "Beräknar höjdprofil...",
+      "print": "",
       "title": ""
     },
     "identify": {

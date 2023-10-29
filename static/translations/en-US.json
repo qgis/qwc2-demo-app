@@ -168,13 +168,18 @@
       "files": "files",
       "placeholder": "Select file..."
     },
+    "heigghtprofile": {
+      "title": ""
+    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Distance",
+      "drawnodes": "Draw nodes",
       "error": "Failed to compute height profile",
       "export": "Export profile",
       "height": "Height",
       "loading": "Calculating height profile...",
+      "print": "Print height profile",
       "title": "Height profile"
     },
     "identify": {

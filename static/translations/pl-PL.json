@@ -168,13 +168,18 @@
       "files": "",
       "placeholder": "Wybierz plik..."
     },
+    "heigghtprofile": {
+      "title": ""
+    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Odległość",
+      "drawnodes": "",
       "error": "",
       "export": "",
       "height": "Wysokość",
       "loading": "Obliczanie profilu wysokości...",
+      "print": "",
       "title": ""
     },
     "identify": {

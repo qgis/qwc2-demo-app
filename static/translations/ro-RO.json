@@ -168,13 +168,18 @@
       "files": "fișiere",
       "placeholder": "Selectează fișierul..."
     },
+    "heigghtprofile": {
+      "title": ""
+    },
     "heightprofile": {
       "asl": "dM",
       "distance": "Distanța",
+      "drawnodes": "",
       "error": "",
       "export": "Export profil",
       "height": "Înălțimea",
       "loading": "Se calculează profilul...",
+      "print": "",
       "title": ""
     },
     "identify": {

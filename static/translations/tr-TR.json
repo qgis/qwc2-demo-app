@@ -168,13 +168,18 @@
       "files": "",
       "placeholder": "Dosya seç..."
     },
+    "heigghtprofile": {
+      "title": ""
+    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Mesafe",
+      "drawnodes": "",
       "error": "",
       "export": "",
       "height": "Yükseklik",
       "loading": "Yükseklik profili hesaplanıyor...",
+      "print": "",
       "title": ""
     },
     "identify": {

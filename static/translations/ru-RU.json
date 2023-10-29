@@ -168,13 +168,18 @@
       "files": "",
       "placeholder": "Выберите файл..."
     },
+    "heigghtprofile": {
+      "title": ""
+    },
     "heightprofile": {
       "asl": "над у.м.",
       "distance": "Дистанция",
+      "drawnodes": "",
       "error": "",
       "export": "",
       "height": "Высота",
       "loading": "Расчет высоты профиля...",
+      "print": "",
       "title": ""
     },
     "identify": {

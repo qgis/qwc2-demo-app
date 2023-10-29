@@ -168,13 +168,18 @@
       "files": "Soubory",
       "placeholder": "Vybrat soubor..."
     },
+    "heigghtprofile": {
+      "title": ""
+    },
     "heightprofile": {
       "asl": "m n. m.",
       "distance": "Vzdálenost",
+      "drawnodes": "",
       "error": "",
       "export": "Export výškového profilu",
       "height": "Výška",
       "loading": "Výpočet výškového profilu...",
+      "print": "",
       "title": ""
     },
     "identify": {
