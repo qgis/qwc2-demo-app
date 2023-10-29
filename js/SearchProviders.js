@@ -219,7 +219,7 @@ class QgisSearch {
             params.LAYERS.push(layer);
             params.FILTER.push(layer + ":" + filter[layer]);
         });
-        params.LAYERS = params.LAYERS.join(",");
+        params.QUERY_LAYERS = params.LAYERS = params.LAYERS.join(",");
         params.FILTER = params.FILTER.join(";");
         axios.get(searchParams.theme.featureInfoUrl, {params}).then(response => {
             callback(QgisSearch.searchResults(
