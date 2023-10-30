@@ -210,7 +210,8 @@ class QgisSearch {
             LAYERS: [],
             FILTER: [],
             WITH_MAPTIP: false,
-            WITH_GEOMETRY: true
+            WITH_GEOMETRY: true,
+            info_format: 'text/xml'
         };
         Object.keys(filter).forEach(layer => {
             Object.entries(values).forEach(([key, value]) => {
