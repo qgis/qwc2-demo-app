@@ -224,7 +224,7 @@ class QgisSearch {
         params.FILTER = params.FILTER.join(";");
         axios.get(searchParams.theme.featureInfoUrl, {params}).then(response => {
             callback(QgisSearch.searchResults(
-                IdentifyUtils.parseResponse(response.data, null, 'text/xml', null, searchParams.mapcrs),
+                IdentifyUtils.parseResponse(response.data, searchParams.theme, 'text/xml', null, searchParams.mapcrs),
                 searchParams.cfgParams.title
             ));
         }).catch(() => {
@@ -236,7 +236,7 @@ class QgisSearch {
         Object.entries(features).forEach(([layername, layerfeatures]) => {
             const items = layerfeatures.map(feature => ({
                 id: "qgis." + layername + "." + feature.id,
-                text: feature.properties[feature.displayfield],
+                text: feature.displayname,
                 x: 0.5 * (feature.bbox[0] + feature.bbox[2]),
                 y: 0.5 * (feature.bbox[1] + feature.bbox[3]),
                 crs: feature.crs,
