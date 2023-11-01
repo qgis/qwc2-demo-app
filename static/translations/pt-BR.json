@@ -168,9 +168,6 @@
       "files": "Arquivos",
       "placeholder": "Selecione pasta"
     },
-    "heigghtprofile": {
-      "title": "Título"
-    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Distância",
@@ -354,6 +351,7 @@
       "label": "Etiqueta",
       "layer": "Camada",
       "line": "Línha",
+      "markers": "",
       "measurements": "Medidas",
       "numericinput": "Entrada numérica",
       "pick": "Escolher",

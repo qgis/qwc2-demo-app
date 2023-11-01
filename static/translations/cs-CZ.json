@@ -168,9 +168,6 @@
       "files": "Soubory",
       "placeholder": "Vybrat soubor..."
     },
-    "heigghtprofile": {
-      "title": ""
-    },
     "heightprofile": {
       "asl": "m n. m.",
       "distance": "Vzdálenost",
@@ -354,6 +351,7 @@
       "label": "Popisek",
       "layer": "Vrstva",
       "line": "Linie",
+      "markers": "",
       "measurements": "",
       "numericinput": "",
       "pick": "Výběr",

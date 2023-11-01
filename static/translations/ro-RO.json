@@ -168,9 +168,6 @@
       "files": "fișiere",
       "placeholder": "Selectează fișierul..."
     },
-    "heigghtprofile": {
-      "title": ""
-    },
     "heightprofile": {
       "asl": "dM",
       "distance": "Distanța",
@@ -354,6 +351,7 @@
       "label": "Titlu",
       "layer": "Strat",
       "line": "Linie",
+      "markers": "",
       "measurements": "Afișare dimensiuni",
       "numericinput": "Afișare formular pentru valori numerice",
       "pick": "Alege",

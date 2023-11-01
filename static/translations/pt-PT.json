@@ -168,9 +168,6 @@
       "files": "",
       "placeholder": "Selecione ficheiro..."
     },
-    "heigghtprofile": {
-      "title": ""
-    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Distância",
@@ -354,6 +351,7 @@
       "label": "Etiqueta",
       "layer": "Camada",
       "line": "Línha",
+      "markers": "",
       "measurements": "",
       "numericinput": "",
       "pick": "Escolher",

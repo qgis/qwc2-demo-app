@@ -168,9 +168,6 @@
       "files": "",
       "placeholder": "Выберите файл..."
     },
-    "heigghtprofile": {
-      "title": ""
-    },
     "heightprofile": {
       "asl": "над у.м.",
       "distance": "Дистанция",
@@ -354,6 +351,7 @@
       "label": "Надпись",
       "layer": "",
       "line": "Линия",
+      "markers": "",
       "measurements": "",
       "numericinput": "",
       "pick": "Выбрать",

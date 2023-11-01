@@ -168,9 +168,6 @@
       "files": "",
       "placeholder": "Wybierz plik..."
     },
-    "heigghtprofile": {
-      "title": ""
-    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Odległość",
@@ -354,6 +351,7 @@
       "label": "Etykieta",
       "layer": "Warstwa",
       "line": "Linia",
+      "markers": "",
       "measurements": "",
       "numericinput": "",
       "pick": "Wybierz",

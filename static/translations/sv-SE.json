@@ -168,9 +168,6 @@
       "files": "",
       "placeholder": "Välj fil..."
     },
-    "heigghtprofile": {
-      "title": ""
-    },
     "heightprofile": {
       "asl": "m.ö.h.",
       "distance": "Avstånd",
@@ -354,6 +351,7 @@
       "label": "Etikett",
       "layer": "Lager",
       "line": "Linje",
+      "markers": "",
       "measurements": "",
       "numericinput": "",
       "pick": "Välj",

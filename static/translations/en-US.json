@@ -168,9 +168,6 @@
       "files": "files",
       "placeholder": "Select file..."
     },
-    "heigghtprofile": {
-      "title": ""
-    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Distance",
@@ -354,6 +351,7 @@
       "label": "Label",
       "layer": "Layer",
       "line": "Line",
+      "markers": "Markers",
       "measurements": "Show measurements",
       "numericinput": "Show numeric input panel",
       "pick": "Pick",

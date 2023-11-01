@@ -168,9 +168,6 @@
       "files": "",
       "placeholder": "Dosya seç..."
     },
-    "heigghtprofile": {
-      "title": ""
-    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Mesafe",
@@ -354,6 +351,7 @@
       "label": "Etiket",
       "layer": "Katman",
       "line": "Çizgi",
+      "markers": "",
       "measurements": "",
       "numericinput": "",
       "pick": "Seç",
