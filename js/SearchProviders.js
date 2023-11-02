@@ -226,24 +226,31 @@ class QgisSearch {
         axios.get(searchParams.theme.featureInfoUrl, {params}).then(response => {
             callback(QgisSearch.searchResults(
                 IdentifyUtils.parseResponse(response.data, searchParams.theme, 'text/xml', null, searchParams.mapcrs),
-                searchParams.cfgParams.title
+                searchParams.cfgParams.title, searchParams.cfgParams.resultTitle
             ));
         }).catch(() => {
             callback({results: []});
         });
     }
-    static searchResults(features, title) {
+    static searchResults(features, title, resultTitle) {
         const results = [];
         Object.entries(features).forEach(([layername, layerfeatures]) => {
-            const items = layerfeatures.map(feature => ({
-                id: "qgis." + layername + "." + feature.id,
-                text: feature.displayname,
-                x: 0.5 * (feature.bbox[0] + feature.bbox[2]),
-                y: 0.5 * (feature.bbox[1] + feature.bbox[3]),
-                crs: feature.crs,
-                bbox: feature.bbox,
-                geometry: feature.geometry
-            }));
+            const items = layerfeatures.map(feature => {
+                const values = {
+                    ...feature.properties,
+                    id: feature.id,
+                    layername: layername
+                };
+                return {
+                    id: "qgis." + layername + "." + feature.id,
+                    text: resultTitle ? resultTitle.replace(/{([^}]+)}/g, match => values[match.slice(1, -1)]) : feature.displayname,
+                    x: 0.5 * (feature.bbox[0] + feature.bbox[2]),
+                    y: 0.5 * (feature.bbox[1] + feature.bbox[3]),
+                    crs: feature.crs,
+                    bbox: feature.bbox,
+                    geometry: feature.geometry
+                };
+            });
             results.push(
                 {
                     id: "qgis." + layername,
