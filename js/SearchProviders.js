@@ -211,7 +211,7 @@ class QgisSearch {
             FILTER: [],
             WITH_MAPTIP: false,
             WITH_GEOMETRY: true,
-            feature_count: 100,
+            feature_count: searchParams.cfgParams.featureCount || 100,
             info_format: 'text/xml'
         };
         Object.keys(filter).forEach(layer => {
