@@ -7134,7 +7134,7 @@ svgicons2svgfont@^10.0.4:
     sax "^1.2.4"
     svg-pathdata "^6.0.0"
 
-svgpath@^2.1.5:
+svgpath@^2.1.5, svgpath@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/svgpath/-/svgpath-2.6.0.tgz#5b160ef3d742b7dfd2d721bf90588d3450d7a90d"
   integrity sha512-OIWR6bKzXvdXYyO4DK/UWa1VA1JeKq8E+0ug2DG98Y/vOmMpfZNj+TIG988HjfYSqtcy/hFOtZq/n/j5GSESNg==
