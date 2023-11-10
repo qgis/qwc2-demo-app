@@ -57,27 +57,40 @@ function zoomtohb(ev) {
     window.qwc2.zoomToExtent([2682576, 1247916, 2683339, 1248222], "EPSG:2056");
 }
 function drawpoint(ev) {
-    window.qwc2.drawScratch("Point", "Draw a point", true, function(result, crs) { console.log(result); console.log(crs); });
+    window.qwc2.drawGeometry("Point", "Draw a point", function(result, crs) { console.log(result); console.log(crs); }, {drawMultiple: true});
 }
 function drawline(ev) {
-    window.qwc2.drawScratch("LineString", "Draw a line", false, function(result, crs) { console.log(result); console.log(crs); });
+    window.qwc2.drawGeometry("LineString", "Draw a line", function(result, crs) { console.log(result); console.log(crs); }, {
+        snapping: true,
+        drawMultiple: true,
+        initialFeatures: [{
+            type: "Feature",
+            geometry: {
+                type: "LineString",
+                coordinates: [
+                    [2682632, 1247832],
+                    [2692632, 1247832]
+                ]
+            }
+        }]
+    });
 }
 function drawpoly(ev) {
-    window.qwc2.drawScratch("Polygon", "Draw a polygon", false, function(result, crs) { console.log(result); console.log(crs); }, {
+    window.qwc2.drawGeometry("Polygon", "Draw a polygon", function(result, crs) { console.log(result); console.log(crs); }, {
         borderColor: [0, 0, 255, 1],
         size: 2,
         fillColor: [255, 255, 255, 0.5]
     });
 }
 function drawcircle(ev) {
-    window.qwc2.drawScratch("Circle", "Draw a circle", false, function(result, crs) { console.log(result); console.log(crs); }, {
+    window.qwc2.drawGeometry("Circle", "Draw a circle", function(result, crs) { console.log(result); console.log(crs); }, {
         borderColor: [0, 0, 255, 1],
         size: 2,
         fillColor: [255, 255, 255, 0.5]
     });
 }
 function drawbox(ev) {
-    window.qwc2.drawScratch("Box", "Draw a box", false, function(result, crs) { console.log(result); console.log(crs); }, {
+    window.qwc2.drawGeometry("Box", "Draw a box", function(result, crs) { console.log(result); console.log(crs); }, {
         borderColor: [0, 0, 255, 1],
         size: 2,
         fillColor: [255, 255, 255, 0.5]
