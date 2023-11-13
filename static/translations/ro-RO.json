@@ -109,7 +109,8 @@
     },
     "copybtn": {
       "click_to_copy": "Click pt. copiere",
-      "copied": "Copiat"
+      "copied": "Copiat",
+      "copyfailed": ""
     },
     "cyclomedia": {
       "clickonmap": "Faceți un click pe o înregistrare din hartă",

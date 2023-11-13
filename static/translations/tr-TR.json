@@ -109,7 +109,8 @@
     },
     "copybtn": {
       "click_to_copy": "Kopyalamak için tıkla",
-      "copied": "Kopyalandı"
+      "copied": "Kopyalandı",
+      "copyfailed": ""
     },
     "cyclomedia": {
       "clickonmap": "",

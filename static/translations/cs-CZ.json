@@ -109,7 +109,8 @@
     },
     "copybtn": {
       "click_to_copy": "Zkopírovat do schránky",
-      "copied": "Zkopírováno"
+      "copied": "Zkopírováno",
+      "copyfailed": ""
     },
     "cyclomedia": {
       "clickonmap": "",
