@@ -450,8 +450,10 @@
       "socialIntro": "I ditt favoritnätverk"
     },
     "snapping": {
+      "edge": "",
       "loading": "",
-      "snappingenabled": ""
+      "snappingenabled": "",
+      "vertex": ""
     },
     "themelayerslist": {
       "addlayer": "",
