@@ -278,17 +278,17 @@ export const SearchProviders = {
     coordinates: {
         labelmsgid: "search.coordinates",
         onSearch: coordinatesSearch,
-        supportsGeomFilter: false
+        handlesGeomFilter: false
     },
     nominatim: {
         label: "OpenStreetMap",
         onSearch: NominatimSearch.search,
-        supportsGeomFilter: false
+        handlesGeomFilter: false
     },
     qgis: {
         label: "QGIS",
         onSearch: QgisSearch.search,
         getResultGeometry: QgisSearch.getResultGeometry,
-        supportsGeomFilter: false
+        handlesGeomFilter: false
     }
 };
