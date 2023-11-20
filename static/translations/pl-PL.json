@@ -39,8 +39,11 @@
     "search": {
       "coordinates": "",
       "all": "Wszystko",
+      "clearfilter": "",
       "enablelayer": "Włącz warstwę",
       "existinglayer": "",
+      "filter": "",
+      "geometry": "",
       "invisiblelayer": "Wynik znajduje się na warstwie, która nie jest widoczna.",
       "more": "Więcej...",
       "noresults": "",
@@ -49,6 +52,7 @@
       "searchall": "Szukaj miejsc lub dodaj mapy...",
       "searchinprogress": "",
       "searchreset": "",
+      "solr": "",
       "themes": "Motywy"
     },
     "colorschemes": {

@@ -151,9 +151,8 @@
             {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$", "target": "iframe"}
           ],
           "searchOptions": {
+            "allowSearchFilters": false,
             "minScaleDenom": 1000,
-            "showProviderSelection": true,
-            "providerSelectionAllowAll": true,
             "zoomToLayers": false,
             "showProvidersInPlaceholder": false
           },
@@ -277,9 +276,10 @@
         "cfg": {
           "inlinePrintOutput": false,
           "printExternalLayers": true,
-          "gridInitiallyEnabled": false
-        },
-        "mapClickAction": "identify"
+          "gridInitiallyEnabled": false,
+          "allowGeoPdfExport": true,
+          "hideAutopopulatedFields": false
+        }
       },
       {
         "name": "Help",

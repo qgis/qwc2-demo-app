@@ -39,8 +39,11 @@
     "search": {
       "coordinates": "",
       "all": "Vše",
+      "clearfilter": "",
       "enablelayer": "Zapnout vrstvu",
       "existinglayer": "Vrstva v mapě již existuje",
+      "filter": "",
+      "geometry": "",
       "invisiblelayer": "Výsledek je ve vrstvě, která se nezobrazuje.",
       "more": "Více...",
       "noresults": "Nenalezeno",
@@ -49,6 +52,7 @@
       "searchall": "Najít místo nebo přidat mapu...",
       "searchinprogress": "Hledání...",
       "searchreset": "Smazat hledání",
+      "solr": "",
       "themes": "Témata"
     },
     "colorschemes": {

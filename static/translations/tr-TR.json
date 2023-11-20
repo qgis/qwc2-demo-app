@@ -39,8 +39,11 @@
     "search": {
       "coordinates": "",
       "all": "Tümü",
+      "clearfilter": "",
       "enablelayer": "Geçerli katman",
       "existinglayer": "Katman zaten haritada mevcut",
+      "filter": "",
+      "geometry": "",
       "invisiblelayer": "Sonuç, görünmeyen bir katmanda bulunuyor.",
       "more": "Daha fazla...",
       "noresults": "",
@@ -49,6 +52,7 @@
       "searchall": "Bir yer ara ya da harita ekle...",
       "searchinprogress": "",
       "searchreset": "",
+      "solr": "",
       "themes": "Temalar"
     },
     "colorschemes": {

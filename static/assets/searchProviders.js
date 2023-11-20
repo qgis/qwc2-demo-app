@@ -41,11 +41,16 @@ function usterResultGeometry(resultItem, callback, axios) {
 /** ************************************************************************ **/
 
 function geoAdminLocationSearch(text, searchParams, callback, axios) {
+    const viewboxParams = {};
+    if (searchParams.filterBBox) {
+        viewboxParams.bbox = window.qwc2.CoordinatesUtils.reprojectBbox(searchParams.filterBBox, searchParams.mapcrs, "EPSG:2056").map(x => Math.round(x)).join(",");
+    }
     const params = {
         searchText: text,
         type: "locations",
         limit: 20,
         sr: 2056,
+        ...viewboxParams,
         ...(searchParams.cfgParams || {})
     };
     const url = "https://api3.geo.admin.ch/rest/services/api/SearchServer";
@@ -66,7 +71,7 @@ function geoAdminLocationSearch(text, searchParams, callback, axios) {
             } catch (e) {
                 return null;
             }
-        }
+        };
         const resultGroups = {};
         (response.data.results || []).map(entry => {
             if (resultGroups[entry.attrs.origin] === undefined) {

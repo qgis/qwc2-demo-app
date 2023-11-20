@@ -72,6 +72,11 @@ class NominatimSearch {
     static TRANSLATIONS = {};
 
     static search(text, searchParams, callback, axios) {
+        const viewboxParams = {};
+        if (searchParams.filterBBox) {
+            viewboxParams.viewbox = CoordinatesUtils.reprojectBbox(searchParams.filterBBox, searchParams.mapcrs, "EPSG:4326").join(",");
+            viewboxParams.bounded = 1;
+        }
         axios.get("https://nominatim.openstreetmap.org/search", {params: {
             'q': text,
             'addressdetails': 1,
@@ -79,6 +84,7 @@ class NominatimSearch {
             'limit': 20,
             'format': 'json',
             'accept-language': searchParams.lang,
+            ...viewboxParams,
             ...(searchParams.cfgParams || {})
         }}).then(response => {
             const locale = searchParams.lang;
@@ -271,15 +277,18 @@ class QgisSearch {
 export const SearchProviders = {
     coordinates: {
         labelmsgid: "search.coordinates",
-        onSearch: coordinatesSearch
+        onSearch: coordinatesSearch,
+        supportsGeomFilter: false
     },
     nominatim: {
         label: "OpenStreetMap",
-        onSearch: NominatimSearch.search
+        onSearch: NominatimSearch.search,
+        supportsGeomFilter: false
     },
     qgis: {
         label: "QGIS",
         onSearch: QgisSearch.search,
-        getResultGeometry: QgisSearch.getResultGeometry
+        getResultGeometry: QgisSearch.getResultGeometry,
+        supportsGeomFilter: false
     }
 };

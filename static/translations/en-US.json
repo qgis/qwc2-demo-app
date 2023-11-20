@@ -39,8 +39,11 @@
     "search": {
       "coordinates": "Coordinates",
       "all": "All",
+      "clearfilter": "Clear",
       "enablelayer": "Enable layer",
       "existinglayer": "The layer already exists in the map",
+      "filter": "Filter",
+      "geometry": "Geometry",
       "invisiblelayer": "The result lies on a layer which is not visible.",
       "more": "More...",
       "noresults": "No results",
@@ -49,6 +52,7 @@
       "searchall": "Search places or add maps...",
       "searchinprogress": "Search in progress",
       "searchreset": "Reset search",
+      "solr": "Fulltext search",
       "themes": "Themes"
     },
     "colorschemes": {

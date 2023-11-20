@@ -39,8 +39,11 @@
     "search": {
       "coordinates": "Coordonate",
       "all": "Toate",
+      "clearfilter": "",
       "enablelayer": "Activare strat",
       "existinglayer": "Stratul există deja în hartă",
+      "filter": "",
+      "geometry": "",
       "invisiblelayer": "Rezultatul este într-un strat invizibil",
       "more": "Mai multe...",
       "noresults": "Niciun rezultat",
@@ -49,6 +52,7 @@
       "searchall": "Caută sau adaugă în hartă...",
       "searchinprogress": "Căutare în progres",
       "searchreset": "Resetează căutarea",
+      "solr": "",
       "themes": "Hărți tematice"
     },
     "colorschemes": {

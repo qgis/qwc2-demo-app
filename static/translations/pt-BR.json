@@ -39,8 +39,11 @@
     "search": {
       "coordinates": "",
       "all": "Todos",
+      "clearfilter": "",
       "enablelayer": "Ativar a camada",
       "existinglayer": "A camada já existe no mapa",
+      "filter": "",
+      "geometry": "",
       "invisiblelayer": "O resultado reside numa camada que não é visível.",
       "more": "Mais...",
       "noresults": "Sem resultados",
@@ -49,6 +52,7 @@
       "searchall": "Procurar lugares ou adicionar mapas...",
       "searchinprogress": "Busca em andamento...",
       "searchreset": "Redefinir pesquisa",
+      "solr": "",
       "themes": "Temas"
     },
     "colorschemes": {

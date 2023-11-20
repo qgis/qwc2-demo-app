@@ -4761,6 +4761,11 @@ lie@~3.3.0:
   dependencies:
     immediate "~3.0.5"
 
+line-segment-intersect-2d@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/line-segment-intersect-2d/-/line-segment-intersect-2d-1.0.0.tgz#e76a2355dae8a937ccb895a04b414d6241aa19ad"
+  integrity sha512-kZVHOYn/yU8zn7lxhdbHE90+zC5Gz5RSo0vQHoLMcYs0kwUCnpV1ZkbotMAAKRJILKcnYqWzuzZc5b5RWg9t8w==
+
 loader-runner@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-4.2.0.tgz#d7022380d66d14c5fb1d496b89864ebcfd478384"
@@ -5492,6 +5497,19 @@ pkg-dir@^7.0.0:
   integrity sha512-Ie9z/WINcxxLp27BKOCHGde4ITq9UklYKDzVo1nhk5sqGEXU3FpkwP5GM2voTGJkGd9B3Otl+Q4uwSOeSUtOBA==
   dependencies:
     find-up "^6.3.0"
+
+point-in-polygon@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/point-in-polygon/-/point-in-polygon-1.1.0.tgz#b0af2616c01bdee341cbf2894df643387ca03357"
+  integrity sha512-3ojrFwjnnw8Q9242TzgXuTD+eKiutbzyslcq1ydfu82Db2y+Ogbmyrkpv0Hgj31qwT3lbS9+QAAO/pIQM35XRw==
+
+polygon-intersect-test@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/polygon-intersect-test/-/polygon-intersect-test-1.0.1.tgz#9454f8390e50a2441a85da6e1eb505d3e4587712"
+  integrity sha512-cgFXXDzJdZNOjRDmwvj2YGP6qnd9Gj/omxIvpD8zrDO9f3ZdkmlnrQKBJHt4LMJTPkmDLPxKKt6l17XyO02hQw==
+  dependencies:
+    line-segment-intersect-2d "^1.0.0"
+    point-in-polygon "^1.1.0"
 
 postcss-modules-extract-imports@^3.0.0:
   version "3.0.0"

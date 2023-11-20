@@ -39,8 +39,11 @@
     "search": {
       "coordinates": "",
       "all": "Всё",
+      "clearfilter": "",
       "enablelayer": "",
       "existinglayer": "",
+      "filter": "",
+      "geometry": "",
       "invisiblelayer": "",
       "more": "Больше...",
       "noresults": "",
@@ -49,6 +52,7 @@
       "searchall": "",
       "searchinprogress": "",
       "searchreset": "",
+      "solr": "",
       "themes": ""
     },
     "colorschemes": {

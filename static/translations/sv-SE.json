@@ -39,8 +39,11 @@
     "search": {
       "coordinates": "Koordinater",
       "all": "",
+      "clearfilter": "",
       "enablelayer": "",
       "existinglayer": "",
+      "filter": "",
+      "geometry": "",
       "invisiblelayer": "",
       "more": "Mer",
       "noresults": "",
@@ -49,6 +52,7 @@
       "searchall": "",
       "searchinprogress": "",
       "searchreset": "",
+      "solr": "",
       "themes": ""
     },
     "colorschemes": {
