@@ -313,6 +313,7 @@
     },
     "print": {
       "atlasfeature": "",
+      "format": "Format",
       "grid": "Rutnät",
       "layout": "Layout:",
       "legend": "",

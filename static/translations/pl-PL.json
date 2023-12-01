@@ -313,6 +313,7 @@
     },
     "print": {
       "atlasfeature": "",
+      "format": "Format",
       "grid": "Siatka",
       "layout": "Layout",
       "legend": "",

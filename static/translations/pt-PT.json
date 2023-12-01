@@ -313,6 +313,7 @@
     },
     "print": {
       "atlasfeature": "",
+      "format": "Formato",
       "grid": "Rede",
       "layout": "Desenho",
       "legend": "",

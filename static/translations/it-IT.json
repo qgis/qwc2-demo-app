@@ -313,6 +313,7 @@
     },
     "print": {
       "atlasfeature": "Oggetto atlante",
+      "format": "Formato",
       "grid": "Griglia",
       "layout": "Layout",
       "legend": "Legenda",

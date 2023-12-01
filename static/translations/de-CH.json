@@ -313,6 +313,7 @@
     },
     "print": {
       "atlasfeature": "Atlasobjekt",
+      "format": "Format",
       "grid": "Gitter",
       "layout": "Format",
       "legend": "Legende",
@@ -325,7 +326,7 @@
       "resolution": "Auflösung",
       "rotation": "Rotation",
       "scale": "Massstab",
-      "submit": "PDF erzeugen",
+      "submit": "Erzeugen",
       "wait": "Bitte warten..."
     },
     "qtdesignerform": {

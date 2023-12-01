@@ -313,6 +313,7 @@
     },
     "print": {
       "atlasfeature": "",
+      "format": "Format",
       "grid": "Grid",
       "layout": "Yazdırma düzeni",
       "legend": "",

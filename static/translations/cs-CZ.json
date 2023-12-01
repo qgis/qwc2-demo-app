@@ -313,6 +313,7 @@
     },
     "print": {
       "atlasfeature": "",
+      "format": "Formát",
       "grid": "Mřížka:",
       "layout": "Rovržení:",
       "legend": "Legenda",

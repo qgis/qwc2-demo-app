@@ -313,6 +313,7 @@
     },
     "print": {
       "atlasfeature": "Obiect în atlas",
+      "format": "",
       "grid": "Grid",
       "layout": "Șablon",
       "legend": "Legendă",
