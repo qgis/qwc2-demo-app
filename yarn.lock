@@ -3700,6 +3700,13 @@ geojson-bounding-box@^0.2.0:
   resolved "https://registry.yarnpkg.com/geojson-bounding-box/-/geojson-bounding-box-0.2.0.tgz#724b2e1be12671a07bea729da758d038d7d876ca"
   integrity sha512-VmBZ1DC8q+0dNlphppacim000KUQU9Yw+Q8A8m8zuQ3D6zNdp3RGFZPI8zdTLaPXK6dCfJWuDYwle3t/iYWUYw==
 
+geojson-polygon-self-intersections@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/geojson-polygon-self-intersections/-/geojson-polygon-self-intersections-1.2.1.tgz#7018edabe58e9262f20821a7334953708c78bbb7"
+  integrity sha512-/QM1b5u2d172qQVO//9CGRa49jEmclKEsYOQmWP9ooEjj63tBM51m2805xsbxkzlEELQ2REgTf700gUhhlegxA==
+  dependencies:
+    rbush "^2.0.1"
+
 geotiff@^2.0.7:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/geotiff/-/geotiff-2.1.0.tgz#8e06fd1aa950fba8910ac63dc65cb77b766f4b58"
@@ -5660,6 +5667,11 @@ quick-lru@^6.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-6.1.1.tgz#f8e5bf9010376c126c80c1a62827a526c0e60adf"
   integrity sha512-S27GBT+F0NTRiehtbrgaSE1idUAJ5bX8dPAQTdylEyNlrdcH5X4Lz7Edz3DYzecbsCluD5zO8ZNEe04z3D3u6Q==
 
+quickselect@^1.0.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/quickselect/-/quickselect-1.1.1.tgz#852e412ce418f237ad5b660d70cffac647ae94c2"
+  integrity sha512-qN0Gqdw4c4KGPsBOQafj6yj/PA6c/L63f6CaZ/DCF/xF4Esu3jVmKLUDYxghFx8Kb/O7y9tI7x2RjTSXwdK1iQ==
+
 quickselect@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/quickselect/-/quickselect-2.0.0.tgz#f19680a486a5eefb581303e023e98faaf25dd018"
@@ -5691,6 +5703,13 @@ raw-body@2.5.1:
     http-errors "2.0.0"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+rbush@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/rbush/-/rbush-2.0.2.tgz#bb6005c2731b7ba1d5a9a035772927d16a614605"
+  integrity sha512-XBOuALcTm+O/H8G90b6pzu6nX6v2zCKiFG4BJho8a+bY6AER6t8uQUZdi5bomQc0AprCWhEGa7ncAbbRap0bRA==
+  dependencies:
+    quickselect "^1.0.1"
 
 rbush@^3.0.1:
   version "3.0.1"
