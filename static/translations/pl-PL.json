@@ -296,6 +296,9 @@
       "metric": "",
       "pointLabel": "Pozycja"
     },
+    "misc": {
+      "ctrlclickhint": ""
+    },
     "navbar": {
       "perpage": ""
     },

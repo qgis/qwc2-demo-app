@@ -296,6 +296,9 @@
       "metric": "Metric",
       "pointLabel": "Position"
     },
+    "misc": {
+      "ctrlclickhint": "Open with Ctrl+Click"
+    },
     "navbar": {
       "perpage": "per page"
     },

@@ -296,6 +296,9 @@
       "metric": "",
       "pointLabel": "Konum"
     },
+    "misc": {
+      "ctrlclickhint": ""
+    },
     "navbar": {
       "perpage": ""
     },
