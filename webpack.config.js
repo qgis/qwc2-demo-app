@@ -25,7 +25,7 @@ module.exports = (env, argv) => {
         watchOptions: {
             ignored: /node_modules(\\|\/)(?!qwc2)/
         },
-        devtool: isProd ? 'source-map' : 'eval',
+        devtool: isProd ? 'source-map' : 'inline-source-map',
         optimization: {
             minimize: isProd
         },
