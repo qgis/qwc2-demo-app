@@ -119,6 +119,7 @@
     },
     "cyclomedia": {
       "clickonmap": "",
+      "initializing": "",
       "loaderror": "",
       "loading": "Načítání...",
       "login": "",
