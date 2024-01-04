@@ -1,6 +1,6 @@
 {
     "name": "QWC2App",
-    "version": "2023.12.22-master",
+    "version": "2024.01.04-master",
     "description": "QGIS Web Client 2 application",
     "author": "Sourcepole",
     "license": "BSD-2-Clause",
@@ -18,7 +18,7 @@
         "eslint": "^8.56.0",
         "eslint-plugin-react": "^7.33.2",
         "html-webpack-plugin": "^5.5.4",
-        "react-docgen": "^7.0.1",
+        "react-docgen": "^5.4.3",
         "source-map-loader": "^4.0.1",
         "string-replace-loader": "^3.1.0",
         "style-loader": "^3.3.3",
