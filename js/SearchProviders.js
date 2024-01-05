@@ -63,7 +63,7 @@ function coordinatesSearch(text, searchParams, callback) {
             }
         );
     }
-    setTimeout(() => callback({results: results}), 50);
+    callback({results: results});
 }
 
 /** ************************************************************************ **/
