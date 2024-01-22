@@ -39,6 +39,7 @@
     "search": {
       "coordinates": "",
       "all": "Alle",
+      "circleradius": "Kreis radius",
       "clearfilter": "Zurücksetzen",
       "enablelayer": "Ebene einschalten",
       "existinglayer": "Die Ebene existiert bereits in der Karte",

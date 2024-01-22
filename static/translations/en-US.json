@@ -39,6 +39,7 @@
     "search": {
       "coordinates": "Coordinates",
       "all": "All",
+      "circleradius": "Circle radius",
       "clearfilter": "Clear",
       "enablelayer": "Enable layer",
       "existinglayer": "The layer already exists in the map",

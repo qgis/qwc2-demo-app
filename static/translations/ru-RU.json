@@ -39,6 +39,7 @@
     "search": {
       "coordinates": "",
       "all": "Всё",
+      "circleradius": "",
       "clearfilter": "",
       "enablelayer": "",
       "existinglayer": "",

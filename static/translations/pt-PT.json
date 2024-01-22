@@ -39,6 +39,7 @@
     "search": {
       "coordinates": "",
       "all": "Todos",
+      "circleradius": "",
       "clearfilter": "Limpar Filtro",
       "enablelayer": "Ativar Camada",
       "existinglayer": "A camada já existe no mapa",
