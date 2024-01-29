@@ -48,6 +48,7 @@ import MapLegendPlugin from 'qwc2/plugins/MapLegend';
 import MapTipPlugin from 'qwc2/plugins/MapTip';
 import MeasurePlugin from 'qwc2/plugins/Measure';
 import NewsPopupPlugin from 'qwc2/plugins/NewsPopup';
+import PortalPlugin from 'qwc2/plugins/Portal';
 import PrintPlugin from 'qwc2/plugins/Print';
 import ProcessNotificationsPlugin from 'qwc2/plugins/ProcessNotifications';
 import RasterExportPlugin from 'qwc2/plugins/RasterExport';
@@ -113,6 +114,7 @@ export default {
             MapTipPlugin: MapTipPlugin,
             MeasurePlugin: MeasurePlugin,
             NewsPopupPlugin: NewsPopupPlugin,
+            PortalPlugin: PortalPlugin,
             PrintPlugin: PrintPlugin,
             ProcessNotificationsPlugin: ProcessNotificationsPlugin,
             RasterExportPlugin: RasterExportPlugin,

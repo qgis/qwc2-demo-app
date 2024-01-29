@@ -319,6 +319,10 @@
       "width": "Largura",
       "windowtitle": "Entrada Numérica"
     },
+    "portal": {
+      "filter": "",
+      "menulabel": ""
+    },
     "print": {
       "atlasfeature": "Recurso do Atlas",
       "format": "Formato",
