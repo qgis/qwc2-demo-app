@@ -483,6 +483,7 @@
     "themeswitcher": {
       "addlayerstotheme": "",
       "addtotheme": "",
+      "changedefaulttheme": "",
       "confirmswitch": "",
       "filter": "Фильтр...",
       "match": {

@@ -483,6 +483,7 @@
     "themeswitcher": {
       "addlayerstotheme": "",
       "addtotheme": "Lägg till aktuellt tema",
+      "changedefaulttheme": "",
       "confirmswitch": "",
       "filter": "Filtrera...",
       "match": {
