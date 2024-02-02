@@ -74,6 +74,7 @@
     "attribtable": {
       "addfeature": "Add feature",
       "commit": "Commit changed row",
+      "csvexport": "",
       "delete": "Delete",
       "deletefailed": "One or more features could not be deleted",
       "deletefeatures": "Delete selected features",
