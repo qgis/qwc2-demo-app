@@ -74,7 +74,7 @@
     "attribtable": {
       "addfeature": "Objekt hinzufügen",
       "commit": "Geänderte Zeile speichern",
-      "csvexport": "",
+      "csvexport": "CSV Export",
       "delete": "Löschen",
       "deletefailed": "Ein oder mehrere Objekte konnten nicht gelöscht werden",
       "deletefeatures": "Ausgewählte Objekte löschen",
