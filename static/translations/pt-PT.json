@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "MapFilter": "",
         "AttributeTable": "Tabela de Atributos",
         "Cyclomedia": "Cyclomedia",
         "DxfExport": "Exportar DXF",
@@ -83,6 +84,7 @@
       "formeditmode": "Modo de Edição do Formulário",
       "geomnoadd": "A geometria não pode ser adicionada",
       "layer": "Camada",
+      "limittoextent": "",
       "loadfailed": "Falha ao Carregar",
       "loading": "A carregar",
       "nodelete": "Não é possível eliminar",

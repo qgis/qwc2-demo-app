@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "MapFilter": "",
         "AttributeTable": "Atributy",
         "Cyclomedia": "Cyclomedia",
         "DxfExport": "DXF Export",
@@ -83,6 +84,7 @@
       "formeditmode": "Otevřít editační formulář pro vybrané prvky",
       "geomnoadd": "Pro přidání nových prvků do této vrstvy použijte editační formulář",
       "layer": "Vrstva",
+      "limittoextent": "",
       "loadfailed": "Chyba při načítání prvků",
       "loading": "Načítání...",
       "nodelete": "Nemazat",

@@ -4,6 +4,7 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "MapFilter": "Kartenfilter",
         "AttributeTable": "Attributtabelle",
         "Cyclomedia": "Cyclomedia",
         "DxfExport": "DXF-Export",
@@ -83,6 +84,7 @@
       "formeditmode": "Ausgewähltes Objekt in der Formularansicht editieren",
       "geomnoadd": "Bitte die Formularansicht verwenden, um neue Objekte für diese Ebene zu erstellen",
       "layer": "Ebene",
+      "limittoextent": "In Kartenausschnitt",
       "loadfailed": "Die Objektdaten konnten nicht geladen werden",
       "loading": "Laden...",
       "nodelete": "Nicht löschen",

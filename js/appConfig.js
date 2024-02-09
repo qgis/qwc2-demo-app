@@ -43,6 +43,7 @@ import LoginUserPlugin from 'qwc2/plugins/LoginUser';
 import MapComparePlugin from 'qwc2/plugins/MapCompare';
 import MapCopyrightPlugin from 'qwc2/plugins/MapCopyright';
 import MapExportPlugin from 'qwc2/plugins/MapExport';
+import MapFilterPlugin from 'qwc2/plugins/MapFilter';
 import MapInfoTooltipPlugin from 'qwc2/plugins/MapInfoTooltip';
 import MapLegendPlugin from 'qwc2/plugins/MapLegend';
 import MapTipPlugin from 'qwc2/plugins/MapTip';
@@ -109,6 +110,7 @@ export default {
             MapComparePlugin: MapComparePlugin,
             MapCopyrightPlugin: MapCopyrightPlugin,
             MapExportPlugin: MapExportPlugin,
+            MapFilterPlugin: MapFilterPlugin,
             MapInfoTooltipPlugin: MapInfoTooltipPlugin(),
             MapLegendPlugin: MapLegendPlugin,
             MapTipPlugin: MapTipPlugin,
