@@ -286,6 +286,11 @@
       "usersize": "Usar tamanho",
       "wait": "Aguarde"
     },
+    "mapfilter": {
+      "timefilter": "",
+      "timefrom": "",
+      "timeto": ""
+    },
     "mapinfotooltip": {
       "elevation": "Elevação",
       "title": "Posição"
@@ -504,7 +509,9 @@
       "displayfeatures": "Mostrar feições",
       "displaylayers": "Mostrar camadas",
       "displayminimal": "Exibição mínima",
+      "edit": "",
       "endtime": "Fim do tempo",
+      "filterwarning": "",
       "future": "Feição",
       "group": "Grupo",
       "groupnone": "Nenhum grupo",

@@ -286,6 +286,11 @@
       "usersize": "",
       "wait": ""
     },
+    "mapfilter": {
+      "timefilter": "",
+      "timefrom": "",
+      "timeto": ""
+    },
     "mapinfotooltip": {
       "elevation": "Высота над уровнем моря",
       "title": "Позиция"
@@ -504,7 +509,9 @@
       "displayfeatures": "",
       "displaylayers": "",
       "displayminimal": "",
+      "edit": "",
       "endtime": "",
+      "filterwarning": "",
       "future": "",
       "group": "",
       "groupnone": "",

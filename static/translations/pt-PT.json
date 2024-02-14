@@ -286,6 +286,11 @@
       "usersize": "Tamanho Personalizado",
       "wait": "Por favor, aguarde..."
     },
+    "mapfilter": {
+      "timefilter": "",
+      "timefrom": "",
+      "timeto": ""
+    },
     "mapinfotooltip": {
       "elevation": "Elevação",
       "title": "Posição"
@@ -504,7 +509,9 @@
       "displayfeatures": "Mostrar Características",
       "displaylayers": "Mostrar Camadas",
       "displayminimal": "Mostrar Mínimo",
+      "edit": "",
       "endtime": "Hora de Fim",
+      "filterwarning": "",
       "future": "Futuro",
       "group": "Grupo",
       "groupnone": "Nenhum Grupo",

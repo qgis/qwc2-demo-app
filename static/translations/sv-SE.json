@@ -286,6 +286,11 @@
       "usersize": "",
       "wait": ""
     },
+    "mapfilter": {
+      "timefilter": "",
+      "timefrom": "",
+      "timeto": ""
+    },
     "mapinfotooltip": {
       "elevation": "Höjd",
       "title": "Position"
@@ -504,7 +509,9 @@
       "displayfeatures": "",
       "displaylayers": "",
       "displayminimal": "",
+      "edit": "",
       "endtime": "",
+      "filterwarning": "",
       "future": "",
       "group": "",
       "groupnone": "",
