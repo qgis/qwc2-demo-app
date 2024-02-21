@@ -66,6 +66,7 @@
       "missingbg": "",
       "missinglayers": "",
       "missingpermalink": "",
+      "missingprojection": "",
       "missingtheme": ""
     },
     "attribtable": {
@@ -184,6 +185,7 @@
       "export": "Export výškového profilu",
       "height": "Výška",
       "loading": "Výpočet výškového profilu...",
+      "loadingimage": "",
       "print": "",
       "title": ""
     },

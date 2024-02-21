@@ -66,6 +66,7 @@
       "missingbg": "Faltando fundo",
       "missinglayers": "Faltando camadas",
       "missingpermalink": "Faltando link permanente",
+      "missingprojection": "",
       "missingtheme": "Faltando tema"
     },
     "attribtable": {
@@ -184,6 +185,7 @@
       "export": "Exportar",
       "height": "Altura",
       "loading": "Calcular o perfil de altura",
+      "loadingimage": "",
       "print": "Imprimir",
       "title": "Título"
     },

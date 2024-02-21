@@ -66,6 +66,7 @@
       "missingbg": "Unable to find the background \"{0}\", displaying the default background.",
       "missinglayers": "Unable to find the following layers: {0}.",
       "missingpermalink": "The specified permalink or bookmark is invalid or expired.",
+      "missingprojection": "Unable to load the theme \"{0}\": the projection {1} is not defined.",
       "missingtheme": "Unable to find the theme \"{0}\", loading the default theme."
     },
     "attribtable": {
@@ -184,6 +185,7 @@
       "export": "Export profile",
       "height": "Height",
       "loading": "Calculating height profile...",
+      "loadingimage": "Loading map image...",
       "print": "Print height profile",
       "title": "Height profile"
     },

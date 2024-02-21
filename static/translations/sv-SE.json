@@ -66,6 +66,7 @@
       "missingbg": "",
       "missinglayers": "",
       "missingpermalink": "",
+      "missingprojection": "",
       "missingtheme": ""
     },
     "attribtable": {
@@ -184,6 +185,7 @@
       "export": "",
       "height": "Höjd",
       "loading": "Beräknar höjdprofil...",
+      "loadingimage": "",
       "print": "",
       "title": ""
     },

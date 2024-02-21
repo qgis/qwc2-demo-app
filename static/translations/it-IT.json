@@ -66,6 +66,7 @@
       "missingbg": "Impossibile trovare lo sfondo \"{0}\", viene visualizzato lo sfondo predefinito.",
       "missinglayers": "Impossibile trovare i seguenti livelli: {0}.",
       "missingpermalink": "Il permalink o il segnalibro non è valido o è scaduto.",
+      "missingprojection": "Impossibile caricare il tema \"{0}\": la proiezione {1} non è definita.",
       "missingtheme": "Impossibile trovare il tema \"{0}\", è stato caricato il tema predefinito."
     },
     "attribtable": {
@@ -184,6 +185,7 @@
       "export": "Esporta",
       "height": "Altitudine",
       "loading": "Calcolo del profilo di altezza...",
+      "loadingimage": "Caricamento dell'immagine della mappa...",
       "print": "Stampa profilo d'altezza",
       "title": "Profilo di altezza"
     },
