@@ -16,7 +16,6 @@ import MeasurementSupport from 'qwc2/plugins/map/MeasurementSupport';
 import OverviewSupport from 'qwc2/plugins/map/OverviewSupport';
 import RedliningSupport from 'qwc2/plugins/map/RedliningSupport';
 import ScaleBarSupport from 'qwc2/plugins/map/ScaleBarSupport';
-import SelectionSupport from 'qwc2/plugins/map/SelectionSupport';
 import SnappingSupport from 'qwc2/plugins/map/SnappingSupport';
 import HomeButtonPlugin from 'qwc2/plugins/HomeButton';
 
@@ -86,7 +85,6 @@ export default {
                 OverviewSupport: OverviewSupport,
                 RedliningSupport: RedliningSupport,
                 ScaleBarSupport: ScaleBarSupport,
-                SelectionSupport: SelectionSupport,
                 SnappingSupport: SnappingSupport
             }),
             APIPlugin: APIPlugin,
