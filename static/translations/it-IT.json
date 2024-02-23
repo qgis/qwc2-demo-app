@@ -287,6 +287,7 @@
       "wait": "Attendere..."
     },
     "mapfilter": {
+      "geomfilter": "Geometrico",
       "timefilter": "Temporale",
       "timefrom": "Da",
       "timeto": "A"
