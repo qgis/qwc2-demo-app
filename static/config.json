@@ -319,6 +319,12 @@
         }
       },
       {
+        "name": "MapFilter",
+        "cfg": {
+          "allowFilterByGeom": false
+        }
+      },
+      {
         "name": "Redlining"
       },
       {
