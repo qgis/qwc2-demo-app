@@ -315,12 +315,29 @@
           "exportExternalLayers": true,
           "defaultFormat": "image/png",
           "formatConfiguration": {
+            "application/dxf": [
+              {"name": "default"},
+              {
+                "name": "Geobau",
+                "extraQuery": "LAYERS=dxfgeobau",
+                "formatOptions": "MODE:NOSYMBOLOGY"
+              },
+              {
+                "name": "Geobau mit Höhenkurven",
+                "extraQuery": "LAYERS=dxfgeobau,hoehenkurven"
+              }
+            ],
+            "image/png": [
+              {"name": "default"},
+              {"name": "With baselayer", "baseLayer": "SWISSIMAGE"}
+            ]
           }
         }
       },
       {
         "name": "MapFilter",
         "cfg": {
+          "allowCustomFilters": false,
           "allowFilterByGeom": false
         }
       },
