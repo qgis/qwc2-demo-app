@@ -288,6 +288,7 @@
     },
     "mapfilter": {
       "addcustomfilter": "",
+      "brokenrendering": "",
       "cancel": "",
       "geomfilter": "",
       "invalidfilter": "",
