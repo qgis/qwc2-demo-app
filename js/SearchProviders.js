@@ -204,13 +204,11 @@ class QgisSearch {
 
         const filter = {...searchParams.cfgParams.expression};
         const values = {TEXT: text};
-        const bbox = CoordinatesUtils.reprojectBbox(searchParams.theme.bbox.bounds, searchParams.theme.bbox.crs, searchParams.theme.mapCrs);
         const params = {
             SERVICE: 'WMS',
             VERSION: searchParams.theme.version,
             REQUEST: 'GetFeatureInfo',
             CRS: searchParams.theme.mapCrs,
-            BBOX: bbox.join(","),
             WIDTH: 100,
             HEIGHT: 100,
             LAYERS: [],
