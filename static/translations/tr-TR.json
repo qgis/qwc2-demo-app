@@ -111,7 +111,8 @@
       "remove": "",
       "removefailed": "",
       "savefailed": "",
-      "update": ""
+      "update": "",
+      "zoomToExtent": ""
     },
     "bottombar": {
       "mousepos_label": "Koordinatlar",
