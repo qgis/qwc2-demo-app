@@ -11,6 +11,7 @@
         "Editing": "Úpravy",
         "FeatureForm": "Editační formulář",
         "FeatureSearch": "",
+        "GeometryDigitizer": "",
         "Help": "Nápověda",
         "IdentifyPoint": "Informace o bodu",
         "IdentifyRegion": "Informace o oblasti",
@@ -182,6 +183,20 @@
       "files": "Soubory",
       "placeholder": "Vybrat soubor..."
     },
+    "geomdigitizer": {
+      "applink": "",
+      "bufferlayername": "",
+      "chooselink": "",
+      "clear": "",
+      "identifypick": "",
+      "identifypickregion": "",
+      "layername": "",
+      "line_buffer": "",
+      "point_buffer": "",
+      "selfinter": "",
+      "send": "",
+      "wait": ""
+    },
     "heightprofile": {
       "asl": "m n. m.",
       "distance": "Vzdálenost",
@@ -294,6 +309,7 @@
       "geomfilter": "",
       "invalidfilter": "",
       "save": "",
+      "select": "",
       "selectlayer": "",
       "timefilter": "",
       "timefrom": "",
@@ -336,6 +352,9 @@
       "side": "",
       "width": "",
       "windowtitle": ""
+    },
+    "pickfeature": {
+      "querying": ""
     },
     "portal": {
       "filter": "",

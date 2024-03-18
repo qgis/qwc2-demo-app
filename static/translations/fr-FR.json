@@ -11,6 +11,7 @@
         "Editing": "Editer",
         "FeatureForm": "Formulaire d'objet",
         "FeatureSearch": "Recherche objet",
+        "GeometryDigitizer": "Digitalisation des géométries",
         "Help": "Aide",
         "IdentifyPoint": "Interroger point",
         "IdentifyRegion": "Interroger la région",
@@ -182,6 +183,20 @@
       "files": "Fichiers",
       "placeholder": "Choisir un fichier..."
     },
+    "geomdigitizer": {
+      "applink": "Application",
+      "bufferlayername": "Tampon",
+      "chooselink": "Choisir...",
+      "clear": "Effacer la couche",
+      "identifypick": "Choisir un objet",
+      "identifypickregion": "Sélectionner des objets dans la région",
+      "layername": "Digitalisation",
+      "line_buffer": "Ligne (sera tamponnée)",
+      "point_buffer": "Point (sera tamponnée)",
+      "selfinter": "Un ou plusieurs polygones contiennent des auto-intersections",
+      "send": "Envoyer",
+      "wait": "Chargement..."
+    },
     "heightprofile": {
       "asl": "s/mer",
       "distance": "Distance",
@@ -294,6 +309,7 @@
       "geomfilter": "Géométrique",
       "invalidfilter": "Expression de filtre non valide",
       "save": "Enregistrer",
+      "select": "Sélectionner...",
       "selectlayer": "Sélectionner couche",
       "timefilter": "Temporelle",
       "timefrom": "De",
@@ -336,6 +352,9 @@
       "side": "Côté",
       "width": "Largeur",
       "windowtitle": "Entrée numérique"
+    },
+    "pickfeature": {
+      "querying": "Interrogation"
     },
     "portal": {
       "filter": "Filtrer les thèmes...",

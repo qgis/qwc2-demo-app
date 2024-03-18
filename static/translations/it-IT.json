@@ -11,6 +11,7 @@
         "Editing": "Strumenti di modifica",
         "FeatureForm": "Formulario oggetto",
         "FeatureSearch": "Ricerca oggetto",
+        "GeometryDigitizer": "Digitalizzazione geometrie",
         "Help": "Aiuto",
         "IdentifyPoint": "Identifica punto",
         "IdentifyRegion": "Identifica in un poligono",
@@ -112,7 +113,7 @@
       "removefailed": "Impossibile rimuovere il segnalibro",
       "savefailed": "Impossibile aggiornare il segnalibro",
       "update": "Aggiorna segnalibro",
-      "zoomToExtent": ""
+      "zoomToExtent": "Zoomare sull'estensione"
     },
     "bottombar": {
       "mousepos_label": "Coordinate",
@@ -181,6 +182,20 @@
     "fileselector": {
       "files": "File",
       "placeholder": "Seleziona file..."
+    },
+    "geomdigitizer": {
+      "applink": "Applicativo",
+      "bufferlayername": "Buffer",
+      "chooselink": "Seleziona",
+      "clear": "Cancella livello",
+      "identifypick": "Seleziona oggetto",
+      "identifypickregion": "Seleziona oggetto in area",
+      "layername": "Digitalizzazione",
+      "line_buffer": "Linea (da bufferizzare)",
+      "point_buffer": "Punto (da bufferizzare)",
+      "selfinter": "Uno o più poligoni contengono autointersecazioni",
+      "send": "Invia",
+      "wait": "Caricamento..."
     },
     "heightprofile": {
       "asl": "s.l.m.",
@@ -294,6 +309,7 @@
       "geomfilter": "Geometrico",
       "invalidfilter": "Espressione filtro non valida",
       "save": "Salva",
+      "select": "Seleziona...",
       "selectlayer": "Seleziona livello",
       "timefilter": "Temporale",
       "timefrom": "Da",
@@ -336,6 +352,9 @@
       "side": "Lato",
       "width": "Larghezza",
       "windowtitle": "Formulario numerico"
+    },
+    "pickfeature": {
+      "querying": "Query..."
     },
     "portal": {
       "filter": "Filtra temi...",

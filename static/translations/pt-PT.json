@@ -11,6 +11,7 @@
         "Editing": "Edição",
         "FeatureForm": "Formulário de Recurso",
         "FeatureSearch": "Pesquisa de Recurso",
+        "GeometryDigitizer": "",
         "Help": "Ajuda",
         "IdentifyPoint": "Identificar Ponto",
         "IdentifyRegion": "Identificar Região",
@@ -182,6 +183,20 @@
       "files": "Ficheiros",
       "placeholder": "Selecionar Ficheiro..."
     },
+    "geomdigitizer": {
+      "applink": "",
+      "bufferlayername": "",
+      "chooselink": "",
+      "clear": "",
+      "identifypick": "",
+      "identifypickregion": "",
+      "layername": "",
+      "line_buffer": "",
+      "point_buffer": "",
+      "selfinter": "",
+      "send": "",
+      "wait": ""
+    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Distância",
@@ -294,6 +309,7 @@
       "geomfilter": "",
       "invalidfilter": "",
       "save": "",
+      "select": "",
       "selectlayer": "",
       "timefilter": "",
       "timefrom": "",
@@ -336,6 +352,9 @@
       "side": "Lado",
       "width": "Largura",
       "windowtitle": "Entrada Numérica"
+    },
+    "pickfeature": {
+      "querying": ""
     },
     "portal": {
       "filter": "",

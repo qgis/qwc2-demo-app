@@ -11,6 +11,7 @@
         "Editing": "Editing",
         "FeatureForm": "Feature Form",
         "FeatureSearch": "Feature Search",
+        "GeometryDigitizer": "Geometry digitizer",
         "Help": "Help",
         "IdentifyPoint": "Identify Point",
         "IdentifyRegion": "Identify Region",
@@ -182,6 +183,20 @@
       "files": "files",
       "placeholder": "Select file..."
     },
+    "geomdigitizer": {
+      "applink": "Application",
+      "bufferlayername": "Digitization buffer",
+      "chooselink": "Choose...",
+      "clear": "Clear layer",
+      "identifypick": "Pick feature",
+      "identifypickregion": "Pick features in region",
+      "layername": "Digitization",
+      "line_buffer": "Line (to buffer)",
+      "point_buffer": "Point (to buffer)",
+      "selfinter": "One or more polygons contain self-intersections",
+      "send": "Send",
+      "wait": "Loading..."
+    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Distance",
@@ -294,6 +309,7 @@
       "geomfilter": "Geometry",
       "invalidfilter": "Invalid filter expression",
       "save": "Save",
+      "select": "Select...",
       "selectlayer": "Select layer",
       "timefilter": "Time",
       "timefrom": "From",
@@ -336,6 +352,9 @@
       "side": "Side",
       "width": "Width",
       "windowtitle": "Numeric input"
+    },
+    "pickfeature": {
+      "querying": "Querying..."
     },
     "portal": {
       "filter": "Filter themes...",

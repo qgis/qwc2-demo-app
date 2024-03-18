@@ -11,6 +11,7 @@
         "Editing": "Edycja",
         "FeatureForm": "",
         "FeatureSearch": "",
+        "GeometryDigitizer": "",
         "Help": "Pomoc",
         "IdentifyPoint": "",
         "IdentifyRegion": "Identifikuj Obszar",
@@ -182,6 +183,20 @@
       "files": "",
       "placeholder": "Wybierz plik..."
     },
+    "geomdigitizer": {
+      "applink": "",
+      "bufferlayername": "",
+      "chooselink": "",
+      "clear": "",
+      "identifypick": "",
+      "identifypickregion": "",
+      "layername": "",
+      "line_buffer": "",
+      "point_buffer": "",
+      "selfinter": "",
+      "send": "",
+      "wait": ""
+    },
     "heightprofile": {
       "asl": "a.s.l.",
       "distance": "Odległość",
@@ -294,6 +309,7 @@
       "geomfilter": "",
       "invalidfilter": "",
       "save": "",
+      "select": "",
       "selectlayer": "",
       "timefilter": "",
       "timefrom": "",
@@ -336,6 +352,9 @@
       "side": "",
       "width": "",
       "windowtitle": ""
+    },
+    "pickfeature": {
+      "querying": ""
     },
     "portal": {
       "filter": "",
