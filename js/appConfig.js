@@ -21,6 +21,7 @@ import DxfExportPlugin from 'qwc2/plugins/DxfExport';
 import EditingPlugin from 'qwc2/plugins/Editing';
 import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
 import FeatureSearchPlugin from 'qwc2/plugins/FeatureSearch';
+import GeometryDigitizerPlugin from 'qwc2/plugins/GeometryDigitizer';
 import HeightProfilePlugin from 'qwc2/plugins/HeightProfile';
 import HelpPlugin from 'qwc2/plugins/Help';
 import HomeButtonPlugin from 'qwc2/plugins/HomeButton';
@@ -95,6 +96,7 @@ export default {
             DxfExportPlugin: DxfExportPlugin,
             EditingPlugin: EditingPlugin(/* CustomEditingInterface */),
             FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */),
+            GeometryDigitizerPlugin: GeometryDigitizerPlugin,
             HeightProfilePlugin: HeightProfilePlugin,
             HelpPlugin: HelpPlugin(renderHelp),
             HomeButtonPlugin: HomeButtonPlugin,
