@@ -6,39 +6,30 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {SearchProviders} from './SearchProviders';
-import {renderHelp} from './Help';
-
-import MapPlugin from 'qwc2/plugins/Map';
-import EditingSupport from 'qwc2/plugins/map/EditingSupport';
-import LocateSupport from 'qwc2/plugins/map/LocateSupport';
-import MeasurementSupport from 'qwc2/plugins/map/MeasurementSupport';
-import OverviewSupport from 'qwc2/plugins/map/OverviewSupport';
-import RedliningSupport from 'qwc2/plugins/map/RedliningSupport';
-import ScaleBarSupport from 'qwc2/plugins/map/ScaleBarSupport';
-import SnappingSupport from 'qwc2/plugins/map/SnappingSupport';
-import HomeButtonPlugin from 'qwc2/plugins/HomeButton';
-
-import APIPlugin from 'qwc2/plugins/API';
 import AppMenu from 'qwc2/components/AppMenu';
+import FullscreenSwitcher from 'qwc2/components/FullscreenSwitcher';
+import SearchBox from 'qwc2/components/SearchBox';
+import Toolbar from 'qwc2/components/Toolbar';
+import APIPlugin from 'qwc2/plugins/API';
 import AttributeTablePlugin from 'qwc2/plugins/AttributeTable';
 import AuthenticationPlugin from 'qwc2/plugins/Authentication';
 import BackgroundSwitcherPlugin from 'qwc2/plugins/BackgroundSwitcher';
 import BookmarkPlugin from 'qwc2/plugins/Bookmark';
 import BottomBarPlugin from 'qwc2/plugins/BottomBar';
-import BufferSupport from 'qwc2/plugins/redlining/RedliningBufferSupport';
 import CyclomediaPlugin from 'qwc2/plugins/Cyclomedia';
 import DxfExportPlugin from 'qwc2/plugins/DxfExport';
 import EditingPlugin from 'qwc2/plugins/Editing';
 import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
-import FullscreenSwitcher from 'qwc2/components/FullscreenSwitcher';
+import FeatureSearchPlugin from 'qwc2/plugins/FeatureSearch';
 import HeightProfilePlugin from 'qwc2/plugins/HeightProfile';
 import HelpPlugin from 'qwc2/plugins/Help';
+import HomeButtonPlugin from 'qwc2/plugins/HomeButton';
 import IdentifyPlugin from 'qwc2/plugins/Identify';
 import LayerCatalogPlugin from 'qwc2/plugins/LayerCatalog';
 import LayerTreePlugin from 'qwc2/plugins/LayerTree';
 import LocateButtonPlugin from 'qwc2/plugins/LocateButton';
 import LoginUserPlugin from 'qwc2/plugins/LoginUser';
+import MapPlugin from 'qwc2/plugins/Map';
 import MapComparePlugin from 'qwc2/plugins/MapCompare';
 import MapCopyrightPlugin from 'qwc2/plugins/MapCopyright';
 import MapExportPlugin from 'qwc2/plugins/MapExport';
@@ -55,20 +46,27 @@ import RasterExportPlugin from 'qwc2/plugins/RasterExport';
 import RedliningPlugin from 'qwc2/plugins/Redlining';
 import RoutingPlugin from 'qwc2/plugins/Routing';
 import ScratchDrawingPlugin from 'qwc2/plugins/ScratchDrawing';
-import SearchBox from 'qwc2/components/SearchBox';
-import FeatureSearchPlugin from 'qwc2/plugins/FeatureSearch';
 import SettingsPlugin from 'qwc2/plugins/Settings';
 import SharePlugin from 'qwc2/plugins/Share';
 import StartupMarkerPlugin from 'qwc2/plugins/StartupMarker';
 import TaskButtonPlugin from 'qwc2/plugins/TaskButton';
 import ThemeSwitcherPlugin from 'qwc2/plugins/ThemeSwitcher';
 import TimeManagerPlugin from 'qwc2/plugins/TimeManager';
-import Toolbar from 'qwc2/components/Toolbar';
 import TopBarPlugin from 'qwc2/plugins/TopBar';
 import {ZoomInPlugin, ZoomOutPlugin} from 'qwc2/plugins/ZoomButtons';
-import {customAttributeCalculator, attributeTransform, customExporters} from './IdentifyExtensions';
+import EditingSupport from 'qwc2/plugins/map/EditingSupport';
+import LocateSupport from 'qwc2/plugins/map/LocateSupport';
+import MeasurementSupport from 'qwc2/plugins/map/MeasurementSupport';
+import OverviewSupport from 'qwc2/plugins/map/OverviewSupport';
+import RedliningSupport from 'qwc2/plugins/map/RedliningSupport';
+import ScaleBarSupport from 'qwc2/plugins/map/ScaleBarSupport';
+import SnappingSupport from 'qwc2/plugins/map/SnappingSupport';
+import BufferSupport from 'qwc2/plugins/redlining/RedliningBufferSupport';
 
 import defaultLocaleData from '../static/translations/en-US.json';
+import {renderHelp} from './Help';
+import {customAttributeCalculator, attributeTransform, customExporters} from './IdentifyExtensions';
+import {SearchProviders} from './SearchProviders';
 
 export default {
     defaultLocaleData: defaultLocaleData,
