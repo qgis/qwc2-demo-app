@@ -1,6 +1,6 @@
 {
     "name": "QWC2App",
-    "version": "2024.03.19-lts",
+    "version": "2024.03.21-lts",
     "description": "QGIS Web Client 2 application",
     "author": "Sourcepole",
     "license": "BSD-2-Clause",
