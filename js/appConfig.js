@@ -16,6 +16,7 @@ import AuthenticationPlugin from 'qwc2/plugins/Authentication';
 import BackgroundSwitcherPlugin from 'qwc2/plugins/BackgroundSwitcher';
 import BookmarkPlugin from 'qwc2/plugins/Bookmark';
 import BottomBarPlugin from 'qwc2/plugins/BottomBar';
+import CookiePopupPlugin from 'qwc2/plugins/CookiePopup';
 import CyclomediaPlugin from 'qwc2/plugins/Cyclomedia';
 import DxfExportPlugin from 'qwc2/plugins/DxfExport';
 import EditingPlugin from 'qwc2/plugins/Editing';
@@ -92,6 +93,7 @@ export default {
             BackgroundSwitcherPlugin: BackgroundSwitcherPlugin,
             BookmarkPlugin: BookmarkPlugin,
             BottomBarPlugin: BottomBarPlugin,
+            CookiePopupPlugin: CookiePopupPlugin,
             CyclomediaPlugin: CyclomediaPlugin,
             DxfExportPlugin: DxfExportPlugin,
             EditingPlugin: EditingPlugin(/* CustomEditingInterface */),

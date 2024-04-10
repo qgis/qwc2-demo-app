@@ -121,6 +121,10 @@
       "terms_label": "Termos de uso",
       "viewertitle_label": "QWC2 Demo"
     },
+    "cookiepopup": {
+      "accept": "",
+      "message": ""
+    },
     "copybtn": {
       "click_to_copy": "Clique para copiar",
       "copied": "Copiado",
