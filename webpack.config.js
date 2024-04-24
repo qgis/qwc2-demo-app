@@ -44,7 +44,6 @@ module.exports = (env, argv) => {
             extensions: [".mjs", ".js", ".jsx"],
             fallback: {
                 stream: require.resolve("stream-browserify"),
-                buffer: require.resolve("buffer/"),
                 path: require.resolve("path-browserify"),
                 timers: require.resolve("timers-browserify"),
                 url: require.resolve("url/")
