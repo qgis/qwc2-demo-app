@@ -3,9 +3,7 @@ const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const styleConfig = require("./styleConfig");
 
-const styleReplacements = Object.keys(styleConfig).map(key => ({search: "@" + key + "@", replace: styleConfig[key], flags: "g"}));
 const today = new Date();
 const buildDate = today.getFullYear() + "." + String(1 + today.getMonth()).padStart(2, '0') + "." + String(today.getDate()).padStart(2, '0');
 
@@ -43,10 +41,7 @@ module.exports = (env, argv) => {
         resolve: {
             extensions: [".mjs", ".js", ".jsx"],
             fallback: {
-                stream: require.resolve("stream-browserify"),
-                path: require.resolve("path-browserify"),
-                timers: require.resolve("timers-browserify"),
-                url: require.resolve("url/")
+                path: require.resolve("path-browserify")
             }
         },
         snapshot: {
@@ -78,8 +73,7 @@ module.exports = (env, argv) => {
                     test: /\.css$/,
                     use: [
                         {loader: 'style-loader'},
-                        {loader: 'css-loader'},
-                        {loader: 'string-replace-loader', options: {multiple: styleReplacements}}
+                        {loader: 'css-loader'}
                     ]
                 },
                 {
