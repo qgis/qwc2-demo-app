@@ -151,6 +151,7 @@
       "clearpicture": "Zurücksetzen",
       "commit": "Speichern",
       "commitfailed": "Fehler beim Speichern",
+      "contraintviolation": "",
       "create": "Erstellen",
       "delete": "Löschen",
       "discard": "Abbrechen",
