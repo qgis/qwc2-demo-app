@@ -47,6 +47,7 @@
       "enablelayer": "Ativar Camada",
       "existinglayer": "A camada já existe no mapa",
       "filter": "Filtro",
+      "fulltext": "Solr",
       "invisiblelayer": "O resultado está numa camada não visível.",
       "limittoarea": "Limitar à Área",
       "more": "Mais...",
@@ -57,7 +58,6 @@
       "searchall": "Procurar lugares ou adicionar mapas...",
       "searchinprogress": "Pesquisa em progresso",
       "searchreset": "Reiniciar Pesquisa",
-      "fulltext": "Solr",
       "themelayers": "",
       "themes": "Temas"
     },

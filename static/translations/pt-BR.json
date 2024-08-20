@@ -47,6 +47,7 @@
       "enablelayer": "Ativar a camada",
       "existinglayer": "A camada já existe no mapa",
       "filter": "",
+      "fulltext": "",
       "invisiblelayer": "O resultado reside numa camada que não é visível.",
       "limittoarea": "",
       "more": "Mais...",
@@ -57,7 +58,6 @@
       "searchall": "Procurar lugares ou adicionar mapas...",
       "searchinprogress": "Busca em andamento...",
       "searchreset": "Redefinir pesquisa",
-      "fulltext": "",
       "themelayers": "",
       "themes": "Temas"
     },

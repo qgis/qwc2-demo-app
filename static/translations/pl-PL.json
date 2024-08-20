@@ -47,6 +47,7 @@
       "enablelayer": "Włącz warstwę",
       "existinglayer": "",
       "filter": "",
+      "fulltext": "",
       "invisiblelayer": "Wynik znajduje się na warstwie, która nie jest widoczna.",
       "limittoarea": "",
       "more": "Więcej...",
@@ -57,7 +58,6 @@
       "searchall": "Szukaj miejsc lub dodaj mapy...",
       "searchinprogress": "",
       "searchreset": "",
-      "fulltext": "",
       "themelayers": "",
       "themes": "Motywy"
     },
