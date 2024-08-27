@@ -40,7 +40,7 @@
       "menulabel": "Karte & Werkzeuge"
     },
     "search": {
-      "coordinates": "",
+      "coordinates": "Koordinaten",
       "all": "Alle",
       "circleradius": "Kreis radius",
       "clearfilter": "Zurücksetzen",
@@ -381,6 +381,7 @@
       "pickatlasfeature": "In Ebene {0} auswählen...",
       "resolution": "Auflösung",
       "rotation": "Rotation",
+      "save": "Speichern",
       "scale": "Massstab",
       "submit": "Erzeugen",
       "wait": "Bitte warten..."
