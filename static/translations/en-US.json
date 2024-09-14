@@ -26,6 +26,7 @@
         "Portal": "Portal",
         "Print": "Print",
         "RasterExport": "Raster Export",
+        "Reports": "Reports",
         "MapExport": "Export map",
         "Redlining": "Redlining",
         "Routing": "Routing",
@@ -215,7 +216,9 @@
       "title": "Height profile"
     },
     "identify": {
+      "aggregatedreport": "Aggregated report:",
       "clipboard": "Copy to clipboard",
+      "download": "Download",
       "export": "Export",
       "exportformat": "Export format:",
       "featureReport": "Feature report",
@@ -223,6 +226,8 @@
       "noattributes": "No attributes",
       "noresults": "No information available for the selected point",
       "querying": "Querying...",
+      "reportfail": "Failed to generate report",
+      "selectlayer": "Select layer...",
       "title": "Feature Info"
     },
     "imageeditor": {
@@ -428,6 +433,13 @@
       "text": "Text",
       "transform": "Transform",
       "width": "Width"
+    },
+    "reports": {
+      "all": "All",
+      "download": "Download",
+      "pick": "Pick",
+      "region": "Select region",
+      "selectlayer": "Select report layer..."
     },
     "routing": {
       "add": "Add point",

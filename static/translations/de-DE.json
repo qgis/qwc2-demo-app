@@ -26,6 +26,7 @@
         "Portal": "Portal",
         "Print": "Drucken",
         "RasterExport": "Raster-Export",
+        "Reports": "Berichte",
         "MapExport": "Karte exportieren",
         "Redlining": "Zeichnen",
         "Routing": "Routing",
@@ -215,7 +216,9 @@
       "title": "Höhenprofil"
     },
     "identify": {
+      "aggregatedreport": "Aggregierter Bericht",
       "clipboard": "Nach Zwischenablage kopieren",
+      "download": "Herunterladen",
       "export": "Exportieren",
       "exportformat": "Exportformat",
       "featureReport": "Objektblatt",
@@ -223,6 +226,8 @@
       "noattributes": "Keine Attribute",
       "noresults": "Keine Resultate an der ausgewählten Position",
       "querying": "Objekte werden abgefragt...",
+      "reportfail": "Bericht konnt nicht erstellt werden",
+      "selectlayer": "Ebene auswählen",
       "title": "Objektinformationen"
     },
     "imageeditor": {
@@ -428,6 +433,13 @@
       "text": "Text",
       "transform": "Transformieren",
       "width": "Breite"
+    },
+    "reports": {
+      "all": "Alle",
+      "download": "Herunterladen",
+      "pick": "Auswählen",
+      "region": "Region auswählen",
+      "selectlayer": "Berichtebene auswählen..."
     },
     "routing": {
       "add": "Hinzufügen",

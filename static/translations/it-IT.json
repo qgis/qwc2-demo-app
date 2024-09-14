@@ -26,6 +26,7 @@
         "Portal": "Portale",
         "Print": "Stampa",
         "RasterExport": "Esporta su immagine",
+        "Reports": "Rapporti",
         "MapExport": "Esporta mappa",
         "Redlining": "Strumenti di disegno",
         "Routing": "Routing",
@@ -215,7 +216,9 @@
       "title": "Profilo di altezza"
     },
     "identify": {
+      "aggregatedreport": "Rapporto aggregato",
       "clipboard": "Copia negli appunti",
+      "download": "Scarica",
       "export": "Esporta",
       "exportformat": "Formato d'esportazione",
       "featureReport": "Oggetto formulario",
@@ -223,6 +226,8 @@
       "noattributes": "Nessun attributo",
       "noresults": "Nessun risultato",
       "querying": "Caricando...",
+      "reportfail": "Errore nella generazione del rapporto",
+      "selectlayer": "Seleziona livello...",
       "title": "Titolo"
     },
     "imageeditor": {
@@ -428,6 +433,13 @@
       "text": "Testo",
       "transform": "Transforma",
       "width": "Larghezza"
+    },
+    "reports": {
+      "all": "Tutti",
+      "download": "Scarica",
+      "pick": "Seleziona",
+      "region": "Seleziona area",
+      "selectlayer": "Seleziona livello del rapporto..."
     },
     "routing": {
       "add": "Aggiungi",

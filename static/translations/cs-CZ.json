@@ -26,6 +26,7 @@
         "Portal": "",
         "Print": "Tisk",
         "RasterExport": "Export rastru",
+        "Reports": "",
         "MapExport": "Export mapu",
         "Redlining": "Připomínkování",
         "Routing": "Trasy",
@@ -215,7 +216,9 @@
       "title": ""
     },
     "identify": {
+      "aggregatedreport": "",
       "clipboard": "Zkopírovat do schránky",
+      "download": "",
       "export": "Exportovat",
       "exportformat": "Formát exportu",
       "featureReport": "Report prvku",
@@ -223,6 +226,8 @@
       "noattributes": "Bez atributů",
       "noresults": "V tomto bodu nejsou k dispozici informace o žádném prvku",
       "querying": "Dotazování...",
+      "reportfail": "",
+      "selectlayer": "",
       "title": "Informace o prvku"
     },
     "imageeditor": {
@@ -428,6 +433,13 @@
       "text": "Text",
       "transform": "",
       "width": "Šířka"
+    },
+    "reports": {
+      "all": "",
+      "download": "",
+      "pick": "",
+      "region": "",
+      "selectlayer": ""
     },
     "routing": {
       "add": "",

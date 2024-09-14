@@ -26,6 +26,7 @@
         "Portal": "",
         "Print": "Imprimir",
         "RasterExport": "Exportar trama",
+        "Reports": "",
         "MapExport": "Exportar mapa",
         "Redlining": "Línea de demarcación",
         "Routing": "Routing",
@@ -215,7 +216,9 @@
       "title": ""
     },
     "identify": {
+      "aggregatedreport": "",
       "clipboard": "",
+      "download": "",
       "export": "Exportar",
       "exportformat": "Exportar formato",
       "featureReport": "Informe del elemento",
@@ -223,6 +226,8 @@
       "noattributes": "Sin atributos",
       "noresults": "Sin información disponible sobre el punto seleccionado",
       "querying": "Consultando...",
+      "reportfail": "",
+      "selectlayer": "",
       "title": "Información del elemento"
     },
     "imageeditor": {
@@ -428,6 +433,13 @@
       "text": "Texto",
       "transform": "",
       "width": "Ancho"
+    },
+    "reports": {
+      "all": "",
+      "download": "",
+      "pick": "",
+      "region": "",
+      "selectlayer": ""
     },
     "routing": {
       "add": "Añadir punto",

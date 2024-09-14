@@ -26,6 +26,7 @@
         "Portal": "",
         "Print": "Skriv ut",
         "RasterExport": "Raster Export",
+        "Reports": "",
         "MapExport": "Exportera karta",
         "Redlining": "Rita",
         "Routing": "",
@@ -215,7 +216,9 @@
       "title": ""
     },
     "identify": {
+      "aggregatedreport": "",
       "clipboard": "",
+      "download": "",
       "export": "Exportera",
       "exportformat": "",
       "featureReport": "Objektrapport",
@@ -223,6 +226,8 @@
       "noattributes": "Inga attribut",
       "noresults": "Ingen information för vald punkt",
       "querying": "Frågar...",
+      "reportfail": "",
+      "selectlayer": "",
       "title": "Objektinformation"
     },
     "imageeditor": {
@@ -428,6 +433,13 @@
       "text": "Text",
       "transform": "",
       "width": "Bredd"
+    },
+    "reports": {
+      "all": "",
+      "download": "",
+      "pick": "",
+      "region": "",
+      "selectlayer": ""
     },
     "routing": {
       "add": "",
