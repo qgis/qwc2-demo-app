@@ -46,6 +46,7 @@ import PrintPlugin from 'qwc2/plugins/Print';
 import ProcessNotificationsPlugin from 'qwc2/plugins/ProcessNotifications';
 import RasterExportPlugin from 'qwc2/plugins/RasterExport';
 import RedliningPlugin from 'qwc2/plugins/Redlining';
+import ReportsPlugin from 'qwc2/plugins/Reports';
 import RoutingPlugin from 'qwc2/plugins/Routing';
 import ScratchDrawingPlugin from 'qwc2/plugins/ScratchDrawing';
 import SettingsPlugin from 'qwc2/plugins/Settings';
@@ -123,6 +124,7 @@ export default {
             RedliningPlugin: RedliningPlugin({
                 BufferSupport: BufferSupport
             }),
+            ReportsPlugin: ReportsPlugin,
             RoutingPlugin: RoutingPlugin(SearchProviders),
             FeatureSearchPlugin: FeatureSearchPlugin,
             ScratchDrawingPlugin: ScratchDrawingPlugin,
