@@ -613,7 +613,9 @@
     },
     "window": {
       "close": "",
+      "detach": "",
       "dock": "",
+      "embed": "",
       "maximize": "",
       "minimize": "",
       "undock": "",

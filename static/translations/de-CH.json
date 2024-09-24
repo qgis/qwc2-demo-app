@@ -613,7 +613,9 @@
     },
     "window": {
       "close": "Schliessen",
+      "detach": "Abkoppeln",
       "dock": "Andocken",
+      "embed": "Einbetten",
       "maximize": "Maximieren",
       "minimize": "Minimieren",
       "undock": "Abdocken",

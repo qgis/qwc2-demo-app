@@ -613,7 +613,9 @@
     },
     "window": {
       "close": "Închide",
+      "detach": "",
       "dock": "Andocare",
+      "embed": "",
       "maximize": "Maximizează",
       "minimize": "Minimizează",
       "undock": "Anulează andocarea",
