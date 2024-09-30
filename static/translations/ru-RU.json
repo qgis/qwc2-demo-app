@@ -19,6 +19,7 @@
         "LayerTree": "Слои и легенда",
         "Login": "",
         "Logout": "",
+        "Map3D": "",
         "MapLegend": "",
         "Measure": "Измерения",
         "MeasureLineString": "измерить линию",
@@ -302,6 +303,9 @@
     "map": {
       "loading": "Загрузка...",
       "resetrotation": ""
+    },
+    "map3d": {
+      "title": ""
     },
     "mapexport": {
       "configuration": "",

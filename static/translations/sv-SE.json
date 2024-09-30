@@ -19,6 +19,7 @@
         "LayerTree": "Lager & teckenförklaring",
         "Login": "Logga in",
         "Logout": "Logga ut",
+        "Map3D": "",
         "MapLegend": "",
         "Measure": "Mät",
         "MeasureLineString": "Mäta en linje",
@@ -302,6 +303,9 @@
     "map": {
       "loading": "Laddar...",
       "resetrotation": ""
+    },
+    "map3d": {
+      "title": ""
     },
     "mapexport": {
       "configuration": "",

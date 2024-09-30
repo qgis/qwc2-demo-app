@@ -19,6 +19,7 @@
         "LayerTree": "Katmanlar & Gösterim",
         "Login": "Giriş",
         "Logout": "Çıkış",
+        "Map3D": "",
         "MapLegend": "Harita Lejandı",
         "Measure": "Ölç",
         "MeasureLineString": "Çizgi Ölç",
@@ -302,6 +303,9 @@
     "map": {
       "loading": "Yükleniyor...",
       "resetrotation": "Dönüklüğü sıfırla"
+    },
+    "map3d": {
+      "title": ""
     },
     "mapexport": {
       "configuration": "Yapılandırma",

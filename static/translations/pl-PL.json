@@ -19,6 +19,7 @@
         "LayerTree": "Warstwy i ich legendy",
         "Login": "Zaloguj",
         "Logout": "Wyloguj",
+        "Map3D": "",
         "MapLegend": "",
         "Measure": "Pomiary",
         "MeasureLineString": "Zmierzyć linię",
@@ -302,6 +303,9 @@
     "map": {
       "loading": "Ładowanie...",
       "resetrotation": ""
+    },
+    "map3d": {
+      "title": ""
     },
     "mapexport": {
       "configuration": "",
