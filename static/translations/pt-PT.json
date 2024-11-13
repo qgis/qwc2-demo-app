@@ -4,19 +4,27 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "Bookmark": "Marcador",
+        "Editing": "Edição",
+        "Help": "Ajuda",
+        "LayerTree": "Árvore de Camadas",
+        "MapExport": "Exportar Mapa",
         "MapFilter": "",
+        "Print": "Imprimir",
+        "RasterExport": "Exportar Raster",
+        "Reports": "",
+        "Settings": "Configurações",
+        "Share": "Partilhar Link",
+        "ThemeSwitcher": "Tema",
         "AttributeTable": "Tabela de Atributos",
         "Cyclomedia": "Cyclomedia",
         "DxfExport": "Exportar DXF",
-        "Editing": "Edição",
         "FeatureForm": "Formulário de Recurso",
         "FeatureSearch": "Pesquisa de Recurso",
         "GeometryDigitizer": "",
-        "Help": "Ajuda",
         "IdentifyPoint": "Identificar Ponto",
         "IdentifyRegion": "Identificar Região",
         "LayerCatalog": "Catálogo de Camadas",
-        "LayerTree": "Árvore de Camadas",
         "Login": "Iniciar Sessão",
         "Logout": "Terminar Sessão",
         "Map3D": "",
@@ -25,18 +33,10 @@
         "MeasureLineString": "Medir Linha",
         "MeasurePolygon": "Medir Polígono",
         "Portal": "",
-        "Print": "Imprimir",
-        "RasterExport": "Exportar Raster",
-        "Reports": "",
-        "MapExport": "Exportar Mapa",
         "Redlining": "Marcação",
         "Routing": "Roteamento",
-        "Share": "Partilhar Link",
-        "ThemeSwitcher": "Tema",
         "Tools": "Ferramentas do Mapa",
-        "Bookmark": "Marcador",
-        "TimeManager": "Gestor de Tempo",
-        "Settings": "Configurações"
+        "TimeManager": "Gestor de Tempo"
       },
       "filter": "Filtro",
       "menulabel": "Mapas e Ferramentas"
@@ -170,7 +170,6 @@
       "reallydelete": "Eliminar",
       "relationcommitfailed": "Falha ao Confirmar Relação",
       "select": "Selecionar",
-      "selectedpicture": "Imagem Selecionada",
       "takepicture": "Tirar Fotografia",
       "unsavedchanged": "Alterações Não Guardadas"
     },
@@ -305,6 +304,7 @@
       "resetrotation": "Redefinir Rotação"
     },
     "map3d": {
+      "syncview": "",
       "title": ""
     },
     "mapexport": {

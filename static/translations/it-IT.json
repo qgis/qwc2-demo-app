@@ -4,19 +4,27 @@
     "appmenu": {
       "items": {
         "ExternalLink": "Collegamento esterno",
+        "Bookmark": "Segnalibri",
+        "Editing": "Strumenti di modifica",
+        "Help": "Aiuto",
+        "LayerTree": "Livelli",
+        "MapExport": "Esporta mappa",
         "MapFilter": "Filta mappa",
+        "Print": "Stampa",
+        "RasterExport": "Esporta su immagine",
+        "Reports": "Rapporti",
+        "Settings": "Impostazioni",
+        "Share": "Condividi",
+        "ThemeSwitcher": "Temi",
         "AttributeTable": "Tabella attributi",
         "Cyclomedia": "Cyclomedia",
         "DxfExport": "Esporta su DXF",
-        "Editing": "Strumenti di modifica",
         "FeatureForm": "Formulario oggetto",
         "FeatureSearch": "Ricerca oggetto",
         "GeometryDigitizer": "Digitalizzazione geometrie",
-        "Help": "Aiuto",
         "IdentifyPoint": "Identifica punto",
         "IdentifyRegion": "Identifica in un poligono",
         "LayerCatalog": "Catalogo livelli",
-        "LayerTree": "Livelli",
         "Login": "Accedi",
         "Logout": "Disconnetti",
         "Map3D": "Visuale 3D",
@@ -25,18 +33,10 @@
         "MeasureLineString": "Misura una linea",
         "MeasurePolygon": "Misura un poligono",
         "Portal": "Portale",
-        "Print": "Stampa",
-        "RasterExport": "Esporta su immagine",
-        "Reports": "Rapporti",
-        "MapExport": "Esporta mappa",
         "Redlining": "Strumenti di disegno",
         "Routing": "Routing",
-        "Share": "Condividi",
-        "ThemeSwitcher": "Temi",
         "Tools": "Strumenti",
-        "Bookmark": "Segnalibri",
-        "TimeManager": "Linea temporale",
-        "Settings": "Impostazioni"
+        "TimeManager": "Linea temporale"
       },
       "filter": "Filtra menù...",
       "menulabel": "Mappa e strumenti"
@@ -170,7 +170,6 @@
       "reallydelete": "Elimina",
       "relationcommitfailed": "Alcune relazioni non sono state salvate, consultare i tooltip delle icone per i dettagli.",
       "select": "Seleziona...",
-      "selectedpicture": "Immagine selezionata",
       "takepicture": "Foto",
       "unsavedchanged": "Vi sono cambiamenti non salvati. Volete comunque lasciare la pagina?"
     },
@@ -305,6 +304,7 @@
       "resetrotation": "Resetta orientamento"
     },
     "map3d": {
+      "syncview": "Sincronizza visuale",
       "title": "Visuale 3D"
     },
     "mapexport": {

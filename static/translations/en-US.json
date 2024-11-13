@@ -4,19 +4,27 @@
     "appmenu": {
       "items": {
         "ExternalLink": "External Link",
+        "Bookmark": "Bookmarks",
+        "Editing": "Editing",
+        "Help": "Help",
+        "LayerTree": "Layers & Legend",
+        "MapExport": "Export map",
         "MapFilter": "Map Filter",
+        "Print": "Print",
+        "RasterExport": "Raster Export",
+        "Reports": "Reports",
+        "Settings": "Settings",
+        "Share": "Share Link",
+        "ThemeSwitcher": "Theme",
         "AttributeTable": "Attribute Table",
         "Cyclomedia": "Cyclomedia",
         "DxfExport": "DXF Export",
-        "Editing": "Editing",
         "FeatureForm": "Feature Form",
         "FeatureSearch": "Feature Search",
         "GeometryDigitizer": "Geometry digitizer",
-        "Help": "Help",
         "IdentifyPoint": "Identify Point",
         "IdentifyRegion": "Identify Region",
         "LayerCatalog": "Layer catalog",
-        "LayerTree": "Layers & Legend",
         "Login": "Login",
         "Logout": "Logout",
         "Map3D": "3D View",
@@ -25,18 +33,10 @@
         "MeasureLineString": "Measure a line",
         "MeasurePolygon": "Measure a polygon",
         "Portal": "Portal",
-        "Print": "Print",
-        "RasterExport": "Raster Export",
-        "Reports": "Reports",
-        "MapExport": "Export map",
         "Redlining": "Redlining",
         "Routing": "Routing",
-        "Share": "Share Link",
-        "ThemeSwitcher": "Theme",
         "Tools": "Map Tools",
-        "Bookmark": "Bookmarks",
-        "TimeManager": "Time Manager",
-        "Settings": "Settings"
+        "TimeManager": "Time Manager"
       },
       "filter": "Filter menu...",
       "menulabel": "Map & Tools"
@@ -170,7 +170,6 @@
       "reallydelete": "Delete",
       "relationcommitfailed": "Some relation values could not be committed, check the icon tooltips for details",
       "select": "Select",
-      "selectedpicture": "Selected picture",
       "takepicture": "Take picture",
       "unsavedchanged": "There are unsaved changes. Do you want to leave the page anyway?"
     },
@@ -305,6 +304,7 @@
       "resetrotation": "Reset rotation"
     },
     "map3d": {
+      "syncview": "Synchronize view",
       "title": "3D View"
     },
     "mapexport": {

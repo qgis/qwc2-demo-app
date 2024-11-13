@@ -4,19 +4,27 @@
     "appmenu": {
       "items": {
         "ExternalLink": "",
+        "Bookmark": "Marque-pages",
+        "Editing": "Editer",
+        "Help": "Aide",
+        "LayerTree": "Couches",
+        "MapExport": "Exporter la carte",
         "MapFilter": "Filtrer la carte",
+        "Print": "Imprimer",
+        "RasterExport": "Exporter l'image",
+        "Reports": "Rapports",
+        "Settings": "Paramètres",
+        "Share": "Partager",
+        "ThemeSwitcher": "Thèmes",
         "AttributeTable": "Table d'attributs",
         "Cyclomedia": "Cyclomedia",
         "DxfExport": "Export DXF",
-        "Editing": "Editer",
         "FeatureForm": "Formulaire d'objet",
         "FeatureSearch": "Recherche objet",
         "GeometryDigitizer": "Digitalisation des géométries",
-        "Help": "Aide",
         "IdentifyPoint": "Interroger point",
         "IdentifyRegion": "Interroger la région",
         "LayerCatalog": "Catalogue des couches",
-        "LayerTree": "Couches",
         "Login": "Connexion",
         "Logout": "Déconnexion",
         "Map3D": "Vue 3D",
@@ -25,18 +33,10 @@
         "MeasureLineString": "Mesurer une ligne",
         "MeasurePolygon": "Mesurer un polygone",
         "Portal": "Portail",
-        "Print": "Imprimer",
-        "RasterExport": "Exporter l'image",
-        "Reports": "Rapports",
-        "MapExport": "Exporter la carte",
         "Redlining": "Dessiner",
         "Routing": "Routage",
-        "Share": "Partager",
-        "ThemeSwitcher": "Thèmes",
         "Tools": "Outils",
-        "Bookmark": "Marque-pages",
-        "TimeManager": "Ligne du temps",
-        "Settings": "Paramètres"
+        "TimeManager": "Ligne du temps"
       },
       "filter": "Filtrer le menu...",
       "menulabel": "Cartes et outils"
@@ -170,7 +170,6 @@
       "reallydelete": "Supprimer",
       "relationcommitfailed": "Certaines relations n'ont pas pu être enregistrées. Pour plus de détails consulter le bouton d'informations",
       "select": "Sélectionner",
-      "selectedpicture": "Image sélectionnée",
       "takepicture": "Ajouter une photo",
       "unsavedchanged": "Il y a des modifications non enregistrées. Faut-il quand même quitter la page?"
     },
@@ -305,6 +304,7 @@
       "resetrotation": "Réinitialiser la rotation"
     },
     "map3d": {
+      "syncview": "Synchroniser la vue",
       "title": "Vue 3D"
     },
     "mapexport": {
