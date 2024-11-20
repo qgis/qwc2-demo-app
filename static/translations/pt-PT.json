@@ -11,14 +11,12 @@
         "MapExport": "Exportar Mapa",
         "MapFilter": "",
         "Print": "Imprimir",
-        "RasterExport": "Exportar Raster",
         "Reports": "",
         "Settings": "Configurações",
         "Share": "Partilhar Link",
         "ThemeSwitcher": "Tema",
         "AttributeTable": "Tabela de Atributos",
         "Cyclomedia": "Cyclomedia",
-        "DxfExport": "Exportar DXF",
         "FeatureForm": "Formulário de Recurso",
         "FeatureSearch": "Pesquisa de Recurso",
         "GeometryDigitizer": "",
@@ -140,11 +138,6 @@
       "login": "Iniciar Sessão",
       "scalehint": "Dica de Escala",
       "title": "Cyclomedia"
-    },
-    "dxfexport": {
-      "layers": "Camadas",
-      "selectinfo": "Arraste um retângulo ao redor da região para exportar...",
-      "symbologyscale": "Escala de Símbolos"
     },
     "editing": {
       "add": "Adicionar",
@@ -378,6 +371,10 @@
     },
     "print": {
       "atlasfeature": "Recurso do Atlas",
+      "download": "",
+      "download_as_onepdf": "",
+      "download_as_onezip": "",
+      "download_as_single": "",
       "format": "Formato",
       "grid": "Grelha",
       "layout": "Esquema",
@@ -387,25 +384,18 @@
       "nolayouts": "O tema selecionado não suporta a impressão",
       "notheme": "Nenhum tema selecionado",
       "output": "Saída",
+      "overlap": "",
       "pickatlasfeature": "Escolher Recurso do Atlas",
       "resolution": "Resolução",
       "rotation": "Rotação",
       "save": "",
       "scale": "Escala",
+      "series": "",
       "submit": "Imprimir",
       "wait": "Por favor, aguarde..."
     },
     "qtdesignerform": {
       "loading": "A carregar..."
-    },
-    "rasterexport": {
-      "format": "Formato:",
-      "resolution": "Resolução:",
-      "scale": "Escala:",
-      "size": "Tamanho:",
-      "submit": "Enviar",
-      "usersize": "Tamanho Personalizado",
-      "wait": "Por favor, aguarde..."
     },
     "redlining": {
       "border": "Fronteira",

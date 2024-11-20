@@ -11,14 +11,12 @@
         "MapExport": "Exportar mapa",
         "MapFilter": "",
         "Print": "Imprimir",
-        "RasterExport": "Exportar trama",
         "Reports": "",
         "Settings": "Opciones",
         "Share": "Compartir enlace",
         "ThemeSwitcher": "Tema",
         "AttributeTable": "Tabla de Atributos",
         "Cyclomedia": "",
-        "DxfExport": "Exportar DXF",
         "FeatureForm": "Formulario de Elemento",
         "FeatureSearch": "",
         "GeometryDigitizer": "",
@@ -140,11 +138,6 @@
       "login": "",
       "scalehint": "",
       "title": ""
-    },
-    "dxfexport": {
-      "layers": "Capas",
-      "selectinfo": "Arrastre un rectángulo alrededor de la zona para exportar...",
-      "symbologyscale": "Escala de la simbología:"
     },
     "editing": {
       "add": "Añadir",
@@ -378,6 +371,10 @@
     },
     "print": {
       "atlasfeature": "",
+      "download": "",
+      "download_as_onepdf": "",
+      "download_as_onezip": "",
+      "download_as_single": "",
       "format": "Formato:",
       "grid": "Grilla:",
       "layout": "Diseño:",
@@ -387,25 +384,18 @@
       "nolayouts": "El tema seleccionado no admite su impresión",
       "notheme": "No hay tema seleccionado",
       "output": "Salida de impresión",
+      "overlap": "",
       "pickatlasfeature": "",
       "resolution": "Resolución",
       "rotation": "Rotación",
       "save": "",
       "scale": "Escala:",
+      "series": "",
       "submit": "Imprimir",
       "wait": "Por favor espere..."
     },
     "qtdesignerform": {
       "loading": "Cargando formulario..."
-    },
-    "rasterexport": {
-      "format": "Formato:",
-      "resolution": "Resolución:",
-      "scale": "",
-      "size": "",
-      "submit": "",
-      "usersize": "",
-      "wait": ""
     },
     "redlining": {
       "border": "Límite",

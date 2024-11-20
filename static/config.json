@@ -287,6 +287,7 @@
       {
         "name": "Print",
         "cfg": {
+          "displayPrintSeries": true,
           "inlinePrintOutput": false,
           "printExternalLayers": true,
           "gridInitiallyEnabled": false,

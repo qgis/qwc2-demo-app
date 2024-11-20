@@ -11,14 +11,12 @@
         "MapExport": "Exporter la carte",
         "MapFilter": "Filtrer la carte",
         "Print": "Imprimer",
-        "RasterExport": "Exporter l'image",
         "Reports": "Rapports",
         "Settings": "Paramètres",
         "Share": "Partager",
         "ThemeSwitcher": "Thèmes",
         "AttributeTable": "Table d'attributs",
         "Cyclomedia": "Cyclomedia",
-        "DxfExport": "Export DXF",
         "FeatureForm": "Formulaire d'objet",
         "FeatureSearch": "Recherche objet",
         "GeometryDigitizer": "Digitalisation des géométries",
@@ -140,11 +138,6 @@
       "login": "Connexion",
       "scalehint": "Les enregistrements ne sont visibles que sur la carte sous l'échelle 1 :{0}.",
       "title": "Visualiseur Cyclomedia"
-    },
-    "dxfexport": {
-      "layers": "Couches",
-      "selectinfo": "Faites glisser un rectangle autour de la région à exporter..",
-      "symbologyscale": "Echelle"
     },
     "editing": {
       "add": "Ajouter",
@@ -378,6 +371,10 @@
     },
     "print": {
       "atlasfeature": "Objet atlas",
+      "download": "",
+      "download_as_onepdf": "",
+      "download_as_onezip": "",
+      "download_as_single": "",
       "format": "Format",
       "grid": "Grille",
       "layout": "Mise en page",
@@ -387,25 +384,18 @@
       "nolayouts": "Il n'y a pas de mise en page disponible pour le thème choisi.",
       "notheme": "Pas de thème sélectionné",
       "output": "Impression",
+      "overlap": "",
       "pickatlasfeature": "Choisir dans la couche {0}",
       "resolution": "Résolution",
       "rotation": "Rotation",
       "save": "Enregistrer",
       "scale": "Echelle",
+      "series": "",
       "submit": "Imprimer",
       "wait": "Veuillez patienter..."
     },
     "qtdesignerform": {
       "loading": "Chargement du formulaire..."
-    },
-    "rasterexport": {
-      "format": "Format",
-      "resolution": "Résolution",
-      "scale": "Echelle",
-      "size": "Dimension",
-      "submit": "Exporter",
-      "usersize": "Selectionner sur la carte...",
-      "wait": "Veuillez patienter..."
     },
     "redlining": {
       "border": "Bordure",

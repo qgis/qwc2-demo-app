@@ -11,14 +11,12 @@
         "MapExport": "экспортировать карту",
         "MapFilter": "",
         "Print": "Печать",
-        "RasterExport": "Экспорт в растровый Формат бумаги",
         "Reports": "",
         "Settings": "",
         "Share": "Поделиться ссылкой",
         "ThemeSwitcher": "Тема",
         "AttributeTable": "",
         "Cyclomedia": "",
-        "DxfExport": "Экспорт в DXF",
         "FeatureForm": "",
         "FeatureSearch": "",
         "GeometryDigitizer": "",
@@ -140,11 +138,6 @@
       "login": "",
       "scalehint": "",
       "title": ""
-    },
-    "dxfexport": {
-      "layers": "",
-      "selectinfo": "Для экспорта обведите регион многоугольником...",
-      "symbologyscale": "Масштаб символики:"
     },
     "editing": {
       "add": "",
@@ -378,6 +371,10 @@
     },
     "print": {
       "atlasfeature": "",
+      "download": "",
+      "download_as_onepdf": "",
+      "download_as_onezip": "",
+      "download_as_single": "",
       "format": "Формат бумаги",
       "grid": "Сетка",
       "layout": "Формат бумаги",
@@ -387,25 +384,18 @@
       "nolayouts": "Выбранная тема не поддерживает печать",
       "notheme": "Тема не выбрана",
       "output": "",
+      "overlap": "",
       "pickatlasfeature": "",
       "resolution": "Разрешение",
       "rotation": "Поворот",
       "save": "",
       "scale": "Масштаб",
+      "series": "",
       "submit": "Печать",
       "wait": ""
     },
     "qtdesignerform": {
       "loading": ""
-    },
-    "rasterexport": {
-      "format": "Формат бумаги:",
-      "resolution": "Разрешение:",
-      "scale": "",
-      "size": "",
-      "submit": "",
-      "usersize": "",
-      "wait": ""
     },
     "redlining": {
       "border": "Граница",

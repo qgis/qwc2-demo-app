@@ -11,14 +11,12 @@
         "MapExport": "Eksportuj mapę",
         "MapFilter": "",
         "Print": "Drukuj",
-        "RasterExport": "Eksport Rastra",
         "Reports": "",
         "Settings": "",
         "Share": "Udostępnij Link",
         "ThemeSwitcher": "Motyw",
         "AttributeTable": "",
         "Cyclomedia": "",
-        "DxfExport": "Eksport DXF",
         "FeatureForm": "",
         "FeatureSearch": "",
         "GeometryDigitizer": "",
@@ -140,11 +138,6 @@
       "login": "",
       "scalehint": "",
       "title": ""
-    },
-    "dxfexport": {
-      "layers": "",
-      "selectinfo": "Narysuj prostokąt, określając obszar do eksportu...",
-      "symbologyscale": "Skala symbolizacji:"
     },
     "editing": {
       "add": "",
@@ -378,6 +371,10 @@
     },
     "print": {
       "atlasfeature": "",
+      "download": "",
+      "download_as_onepdf": "",
+      "download_as_onezip": "",
+      "download_as_single": "",
       "format": "Format",
       "grid": "Siatka",
       "layout": "Layout",
@@ -387,25 +384,18 @@
       "nolayouts": "Wybrany motyw nie umożliwia drukowania",
       "notheme": "Brak wybranego motywu",
       "output": "Drukuj output",
+      "overlap": "",
       "pickatlasfeature": "",
       "resolution": "Rozdzielczość",
       "rotation": "Obrót",
       "save": "",
       "scale": "Skala",
+      "series": "",
       "submit": "Drukuj",
       "wait": "Proszę czekać..."
     },
     "qtdesignerform": {
       "loading": ""
-    },
-    "rasterexport": {
-      "format": "Format:",
-      "resolution": "Rozdzielczość:",
-      "scale": "",
-      "size": "",
-      "submit": "",
-      "usersize": "",
-      "wait": ""
     },
     "redlining": {
       "border": "Obramowanie",

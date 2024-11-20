@@ -11,14 +11,12 @@
         "MapExport": "Exportera karta",
         "MapFilter": "",
         "Print": "Skriv ut",
-        "RasterExport": "Raster Export",
         "Reports": "",
         "Settings": "",
         "Share": "Dela länk",
         "ThemeSwitcher": "Tema",
         "AttributeTable": "",
         "Cyclomedia": "",
-        "DxfExport": "DXF Export",
         "FeatureForm": "",
         "FeatureSearch": "",
         "GeometryDigitizer": "",
@@ -140,11 +138,6 @@
       "login": "",
       "scalehint": "",
       "title": ""
-    },
-    "dxfexport": {
-      "layers": "",
-      "selectinfo": "Rita en rektangel runt området som ska exporteras...",
-      "symbologyscale": "Symbolskala:"
     },
     "editing": {
       "add": "",
@@ -378,6 +371,10 @@
     },
     "print": {
       "atlasfeature": "",
+      "download": "",
+      "download_as_onepdf": "",
+      "download_as_onezip": "",
+      "download_as_single": "",
       "format": "Format",
       "grid": "Rutnät",
       "layout": "Layout:",
@@ -387,25 +384,18 @@
       "nolayouts": "Valt tema stöder inte utskrift",
       "notheme": "Inget tema valt",
       "output": "Utskrift",
+      "overlap": "",
       "pickatlasfeature": "",
       "resolution": "Upplösning",
       "rotation": "Rotation",
       "save": "",
       "scale": "Skala",
+      "series": "",
       "submit": "Skriv ut",
       "wait": "Vänta..."
     },
     "qtdesignerform": {
       "loading": ""
-    },
-    "rasterexport": {
-      "format": "Format:",
-      "resolution": "Upplösning:",
-      "scale": "",
-      "size": "",
-      "submit": "",
-      "usersize": "",
-      "wait": ""
     },
     "redlining": {
       "border": "Kant",

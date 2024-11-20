@@ -11,14 +11,12 @@
         "MapExport": "Karte exportieren",
         "MapFilter": "Kartenfilter",
         "Print": "Drucken",
-        "RasterExport": "Raster-Export",
         "Reports": "Berichte",
         "Settings": "Einstellungen",
         "Share": "Teilen",
         "ThemeSwitcher": "Themen",
         "AttributeTable": "Attributtabelle",
         "Cyclomedia": "Cyclomedia",
-        "DxfExport": "DXF-Export",
         "FeatureForm": "Objektformular",
         "FeatureSearch": "Objektsuche",
         "GeometryDigitizer": "Geometriedigitalisierung",
@@ -140,11 +138,6 @@
       "login": "Anmelden",
       "scalehint": "Die Aufnahmen sind nur ab Maßstab 1:{0} auf der Karte sichtbar.",
       "title": "Cyclomedia Viewer"
-    },
-    "dxfexport": {
-      "layers": "Ebenen",
-      "selectinfo": "Rechteck um die zu exportierende Region aufziehen",
-      "symbologyscale": "Darstellungsmaßstab"
     },
     "editing": {
       "add": "Hinzufügen",
@@ -378,34 +371,31 @@
     },
     "print": {
       "atlasfeature": "Atlasobjekt",
+      "download": "Herunterladen",
+      "download_as_onepdf": "als ein PDF-Dokument",
+      "download_as_onezip": "als ein ZIP-Archiv",
+      "download_as_single": "als einzelne Dateien",
       "format": "Format",
       "grid": "Gitter",
-      "layout": "Format",
+      "layout": "Layout",
       "legend": "Legende",
       "maximize": "Maximieren",
       "minimize": "Minimieren",
       "nolayouts": "Das gewählte Thema stellt keine Druck-Vorlagen zur Verfügung.",
       "notheme": "Kein Thema selektiert",
       "output": "Druckausgabe",
+      "overlap": "Überlappung",
       "pickatlasfeature": "In Ebene {0} auswählen...",
       "resolution": "Auflösung",
       "rotation": "Rotation",
       "save": "Speichern",
       "scale": "Maßstab",
+      "series": "Seriendruck",
       "submit": "Erzeugen",
       "wait": "Bitte warten..."
     },
     "qtdesignerform": {
       "loading": "Formular wird geladen..."
-    },
-    "rasterexport": {
-      "format": "Format",
-      "resolution": "Auflösung",
-      "scale": "Maßstab",
-      "size": "Dimensionen",
-      "submit": "Exportieren",
-      "usersize": "Auf Karte auswählen...",
-      "wait": "Bitte warten..."
     },
     "redlining": {
       "border": "Rand",
