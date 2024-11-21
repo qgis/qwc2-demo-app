@@ -18,7 +18,6 @@ import BookmarkPlugin from 'qwc2/plugins/Bookmark';
 import BottomBarPlugin from 'qwc2/plugins/BottomBar';
 import CookiePopupPlugin from 'qwc2/plugins/CookiePopup';
 import CyclomediaPlugin from 'qwc2/plugins/Cyclomedia';
-import DxfExportPlugin from 'qwc2/plugins/DxfExport';
 import EditingPlugin from 'qwc2/plugins/Editing';
 import FeatureFormPlugin from 'qwc2/plugins/FeatureForm';
 import FeatureSearchPlugin from 'qwc2/plugins/FeatureSearch';
@@ -44,7 +43,6 @@ import NewsPopupPlugin from 'qwc2/plugins/NewsPopup';
 import PortalPlugin from 'qwc2/plugins/Portal';
 import PrintPlugin from 'qwc2/plugins/Print';
 import ProcessNotificationsPlugin from 'qwc2/plugins/ProcessNotifications';
-import RasterExportPlugin from 'qwc2/plugins/RasterExport';
 import RedliningPlugin from 'qwc2/plugins/Redlining';
 import ReportsPlugin from 'qwc2/plugins/Reports';
 import RoutingPlugin from 'qwc2/plugins/Routing';
@@ -96,7 +94,6 @@ export default {
             BottomBarPlugin: BottomBarPlugin,
             CookiePopupPlugin: CookiePopupPlugin,
             CyclomediaPlugin: CyclomediaPlugin,
-            DxfExportPlugin: DxfExportPlugin,
             EditingPlugin: EditingPlugin(/* CustomEditingInterface */),
             FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */),
             GeometryDigitizerPlugin: GeometryDigitizerPlugin,
@@ -120,7 +117,6 @@ export default {
             PortalPlugin: PortalPlugin,
             PrintPlugin: PrintPlugin,
             ProcessNotificationsPlugin: ProcessNotificationsPlugin,
-            RasterExportPlugin: RasterExportPlugin,
             RedliningPlugin: RedliningPlugin({
                 BufferSupport: BufferSupport
             }),

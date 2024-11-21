@@ -11,14 +11,12 @@
         "MapExport": "Export mapu",
         "MapFilter": "",
         "Print": "Tisk",
-        "RasterExport": "Export rastru",
         "Reports": "",
         "Settings": "Nastavení",
         "Share": "Sdílet odkaz",
         "ThemeSwitcher": "Téma",
         "AttributeTable": "Atributy",
         "Cyclomedia": "Cyclomedia",
-        "DxfExport": "DXF Export",
         "FeatureForm": "Editační formulář",
         "FeatureSearch": "",
         "GeometryDigitizer": "",
@@ -140,11 +138,6 @@
       "login": "",
       "scalehint": "",
       "title": "Cyclomedia"
-    },
-    "dxfexport": {
-      "layers": "Vrstvy",
-      "selectinfo": "Vyberte oblast pro export...",
-      "symbologyscale": "Meřítko symbolů:"
     },
     "editing": {
       "add": "Přidat",
@@ -378,6 +371,10 @@
     },
     "print": {
       "atlasfeature": "",
+      "download": "",
+      "download_as_onepdf": "",
+      "download_as_onezip": "",
+      "download_as_single": "",
       "format": "Formát",
       "grid": "Mřížka:",
       "layout": "Rovržení:",
@@ -387,25 +384,18 @@
       "nolayouts": "Vybrané téma nepodporuje tisk",
       "notheme": "Není vybráno téma",
       "output": "",
+      "overlap": "",
       "pickatlasfeature": "",
       "resolution": "Rozlišení",
       "rotation": "Orientace",
       "save": "",
       "scale": "Měřítko",
+      "series": "",
       "submit": "Tisk",
       "wait": "Čekejte..."
     },
     "qtdesignerform": {
       "loading": ""
-    },
-    "rasterexport": {
-      "format": "Formát:",
-      "resolution": "Rozlišení:",
-      "scale": "Měřítko",
-      "size": "Velikost",
-      "submit": "Export",
-      "usersize": "Vybrat na mapě...",
-      "wait": "Čekejte..."
     },
     "redlining": {
       "border": "Okraj",

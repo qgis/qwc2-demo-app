@@ -11,14 +11,12 @@
         "MapExport": "Export map",
         "MapFilter": "Map Filter",
         "Print": "Print",
-        "RasterExport": "Raster Export",
         "Reports": "Reports",
         "Settings": "Settings",
         "Share": "Share Link",
         "ThemeSwitcher": "Theme",
         "AttributeTable": "Attribute Table",
         "Cyclomedia": "Cyclomedia",
-        "DxfExport": "DXF Export",
         "FeatureForm": "Feature Form",
         "FeatureSearch": "Feature Search",
         "GeometryDigitizer": "Geometry digitizer",
@@ -140,11 +138,6 @@
       "login": "Login",
       "scalehint": "The recordings are only visible on the map below scale 1:{0}.",
       "title": "Cyclomedia Viewer"
-    },
-    "dxfexport": {
-      "layers": "Layers",
-      "selectinfo": "Drag a rectangle around the region to export...",
-      "symbologyscale": "Symbology scale"
     },
     "editing": {
       "add": "Add",
@@ -378,6 +371,10 @@
     },
     "print": {
       "atlasfeature": "Atlas feature",
+      "download": "Download",
+      "download_as_onepdf": "as one PDF document",
+      "download_as_onezip": "as one ZIP file",
+      "download_as_single": "as single files",
       "format": "Format",
       "grid": "Grid",
       "layout": "Layout",
@@ -387,25 +384,18 @@
       "nolayouts": "The selected theme does not support printing",
       "notheme": "No theme selected",
       "output": "Print output",
+      "overlap": "Overlap",
       "pickatlasfeature": "Pick in layer {0}...",
       "resolution": "Resolution",
       "rotation": "Rotation",
       "save": "Save",
       "scale": "Scale",
+      "series": "Print series",
       "submit": "Print",
       "wait": "Please wait..."
     },
     "qtdesignerform": {
       "loading": "Loading form..."
-    },
-    "rasterexport": {
-      "format": "Format",
-      "resolution": "Resolution",
-      "scale": "Scale",
-      "size": "Size",
-      "submit": "Export",
-      "usersize": "Select on map...",
-      "wait": "Please wait..."
     },
     "redlining": {
       "border": "Border",

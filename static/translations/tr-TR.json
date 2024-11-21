@@ -11,14 +11,12 @@
         "MapExport": "Dışarıya ver",
         "MapFilter": "Harita Filtresi",
         "Print": "Yazdır",
-        "RasterExport": "Resim Olarak Kaydet",
         "Reports": "",
         "Settings": "Ayarlar",
         "Share": "Bağlantı Paylaş",
         "ThemeSwitcher": "Tema",
         "AttributeTable": "Öznitelik Tablosu",
         "Cyclomedia": "Siklomedya",
-        "DxfExport": "DXF'e Veri Aktar",
         "FeatureForm": "Obje Formu",
         "FeatureSearch": "Obje Arama",
         "GeometryDigitizer": "Geometri Sayısallaştırıcı",
@@ -140,11 +138,6 @@
       "login": "Login",
       "scalehint": "The recordings are only visible on the map below scale 1:{0}.",
       "title": "Cyclomedia Viewer"
-    },
-    "dxfexport": {
-      "layers": "Katmanlar",
-      "selectinfo": "Export edilecek alana bir dikdörtgen çizin...",
-      "symbologyscale": "Sembol Ölçeği:"
     },
     "editing": {
       "add": "Ekle",
@@ -378,6 +371,10 @@
     },
     "print": {
       "atlasfeature": "Atlas Objesi",
+      "download": "",
+      "download_as_onepdf": "",
+      "download_as_onezip": "",
+      "download_as_single": "",
       "format": "Format",
       "grid": "Karelaj",
       "layout": "Yazdırma düzeni",
@@ -387,25 +384,18 @@
       "nolayouts": "Seçili tema yazdırma işlemini desteklemiyor",
       "notheme": "Tema seçilmedi",
       "output": "Yazıcı çıktısı",
+      "overlap": "",
       "pickatlasfeature": "Katmandan seçiniz: {0}...",
       "resolution": "Çözünürlük",
       "rotation": "Döndürme",
       "save": "",
       "scale": "Ölçek:",
+      "series": "",
       "submit": "Yazdır",
       "wait": "Lütfen bekleyiniz..."
     },
     "qtdesignerform": {
       "loading": "Form yükleniyor..."
-    },
-    "rasterexport": {
-      "format": "Format:",
-      "resolution": "Çözünürlük:",
-      "scale": "Ölçek",
-      "size": "Boyut",
-      "submit": "Ver",
-      "usersize": "Haritadan seç...",
-      "wait": "Lütfen bekleyiniz..."
     },
     "redlining": {
       "border": "Sınır",
