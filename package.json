@@ -1,6 +1,6 @@
 {
     "name": "QWC2App",
-    "version": "2024.11.13-master",
+    "version": "2024.11.27-master",
     "description": "QGIS Web Client 2 application",
     "author": "Sourcepole",
     "license": "BSD-2-Clause",
@@ -33,8 +33,5 @@
         "build": "npm run prod",
         "analyze": "webpack --mode production --json | webpack-bundle-size-analyzer",
         "release": "node -e \"process.exit(require('os').platform() === 'win32' ? 0 : 1)\" && qwc2\\scripts\\package-commands.bat release || ./qwc2/scripts/package-commands.sh release"
-    },
-    "dependencies": {
-        "js-yaml": "^4.1.0"
     }
 }

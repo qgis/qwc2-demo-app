@@ -67,7 +67,6 @@ import BufferSupport from 'qwc2/plugins/redlining/RedliningBufferSupport';
 import defaultLocaleData from '../static/translations/en-US.json';
 import {renderHelp} from './Help';
 import {customAttributeCalculator, attributeTransform, customExporters} from './IdentifyExtensions';
-import {SearchProviders} from './SearchProviders';
 
 export default {
     defaultLocaleData: defaultLocaleData,
@@ -121,7 +120,7 @@ export default {
                 BufferSupport: BufferSupport
             }),
             ReportsPlugin: ReportsPlugin,
-            RoutingPlugin: RoutingPlugin(SearchProviders),
+            RoutingPlugin: RoutingPlugin,
             FeatureSearchPlugin: FeatureSearchPlugin,
             ScratchDrawingPlugin: ScratchDrawingPlugin,
             SettingsPlugin: SettingsPlugin,
@@ -132,7 +131,7 @@ export default {
             TimeManagerPlugin: TimeManagerPlugin,
             TopBarPlugin: TopBarPlugin({
                 AppMenu: AppMenu,
-                Search: SearchBox(SearchProviders),
+                Search: SearchBox,
                 Toolbar: Toolbar,
                 FullscreenSwitcher: FullscreenSwitcher
             }),

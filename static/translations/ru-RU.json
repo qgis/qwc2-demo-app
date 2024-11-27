@@ -44,20 +44,19 @@
       "all": "Всё",
       "circleradius": "",
       "clearfilter": "",
-      "enablelayer": "",
       "existinglayer": "",
       "filter": "",
-      "fulltext": "",
-      "invisiblelayer": "",
+      "layers": "",
       "limittoarea": "",
-      "more": "Больше...",
+      "more": "",
+      "nodescription": "",
       "none": "",
       "noresults": "",
+      "placeholder": "",
+      "places": "",
       "providerselection": "",
+      "recent": "",
       "search": "Поиск",
-      "searchall": "",
-      "searchinprogress": "",
-      "searchreset": "",
       "themelayers": "",
       "themes": ""
     },
@@ -477,16 +476,6 @@
     },
     "scratchdrawing": {
       "finish": ""
-    },
-    "searchbox": {
-      "filter": "",
-      "layers": "",
-      "more": "",
-      "morelayers": "",
-      "nodescription": "",
-      "placeholder": "",
-      "places": "",
-      "recent": ""
     },
     "serviceinfo": {
       "abstract": "",
