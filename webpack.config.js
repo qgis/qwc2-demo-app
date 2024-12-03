@@ -77,7 +77,7 @@ module.exports = (env, argv) => {
                     ]
                 },
                 {
-                    test: /(.woff|.woff2|.png|.jpg|.gif|.svg)/,
+                    test: /(.woff|.woff2|.png|.jpg|.gif|.svg|.glb)/,
                     type: 'asset/inline'
                 },
                 {
