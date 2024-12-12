@@ -5,9 +5,11 @@
       "items": {
         "ExternalLink": "",
         "Bookmark": "Marcador",
+        "DateTime3D": "",
         "Editing": "Edição",
         "Help": "Ajuda",
         "LayerTree": "Árvore de Camadas",
+        "LayerTree3D": "",
         "MapExport": "Exportar Mapa",
         "MapFilter": "",
         "Print": "Imprimir",
@@ -273,6 +275,10 @@
       "visiblefilter": "Filtrar Camadas Invisíveis",
       "zoomtolayer": "Zoom para a Camada"
     },
+    "layertree3d": {
+      "layers": "",
+      "objects": ""
+    },
     "linkfeatureform": {
       "cancel": "Cancelar",
       "close": "Fechar",
@@ -409,6 +415,7 @@
       "draw": "Desenhar",
       "edit": "Editar",
       "ellipse": "Elipse",
+      "export": "",
       "freehand": "Desenho à mão livre",
       "label": "Etiqueta",
       "layer": "Camada",
@@ -517,7 +524,8 @@
     "themelayerslist": {
       "addlayer": "Adicionar Camada",
       "addlayerstotheme": "Adicionar Camadas ao Mapa Atual",
-      "addselectedlayers": "Adicionar Camadas Selecionadas"
+      "addselectedlayers": "Adicionar Camadas Selecionadas",
+      "existinglayers": ""
     },
     "themeswitcher": {
       "addlayerstotheme": "Adicionar Camadas ao Mapa Atual",

@@ -5,9 +5,11 @@
       "items": {
         "ExternalLink": "",
         "Bookmark": "Lesezeichen",
+        "DateTime3D": "Datum und Zeit",
         "Editing": "Editieren",
         "Help": "Hilfe",
         "LayerTree": "Ebenen und Legende",
+        "LayerTree3D": "Ebenen",
         "MapExport": "Karte exportieren",
         "MapFilter": "Kartenfilter",
         "Print": "Drucken",
@@ -273,6 +275,10 @@
       "visiblefilter": "Unsichtbare Ebenen filtern",
       "zoomtolayer": "Auf den Layer zoomen"
     },
+    "layertree3d": {
+      "layers": "Ebenen",
+      "objects": "Objekte"
+    },
     "linkfeatureform": {
       "cancel": "Abbrechen",
       "close": "Schliessen",
@@ -370,10 +376,10 @@
     },
     "print": {
       "atlasfeature": "Atlasobjekt",
-      "download": "",
-      "download_as_onepdf": "",
-      "download_as_onezip": "",
-      "download_as_single": "",
+      "download": "Herunterladen",
+      "download_as_onepdf": "als ein PDF-Dokument",
+      "download_as_onezip": "als ein ZIP-Archiv",
+      "download_as_single": "als einzelne Dateien",
       "format": "Format",
       "grid": "Gitter",
       "layout": "Format",
@@ -383,13 +389,13 @@
       "nolayouts": "Das gewählte Thema stellt keine Druck-Vorlagen zur Verfügung.",
       "notheme": "Kein Thema selektiert",
       "output": "Druckausgabe",
-      "overlap": "",
+      "overlap": "Überlappung",
       "pickatlasfeature": "In Ebene {0} auswählen...",
       "resolution": "Auflösung",
       "rotation": "Rotation",
       "save": "Speichern",
       "scale": "Massstab",
-      "series": "",
+      "series": "Seriendruck",
       "submit": "Erzeugen",
       "wait": "Bitte warten..."
     },
@@ -409,6 +415,7 @@
       "draw": "Zeichnen",
       "edit": "Bearbeiten",
       "ellipse": "Ellipse",
+      "export": "Exportieren",
       "freehand": "Freihand",
       "label": "Beschriftung",
       "layer": "Ebene",
@@ -517,7 +524,8 @@
     "themelayerslist": {
       "addlayer": "Layer hinzufügen",
       "addlayerstotheme": "Ebenen der Karte hinzufügen",
-      "addselectedlayers": "Selektierte Ebenen hinzufügen"
+      "addselectedlayers": "Selektierte Ebenen hinzufügen",
+      "existinglayers": "Folgende Ebenen sind bereits vorhanden"
     },
     "themeswitcher": {
       "addlayerstotheme": "Ebenen der Karte hinzufügen",

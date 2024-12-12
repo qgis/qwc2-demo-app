@@ -5,9 +5,11 @@
       "items": {
         "ExternalLink": "",
         "Bookmark": "",
+        "DateTime3D": "",
         "Editing": "Edycja",
         "Help": "Pomoc",
         "LayerTree": "Warstwy i ich legendy",
+        "LayerTree3D": "",
         "MapExport": "Eksportuj mapę",
         "MapFilter": "",
         "Print": "Drukuj",
@@ -273,6 +275,10 @@
       "visiblefilter": "",
       "zoomtolayer": ""
     },
+    "layertree3d": {
+      "layers": "",
+      "objects": ""
+    },
     "linkfeatureform": {
       "cancel": "",
       "close": "",
@@ -409,6 +415,7 @@
       "draw": "Rysuj",
       "edit": "Edytuj",
       "ellipse": "",
+      "export": "",
       "freehand": "",
       "label": "Etykieta",
       "layer": "Warstwa",
@@ -517,7 +524,8 @@
     "themelayerslist": {
       "addlayer": "",
       "addlayerstotheme": "",
-      "addselectedlayers": ""
+      "addselectedlayers": "",
+      "existinglayers": ""
     },
     "themeswitcher": {
       "addlayerstotheme": "",

@@ -5,9 +5,11 @@
       "items": {
         "ExternalLink": "Link extern",
         "Bookmark": "Marcaj",
+        "DateTime3D": "",
         "Editing": "Editare",
         "Help": "Ajutor",
         "LayerTree": "Straturi & Legendă",
+        "LayerTree3D": "",
         "MapExport": "",
         "MapFilter": "",
         "Print": "Tipărire",
@@ -273,6 +275,10 @@
       "visiblefilter": "Filtrează straturile invizibile",
       "zoomtolayer": "Vedeți tot stratul"
     },
+    "layertree3d": {
+      "layers": "",
+      "objects": ""
+    },
     "linkfeatureform": {
       "cancel": "Renunță",
       "close": "Închide",
@@ -409,6 +415,7 @@
       "draw": "Desenare",
       "edit": "Modifică",
       "ellipse": "Elipsă",
+      "export": "",
       "freehand": "Desen liber",
       "label": "Titlu",
       "layer": "Strat",
@@ -517,7 +524,8 @@
     "themelayerslist": {
       "addlayer": "Adaugă strat",
       "addlayerstotheme": "Adaugă strat la hartă",
-      "addselectedlayers": "Adaugă straturile selectate"
+      "addselectedlayers": "Adaugă straturile selectate",
+      "existinglayers": ""
     },
     "themeswitcher": {
       "addlayerstotheme": "Adaugă straturi în hartă",

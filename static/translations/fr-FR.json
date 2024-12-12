@@ -5,9 +5,11 @@
       "items": {
         "ExternalLink": "",
         "Bookmark": "Marque-pages",
+        "DateTime3D": "Date et heure",
         "Editing": "Editer",
         "Help": "Aide",
         "LayerTree": "Couches",
+        "LayerTree3D": "Couches",
         "MapExport": "Exporter la carte",
         "MapFilter": "Filtrer la carte",
         "Print": "Imprimer",
@@ -273,6 +275,10 @@
       "visiblefilter": "Filtrer couches invisibles",
       "zoomtolayer": "Zoomer sur la couche"
     },
+    "layertree3d": {
+      "layers": "Couches",
+      "objects": "Objets"
+    },
     "linkfeatureform": {
       "cancel": "Annuler",
       "close": "Fermer",
@@ -370,10 +376,10 @@
     },
     "print": {
       "atlasfeature": "Objet atlas",
-      "download": "",
-      "download_as_onepdf": "",
-      "download_as_onezip": "",
-      "download_as_single": "",
+      "download": "Télécharger",
+      "download_as_onepdf": "en un seul document PDF",
+      "download_as_onezip": "en un seul fichier ZIP",
+      "download_as_single": "en fichiers séparés",
       "format": "Format",
       "grid": "Grille",
       "layout": "Mise en page",
@@ -383,13 +389,13 @@
       "nolayouts": "Il n'y a pas de mise en page disponible pour le thème choisi.",
       "notheme": "Pas de thème sélectionné",
       "output": "Impression",
-      "overlap": "",
+      "overlap": "Superposition",
       "pickatlasfeature": "Choisir dans la couche {0}",
       "resolution": "Résolution",
       "rotation": "Rotation",
       "save": "Enregistrer",
       "scale": "Echelle",
-      "series": "",
+      "series": "Impression en série",
       "submit": "Imprimer",
       "wait": "Veuillez patienter..."
     },
@@ -409,6 +415,7 @@
       "draw": "Dessiner",
       "edit": "Editer",
       "ellipse": "Ellipse",
+      "export": "Exporter",
       "freehand": "Dessin à main libre",
       "label": "Texte",
       "layer": "Couche",
@@ -517,7 +524,8 @@
     "themelayerslist": {
       "addlayer": "Ajouter la couche",
       "addlayerstotheme": "Ajouter des couches à la carte",
-      "addselectedlayers": "Ajouter les couches sélectionnées"
+      "addselectedlayers": "Ajouter les couches sélectionnées",
+      "existinglayers": "Les couches suivantes existent déjà dans la carte"
     },
     "themeswitcher": {
       "addlayerstotheme": "Ajouter des couches à la carte",

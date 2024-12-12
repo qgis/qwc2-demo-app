@@ -5,9 +5,11 @@
       "items": {
         "ExternalLink": "Externer Link",
         "Bookmark": "Lesezeichen",
+        "DateTime3D": "Datum und Zeit",
         "Editing": "Editieren",
         "Help": "Hilfe",
         "LayerTree": "Ebenen und Legende",
+        "LayerTree3D": "Ebenen",
         "MapExport": "Karte exportieren",
         "MapFilter": "Kartenfilter",
         "Print": "Drucken",
@@ -46,14 +48,14 @@
       "clearfilter": "Zurücksetzen",
       "existinglayer": "Die Ebene existiert bereits in der Karte",
       "filter": "Suche verfeinern",
-      "layers": "",
+      "layers": "Ebenen",
       "limittoarea": "Auf Fläche begrenzen",
       "more": "{0} weitere Treffer",
       "nodescription": "Keine Beschreibung verfügbar",
       "none": "Keine",
       "noresults": "Keine Ergebnisse",
       "placeholder": "Ort suchen oder Karte hinzufügen...",
-      "places": "",
+      "places": "Orte",
       "providerselection": "Suchdienste",
       "recent": "Zuletzt gesucht",
       "search": "Suchen",
@@ -273,6 +275,10 @@
       "visiblefilter": "Unsichtbare Ebenen filtern",
       "zoomtolayer": "Auf den Layer zoomen"
     },
+    "layertree3d": {
+      "layers": "Ebenen",
+      "objects": "Objekte"
+    },
     "linkfeatureform": {
       "cancel": "Abbrechen",
       "close": "Schließen",
@@ -409,6 +415,7 @@
       "draw": "Zeichnen",
       "edit": "Bearbeiten",
       "ellipse": "Ellipse",
+      "export": "Exportieren",
       "freehand": "Freihand",
       "label": "Beschriftung",
       "layer": "Ebene",
@@ -517,7 +524,8 @@
     "themelayerslist": {
       "addlayer": "Layer hinzufügen",
       "addlayerstotheme": "Ebenen der Karte hinzufügen",
-      "addselectedlayers": "Selektierte Ebenen hinzufügen"
+      "addselectedlayers": "Selektierte Ebenen hinzufügen",
+      "existinglayers": "Folgende Ebenen sind bereits vorhanden"
     },
     "themeswitcher": {
       "addlayerstotheme": "Ebenen der Karte hinzufügen",

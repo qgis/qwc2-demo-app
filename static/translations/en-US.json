@@ -5,9 +5,11 @@
       "items": {
         "ExternalLink": "External Link",
         "Bookmark": "Bookmarks",
+        "DateTime3D": "Date and Time",
         "Editing": "Editing",
         "Help": "Help",
         "LayerTree": "Layers & Legend",
+        "LayerTree3D": "Layers",
         "MapExport": "Export map",
         "MapFilter": "Map Filter",
         "Print": "Print",
@@ -273,6 +275,10 @@
       "visiblefilter": "Filter invisible layers",
       "zoomtolayer": "Zoom to layer"
     },
+    "layertree3d": {
+      "layers": "Layers",
+      "objects": "Objects"
+    },
     "linkfeatureform": {
       "cancel": "Cancel",
       "close": "Close",
@@ -409,6 +415,7 @@
       "draw": "Draw",
       "edit": "Edit",
       "ellipse": "Ellipse",
+      "export": "",
       "freehand": "Freehand drawing",
       "label": "Label",
       "layer": "Layer",
@@ -517,7 +524,8 @@
     "themelayerslist": {
       "addlayer": "Add layer",
       "addlayerstotheme": "Add layers to current map",
-      "addselectedlayers": "Add selected layer(s)"
+      "addselectedlayers": "Add selected layer(s)",
+      "existinglayers": "The following layers already exists in the map"
     },
     "themeswitcher": {
       "addlayerstotheme": "Add layers to current map",

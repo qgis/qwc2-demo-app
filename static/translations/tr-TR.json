@@ -5,9 +5,11 @@
       "items": {
         "ExternalLink": "",
         "Bookmark": "Yer işaretleri",
+        "DateTime3D": "",
         "Editing": "Düzenleme",
         "Help": "Yardım",
         "LayerTree": "Katmanlar & Gösterim",
+        "LayerTree3D": "",
         "MapExport": "Dışarıya ver",
         "MapFilter": "Harita Filtresi",
         "Print": "Yazdır",
@@ -273,6 +275,10 @@
       "visiblefilter": "Görünmeyen katmanları filtrele",
       "zoomtolayer": "Katman sınırlarına yaklaş"
     },
+    "layertree3d": {
+      "layers": "",
+      "objects": ""
+    },
     "linkfeatureform": {
       "cancel": "İptal",
       "close": "Kapat",
@@ -409,6 +415,7 @@
       "draw": "Çiz",
       "edit": "Düzenle",
       "ellipse": "Elips",
+      "export": "",
       "freehand": "Serbest çizim",
       "label": "Etiket",
       "layer": "Katman",
@@ -517,7 +524,8 @@
     "themelayerslist": {
       "addlayer": "Katman ekle",
       "addlayerstotheme": "Geçerli haritaya katman ekle",
-      "addselectedlayers": "Seçili katmanları ekle"
+      "addselectedlayers": "Seçili katmanları ekle",
+      "existinglayers": ""
     },
     "themeswitcher": {
       "addlayerstotheme": "Geçerli haritaya katmanları ekle",

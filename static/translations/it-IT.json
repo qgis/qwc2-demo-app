@@ -5,9 +5,11 @@
       "items": {
         "ExternalLink": "Collegamento esterno",
         "Bookmark": "Segnalibri",
+        "DateTime3D": "Data e ora",
         "Editing": "Strumenti di modifica",
         "Help": "Aiuto",
         "LayerTree": "Livelli",
+        "LayerTree3D": "Livelli",
         "MapExport": "Esporta mappa",
         "MapFilter": "Filta mappa",
         "Print": "Stampa",
@@ -44,7 +46,7 @@
       "all": "Tutti",
       "circleradius": "Raggio del cerchio",
       "clearfilter": "Azzera",
-      "existinglayer": "Il livello esiste già nella mappa",
+      "existinglayer": "Il layer esiste già nella mappa",
       "filter": "Filtro",
       "layers": "Cartine",
       "limittoarea": "Limita a area",
@@ -273,6 +275,10 @@
       "visiblefilter": "Filtra livelli non visibili",
       "zoomtolayer": "Zoom a tutto il livello"
     },
+    "layertree3d": {
+      "layers": "Livelli",
+      "objects": "Oggetti"
+    },
     "linkfeatureform": {
       "cancel": "Annulla",
       "close": "Chiudi",
@@ -370,10 +376,10 @@
     },
     "print": {
       "atlasfeature": "Oggetto atlante",
-      "download": "",
-      "download_as_onepdf": "",
-      "download_as_onezip": "",
-      "download_as_single": "",
+      "download": "Scarica",
+      "download_as_onepdf": "come singolo file PDF",
+      "download_as_onezip": "come singolo file ZIP",
+      "download_as_single": "come file singoli",
       "format": "Formato",
       "grid": "Griglia",
       "layout": "Layout",
@@ -383,13 +389,13 @@
       "nolayouts": "Nessun layout di stampa",
       "notheme": "Nessun tema selezionato",
       "output": "Stampa",
-      "overlap": "",
+      "overlap": "Sovrapposizione",
       "pickatlasfeature": "Seleziona nel livello {1}...",
       "resolution": "Risoluzione",
       "rotation": "Rotazione",
       "save": "Salva",
       "scale": "Scala",
-      "series": "",
+      "series": "Stampa serie",
       "submit": "Stampa",
       "wait": "Attendere..."
     },
@@ -409,6 +415,7 @@
       "draw": "Disegna",
       "edit": "Modifica",
       "ellipse": "Ellisse",
+      "export": "Esporta",
       "freehand": "Mano libera",
       "label": "Ettichetta",
       "layer": "Layer",
@@ -517,7 +524,8 @@
     "themelayerslist": {
       "addlayer": "Aggiungi layer",
       "addlayerstotheme": "Aggiungi layer alla mappa corrente",
-      "addselectedlayers": "Aggiungi i layer selezionati"
+      "addselectedlayers": "Aggiungi i layer selezionati",
+      "existinglayers": "I seguenti layer esistono già nella mappa"
     },
     "themeswitcher": {
       "addlayerstotheme": "Aggiungi layer alla mappa corrente",
