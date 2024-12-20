@@ -85,7 +85,6 @@
       "discard": "Discard changed row",
       "formeditmode": "Open the edit form for the selected feature",
       "geomnoadd": "Please use the edit form for adding new features to this layer",
-      "layer": "Layer",
       "limittoextent": "Limit to map extent",
       "loadfailed": "Failed to load the feature data",
       "loading": "Loading...",
@@ -210,12 +209,13 @@
       "title": "Height profile"
     },
     "identify": {
-      "aggregatedreport": "Aggregated report:",
+      "aggregatedreport": "Aggregated report",
       "clipboard": "Copy to clipboard",
       "download": "Download",
       "export": "Export",
-      "exportformat": "Export format:",
       "featureReport": "Feature report",
+      "featurecount": "Feature count",
+      "layerall": "All layers",
       "link": "Link",
       "noattributes": "No attributes",
       "noresults": "No information available for the selected point",
