@@ -27,7 +27,6 @@
         "LayerCatalog": "Catalogue des couches",
         "Login": "Connexion",
         "Logout": "Déconnexion",
-        "Map3D": "Vue 3D",
         "MapLegend": "Légende",
         "Measure": "Mesurer",
         "MeasureLineString": "Mesurer une ligne",
@@ -36,7 +35,8 @@
         "Redlining": "Dessiner",
         "Routing": "Routage",
         "Tools": "Outils",
-        "TimeManager": "Ligne du temps"
+        "TimeManager": "Ligne du temps",
+        "View3D": "Vue 3D"
       },
       "filter": "Filtrer le menu...",
       "menulabel": "Cartes et outils"

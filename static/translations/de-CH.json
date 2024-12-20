@@ -27,7 +27,6 @@
         "LayerCatalog": "Ebenenkatalog",
         "Login": "Anmelden",
         "Logout": "Abmelden",
-        "Map3D": "3D Ansicht",
         "MapLegend": "Legende",
         "Measure": "Messen",
         "MeasureLineString": "Messen Linie",
@@ -36,7 +35,8 @@
         "Redlining": "Zeichnen",
         "Routing": "Routing",
         "Tools": "Werkzeuge",
-        "TimeManager": "Zeitleiste"
+        "TimeManager": "Zeitleiste",
+        "View3D": "3D Ansicht"
       },
       "filter": "Menü filtern...",
       "menulabel": "Karte & Werkzeuge"

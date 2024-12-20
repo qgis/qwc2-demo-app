@@ -27,7 +27,6 @@
         "LayerCatalog": "Catálogo de Camadas",
         "Login": "Iniciar Sessão",
         "Logout": "Terminar Sessão",
-        "Map3D": "",
         "MapLegend": "Legenda do Mapa",
         "Measure": "Medir",
         "MeasureLineString": "Medir Linha",
@@ -36,7 +35,8 @@
         "Redlining": "Marcação",
         "Routing": "Roteamento",
         "Tools": "Ferramentas do Mapa",
-        "TimeManager": "Gestor de Tempo"
+        "TimeManager": "Gestor de Tempo",
+        "View3D": ""
       },
       "filter": "Filtro",
       "menulabel": "Mapas e Ferramentas"
