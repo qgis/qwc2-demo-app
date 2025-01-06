@@ -29,6 +29,7 @@
         "Logout": "Logout",
         "MapLegend": "Legend",
         "Measure": "Measure",
+        "Measure3D": "Measure",
         "MeasureLineString": "Measure a line",
         "MeasurePolygon": "Measure a polygon",
         "Portal": "Portal",
@@ -340,8 +341,10 @@
       "windowtitle": "Legend"
     },
     "measureComponent": {
+      "absolute": "m AMSL",
       "areaLabel": "Area",
       "bearingLabel": "Bearing",
+      "ground": "m AGL",
       "imperial": "Imperial",
       "lengthLabel": "Length",
       "metric": "Metric",
@@ -415,7 +418,7 @@
       "draw": "Draw",
       "edit": "Edit",
       "ellipse": "Ellipse",
-      "export": "",
+      "export": "Export",
       "freehand": "Freehand drawing",
       "label": "Label",
       "layer": "Layer",
