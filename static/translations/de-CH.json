@@ -5,6 +5,7 @@
       "items": {
         "ExternalLink": "",
         "Bookmark": "Lesezeichen",
+        "Compare3D": "Vergleichen",
         "DateTime3D": "Datum und Zeit",
         "Editing": "Editieren",
         "Help": "Hilfe",
@@ -121,6 +122,11 @@
       "scale_label": "Massstab",
       "terms_label": "Nutzungsbedingungen",
       "viewertitle_label": ""
+    },
+    "compare3d": {
+      "clipplane": "Schnittebene",
+      "compare_objects": "Objekte vergleichen",
+      "toggleall": "Alle"
     },
     "cookiepopup": {
       "accept": "Akzeptieren",
@@ -304,6 +310,7 @@
     },
     "map3d": {
       "syncview": "Ansicht synchronisieren",
+      "terrain": "Gelände",
       "title": "3D Ansicht"
     },
     "mapexport": {

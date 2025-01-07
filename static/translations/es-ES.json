@@ -5,6 +5,7 @@
       "items": {
         "ExternalLink": "",
         "Bookmark": "Marcadores",
+        "Compare3D": "",
         "DateTime3D": "",
         "Editing": "Edición",
         "Help": "Ayuda",
@@ -121,6 +122,11 @@
       "scale_label": "Escala",
       "terms_label": "Términos de uso",
       "viewertitle_label": ""
+    },
+    "compare3d": {
+      "clipplane": "",
+      "compare_objects": "",
+      "toggleall": ""
     },
     "cookiepopup": {
       "accept": "",
@@ -304,6 +310,7 @@
     },
     "map3d": {
       "syncview": "",
+      "terrain": "",
       "title": ""
     },
     "mapexport": {
