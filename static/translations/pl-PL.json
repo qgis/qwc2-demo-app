@@ -35,6 +35,7 @@
         "MeasureLineString": "Zmierzyć linię",
         "MeasurePolygon": "Zmierzyć wielokąt",
         "Portal": "",
+        "PrintScreen3D": "",
         "Redlining": "Redlining",
         "Routing": "",
         "Tools": "Narzędzia Mapy",
@@ -428,6 +429,10 @@
       "series": "",
       "submit": "Drukuj",
       "wait": "Proszę czekać..."
+    },
+    "printscreen3d": {
+      "format": "",
+      "selectinfo": ""
     },
     "qtdesignerform": {
       "loading": ""

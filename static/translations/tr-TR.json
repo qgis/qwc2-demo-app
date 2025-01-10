@@ -35,6 +35,7 @@
         "MeasureLineString": "Çizgi Ölç",
         "MeasurePolygon": "Alan Ölç",
         "Portal": "Portal",
+        "PrintScreen3D": "",
         "Redlining": "Serbest Çizim",
         "Routing": "Navigasyon",
         "Tools": "Harita Araçları",
@@ -428,6 +429,10 @@
       "series": "",
       "submit": "Yazdır",
       "wait": "Lütfen bekleyiniz..."
+    },
+    "printscreen3d": {
+      "format": "",
+      "selectinfo": ""
     },
     "qtdesignerform": {
       "loading": "Form yükleniyor..."

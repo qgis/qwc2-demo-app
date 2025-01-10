@@ -35,6 +35,7 @@
         "MeasureLineString": "Misura una linea",
         "MeasurePolygon": "Misura un poligono",
         "Portal": "Portale",
+        "PrintScreen3D": "Esporta raster",
         "Redlining": "Strumenti di disegno",
         "Routing": "Routing",
         "Tools": "Strumenti",
@@ -428,6 +429,10 @@
       "series": "Stampa serie",
       "submit": "Stampa",
       "wait": "Attendere..."
+    },
+    "printscreen3d": {
+      "format": "Formato",
+      "selectinfo": "Seleziona l'area sulla mappa..."
     },
     "qtdesignerform": {
       "loading": "Caricando formulario..."
