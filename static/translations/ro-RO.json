@@ -12,6 +12,7 @@
         "LayerTree": "Straturi & Legendă",
         "LayerTree3D": "",
         "MapExport": "",
+        "MapExport3D": "",
         "MapFilter": "",
         "Print": "Tipărire",
         "Reports": "",
@@ -430,12 +431,11 @@
       "submit": "Tipărește",
       "wait": "Vă rugăm așteptați..."
     },
-    "printscreen3d": {
-      "format": "",
-      "selectinfo": ""
-    },
     "qtdesignerform": {
       "loading": "Formularul se încarcă"
+    },
+    "rasterexport": {
+      "format": ""
     },
     "redlining": {
       "border": "Margine",

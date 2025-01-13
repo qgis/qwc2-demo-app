@@ -12,6 +12,7 @@
         "LayerTree": "Vrstvy & legenda",
         "LayerTree3D": "",
         "MapExport": "Export mapu",
+        "MapExport3D": "",
         "MapFilter": "",
         "Print": "Tisk",
         "Reports": "",
@@ -430,12 +431,11 @@
       "submit": "Tisk",
       "wait": "Čekejte..."
     },
-    "printscreen3d": {
-      "format": "",
-      "selectinfo": ""
-    },
     "qtdesignerform": {
       "loading": ""
+    },
+    "rasterexport": {
+      "format": ""
     },
     "redlining": {
       "border": "Okraj",

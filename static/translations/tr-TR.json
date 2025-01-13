@@ -12,6 +12,7 @@
         "LayerTree": "Katmanlar & Gösterim",
         "LayerTree3D": "",
         "MapExport": "Dışarıya ver",
+        "MapExport3D": "",
         "MapFilter": "Harita Filtresi",
         "Print": "Yazdır",
         "Reports": "",
@@ -430,12 +431,11 @@
       "submit": "Yazdır",
       "wait": "Lütfen bekleyiniz..."
     },
-    "printscreen3d": {
-      "format": "",
-      "selectinfo": ""
-    },
     "qtdesignerform": {
       "loading": "Form yükleniyor..."
+    },
+    "rasterexport": {
+      "format": ""
     },
     "redlining": {
       "border": "Sınır",

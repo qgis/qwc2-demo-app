@@ -12,6 +12,7 @@
         "LayerTree": "Слои и легенда",
         "LayerTree3D": "",
         "MapExport": "экспортировать карту",
+        "MapExport3D": "",
         "MapFilter": "",
         "Print": "Печать",
         "Reports": "",
@@ -430,12 +431,11 @@
       "submit": "Печать",
       "wait": ""
     },
-    "printscreen3d": {
-      "format": "",
-      "selectinfo": ""
-    },
     "qtdesignerform": {
       "loading": ""
+    },
+    "rasterexport": {
+      "format": ""
     },
     "redlining": {
       "border": "Граница",
