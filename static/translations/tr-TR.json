@@ -261,6 +261,7 @@
     "importlayer": {
       "addfailed": "Katman ekleme başarısız",
       "addlayer": "Katman ekle",
+      "asgroup": "",
       "connect": "Bağlan",
       "filter": "Filtre...",
       "loading": "Yükleniyor...",
@@ -268,6 +269,7 @@
       "nofeatures": "Herhangi bir obje içeriye aktarılamadı.",
       "noresults": "Sonuç yok ya da geçersiz URL",
       "notgeopdf": "Seçilen dosya GeoPDF gibi görünmüyor",
+      "shpreprojectionerror": "",
       "supportedformats": "Desteklenen formatlar: KML, GeoJSON, GeoPDF, SHP (zip içinde)",
       "unknownproj": "Seçilen GeoPDF bilinmeyen projeksiyon kullanıyor: {0}.",
       "url": "URL",

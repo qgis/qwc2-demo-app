@@ -261,6 +261,7 @@
     "importlayer": {
       "addfailed": "Adăugarea stratului a eșuat",
       "addlayer": "Adaugă strat",
+      "asgroup": "",
       "connect": "Conectare",
       "filter": "Filtrare...",
       "loading": "Se încarcă...",
@@ -268,6 +269,7 @@
       "nofeatures": "Nu s-a putut importa niciun obiect spațial",
       "noresults": "Fără rezultat sau adresă URL invalidă",
       "notgeopdf": "",
+      "shpreprojectionerror": "",
       "supportedformats": "",
       "unknownproj": "",
       "url": "Adresă URL",

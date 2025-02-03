@@ -261,6 +261,7 @@
     "importlayer": {
       "addfailed": "Falha ao adicionar",
       "addlayer": "Adicionar camada",
+      "asgroup": "",
       "connect": "Conectar",
       "filter": "Filtro...",
       "loading": "Carregando...",
@@ -268,6 +269,7 @@
       "nofeatures": "Nenhum recurso poder ser importado.",
       "noresults": "Sem resultados ou URL inválido",
       "notgeopdf": "",
+      "shpreprojectionerror": "",
       "supportedformats": "",
       "unknownproj": "",
       "url": "URL",
