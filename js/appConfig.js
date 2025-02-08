@@ -29,7 +29,6 @@ import IdentifyPlugin from 'qwc2/plugins/Identify';
 import LayerCatalogPlugin from 'qwc2/plugins/LayerCatalog';
 import LayerTreePlugin from 'qwc2/plugins/LayerTree';
 import LocateButtonPlugin from 'qwc2/plugins/LocateButton';
-import LoginUserPlugin from 'qwc2/plugins/LoginUser';
 import MapPlugin from 'qwc2/plugins/Map';
 import MapComparePlugin from 'qwc2/plugins/MapCompare';
 import MapCopyrightPlugin from 'qwc2/plugins/MapCopyright';
@@ -104,7 +103,6 @@ export default {
             LayerCatalogPlugin: LayerCatalogPlugin,
             LayerTreePlugin: LayerTreePlugin,
             LocateButtonPlugin: LocateButtonPlugin,
-            LoginUserPlugin: LoginUserPlugin,
             MapComparePlugin: MapComparePlugin,
             MapCopyrightPlugin: MapCopyrightPlugin,
             MapExportPlugin: MapExportPlugin,
