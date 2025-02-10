@@ -80,6 +80,116 @@
   "plugins": {
     "common": [
       {
+        "name": "API"
+      },
+      {
+        "name": "AttributeTable"
+      },
+      {
+        "name": "BackgroundSwitcher",
+        "cfg": {
+          "position": 0
+        }
+      },
+      {
+        "name": "Bookmark"
+      },
+      {
+        "name": "BottomBar",
+        "cfg": {
+          "viewertitleUrl": "https://qwc-services.github.io/",
+          "termsUrl": "https://qwc-services.github.io/",
+          "viewertitleUrlTarget": "_blank"
+        }
+      },
+      {
+        "name": "Editing",
+        "cfg": {
+          "allowCloneGeometry": true
+        }
+      },
+      {
+        "name": "FeatureForm"
+      },
+      {
+        "name": "FeatureSearch"
+      },
+      {
+        "name": "HeightProfile",
+        "cfg": {
+          "heightProfilePrecision": 0
+        }
+      },
+      {
+        "name": "Help",
+        "cfg": {
+          "bodyContentsFragmentUrl": "assets/help.html"
+        },
+        "mapClickAction": "identify"
+      },
+      {
+        "name": "HomeButton",
+        "cfg": {
+          "position": 4
+        }
+      },
+      {
+        "name": "Identify",
+        "cfg": {
+          "params": {
+            "FI_POINT_TOLERANCE": 16,
+            "FI_LINE_TOLERANCE": 8,
+            "FI_POLYGON_TOLERANCE": 4,
+            "feature_count": 20,
+            "region_feature_count": 100
+          },
+          "enableExport": true,
+          "exportGeometry": true,
+          "longAttributesDisplay": "wrap",
+          "displayResultTree": false,
+          "featureInfoReturnsLayerName": true,
+          "clearResultsOnClose": true,
+          "geometry": {
+            "initialWidth": 480,
+            "initialHeight": 550,
+            "initialX": 0,
+            "initialY": 0
+          }
+        }
+      },
+      {
+        "name": "LayerCatalog",
+        "cfg": {
+          "catalogUrl": "https://qwc2.sourcepole.ch/assets/catalog.json"
+        }
+      },
+      {
+        "name": "LayerTree",
+        "cfg": {
+          "showLegendIcons": true,
+          "showRootEntry": true,
+          "showQueryableIcon": true,
+          "allowMapTips": true,
+          "mapTipsEnabled": false,
+          "allowCompare": true,
+          "allowImport": true,
+          "groupTogglesSublayers": false,
+          "grayUnchecked": false,
+          "layerInfoWindowSize": {"width": 480, "height": 400},
+          "bboxDependentLegend": true,
+          "scaleDependentLegend": "theme",
+          "showToggleAllLayersCheckbox": true,
+          "extraLegendParameters": ""
+        },
+        "mapClickAction": "identify"
+      },
+      {
+        "name": "LocateButton",
+        "cfg": {
+          "position": 3
+        }
+      },
+      {
         "name": "Map",
         "cfg": {
           "mapOptions": {
@@ -102,27 +212,118 @@
               "units": "metric"
             }
           },
-          "swipeGeometryTypeBlacklist": ["Point"],
-          "swipeLayerNameBlacklist": ["*_noswipe"]
+          "swipeGeometryTypeBlacklist": [],
+          "swipeLayerNameBlacklist": []
         }
       },
       {
-        "name": "HomeButton",
+        "name": "MapCompare"
+      },
+      {
+        "name": "MapCopyright",
         "cfg": {
-          "position": 4
+          "showThemeCopyrightOnly": false,
+          "prefixCopyrightsWithLayerName": false
         }
       },
       {
-        "name": "LocateButton",
+        "name": "MapExport",
         "cfg": {
-          "position": 3
+          "dpis": [96, 300],
+          "exportExternalLayers": true,
+          "defaultFormat": "image/png",
+          "formatConfiguration": {
+            "application/dxf": [
+              {"name": "default"}
+            ],
+            "image/png": [
+              {"name": "default"}
+            ]
+          }
         }
       },
       {
-        "name": "BackgroundSwitcher",
+        "name": "MapFilter",
         "cfg": {
-          "position": 0
+          "allowCustomFilters": true,
+          "allowFilterByGeom": true
         }
+      },
+      {
+        "name": "MapInfoTooltip",
+        "cfg": {
+          "elevationPrecision": 0,
+          "includeWGS84": true
+        }
+      },
+      {
+        "name": "MapLegend",
+        "cfg": {
+          "addGroupTitles": true,
+          "addLayerTitles": true,
+          "bboxDependentLegend": false,
+          "onlyVisibleLegend": false,
+          "scaleDependentLegend": false,
+          "extraLegendParameters": "LAYERTITLE=FALSE"
+        }
+      },
+      {
+        "name": "MapTip"
+      },
+      {
+        "name": "Measure",
+        "cfg": {
+          "showMeasureModeSwitcher": true,
+          "snappingActive": false,
+          "snapping": true
+        }
+      },
+      {
+        "name": "NewsPopup",
+        "cfg": {
+          "newsDocument": "https://qwc-services.github.io/master/release_notes/ChangeLog/",
+          "newsRev": "20250210"
+        }
+      },
+      {
+        "name": "Portal",
+        "cfg": {
+          "logo": "logo.svg",
+          "topBarText": "QWC2 Portal",
+          "showMenuOnStartup": true,
+          "keepMenuOpen": true,
+          "bottomBarLinks": [
+              {"href": "https://qwc-services.github.io/", "label": "Homepage", "target": "iframe"},
+              {"href": "https://qgis.org", "label": "QGIS.org"}
+          ],
+          "menuItems": [
+              {"title": "Homepage", "icon": "info", "url": "https://qwc-services.github.io/", "target": "iframe"},
+              {"title": "QGIS.org", "icon": "link", "url": "https://qgis.org"},
+              {"key": "Tools", "icon": "tools", "title": "Links", "subitems": [
+                {"icon": "link", "title": "qwc2-demo-app", "url": "https://github.com/qgis/qwc2-demo-app/"},
+                {"icon": "link", "title": "qwc-docker", "url": "https://github.com/qwc-services/qwc-docker"}
+              ]}
+          ]
+        }
+      },
+      {
+        "name": "Print",
+        "cfg": {
+          "inlinePrintOutput": false,
+          "printExternalLayers": true,
+          "gridInitiallyEnabled": false,
+          "allowGeoPdfExport": true,
+          "hideAutopopulatedFields": false
+        }
+      },
+      {
+        "name": "ProcessNotifications"
+      },
+      {
+        "name": "Redlining"
+      },
+      {
+        "name": "Routing"
       },
       {
         "name": "TopBar",
@@ -150,7 +351,7 @@
             {"key": "Print", "icon": "print", "shortcut": "alt+shift+p"},
             {"key": "Help", "icon": "info", "shortcut": "alt+shift+h"},
             {"key": "Settings", "icon": "cog"},
-            {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$", "target": "iframe"}
+            {"title": "Homepage", "icon": "link", "url": "https://qwc-services.github.io/", "target": "iframe"}
           ],
           "searchOptions": {
             "allowSearchFilters": false,
@@ -174,6 +375,9 @@
         }
       },
       {
+        "name": "ScratchDrawing"
+      },
+      {
         "name": "Settings",
         "cfg": {
           "languages": [
@@ -184,6 +388,10 @@
             {
               "title": "Deutsch",
               "value": "de-CH"
+            },
+            {
+              "title": "Français",
+              "value": "fr-FR"
             },
             {
               "title": "Italiano",
@@ -207,75 +415,6 @@
         }
       },
       {
-        "name": "BottomBar",
-        "cfg": {
-          "viewertitleUrl": "http://qgis.org/",
-          "termsUrl": "http://qgis.org/",
-          "viewertitleUrlTarget": "_blank"
-        }
-      },
-      {
-        "name": "Measure",
-        "cfg": {
-          "showMeasureModeSwitcher": true,
-          "snappingActive": false,
-          "snapping": true
-        }
-      },
-      {
-        "name": "ThemeSwitcher",
-        "cfg": {
-          "collapsibleGroups": true
-        }
-      },
-      {
-        "name": "LayerTree",
-        "cfg": {
-          "showLegendIcons": true,
-          "showRootEntry": true,
-          "showQueryableIcon": true,
-          "allowMapTips": true,
-          "mapTipsEnabled": false,
-          "allowCompare": true,
-          "allowImport": true,
-          "groupTogglesSublayers": false,
-          "grayUnchecked": false,
-          "layerInfoWindowSize": {"width": 480, "height": 400},
-          "bboxDependentLegend": true,
-          "scaleDependentLegend": "theme",
-          "showToggleAllLayersCheckbox": true,
-          "extraLegendParameters": ""
-        },
-        "mapClickAction": "identify"
-      },
-      {
-        "name": "Identify",
-        "cfg": {
-          "params": {
-            "FI_POINT_TOLERANCE": 16,
-            "FI_LINE_TOLERANCE": 8,
-            "FI_POLYGON_TOLERANCE": 4,
-            "feature_count": 20,
-            "region_feature_count": 100
-          },
-          "enableExport": true,
-          "exportGeometry": true,
-          "longAttributesDisplay": "wrap",
-          "displayResultTree": false,
-          "featureInfoReturnsLayerName": true,
-          "clearResultsOnClose": true,
-          "geometry": {
-            "initialWidth": 480,
-            "initialHeight": 550,
-            "initialX": 0,
-            "initialY": 0
-          }
-        }
-      },
-      {
-        "name": "MapTip"
-      },
-      {
         "name": "Share",
         "cfg": {
           "showSocials": true,
@@ -285,114 +424,16 @@
         "mapClickAction": "identify"
       },
       {
-        "name": "Print",
-        "cfg": {
-          "displayPrintSeries": true,
-          "inlinePrintOutput": false,
-          "printExternalLayers": true,
-          "gridInitiallyEnabled": false,
-          "allowGeoPdfExport": true,
-          "hideAutopopulatedFields": false
-        }
-      },
-      {
-        "name": "Help",
-        "cfg": {
-          "bodyContentsFragmentUrl": "assets/help.html"
-        },
-        "mapClickAction": "identify"
-      },
-      {
-        "name": "MapCopyright",
-        "cfg": {
-          "showThemeCopyrightOnly": false,
-          "prefixCopyrightsWithLayerName": false
-        }
-      },
-      {
-        "name": "MapExport",
-        "cfg": {
-          "dpis": [96, 300],
-          "exportExternalLayers": true,
-          "defaultFormat": "image/png",
-          "formatConfiguration": {
-            "application/dxf": [
-              {"name": "default"},
-              {
-                "name": "Geobau",
-                "extraQuery": "LAYERS=dxfgeobau",
-                "formatOptions": "MODE:NOSYMBOLOGY"
-              },
-              {
-                "name": "Geobau mit Höhenkurven",
-                "extraQuery": "LAYERS=dxfgeobau,hoehenkurven"
-              }
-            ],
-            "image/png": [
-              {"name": "default"},
-              {"name": "With baselayer", "baseLayer": "SWISSIMAGE"}
-            ]
-          }
-        }
-      },
-      {
-        "name": "MapFilter",
-        "cfg": {
-          "allowCustomFilters": false,
-          "allowFilterByGeom": false
-        }
-      },
-      {
-        "name": "Redlining"
-      },
-      {
-        "name": "Editing",
-        "cfg": {
-          "allowCloneGeometry": true
-        }
-      },
-      {
-        "name": "FeatureForm"
-      },
-      {
-        "name": "MapCompare"
-      },
-      {
-        "name": "HeightProfile",
-        "cfg": {
-          "heighProfilePrecision": 0
-        }
-      },
-      {
-        "name": "MapInfoTooltip",
-        "cfg": {
-          "elevationPrecision": 0,
-          "includeWGS84": true
-        }
-      },
-      {
         "name": "StartupMarker",
         "cfg": {
           "removeMode": "onclickonmarker"
         }
       },
       {
-        "name": "API"
-      },
-      {
-        "name": "ScratchDrawing"
-      },
-      {
-        "name": "LayerCatalog",
+        "name": "ThemeSwitcher",
         "cfg": {
-          "catalogUrl": "https://qwc2.sourcepole.ch/assets/catalog.json"
+          "collapsibleGroups": true
         }
-      },
-      {
-        "name": "Bookmark"
-      },
-      {
-        "name": "AttributeTable"
       },
       {
         "name": "TimeManager",
@@ -413,55 +454,6 @@
           "stepUnits": ["s", "m", "h", "d", "M", "y", "10y", "100y"],
           "defaultTimelineDisplay": "features"
         }
-      },
-      {
-        "name": "ProcessNotifications"
-      },
-      {
-        "name": "MapLegend",
-        "cfg": {
-          "addGroupTitles": true,
-          "addLayerTitles": true,
-          "bboxDependentLegend": false,
-          "onlyVisibleLegend": false,
-          "scaleDependentLegend": false,
-          "extraLegendParameters": "LAYERTITLE=FALSE"
-        }
-      },
-      {
-        "name": "Routing"
-      },
-      {
-        "name": "NewsPopup",
-        "cfg": {
-          "newsDocument": "https://www.example.com/",
-          "newsRev": "20230411"
-        }
-      },
-      {
-        "name": "FeatureSearch"
-      },
-      {
-        "name": "Portal",
-          "cfg": {
-          "logo": "logo.svg",
-          "topBarText": "QWC2 Demo Portal",
-          "showMenuOnStartup": true,
-          "keepMenuOpen": true,
-          "bottomBarLinks": [
-              {"href": "http://www.example.com", "label": "Example.com", "target": "iframe"},
-              {"href": "http://www.test.com", "label": "Test.com"}
-          ],
-          "menuItems": [
-              {"key": "Help", "icon": "info", "url": "http://example.com"},
-              {"key": "ExternalLink", "icon": "link", "url": "http://example.com?extent=$e$"},
-              {"key": "IframeLink", "icon": "link", "url": "http://example.com", "target": "iframe"},
-              {"key": "Tools", "icon": "tools", "subitems": [
-                {"key": "ExternalLink2", "icon": "link", "url": "http://example.com?extent=$e$"},
-                {"key": "ExternalLink3", "icon": "link", "url": "http://example.com?extent=$e$"}
-              ]}
-          ]
-      }
       }
     ],
     "mobile": [
