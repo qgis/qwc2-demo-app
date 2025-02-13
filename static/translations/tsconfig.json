@@ -23,8 +23,6 @@
     "colorschemes.dark",
     "colorschemes.highcontrast"
   ],
-  "overrides": [
-    "bottombar.viewertitle_label"
-  ],
+  "overrides": [],
   "strings": []
 }
