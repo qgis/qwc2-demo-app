@@ -6,14 +6,15 @@
         "ExternalLink": "",
         "Bookmark": "ブックマーク",
         "Compare3D": "比較",
-        "DateTime3D": "日付と時刻",
         "Editing": "編集",
+        "ExportObjects3D": "",
         "Help": "ヘルプ",
         "LayerTree": "レイヤ & 凡例",
         "LayerTree3D": "レイヤ",
         "MapExport": "地図をエクスポート",
         "MapExport3D": "地図をエクスポート",
         "MapFilter": "マップ・フィルタ",
+        "MapLight3D": "日付と時刻",
         "Print": "印刷",
         "Reports": "レポート",
         "Settings": "設定",
@@ -126,8 +127,8 @@
     "bottombar": {
       "mousepos_label": "座標",
       "scale_label": "縮尺",
-      "terms_label": "使用許諾",
-      "viewertitle_label": "ホームページ"
+      "terms_label": "使用許諾条件",
+      "viewertitle_label": "QWC2 デモ"
     },
     "compare3d": {
       "clipplane": "クリッピング平面",
@@ -373,6 +374,23 @@
       "onlyvisible": "可視レイヤのみ",
       "scaledependent": "地図縮尺限定の凡例",
       "windowtitle": "凡例"
+    },
+    "maplight3d": {
+      "ambientLightIntensity": "",
+      "directionalLightIntensity": "",
+      "helpersVisible": "",
+      "normalBias": "",
+      "shadowBias": "",
+      "shadowMapSize": "",
+      "shadowType": "",
+      "shadowVolumeFar": "",
+      "shadowVolumeNear": "",
+      "shadowintensity": "",
+      "shadows": "",
+      "showadvanced": "",
+      "sunazimuth": "",
+      "sunzenith": "",
+      "zFactor": ""
     },
     "measureComponent": {
       "absolute": "m (海抜)",
