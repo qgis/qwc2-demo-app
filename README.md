@@ -3,46 +3,34 @@ QGIS Web Client 2 Demo Application
 
 QGIS Web Client 2 (QWC2) is a modular next generation responsive web client for QGIS Server, built with ReactJS and OpenLayers.
 
-This repository contains a sample QWC2 application.
+This repository contains an example skeleton for building a custom QWC2 application based on the [QWC2 stock application](https://github.com/qgis/qwc2).
 
-Some examples of QWC2 production deployments:
+Consult the [QWC2 README](https://github.com/qgis/qwc2/blob/master/README.md) for information about QWC2, and further links to documentation, sample viewers, etc.
 
-- [QWC2 demo server](http://qwc2.sourcepole.ch)
-- [GeoViewer Kanton Glarus](https://map.geo.gl.ch/)
-- [Web GIS Client Kanton Solothurn](https://geo.so.ch/map/)
+# Quick start
 
-## [Quick start](https://qwc-services.github.io/master/QuickStart/)
-## [Documentation](https://qwc-services.github.io/)
-## [QWC2 extended with microservices](https://github.com/qwc-services/qwc-docker)
-## [Upgrade notes](https://qwc-services.github.io/master/release_notes/QWC2UpgradeNotes/)
-## [Mailing list](https://lists.osgeo.org/mailman/listinfo/qgis-qwc2)
+To build a custom application based on the QWC2 stock application, follow these steps:
 
-![Screenshot](https://github.com/qgis/qwc2-demo-app/blob/gh-pages/Screenshot.jpg?raw=true)
+1. Clone this repository
 
-# Main Features
+       git clone --recursive https://github.com/qgis/qwc2-demo-app
 
-- Modular and easily configurable and extensible
-- Responsive, separately configurable for desktop and mobile devices
-- Theme switcher
-- Arbitrarily configurable search providers
-- Layer tree
-  * Toggle layers and groups
-  * Change layer order and opacity
-  - Import external WMS/WFS/WMTS/GeoJSON/KML layers
-- Feature info
-- Compare layers
-- Share permalinks
-- Bookmarks
-- Measuring tools
-- Height profile
-- Redlining
-- Editing
-- Attribute table
-- DXF export
-- Raster export
-- Printing
-- Time manager for temporal layers
-- Themeable with color schemes
+2. Make sure the submodule is up to date
+
+       cd qwc2
+       git pull
+
+3. Install dependencies
+
+       yarn install
+
+5. Run the development server
+
+       yarn start
+
+6. Edit `js/appConfig.js` to include your custom components
+
+See [Building a custom viewer](https://qwc-services.github.io/master/configuration/ViewerConfiguration/#building-a-custom-viewer) for further information.
 
 # License
 
