@@ -65,7 +65,6 @@ import SnappingSupport from 'qwc2/plugins/map/SnappingSupport';
 import BufferSupport from 'qwc2/plugins/redlining/RedliningBufferSupport';
 
 import defaultLocaleData from '../static/translations/en-US.json';
-import {renderHelp} from './Help';
 import {customAttributeCalculator, attributeTransform, customExporters} from './IdentifyExtensions';
 
 export default {
@@ -97,7 +96,7 @@ export default {
             FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */),
             GeometryDigitizerPlugin: GeometryDigitizerPlugin,
             HeightProfilePlugin: HeightProfilePlugin,
-            HelpPlugin: HelpPlugin(renderHelp),
+            HelpPlugin: HelpPlugin(),
             HomeButtonPlugin: HomeButtonPlugin,
             IdentifyPlugin: IdentifyPlugin,
             LayerCatalogPlugin: LayerCatalogPlugin,

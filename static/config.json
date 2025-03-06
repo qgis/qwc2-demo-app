@@ -289,7 +289,7 @@
         "name": "Portal",
         "cfg": {
           "logo": "logo.svg",
-          "topBarText": "QWC2 Portal",
+          "topBarText": "",
           "showMenuOnStartup": true,
           "keepMenuOpen": true,
           "bottomBarLinks": [
@@ -298,10 +298,10 @@
           ],
           "menuItems": [
               {"title": "Homepage", "icon": "info", "url": "https://qwc-services.github.io/", "target": "iframe"},
-              {"title": "QGIS.org", "icon": "link", "url": "https://qgis.org"},
               {"key": "Tools", "icon": "tools", "title": "Links", "subitems": [
-                {"icon": "link", "title": "qwc2-demo-app", "url": "https://github.com/qgis/qwc2-demo-app/"},
-                {"icon": "link", "title": "qwc-docker", "url": "https://github.com/qwc-services/qwc-docker"}
+                {"icon": "link", "title": "qwc2", "url": "https://github.com/qgis/qwc2/"},
+                {"icon": "link", "title": "qwc-docker", "url": "https://github.com/qwc-services/qwc-docker"},
+                {"icon": "link", "title": "qgis.org", "url": "https://qgis.org"}
               ]}
           ]
         }
