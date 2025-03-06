@@ -3,7 +3,7 @@ QGIS Web Client 2 Demo Application
 
 QGIS Web Client 2 (QWC2) is a modular next generation responsive web client for QGIS Server, built with ReactJS and OpenLayers.
 
-This repository contains an example skeleton for building a custom QWC2 application based on the [QWC2 stock application](https://github.com/qgis/qwc2).
+**This repository contains an example skeleton for building a custom QWC2 application based on the [QWC2 stock application](https://github.com/qgis/qwc2).**
 
 Consult the [QWC2 README](https://github.com/qgis/qwc2/blob/master/README.md) for information about QWC2, and further links to documentation, sample viewers, etc.
 
