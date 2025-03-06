@@ -7,7 +7,6 @@
         "Bookmark": "Marque-pages",
         "Compare3D": "Comparer",
         "Editing": "Editer",
-        "ExportObjects3D": "",
         "Help": "Aide",
         "LayerTree": "Couches",
         "LayerTree3D": "Couches",
@@ -39,6 +38,7 @@
         "MeasureLineString": "Mesurer une ligne",
         "MeasurePolygon": "Mesurer un polygone",
         "NewsPopup": "Actualités",
+        "Panoramax": "Panoramax",
         "Portal": "Portail",
         "PrintScreen3D": "Export raster",
         "Redlining": "Dessiner",
@@ -377,6 +377,7 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "Intensité lumineuse ambiante",
+      "date": "Date",
       "directionalLightIntensity": "Intensité lumineuse directionnelle",
       "helpersVisible": "Montrer les aides",
       "normalBias": "Bias normal",
@@ -388,8 +389,7 @@
       "shadowintensity": "Intensité de l'ombre",
       "shadows": "Activer les ombres",
       "showadvanced": "Paramètres avancés",
-      "sunazimuth": "Azimut solaire",
-      "sunzenith": "Zénith solaire",
+      "time": "Heure",
       "zFactor": "Facteur z"
     },
     "measureComponent": {
@@ -421,6 +421,10 @@
       "side": "Côté",
       "width": "Largeur",
       "windowtitle": "Entrée numérique"
+    },
+    "panoramax": {
+      "notfound": "Il n'y a pas d'image disponible pour cet emplacement.",
+      "title": "Visionneuse Panoramax"
     },
     "pickfeature": {
       "querying": "Interrogation"

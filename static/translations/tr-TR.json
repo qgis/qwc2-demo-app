@@ -7,7 +7,6 @@
         "Bookmark": "Yer işaretleri",
         "Compare3D": "Karşılaştır",
         "Editing": "Düzenleme",
-        "ExportObjects3D": "",
         "Help": "Yardım",
         "LayerTree": "Katmanlar & Gösterim",
         "LayerTree3D": "Katmanlar",
@@ -39,6 +38,7 @@
         "MeasureLineString": "Çizgi Ölç",
         "MeasurePolygon": "Alan Ölç",
         "NewsPopup": "",
+        "Panoramax": "",
         "Portal": "Portal",
         "PrintScreen3D": "Görüntüyü ver",
         "Redlining": "Serbest Çizim",
@@ -377,6 +377,7 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "",
+      "date": "",
       "directionalLightIntensity": "",
       "helpersVisible": "",
       "normalBias": "",
@@ -388,8 +389,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
-      "sunazimuth": "",
-      "sunzenith": "",
+      "time": "",
       "zFactor": ""
     },
     "measureComponent": {
@@ -421,6 +421,10 @@
       "side": "Taraf",
       "width": "Genişlik",
       "windowtitle": "Sayısal giriş"
+    },
+    "panoramax": {
+      "notfound": "",
+      "title": ""
     },
     "pickfeature": {
       "querying": "Sorgulanıyor..."

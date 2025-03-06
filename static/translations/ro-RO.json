@@ -7,7 +7,6 @@
         "Bookmark": "Marcaj",
         "Compare3D": "",
         "Editing": "Editare",
-        "ExportObjects3D": "",
         "Help": "Ajutor",
         "LayerTree": "Straturi & Legendă",
         "LayerTree3D": "",
@@ -39,6 +38,7 @@
         "MeasureLineString": "Măsoară o linie",
         "MeasurePolygon": "Măsoară un poligon",
         "NewsPopup": "",
+        "Panoramax": "",
         "Portal": "",
         "PrintScreen3D": "",
         "Redlining": "Evidențiere",
@@ -377,6 +377,7 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "",
+      "date": "",
       "directionalLightIntensity": "",
       "helpersVisible": "",
       "normalBias": "",
@@ -388,8 +389,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
-      "sunazimuth": "",
-      "sunzenith": "",
+      "time": "",
       "zFactor": ""
     },
     "measureComponent": {
@@ -421,6 +421,10 @@
       "side": "Partea",
       "width": "Lățimea",
       "windowtitle": "Valori numerice"
+    },
+    "panoramax": {
+      "notfound": "",
+      "title": ""
     },
     "pickfeature": {
       "querying": ""

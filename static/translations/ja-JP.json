@@ -7,14 +7,13 @@
         "Bookmark": "ブックマーク",
         "Compare3D": "比較",
         "Editing": "編集",
-        "ExportObjects3D": "",
         "Help": "ヘルプ",
         "LayerTree": "レイヤ & 凡例",
         "LayerTree3D": "レイヤ",
         "MapExport": "地図をエクスポート",
         "MapExport3D": "地図をエクスポート",
         "MapFilter": "マップ・フィルタ",
-        "MapLight3D": "日付と時刻",
+        "MapLight3D": "光と影",
         "Print": "印刷",
         "Reports": "レポート",
         "Settings": "設定",
@@ -28,17 +27,18 @@
         "FeatureForm": "地物フォーム",
         "FeatureSearch": "地物検索",
         "GeometryDigitizer": "ジオメトリ・デジタイザ",
-        "IdentifyPoint": "点を特定",
-        "IdentifyRegion": "領域を特定",
+        "IdentifyPoint": "点で地物を確認",
+        "IdentifyRegion": "領域内の地物を確認",
         "LayerCatalog": "レイヤ・カタログ",
         "Login": "ログイン",
         "Logout": "ログアウト",
         "MapLegend": "凡例",
         "Measure": "計測",
         "Measure3D": "計測",
-        "MeasureLineString": "線を計測",
-        "MeasurePolygon": "ポリゴンを計測",
+        "MeasureLineString": "ラインを測る",
+        "MeasurePolygon": "ポリゴンを測る",
         "NewsPopup": "ニュース",
+        "Panoramax": "",
         "Portal": "ポータル",
         "PrintScreen3D": "ラスタ・エクスポート",
         "Redlining": "赤線引き",
@@ -140,7 +140,7 @@
       "message": "当ウェブサイトはクッキーを使用します。"
     },
     "copybtn": {
-      "click_to_copy": "クリックしてコピー",
+      "click_to_copy": "クリップボードにコピー",
       "copied": "コピーしました",
       "copyfailed": "コピー出来ませんでした"
     },
@@ -251,7 +251,7 @@
       "layerall": "全てのレイヤ",
       "link": "リンク",
       "noattributes": "属性無し",
-      "noresults": "選択された点には利用できる情報がありません",
+      "noresults": "選択された点には情報がありません",
       "querying": "検索中...",
       "reportfail": "レポートを生成することが出来ませんでした",
       "selectlayer": "レイヤを選択...",
@@ -279,9 +279,9 @@
       "urlplaceholder": "WMS, WMTS, WFS の URL を入力..."
     },
     "infotool": {
-      "clickhelpPoint": "地図上の特定したい地点をクリック...",
-      "clickhelpPolygon": "特定したい地物のまわりにポリゴンを描画...",
-      "clickhelpRadius": "半径をセットし、中心地点をクリックして、円内の地物を特定...",
+      "clickhelpPoint": "確認したい地点をクリック...",
+      "clickhelpPolygon": "確認したい領域をポリゴンで囲む...",
+      "clickhelpRadius": "中心をクリックして半径を指定し、円内を確認...",
       "radius": "半径"
     },
     "layercatalog": {
@@ -304,8 +304,8 @@
       "importlayer": "レイヤをインポート",
       "maptip": "レイヤのマップ・チップを表示",
       "printlegend": "凡例を印刷",
-      "separator": "区切り線",
-      "separatortooltip": "区切り線を追加",
+      "separator": "区切り",
+      "separatortooltip": "区切りを追加",
       "transparency": "透明度",
       "visiblefilter": "不可視のレイヤをフィルタ",
       "zoomtolayer": "レイヤにズーム"
@@ -370,13 +370,14 @@
       "title": "位置"
     },
     "maplegend": {
-      "bboxdependent": "地図領域限定の凡例",
+      "bboxdependent": "領域依存の凡例",
       "onlyvisible": "可視レイヤのみ",
-      "scaledependent": "地図縮尺限定の凡例",
+      "scaledependent": "縮尺依存の凡例",
       "windowtitle": "凡例"
     },
     "maplight3d": {
       "ambientLightIntensity": "",
+      "date": "",
       "directionalLightIntensity": "",
       "helpersVisible": "",
       "normalBias": "",
@@ -388,8 +389,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
-      "sunazimuth": "",
-      "sunzenith": "",
+      "time": "",
       "zFactor": ""
     },
     "measureComponent": {
@@ -421,6 +421,10 @@
       "side": "サイド",
       "width": "幅",
       "windowtitle": "数値入力"
+    },
+    "panoramax": {
+      "notfound": "",
+      "title": ""
     },
     "pickfeature": {
       "querying": "検索中..."
@@ -613,7 +617,7 @@
       "loading": "ロード中...",
       "loop": "ループ",
       "markers": "マーカー",
-      "notemporaldata": "マップの中に可視の一時的レイヤがありません。",
+      "notemporaldata": "マップの中に時間軸を持つ可視レイヤがありません。",
       "now": "現在",
       "past": "過去",
       "play": "再生",
@@ -630,7 +634,7 @@
       "timelinedisplay": "表示",
       "timelinescale": "タイムスケール (非直線性)",
       "title": "タイム・マネージャ",
-      "toggle": "一時的ナビゲーション",
+      "toggle": "時間ナビゲーション",
       "unit": {
         "century": "世紀",
         "days": "日",
@@ -647,9 +651,9 @@
     },
     "tooltip": {
       "background": "背景を切り替える",
-      "fullscreendisable": "フル・スクリーン・モードを無効化",
-      "fullscreenenable": "フル・スクリーン・モードを有効化",
-      "home": "地図全体を表示",
+      "fullscreendisable": "全画面モードを終了",
+      "fullscreenenable": "全画面モードにする",
+      "home": "地図の初期領域を表示",
       "zoomin": "ズーム・イン",
       "zoomout": "ズーム・アウト"
     },

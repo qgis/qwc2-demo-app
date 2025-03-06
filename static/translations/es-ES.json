@@ -7,7 +7,6 @@
         "Bookmark": "Marcadores",
         "Compare3D": "",
         "Editing": "Edición",
-        "ExportObjects3D": "",
         "Help": "Ayuda",
         "LayerTree": "Capas & Leyenda",
         "LayerTree3D": "",
@@ -39,6 +38,7 @@
         "MeasureLineString": "Medir una línea",
         "MeasurePolygon": "Medir un polígono",
         "NewsPopup": "",
+        "Panoramax": "",
         "Portal": "",
         "PrintScreen3D": "",
         "Redlining": "Línea de demarcación",
@@ -377,6 +377,7 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "",
+      "date": "",
       "directionalLightIntensity": "",
       "helpersVisible": "",
       "normalBias": "",
@@ -388,8 +389,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
-      "sunazimuth": "",
-      "sunzenith": "",
+      "time": "",
       "zFactor": ""
     },
     "measureComponent": {
@@ -421,6 +421,10 @@
       "side": "",
       "width": "",
       "windowtitle": ""
+    },
+    "panoramax": {
+      "notfound": "",
+      "title": ""
     },
     "pickfeature": {
       "querying": ""

@@ -7,7 +7,6 @@
         "Bookmark": "Bookmark",
         "Compare3D": "",
         "Editing": "Edição",
-        "ExportObjects3D": "",
         "Help": "Ajuda",
         "LayerTree": "Camadas & Legendas",
         "LayerTree3D": "",
@@ -39,6 +38,7 @@
         "MeasureLineString": "Medir uma linha",
         "MeasurePolygon": "Medir um polígono",
         "NewsPopup": "",
+        "Panoramax": "",
         "Portal": "",
         "PrintScreen3D": "",
         "Redlining": "Linha de demarcação",
@@ -377,6 +377,7 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "",
+      "date": "",
       "directionalLightIntensity": "",
       "helpersVisible": "",
       "normalBias": "",
@@ -388,8 +389,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
-      "sunazimuth": "",
-      "sunzenith": "",
+      "time": "",
       "zFactor": ""
     },
     "measureComponent": {
@@ -421,6 +421,10 @@
       "side": "Margem",
       "width": "Largura",
       "windowtitle": "Título da janela"
+    },
+    "panoramax": {
+      "notfound": "",
+      "title": ""
     },
     "pickfeature": {
       "querying": ""

@@ -7,7 +7,6 @@
         "Bookmark": "",
         "Compare3D": "",
         "Editing": "Redigera",
-        "ExportObjects3D": "",
         "Help": "Hjälp",
         "LayerTree": "Lager & teckenförklaring",
         "LayerTree3D": "",
@@ -39,6 +38,7 @@
         "MeasureLineString": "Mäta en linje",
         "MeasurePolygon": "Mäta en polygon",
         "NewsPopup": "",
+        "Panoramax": "",
         "Portal": "",
         "PrintScreen3D": "",
         "Redlining": "Rita",
@@ -377,6 +377,7 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "",
+      "date": "",
       "directionalLightIntensity": "",
       "helpersVisible": "",
       "normalBias": "",
@@ -388,8 +389,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
-      "sunazimuth": "",
-      "sunzenith": "",
+      "time": "",
       "zFactor": ""
     },
     "measureComponent": {
@@ -421,6 +421,10 @@
       "side": "",
       "width": "",
       "windowtitle": ""
+    },
+    "panoramax": {
+      "notfound": "",
+      "title": ""
     },
     "pickfeature": {
       "querying": ""

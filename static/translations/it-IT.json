@@ -7,7 +7,6 @@
         "Bookmark": "Segnalibri",
         "Compare3D": "Confronta",
         "Editing": "Strumenti di modifica",
-        "ExportObjects3D": "",
         "Help": "Aiuto",
         "LayerTree": "Livelli",
         "LayerTree3D": "Livelli",
@@ -39,6 +38,7 @@
         "MeasureLineString": "Misura una linea",
         "MeasurePolygon": "Misura un poligono",
         "NewsPopup": "Attualità",
+        "Panoramax": "",
         "Portal": "Portale",
         "PrintScreen3D": "Esporta raster",
         "Redlining": "Strumenti di disegno",
@@ -377,6 +377,7 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "Intensità luce ambientale",
+      "date": "Data",
       "directionalLightIntensity": "Intensità luce direzionale",
       "helpersVisible": "Mostra aiuti",
       "normalBias": "Bias normale",
@@ -388,8 +389,7 @@
       "shadowintensity": "Intensità ombra",
       "shadows": "Abilita ombre",
       "showadvanced": "Mostra avanzato",
-      "sunazimuth": "Azimut sole",
-      "sunzenith": "Zenith sole",
+      "time": "Ora",
       "zFactor": "Fattore Z"
     },
     "measureComponent": {
@@ -421,6 +421,10 @@
       "side": "Lato",
       "width": "Larghezza",
       "windowtitle": "Formulario numerico"
+    },
+    "panoramax": {
+      "notfound": "",
+      "title": ""
     },
     "pickfeature": {
       "querying": "Query..."

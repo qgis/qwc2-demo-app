@@ -7,7 +7,6 @@
         "Bookmark": "Lesezeichen",
         "Compare3D": "Vergleichen",
         "Editing": "Editieren",
-        "ExportObjects3D": "",
         "Help": "Hilfe",
         "LayerTree": "Ebenen und Legende",
         "LayerTree3D": "Ebenen",
@@ -39,6 +38,7 @@
         "MeasureLineString": "Messen Linie",
         "MeasurePolygon": "Messen Polygon",
         "NewsPopup": "Aktuelles",
+        "Panoramax": "",
         "Portal": "Portal",
         "PrintScreen3D": "Raster Export",
         "Redlining": "Zeichnen",
@@ -377,6 +377,7 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "Intensität Umgebungslichts",
+      "date": "Datum",
       "directionalLightIntensity": "Intensität gerichtetes Licht",
       "helpersVisible": "Hilfen anzeigen",
       "normalBias": "Normal-Verzerrung",
@@ -388,8 +389,7 @@
       "shadowintensity": "Schattenintensität",
       "shadows": "Schatten aktivieren",
       "showadvanced": "Erweitert anzeigen",
-      "sunazimuth": "Sonnenazimuth",
-      "sunzenith": "Sonnenzenit",
+      "time": "Zeit",
       "zFactor": "Z-Faktor"
     },
     "measureComponent": {
@@ -421,6 +421,10 @@
       "side": "Seite",
       "width": "Breite",
       "windowtitle": "Numerische Eingabe"
+    },
+    "panoramax": {
+      "notfound": "",
+      "title": ""
     },
     "pickfeature": {
       "querying": "Abfragen..."
