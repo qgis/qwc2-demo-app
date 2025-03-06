@@ -32,6 +32,10 @@ To build a custom application based on the QWC2 stock application, follow these 
 
 See [Building a custom viewer](https://qwc-services.github.io/master/configuration/ViewerConfiguration/#building-a-custom-viewer) for further information.
 
+# Issues
+
+Please report QWC2 issues at [issues](https://github.com/qgis/qwc2/issues).
+
 # License
 
 QWC2 is released under the terms of the [BSD license](https://github.com/qgis/qwc2-demo-app/blob/master/LICENSE).
