@@ -7,7 +7,9 @@
         "Bookmark": "Záložky",
         "Compare3D": "",
         "Editing": "Úpravy",
+        "ExportObjects3D": "",
         "Help": "Nápověda",
+        "HideObjects3D": "",
         "LayerTree": "Vrstvy & legenda",
         "LayerTree3D": "",
         "MapExport": "Export mapu",
@@ -69,7 +71,8 @@
       "recent": "Nedávná hledání",
       "search": "Hledat",
       "themelayers": "",
-      "themes": "Témata"
+      "themes": "Témata",
+      "unknownmore": ""
     },
     "colorschemes": {
       "default": "",
@@ -159,6 +162,7 @@
       "cylinder": "",
       "delete": "",
       "drawings": "",
+      "intersect": "",
       "newgroupprompt": "",
       "numericinput": "",
       "pick": "",
@@ -168,8 +172,11 @@
       "rotation": "",
       "scale": "",
       "sphere": "",
+      "subtract": "",
       "thescale": "",
       "translate": "",
+      "undoBool": "",
+      "union": "",
       "wedge": ""
     },
     "editing": {
@@ -241,6 +248,12 @@
       "print": "",
       "title": ""
     },
+    "hideobjects3d": {
+      "clickonmap": "",
+      "object": "",
+      "restore": "",
+      "restoreall": ""
+    },
     "identify": {
       "aggregatedreport": "",
       "clipboard": "Zkopírovat do schránky",
@@ -311,8 +324,12 @@
       "zoomtolayer": "Vycentrovat na vrstvu"
     },
     "layertree3d": {
+      "import": "",
+      "importobjects": "",
       "layers": "",
-      "objects": ""
+      "objects": "",
+      "supportedformats": "",
+      "zoomtoobject": ""
     },
     "linkfeatureform": {
       "cancel": "",
@@ -377,9 +394,12 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "",
+      "animationstep": "",
       "date": "",
+      "dayspersec": "",
       "directionalLightIntensity": "",
       "helpersVisible": "",
+      "minspersec": "",
       "normalBias": "",
       "shadowBias": "",
       "shadowMapSize": "",
@@ -569,7 +589,9 @@
       "QRCodeLinkTitle": "QR kód",
       "directLinkTitle": "Přes přímý odkaz",
       "expires": "",
+      "norestriction": "",
       "refresh": "Generovat odkaz",
+      "restricttogroup": "",
       "shareTitle": "QWC2",
       "showpin": "Zobrazit bod",
       "socialIntro": "Na sociální síti"
@@ -656,6 +678,24 @@
       "home": "Výchozí zobrazení mapy",
       "zoomin": "Přiblížit",
       "zoomout": "Oddálit"
+    },
+    "valuetool": {
+      "all": "",
+      "allbands": "",
+      "alllayers": "",
+      "bands": "",
+      "graph": "",
+      "layer": "",
+      "nodata": "",
+      "options": "",
+      "selectedbands": "",
+      "selectedlayers": "",
+      "selectlayersbands": "",
+      "showbands": "",
+      "showlayers": "",
+      "table": "",
+      "title": "",
+      "visiblelayers": ""
     },
     "vectorlayerpicker": {
       "none": "Žádná",

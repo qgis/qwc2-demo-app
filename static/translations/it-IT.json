@@ -7,7 +7,9 @@
         "Bookmark": "Segnalibri",
         "Compare3D": "Confronta",
         "Editing": "Strumenti di modifica",
+        "ExportObjects3D": "Esporta oggetti",
         "Help": "Aiuto",
+        "HideObjects3D": "Nascondi oggetti",
         "LayerTree": "Livelli",
         "LayerTree3D": "Livelli",
         "MapExport": "Esporta mappa",
@@ -38,7 +40,7 @@
         "MeasureLineString": "Misura una linea",
         "MeasurePolygon": "Misura un poligono",
         "NewsPopup": "Attualità",
-        "Panoramax": "",
+        "Panoramax": "Panoramax",
         "Portal": "Portale",
         "PrintScreen3D": "Esporta raster",
         "Redlining": "Strumenti di disegno",
@@ -69,7 +71,8 @@
       "recent": "Ricerche recenti",
       "search": "Cerca",
       "themelayers": "Livelli di temi",
-      "themes": "Temi"
+      "themes": "Temi",
+      "unknownmore": "Ulteriori risultati"
     },
     "colorschemes": {
       "default": "Predefinito",
@@ -159,6 +162,7 @@
       "cylinder": "Cilindro",
       "delete": "Elimina",
       "drawings": "Disegni",
+      "intersect": "Intersezione",
       "newgroupprompt": "Nuovo gruppo disegni",
       "numericinput": "Formulario numerico",
       "pick": "Seleziona",
@@ -168,8 +172,11 @@
       "rotation": "Rotazione",
       "scale": "Scala",
       "sphere": "Sfera",
+      "subtract": "Differenza",
       "thescale": "Scala",
       "translate": "Trasla",
+      "undoBool": "Annulla l'operazione",
+      "union": "Unione",
       "wedge": "Cuneo"
     },
     "editing": {
@@ -241,6 +248,12 @@
       "print": "Stampa profilo d'altezza",
       "title": "Profilo di altezza"
     },
+    "hideobjects3d": {
+      "clickonmap": "Seleziona oggetto per nasconderlo",
+      "object": "Oggetto",
+      "restore": "Ripristina oggetto",
+      "restoreall": "Ripristina tutti"
+    },
     "identify": {
       "aggregatedreport": "Rapporto aggregato",
       "clipboard": "Copia negli appunti",
@@ -273,7 +286,7 @@
       "noresults": "Nessun risultato o URL non valido",
       "notgeopdf": "Il file selezionato non sembra essere un GeoPDF.",
       "shpreprojectionerror": "Non è stato possibile riproiettare la geometria dello shapefile, che potrebbe essere posizionata in modo errato.",
-      "supportedformats": "Formati supportati",
+      "supportedformats": "Formati supportati: KML, GeoJSON, GeoPDF, SHP (in zip)",
       "unknownproj": "Il GeoPDF selezionato utilizza una proiezione sconosciuta: {0}",
       "url": "URL",
       "urlplaceholder": "Indirizzo WMS, WMTS, WFS..."
@@ -311,8 +324,12 @@
       "zoomtolayer": "Zoom a tutto il livello"
     },
     "layertree3d": {
+      "import": "Importa",
+      "importobjects": "Importa oggetti",
       "layers": "Livelli",
-      "objects": "Oggetti"
+      "objects": "Oggetti",
+      "supportedformats": "Formati supportati: GLTF",
+      "zoomtoobject": "Zooma su oggetto"
     },
     "linkfeatureform": {
       "cancel": "Annulla",
@@ -377,9 +394,12 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "Intensità luce ambientale",
+      "animationstep": "Passo animazione",
       "date": "Data",
+      "dayspersec": "giorni / sec",
       "directionalLightIntensity": "Intensità luce direzionale",
       "helpersVisible": "Mostra aiuti",
+      "minspersec": "minuti / sec",
       "normalBias": "Bias normale",
       "shadowBias": "Bias ombra",
       "shadowMapSize": "Dimensione texture ombra",
@@ -423,8 +443,8 @@
       "windowtitle": "Formulario numerico"
     },
     "panoramax": {
-      "notfound": "",
-      "title": ""
+      "notfound": "Nessun immagine disponibile per questa posizione",
+      "title": "Visualizzatore Panoramax"
     },
     "pickfeature": {
       "querying": "Query..."
@@ -569,7 +589,9 @@
       "QRCodeLinkTitle": "Codice QR",
       "directLinkTitle": "Collegamento diretto",
       "expires": "Questo permalink è valido fino al {0}.",
+      "norestriction": "Nessuna restrizione",
       "refresh": "Genera permalink",
+      "restricttogroup": "Limitare al gruppo",
       "shareTitle": "QWC2",
       "showpin": "Mostra pin",
       "socialIntro": "Social network"
@@ -656,6 +678,24 @@
       "home": "Mostra tutta la mappa intera",
       "zoomin": "Ingrandisci",
       "zoomout": "Rimpicciolisci"
+    },
+    "valuetool": {
+      "all": "Tutte",
+      "allbands": "Tutte le bande",
+      "alllayers": "Tutti i livelli",
+      "bands": "Bande",
+      "graph": "Grafico",
+      "layer": "Livello",
+      "nodata": "Nessun dato",
+      "options": "Opzioni",
+      "selectedbands": "Bande selezionate",
+      "selectedlayers": "Livelli selezionati",
+      "selectlayersbands": "Seleziona livelli / bande",
+      "showbands": "Bande",
+      "showlayers": "Livelli",
+      "table": "Tabelle",
+      "title": "Value Tool",
+      "visiblelayers": "Livelli visibili"
     },
     "vectorlayerpicker": {
       "none": "Nessuno",

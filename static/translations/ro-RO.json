@@ -7,7 +7,9 @@
         "Bookmark": "Marcaj",
         "Compare3D": "",
         "Editing": "Editare",
+        "ExportObjects3D": "",
         "Help": "Ajutor",
+        "HideObjects3D": "",
         "LayerTree": "Straturi & Legendă",
         "LayerTree3D": "",
         "MapExport": "",
@@ -69,7 +71,8 @@
       "recent": "Căutări recente",
       "search": "Caută",
       "themelayers": "",
-      "themes": "Hărți tematice"
+      "themes": "Hărți tematice",
+      "unknownmore": ""
     },
     "colorschemes": {
       "default": "",
@@ -159,6 +162,7 @@
       "cylinder": "",
       "delete": "",
       "drawings": "",
+      "intersect": "",
       "newgroupprompt": "",
       "numericinput": "",
       "pick": "",
@@ -168,8 +172,11 @@
       "rotation": "",
       "scale": "",
       "sphere": "",
+      "subtract": "",
       "thescale": "",
       "translate": "",
+      "undoBool": "",
+      "union": "",
       "wedge": ""
     },
     "editing": {
@@ -241,6 +248,12 @@
       "print": "",
       "title": ""
     },
+    "hideobjects3d": {
+      "clickonmap": "",
+      "object": "",
+      "restore": "",
+      "restoreall": ""
+    },
     "identify": {
       "aggregatedreport": "",
       "clipboard": "Copiere în clipboard",
@@ -311,8 +324,12 @@
       "zoomtolayer": "Vedeți tot stratul"
     },
     "layertree3d": {
+      "import": "",
+      "importobjects": "",
       "layers": "",
-      "objects": ""
+      "objects": "",
+      "supportedformats": "",
+      "zoomtoobject": ""
     },
     "linkfeatureform": {
       "cancel": "Renunță",
@@ -377,9 +394,12 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "",
+      "animationstep": "",
       "date": "",
+      "dayspersec": "",
       "directionalLightIntensity": "",
       "helpersVisible": "",
+      "minspersec": "",
       "normalBias": "",
       "shadowBias": "",
       "shadowMapSize": "",
@@ -569,7 +589,9 @@
       "QRCodeLinkTitle": "Cod QR",
       "directLinkTitle": "Via link direct",
       "expires": "",
+      "norestriction": "",
       "refresh": "Generare link permanent",
+      "restricttogroup": "",
       "shareTitle": "Link permanent",
       "showpin": "Arată pin",
       "socialIntro": "În rețeaua socială favorită"
@@ -656,6 +678,24 @@
       "home": "Arată toată harta",
       "zoomin": "Mărire",
       "zoomout": "Micșorare"
+    },
+    "valuetool": {
+      "all": "",
+      "allbands": "",
+      "alllayers": "",
+      "bands": "",
+      "graph": "",
+      "layer": "",
+      "nodata": "",
+      "options": "",
+      "selectedbands": "",
+      "selectedlayers": "",
+      "selectlayersbands": "",
+      "showbands": "",
+      "showlayers": "",
+      "table": "",
+      "title": "",
+      "visiblelayers": ""
     },
     "vectorlayerpicker": {
       "none": "Niciunul",

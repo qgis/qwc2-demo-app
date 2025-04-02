@@ -3,15 +3,17 @@
   "messages": {
     "appmenu": {
       "items": {
-        "ExternalLink": "External Link",
+        "ExternalLink": "",
         "Bookmark": "Bookmarks",
         "Compare3D": "Compare",
         "Editing": "Editing",
+        "ExportObjects3D": "Export Objects",
         "Help": "Help",
+        "HideObjects3D": "Hide Objects",
         "LayerTree": "Layers & Legend",
         "LayerTree3D": "Layers",
-        "MapExport": "Export map",
-        "MapExport3D": "Export map",
+        "MapExport": "Export Map",
+        "MapExport3D": "Export Map",
         "MapFilter": "Map Filter",
         "MapLight3D": "Light and Shadows",
         "Print": "Print",
@@ -51,7 +53,7 @@
       "menulabel": "Map & Tools"
     },
     "search": {
-      "coordinates": "Coordinates",
+      "coordinates": "",
       "all": "All",
       "circleradius": "Circle radius",
       "clearfilter": "Clear",
@@ -69,12 +71,13 @@
       "recent": "Recent searches",
       "search": "Search",
       "themelayers": "Theme layers",
-      "themes": "Themes"
+      "themes": "Themes",
+      "unknownmore": "More results"
     },
     "colorschemes": {
-      "default": "Default",
-      "dark": "Dark",
-      "highcontrast": "High contrast"
+      "default": "",
+      "dark": "",
+      "highcontrast": ""
     },
     "app": {
       "missingbg": "Unable to find the background \"{0}\", displaying the default background.",
@@ -159,6 +162,7 @@
       "cylinder": "Cylinder",
       "delete": "Delete",
       "drawings": "Drawings",
+      "intersect": "Intersect",
       "newgroupprompt": "New drawing group",
       "numericinput": "Numeric input",
       "pick": "Pick",
@@ -168,8 +172,11 @@
       "rotation": "Rotation",
       "scale": "Scale",
       "sphere": "Sphere",
+      "subtract": "Subtract",
       "thescale": "Scale",
       "translate": "Translate",
+      "undoBool": "Undo operation",
+      "union": "Union",
       "wedge": "Wedge"
     },
     "editing": {
@@ -241,6 +248,12 @@
       "print": "Print height profile",
       "title": "Height profile"
     },
+    "hideobjects3d": {
+      "clickonmap": "Click on objects to hide them...",
+      "object": "Object",
+      "restore": "Restore object",
+      "restoreall": "Restore all"
+    },
     "identify": {
       "aggregatedreport": "Aggregated report",
       "clipboard": "Copy to clipboard",
@@ -311,8 +324,12 @@
       "zoomtolayer": "Zoom to layer"
     },
     "layertree3d": {
+      "import": "Import",
+      "importobjects": "Import objects",
       "layers": "Layers",
-      "objects": "Objects"
+      "objects": "Objects",
+      "supportedformats": "Supported formats: GLTF",
+      "zoomtoobject": "Zoom to object"
     },
     "linkfeatureform": {
       "cancel": "Cancel",
@@ -377,9 +394,12 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "Ambient light intensity",
+      "animationstep": "Animation step",
       "date": "Date",
+      "dayspersec": "days / second",
       "directionalLightIntensity": "Directional light intensity",
       "helpersVisible": "Show helpers",
+      "minspersec": "mins / second",
       "normalBias": "Normal bias",
       "shadowBias": "Shadow bias",
       "shadowMapSize": "Shadowmap size",
@@ -569,7 +589,9 @@
       "QRCodeLinkTitle": "QR Code",
       "directLinkTitle": "Via a direct link",
       "expires": "This permalink is valid until {0}.",
+      "norestriction": "No restriction",
       "refresh": "Generate permalink",
+      "restricttogroup": "Restrict to group",
       "shareTitle": "QWC2",
       "showpin": "Show pin",
       "socialIntro": "In your favourite social network"
@@ -656,6 +678,24 @@
       "home": "Show entire map",
       "zoomin": "Zoom in",
       "zoomout": "Zoom out"
+    },
+    "valuetool": {
+      "all": "All",
+      "allbands": "All bands",
+      "alllayers": "All layers",
+      "bands": "Bands",
+      "graph": "Graph",
+      "layer": "Layer",
+      "nodata": "No data",
+      "options": "Options",
+      "selectedbands": "Selected bands",
+      "selectedlayers": "Selected layers",
+      "selectlayersbands": "Select layers / bands",
+      "showbands": "Show bands",
+      "showlayers": "Show layers",
+      "table": "Table",
+      "title": "Value Tool",
+      "visiblelayers": "Visible"
     },
     "vectorlayerpicker": {
       "none": "None",

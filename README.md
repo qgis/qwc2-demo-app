@@ -13,22 +13,17 @@ To build a custom application based on the QWC stock application, follow these s
 
 1. Clone this repository
 
-       git clone --recursive https://github.com/qgis/qwc2-demo-app
+       git clone https://github.com/qgis/qwc2-demo-app
 
-2. Make sure the submodule is up to date
-
-       cd qwc2
-       git pull
-
-3. Install dependencies
+2. Install dependencies
 
        yarn install
 
-5. Run the development server
+3. Run the development server
 
        yarn start
 
-6. Edit `js/appConfig.js` to include your custom components
+4. Edit `js/appConfig.js` to include your custom components
 
 See [Building a custom viewer](https://qwc-services.github.io/master/configuration/ViewerConfiguration/#building-a-custom-viewer) for further information.
 

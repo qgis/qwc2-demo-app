@@ -7,7 +7,9 @@
         "Bookmark": "Marque-pages",
         "Compare3D": "Comparer",
         "Editing": "Editer",
+        "ExportObjects3D": "Exporter objets",
         "Help": "Aide",
+        "HideObjects3D": "Cacher objets",
         "LayerTree": "Couches",
         "LayerTree3D": "Couches",
         "MapExport": "Exporter la carte",
@@ -69,7 +71,8 @@
       "recent": "Recherches récentes",
       "search": "Chercher",
       "themelayers": "Couches de thèmes",
-      "themes": "Cartes"
+      "themes": "Cartes",
+      "unknownmore": "Plus de résultats"
     },
     "colorschemes": {
       "default": "Par défaut",
@@ -159,6 +162,7 @@
       "cylinder": "Cylindre",
       "delete": "Effacer",
       "drawings": "Dessins",
+      "intersect": "Croiser",
       "newgroupprompt": "Ajouter un groupe de dessin",
       "numericinput": "Entrée numérique",
       "pick": "Choisir",
@@ -168,8 +172,11 @@
       "rotation": "Rotation",
       "scale": "Redimensionner",
       "sphere": "Sphère",
+      "subtract": "Soustraire",
       "thescale": "Echelle",
       "translate": "Déplacer",
+      "undoBool": "Annuler l'opération",
+      "union": "Unir",
       "wedge": "Coin"
     },
     "editing": {
@@ -241,6 +248,12 @@
       "print": "Imprimer le profil de hauteur",
       "title": "Profil de hauteur"
     },
+    "hideobjects3d": {
+      "clickonmap": "Cliquer sur les objets pour les cacher...",
+      "object": "Objet",
+      "restore": "Restaurer l'objet",
+      "restoreall": "Restaurer tous"
+    },
     "identify": {
       "aggregatedreport": "Rapport agrégé",
       "clipboard": "Copier dans le presse-papiers",
@@ -311,8 +324,12 @@
       "zoomtolayer": "Zoomer sur la couche"
     },
     "layertree3d": {
+      "import": "Importer",
+      "importobjects": "Importer objets",
       "layers": "Couches",
-      "objects": "Objets"
+      "objects": "Objets",
+      "supportedformats": "Formats supportés: GLTF",
+      "zoomtoobject": "Zoomer sur le objet"
     },
     "linkfeatureform": {
       "cancel": "Annuler",
@@ -377,9 +394,12 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "Intensité lumineuse ambiante",
+      "animationstep": "Pas d'animation",
       "date": "Date",
+      "dayspersec": "jours / sec",
       "directionalLightIntensity": "Intensité lumineuse directionnelle",
       "helpersVisible": "Montrer les aides",
+      "minspersec": "minutes / sec",
       "normalBias": "Bias normal",
       "shadowBias": "Bias de l'ombre",
       "shadowMapSize": "Taille texture d'ombre",
@@ -569,7 +589,9 @@
       "QRCodeLinkTitle": "QR code",
       "directLinkTitle": "Via un lien direct",
       "expires": "Ce lien permanent est valide jusqu'au {0}.",
+      "norestriction": "Aucune restriction",
       "refresh": "Générer un lien permanent",
+      "restricttogroup": "Limiter au groupe",
       "shareTitle": "QWC2",
       "showpin": "Afficher les épingles",
       "socialIntro": "Via votre réseau social favori"
@@ -656,6 +678,24 @@
       "home": "Afficher toute la carte",
       "zoomin": "Zoomer",
       "zoomout": "Dézoomer"
+    },
+    "valuetool": {
+      "all": "Tous",
+      "allbands": "Tous les bandes",
+      "alllayers": "Tous les couches",
+      "bands": "Bandes",
+      "graph": "Graphe",
+      "layer": "Couche",
+      "nodata": "Pas de données",
+      "options": "Options",
+      "selectedbands": "Bandes sélectionées",
+      "selectedlayers": "Couches sélectionées",
+      "selectlayersbands": "Selectionner couches / bandes",
+      "showbands": "Bandes",
+      "showlayers": "Couches",
+      "table": "Tableau",
+      "title": "Value Tool",
+      "visiblelayers": "Couches visibles"
     },
     "vectorlayerpicker": {
       "none": "Aucune",

@@ -7,7 +7,9 @@
         "Bookmark": "Bookmark",
         "Compare3D": "",
         "Editing": "Edição",
+        "ExportObjects3D": "",
         "Help": "Ajuda",
+        "HideObjects3D": "",
         "LayerTree": "Camadas & Legendas",
         "LayerTree3D": "",
         "MapExport": "Exportar mapa",
@@ -69,7 +71,8 @@
       "recent": "Pesquisas recentes",
       "search": "Pesquisa",
       "themelayers": "",
-      "themes": "Temas"
+      "themes": "Temas",
+      "unknownmore": ""
     },
     "colorschemes": {
       "default": "",
@@ -159,6 +162,7 @@
       "cylinder": "",
       "delete": "",
       "drawings": "",
+      "intersect": "",
       "newgroupprompt": "",
       "numericinput": "",
       "pick": "",
@@ -168,8 +172,11 @@
       "rotation": "",
       "scale": "",
       "sphere": "",
+      "subtract": "",
       "thescale": "",
       "translate": "",
+      "undoBool": "",
+      "union": "",
       "wedge": ""
     },
     "editing": {
@@ -241,6 +248,12 @@
       "print": "Imprimir",
       "title": "Título"
     },
+    "hideobjects3d": {
+      "clickonmap": "",
+      "object": "",
+      "restore": "",
+      "restoreall": ""
+    },
     "identify": {
       "aggregatedreport": "",
       "clipboard": "",
@@ -311,8 +324,12 @@
       "zoomtolayer": "Ampliar a camada"
     },
     "layertree3d": {
+      "import": "",
+      "importobjects": "",
       "layers": "",
-      "objects": ""
+      "objects": "",
+      "supportedformats": "",
+      "zoomtoobject": ""
     },
     "linkfeatureform": {
       "cancel": "Cancelar",
@@ -377,9 +394,12 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "",
+      "animationstep": "",
       "date": "",
+      "dayspersec": "",
       "directionalLightIntensity": "",
       "helpersVisible": "",
+      "minspersec": "",
       "normalBias": "",
       "shadowBias": "",
       "shadowMapSize": "",
@@ -569,7 +589,9 @@
       "QRCodeLinkTitle": "Código QR",
       "directLinkTitle": "Link direto",
       "expires": "Expira",
+      "norestriction": "",
       "refresh": "Atualizar",
+      "restricttogroup": "",
       "shareTitle": "QWC2",
       "showpin": "Mostrar pin",
       "socialIntro": "Sua rede social favorita"
@@ -656,6 +678,24 @@
       "home": "Mostrar mapa inteiro",
       "zoomin": "Mais zoom",
       "zoomout": "Reduzir o zoom"
+    },
+    "valuetool": {
+      "all": "",
+      "allbands": "",
+      "alllayers": "",
+      "bands": "",
+      "graph": "",
+      "layer": "",
+      "nodata": "",
+      "options": "",
+      "selectedbands": "",
+      "selectedlayers": "",
+      "selectlayersbands": "",
+      "showbands": "",
+      "showlayers": "",
+      "table": "",
+      "title": "",
+      "visiblelayers": ""
     },
     "vectorlayerpicker": {
       "none": "",

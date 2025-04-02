@@ -55,7 +55,7 @@ module.exports = (env, argv) => {
                     BuildDate: JSON.stringify(buildDate)
                 }
             }),
-            new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "qwc2", "libs", "openlayers")),
+            new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "node_modules", "qwc2", "libs", "openlayers")),
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, "index.html"),
                 build: buildDate,

@@ -7,7 +7,9 @@
         "Bookmark": "Lesezeichen",
         "Compare3D": "Vergleichen",
         "Editing": "Editieren",
+        "ExportObjects3D": "Objektexport",
         "Help": "Hilfe",
+        "HideObjects3D": "Objekte ausblenden",
         "LayerTree": "Ebenen und Legende",
         "LayerTree3D": "Ebenen",
         "MapExport": "Karte exportieren",
@@ -38,7 +40,7 @@
         "MeasureLineString": "Messen Linie",
         "MeasurePolygon": "Messen Polygon",
         "NewsPopup": "Aktuelles",
-        "Panoramax": "",
+        "Panoramax": "Panoramax",
         "Portal": "Portal",
         "PrintScreen3D": "Raster Export",
         "Redlining": "Zeichnen",
@@ -69,7 +71,8 @@
       "recent": "Zuletzt gesucht",
       "search": "Suchen",
       "themelayers": "Themenebenen",
-      "themes": "Themen"
+      "themes": "Themen",
+      "unknownmore": "Weitere Treffer"
     },
     "colorschemes": {
       "default": "Standard",
@@ -159,6 +162,7 @@
       "cylinder": "Zylinder",
       "delete": "Löschen",
       "drawings": "Zeichnungen",
+      "intersect": "Verschnitt",
       "newgroupprompt": "Zeichungsgruppe hinzufügen",
       "numericinput": "Numerische Eingabe",
       "pick": "Auswählen",
@@ -168,8 +172,11 @@
       "rotation": "Rotation",
       "scale": "Skalieren",
       "sphere": "Kugel",
+      "subtract": "Differenz",
       "thescale": "Skalierung",
       "translate": "Verschieben",
+      "undoBool": "Operation rückgängig machen",
+      "union": "Vereinigung",
       "wedge": "Kegel"
     },
     "editing": {
@@ -241,6 +248,12 @@
       "print": "Höhenprofil drucken",
       "title": "Höhenprofil"
     },
+    "hideobjects3d": {
+      "clickonmap": "Objekte anclicken um sie auszublenden...",
+      "object": "Objekt",
+      "restore": "Objekt wiederherstellen",
+      "restoreall": "Alle wiederherstellen"
+    },
     "identify": {
       "aggregatedreport": "Aggregierter Bericht",
       "clipboard": "Nach Zwischenablage kopieren",
@@ -273,7 +286,7 @@
       "noresults": "Keine Resultate oder ungültige URL",
       "notgeopdf": "Die ausgewählte Datei scheint kein GeoPDF zu sein.",
       "shpreprojectionerror": "Die Shapefile-Geometrie konnte nicht umprojiziert werden und ist möglicherweise nicht richtig platziert.",
-      "supportedformats": "Unterstützte Formate",
+      "supportedformats": "Unterstützte Formate: KML, GeoJSON, GeoPDF, SHP (in zip)",
       "unknownproj": "Das ausgewählte GeoPDF verwendet eine unbekannte Projektion: {0}.",
       "url": "URL",
       "urlplaceholder": "WMS, WMTS oder WFS URL eingeben..."
@@ -311,8 +324,12 @@
       "zoomtolayer": "Auf den Layer zoomen"
     },
     "layertree3d": {
+      "import": "Importieren",
+      "importobjects": "Objekte importieren",
       "layers": "Ebenen",
-      "objects": "Objekte"
+      "objects": "Objekte",
+      "supportedformats": "Unterstützte Formate: GLTF",
+      "zoomtoobject": "Auf Objekt zoomen"
     },
     "linkfeatureform": {
       "cancel": "Abbrechen",
@@ -377,9 +394,12 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "Intensität Umgebungslichts",
+      "animationstep": "Animationsschritt",
       "date": "Datum",
+      "dayspersec": "Tage / Sek",
       "directionalLightIntensity": "Intensität gerichtetes Licht",
       "helpersVisible": "Hilfen anzeigen",
+      "minspersec": "Min / Sek",
       "normalBias": "Normal-Verzerrung",
       "shadowBias": "Schatten-Verzerrung",
       "shadowMapSize": "Größe der Schattentextur",
@@ -423,8 +443,8 @@
       "windowtitle": "Numerische Eingabe"
     },
     "panoramax": {
-      "notfound": "",
-      "title": ""
+      "notfound": "An diesem Ort ist kein Bild verfügbar.",
+      "title": "Panoramax Viewer"
     },
     "pickfeature": {
       "querying": "Abfragen..."
@@ -569,7 +589,9 @@
       "QRCodeLinkTitle": "QR Code (Smartphone)",
       "directLinkTitle": "Über einen direkten Link",
       "expires": "Dieser Permalink ist bis am {0} gültig.",
+      "norestriction": "Keine Einschränkung",
       "refresh": "Permalink generieren",
+      "restricttogroup": "Auf Gruppe einschränken",
       "shareTitle": "QWC2",
       "showpin": "Pin anzeigen",
       "socialIntro": "In den sozialen Medien"
@@ -656,6 +678,24 @@
       "home": "Ganze Karte anzeigen",
       "zoomin": "Hineinzoomen",
       "zoomout": "Hinauszoomen"
+    },
+    "valuetool": {
+      "all": "Alle",
+      "allbands": "Alle Bänder",
+      "alllayers": "Alle Ebenen",
+      "bands": "Bänder",
+      "graph": "Graph",
+      "layer": "Ebene",
+      "nodata": "Keine Daten",
+      "options": "Optionen",
+      "selectedbands": "Selektierte Bänder",
+      "selectedlayers": "Selektierte Ebenen",
+      "selectlayersbands": "Ebenen / Bänder auswählen",
+      "showbands": "Bänder",
+      "showlayers": "Ebenen",
+      "table": "Tabelle",
+      "title": "Value Tool",
+      "visiblelayers": "Sichtbare Ebenen"
     },
     "vectorlayerpicker": {
       "none": "Keine",

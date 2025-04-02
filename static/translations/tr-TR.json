@@ -7,7 +7,9 @@
         "Bookmark": "Yer işaretleri",
         "Compare3D": "Karşılaştır",
         "Editing": "Düzenleme",
+        "ExportObjects3D": "",
         "Help": "Yardım",
+        "HideObjects3D": "",
         "LayerTree": "Katmanlar & Gösterim",
         "LayerTree3D": "Katmanlar",
         "MapExport": "Dışarıya ver",
@@ -69,7 +71,8 @@
       "recent": "Son aramalar",
       "search": "Ara",
       "themelayers": "Tema katmanları",
-      "themes": "Temalar"
+      "themes": "Temalar",
+      "unknownmore": ""
     },
     "colorschemes": {
       "default": "",
@@ -159,6 +162,7 @@
       "cylinder": "Silindir",
       "delete": "Sil",
       "drawings": "Çizimler",
+      "intersect": "",
       "newgroupprompt": "Yeni çizim grubu",
       "numericinput": "Sayısal giriş",
       "pick": "Seç",
@@ -168,8 +172,11 @@
       "rotation": "Dönüklük",
       "scale": "Ölçek",
       "sphere": "Küre",
+      "subtract": "",
       "thescale": "Ölçek",
       "translate": "Çevir",
+      "undoBool": "",
+      "union": "",
       "wedge": "Kama"
     },
     "editing": {
@@ -241,6 +248,12 @@
       "print": "Yükseklik profili yazdır",
       "title": "Yükseklik profili"
     },
+    "hideobjects3d": {
+      "clickonmap": "",
+      "object": "",
+      "restore": "",
+      "restoreall": ""
+    },
     "identify": {
       "aggregatedreport": "Toplu rapor",
       "clipboard": "Panoya kopyala",
@@ -311,8 +324,12 @@
       "zoomtolayer": "Katman sınırlarına yaklaş"
     },
     "layertree3d": {
+      "import": "",
+      "importobjects": "",
       "layers": "Katmanlar",
-      "objects": "Objeler"
+      "objects": "Objeler",
+      "supportedformats": "",
+      "zoomtoobject": ""
     },
     "linkfeatureform": {
       "cancel": "İptal",
@@ -377,9 +394,12 @@
     },
     "maplight3d": {
       "ambientLightIntensity": "",
+      "animationstep": "",
       "date": "",
+      "dayspersec": "",
       "directionalLightIntensity": "",
       "helpersVisible": "",
+      "minspersec": "",
       "normalBias": "",
       "shadowBias": "",
       "shadowMapSize": "",
@@ -569,7 +589,9 @@
       "QRCodeLinkTitle": "Karekod",
       "directLinkTitle": "Doğrudan bağlantı yolu ile",
       "expires": "Bu bağlantı {0} zamanına kadar geçerlidir",
+      "norestriction": "",
       "refresh": "Bağlantı oluştur",
+      "restricttogroup": "",
       "shareTitle": "QWC2",
       "showpin": "Pini göster",
       "socialIntro": "Favori sosyal ağınıza"
@@ -656,6 +678,24 @@
       "home": "Haritanın tamamını göster",
       "zoomin": "Yaklaş",
       "zoomout": "Uzaklaş"
+    },
+    "valuetool": {
+      "all": "",
+      "allbands": "",
+      "alllayers": "",
+      "bands": "",
+      "graph": "",
+      "layer": "",
+      "nodata": "",
+      "options": "",
+      "selectedbands": "",
+      "selectedlayers": "",
+      "selectlayersbands": "",
+      "showbands": "",
+      "showlayers": "",
+      "table": "",
+      "title": "",
+      "visiblelayers": ""
     },
     "vectorlayerpicker": {
       "none": "Yok",
