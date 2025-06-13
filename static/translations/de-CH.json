@@ -46,6 +46,7 @@
         "Redlining": "Zeichnen",
         "Routing": "Routing",
         "Tools": "Werkzeuge",
+        "TourGuide": "",
         "TimeManager": "Zeitleiste",
         "View3D": "3D Ansicht"
       },
@@ -157,12 +158,15 @@
       "title": "Cyclomedia Viewer"
     },
     "draw3d": {
+      "clone": "Kopieren",
       "cone": "Kegel",
+      "ctrlhint": "Mehrfachselektion mit Ctrl...",
       "cuboid": "Quader",
       "cylinder": "Zylinder",
       "delete": "Löschen",
       "drawings": "Zeichnungen",
       "intersect": "Verschnitt",
+      "label": "Beschriftung",
       "newgroupprompt": "Zeichungsgruppe hinzufügen",
       "numericinput": "Numerische Eingabe",
       "pick": "Auswählen",
@@ -192,7 +196,8 @@
       "discard": "Abbrechen",
       "draw": "Zeichnen",
       "feature": "Objekt",
-      "geomreadonly": "Die Geometrie enthält Z-Werte ungleich Null und kann daher nicht veränderbar.",
+      "geomnonzeroz": "Die Geometrie enthält Z-Werte ungleich Null und ist daher nicht veränderbar.",
+      "geomreadonly": "Die Geometrie ist nicht veränderbar.",
       "invalidform": "Formular ungültig",
       "maximize": "Maximieren",
       "minimize": "Minimieren",
@@ -267,7 +272,7 @@
       "noresults": "Keine Resultate an der ausgewählten Position",
       "querying": "Objekte werden abgefragt...",
       "reportfail": "Bericht konnt nicht erstellt werden",
-      "selectlayer": "Ebene auswählen",
+      "selectreport": "Bericht auswählen...",
       "title": "Objektinformationen"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "Oberste Ebene vergleichen",
       "deletealllayers": "Alle Ebenen entfernen",
+      "hidealllayers": "Alle Ebenen ausblenden",
       "importlayer": "Ebene importieren",
       "maptip": "Kartentipps anzeigen",
       "printlegend": "Legende drucken",
@@ -324,6 +330,7 @@
       "zoomtolayer": "Auf den Layer zoomen"
     },
     "layertree3d": {
+      "customheight": "Wert",
       "import": "Importieren",
       "importobjects": "Objekte importieren",
       "layers": "Ebenen",
@@ -354,7 +361,8 @@
       "resetrotation": "Drehung zurücksetzen"
     },
     "map3d": {
-      "syncview": "Ansicht synchronisieren",
+      "lockview": "Mit 2D Ansicht verschieben",
+      "syncview": "Mit 2D Ansicht synchronisieren",
       "terrain": "Gelände",
       "title": "3D Ansicht"
     },
@@ -417,6 +425,7 @@
       "areaLabel": "Fläche",
       "bearingLabel": "Richtung",
       "ground": "m ü.B.",
+      "heightDiffLabel": "Höhenunterschied",
       "imperial": "Imperial",
       "lengthLabel": "Länge",
       "metric": "Metrisch",
@@ -451,7 +460,7 @@
     },
     "portal": {
       "filter": "Themen filtern...",
-      "menulabel": "Menu"
+      "menulabel": "Menü"
     },
     "print": {
       "atlasfeature": "Atlasobjekt",
@@ -679,6 +688,11 @@
       "zoomin": "Hineinzoomen",
       "zoomout": "Hinauszoomen"
     },
+    "tourguide": {
+      "done": "",
+      "next": "",
+      "previous": ""
+    },
     "valuetool": {
       "all": "Alle",
       "allbands": "Alle Bänder",
@@ -695,7 +709,9 @@
       "showlayers": "Ebenen",
       "table": "Tabelle",
       "title": "Value Tool",
-      "visiblelayers": "Sichtbare Ebenen"
+      "visiblelayers": "Sichtbare Ebenen",
+      "ymax": "Min Y",
+      "ymin": "Max Y"
     },
     "vectorlayerpicker": {
       "none": "Keine",

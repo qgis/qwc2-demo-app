@@ -46,6 +46,7 @@
         "Redlining": "Rita",
         "Routing": "",
         "Tools": "Kartverktyg",
+        "TourGuide": "",
         "TimeManager": "",
         "View3D": ""
       },
@@ -53,7 +54,7 @@
       "menulabel": "Karta & Verktyg"
     },
     "search": {
-      "coordinates": "Koordinater",
+      "coordinates": "",
       "all": "",
       "circleradius": "",
       "clearfilter": "",
@@ -157,12 +158,15 @@
       "title": ""
     },
     "draw3d": {
+      "clone": "",
       "cone": "",
+      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
       "drawings": "",
       "intersect": "",
+      "label": "",
       "newgroupprompt": "",
       "numericinput": "",
       "pick": "",
@@ -192,6 +196,7 @@
       "discard": "Förkasta",
       "draw": "Rita",
       "feature": "Objekt",
+      "geomnonzeroz": "",
       "geomreadonly": "",
       "invalidform": "",
       "maximize": "Maximera",
@@ -267,7 +272,7 @@
       "noresults": "Ingen information för vald punkt",
       "querying": "Frågar...",
       "reportfail": "",
-      "selectlayer": "",
+      "selectreport": "",
       "title": "Objektinformation"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "Jämför översta lagret",
       "deletealllayers": "Ta bort alla lager",
+      "hidealllayers": "",
       "importlayer": "Importera lager",
       "maptip": "Visa karttips för lager",
       "printlegend": "Skriv ut teckenförklaring",
@@ -324,6 +330,7 @@
       "zoomtolayer": ""
     },
     "layertree3d": {
+      "customheight": "",
       "import": "",
       "importobjects": "",
       "layers": "",
@@ -354,6 +361,7 @@
       "resetrotation": ""
     },
     "map3d": {
+      "lockview": "",
       "syncview": "",
       "terrain": "",
       "title": ""
@@ -417,6 +425,7 @@
       "areaLabel": "Area",
       "bearingLabel": "Bäring",
       "ground": "",
+      "heightDiffLabel": "",
       "imperial": "",
       "lengthLabel": "Längd",
       "metric": "",
@@ -679,6 +688,11 @@
       "zoomin": "Zooma in",
       "zoomout": "Zooma ut"
     },
+    "tourguide": {
+      "done": "",
+      "next": "",
+      "previous": ""
+    },
     "valuetool": {
       "all": "",
       "allbands": "",
@@ -695,7 +709,9 @@
       "showlayers": "",
       "table": "",
       "title": "",
-      "visiblelayers": ""
+      "visiblelayers": "",
+      "ymax": "",
+      "ymin": ""
     },
     "vectorlayerpicker": {
       "none": "",

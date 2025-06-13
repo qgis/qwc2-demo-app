@@ -46,6 +46,7 @@
         "Redlining": "Redlining",
         "Routing": "Routing",
         "Tools": "Map Tools",
+        "TourGuide": "Tour Guide",
         "TimeManager": "Time Manager",
         "View3D": "3D View"
       },
@@ -53,7 +54,7 @@
       "menulabel": "Map & Tools"
     },
     "search": {
-      "coordinates": "",
+      "coordinates": "Coordinates",
       "all": "All",
       "circleradius": "Circle radius",
       "clearfilter": "Clear",
@@ -75,9 +76,9 @@
       "unknownmore": "More results"
     },
     "colorschemes": {
-      "default": "",
-      "dark": "",
-      "highcontrast": ""
+      "default": "Default",
+      "dark": "Dark",
+      "highcontrast": "High contrast"
     },
     "app": {
       "missingbg": "Unable to find the background \"{0}\", displaying the default background.",
@@ -157,12 +158,15 @@
       "title": "Cyclomedia Viewer"
     },
     "draw3d": {
+      "clone": "Clone",
       "cone": "Cone",
+      "ctrlhint": "Use Ctrl for multiselection...",
       "cuboid": "Cuboid",
       "cylinder": "Cylinder",
       "delete": "Delete",
       "drawings": "Drawings",
       "intersect": "Intersect",
+      "label": "Label",
       "newgroupprompt": "New drawing group",
       "numericinput": "Numeric input",
       "pick": "Pick",
@@ -192,7 +196,8 @@
       "discard": "Discard",
       "draw": "Draw",
       "feature": "Feature",
-      "geomreadonly": "The geometry contains non-zero Z values and is therefore read only.",
+      "geomnonzeroz": "The geometry contains non-zero Z values and is therefore read only.",
+      "geomreadonly": "The geometry is read only.",
       "invalidform": "Invalid form",
       "maximize": "Maximize",
       "minimize": "Minimize",
@@ -267,7 +272,7 @@
       "noresults": "No information available for the selected point",
       "querying": "Querying...",
       "reportfail": "Failed to generate report",
-      "selectlayer": "Select layer...",
+      "selectreport": "Select report..",
       "title": "Feature Info"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "Compare top layer",
       "deletealllayers": "Remove all layers",
+      "hidealllayers": "Hide all layers",
       "importlayer": "Import layer",
       "maptip": "Show layer map tips",
       "printlegend": "Print legend",
@@ -324,6 +330,7 @@
       "zoomtolayer": "Zoom to layer"
     },
     "layertree3d": {
+      "customheight": "Value",
       "import": "Import",
       "importobjects": "Import objects",
       "layers": "Layers",
@@ -354,7 +361,8 @@
       "resetrotation": "Reset rotation"
     },
     "map3d": {
-      "syncview": "Synchronize view",
+      "lockview": "Move with 2D view",
+      "syncview": "Synchronize with 2D view",
       "terrain": "Terrain",
       "title": "3D View"
     },
@@ -417,6 +425,7 @@
       "areaLabel": "Area",
       "bearingLabel": "Bearing",
       "ground": "m AGL",
+      "heightDiffLabel": "Height diff.",
       "imperial": "Imperial",
       "lengthLabel": "Length",
       "metric": "Metric",
@@ -679,6 +688,11 @@
       "zoomin": "Zoom in",
       "zoomout": "Zoom out"
     },
+    "tourguide": {
+      "done": "Done",
+      "next": "Next",
+      "previous": "Previous"
+    },
     "valuetool": {
       "all": "All",
       "allbands": "All bands",
@@ -695,7 +709,9 @@
       "showlayers": "Show layers",
       "table": "Table",
       "title": "Value Tool",
-      "visiblelayers": "Visible"
+      "visiblelayers": "Visible",
+      "ymax": "Max Y",
+      "ymin": "Min Y"
     },
     "vectorlayerpicker": {
       "none": "None",

@@ -46,6 +46,7 @@
         "Redlining": "Marcação",
         "Routing": "Roteamento",
         "Tools": "Ferramentas do Mapa",
+        "TourGuide": "",
         "TimeManager": "Gestor de Tempo",
         "View3D": ""
       },
@@ -157,12 +158,15 @@
       "title": "Cyclomedia"
     },
     "draw3d": {
+      "clone": "",
       "cone": "",
+      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
       "drawings": "",
       "intersect": "",
+      "label": "",
       "newgroupprompt": "",
       "numericinput": "",
       "pick": "",
@@ -192,7 +196,8 @@
       "discard": "Descartar",
       "draw": "Desenhar",
       "feature": "Recurso",
-      "geomreadonly": "Geometria Apenas para Leitura",
+      "geomnonzeroz": "Geometria Apenas para Leitura",
+      "geomreadonly": "",
       "invalidform": "Formulário Inválido",
       "maximize": "Maximizar",
       "minimize": "Minimizar",
@@ -267,7 +272,7 @@
       "noresults": "Nenhuma informação disponível para o ponto selecionado",
       "querying": "A consultar...",
       "reportfail": "",
-      "selectlayer": "",
+      "selectreport": "",
       "title": "Informações do Recurso"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "Comparar com a Camada Superior",
       "deletealllayers": "Remover Todas as Camadas",
+      "hidealllayers": "",
       "importlayer": "Importar Camada",
       "maptip": "Mostrar Dicas de Mapa das Camadas",
       "printlegend": "Legenda de Impressão",
@@ -324,6 +330,7 @@
       "zoomtolayer": "Zoom para a Camada"
     },
     "layertree3d": {
+      "customheight": "",
       "import": "",
       "importobjects": "",
       "layers": "",
@@ -354,6 +361,7 @@
       "resetrotation": "Redefinir Rotação"
     },
     "map3d": {
+      "lockview": "",
       "syncview": "",
       "terrain": "",
       "title": ""
@@ -417,6 +425,7 @@
       "areaLabel": "Área",
       "bearingLabel": "Direção",
       "ground": "",
+      "heightDiffLabel": "",
       "imperial": "Imperial",
       "lengthLabel": "Comprimento",
       "metric": "Métrico",
@@ -679,6 +688,11 @@
       "zoomin": "Aumentar Zoom",
       "zoomout": "Diminuir Zoom"
     },
+    "tourguide": {
+      "done": "",
+      "next": "",
+      "previous": ""
+    },
     "valuetool": {
       "all": "",
       "allbands": "",
@@ -695,7 +709,9 @@
       "showlayers": "",
       "table": "",
       "title": "",
-      "visiblelayers": ""
+      "visiblelayers": "",
+      "ymax": "",
+      "ymin": ""
     },
     "vectorlayerpicker": {
       "none": "Nenhum",

@@ -46,6 +46,7 @@
         "Redlining": "Připomínkování",
         "Routing": "Trasy",
         "Tools": "Nástroje mapy",
+        "TourGuide": "",
         "TimeManager": "",
         "View3D": ""
       },
@@ -157,12 +158,15 @@
       "title": "Cyclomedia"
     },
     "draw3d": {
+      "clone": "",
       "cone": "",
+      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
       "drawings": "",
       "intersect": "",
+      "label": "",
       "newgroupprompt": "",
       "numericinput": "",
       "pick": "",
@@ -192,6 +196,7 @@
       "discard": "Vyřadit",
       "draw": "Kreslit",
       "feature": "Prvek",
+      "geomnonzeroz": "",
       "geomreadonly": "",
       "invalidform": "",
       "maximize": "Maximální",
@@ -267,7 +272,7 @@
       "noresults": "V tomto bodu nejsou k dispozici informace o žádném prvku",
       "querying": "Dotazování...",
       "reportfail": "",
-      "selectlayer": "",
+      "selectreport": "",
       "title": "Informace o prvku"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "Porovnat vrchní vrstvy",
       "deletealllayers": "Odstranit všechny vrstvy",
+      "hidealllayers": "",
       "importlayer": "Importovat vrstvu",
       "maptip": "Zobrazovat bubliny nad mapou",
       "printlegend": "Tisk legendy",
@@ -324,6 +330,7 @@
       "zoomtolayer": "Vycentrovat na vrstvu"
     },
     "layertree3d": {
+      "customheight": "",
       "import": "",
       "importobjects": "",
       "layers": "",
@@ -354,6 +361,7 @@
       "resetrotation": "Obnovit orientaci mapy"
     },
     "map3d": {
+      "lockview": "",
       "syncview": "",
       "terrain": "",
       "title": ""
@@ -417,6 +425,7 @@
       "areaLabel": "Plocha",
       "bearingLabel": "Střed",
       "ground": "",
+      "heightDiffLabel": "",
       "imperial": "Imperiálně",
       "lengthLabel": "Délka",
       "metric": "Metricky",
@@ -679,6 +688,11 @@
       "zoomin": "Přiblížit",
       "zoomout": "Oddálit"
     },
+    "tourguide": {
+      "done": "",
+      "next": "",
+      "previous": ""
+    },
     "valuetool": {
       "all": "",
       "allbands": "",
@@ -695,7 +709,9 @@
       "showlayers": "",
       "table": "",
       "title": "",
-      "visiblelayers": ""
+      "visiblelayers": "",
+      "ymax": "",
+      "ymin": ""
     },
     "vectorlayerpicker": {
       "none": "Žádná",

@@ -46,6 +46,7 @@
         "Redlining": "Linha de demarcação",
         "Routing": "Roteamento",
         "Tools": "Ferramentas de mapa",
+        "TourGuide": "",
         "TimeManager": "Gerenciador de tempo",
         "View3D": ""
       },
@@ -157,12 +158,15 @@
       "title": "Titulo"
     },
     "draw3d": {
+      "clone": "",
       "cone": "",
+      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
       "drawings": "",
       "intersect": "",
+      "label": "",
       "newgroupprompt": "",
       "numericinput": "",
       "pick": "",
@@ -192,7 +196,8 @@
       "discard": "Descartar",
       "draw": "Desenhar",
       "feature": "Feição",
-      "geomreadonly": "Geometria somente de leitura",
+      "geomnonzeroz": "Geometria somente de leitura",
+      "geomreadonly": "",
       "invalidform": "Formulário inválido",
       "maximize": "Maximizar",
       "minimize": "Minimizar",
@@ -267,7 +272,7 @@
       "noresults": "Nenhuma informação disponível para o ponto selecionado",
       "querying": "Consultando...",
       "reportfail": "",
-      "selectlayer": "",
+      "selectreport": "",
       "title": "Informação do recurso"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "Compare a camada superior",
       "deletealllayers": "Remover todas as camadas",
+      "hidealllayers": "",
       "importlayer": "Camada de importação",
       "maptip": "Mostrar dicas de mapa de camadas",
       "printlegend": "Legenda da impressão",
@@ -324,6 +330,7 @@
       "zoomtolayer": "Ampliar a camada"
     },
     "layertree3d": {
+      "customheight": "",
       "import": "",
       "importobjects": "",
       "layers": "",
@@ -354,6 +361,7 @@
       "resetrotation": "Redefinir rotação"
     },
     "map3d": {
+      "lockview": "",
       "syncview": "",
       "terrain": "",
       "title": ""
@@ -417,6 +425,7 @@
       "areaLabel": "Área",
       "bearingLabel": "Direção",
       "ground": "",
+      "heightDiffLabel": "",
       "imperial": "Imperial",
       "lengthLabel": "Distância",
       "metric": "Métrica",
@@ -679,6 +688,11 @@
       "zoomin": "Mais zoom",
       "zoomout": "Reduzir o zoom"
     },
+    "tourguide": {
+      "done": "",
+      "next": "",
+      "previous": ""
+    },
     "valuetool": {
       "all": "",
       "allbands": "",
@@ -695,7 +709,9 @@
       "showlayers": "",
       "table": "",
       "title": "",
-      "visiblelayers": ""
+      "visiblelayers": "",
+      "ymax": "",
+      "ymin": ""
     },
     "vectorlayerpicker": {
       "none": "",

@@ -46,6 +46,7 @@
         "Redlining": "Evidențiere",
         "Routing": "Traseu",
         "Tools": "Unelte hartă",
+        "TourGuide": "",
         "TimeManager": "Informații temporale",
         "View3D": ""
       },
@@ -53,7 +54,7 @@
       "menulabel": "Hărți & Unelte"
     },
     "search": {
-      "coordinates": "Coordonate",
+      "coordinates": "",
       "all": "Toate",
       "circleradius": "",
       "clearfilter": "",
@@ -157,12 +158,15 @@
       "title": "Informații Cyclomedia"
     },
     "draw3d": {
+      "clone": "",
       "cone": "",
+      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
       "drawings": "",
       "intersect": "",
+      "label": "",
       "newgroupprompt": "",
       "numericinput": "",
       "pick": "",
@@ -192,7 +196,8 @@
       "discard": "Renunță",
       "draw": "Desenare",
       "feature": "Obiect spațial",
-      "geomreadonly": "Geometria include valori Z și, prin urmare, nu poate fi editată",
+      "geomnonzeroz": "Geometria include valori Z și, prin urmare, nu poate fi editată",
+      "geomreadonly": "",
       "invalidform": "Date invalide în formular",
       "maximize": "Maximizează",
       "minimize": "Minimizează",
@@ -267,7 +272,7 @@
       "noresults": "Nu există informații în punctul selectat",
       "querying": "Interogare...",
       "reportfail": "",
-      "selectlayer": "",
+      "selectreport": "",
       "title": "Informații obiect spațial"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "Compară stratul de sus",
       "deletealllayers": "Elimină toate straturile",
+      "hidealllayers": "",
       "importlayer": "Import strat",
       "maptip": "Arată indicii hartă",
       "printlegend": "Tipărește legenda",
@@ -324,6 +330,7 @@
       "zoomtolayer": "Vedeți tot stratul"
     },
     "layertree3d": {
+      "customheight": "",
       "import": "",
       "importobjects": "",
       "layers": "",
@@ -354,6 +361,7 @@
       "resetrotation": "Resetează rotația"
     },
     "map3d": {
+      "lockview": "",
       "syncview": "",
       "terrain": "",
       "title": ""
@@ -417,6 +425,7 @@
       "areaLabel": "Arie",
       "bearingLabel": "Direcție",
       "ground": "",
+      "heightDiffLabel": "",
       "imperial": "Mărimi imperiale",
       "lengthLabel": "Lungime",
       "metric": "Mărimi metrice",
@@ -679,6 +688,11 @@
       "zoomin": "Mărire",
       "zoomout": "Micșorare"
     },
+    "tourguide": {
+      "done": "",
+      "next": "",
+      "previous": ""
+    },
     "valuetool": {
       "all": "",
       "allbands": "",
@@ -695,7 +709,9 @@
       "showlayers": "",
       "table": "",
       "title": "",
-      "visiblelayers": ""
+      "visiblelayers": "",
+      "ymax": "",
+      "ymin": ""
     },
     "vectorlayerpicker": {
       "none": "Niciunul",

@@ -46,6 +46,7 @@
         "Redlining": "スケッチ",
         "Routing": "ルート探索",
         "Tools": "地図ツール",
+        "TourGuide": "",
         "TimeManager": "タイム・マネージャ",
         "View3D": "3D 表示"
       },
@@ -157,12 +158,15 @@
       "title": "Cyclomedia ビューワ"
     },
     "draw3d": {
+      "clone": "",
       "cone": "円錐",
+      "ctrlhint": "",
       "cuboid": "直方体",
       "cylinder": "円柱",
       "delete": "削除",
       "drawings": "作図",
       "intersect": "交差",
+      "label": "",
       "newgroupprompt": "新しい作図グループ",
       "numericinput": "数値入力",
       "pick": "選択",
@@ -192,7 +196,8 @@
       "discard": "中止",
       "draw": "作図",
       "feature": "地物",
-      "geomreadonly": "ジオメトリが 0 でない Z 値を含んでいるため、リード・オンリーです。",
+      "geomnonzeroz": "ジオメトリが 0 でない Z 値を含んでいるため、リード・オンリーです。",
+      "geomreadonly": "",
       "invalidform": "無効なフォーム",
       "maximize": "最大化",
       "minimize": "最小化",
@@ -267,7 +272,7 @@
       "noresults": "選択された点には情報がありません",
       "querying": "検索中...",
       "reportfail": "レポートを生成することが出来ませんでした",
-      "selectlayer": "レイヤを選択...",
+      "selectreport": "",
       "title": "地物情報"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "トップ・レイヤを比較",
       "deletealllayers": "全てのレイヤを削除",
+      "hidealllayers": "",
       "importlayer": "レイヤをインポート",
       "maptip": "レイヤのマップ・チップを表示",
       "printlegend": "凡例を印刷",
@@ -324,6 +330,7 @@
       "zoomtolayer": "レイヤにズーム"
     },
     "layertree3d": {
+      "customheight": "",
       "import": "インポート",
       "importobjects": "オブジェクトをインポート",
       "layers": "レイヤ",
@@ -354,6 +361,7 @@
       "resetrotation": "回転をリセット"
     },
     "map3d": {
+      "lockview": "",
       "syncview": "ビューを同期",
       "terrain": "地形",
       "title": "3D ビュー"
@@ -417,6 +425,7 @@
       "areaLabel": "領域",
       "bearingLabel": "方角",
       "ground": "m (地上高)",
+      "heightDiffLabel": "",
       "imperial": "ヤード・ポンド法",
       "lengthLabel": "長さ",
       "metric": "メートル法",
@@ -679,6 +688,11 @@
       "zoomin": "ズーム・イン",
       "zoomout": "ズーム・アウト"
     },
+    "tourguide": {
+      "done": "",
+      "next": "",
+      "previous": ""
+    },
     "valuetool": {
       "all": "",
       "allbands": "",
@@ -695,7 +709,9 @@
       "showlayers": "",
       "table": "",
       "title": "",
-      "visiblelayers": ""
+      "visiblelayers": "",
+      "ymax": "",
+      "ymin": ""
     },
     "vectorlayerpicker": {
       "none": "無し",

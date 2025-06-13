@@ -1,13 +1,13 @@
 {
     "name": "qwc2-demo-app",
-    "version": "2025.04.03",
+    "version": "2025.06.13",
     "description": "Demo application based on QGIS Web Client",
     "author": "Sourcepole",
     "license": "BSD-2-Clause",
     "repository": "git@github.com:sourcepole/qwc2-demo-app.git",
     "private": true,
     "dependencies": {
-        "qwc2": "2025.4.3"
+        "qwc2": "2025.6.13"
     },
     "devDependencies": {
         "@babel/core": "^7.26.0",

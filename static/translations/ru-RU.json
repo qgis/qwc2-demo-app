@@ -46,6 +46,7 @@
         "Redlining": "Обводка",
         "Routing": "",
         "Tools": "Средства картографии",
+        "TourGuide": "",
         "TimeManager": "",
         "View3D": ""
       },
@@ -157,12 +158,15 @@
       "title": ""
     },
     "draw3d": {
+      "clone": "",
       "cone": "",
+      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
       "drawings": "",
       "intersect": "",
+      "label": "",
       "newgroupprompt": "",
       "numericinput": "",
       "pick": "",
@@ -192,6 +196,7 @@
       "discard": "Отменить изменения",
       "draw": "Нарисовать",
       "feature": "",
+      "geomnonzeroz": "",
       "geomreadonly": "",
       "invalidform": "",
       "maximize": "Развернуть",
@@ -267,7 +272,7 @@
       "noresults": "Для выбранной точки нет доступной информации",
       "querying": "Выполняется запрос...",
       "reportfail": "",
-      "selectlayer": "",
+      "selectreport": "",
       "title": "Информация об объекте"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "Сравнить верхний слой",
       "deletealllayers": "",
+      "hidealllayers": "",
       "importlayer": "Импортировать слой",
       "maptip": "Показывать подписи",
       "printlegend": "Распечатать легенду",
@@ -324,6 +330,7 @@
       "zoomtolayer": ""
     },
     "layertree3d": {
+      "customheight": "",
       "import": "",
       "importobjects": "",
       "layers": "",
@@ -354,6 +361,7 @@
       "resetrotation": ""
     },
     "map3d": {
+      "lockview": "",
       "syncview": "",
       "terrain": "",
       "title": ""
@@ -417,6 +425,7 @@
       "areaLabel": "Площадь",
       "bearingLabel": "Пеленг",
       "ground": "",
+      "heightDiffLabel": "",
       "imperial": "",
       "lengthLabel": "Длина",
       "metric": "",
@@ -679,6 +688,11 @@
       "zoomin": "Увеличить",
       "zoomout": "Уменьшить"
     },
+    "tourguide": {
+      "done": "",
+      "next": "",
+      "previous": ""
+    },
     "valuetool": {
       "all": "",
       "allbands": "",
@@ -695,7 +709,9 @@
       "showlayers": "",
       "table": "",
       "title": "",
-      "visiblelayers": ""
+      "visiblelayers": "",
+      "ymax": "",
+      "ymin": ""
     },
     "vectorlayerpicker": {
       "none": "",

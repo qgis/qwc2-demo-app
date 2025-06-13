@@ -46,6 +46,7 @@
         "Redlining": "Redlining",
         "Routing": "",
         "Tools": "Narzędzia Mapy",
+        "TourGuide": "",
         "TimeManager": "",
         "View3D": ""
       },
@@ -157,12 +158,15 @@
       "title": ""
     },
     "draw3d": {
+      "clone": "",
       "cone": "",
+      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
       "drawings": "",
       "intersect": "",
+      "label": "",
       "newgroupprompt": "",
       "numericinput": "",
       "pick": "",
@@ -192,6 +196,7 @@
       "discard": "Odrzuć",
       "draw": "Rysuj",
       "feature": "",
+      "geomnonzeroz": "",
       "geomreadonly": "",
       "invalidform": "",
       "maximize": "Maksymalizuj",
@@ -267,7 +272,7 @@
       "noresults": "Brak dostępnych danych dla wybranego punktu",
       "querying": "Przetwarzam zapytanie...",
       "reportfail": "",
-      "selectlayer": "",
+      "selectreport": "",
       "title": "Feature Info"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "Porównaj najwyższą warstwę",
       "deletealllayers": "Usuń wszystkie warstwy",
+      "hidealllayers": "",
       "importlayer": "Importuj warstwę",
       "maptip": "Pokaż wskazówki dla warstwy",
       "printlegend": "Drukuj legendę",
@@ -324,6 +330,7 @@
       "zoomtolayer": ""
     },
     "layertree3d": {
+      "customheight": "",
       "import": "",
       "importobjects": "",
       "layers": "",
@@ -354,6 +361,7 @@
       "resetrotation": ""
     },
     "map3d": {
+      "lockview": "",
       "syncview": "",
       "terrain": "",
       "title": ""
@@ -417,6 +425,7 @@
       "areaLabel": "Obszar",
       "bearingLabel": "Bearing",
       "ground": "",
+      "heightDiffLabel": "",
       "imperial": "",
       "lengthLabel": "Odległość",
       "metric": "",
@@ -679,6 +688,11 @@
       "zoomin": "Przybliż",
       "zoomout": "Oddal"
     },
+    "tourguide": {
+      "done": "",
+      "next": "",
+      "previous": ""
+    },
     "valuetool": {
       "all": "",
       "allbands": "",
@@ -695,7 +709,9 @@
       "showlayers": "",
       "table": "",
       "title": "",
-      "visiblelayers": ""
+      "visiblelayers": "",
+      "ymax": "",
+      "ymin": ""
     },
     "vectorlayerpicker": {
       "none": "",

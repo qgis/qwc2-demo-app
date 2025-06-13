@@ -46,6 +46,7 @@
         "Redlining": "Strumenti di disegno",
         "Routing": "Routing",
         "Tools": "Strumenti",
+        "TourGuide": "",
         "TimeManager": "Linea temporale",
         "View3D": "Vista 3D"
       },
@@ -77,7 +78,7 @@
     "colorschemes": {
       "default": "Predefinito",
       "dark": "Scuro",
-      "highcontrast": "Alto contrasto"
+      "highcontrast": "Contrasto elevato"
     },
     "app": {
       "missingbg": "Impossibile trovare lo sfondo \"{0}\", viene visualizzato lo sfondo predefinito.",
@@ -157,12 +158,15 @@
       "title": "Visualizzatore Cyclomedia"
     },
     "draw3d": {
+      "clone": "Copia",
       "cone": "Cono",
+      "ctrlhint": "Ctrl per selezione multipla...",
       "cuboid": "Cuboide",
       "cylinder": "Cilindro",
       "delete": "Elimina",
       "drawings": "Disegni",
       "intersect": "Intersezione",
+      "label": "Ettichetta",
       "newgroupprompt": "Nuovo gruppo disegni",
       "numericinput": "Formulario numerico",
       "pick": "Seleziona",
@@ -192,7 +196,8 @@
       "discard": "Annulla",
       "draw": "Disegna",
       "feature": "Oggetto",
-      "geomreadonly": "La geometria contiene valori Z non nulli ed è quindi di sola lettura.",
+      "geomnonzeroz": "La geometria contiene valori Z non nulli ed è quindi di sola lettura.",
+      "geomreadonly": "La geometria è di solo lettura.",
       "invalidform": "Formulario invalido",
       "maximize": "Massimizza",
       "minimize": "Minimizza",
@@ -267,7 +272,7 @@
       "noresults": "Nessun risultato",
       "querying": "Caricando...",
       "reportfail": "Errore nella generazione del rapporto",
-      "selectlayer": "Seleziona livello...",
+      "selectreport": "Seleziona rapporto...",
       "title": "Titolo"
     },
     "imageeditor": {
@@ -314,6 +319,7 @@
     "layertree": {
       "compare": "Compara il primo livello",
       "deletealllayers": "Rimuovi tutti i livelli",
+      "hidealllayers": "Nascondi tutti i livelli",
       "importlayer": "Importa livello",
       "maptip": "Attiva maptip",
       "printlegend": "Stampa legenda",
@@ -324,6 +330,7 @@
       "zoomtolayer": "Zoom a tutto il livello"
     },
     "layertree3d": {
+      "customheight": "Valore",
       "import": "Importa",
       "importobjects": "Importa oggetti",
       "layers": "Livelli",
@@ -354,7 +361,8 @@
       "resetrotation": "Resetta orientamento"
     },
     "map3d": {
-      "syncview": "Sincronizza visuale",
+      "lockview": "Muovi con visuale 2D",
+      "syncview": "Sincronizza con visuale 2D",
       "terrain": "Terreno",
       "title": "Visuale 3D"
     },
@@ -417,6 +425,7 @@
       "areaLabel": "Area",
       "bearingLabel": "Direzione",
       "ground": "m s.l.s.",
+      "heightDiffLabel": "Dislivello",
       "imperial": "Imperiale",
       "lengthLabel": "Lunghezza",
       "metric": "Metrico",
@@ -679,6 +688,11 @@
       "zoomin": "Ingrandisci",
       "zoomout": "Rimpicciolisci"
     },
+    "tourguide": {
+      "done": "",
+      "next": "",
+      "previous": ""
+    },
     "valuetool": {
       "all": "Tutte",
       "allbands": "Tutte le bande",
@@ -695,7 +709,9 @@
       "showlayers": "Livelli",
       "table": "Tabelle",
       "title": "Value Tool",
-      "visiblelayers": "Livelli visibili"
+      "visiblelayers": "Livelli visibili",
+      "ymax": "Min Y",
+      "ymin": "Max Y"
     },
     "vectorlayerpicker": {
       "none": "Nessuno",
