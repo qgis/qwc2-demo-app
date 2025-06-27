@@ -200,16 +200,10 @@
             "constrainExtent": false
           },
           "toolsOptions": {
-            "OverviewSupport": {
-              "tipLabel": "Overview"
-            },
             "LocateSupport": {
               "keepCurrentZoomLevel": true,
               "stopFollowingOnDrag": true,
               "startupMode": "DISABLED"
-            },
-            "ScaleBarSupport": {
-              "units": "metric"
             }
           },
           "swipeGeometryTypeBlacklist": [],
@@ -284,6 +278,9 @@
           "newsDocument": "https://qwc-services.github.io/master/release_notes/ChangeLog/",
           "newsRev": "20250210"
         }
+      },
+      {
+        "name": "OverviewMap"
       },
       {
         "name": "Portal",

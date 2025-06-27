@@ -39,6 +39,7 @@ import MapLegendPlugin from 'qwc2/plugins/MapLegend';
 import MapTipPlugin from 'qwc2/plugins/MapTip';
 import MeasurePlugin from 'qwc2/plugins/Measure';
 import NewsPopupPlugin from 'qwc2/plugins/NewsPopup';
+import OverviewMapPlugin from 'qwc2/plugins/OverviewMap';
 import PortalPlugin from 'qwc2/plugins/Portal';
 import PrintPlugin from 'qwc2/plugins/Print';
 import ProcessNotificationsPlugin from 'qwc2/plugins/ProcessNotifications';
@@ -58,9 +59,7 @@ import {ZoomInPlugin, ZoomOutPlugin} from 'qwc2/plugins/ZoomButtons';
 import EditingSupport from 'qwc2/plugins/map/EditingSupport';
 import LocateSupport from 'qwc2/plugins/map/LocateSupport';
 import MeasurementSupport from 'qwc2/plugins/map/MeasurementSupport';
-import OverviewSupport from 'qwc2/plugins/map/OverviewSupport';
 import RedliningSupport from 'qwc2/plugins/map/RedliningSupport';
-import ScaleBarSupport from 'qwc2/plugins/map/ScaleBarSupport';
 import SnappingSupport from 'qwc2/plugins/map/SnappingSupport';
 import BufferSupport from 'qwc2/plugins/redlining/RedliningBufferSupport';
 
@@ -79,9 +78,7 @@ export default {
                 EditingSupport: EditingSupport,
                 MeasurementSupport: MeasurementSupport,
                 LocateSupport: LocateSupport,
-                OverviewSupport: OverviewSupport,
                 RedliningSupport: RedliningSupport,
-                ScaleBarSupport: ScaleBarSupport,
                 SnappingSupport: SnappingSupport
             }),
             APIPlugin: APIPlugin,
@@ -111,6 +108,7 @@ export default {
             MapTipPlugin: MapTipPlugin,
             MeasurePlugin: MeasurePlugin,
             NewsPopupPlugin: NewsPopupPlugin,
+            OverviewMapPlugin: OverviewMapPlugin,
             PortalPlugin: PortalPlugin,
             PrintPlugin: PrintPlugin,
             ProcessNotificationsPlugin: ProcessNotificationsPlugin,
