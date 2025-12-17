@@ -16,14 +16,16 @@
         "MapExport3D": "Esporta mappa",
         "MapFilter": "Filta mappa",
         "MapLight3D": "Illuminazione e ombre",
+        "ObjectList": "Lista oggetti",
         "Print": "Stampa",
         "Reports": "Rapporti",
         "Settings": "Impostazioni",
+        "Settings3D": "Impostazioni 3D",
         "Share": "Condividi",
         "ThemeSwitcher": "Temi",
         "AttributeTable": "Tabella attributi",
         "AuthenticationLogin": "Accedi",
-        "AuthenticationLogout": "Disconnetti",
+        "AuthenticationLogout": "Disconnetti - {0}",
         "Cyclomedia": "Cyclomedia",
         "Draw3D": "Disegnare",
         "FeatureForm": "Formulario oggetto",
@@ -40,13 +42,14 @@
         "MeasureLineString": "Misura una linea",
         "MeasurePolygon": "Misura un poligono",
         "NewsPopup": "Attualità",
+        "ObliqueView": "Vista aerea obliqua",
         "Panoramax": "Panoramax",
         "Portal": "Portale",
         "PrintScreen3D": "Esporta raster",
         "Redlining": "Strumenti di disegno",
         "Routing": "Routing",
         "Tools": "Strumenti",
-        "TourGuide": "",
+        "TourGuide": "Guida introduttiva",
         "TimeManager": "Linea temporale",
         "View3D": "Vista 3D"
       },
@@ -71,6 +74,7 @@
       "providerselection": "Selezione provider",
       "recent": "Ricerche recenti",
       "search": "Cerca",
+      "tasks": "Strumenti",
       "themelayers": "Livelli di temi",
       "themes": "Temi",
       "unknownmore": "Ulteriori risultati"
@@ -82,6 +86,7 @@
     },
     "app": {
       "missingbg": "Impossibile trovare lo sfondo \"{0}\", viene visualizzato lo sfondo predefinito.",
+      "missingdefaulttheme": "Impossibile caricare il tema predefinito.",
       "missinglayers": "Impossibile trovare i seguenti livelli: {0}.",
       "missingpermalink": "Il permalink o il segnalibro non è valido o è scaduto.",
       "missingprojection": "Impossibile caricare il tema \"{0}\": la proiezione {1} non è definita.",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "Piano di taglio",
       "compare_objects": "Confronta oggetti",
+      "info_message": "Il confronto tra oggetti è attivo",
+      "modify": "Modifica",
       "toggleall": "Tutti"
     },
     "cookiepopup": {
@@ -160,7 +167,6 @@
     "draw3d": {
       "clone": "Copia",
       "cone": "Cono",
-      "ctrlhint": "Ctrl per selezione multipla...",
       "cuboid": "Cuboide",
       "cylinder": "Cilindro",
       "delete": "Elimina",
@@ -175,7 +181,6 @@
       "rotate": "Ruota",
       "rotation": "Rotazione",
       "scale": "Scala",
-      "sizeunavailable": "Dimensioni non disponibili per oggetto ruotato",
       "sphere": "Sfera",
       "subtract": "Differenza",
       "thescale": "Scala",
@@ -185,11 +190,23 @@
       "union": "Unione",
       "wedge": "Cuneo"
     },
+    "editdataset3d": {
+      "moveobj": "Sposta oggetto nella vista",
+      "zoomto": "Zoom sull'oggetto"
+    },
     "editing": {
       "add": "Aggiungi",
       "attrtable": "Tabella",
       "canceldelete": "Annulla",
       "clearpicture": "Cancella",
+      "clone_all": "Tutti",
+      "clone_copy": "Copia selezionati",
+      "clone_defaulted": "(valore predef.)",
+      "clone_dontcopy": "Copia nessuno",
+      "clone_hidden": "(nascosto)",
+      "clone_none": "Nessuno",
+      "clone_select_attrs": "Attributi da copiare:",
+      "clone_visible": "Visibili senza valore predef.",
       "commit": "Salva",
       "commitfailed": "Impossibile salvare",
       "contraintviolation": "Violazione di un vincolo",
@@ -210,8 +227,15 @@
       "reallydelete": "Elimina",
       "relationcommitfailed": "Alcune relazioni non sono state salvate, consultare i tooltip delle icone per i dettagli.",
       "select": "Seleziona...",
+      "selectlayer": "Seleziona livello...",
       "takepicture": "Foto",
       "unsavedchanged": "Vi sono cambiamenti non salvati. Volete comunque lasciare la pagina?"
+    },
+    "featureattributes": {
+      "name": "Nome",
+      "nofeatureormultiple": "Nessun o più oggetti attivi",
+      "value": "Valore",
+      "windowtitle": "Attributi oggetto"
     },
     "featureform": {
       "feature": "Oggetto",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "s.l.m.",
+      "dhmdefaultname": "Insieme di dati",
       "distance": "Distanza",
       "drawnodes": "Disegna i nodi",
       "error": "Impossibile caricare il profilo di altezza",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "Rapporto aggregato",
       "clipboard": "Copia negli appunti",
+      "compare": "Confronta gli oggetti selezionati",
+      "comparing": "Confronto di {0} oggetti",
       "download": "Scarica",
       "export": "Esporta",
       "featureReport": "Oggetto formulario",
-      "featurecount": "Number oggetti",
+      "featurecount": "{0} oggetti",
       "layerall": "Tutti i livelli",
       "link": "Link",
+      "multiview": "Vista multipla",
       "noattributes": "Nessun attributo",
       "noresults": "Nessun risultato",
       "querying": "Caricando...",
       "reportfail": "Errore nella generazione del rapporto",
+      "results": "Risultati",
+      "selectforcompare": "Seleziona per confronto",
       "selectreport": "Seleziona rapporto...",
       "title": "Titolo"
     },
     "imageeditor": {
       "confirmclose": "Chiudere senza salvare?",
       "title": "Editor immagine"
+    },
+    "import3d": {
+      "importing": "Importando {0}...",
+      "noprocessesserver": "Servizio di importazione non configurato"
     },
     "importlayer": {
       "addfailed": "Impossibile aggiungere il livello",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "Non è stato possibile riproiettare la geometria dello shapefile, che potrebbe essere posizionata in modo errato.",
       "supportedformats": "Formati supportati: KML, GeoJSON, GeoPDF, SHP (in zip)",
       "unknownproj": "Il GeoPDF selezionato utilizza una proiezione sconosciuta: {0}",
+      "unsupportedfile": "Formato file non supportato.",
       "url": "URL",
       "urlplaceholder": "Indirizzo WMS, WMTS, WFS..."
     },
@@ -327,6 +362,7 @@
       "printlegend": "Stampa legenda",
       "separator": "Separatore",
       "separatortooltip": "Aggiungi separatore",
+      "togglegroup": "Attiva/disattiva gruppo e tutti i sottolivelli",
       "transparency": "Trasparenza",
       "visiblefilter": "Filtra livelli non visibili",
       "zoomtolayer": "Zoom a tutto il livello"
@@ -358,12 +394,16 @@
         "PERMISSION_DENIED": "Posizione: permesso negato"
       }
     },
+    "locationrecorder": {
+      "record": "Registra posizione",
+      "stop": "Termina registrazione"
+    },
     "map": {
       "loading": "In caricamento...",
       "resetrotation": "Resetta orientamento"
     },
     "map3d": {
-      "lockview": "Muovi con visuale 2D",
+      "lockview": "Auto-sincronizzazione delle viste 2D/3D",
       "syncview": "Sincronizza con visuale 2D",
       "terrain": "Terreno",
       "title": "Visuale 3D"
@@ -404,13 +444,12 @@
       "windowtitle": "Legenda"
     },
     "maplight3d": {
-      "ambientLightIntensity": "Intensità luce ambientale",
       "animationstep": "Passo animazione",
       "date": "Data",
       "dayspersec": "giorni / sec",
-      "directionalLightIntensity": "Intensità luce direzionale",
       "helpersVisible": "Mostra aiuti",
       "minspersec": "minuti / sec",
+      "moonLightIntensity": "Intensità luna",
       "normalBias": "Bias normale",
       "shadowBias": "Bias ombra",
       "shadowMapSize": "Dimensione texture ombra",
@@ -420,6 +459,7 @@
       "shadowintensity": "Intensità ombra",
       "shadows": "Abilita ombre",
       "showadvanced": "Mostra avanzato",
+      "sunLightIntensity": "Intensità sole",
       "time": "Ora",
       "zFactor": "Fattore Z"
     },
@@ -438,7 +478,9 @@
       "ctrlclickhint": "Apri con Ctrl+Click"
     },
     "navbar": {
-      "perpage": "per pagina"
+      "next": "Prossima pagina",
+      "perpage": "per pagina",
+      "prev": "Pagina precedente"
     },
     "newspopup": {
       "dialogclose": "Chiudi",
@@ -449,10 +491,14 @@
       "angle": "Angolo",
       "featureunsupported": "Formulario numerico non disponibile per questa geometria",
       "height": "Altezza",
-      "nofeature": "Nessun oggetto attivo",
+      "nofeatureormultiple": "Nessun o più oggetti attivi",
       "side": "Lato",
       "width": "Larghezza",
       "windowtitle": "Formulario numerico"
+    },
+    "obliqueview": {
+      "nodataset": "Nessuna immagine aerea obliqua disponibile",
+      "title": "Vista aerea obliqua"
     },
     "panoramax": {
       "notfound": "Nessun immagine disponibile per questa posizione",
@@ -494,7 +540,7 @@
       "loading": "Caricando formulario..."
     },
     "redlining": {
-      "border": "Bordo",
+      "attributes": "Attributi oggetto",
       "buffer": "Buffer",
       "buffercompute": "Calcola",
       "bufferdistance": "Distanza",
@@ -502,6 +548,8 @@
       "bufferlayername": "Buffer",
       "bufferselectfeature": "Seleziona un oggetto...",
       "circle": "Cerchio",
+      "clone": "Copia",
+      "ctrlhint": "Ctrl per selezione multipla...",
       "delete": "Elimina",
       "draw": "Disegna",
       "edit": "Modifica",
@@ -522,8 +570,7 @@
       "size": "Dimensione",
       "square": "Quadrato",
       "text": "Testo",
-      "transform": "Transforma",
-      "width": "Larghezza"
+      "transform": "Transforma"
     },
     "reports": {
       "all": "Tutti",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "Aggiungi",
+      "addlayer": "Esporta a livello",
       "addviapoint": "Via qui",
       "arriveat": "Arrivo il",
       "clear": "Azzera",
@@ -597,6 +645,9 @@
       "systemlang": "Lingua del sistema",
       "themes": "Temi"
     },
+    "settings3d": {
+      "quality": "Qualità"
+    },
     "share": {
       "QRCodeLinkTitle": "Codice QR",
       "directLinkTitle": "Collegamento diretto",
@@ -615,6 +666,7 @@
       "vertex": "Snap ai vertici"
     },
     "themelayerslist": {
+      "addanyway": "Aggiungi comunque",
       "addlayer": "Aggiungi layer",
       "addlayerstotheme": "Aggiungi layer alla mappa corrente",
       "addselectedlayers": "Aggiungi i layer selezionati",
@@ -692,9 +744,9 @@
       "zoomout": "Rimpicciolisci"
     },
     "tourguide": {
-      "done": "",
-      "next": "",
-      "previous": ""
+      "done": "Finito",
+      "next": "Avanti",
+      "previous": "Indietro"
     },
     "valuetool": {
       "all": "Tutte",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "Nessuno",
       "prompt": "Nome del layer"
+    },
+    "view3d": {
+      "storingstate": "Salvando vista 3D..."
     },
     "window": {
       "close": "Chiudi",

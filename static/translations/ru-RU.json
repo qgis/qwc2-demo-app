@@ -16,9 +16,11 @@
         "MapExport3D": "",
         "MapFilter": "",
         "MapLight3D": "",
+        "ObjectList": "",
         "Print": "Печать",
         "Reports": "",
         "Settings": "",
+        "Settings3D": "",
         "Share": "Поделиться ссылкой",
         "ThemeSwitcher": "Тема",
         "AttributeTable": "",
@@ -40,6 +42,7 @@
         "MeasureLineString": "измерить линию",
         "MeasurePolygon": "измерить многоугольник",
         "NewsPopup": "",
+        "ObliqueView": "",
         "Panoramax": "",
         "Portal": "",
         "PrintScreen3D": "",
@@ -71,6 +74,7 @@
       "providerselection": "",
       "recent": "",
       "search": "Поиск",
+      "tasks": "",
       "themelayers": "",
       "themes": "",
       "unknownmore": ""
@@ -82,6 +86,7 @@
     },
     "app": {
       "missingbg": "",
+      "missingdefaulttheme": "",
       "missinglayers": "",
       "missingpermalink": "",
       "missingprojection": "",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "",
       "compare_objects": "",
+      "info_message": "",
+      "modify": "",
       "toggleall": ""
     },
     "cookiepopup": {
@@ -160,7 +167,6 @@
     "draw3d": {
       "clone": "",
       "cone": "",
-      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
@@ -175,7 +181,6 @@
       "rotate": "",
       "rotation": "",
       "scale": "",
-      "sizeunavailable": "",
       "sphere": "",
       "subtract": "",
       "thescale": "",
@@ -185,11 +190,23 @@
       "union": "",
       "wedge": ""
     },
+    "editdataset3d": {
+      "moveobj": "",
+      "zoomto": ""
+    },
     "editing": {
       "add": "",
       "attrtable": "",
       "canceldelete": "Не удалять",
       "clearpicture": "",
+      "clone_all": "",
+      "clone_copy": "",
+      "clone_defaulted": "",
+      "clone_dontcopy": "",
+      "clone_hidden": "",
+      "clone_none": "",
+      "clone_select_attrs": "",
+      "clone_visible": "",
       "commit": "Подтвердить изменения",
       "commitfailed": "",
       "contraintviolation": "",
@@ -210,8 +227,15 @@
       "reallydelete": "Удалить",
       "relationcommitfailed": "",
       "select": "Выберите...",
+      "selectlayer": "",
       "takepicture": "",
       "unsavedchanged": ""
+    },
+    "featureattributes": {
+      "name": "",
+      "nofeatureormultiple": "",
+      "value": "",
+      "windowtitle": ""
     },
     "featureform": {
       "feature": "",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "над у.м.",
+      "dhmdefaultname": "",
       "distance": "Дистанция",
       "drawnodes": "",
       "error": "",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "",
       "clipboard": "",
+      "compare": "",
+      "comparing": "",
       "download": "",
       "export": "Экспорт",
       "featureReport": "Отчёт об объекте",
       "featurecount": "",
       "layerall": "",
       "link": "гиперссылка",
+      "multiview": "",
       "noattributes": "Аттрибуты отсутствуют",
       "noresults": "Для выбранной точки нет доступной информации",
       "querying": "Выполняется запрос...",
       "reportfail": "",
+      "results": "",
+      "selectforcompare": "",
       "selectreport": "",
       "title": "Информация об объекте"
     },
     "imageeditor": {
       "confirmclose": "",
       "title": ""
+    },
+    "import3d": {
+      "importing": "",
+      "noprocessesserver": ""
     },
     "importlayer": {
       "addfailed": "",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "",
       "supportedformats": "",
       "unknownproj": "",
+      "unsupportedfile": "",
       "url": "",
       "urlplaceholder": "Введите URL для WMS, WMTS, WFS..."
     },
@@ -327,6 +362,7 @@
       "printlegend": "Распечатать легенду",
       "separator": "",
       "separatortooltip": "",
+      "togglegroup": "",
       "transparency": "",
       "visiblefilter": "",
       "zoomtolayer": ""
@@ -357,6 +393,10 @@
         "LOCATING": "Геолокация: определение местоположения...",
         "PERMISSION_DENIED": "Геолокация: доступ воспрещен"
       }
+    },
+    "locationrecorder": {
+      "record": "",
+      "stop": ""
     },
     "map": {
       "loading": "Загрузка...",
@@ -404,13 +444,12 @@
       "windowtitle": ""
     },
     "maplight3d": {
-      "ambientLightIntensity": "",
       "animationstep": "",
       "date": "",
       "dayspersec": "",
-      "directionalLightIntensity": "",
       "helpersVisible": "",
       "minspersec": "",
+      "moonLightIntensity": "",
       "normalBias": "",
       "shadowBias": "",
       "shadowMapSize": "",
@@ -420,6 +459,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
+      "sunLightIntensity": "",
       "time": "",
       "zFactor": ""
     },
@@ -438,7 +478,9 @@
       "ctrlclickhint": ""
     },
     "navbar": {
-      "perpage": ""
+      "next": "",
+      "perpage": "",
+      "prev": ""
     },
     "newspopup": {
       "dialogclose": "",
@@ -449,10 +491,14 @@
       "angle": "",
       "featureunsupported": "",
       "height": "",
-      "nofeature": "",
+      "nofeatureormultiple": "",
       "side": "",
       "width": "",
       "windowtitle": ""
+    },
+    "obliqueview": {
+      "nodataset": "",
+      "title": ""
     },
     "panoramax": {
       "notfound": "",
@@ -494,7 +540,7 @@
       "loading": ""
     },
     "redlining": {
-      "border": "Граница",
+      "attributes": "",
       "buffer": "",
       "buffercompute": "",
       "bufferdistance": "",
@@ -502,6 +548,8 @@
       "bufferlayername": "",
       "bufferselectfeature": "",
       "circle": "",
+      "clone": "",
+      "ctrlhint": "",
       "delete": "",
       "draw": "",
       "edit": "",
@@ -522,8 +570,7 @@
       "size": "Размер",
       "square": "",
       "text": "Текст",
-      "transform": "",
-      "width": "Ширина"
+      "transform": ""
     },
     "reports": {
       "all": "",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "",
+      "addlayer": "",
       "addviapoint": "",
       "arriveat": "",
       "clear": "",
@@ -597,6 +645,9 @@
       "systemlang": "",
       "themes": ""
     },
+    "settings3d": {
+      "quality": ""
+    },
     "share": {
       "QRCodeLinkTitle": "QR-код",
       "directLinkTitle": "По прямой ссылке",
@@ -615,6 +666,7 @@
       "vertex": ""
     },
     "themelayerslist": {
+      "addanyway": "",
       "addlayer": "",
       "addlayerstotheme": "",
       "addselectedlayers": "",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "",
       "prompt": ""
+    },
+    "view3d": {
+      "storingstate": ""
     },
     "window": {
       "close": "",

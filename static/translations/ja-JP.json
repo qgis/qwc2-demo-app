@@ -16,14 +16,16 @@
         "MapExport3D": "地図をエクスポート",
         "MapFilter": "マップ・フィルタ",
         "MapLight3D": "光と影",
+        "ObjectList": "",
         "Print": "印刷",
         "Reports": "レポート",
         "Settings": "設定",
+        "Settings3D": "",
         "Share": "リンクを共有",
         "ThemeSwitcher": "テーマ",
         "AttributeTable": "属性テーブル",
         "AuthenticationLogin": "ログイン",
-        "AuthenticationLogout": "ログアウト",
+        "AuthenticationLogout": "ログアウト - {0}",
         "Cyclomedia": "Cyclomedia",
         "Draw3D": "作図",
         "FeatureForm": "地物フォーム",
@@ -40,13 +42,14 @@
         "MeasureLineString": "ラインを測る",
         "MeasurePolygon": "ポリゴンを測る",
         "NewsPopup": "ニュース",
+        "ObliqueView": "",
         "Panoramax": "Panoramax",
         "Portal": "ポータル",
         "PrintScreen3D": "ラスタ・エクスポート",
         "Redlining": "スケッチ",
         "Routing": "ルート探索",
         "Tools": "地図ツール",
-        "TourGuide": "",
+        "TourGuide": "ツアー・ガイド",
         "TimeManager": "タイム・マネージャ",
         "View3D": "3D 表示"
       },
@@ -54,7 +57,7 @@
       "menulabel": "地図 & ツール"
     },
     "search": {
-      "coordinates": "",
+      "coordinates": "座標",
       "all": "全て",
       "circleradius": "円の半径",
       "clearfilter": "クリア",
@@ -71,17 +74,19 @@
       "providerselection": "検索プロバイダ",
       "recent": "最近の検索",
       "search": "検索",
+      "tasks": "",
       "themelayers": "テーマのレイヤ",
       "themes": "テーマ",
       "unknownmore": "更なる結果"
     },
     "colorschemes": {
-      "default": "",
-      "dark": "",
-      "highcontrast": ""
+      "default": "デフォルト",
+      "dark": "ダーク",
+      "highcontrast": "ハイ・コントラスト"
     },
     "app": {
       "missingbg": "背景が見付かりません \"{0}\", デフォルトの背景を表示します。",
+      "missingdefaulttheme": "",
       "missinglayers": "以下のレイヤが見付かりません: {0}。",
       "missingpermalink": "指定された永続リンクは無効または期限切れです。",
       "missingprojection": "テーマをロード出来ません \"{0}\": 投影法 {1} は定義されていません。",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "クリッピング平面",
       "compare_objects": "オブジェクトを比較",
+      "info_message": "",
+      "modify": "",
       "toggleall": "全てトグル"
     },
     "cookiepopup": {
@@ -158,15 +165,14 @@
       "title": "Cyclomedia ビューワ"
     },
     "draw3d": {
-      "clone": "",
+      "clone": "クローン",
       "cone": "円錐",
-      "ctrlhint": "",
       "cuboid": "直方体",
       "cylinder": "円柱",
       "delete": "削除",
       "drawings": "作図",
       "intersect": "交差",
-      "label": "",
+      "label": "ラベル",
       "newgroupprompt": "新しい作図グループ",
       "numericinput": "数値入力",
       "pick": "選択",
@@ -175,21 +181,32 @@
       "rotate": "回転",
       "rotation": "回転角",
       "scale": "スケール",
-      "sizeunavailable": "",
       "sphere": "球体",
       "subtract": "差分",
       "thescale": "スケール",
-      "thesize": "",
+      "thesize": "サイズ",
       "translate": "移動",
       "undoBool": "ブーリアン操作を取り消し",
       "union": "合成（和）",
       "wedge": "くさび形"
+    },
+    "editdataset3d": {
+      "moveobj": "",
+      "zoomto": ""
     },
     "editing": {
       "add": "追加",
       "attrtable": "テーブル",
       "canceldelete": "削除しない",
       "clearpicture": "クリア",
+      "clone_all": "",
+      "clone_copy": "",
+      "clone_defaulted": "",
+      "clone_dontcopy": "",
+      "clone_hidden": "",
+      "clone_none": "",
+      "clone_select_attrs": "",
+      "clone_visible": "",
       "commit": "コミット",
       "commitfailed": "コミット出来ませんでした",
       "contraintviolation": "制約違反",
@@ -199,7 +216,7 @@
       "draw": "作図",
       "feature": "地物",
       "geomnonzeroz": "ジオメトリが 0 でない Z 値を含んでいるため、リード・オンリーです。",
-      "geomreadonly": "",
+      "geomreadonly": "ジオメトリがリード・オンリーです。",
       "invalidform": "無効なフォーム",
       "maximize": "最大化",
       "minimize": "最小化",
@@ -210,8 +227,15 @@
       "reallydelete": "削除",
       "relationcommitfailed": "関連する値にコミット出来ないものがありました。詳細はアイコンのツールチップを参照して下さい。",
       "select": "選択",
+      "selectlayer": "",
       "takepicture": "撮影する",
       "unsavedchanged": "保存されていない変更があります。それでもこのページを離れますか?"
+    },
+    "featureattributes": {
+      "name": "",
+      "nofeatureormultiple": "",
+      "value": "",
+      "windowtitle": ""
     },
     "featureform": {
       "feature": "地物",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "a.s.l.",
+      "dhmdefaultname": "",
       "distance": "距離",
       "drawnodes": "ノードを作図",
       "error": "標高プロファイルを計算できませんでした",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "集合レポート",
       "clipboard": "クリップボードにコピー",
+      "compare": "",
+      "comparing": "",
       "download": "ダウンロード",
       "export": "エクスポート",
       "featureReport": "地物レポート",
-      "featurecount": "地物数",
+      "featurecount": "",
       "layerall": "全てのレイヤ",
       "link": "リンク",
+      "multiview": "",
       "noattributes": "属性無し",
       "noresults": "選択された点には情報がありません",
       "querying": "検索中...",
       "reportfail": "レポートを生成することが出来ませんでした",
-      "selectreport": "",
+      "results": "",
+      "selectforcompare": "",
+      "selectreport": "レポートを選択...",
       "title": "地物情報"
     },
     "imageeditor": {
       "confirmclose": "保存せずに閉じますか?",
       "title": "イメージ・エディタ"
+    },
+    "import3d": {
+      "importing": "{0} をインポートしています...",
+      "noprocessesserver": "インポート・サービスが構成されていません"
     },
     "importlayer": {
       "addfailed": "レイヤを追加できませんでした。",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "シェープファイルのジオメトリを投影できませんでした。間違った場所に置かれたかも知れません。",
       "supportedformats": "サポートされている形式: KML, GeoJSON, GeoPDF, SHP (zip形式)",
       "unknownproj": "選択された GeoPDF は未知の投影法を使っています: {0}。",
+      "unsupportedfile": "",
       "url": "URL",
       "urlplaceholder": "WMS, WMTS, WFS の URL を入力..."
     },
@@ -321,23 +356,24 @@
     "layertree": {
       "compare": "トップ・レイヤを比較",
       "deletealllayers": "全てのレイヤを削除",
-      "hidealllayers": "",
+      "hidealllayers": "全てのレイヤを非表示",
       "importlayer": "レイヤをインポート",
       "maptip": "レイヤのマップ・チップを表示",
       "printlegend": "凡例を印刷",
       "separator": "区切り",
       "separatortooltip": "区切りを追加",
+      "togglegroup": "",
       "transparency": "透明度",
       "visiblefilter": "不可視のレイヤをフィルタ",
       "zoomtolayer": "レイヤにズーム"
     },
     "layertree3d": {
-      "customheight": "",
+      "customheight": "値",
       "import": "インポート",
       "importobjects": "オブジェクトをインポート",
       "layers": "レイヤ",
       "objects": "オブジェクト",
-      "supportedformats": "サポートされている形式",
+      "supportedformats": "サポートされている形式: GLTF",
       "zoomtoobject": "オブジェクトにズーム"
     },
     "linkfeatureform": {
@@ -358,20 +394,24 @@
         "PERMISSION_DENIED": "位置情報: 許可無し"
       }
     },
+    "locationrecorder": {
+      "record": "",
+      "stop": ""
+    },
     "map": {
       "loading": "ロード中...",
       "resetrotation": "回転をリセット"
     },
     "map3d": {
-      "lockview": "",
-      "syncview": "ビューを同期",
+      "lockview": "2D ビューとともに移動",
+      "syncview": "2D ビューと同期",
       "terrain": "地形",
       "title": "3D ビュー"
     },
     "mapexport": {
       "configuration": "構成",
       "format": "形式",
-      "projection": "",
+      "projection": "投影",
       "resolution": "解像度",
       "scale": "縮尺",
       "size": "サイズ",
@@ -404,13 +444,12 @@
       "windowtitle": "凡例"
     },
     "maplight3d": {
-      "ambientLightIntensity": "環境光強度",
       "animationstep": "アニメーション・ステップ",
       "date": "日付",
       "dayspersec": "日数 / 秒",
-      "directionalLightIntensity": "平行光源強度",
       "helpersVisible": "補助オブジェクト表示",
       "minspersec": "分 / 秒",
+      "moonLightIntensity": "月光強度",
       "normalBias": "ノーマル・バイアス",
       "shadowBias": "シャドウ・バイアス",
       "shadowMapSize": "シャドウ・マップ・サイズ",
@@ -420,15 +459,16 @@
       "shadowintensity": "影の強度",
       "shadows": "シャドウを有効化",
       "showadvanced": "詳細設定を表示",
+      "sunLightIntensity": "陽光強度",
       "time": "時刻",
       "zFactor": "Zファクター"
     },
     "measureComponent": {
       "absolute": "m (海抜)",
-      "areaLabel": "領域",
+      "areaLabel": "面積",
       "bearingLabel": "方角",
       "ground": "m (地上高)",
-      "heightDiffLabel": "",
+      "heightDiffLabel": "高度差",
       "imperial": "ヤード・ポンド法",
       "lengthLabel": "長さ",
       "metric": "メートル法",
@@ -438,7 +478,9 @@
       "ctrlclickhint": "Ctrl+クリックで開く"
     },
     "navbar": {
-      "perpage": "/ page"
+      "next": "",
+      "perpage": "/ page",
+      "prev": ""
     },
     "newspopup": {
       "dialogclose": "閉じる",
@@ -449,10 +491,14 @@
       "angle": "角度",
       "featureunsupported": "このジオメトリに対しては数値入力は使用できません",
       "height": "高さ",
-      "nofeature": "アクティブな地物がありません",
+      "nofeatureormultiple": "",
       "side": "サイド",
       "width": "幅",
       "windowtitle": "数値入力"
+    },
+    "obliqueview": {
+      "nodataset": "",
+      "title": ""
     },
     "panoramax": {
       "notfound": "この場所には表示できる画像がありません。",
@@ -494,7 +540,7 @@
       "loading": "フォームをロード中..."
     },
     "redlining": {
-      "border": "境界線",
+      "attributes": "",
       "buffer": "バッファ",
       "buffercompute": "計算",
       "bufferdistance": "距離",
@@ -502,6 +548,8 @@
       "bufferlayername": "バッファ",
       "bufferselectfeature": "バッファを適用する地物を選択...",
       "circle": "円",
+      "clone": "クローン",
+      "ctrlhint": "",
       "delete": "削除",
       "draw": "作図",
       "edit": "編集",
@@ -522,8 +570,7 @@
       "size": "サイズ",
       "square": "四角形",
       "text": "テキスト",
-      "transform": "変形",
-      "width": "幅"
+      "transform": "変形"
     },
     "reports": {
       "all": "全て",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "点を追加",
+      "addlayer": "",
       "addviapoint": "ここを経由",
       "arriveat": "目的地点",
       "clear": "クリア",
@@ -597,6 +645,9 @@
       "systemlang": "システム言語",
       "themes": "テーマ"
     },
+    "settings3d": {
+      "quality": ""
+    },
     "share": {
       "QRCodeLinkTitle": "QR コード",
       "directLinkTitle": "直接リンクで",
@@ -615,6 +666,7 @@
       "vertex": "頂点にスナップ"
     },
     "themelayerslist": {
+      "addanyway": "",
       "addlayer": "レイヤを追加",
       "addlayerstotheme": "現在の地図にレイヤを追加",
       "addselectedlayers": "選択されたレイヤを追加",
@@ -692,9 +744,9 @@
       "zoomout": "ズーム・アウト"
     },
     "tourguide": {
-      "done": "",
-      "next": "",
-      "previous": ""
+      "done": "完了",
+      "next": "次へ",
+      "previous": "前へ"
     },
     "valuetool": {
       "all": "",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "無し",
       "prompt": "レイヤ名を入力"
+    },
+    "view3d": {
+      "storingstate": ""
     },
     "window": {
       "close": "閉じる",

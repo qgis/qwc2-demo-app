@@ -16,14 +16,16 @@
         "MapExport3D": "",
         "MapFilter": "",
         "MapLight3D": "",
+        "ObjectList": "",
         "Print": "Imprimir",
         "Reports": "",
         "Settings": "Configurações",
+        "Settings3D": "",
         "Share": "Compartilhar link",
         "ThemeSwitcher": "Tema",
         "AttributeTable": "Tabela de atributos",
         "AuthenticationLogin": "Inicio da sessão",
-        "AuthenticationLogout": "Fim da sessão",
+        "AuthenticationLogout": "Fim da sessão - {0}",
         "Cyclomedia": "Cyclomedia",
         "Draw3D": "",
         "FeatureForm": "Atributos da feição",
@@ -40,6 +42,7 @@
         "MeasureLineString": "Medir uma linha",
         "MeasurePolygon": "Medir um polígono",
         "NewsPopup": "",
+        "ObliqueView": "",
         "Panoramax": "",
         "Portal": "",
         "PrintScreen3D": "",
@@ -71,6 +74,7 @@
       "providerselection": "Escolher o provedor",
       "recent": "Pesquisas recentes",
       "search": "Pesquisa",
+      "tasks": "",
       "themelayers": "",
       "themes": "Temas",
       "unknownmore": ""
@@ -82,6 +86,7 @@
     },
     "app": {
       "missingbg": "Faltando fundo",
+      "missingdefaulttheme": "",
       "missinglayers": "Faltando camadas",
       "missingpermalink": "Faltando link permanente",
       "missingprojection": "",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "",
       "compare_objects": "",
+      "info_message": "",
+      "modify": "",
       "toggleall": ""
     },
     "cookiepopup": {
@@ -160,7 +167,6 @@
     "draw3d": {
       "clone": "",
       "cone": "",
-      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
@@ -175,7 +181,6 @@
       "rotate": "",
       "rotation": "",
       "scale": "",
-      "sizeunavailable": "",
       "sphere": "",
       "subtract": "",
       "thescale": "",
@@ -185,11 +190,23 @@
       "union": "",
       "wedge": ""
     },
+    "editdataset3d": {
+      "moveobj": "",
+      "zoomto": ""
+    },
     "editing": {
       "add": "Adicionar",
       "attrtable": "Tabela de atributos",
       "canceldelete": "Não apagar",
       "clearpicture": "Limpar imagem",
+      "clone_all": "",
+      "clone_copy": "",
+      "clone_defaulted": "",
+      "clone_dontcopy": "",
+      "clone_hidden": "",
+      "clone_none": "",
+      "clone_select_attrs": "",
+      "clone_visible": "",
       "commit": "Commit",
       "commitfailed": "Falha de confirmação",
       "contraintviolation": "",
@@ -210,8 +227,15 @@
       "reallydelete": "Excluir",
       "relationcommitfailed": "Falha na confirmação",
       "select": "Selecione",
+      "selectlayer": "",
       "takepicture": "Selecionar imagem",
       "unsavedchanged": "Alterações não salvas"
+    },
+    "featureattributes": {
+      "name": "",
+      "nofeatureormultiple": "",
+      "value": "",
+      "windowtitle": ""
     },
     "featureform": {
       "feature": "Feiçao",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "a.s.l.",
+      "dhmdefaultname": "",
       "distance": "Distância",
       "drawnodes": "Desenhar nós",
       "error": "Erro",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "",
       "clipboard": "",
+      "compare": "",
+      "comparing": "",
       "download": "",
       "export": "Exportação",
       "featureReport": "Relatório de recurso",
       "featurecount": "",
       "layerall": "",
       "link": "Link",
+      "multiview": "",
       "noattributes": "Sem atributos",
       "noresults": "Nenhuma informação disponível para o ponto selecionado",
       "querying": "Consultando...",
       "reportfail": "",
+      "results": "",
+      "selectforcompare": "",
       "selectreport": "",
       "title": "Informação do recurso"
     },
     "imageeditor": {
       "confirmclose": "Confirmar fechamento",
       "title": "Título"
+    },
+    "import3d": {
+      "importing": "",
+      "noprocessesserver": ""
     },
     "importlayer": {
       "addfailed": "Falha ao adicionar",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "",
       "supportedformats": "",
       "unknownproj": "",
+      "unsupportedfile": "",
       "url": "URL",
       "urlplaceholder": "Insira o endereço URL do WMS, WMTS, WFS..."
     },
@@ -327,6 +362,7 @@
       "printlegend": "Legenda da impressão",
       "separator": "Separador",
       "separatortooltip": "Adicionar separador",
+      "togglegroup": "",
       "transparency": "Transparência",
       "visiblefilter": "Filtrar camadas invisíveis",
       "zoomtolayer": "Ampliar a camada"
@@ -357,6 +393,10 @@
         "LOCATING": "Posição: localização...",
         "PERMISSION_DENIED": "Posição: permissão negada"
       }
+    },
+    "locationrecorder": {
+      "record": "",
+      "stop": ""
     },
     "map": {
       "loading": "Carregar...",
@@ -404,13 +444,12 @@
       "windowtitle": "Titulo da janela"
     },
     "maplight3d": {
-      "ambientLightIntensity": "",
       "animationstep": "",
       "date": "",
       "dayspersec": "",
-      "directionalLightIntensity": "",
       "helpersVisible": "",
       "minspersec": "",
+      "moonLightIntensity": "",
       "normalBias": "",
       "shadowBias": "",
       "shadowMapSize": "",
@@ -420,6 +459,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
+      "sunLightIntensity": "",
       "time": "",
       "zFactor": ""
     },
@@ -438,7 +478,9 @@
       "ctrlclickhint": ""
     },
     "navbar": {
-      "perpage": "Por página"
+      "next": "",
+      "perpage": "Por página",
+      "prev": ""
     },
     "newspopup": {
       "dialogclose": "Fechar diálogo",
@@ -449,10 +491,14 @@
       "angle": "ângulo",
       "featureunsupported": "Feição não suportada",
       "height": "Altura",
-      "nofeature": "Sem feição",
+      "nofeatureormultiple": "",
       "side": "Margem",
       "width": "Largura",
       "windowtitle": "Título da janela"
+    },
+    "obliqueview": {
+      "nodataset": "",
+      "title": ""
     },
     "panoramax": {
       "notfound": "",
@@ -494,7 +540,7 @@
       "loading": "Carregando"
     },
     "redlining": {
-      "border": "Borda",
+      "attributes": "",
       "buffer": "Buffer",
       "buffercompute": "Compute",
       "bufferdistance": "Distância",
@@ -502,6 +548,8 @@
       "bufferlayername": "Nome do buffer",
       "bufferselectfeature": "Selecione uma característica para o buffer...",
       "circle": "Círculo",
+      "clone": "",
+      "ctrlhint": "",
       "delete": "Excluir",
       "draw": "Traçar",
       "edit": "Editar",
@@ -522,8 +570,7 @@
       "size": "Tamanho",
       "square": "Praça",
       "text": "Texto",
-      "transform": "Transformar",
-      "width": "Largura"
+      "transform": "Transformar"
     },
     "reports": {
       "all": "",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "Adcionar",
+      "addlayer": "",
       "addviapoint": "Adicionar ponto de via",
       "arriveat": "Chegada",
       "clear": "Limpar",
@@ -597,6 +645,9 @@
       "systemlang": "Idioma do sistema",
       "themes": "Temas"
     },
+    "settings3d": {
+      "quality": ""
+    },
     "share": {
       "QRCodeLinkTitle": "Código QR",
       "directLinkTitle": "Link direto",
@@ -615,6 +666,7 @@
       "vertex": ""
     },
     "themelayerslist": {
+      "addanyway": "",
       "addlayer": "Adicionar camada",
       "addlayerstotheme": "Adicionar camadas ao mapa atual",
       "addselectedlayers": "Adicionar camadas selecionadas",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "",
       "prompt": "Insira o nome da camada"
+    },
+    "view3d": {
+      "storingstate": ""
     },
     "window": {
       "close": "Fechar",

@@ -16,14 +16,16 @@
         "MapExport3D": "",
         "MapFilter": "",
         "MapLight3D": "",
+        "ObjectList": "",
         "Print": "Drukuj",
         "Reports": "",
         "Settings": "",
+        "Settings3D": "",
         "Share": "Udostępnij Link",
         "ThemeSwitcher": "Motyw",
         "AttributeTable": "",
         "AuthenticationLogin": "Zaloguj",
-        "AuthenticationLogout": "Wyloguj",
+        "AuthenticationLogout": "Wyloguj - {0}",
         "Cyclomedia": "",
         "Draw3D": "",
         "FeatureForm": "",
@@ -40,6 +42,7 @@
         "MeasureLineString": "Zmierzyć linię",
         "MeasurePolygon": "Zmierzyć wielokąt",
         "NewsPopup": "",
+        "ObliqueView": "",
         "Panoramax": "",
         "Portal": "",
         "PrintScreen3D": "",
@@ -71,6 +74,7 @@
       "providerselection": "",
       "recent": "",
       "search": "Szukaj",
+      "tasks": "",
       "themelayers": "",
       "themes": "Motywy",
       "unknownmore": ""
@@ -82,6 +86,7 @@
     },
     "app": {
       "missingbg": "",
+      "missingdefaulttheme": "",
       "missinglayers": "",
       "missingpermalink": "",
       "missingprojection": "",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "",
       "compare_objects": "",
+      "info_message": "",
+      "modify": "",
       "toggleall": ""
     },
     "cookiepopup": {
@@ -160,7 +167,6 @@
     "draw3d": {
       "clone": "",
       "cone": "",
-      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
@@ -175,7 +181,6 @@
       "rotate": "",
       "rotation": "",
       "scale": "",
-      "sizeunavailable": "",
       "sphere": "",
       "subtract": "",
       "thescale": "",
@@ -185,11 +190,23 @@
       "union": "",
       "wedge": ""
     },
+    "editdataset3d": {
+      "moveobj": "",
+      "zoomto": ""
+    },
     "editing": {
       "add": "",
       "attrtable": "",
       "canceldelete": "Nie usuwaj",
       "clearpicture": "",
+      "clone_all": "",
+      "clone_copy": "",
+      "clone_defaulted": "",
+      "clone_dontcopy": "",
+      "clone_hidden": "",
+      "clone_none": "",
+      "clone_select_attrs": "",
+      "clone_visible": "",
       "commit": "Zatwierdź",
       "commitfailed": "",
       "contraintviolation": "",
@@ -210,8 +227,15 @@
       "reallydelete": "Usuń",
       "relationcommitfailed": "",
       "select": "Zaznacz",
+      "selectlayer": "",
       "takepicture": "",
       "unsavedchanged": ""
+    },
+    "featureattributes": {
+      "name": "",
+      "nofeatureormultiple": "",
+      "value": "",
+      "windowtitle": ""
     },
     "featureform": {
       "feature": "",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "a.s.l.",
+      "dhmdefaultname": "",
       "distance": "Odległość",
       "drawnodes": "",
       "error": "",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "",
       "clipboard": "",
+      "compare": "",
+      "comparing": "",
       "download": "",
       "export": "Eksport",
       "featureReport": "Feature report",
       "featurecount": "",
       "layerall": "",
       "link": "Link",
+      "multiview": "",
       "noattributes": "Brak atrybutów",
       "noresults": "Brak dostępnych danych dla wybranego punktu",
       "querying": "Przetwarzam zapytanie...",
       "reportfail": "",
+      "results": "",
+      "selectforcompare": "",
       "selectreport": "",
       "title": "Feature Info"
     },
     "imageeditor": {
       "confirmclose": "",
       "title": ""
+    },
+    "import3d": {
+      "importing": "",
+      "noprocessesserver": ""
     },
     "importlayer": {
       "addfailed": "",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "",
       "supportedformats": "",
       "unknownproj": "",
+      "unsupportedfile": "",
       "url": "URL",
       "urlplaceholder": "Podaj URL do WMS, WFS, WMTS..."
     },
@@ -327,6 +362,7 @@
       "printlegend": "Drukuj legendę",
       "separator": "",
       "separatortooltip": "",
+      "togglegroup": "",
       "transparency": "",
       "visiblefilter": "",
       "zoomtolayer": ""
@@ -357,6 +393,10 @@
         "LOCATING": "Pozycja: lokalizowanie...",
         "PERMISSION_DENIED": "Pozycja: dostęp zabroniony"
       }
+    },
+    "locationrecorder": {
+      "record": "",
+      "stop": ""
     },
     "map": {
       "loading": "Ładowanie...",
@@ -404,13 +444,12 @@
       "windowtitle": ""
     },
     "maplight3d": {
-      "ambientLightIntensity": "",
       "animationstep": "",
       "date": "",
       "dayspersec": "",
-      "directionalLightIntensity": "",
       "helpersVisible": "",
       "minspersec": "",
+      "moonLightIntensity": "",
       "normalBias": "",
       "shadowBias": "",
       "shadowMapSize": "",
@@ -420,6 +459,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
+      "sunLightIntensity": "",
       "time": "",
       "zFactor": ""
     },
@@ -438,7 +478,9 @@
       "ctrlclickhint": ""
     },
     "navbar": {
-      "perpage": ""
+      "next": "",
+      "perpage": "",
+      "prev": ""
     },
     "newspopup": {
       "dialogclose": "",
@@ -449,10 +491,14 @@
       "angle": "",
       "featureunsupported": "",
       "height": "",
-      "nofeature": "",
+      "nofeatureormultiple": "",
       "side": "",
       "width": "",
       "windowtitle": ""
+    },
+    "obliqueview": {
+      "nodataset": "",
+      "title": ""
     },
     "panoramax": {
       "notfound": "",
@@ -494,7 +540,7 @@
       "loading": ""
     },
     "redlining": {
-      "border": "Obramowanie",
+      "attributes": "",
       "buffer": "Buforuj",
       "buffercompute": "Oblicz",
       "bufferdistance": "Odległość",
@@ -502,6 +548,8 @@
       "bufferlayername": "Buforuj",
       "bufferselectfeature": "Wybierz element do buforowania",
       "circle": "",
+      "clone": "",
+      "ctrlhint": "",
       "delete": "Usuń",
       "draw": "Rysuj",
       "edit": "Edytuj",
@@ -522,8 +570,7 @@
       "size": "Rozmiar",
       "square": "",
       "text": "Tekst",
-      "transform": "",
-      "width": "Szerokość"
+      "transform": ""
     },
     "reports": {
       "all": "",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "",
+      "addlayer": "",
       "addviapoint": "",
       "arriveat": "",
       "clear": "",
@@ -597,6 +645,9 @@
       "systemlang": "",
       "themes": ""
     },
+    "settings3d": {
+      "quality": ""
+    },
     "share": {
       "QRCodeLinkTitle": "QR code",
       "directLinkTitle": "Poprzez link bezpośredni",
@@ -615,6 +666,7 @@
       "vertex": ""
     },
     "themelayerslist": {
+      "addanyway": "",
       "addlayer": "",
       "addlayerstotheme": "",
       "addselectedlayers": "",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "",
       "prompt": ""
+    },
+    "view3d": {
+      "storingstate": ""
     },
     "window": {
       "close": "",

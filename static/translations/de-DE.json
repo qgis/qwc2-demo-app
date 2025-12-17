@@ -16,14 +16,16 @@
         "MapExport3D": "Karte exportieren",
         "MapFilter": "Kartenfilter",
         "MapLight3D": "Beleuchtung und Schatten",
+        "ObjectList": "Objektliste",
         "Print": "Drucken",
         "Reports": "Berichte",
         "Settings": "Einstellungen",
+        "Settings3D": "3D Einstellungen",
         "Share": "Teilen",
         "ThemeSwitcher": "Themen",
         "AttributeTable": "Attributtabelle",
         "AuthenticationLogin": "Anmelden",
-        "AuthenticationLogout": "Abmelden",
+        "AuthenticationLogout": "Abmelden - {0}",
         "Cyclomedia": "Cyclomedia",
         "Draw3D": "Zeichnen",
         "FeatureForm": "Objektformular",
@@ -40,13 +42,14 @@
         "MeasureLineString": "Messen Linie",
         "MeasurePolygon": "Messen Polygon",
         "NewsPopup": "Aktuelles",
+        "ObliqueView": "Schrägluftbildansicht",
         "Panoramax": "Panoramax",
         "Portal": "Portal",
         "PrintScreen3D": "Raster Export",
         "Redlining": "Zeichnen",
         "Routing": "Routing",
         "Tools": "Werkzeuge",
-        "TourGuide": "",
+        "TourGuide": "Einführung",
         "TimeManager": "Zeitleiste",
         "View3D": "3D Ansicht"
       },
@@ -71,6 +74,7 @@
       "providerselection": "Suchdienste",
       "recent": "Zuletzt gesucht",
       "search": "Suchen",
+      "tasks": "Menüwerkzeuge",
       "themelayers": "Themenebenen",
       "themes": "Themen",
       "unknownmore": "Weitere Treffer"
@@ -82,6 +86,7 @@
     },
     "app": {
       "missingbg": "Der Hintergrund \"{0}\" konnte nicht gefunden werden, der Standardhintergrund wird angezeigt.",
+      "missingdefaulttheme": "Das Standardthema konnte nicht geladen werden.",
       "missinglayers": "Die folgenden Ebenen können nicht gefunden werden: {0}.",
       "missingpermalink": "Der Permalink oder das Lesezeichen ist ungültig oder abgelaufen.",
       "missingprojection": "Das Thema \"{0}\" konnte nicht geladen werden: die Projektion {1} ist nicht definiert.",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "Schnittebene",
       "compare_objects": "Objekte vergleichen",
+      "info_message": "Objektvergleich ist aktiv",
+      "modify": "Ändern",
       "toggleall": "Alle"
     },
     "cookiepopup": {
@@ -160,7 +167,6 @@
     "draw3d": {
       "clone": "Kopieren",
       "cone": "Kegel",
-      "ctrlhint": "Mehrfachselektion mit Ctrl...",
       "cuboid": "Quader",
       "cylinder": "Zylinder",
       "delete": "Löschen",
@@ -175,7 +181,6 @@
       "rotate": "Rotieren",
       "rotation": "Rotation",
       "scale": "Skalieren",
-      "sizeunavailable": "Dimensionen nicht verfügbar für rotiertes Objekt",
       "sphere": "Kugel",
       "subtract": "Differenz",
       "thescale": "Skalierung",
@@ -185,11 +190,23 @@
       "union": "Vereinigung",
       "wedge": "Kegel"
     },
+    "editdataset3d": {
+      "moveobj": "Objekt in Sichtbereich bringen",
+      "zoomto": "Auf Objekt zoomen"
+    },
     "editing": {
       "add": "Hinzufügen",
       "attrtable": "Tabelle",
       "canceldelete": "Abbrechen",
       "clearpicture": "Zurücksetzen",
+      "clone_all": "Alle",
+      "clone_copy": "Auswahl kopieren",
+      "clone_defaulted": "(Defaultwert)",
+      "clone_dontcopy": "Keine kopieren",
+      "clone_hidden": "(versteckt)",
+      "clone_none": "Keine",
+      "clone_select_attrs": "Zu kopierende Attribute auswählen:",
+      "clone_visible": "Sichtbare ohne Defaultwert",
       "commit": "Speichern",
       "commitfailed": "Fehler beim Speichern",
       "contraintviolation": "Verletzung einer Bedingung",
@@ -210,8 +227,15 @@
       "reallydelete": "Löschen",
       "relationcommitfailed": "Einige Relationen konnten nicht gespeichert werden, siehe Tooltips der Icons für mehr Details.",
       "select": "Auswählen",
+      "selectlayer": "Ebene auswählen...",
       "takepicture": "Bild schießen",
       "unsavedchanged": "Es gibt nicht gespeicherte Änderungen. Soll die Seite trotzdem verlassen werden?"
+    },
+    "featureattributes": {
+      "name": "Name",
+      "nofeatureormultiple": "Kein oder mehrere Objekte aktiv",
+      "value": "Wert",
+      "windowtitle": "Objektattribute"
     },
     "featureform": {
       "feature": "Objekt",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "ü. NHN",
+      "dhmdefaultname": "Datensatz",
       "distance": "Distanz",
       "drawnodes": "Knoten zeichnen",
       "error": "Fehler beim Berechnen des Höhenprofils",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "Aggregierter Bericht",
       "clipboard": "Nach Zwischenablage kopieren",
+      "compare": "Selektierte Objekte vergleichen",
+      "comparing": "Vergleich von {0} Objekte",
       "download": "Herunterladen",
       "export": "Exportieren",
       "featureReport": "Objektblatt",
-      "featurecount": "Anzahl Objekte",
+      "featurecount": "{0} Objekt(e)",
       "layerall": "Alle Ebenen",
       "link": "Link",
+      "multiview": "Mehrfachansicht",
       "noattributes": "Keine Attribute",
-      "noresults": "Keine Resultate an der ausgewählten Position",
+      "noresults": "Keine Treffer an der ausgewählten Position",
       "querying": "Objekte werden abgefragt...",
       "reportfail": "Bericht konnt nicht erstellt werden",
+      "results": "Ergebnisse",
+      "selectforcompare": "Für Vergleich auswählen",
       "selectreport": "Bericht auswählen...",
       "title": "Objektinformationen"
     },
     "imageeditor": {
       "confirmclose": "Schließen, ohne zu speichern?",
       "title": "Bildbearbeitung"
+    },
+    "import3d": {
+      "importing": "Wird importiert: {0}...",
+      "noprocessesserver": "Kein Importservice konfiguriert"
     },
     "importlayer": {
       "addfailed": "Die Ebene konnte nicht hinzugefügt werden",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "Die Shapefile-Geometrie konnte nicht umprojiziert werden und ist möglicherweise nicht richtig platziert.",
       "supportedformats": "Unterstützte Formate: KML, GeoJSON, GeoPDF, SHP (in zip)",
       "unknownproj": "Das ausgewählte GeoPDF verwendet eine unbekannte Projektion: {0}.",
+      "unsupportedfile": "Nicht unterstütztes Dateiformat.",
       "url": "URL",
       "urlplaceholder": "WMS, WMTS oder WFS URL eingeben..."
     },
@@ -327,6 +362,7 @@
       "printlegend": "Legende drucken",
       "separator": "Separator",
       "separatortooltip": "Separator hinzufügen",
+      "togglegroup": "Inklusive aller Kinder an-/abhaken",
       "transparency": "Transparenz",
       "visiblefilter": "Unsichtbare Ebenen filtern",
       "zoomtolayer": "Auf den Layer zoomen"
@@ -358,12 +394,16 @@
         "PERMISSION_DENIED": "Position: Zugriff verweigert"
       }
     },
+    "locationrecorder": {
+      "record": "Position aufzeichen",
+      "stop": "Aufzeichnung stoppen"
+    },
     "map": {
       "loading": "Karte wird geladen...",
       "resetrotation": "Drehung zurücksetzen"
     },
     "map3d": {
-      "lockview": "Mit 2D Ansicht verschieben",
+      "lockview": "2D/3D Ansichten automatisch synchronisieren",
       "syncview": "Mit 2D Ansicht synchronisieren",
       "terrain": "Gelände",
       "title": "3D Ansicht"
@@ -404,13 +444,12 @@
       "windowtitle": "Legende"
     },
     "maplight3d": {
-      "ambientLightIntensity": "Intensität Umgebungslichts",
       "animationstep": "Animationsschritt",
       "date": "Datum",
       "dayspersec": "Tage / Sek",
-      "directionalLightIntensity": "Intensität gerichtetes Licht",
       "helpersVisible": "Hilfen anzeigen",
       "minspersec": "Min / Sek",
+      "moonLightIntensity": "Mondlichtintensität",
       "normalBias": "Normal-Verzerrung",
       "shadowBias": "Schatten-Verzerrung",
       "shadowMapSize": "Größe der Schattentextur",
@@ -420,6 +459,7 @@
       "shadowintensity": "Schattenintensität",
       "shadows": "Schatten aktivieren",
       "showadvanced": "Erweitert anzeigen",
+      "sunLightIntensity": "Sonnenlichtintensität",
       "time": "Zeit",
       "zFactor": "Z-Faktor"
     },
@@ -438,7 +478,9 @@
       "ctrlclickhint": "Öffne mit Ctrl+Click"
     },
     "navbar": {
-      "perpage": "pro Seite"
+      "next": "Vorherige Seite",
+      "perpage": "pro Seite",
+      "prev": "Nächste Seite"
     },
     "newspopup": {
       "dialogclose": "Schließen",
@@ -449,10 +491,14 @@
       "angle": "Winkel",
       "featureunsupported": "Numerische Eingabe nicht verfügbar für dieses Objekt",
       "height": "Höhe",
-      "nofeature": "Kein Objekt aktiv",
+      "nofeatureormultiple": "Kein oder mehrere Objekte aktiv",
       "side": "Seite",
       "width": "Breite",
       "windowtitle": "Numerische Eingabe"
+    },
+    "obliqueview": {
+      "nodataset": "Keine Schrägluftbilder verfügbar",
+      "title": "Schrägluftbildansicht"
     },
     "panoramax": {
       "notfound": "An diesem Ort ist kein Bild verfügbar.",
@@ -494,7 +540,7 @@
       "loading": "Formular wird geladen..."
     },
     "redlining": {
-      "border": "Rand",
+      "attributes": "Objektattribute",
       "buffer": "Puffern",
       "buffercompute": "Berechnen",
       "bufferdistance": "Distanz",
@@ -502,6 +548,8 @@
       "bufferlayername": "Objektpuffer",
       "bufferselectfeature": "Zu pufferndes Objekt auswählen...",
       "circle": "Kreis",
+      "clone": "Kopieren",
+      "ctrlhint": "Mehrfachselektion mit Ctrl...",
       "delete": "Löschen",
       "draw": "Zeichnen",
       "edit": "Bearbeiten",
@@ -522,8 +570,7 @@
       "size": "Größe",
       "square": "Quadrat",
       "text": "Text",
-      "transform": "Transformieren",
-      "width": "Breite"
+      "transform": "Transformieren"
     },
     "reports": {
       "all": "Alle",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "Hinzufügen",
+      "addlayer": "Als Ebene exportieren",
       "addviapoint": "Über hier",
       "arriveat": "Ankunft bis",
       "clear": "Zurücksetzen",
@@ -597,6 +645,9 @@
       "systemlang": "Systemsprache",
       "themes": "Themen"
     },
+    "settings3d": {
+      "quality": "Qualität"
+    },
     "share": {
       "QRCodeLinkTitle": "QR Code (Smartphone)",
       "directLinkTitle": "Über einen direkten Link",
@@ -615,6 +666,7 @@
       "vertex": "An Ecken einrasten"
     },
     "themelayerslist": {
+      "addanyway": "Trotzdem hinzufügen",
       "addlayer": "Layer hinzufügen",
       "addlayerstotheme": "Ebenen der Karte hinzufügen",
       "addselectedlayers": "Selektierte Ebenen hinzufügen",
@@ -692,9 +744,9 @@
       "zoomout": "Hinauszoomen"
     },
     "tourguide": {
-      "done": "",
-      "next": "",
-      "previous": ""
+      "done": "Fertig",
+      "next": "Weiter",
+      "previous": "Zurück"
     },
     "valuetool": {
       "all": "Alle",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "Keine",
       "prompt": "Ebenenname eingeben"
+    },
+    "view3d": {
+      "storingstate": "3D Ansicht wird gespeichert..."
     },
     "window": {
       "close": "Schließen",

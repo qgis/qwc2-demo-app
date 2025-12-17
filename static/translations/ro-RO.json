@@ -16,14 +16,16 @@
         "MapExport3D": "",
         "MapFilter": "",
         "MapLight3D": "",
+        "ObjectList": "",
         "Print": "Tipărire",
         "Reports": "",
         "Settings": "Setări",
+        "Settings3D": "",
         "Share": "Trimite Link",
         "ThemeSwitcher": "Hărți tematice",
         "AttributeTable": "Tabela de atribute",
         "AuthenticationLogin": "Conectează-te",
-        "AuthenticationLogout": "Deconectează-te",
+        "AuthenticationLogout": "Deconectează-te - {0}",
         "Cyclomedia": "Cyclomedia",
         "Draw3D": "",
         "FeatureForm": "Editare atribute",
@@ -40,6 +42,7 @@
         "MeasureLineString": "Măsoară o linie",
         "MeasurePolygon": "Măsoară un poligon",
         "NewsPopup": "",
+        "ObliqueView": "",
         "Panoramax": "",
         "Portal": "",
         "PrintScreen3D": "",
@@ -71,6 +74,7 @@
       "providerselection": "Selectare furnizor",
       "recent": "Căutări recente",
       "search": "Caută",
+      "tasks": "",
       "themelayers": "",
       "themes": "Hărți tematice",
       "unknownmore": ""
@@ -82,6 +86,7 @@
     },
     "app": {
       "missingbg": "",
+      "missingdefaulttheme": "",
       "missinglayers": "",
       "missingpermalink": "",
       "missingprojection": "",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "",
       "compare_objects": "",
+      "info_message": "",
+      "modify": "",
       "toggleall": ""
     },
     "cookiepopup": {
@@ -160,7 +167,6 @@
     "draw3d": {
       "clone": "",
       "cone": "",
-      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
@@ -175,7 +181,6 @@
       "rotate": "",
       "rotation": "",
       "scale": "",
-      "sizeunavailable": "",
       "sphere": "",
       "subtract": "",
       "thescale": "",
@@ -185,11 +190,23 @@
       "union": "",
       "wedge": ""
     },
+    "editdataset3d": {
+      "moveobj": "",
+      "zoomto": ""
+    },
     "editing": {
       "add": "Adaugă",
       "attrtable": "Tabel",
       "canceldelete": "Nu șterge",
       "clearpicture": "Elimină imaginea",
+      "clone_all": "",
+      "clone_copy": "",
+      "clone_defaulted": "",
+      "clone_dontcopy": "",
+      "clone_hidden": "",
+      "clone_none": "",
+      "clone_select_attrs": "",
+      "clone_visible": "",
       "commit": "Salvează",
       "commitfailed": "Salvarea a eșuat",
       "contraintviolation": "",
@@ -210,8 +227,15 @@
       "reallydelete": "Șterge",
       "relationcommitfailed": "Salvarea relației a eșuat, vă rugăm să verificați informațiile asociate iconițelor",
       "select": "Selectează",
+      "selectlayer": "",
       "takepicture": "Fotografiază",
       "unsavedchanged": "Modificările nu sunt salvate. Doriți să părăsiți pagina oricum?"
+    },
+    "featureattributes": {
+      "name": "",
+      "nofeatureormultiple": "",
+      "value": "",
+      "windowtitle": ""
     },
     "featureform": {
       "feature": "Obiect spațial",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "dM",
+      "dhmdefaultname": "",
       "distance": "Distanța",
       "drawnodes": "",
       "error": "",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "",
       "clipboard": "Copiere în clipboard",
+      "compare": "",
+      "comparing": "",
       "download": "",
       "export": "Export",
       "featureReport": "Raport obiect spațial",
       "featurecount": "",
       "layerall": "",
       "link": "Link",
+      "multiview": "",
       "noattributes": "Fără atribute",
       "noresults": "Nu există informații în punctul selectat",
       "querying": "Interogare...",
       "reportfail": "",
+      "results": "",
+      "selectforcompare": "",
       "selectreport": "",
       "title": "Informații obiect spațial"
     },
     "imageeditor": {
       "confirmclose": "Închideți fără să salvați modificările?",
       "title": "Editor de imagine"
+    },
+    "import3d": {
+      "importing": "",
+      "noprocessesserver": ""
     },
     "importlayer": {
       "addfailed": "Adăugarea stratului a eșuat",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "",
       "supportedformats": "",
       "unknownproj": "",
+      "unsupportedfile": "",
       "url": "Adresă URL",
       "urlplaceholder": "Introduceți adresa URL către WMS, WMTS, WFS..."
     },
@@ -327,6 +362,7 @@
       "printlegend": "Tipărește legenda",
       "separator": "separator",
       "separatortooltip": "Adaugă separator",
+      "togglegroup": "",
       "transparency": "Transparență",
       "visiblefilter": "Filtrează straturile invizibile",
       "zoomtolayer": "Vedeți tot stratul"
@@ -357,6 +393,10 @@
         "LOCATING": "Poziția: se localizează...",
         "PERMISSION_DENIED": "Poziția: acces refuzat"
       }
+    },
+    "locationrecorder": {
+      "record": "",
+      "stop": ""
     },
     "map": {
       "loading": "Se încarcă...",
@@ -404,13 +444,12 @@
       "windowtitle": "Legenda"
     },
     "maplight3d": {
-      "ambientLightIntensity": "",
       "animationstep": "",
       "date": "",
       "dayspersec": "",
-      "directionalLightIntensity": "",
       "helpersVisible": "",
       "minspersec": "",
+      "moonLightIntensity": "",
       "normalBias": "",
       "shadowBias": "",
       "shadowMapSize": "",
@@ -420,6 +459,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
+      "sunLightIntensity": "",
       "time": "",
       "zFactor": ""
     },
@@ -438,7 +478,9 @@
       "ctrlclickhint": ""
     },
     "navbar": {
-      "perpage": "pe pagină"
+      "next": "",
+      "perpage": "pe pagină",
+      "prev": ""
     },
     "newspopup": {
       "dialogclose": "Închideți",
@@ -449,10 +491,14 @@
       "angle": "Unghi",
       "featureunsupported": "Valorile numerice nu pot fi introduse pentru acest tip de geometrie",
       "height": "Înălțimea",
-      "nofeature": "Nu există obiecte spațiale active",
+      "nofeatureormultiple": "",
       "side": "Partea",
       "width": "Lățimea",
       "windowtitle": "Valori numerice"
+    },
+    "obliqueview": {
+      "nodataset": "",
+      "title": ""
     },
     "panoramax": {
       "notfound": "",
@@ -494,7 +540,7 @@
       "loading": "Formularul se încarcă"
     },
     "redlining": {
-      "border": "Margine",
+      "attributes": "",
       "buffer": "Zonă tampon",
       "buffercompute": "Calcul",
       "bufferdistance": "Distanța",
@@ -502,6 +548,8 @@
       "bufferlayername": "Zonă tampon",
       "bufferselectfeature": "Selectați o entitate...",
       "circle": "Cerc",
+      "clone": "",
+      "ctrlhint": "",
       "delete": "Elimină",
       "draw": "Desenare",
       "edit": "Modifică",
@@ -522,8 +570,7 @@
       "size": "Dimeniuni",
       "square": "Pătrat",
       "text": "Text",
-      "transform": "Transformare",
-      "width": "Lățime"
+      "transform": "Transformare"
     },
     "reports": {
       "all": "",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "Adaugă punct",
+      "addlayer": "",
       "addviapoint": "Punct intermediar",
       "arriveat": "Punct de sosire",
       "clear": "Curățare",
@@ -597,6 +645,9 @@
       "systemlang": "Liba sistemului",
       "themes": ""
     },
+    "settings3d": {
+      "quality": ""
+    },
     "share": {
       "QRCodeLinkTitle": "Cod QR",
       "directLinkTitle": "Via link direct",
@@ -615,6 +666,7 @@
       "vertex": ""
     },
     "themelayerslist": {
+      "addanyway": "",
       "addlayer": "Adaugă strat",
       "addlayerstotheme": "Adaugă strat la hartă",
       "addselectedlayers": "Adaugă straturile selectate",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "Niciunul",
       "prompt": "Introdu numele stratului"
+    },
+    "view3d": {
+      "storingstate": ""
     },
     "window": {
       "close": "Închide",

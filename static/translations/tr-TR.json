@@ -16,14 +16,16 @@
         "MapExport3D": "",
         "MapFilter": "Harita Filtresi",
         "MapLight3D": "Tarih Zaman",
+        "ObjectList": "",
         "Print": "Yazdır",
         "Reports": "Raporlar",
         "Settings": "Ayarlar",
+        "Settings3D": "",
         "Share": "Bağlantı Paylaş",
         "ThemeSwitcher": "Tema",
         "AttributeTable": "Öznitelik Tablosu",
         "AuthenticationLogin": "Giriş",
-        "AuthenticationLogout": "Çıkış",
+        "AuthenticationLogout": "Çıkış - {0}",
         "Cyclomedia": "Siklomedya",
         "Draw3D": "Çizim",
         "FeatureForm": "Obje Formu",
@@ -40,6 +42,7 @@
         "MeasureLineString": "Çizgi Ölç",
         "MeasurePolygon": "Alan Ölç",
         "NewsPopup": "",
+        "ObliqueView": "",
         "Panoramax": "",
         "Portal": "Portal",
         "PrintScreen3D": "Görüntüyü ver",
@@ -71,6 +74,7 @@
       "providerselection": "Arama sağlayıcılar",
       "recent": "Son aramalar",
       "search": "Ara",
+      "tasks": "",
       "themelayers": "Tema katmanları",
       "themes": "Temalar",
       "unknownmore": ""
@@ -82,6 +86,7 @@
     },
     "app": {
       "missingbg": "Arkaplan bulunamadı \"{0}\", varsayılan arkaplan gösteriliyor.",
+      "missingdefaulttheme": "",
       "missinglayers": "Bu katmanlar bulunamıyor: {0}.",
       "missingpermalink": "Belirtilen yer işareti ya da bağlantı geçerli değil.",
       "missingprojection": "Tema yüklenemedi \"{0}\": projeksiyon {1} tanımlı değil.",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "Kırpma düzlemi",
       "compare_objects": "Objeleri karşılaştır",
+      "info_message": "",
+      "modify": "",
       "toggleall": "Tümünü aç-kapat"
     },
     "cookiepopup": {
@@ -160,7 +167,6 @@
     "draw3d": {
       "clone": "",
       "cone": "Koni",
-      "ctrlhint": "",
       "cuboid": "Kübik",
       "cylinder": "Silindir",
       "delete": "Sil",
@@ -175,7 +181,6 @@
       "rotate": "Döndür",
       "rotation": "Dönüklük",
       "scale": "Ölçek",
-      "sizeunavailable": "",
       "sphere": "Küre",
       "subtract": "",
       "thescale": "Ölçek",
@@ -185,11 +190,23 @@
       "union": "",
       "wedge": "Kama"
     },
+    "editdataset3d": {
+      "moveobj": "",
+      "zoomto": ""
+    },
     "editing": {
       "add": "Ekle",
       "attrtable": "Tablo",
       "canceldelete": "Silme",
       "clearpicture": "Temizle",
+      "clone_all": "",
+      "clone_copy": "",
+      "clone_defaulted": "",
+      "clone_dontcopy": "",
+      "clone_hidden": "",
+      "clone_none": "",
+      "clone_select_attrs": "",
+      "clone_visible": "",
       "commit": "Onayla",
       "commitfailed": "Kayıt başarısız",
       "contraintviolation": "Kısıtlama ihlali",
@@ -210,8 +227,15 @@
       "reallydelete": "Sil",
       "relationcommitfailed": "Bazı ilişkili kayıtlar güncellenemedi, detay için ipucu ikonunu kontrol ediniz",
       "select": "Seçim",
+      "selectlayer": "",
       "takepicture": "Fotoğraf çek",
       "unsavedchanged": "Kaydedilmemiş değişiklikler mevcut. Yine de sayfadan ayrılmak istiyor musunuz?"
+    },
+    "featureattributes": {
+      "name": "",
+      "nofeatureormultiple": "",
+      "value": "",
+      "windowtitle": ""
     },
     "featureform": {
       "feature": "Obje",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "a.s.l.",
+      "dhmdefaultname": "",
       "distance": "Mesafe",
       "drawnodes": "Düğüm noktası çiz",
       "error": "Yükseklik profili hesaplama başarısız",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "Toplu rapor",
       "clipboard": "Panoya kopyala",
+      "compare": "",
+      "comparing": "",
       "download": "İndir",
       "export": "Dışarıya aktar",
       "featureReport": "Obje raporu",
       "featurecount": "Obje sayısı",
       "layerall": "Tüm katmanlar",
       "link": "Bağlantı",
+      "multiview": "",
       "noattributes": "Öznitelik yok",
       "noresults": "Seçilen nokta için geçerli bilgi yok",
       "querying": "Sorgulanıyor...",
       "reportfail": "Rapor üretilemedi",
+      "results": "",
+      "selectforcompare": "",
       "selectreport": "",
       "title": "Obje Bilgisi"
     },
     "imageeditor": {
       "confirmclose": "Kaydetmeden kapat",
       "title": "Resim editörü"
+    },
+    "import3d": {
+      "importing": "",
+      "noprocessesserver": ""
     },
     "importlayer": {
       "addfailed": "Katman ekleme başarısız",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "",
       "supportedformats": "Desteklenen formatlar: KML, GeoJSON, GeoPDF, SHP (zip içinde)",
       "unknownproj": "Seçilen GeoPDF bilinmeyen projeksiyon kullanıyor: {0}.",
+      "unsupportedfile": "",
       "url": "URL",
       "urlplaceholder": "WMS, WMTS, WFS Adresini giriniz..."
     },
@@ -327,6 +362,7 @@
       "printlegend": "Yazdırma Lejandı",
       "separator": "Ayırıcı",
       "separatortooltip": "Ayırıcı ekle",
+      "togglegroup": "",
       "transparency": "Şeffaflık",
       "visiblefilter": "Görünmeyen katmanları filtrele",
       "zoomtolayer": "Katman sınırlarına yaklaş"
@@ -357,6 +393,10 @@
         "LOCATING": "Konum: bulunuyor...",
         "PERMISSION_DENIED": "Konum: izin verilmedi"
       }
+    },
+    "locationrecorder": {
+      "record": "",
+      "stop": ""
     },
     "map": {
       "loading": "Yükleniyor...",
@@ -404,13 +444,12 @@
       "windowtitle": "Lejant"
     },
     "maplight3d": {
-      "ambientLightIntensity": "",
       "animationstep": "",
       "date": "",
       "dayspersec": "",
-      "directionalLightIntensity": "",
       "helpersVisible": "",
       "minspersec": "",
+      "moonLightIntensity": "",
       "normalBias": "",
       "shadowBias": "",
       "shadowMapSize": "",
@@ -420,6 +459,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
+      "sunLightIntensity": "",
       "time": "",
       "zFactor": ""
     },
@@ -438,7 +478,9 @@
       "ctrlclickhint": "Ctrl+Click ile aç"
     },
     "navbar": {
-      "perpage": "sayfa başına"
+      "next": "",
+      "perpage": "sayfa başına",
+      "prev": ""
     },
     "newspopup": {
       "dialogclose": "Kapat",
@@ -449,10 +491,14 @@
       "angle": "Açı",
       "featureunsupported": "Sayısal değer bu geometri için kullanılamaz",
       "height": "Yükseklik",
-      "nofeature": "Aktif obje yok",
+      "nofeatureormultiple": "",
       "side": "Taraf",
       "width": "Genişlik",
       "windowtitle": "Sayısal giriş"
+    },
+    "obliqueview": {
+      "nodataset": "",
+      "title": ""
     },
     "panoramax": {
       "notfound": "",
@@ -494,7 +540,7 @@
       "loading": "Form yükleniyor..."
     },
     "redlining": {
-      "border": "Sınır",
+      "attributes": "",
       "buffer": "Tampon",
       "buffercompute": "Hesapla",
       "bufferdistance": "Mesafe",
@@ -502,6 +548,8 @@
       "bufferlayername": "Tampon",
       "bufferselectfeature": "Tampon atılacak bir obje seçiniz...",
       "circle": "Daire",
+      "clone": "",
+      "ctrlhint": "",
       "delete": "Sil",
       "draw": "Çiz",
       "edit": "Düzenle",
@@ -522,8 +570,7 @@
       "size": "Boyut",
       "square": "Kare",
       "text": "Metin",
-      "transform": "Dönüşüm",
-      "width": "Genişlik"
+      "transform": "Dönüşüm"
     },
     "reports": {
       "all": "Tümü",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "Nokta ekle",
+      "addlayer": "",
       "addviapoint": "Burası üzerinden",
       "arriveat": "Varış noktası",
       "clear": "Temizle",
@@ -597,6 +645,9 @@
       "systemlang": "Sistem dili",
       "themes": "Temalar"
     },
+    "settings3d": {
+      "quality": ""
+    },
     "share": {
       "QRCodeLinkTitle": "Karekod",
       "directLinkTitle": "Doğrudan bağlantı yolu ile",
@@ -615,6 +666,7 @@
       "vertex": "Kırık noktalarını yakala"
     },
     "themelayerslist": {
+      "addanyway": "",
       "addlayer": "Katman ekle",
       "addlayerstotheme": "Geçerli haritaya katman ekle",
       "addselectedlayers": "Seçili katmanları ekle",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "Yok",
       "prompt": "Katman adı giriniz"
+    },
+    "view3d": {
+      "storingstate": ""
     },
     "window": {
       "close": "Kapat",

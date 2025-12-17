@@ -16,14 +16,16 @@
         "MapExport3D": "Export Map",
         "MapFilter": "Map Filter",
         "MapLight3D": "Light and Shadows",
+        "ObjectList": "Object list",
         "Print": "Print",
         "Reports": "Reports",
         "Settings": "Settings",
+        "Settings3D": "3D Settings",
         "Share": "Share Link",
         "ThemeSwitcher": "Theme",
         "AttributeTable": "Attribute Table",
         "AuthenticationLogin": "Login",
-        "AuthenticationLogout": "Logout",
+        "AuthenticationLogout": "Logout - {0}",
         "Cyclomedia": "Cyclomedia",
         "Draw3D": "Draw",
         "FeatureForm": "Feature Form",
@@ -40,6 +42,7 @@
         "MeasureLineString": "Measure a line",
         "MeasurePolygon": "Measure a polygon",
         "NewsPopup": "News",
+        "ObliqueView": "Oblique Aerial View",
         "Panoramax": "Panoramax",
         "Portal": "Portal",
         "PrintScreen3D": "Raster Export",
@@ -71,6 +74,7 @@
       "providerselection": "Search providers",
       "recent": "Recent searches",
       "search": "Search",
+      "tasks": "Menu tasks",
       "themelayers": "Theme layers",
       "themes": "Themes",
       "unknownmore": "More results"
@@ -82,6 +86,7 @@
     },
     "app": {
       "missingbg": "Unable to find the background \"{0}\", displaying the default background.",
+      "missingdefaulttheme": "Unable to load the default theme.",
       "missinglayers": "Unable to find the following layers: {0}.",
       "missingpermalink": "The specified permalink or bookmark is invalid or expired.",
       "missingprojection": "Unable to load the theme \"{0}\": the projection {1} is not defined.",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "Clipping plane",
       "compare_objects": "Compare objects",
+      "info_message": "Object comparison is active",
+      "modify": "Modify",
       "toggleall": "Toggle all"
     },
     "cookiepopup": {
@@ -160,7 +167,6 @@
     "draw3d": {
       "clone": "Clone",
       "cone": "Cone",
-      "ctrlhint": "Use Ctrl for multiselection...",
       "cuboid": "Cuboid",
       "cylinder": "Cylinder",
       "delete": "Delete",
@@ -175,7 +181,6 @@
       "rotate": "Rotate",
       "rotation": "Rotation",
       "scale": "Scale",
-      "sizeunavailable": "Size unavailable for rotated object",
       "sphere": "Sphere",
       "subtract": "Subtract",
       "thescale": "Scale",
@@ -185,11 +190,23 @@
       "union": "Union",
       "wedge": "Wedge"
     },
+    "editdataset3d": {
+      "moveobj": "Move object into view",
+      "zoomto": "Zoom to object"
+    },
     "editing": {
       "add": "Add",
       "attrtable": "Table",
       "canceldelete": "Don't delete",
       "clearpicture": "Clear",
+      "clone_all": "All",
+      "clone_copy": "Copy selected",
+      "clone_defaulted": "(default value)",
+      "clone_dontcopy": "Don't copy",
+      "clone_hidden": "(hidden)",
+      "clone_none": "None",
+      "clone_select_attrs": "Select attributes to copy:",
+      "clone_visible": "Visible without default value",
       "commit": "Commit",
       "commitfailed": "Commit failed",
       "contraintviolation": "Constraint violation",
@@ -210,8 +227,15 @@
       "reallydelete": "Delete",
       "relationcommitfailed": "Some relation values could not be committed, check the icon tooltips for details",
       "select": "Select",
+      "selectlayer": "Select layer...",
       "takepicture": "Take picture",
       "unsavedchanged": "There are unsaved changes. Do you want to leave the page anyway?"
+    },
+    "featureattributes": {
+      "name": "Name",
+      "nofeatureormultiple": "No or multiple active features",
+      "value": "Value",
+      "windowtitle": "Feature attributes"
     },
     "featureform": {
       "feature": "Feature",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "a.s.l.",
+      "dhmdefaultname": "Dataset",
       "distance": "Distance",
       "drawnodes": "Draw nodes",
       "error": "Failed to compute height profile",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "Aggregated report",
       "clipboard": "Copy to clipboard",
+      "compare": "Compare selected objects",
+      "comparing": "Comparing {0} features",
       "download": "Download",
       "export": "Export",
       "featureReport": "Feature report",
-      "featurecount": "Feature count",
+      "featurecount": "{0} feature(s)",
       "layerall": "All layers",
       "link": "Link",
+      "multiview": "Multi-view",
       "noattributes": "No attributes",
       "noresults": "No information available for the selected point",
       "querying": "Querying...",
       "reportfail": "Failed to generate report",
+      "results": "Results",
+      "selectforcompare": "Select for comparison",
       "selectreport": "Select report..",
       "title": "Feature Info"
     },
     "imageeditor": {
       "confirmclose": "Close without saving?",
       "title": "Image editor"
+    },
+    "import3d": {
+      "importing": "Importing {0}...",
+      "noprocessesserver": "No import service configured"
     },
     "importlayer": {
       "addfailed": "Failed to add layer.",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "The Shapefile geometry could not be reprojected, and may be misplaced.",
       "supportedformats": "Supported formats: KML, GeoJSON, GeoPDF, SHP (in zip)",
       "unknownproj": "The selected GeoPDF uses an unknown projection: {0}.",
+      "unsupportedfile": "Unsupported file format.",
       "url": "URL",
       "urlplaceholder": "Enter URL to WMS, WMTS, WFS..."
     },
@@ -327,6 +362,7 @@
       "printlegend": "Print legend",
       "separator": "Separator",
       "separatortooltip": "Add separator",
+      "togglegroup": "Toggle group and all sublayers",
       "transparency": "Trasparency",
       "visiblefilter": "Filter invisible layers",
       "zoomtolayer": "Zoom to layer"
@@ -358,12 +394,16 @@
         "PERMISSION_DENIED": "Position: permission denied"
       }
     },
+    "locationrecorder": {
+      "record": "Record location",
+      "stop": "Stop recording"
+    },
     "map": {
       "loading": "Loading...",
       "resetrotation": "Reset rotation"
     },
     "map3d": {
-      "lockview": "Move with 2D view",
+      "lockview": "Auto-sync 2D/3D views",
       "syncview": "Synchronize with 2D view",
       "terrain": "Terrain",
       "title": "3D View"
@@ -404,13 +444,12 @@
       "windowtitle": "Legend"
     },
     "maplight3d": {
-      "ambientLightIntensity": "Ambient light intensity",
       "animationstep": "Animation step",
       "date": "Date",
       "dayspersec": "days / second",
-      "directionalLightIntensity": "Directional light intensity",
       "helpersVisible": "Show helpers",
       "minspersec": "mins / second",
+      "moonLightIntensity": "Moonlight intensity",
       "normalBias": "Normal bias",
       "shadowBias": "Shadow bias",
       "shadowMapSize": "Shadowmap size",
@@ -420,6 +459,7 @@
       "shadowintensity": "Shadow intensity",
       "shadows": "Enable shadows",
       "showadvanced": "Show advanced",
+      "sunLightIntensity": "Sunlight intensity",
       "time": "Time",
       "zFactor": "Z-factor"
     },
@@ -438,7 +478,9 @@
       "ctrlclickhint": "Open with Ctrl+Click"
     },
     "navbar": {
-      "perpage": "per page"
+      "next": "Next page",
+      "perpage": "per page",
+      "prev": "Previous page"
     },
     "newspopup": {
       "dialogclose": "Close",
@@ -449,10 +491,14 @@
       "angle": "Angle",
       "featureunsupported": "Numeric input unavailable for this geometry",
       "height": "Height",
-      "nofeature": "No active feature",
+      "nofeatureormultiple": "No or multiple active features",
       "side": "Side",
       "width": "Width",
       "windowtitle": "Numeric input"
+    },
+    "obliqueview": {
+      "nodataset": "No oblique imagery available",
+      "title": "Oblique Aerial View"
     },
     "panoramax": {
       "notfound": "There is no image available for this location.",
@@ -494,7 +540,7 @@
       "loading": "Loading form..."
     },
     "redlining": {
-      "border": "Border",
+      "attributes": "Feature attributes",
       "buffer": "Buffer",
       "buffercompute": "Compute",
       "bufferdistance": "Distance",
@@ -502,6 +548,8 @@
       "bufferlayername": "Buffer",
       "bufferselectfeature": "Select a feature to buffer...",
       "circle": "Circle",
+      "clone": "Clone",
+      "ctrlhint": "Use Ctrl for multiselection...",
       "delete": "Delete",
       "draw": "Draw",
       "edit": "Edit",
@@ -522,8 +570,7 @@
       "size": "Size",
       "square": "Square",
       "text": "Text",
-      "transform": "Transform",
-      "width": "Width"
+      "transform": "Transform"
     },
     "reports": {
       "all": "All",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "Add point",
+      "addlayer": "Export as layer",
       "addviapoint": "Via here",
       "arriveat": "Arrive at",
       "clear": "Clear",
@@ -597,6 +645,9 @@
       "systemlang": "System language",
       "themes": "Themes"
     },
+    "settings3d": {
+      "quality": "Quality"
+    },
     "share": {
       "QRCodeLinkTitle": "QR Code",
       "directLinkTitle": "Via a direct link",
@@ -615,6 +666,7 @@
       "vertex": "Snap to vertices"
     },
     "themelayerslist": {
+      "addanyway": "Add anyway",
       "addlayer": "Add layer",
       "addlayerstotheme": "Add layers to current map",
       "addselectedlayers": "Add selected layer(s)",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "None",
       "prompt": "Enter layer name"
+    },
+    "view3d": {
+      "storingstate": "Storing 3D state..."
     },
     "window": {
       "close": "Close",

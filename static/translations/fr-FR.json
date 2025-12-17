@@ -16,14 +16,16 @@
         "MapExport3D": "Exporter la carte",
         "MapFilter": "Filtrer la carte",
         "MapLight3D": "Illumination et ombres",
+        "ObjectList": "Liste d'objets",
         "Print": "Imprimer",
         "Reports": "Rapports",
         "Settings": "Paramètres",
+        "Settings3D": "Paramètres 3D",
         "Share": "Partager",
         "ThemeSwitcher": "Thèmes",
         "AttributeTable": "Table d'attributs",
         "AuthenticationLogin": "Connexion",
-        "AuthenticationLogout": "Déconnexion",
+        "AuthenticationLogout": "Déconnexion - {0}",
         "Cyclomedia": "Cyclomedia",
         "Draw3D": "Dessiner",
         "FeatureForm": "Formulaire d'objet",
@@ -40,6 +42,7 @@
         "MeasureLineString": "Mesurer une ligne",
         "MeasurePolygon": "Mesurer un polygone",
         "NewsPopup": "Actualités",
+        "ObliqueView": "Vue aérienne oblique",
         "Panoramax": "Panoramax",
         "Portal": "Portail",
         "PrintScreen3D": "Export raster",
@@ -71,6 +74,7 @@
       "providerselection": "Services de recherche",
       "recent": "Recherches récentes",
       "search": "Chercher",
+      "tasks": "Outils",
       "themelayers": "Couches de thèmes",
       "themes": "Cartes",
       "unknownmore": "Plus de résultats"
@@ -82,6 +86,7 @@
     },
     "app": {
       "missingbg": "Impossible de trouver le fond \"{0}\", affichage du fond par défaut.",
+      "missingdefaulttheme": "Le thème par défaut n'a pas pu être chargé.",
       "missinglayers": "Impossible de trouver les couches suivantes: {0}.",
       "missingpermalink": "Le permalien ou le signet n'est pas valide ou a expiré.",
       "missingprojection": "Impossible de charger le thème \"{0}\": la projection {1} n'est pas définie.",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "Plan d'écrêtage",
       "compare_objects": "Comparer objets",
+      "info_message": "La comparaison d'objets est active",
+      "modify": "Modifier",
       "toggleall": "Tous"
     },
     "cookiepopup": {
@@ -160,7 +167,6 @@
     "draw3d": {
       "clone": "Copier",
       "cone": "Cône",
-      "ctrlhint": "Ctrl pour sélection multiple...",
       "cuboid": "Cuboïde",
       "cylinder": "Cylindre",
       "delete": "Effacer",
@@ -175,7 +181,6 @@
       "rotate": "Tourner",
       "rotation": "Rotation",
       "scale": "Redimensionner",
-      "sizeunavailable": "Dimensions pas disponibles pour l'objet pivoté",
       "sphere": "Sphère",
       "subtract": "Soustraire",
       "thescale": "Echelle",
@@ -185,11 +190,23 @@
       "union": "Unir",
       "wedge": "Coin"
     },
+    "editdataset3d": {
+      "moveobj": "Déplacer l'objet dans la vue",
+      "zoomto": "Zoomer sur l'objet"
+    },
     "editing": {
       "add": "Ajouter",
       "attrtable": "Table",
       "canceldelete": "Annuler la suppression",
       "clearpicture": "Réinitialiser",
+      "clone_all": "Tous",
+      "clone_copy": "Copier sélectionnés",
+      "clone_defaulted": "(valuer predef.)",
+      "clone_dontcopy": "Ne rien copier",
+      "clone_hidden": "(masqué)",
+      "clone_none": "Aucun",
+      "clone_select_attrs": "Attributs à copier:",
+      "clone_visible": "Visibles sans valeur predef.",
       "commit": "Appliquer",
       "commitfailed": "Échec de l'enregistrement",
       "contraintviolation": "Violation de contrainte",
@@ -210,8 +227,15 @@
       "reallydelete": "Supprimer",
       "relationcommitfailed": "Certaines relations n'ont pas pu être enregistrées. Pour plus de détails consulter le bouton d'informations",
       "select": "Sélectionner",
+      "selectlayer": "Sélectionner une couche...",
       "takepicture": "Ajouter une photo",
       "unsavedchanged": "Il y a des modifications non enregistrées. Faut-il quand même quitter la page?"
+    },
+    "featureattributes": {
+      "name": "Nom",
+      "nofeatureormultiple": "Aucune o plus objets actives",
+      "value": "Valeur",
+      "windowtitle": "Attributs de l'objet"
     },
     "featureform": {
       "feature": "Objet",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "s/mer",
+      "dhmdefaultname": "Jeu de données",
       "distance": "Distance",
       "drawnodes": "Dessiner des nœuds",
       "error": "Échec du calcul du profil de hauteur",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "Rapport agrégé",
       "clipboard": "Copier dans le presse-papiers",
+      "compare": "Comparer les objets sélectionnés",
+      "comparing": "Comparison de {0} objets",
       "download": "Télécharger",
       "export": "Exporter",
       "featureReport": "Données de l'objet",
-      "featurecount": "Éléments sélectionnés",
+      "featurecount": "{0} élément(s)",
       "layerall": "Toutes les couches",
       "link": "Lien",
+      "multiview": "Vue multiple",
       "noattributes": "Pas d'attribut",
       "noresults": "Pas de résultats pour la position sélectionnée",
       "querying": "Identification en cours...",
       "reportfail": "Le rapport n'a pas été généré",
-      "selectreport": "Selectionner rapport...",
+      "results": "Résultats",
+      "selectforcompare": "Sélectionner pour comparison",
+      "selectreport": "Sélectionner rapport...",
       "title": "Informations sur l'objet"
     },
     "imageeditor": {
       "confirmclose": "Fermer sans enregistrer?",
       "title": "Traitement des images"
+    },
+    "import3d": {
+      "importing": "Importation de {0}...",
+      "noprocessesserver": "Aucun service d'importation configuré"
     },
     "importlayer": {
       "addfailed": "La couche n'a pas pu être ajoutée",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "La géométrie du fichier Shapefile n'a pas pu être reprojetée et peut être mal placée.",
       "supportedformats": "Formats supportés: KML, GeoJSON, GeoPDF, SHP (zip)",
       "unknownproj": "Le GeoPDF sélectionné utilise une projection inconnue: {0}.",
+      "unsupportedfile": "Format de fichier non supporté",
       "url": "URL",
       "urlplaceholder": "Entrer l'URL d'un WMS, WMTS, WFS..."
     },
@@ -327,6 +362,7 @@
       "printlegend": "Imprimer la légende",
       "separator": "Séparateur",
       "separatortooltip": "Ajouter séparateur",
+      "togglegroup": "Basculer le groupe et toutes les sous-couches",
       "transparency": "Transparence",
       "visiblefilter": "Filtrer couches invisibles",
       "zoomtolayer": "Zoomer sur la couche"
@@ -358,12 +394,16 @@
         "PERMISSION_DENIED": "Position: accès refusé"
       }
     },
+    "locationrecorder": {
+      "record": "Enregistrer la position",
+      "stop": "Arrêter l'enregistrement"
+    },
     "map": {
       "loading": "Chargement de la carte...",
       "resetrotation": "Réinitialiser la rotation"
     },
     "map3d": {
-      "lockview": "Déplacer avec vue 2D",
+      "lockview": "Auto-sync des vues 2D/3D",
       "syncview": "Synchroniser avec vue 2D",
       "terrain": "Terrain",
       "title": "Vue 3D"
@@ -404,13 +444,12 @@
       "windowtitle": "Légende"
     },
     "maplight3d": {
-      "ambientLightIntensity": "Intensité lumineuse ambiante",
       "animationstep": "Pas d'animation",
       "date": "Date",
       "dayspersec": "jours / sec",
-      "directionalLightIntensity": "Intensité lumineuse directionnelle",
       "helpersVisible": "Montrer les aides",
       "minspersec": "minutes / sec",
+      "moonLightIntensity": "Intensité lune",
       "normalBias": "Bias normal",
       "shadowBias": "Bias de l'ombre",
       "shadowMapSize": "Taille texture d'ombre",
@@ -420,6 +459,7 @@
       "shadowintensity": "Intensité de l'ombre",
       "shadows": "Activer les ombres",
       "showadvanced": "Paramètres avancés",
+      "sunLightIntensity": "Intensité soleil",
       "time": "Heure",
       "zFactor": "Facteur z"
     },
@@ -438,7 +478,9 @@
       "ctrlclickhint": "Ouvrir avec Ctrl+Clic"
     },
     "navbar": {
-      "perpage": "Par page"
+      "next": "Page suivante",
+      "perpage": "Par page",
+      "prev": "Page précédente"
     },
     "newspopup": {
       "dialogclose": "Fermer",
@@ -449,10 +491,14 @@
       "angle": "Angle",
       "featureunsupported": "Entrée numérique non disponible pour cette géométrie",
       "height": "Hauteur",
-      "nofeature": "Aucune objet active",
+      "nofeatureormultiple": "Aucun ou plusieurs objets actifs",
       "side": "Côté",
       "width": "Largeur",
       "windowtitle": "Entrée numérique"
+    },
+    "obliqueview": {
+      "nodataset": "Aucune image aérienne oblique disponible",
+      "title": "Vue aérienne oblique"
     },
     "panoramax": {
       "notfound": "Il n'y a pas d'image disponible pour cet emplacement.",
@@ -494,7 +540,7 @@
       "loading": "Chargement du formulaire..."
     },
     "redlining": {
-      "border": "Bordure",
+      "attributes": "Attributs de l'objet",
       "buffer": "Tampon",
       "buffercompute": "Calculer",
       "bufferdistance": "Distance",
@@ -502,6 +548,8 @@
       "bufferlayername": "Sortie",
       "bufferselectfeature": "Choisissez une entité pour le tampon...",
       "circle": "Cercle",
+      "clone": "Copier",
+      "ctrlhint": "Ctrl pour sélection multiple...",
       "delete": "Effacer",
       "draw": "Dessiner",
       "edit": "Editer",
@@ -522,8 +570,7 @@
       "size": "Taille",
       "square": "Carré",
       "text": "Texte",
-      "transform": "Transformer",
-      "width": "Largeur"
+      "transform": "Transformer"
     },
     "reports": {
       "all": "Tous",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "Ajouter",
+      "addlayer": "Exporter en couche",
       "addviapoint": "Par ici",
       "arriveat": "Arriver à",
       "clear": "Réinitialiser",
@@ -597,6 +645,9 @@
       "systemlang": "Langue du système",
       "themes": "Thèmes"
     },
+    "settings3d": {
+      "quality": "Qualité"
+    },
     "share": {
       "QRCodeLinkTitle": "QR code",
       "directLinkTitle": "Via un lien direct",
@@ -615,6 +666,7 @@
       "vertex": "Snapping aux sommets"
     },
     "themelayerslist": {
+      "addanyway": "Ajouter quand même",
       "addlayer": "Ajouter la couche",
       "addlayerstotheme": "Ajouter des couches à la carte",
       "addselectedlayers": "Ajouter les couches sélectionnées",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "Aucune",
       "prompt": "Entrez le nom de la couche"
+    },
+    "view3d": {
+      "storingstate": "Enregistrement de la vue 3D..."
     },
     "window": {
       "close": "Fermer",

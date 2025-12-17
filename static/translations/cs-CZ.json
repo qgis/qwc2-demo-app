@@ -16,14 +16,16 @@
         "MapExport3D": "",
         "MapFilter": "",
         "MapLight3D": "",
+        "ObjectList": "",
         "Print": "Tisk",
         "Reports": "",
         "Settings": "Nastavení",
+        "Settings3D": "",
         "Share": "Sdílet odkaz",
         "ThemeSwitcher": "Téma",
         "AttributeTable": "Atributy",
         "AuthenticationLogin": "Přihlášení",
-        "AuthenticationLogout": "Odhlášení",
+        "AuthenticationLogout": "Odhlášení - {0}",
         "Cyclomedia": "Cyclomedia",
         "Draw3D": "",
         "FeatureForm": "Editační formulář",
@@ -40,6 +42,7 @@
         "MeasureLineString": "Změřit úsek",
         "MeasurePolygon": "Měřit mnohoúhelník",
         "NewsPopup": "",
+        "ObliqueView": "",
         "Panoramax": "",
         "Portal": "",
         "PrintScreen3D": "",
@@ -71,6 +74,7 @@
       "providerselection": "Poskytovatelé vyhledávání",
       "recent": "Nedávná hledání",
       "search": "Hledat",
+      "tasks": "",
       "themelayers": "",
       "themes": "Témata",
       "unknownmore": ""
@@ -82,6 +86,7 @@
     },
     "app": {
       "missingbg": "",
+      "missingdefaulttheme": "",
       "missinglayers": "",
       "missingpermalink": "",
       "missingprojection": "",
@@ -137,6 +142,8 @@
     "compare3d": {
       "clipplane": "",
       "compare_objects": "",
+      "info_message": "",
+      "modify": "",
       "toggleall": ""
     },
     "cookiepopup": {
@@ -160,7 +167,6 @@
     "draw3d": {
       "clone": "",
       "cone": "",
-      "ctrlhint": "",
       "cuboid": "",
       "cylinder": "",
       "delete": "",
@@ -175,7 +181,6 @@
       "rotate": "",
       "rotation": "",
       "scale": "",
-      "sizeunavailable": "",
       "sphere": "",
       "subtract": "",
       "thescale": "",
@@ -185,11 +190,23 @@
       "union": "",
       "wedge": ""
     },
+    "editdataset3d": {
+      "moveobj": "",
+      "zoomto": ""
+    },
     "editing": {
       "add": "Přidat",
       "attrtable": "",
       "canceldelete": "Neodstraňovat",
       "clearpicture": "",
+      "clone_all": "",
+      "clone_copy": "",
+      "clone_defaulted": "",
+      "clone_dontcopy": "",
+      "clone_hidden": "",
+      "clone_none": "",
+      "clone_select_attrs": "",
+      "clone_visible": "",
       "commit": "Potvrdit",
       "commitfailed": "",
       "contraintviolation": "",
@@ -210,8 +227,15 @@
       "reallydelete": "Odstranit",
       "relationcommitfailed": "",
       "select": "Vybrat",
+      "selectlayer": "",
       "takepicture": "",
       "unsavedchanged": ""
+    },
+    "featureattributes": {
+      "name": "",
+      "nofeatureormultiple": "",
+      "value": "",
+      "windowtitle": ""
     },
     "featureform": {
       "feature": "Prvek",
@@ -245,6 +269,7 @@
     },
     "heightprofile": {
       "asl": "m n. m.",
+      "dhmdefaultname": "",
       "distance": "Vzdálenost",
       "drawnodes": "",
       "error": "",
@@ -264,22 +289,31 @@
     "identify": {
       "aggregatedreport": "",
       "clipboard": "Zkopírovat do schránky",
+      "compare": "",
+      "comparing": "",
       "download": "",
       "export": "Exportovat",
       "featureReport": "Report prvku",
       "featurecount": "",
       "layerall": "",
       "link": "Odkaz",
+      "multiview": "",
       "noattributes": "Bez atributů",
       "noresults": "V tomto bodu nejsou k dispozici informace o žádném prvku",
       "querying": "Dotazování...",
       "reportfail": "",
+      "results": "",
+      "selectforcompare": "",
       "selectreport": "",
       "title": "Informace o prvku"
     },
     "imageeditor": {
       "confirmclose": "",
       "title": ""
+    },
+    "import3d": {
+      "importing": "",
+      "noprocessesserver": ""
     },
     "importlayer": {
       "addfailed": "Přidání vrstvy selhalo",
@@ -295,6 +329,7 @@
       "shpreprojectionerror": "",
       "supportedformats": "",
       "unknownproj": "",
+      "unsupportedfile": "",
       "url": "URL",
       "urlplaceholder": "Vložit URL pro WMS, WMTS, WFS..."
     },
@@ -327,6 +362,7 @@
       "printlegend": "Tisk legendy",
       "separator": "",
       "separatortooltip": "",
+      "togglegroup": "",
       "transparency": "Průhlednost",
       "visiblefilter": "Skrýt nezobrazující se vrstvy",
       "zoomtolayer": "Vycentrovat na vrstvu"
@@ -357,6 +393,10 @@
         "LOCATING": "Poloha: načítá se...",
         "PERMISSION_DENIED": "Poloha: nepovoleno"
       }
+    },
+    "locationrecorder": {
+      "record": "",
+      "stop": ""
     },
     "map": {
       "loading": "Načítání...",
@@ -404,13 +444,12 @@
       "windowtitle": "Legenda"
     },
     "maplight3d": {
-      "ambientLightIntensity": "",
       "animationstep": "",
       "date": "",
       "dayspersec": "",
-      "directionalLightIntensity": "",
       "helpersVisible": "",
       "minspersec": "",
+      "moonLightIntensity": "",
       "normalBias": "",
       "shadowBias": "",
       "shadowMapSize": "",
@@ -420,6 +459,7 @@
       "shadowintensity": "",
       "shadows": "",
       "showadvanced": "",
+      "sunLightIntensity": "",
       "time": "",
       "zFactor": ""
     },
@@ -438,7 +478,9 @@
       "ctrlclickhint": ""
     },
     "navbar": {
-      "perpage": "na stránku"
+      "next": "",
+      "perpage": "na stránku",
+      "prev": ""
     },
     "newspopup": {
       "dialogclose": "Zavřít",
@@ -449,10 +491,14 @@
       "angle": "",
       "featureunsupported": "",
       "height": "",
-      "nofeature": "",
+      "nofeatureormultiple": "",
       "side": "",
       "width": "",
       "windowtitle": ""
+    },
+    "obliqueview": {
+      "nodataset": "",
+      "title": ""
     },
     "panoramax": {
       "notfound": "",
@@ -494,7 +540,7 @@
       "loading": ""
     },
     "redlining": {
-      "border": "Okraj",
+      "attributes": "",
       "buffer": "",
       "buffercompute": "",
       "bufferdistance": "",
@@ -502,6 +548,8 @@
       "bufferlayername": "",
       "bufferselectfeature": "",
       "circle": "",
+      "clone": "",
+      "ctrlhint": "",
       "delete": "",
       "draw": "",
       "edit": "",
@@ -522,8 +570,7 @@
       "size": "Velikost",
       "square": "",
       "text": "Text",
-      "transform": "",
-      "width": "Šířka"
+      "transform": ""
     },
     "reports": {
       "all": "",
@@ -534,6 +581,7 @@
     },
     "routing": {
       "add": "",
+      "addlayer": "",
       "addviapoint": "Přes tento bod",
       "arriveat": "",
       "clear": "",
@@ -597,6 +645,9 @@
       "systemlang": "Systémový jazyk",
       "themes": ""
     },
+    "settings3d": {
+      "quality": ""
+    },
     "share": {
       "QRCodeLinkTitle": "QR kód",
       "directLinkTitle": "Přes přímý odkaz",
@@ -615,6 +666,7 @@
       "vertex": ""
     },
     "themelayerslist": {
+      "addanyway": "",
       "addlayer": "Přidat vrstvu",
       "addlayerstotheme": "Přidat vrstvy do aktuálního tématu",
       "addselectedlayers": "Přidat vybrané vrstvy",
@@ -719,6 +771,9 @@
     "vectorlayerpicker": {
       "none": "Žádná",
       "prompt": "Zadejte název vrstvy"
+    },
+    "view3d": {
+      "storingstate": ""
     },
     "window": {
       "close": "Zavřít",
