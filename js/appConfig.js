@@ -39,10 +39,11 @@ import MapLegendPlugin from 'qwc2/plugins/MapLegend';
 import MapTipPlugin from 'qwc2/plugins/MapTip';
 import MeasurePlugin from 'qwc2/plugins/Measure';
 import NewsPopupPlugin from 'qwc2/plugins/NewsPopup';
+import ObjectListPlugin from './plugins/ObjectList';
+import ObliqueViewPlugin from './plugins/ObliqueView';
 import OverviewMapPlugin from 'qwc2/plugins/OverviewMap';
 import PortalPlugin from 'qwc2/plugins/Portal';
 import PrintPlugin from 'qwc2/plugins/Print';
-import ProcessNotificationsPlugin from 'qwc2/plugins/ProcessNotifications';
 import RedliningPlugin from 'qwc2/plugins/Redlining';
 import ReportsPlugin from 'qwc2/plugins/Reports';
 import RoutingPlugin from 'qwc2/plugins/Routing';
@@ -108,10 +109,11 @@ export default {
             MapTipPlugin: MapTipPlugin,
             MeasurePlugin: MeasurePlugin,
             NewsPopupPlugin: NewsPopupPlugin,
+            ObjectListPlugin: ObjectListPlugin(/* CustomEditingInterface */),
+            ObliqueViewPlugin: ObliqueViewPlugin,
             OverviewMapPlugin: OverviewMapPlugin,
             PortalPlugin: PortalPlugin,
             PrintPlugin: PrintPlugin,
-            ProcessNotificationsPlugin: ProcessNotificationsPlugin,
             RedliningPlugin: RedliningPlugin({
                 BufferSupport: BufferSupport
             }),
@@ -131,7 +133,23 @@ export default {
                 Toolbar: Toolbar,
                 FullscreenSwitcher: FullscreenSwitcher
             }),
-            View3DPlugin: View3DPlugin,
+            View3DPlugin: View3DPlugin({
+                BackgroundSwitcher3D: lazy(() => import('qwc2/plugins/map3d/BackgroundSwitcher3D')),
+                BottomBar3D: lazy(() => import('qwc2/plugins/map3d/BottomBar3D')),
+                Compare3D: lazy(() => import('qwc2/plugins/map3d/Compare3D')),
+                Draw3D: lazy(() => import('qwc2/plugins/map3d/Draw3D')),
+                ExportObjects3D: lazy(() => import('qwc2/plugins/map3d/ExportObjects3D')),
+                HideObjects3D: lazy(() => import('qwc2/plugins/map3d/HideObjects3D')),
+                Identify3D: lazy(() => import('qwc2/plugins/map3d/Identify3D')),
+                LayerTree3D: lazy(() => import('qwc2/plugins/map3d/LayerTree3D')),
+                MapCopyright3D: lazy(() => import('qwc2/plugins/map3d/MapCopyright3D')),
+                MapExport3D: lazy(() => import('qwc2/plugins/map3d/MapExport3D')),
+                MapLight3D: lazy(() => import('qwc2/plugins/map3d/MapLight3D')),
+                Measure3D: lazy(() => import('qwc2/plugins/map3d/Measure3D')),
+                OverviewMap3D: lazy(() => import('qwc2/plugins/map3d/OverviewMap3D')),
+                Settings3D: lazy(() => import('qwc2/plugins/map3d/Settings3D')),
+                TopBar3D: lazy(() => import('qwc2/plugins/map3d/TopBar3D'))
+            }),
             ZoomInPlugin: ZoomInPlugin,
             ZoomOutPlugin: ZoomOutPlugin,
         },
