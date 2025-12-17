@@ -37,7 +37,7 @@
         "webpack": "^5.97.1",
         "webpack-bundle-size-analyzer": "^3.1.0",
         "webpack-cli": "^5.1.4",
-        "webpack-dev-server": "^5.1.0"
+        "webpack-dev-server": "^5.2.1"
     },
     "scripts": {
         "prod": "npm run tsupdate && npm run themesconfig && npm run iconfont && webpack --mode production --progress",
