@@ -65,9 +65,12 @@ import MeasurementSupport from 'qwc2/plugins/map/MeasurementSupport';
 import RedliningSupport from 'qwc2/plugins/map/RedliningSupport';
 import SnappingSupport from 'qwc2/plugins/map/SnappingSupport';
 import BufferSupport from 'qwc2/plugins/redlining/RedliningBufferSupport';
-
 import defaultLocaleData from '../static/translations/en-US.json';
 import {customAttributeCalculator, attributeTransform, customExporters} from './IdentifyExtensions';
+
+import {lazy} from 'react';
+import HelloWizardPlugin from './plugins/HelloWizard';
+
 
 export default {
     defaultLocaleData: defaultLocaleData,
@@ -96,6 +99,7 @@ export default {
             FeatureFormPlugin: FeatureFormPlugin(/* CustomEditingInterface */),
             GeometryDigitizerPlugin: GeometryDigitizerPlugin,
             HeightProfilePlugin: HeightProfilePlugin,
+            HelloWizardPlugin: HelloWizardPlugin,
             HelpPlugin: HelpPlugin(),
             HomeButtonPlugin: HomeButtonPlugin,
             IdentifyPlugin: IdentifyPlugin,

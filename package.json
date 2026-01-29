@@ -43,7 +43,7 @@
         "prod": "npm run tsupdate && npm run themesconfig && npm run iconfont && webpack --mode production --progress",
         "start": "npm run tsupdate && npm run themesconfig && npm run iconfont && webpack serve --mode development --progress --host 0.0.0.0 --port 8081",
         "iconfont": "npx qwc_build_iconfont",
-        "themesconfig": "npx qwc_gen_themesconfig",
+        "themesconfig": "echo Skipping theme generation - using static config ( TODO )",
         "tsupdate": "npx qwc_update_translations",
         "build": "npm run prod",
         "analyze": "webpack --mode production --json | webpack-bundle-size-analyzer",

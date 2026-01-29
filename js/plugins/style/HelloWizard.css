@@ -1,0 +1,236 @@
+/* HelloWizard Plugin Styles */
+
+.hellowizard-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    min-height: 300px;
+}
+
+.hellowizard-loading p {
+    margin-top: 20px;
+    color: #666;
+}
+
+.hellowizard-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #0066cc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hellowizard-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Progress indicator */
+.hellowizard-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.hellowizard-progress-step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hellowizard-progress-step.active {
+    background: #0066cc;
+    color: white;
+}
+
+.hellowizard-progress-line {
+    width: 60px;
+    height: 2px;
+    background: #e0e0e0;
+}
+
+.hellowizard-progress-line.active {
+    background: #0066cc;
+}
+
+/* Title */
+.hellowizard-title {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Error display */
+.hellowizard-error {
+    background: #fee;
+    border: 1px solid #fcc;
+    color: #c00;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Content */
+.hellowizard-content {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.hellowizard-step {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hellowizard-step h3 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.hellowizard-step p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Form fields */
+.hellowizard-field {
+    margin-bottom: 15px;
+}
+
+.hellowizard-field label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.hellowizard-field input[type="text"],
+.hellowizard-field input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.hellowizard-field input[type="text"]:focus,
+.hellowizard-field input[type="email"]:focus {
+    outline: none;
+    border-color: #0066cc;
+}
+
+.hellowizard-field input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Summary */
+.hellowizard-summary {
+    background: white;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.hellowizard-summary-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.hellowizard-summary-item:last-child {
+    border-bottom: none;
+}
+
+.hellowizard-summary-item strong {
+    display: inline-block;
+    width: 120px;
+    color: #666;
+}
+
+/* Success message */
+.hellowizard-success {
+    margin-top: 20px;
+    padding: 15px;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    color: #155724;
+}
+
+.hellowizard-success h4 {
+    margin-bottom: 10px;
+}
+
+.hellowizard-success pre {
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 12px;
+}
+
+/* Actions */
+.hellowizard-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.hellowizard-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.hellowizard-btn-primary {
+    background: #0066cc;
+    color: white;
+}
+
+.hellowizard-btn-primary:hover {
+    background: #0052a3;
+}
+
+.hellowizard-btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.hellowizard-btn-secondary:hover {
+    background: #5a6268;
+}
+
+.hellowizard-btn-success {
+    background: #28a745;
+    color: white;
+}
+
+.hellowizard-btn-success:hover {
+    background: #218838;
+}
+
+
