@@ -17,6 +17,7 @@
         "MapFilter": "Filtro de mapa",
         "MapLight3D": "Luz y sombras",
         "ObjectList": "Lista de objetos",
+        "PlotInfoTool": "",
         "Print": "Imprimir",
         "Reports": "Informes",
         "Settings": "Opciones",
@@ -58,9 +59,7 @@
     },
     "search": {
       "coordinates": "Coordenadas",
-      "all": "Todo",
       "circleradius": "Radio del círculo",
-      "clearfilter": "Limpiar filtro",
       "existinglayer": "La capa ya existe en el mapa",
       "filter": "Refinar búsqueda",
       "layers": "Capas",
@@ -68,7 +67,6 @@
       "more": "{0} más resultados",
       "nodescription": "No hay descripción disponible",
       "none": "Ninguno",
-      "noresults": "Sin resultados",
       "placeholder": "Busque un lugar o agregue mapa",
       "places": "Lugares",
       "providerselection": "Proveedores de búsqueda",
@@ -94,23 +92,22 @@
     },
     "attribtable": {
       "addfeature": "Añadir elemento",
+      "calculatedfield": "",
       "commit": "Commit de la fila modificada",
       "csvexport": "Exportar CSV",
-      "delete": "Eliminar",
       "deletefailed": "Uno o más elementos no han podido eliminarse",
       "deletefeatures": "Eliminar elementos seleccionados",
       "deleting": "Eliminando elementos...",
       "discard": "Descartar fila modificada",
       "formeditmode": "Abrir el formulario de edición del elemento seleccionado",
+      "fulldatasetload": "",
       "geomnoadd": "Por favor use el formulario de edición para añadir elementos a esta capa",
       "limittoextent": "Limitar a la extensión del mapa",
       "loadfailed": "No se han podido cargar los datos del elemento",
-      "loading": "Cargando...",
       "nodelete": "No eliminar",
       "nogeomnoform": "El formulario de edición no está disponible para capas sin geometría",
       "pleasereload": "Presione 'Recargar' para cargar la tabla de atributos",
       "reload": "Recargar",
-      "selectlayer": "Seleccionar capa",
       "title": "Tabla de Atributos",
       "zoomtoselection": "Hacer zoom a elementos seleccionado"
     },
@@ -120,14 +117,13 @@
     "bookmark": {
       "add": "Añadir",
       "addfailed": "Error al crear",
-      "description": "Descripción",
       "lastUpdate": "Último guardado",
       "manage": "Administrar",
+      "newbookmark": "",
       "nobookmarks": "Ningún marcador",
       "notloggedin": "Se necesita tener sesión iniciada para guardar marcadores",
       "open": "Abrir en la pestaña actual",
       "openTab": "Abrir en pestaña",
-      "remove": "Eliminar",
       "removefailed": "Error al eliminar el marcador",
       "savefailed": "Error al actualizar el marcador",
       "update": "Actualizar marcador",
@@ -138,6 +134,39 @@
       "scale_label": "Escala",
       "terms_label": "Términos de uso",
       "viewertitle_label": "Página de inicio"
+    },
+    "common": {
+      "add": "Añadir",
+      "all": "Todo",
+      "cancel": "Cancelar",
+      "circle": "Círculo",
+      "clear": "Limpiar",
+      "clone": "Clonar",
+      "close": "Cerrar",
+      "delete": "Eliminar",
+      "download": "Descargar",
+      "ellipse": "Elipse",
+      "export": "Exportar",
+      "format": "Formato:",
+      "line": "Línea",
+      "loading": "Cargando...",
+      "lock2dview": "Mover con la vista 2D",
+      "noresults": "Sin resultados",
+      "pick": "Seleccionar",
+      "point": "Punto",
+      "polygon": "Polígono",
+      "rectangle": "Rectángulo",
+      "rename": "",
+      "resolution": "Resolución:",
+      "save": "Guardar",
+      "select": "Seleccionar...",
+      "selectlayer": "Seleccionar capa...",
+      "square": "Cuadrado",
+      "sync2dview": "Sincronizar con la vista 2D",
+      "text": "Texto",
+      "wait": "Por favor espere...",
+      "zoomin": "Acercarse",
+      "zoomout": "Alejarse"
     },
     "compare3d": {
       "clipplane": "Plano de recorte",
@@ -165,17 +194,14 @@
       "title": "Visor Cyclomedia"
     },
     "draw3d": {
-      "clone": "Clonar",
       "cone": "Cono",
       "cuboid": "Cuboide",
       "cylinder": "Cilindro",
-      "delete": "Eliminar",
       "drawings": "Dibujos",
       "intersect": "Intersecar",
       "label": "Etiqueta",
       "newgroupprompt": "Nuevo grupo de dibujo",
       "numericinput": "Entrada numérica",
-      "pick": "Seleccionar",
       "position": "Posición",
       "pyramid": "Pirámide",
       "rotate": "Rotar",
@@ -195,10 +221,8 @@
       "zoomto": "Zoom al objeto"
     },
     "editing": {
-      "add": "Añadir",
       "attrtable": "Tabla",
       "canceldelete": "No borrar",
-      "clearpicture": "Limpiar",
       "clone_all": "Todos",
       "clone_copy": "Copiar seleccionados",
       "clone_defaulted": "(valor por defecto)",
@@ -211,23 +235,17 @@
       "commitfailed": "Fallo al guardar cambios",
       "contraintviolation": "Violación de restricción",
       "create": "Crear",
-      "delete": "Borrar",
       "discard": "Descartar",
       "draw": "Trazar",
       "feature": "Elemento",
       "geomnonzeroz": "La geometría contiene valores Z diferentes de cero por lo que es sólo lectura",
       "geomreadonly": "La geometría es de solo lectura.",
       "invalidform": "Formulario inválido",
-      "maximize": "Maximizar",
-      "minimize": "Minimizar",
       "noeditablelayers": "Sin capas a modificar.",
       "paint": "Modificar",
-      "pick": "Elegir",
       "pickdrawfeature": "Clonar geometría existente",
       "reallydelete": "Borrar",
       "relationcommitfailed": "Algunos valores de las relaciones no han podido guardarse, verifique los tooltips de los iconos para más detalles",
-      "select": "Seleccionar",
-      "selectlayer": "Seleccionar capa...",
       "takepicture": "Tomar fotografía",
       "unsavedchanged": "Hay cambios sin guardar. Quieres salir de la página sin guardar?"
     },
@@ -239,14 +257,11 @@
     },
     "featureform": {
       "feature": "Elemento",
-      "noresults": "Sin resultados",
       "querying": "Consultando...",
       "title": "Formulario de elemento"
     },
     "featuresearch": {
-      "noresults": "Sin resultados",
       "query": "Consulta",
-      "select": "Seleccionar...",
       "title": "Búsqueda de elemento"
     },
     "fileselector": {
@@ -264,8 +279,7 @@
       "line_buffer": "Línea (a buffer)",
       "point_buffer": "Punto (a buffer)",
       "selfinter": "Uno o más polígonos contienen auto-intersecciones",
-      "send": "Enviar",
-      "wait": "Cargando..."
+      "send": "Enviar"
     },
     "heightprofile": {
       "asl": "a.s.l.",
@@ -291,8 +305,6 @@
       "clipboard": "Copiar al portapapeles",
       "compare": "Comparar con los objetos seleccionados",
       "comparing": "Comparando {0} elementos",
-      "download": "Descargar",
-      "export": "Exportar",
       "featureReport": "Informe del elemento",
       "featurecount": "Cantidad de elementos",
       "layerall": "Todas las capas",
@@ -321,7 +333,6 @@
       "asgroup": "Agregar como grupo",
       "connect": "Conectar",
       "filter": "Filtrar...",
-      "loading": "Cargando...",
       "localfile": "Archivo local",
       "nofeatures": "No se pudieron importar elementos.",
       "noresults": "Sin resultados o la dirección URL no es válida",
@@ -377,8 +388,6 @@
       "zoomtoobject": "Zoom al objeto"
     },
     "linkfeatureform": {
-      "cancel": "Cancelar",
-      "close": "Cerrar",
       "drawhint": "Dibujar elemento en el mapa...",
       "pickhint": "Elegir elemento en el mapa..."
     },
@@ -403,32 +412,22 @@
       "resetrotation": "Reiniciar rotación"
     },
     "map3d": {
-      "lockview": "Mover con la vista 2D",
-      "syncview": "Sincronizar con la vista 2D",
       "terrain": "Terreno",
       "title": "Vista 3D"
     },
     "mapexport": {
       "configuration": "Configuración",
-      "format": "Formato:",
       "projection": "Proyección",
-      "resolution": "Resolución:",
       "scale": "Escala",
       "size": "Tamaño",
-      "submit": "Exportar",
-      "usersize": "Seleccionar en el mapa...",
-      "wait": "Por favor espere..."
+      "usersize": "Seleccionar en el mapa..."
     },
     "mapfilter": {
       "addcustomfilter": "Agregar filtro personalizado",
       "brokenrendering": "El renderizado del mapa puede estar roto debido a una expresión de filtro inválida",
-      "cancel": "Cancelar",
       "geomfilter": "Geometría",
       "hidefiltergeom": "Ocultar geometría del filtro",
       "invalidfilter": "Expresión de filtro inválida",
-      "save": "Guardar",
-      "select": "Seleccionar...",
-      "selectlayer": "Seleccionar capa",
       "timefilter": "Tiempo",
       "timefrom": "Desde",
       "timeto": "Hasta"
@@ -472,7 +471,8 @@
       "imperial": "Imperial",
       "lengthLabel": "Longitud",
       "metric": "Métrico",
-      "pointLabel": "Posición"
+      "pointLabel": "Posición",
+      "showmeasurements": "Mostrar mediciones"
     },
     "misc": {
       "ctrlclickhint": "Abrir con Ctrl+Click"
@@ -483,7 +483,6 @@
       "prev": ""
     },
     "newspopup": {
-      "dialogclose": "Cerrar",
       "dontshowagain": "No mostrar de nuevo",
       "title": "Noticias"
     },
@@ -500,6 +499,28 @@
       "nodataset": "",
       "title": ""
     },
+    "oereb": {
+      "concernedThemes": "",
+      "fundationdatastate": "",
+      "fundations": "",
+      "generalInformation": "",
+      "generalinfo": "",
+      "hidefulllegend": "",
+      "hints": "",
+      "legalbasis": "",
+      "notConcernedThemes": "",
+      "nrpoints": "",
+      "perc": "",
+      "regulations": "",
+      "responsibleauthority": "",
+      "responsibleoffice": "",
+      "share": "",
+      "showfulllegend": "",
+      "themeWithoutData": "",
+      "type": "",
+      "title": "",
+      "failed": ""
+    },
     "panoramax": {
       "notfound": "No hay imagen disponible para esta ubicación.",
       "title": "Visor Panoramax"
@@ -507,34 +528,31 @@
     "pickfeature": {
       "querying": "Consultando..."
     },
+    "plotinfotool": {
+      "failed": "",
+      "loading": ""
+    },
     "portal": {
       "filter": "Filtrar temas...",
       "menulabel": "Menú"
     },
     "print": {
       "atlasfeature": "Elemento del atlas",
-      "download": "Descargar",
       "download_as_onepdf": "como un documento PDF",
       "download_as_onezip": "como un archivo ZIP",
       "download_as_single": "como archivos individuales",
-      "format": "Formato:",
       "grid": "Grilla:",
       "layout": "Diseño:",
       "legend": "Leyenda",
-      "maximize": "Maximizar",
-      "minimize": "Minimizar",
       "nolayouts": "El tema seleccionado no admite su impresión",
       "notheme": "No hay tema seleccionado",
       "output": "Salida de impresión",
       "overlap": "Superposición",
       "pickatlasfeature": "Seleccionar en la capa {0}...",
-      "resolution": "Resolución",
       "rotation": "Rotación",
-      "save": "Guardar",
       "scale": "Escala:",
       "series": "Serie de impresión",
-      "submit": "Imprimir",
-      "wait": "Por favor espere..."
+      "submit": "Imprimir"
     },
     "qtdesignerform": {
       "loading": "Cargando formulario..."
@@ -547,35 +565,19 @@
       "bufferlayer": "Destino",
       "bufferlayername": "Bufer",
       "bufferselectfeature": "Seleccione un elemento para almacenar en bufer",
-      "circle": "Círculo",
-      "clone": "Clonar",
       "ctrlhint": "Abrir con Ctrl+Click",
-      "delete": "Eliminar",
       "draw": "Dibujar",
       "edit": "Editar",
-      "ellipse": "Elipse",
-      "export": "Exportar",
       "freehand": "Dibujo a mano alzada",
       "label": "Etiqueta",
       "layer": "Capa",
       "layertitle": "Línea de demarcación",
-      "line": "Línea",
       "markers": "Marcadores",
-      "measurements": "Mostrar mediciones",
       "numericinput": "Entrada numérica",
-      "pick": "Elegir",
-      "point": "Punto",
-      "polygon": "Polígono",
-      "rectangle": "Rectángulo",
       "size": "Tamaño",
-      "square": "Cuadrado",
-      "text": "Texto",
       "transform": "Transformar"
     },
     "reports": {
-      "all": "Todo",
-      "download": "Descargar",
-      "pick": "Seleccionar",
       "region": "Seleccionar región",
       "selectlayer": "Seleccionar capa de informe..."
     },
@@ -584,11 +586,9 @@
       "addlayer": "Agregar capa",
       "addviapoint": "Pasar por aquí",
       "arriveat": "Llegar a",
-      "clear": "Limpiar",
       "computefailed": "Error al calcular",
       "computing": "Calculando...",
       "excludepolygons": "Excluir áreas",
-      "export": "Exportar",
       "fastest": "Más rápido",
       "fromhere": "Desde aquí",
       "importerror": "Error al importar. El contenido del archivo debe ser una colección de elementos GeoJSON de tipo Punto.",
@@ -646,6 +646,7 @@
       "themes": "Temas"
     },
     "settings3d": {
+      "fov": "Campo de visión",
       "quality": "Calidad"
     },
     "share": {
@@ -700,7 +701,6 @@
       "group": "Atributo de agrupación",
       "groupnone": "Ninguno",
       "home": "Restablecer línea de tiempo",
-      "loading": "Cargando...",
       "loop": "Bucle",
       "markers": "Marcadores",
       "notemporaldata": "No hay capas temporales visibles en el mapa",
@@ -731,17 +731,13 @@
         "months": "meses",
         "seconds": "segundos",
         "years": "años"
-      },
-      "zoomin": "Acercar",
-      "zoomout": "Alejar"
+      }
     },
     "tooltip": {
       "background": "Cambiar fondo",
       "fullscreendisable": "Descativar pantalla completa",
       "fullscreenenable": "Activar pantalla completa",
-      "home": "Mostrar todo el mapa",
-      "zoomin": "Acercarse",
-      "zoomout": "Alejarse"
+      "home": "Mostrar todo el mapa"
     },
     "tourguide": {
       "done": "Hecho",
@@ -749,7 +745,6 @@
       "previous": "Anterior"
     },
     "valuetool": {
-      "all": "Todo",
       "allbands": "Todas las bandas",
       "alllayers": "Todas las capas",
       "bands": "Bandas",
@@ -776,7 +771,6 @@
       "storingstate": "Guardando estado 3D..."
     },
     "window": {
-      "close": "Cerrar",
       "detach": "Desacoplar",
       "dock": "Acoplar",
       "embed": "Incrustar",
@@ -785,6 +779,10 @@
       "undock": "Desacoplar",
       "unmaximize": "Restaurar",
       "unminimize": "Desminimizar"
+    },
+    "plotdescr": {
+      "title": "",
+      "requestPdf": ""
     }
   }
 }

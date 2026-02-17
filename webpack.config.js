@@ -1,9 +1,9 @@
-const webpack = require('webpack');
-const path = require('path');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
 const availableLanguages = require('./static/translations/tsconfig.json').languages;
+const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 
 const today = new Date();
 const buildDate = today.getFullYear() + "." + String(1 + today.getMonth()).padStart(2, '0') + "." + String(today.getDate()).padStart(2, '0');
@@ -19,7 +19,8 @@ module.exports = (env, argv) => {
             hashFunction: 'sha256',
             path: path.resolve(__dirname, 'prod'),
             filename: 'dist/QWC2App.js',
-            assetModuleFilename: 'dist/[hash][ext][query]'
+            assetModuleFilename: 'dist/[hash][ext][query]',
+            clean: true
         },
         watchOptions: {
             ignored: /node_modules(\\|\/)(?!qwc2)/
@@ -52,7 +53,6 @@ module.exports = (env, argv) => {
             managedPaths: [/(.*(\\|\/)node_modules(\\|\/)(?!qwc2))/]
         },
         plugins: [
-            new CleanWebpackPlugin(),
             new webpack.DefinePlugin({
                 'process.env': {
                     NODE_ENV: JSON.stringify(argv.mode),
@@ -70,7 +70,12 @@ module.exports = (env, argv) => {
                 patterns: [
                     { from: 'static' }
                 ]
-            })
+            }),
+            env.ANALYZE === "1" ? new BundleAnalyzerPlugin({
+                analyzerMode: 'server',   // opens browser automatically
+                openAnalyzer: true,       // ensures browser launches
+                generateStatsFile: true  // optional, creates stats.json
+            }) : null
         ],
         module: {
             rules: [

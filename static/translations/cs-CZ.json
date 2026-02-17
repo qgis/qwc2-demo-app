@@ -17,6 +17,7 @@
         "MapFilter": "",
         "MapLight3D": "",
         "ObjectList": "",
+        "PlotInfoTool": "",
         "Print": "Tisk",
         "Reports": "",
         "Settings": "Nastavení",
@@ -58,9 +59,7 @@
     },
     "search": {
       "coordinates": "",
-      "all": "Vše",
       "circleradius": "",
-      "clearfilter": "",
       "existinglayer": "Vrstva v mapě již existuje",
       "filter": "Filtrovat výsledky",
       "layers": "",
@@ -68,7 +67,6 @@
       "more": "{0} další výsledky",
       "nodescription": "",
       "none": "",
-      "noresults": "Nenalezeno",
       "placeholder": "Hledat místo nebo přidat vrstvu...",
       "places": "",
       "providerselection": "Poskytovatelé vyhledávání",
@@ -94,23 +92,22 @@
     },
     "attribtable": {
       "addfeature": "Přidat prvek",
+      "calculatedfield": "",
       "commit": "Uložit změněný řádek",
       "csvexport": "",
-      "delete": "Smazat",
       "deletefailed": "Chyba při mazání jednoho nebo více prvků",
       "deletefeatures": "Smazat vybrané prvky",
       "deleting": "Mazání prvků...",
       "discard": "Zahodit změny v řádku",
       "formeditmode": "Otevřít editační formulář pro vybrané prvky",
+      "fulldatasetload": "",
       "geomnoadd": "Pro přidání nových prvků do této vrstvy použijte editační formulář",
       "limittoextent": "",
       "loadfailed": "Chyba při načítání prvků",
-      "loading": "Načítání...",
       "nodelete": "Nemazat",
       "nogeomnoform": "Editační formulář není dostupný pro vrstvy bez geometrie",
       "pleasereload": "Kliknutím na 'Obnovit' načtete tabulku atributů",
       "reload": "Obnovit",
-      "selectlayer": "Vybrat vrstvu",
       "title": "Tabulka atributů",
       "zoomtoselection": "Přiblížit na vybrané prvky"
     },
@@ -120,14 +117,13 @@
     "bookmark": {
       "add": "Vytvořit novou záložku",
       "addfailed": "Vytváření záložky selhalo",
-      "description": "Popis záložky",
       "lastUpdate": "Naposledy upraveno",
       "manage": "Správa záložek",
+      "newbookmark": "",
       "nobookmarks": "Zatím žádné záložky",
       "notloggedin": "Pro vytvoření záložky se musíte přihlásit",
       "open": "Otevřít záložku",
       "openTab": "Otevřít záložku v novém okně",
-      "remove": "Smazat",
       "removefailed": "Mazání záložky selhalo",
       "savefailed": "Ukládání záložky selhalo",
       "update": "Upravit",
@@ -138,6 +134,39 @@
       "scale_label": "Měřítko",
       "terms_label": "Podmínky použití",
       "viewertitle_label": ""
+    },
+    "common": {
+      "add": "Přidat",
+      "all": "",
+      "cancel": "",
+      "circle": "",
+      "clear": "",
+      "clone": "",
+      "close": "Zavřít",
+      "delete": "",
+      "download": "",
+      "ellipse": "",
+      "export": "Export",
+      "format": "Formát:",
+      "line": "Linie",
+      "loading": "Načítání...",
+      "lock2dview": "",
+      "noresults": "Nenalezeno",
+      "pick": "",
+      "point": "Bod",
+      "polygon": "Polygon",
+      "rectangle": "",
+      "rename": "",
+      "resolution": "Rozlišení:",
+      "save": "",
+      "select": "Vybrat...",
+      "selectlayer": "",
+      "square": "",
+      "sync2dview": "",
+      "text": "Text",
+      "wait": "Čekejte...",
+      "zoomin": "Přiblížit",
+      "zoomout": "Oddálit"
     },
     "compare3d": {
       "clipplane": "",
@@ -165,17 +194,14 @@
       "title": "Cyclomedia"
     },
     "draw3d": {
-      "clone": "",
       "cone": "",
       "cuboid": "",
       "cylinder": "",
-      "delete": "",
       "drawings": "",
       "intersect": "",
       "label": "",
       "newgroupprompt": "",
       "numericinput": "",
-      "pick": "",
       "position": "",
       "pyramid": "",
       "rotate": "",
@@ -195,10 +221,8 @@
       "zoomto": ""
     },
     "editing": {
-      "add": "Přidat",
       "attrtable": "",
       "canceldelete": "Neodstraňovat",
-      "clearpicture": "",
       "clone_all": "",
       "clone_copy": "",
       "clone_defaulted": "",
@@ -211,23 +235,17 @@
       "commitfailed": "",
       "contraintviolation": "",
       "create": "Vytvořit",
-      "delete": "Odstranit",
       "discard": "Vyřadit",
       "draw": "Kreslit",
       "feature": "Prvek",
       "geomnonzeroz": "",
       "geomreadonly": "",
       "invalidform": "",
-      "maximize": "Maximální",
-      "minimize": "Minimální",
       "noeditablelayers": "Needitovatelná vrstva.",
       "paint": "",
-      "pick": "Výběr",
       "pickdrawfeature": "",
       "reallydelete": "Odstranit",
       "relationcommitfailed": "",
-      "select": "Vybrat",
-      "selectlayer": "",
       "takepicture": "",
       "unsavedchanged": ""
     },
@@ -239,14 +257,11 @@
     },
     "featureform": {
       "feature": "Prvek",
-      "noresults": "Žádné výsledky",
       "querying": "Načítání...",
       "title": "Editační formulář"
     },
     "featuresearch": {
-      "noresults": "",
       "query": "",
-      "select": "",
       "title": ""
     },
     "fileselector": {
@@ -264,8 +279,7 @@
       "line_buffer": "",
       "point_buffer": "",
       "selfinter": "",
-      "send": "",
-      "wait": ""
+      "send": ""
     },
     "heightprofile": {
       "asl": "m n. m.",
@@ -291,8 +305,6 @@
       "clipboard": "Zkopírovat do schránky",
       "compare": "",
       "comparing": "",
-      "download": "",
-      "export": "Exportovat",
       "featureReport": "Report prvku",
       "featurecount": "",
       "layerall": "",
@@ -321,7 +333,6 @@
       "asgroup": "",
       "connect": "Připojit",
       "filter": "Filtr...",
-      "loading": "Načítání...",
       "localfile": "Soubor z počítače",
       "nofeatures": "Žádné prvku nebyly importovány.",
       "noresults": "Bez výsledku nebo nevalidní URL",
@@ -377,8 +388,6 @@
       "zoomtoobject": ""
     },
     "linkfeatureform": {
-      "cancel": "",
-      "close": "",
       "drawhint": "",
       "pickhint": ""
     },
@@ -403,32 +412,22 @@
       "resetrotation": "Obnovit orientaci mapy"
     },
     "map3d": {
-      "lockview": "",
-      "syncview": "",
       "terrain": "",
       "title": ""
     },
     "mapexport": {
       "configuration": "",
-      "format": "Formát:",
       "projection": "",
-      "resolution": "Rozlišení:",
       "scale": "Měřítko",
       "size": "Velikost",
-      "submit": "Export",
-      "usersize": "Vybrat na mapě...",
-      "wait": "Čekejte..."
+      "usersize": "Vybrat na mapě..."
     },
     "mapfilter": {
       "addcustomfilter": "",
       "brokenrendering": "",
-      "cancel": "",
       "geomfilter": "",
       "hidefiltergeom": "",
       "invalidfilter": "",
-      "save": "",
-      "select": "",
-      "selectlayer": "",
       "timefilter": "",
       "timefrom": "",
       "timeto": ""
@@ -472,7 +471,8 @@
       "imperial": "Imperiálně",
       "lengthLabel": "Délka",
       "metric": "Metricky",
-      "pointLabel": "Poloha"
+      "pointLabel": "Poloha",
+      "showmeasurements": ""
     },
     "misc": {
       "ctrlclickhint": ""
@@ -483,7 +483,6 @@
       "prev": ""
     },
     "newspopup": {
-      "dialogclose": "Zavřít",
       "dontshowagain": "Znovu nezobrazovat",
       "title": "Novinky"
     },
@@ -500,6 +499,28 @@
       "nodataset": "",
       "title": ""
     },
+    "oereb": {
+      "concernedThemes": "",
+      "fundationdatastate": "",
+      "fundations": "",
+      "generalInformation": "",
+      "generalinfo": "",
+      "hidefulllegend": "",
+      "hints": "",
+      "legalbasis": "",
+      "notConcernedThemes": "",
+      "nrpoints": "",
+      "perc": "",
+      "regulations": "",
+      "responsibleauthority": "",
+      "responsibleoffice": "",
+      "share": "",
+      "showfulllegend": "",
+      "themeWithoutData": "",
+      "type": "",
+      "title": "",
+      "failed": ""
+    },
     "panoramax": {
       "notfound": "",
       "title": ""
@@ -507,34 +528,31 @@
     "pickfeature": {
       "querying": ""
     },
+    "plotinfotool": {
+      "failed": "",
+      "loading": ""
+    },
     "portal": {
       "filter": "",
       "menulabel": ""
     },
     "print": {
       "atlasfeature": "",
-      "download": "",
       "download_as_onepdf": "",
       "download_as_onezip": "",
       "download_as_single": "",
-      "format": "Formát",
       "grid": "Mřížka:",
       "layout": "Rovržení:",
       "legend": "Legenda",
-      "maximize": "Maximální",
-      "minimize": "Minimální",
       "nolayouts": "Vybrané téma nepodporuje tisk",
       "notheme": "Není vybráno téma",
       "output": "",
       "overlap": "",
       "pickatlasfeature": "",
-      "resolution": "Rozlišení",
       "rotation": "Orientace",
-      "save": "",
       "scale": "Měřítko",
       "series": "",
-      "submit": "Tisk",
-      "wait": "Čekejte..."
+      "submit": "Tisk"
     },
     "qtdesignerform": {
       "loading": ""
@@ -547,35 +565,19 @@
       "bufferlayer": "",
       "bufferlayername": "",
       "bufferselectfeature": "",
-      "circle": "",
-      "clone": "",
       "ctrlhint": "",
-      "delete": "",
       "draw": "",
       "edit": "",
-      "ellipse": "",
-      "export": "",
       "freehand": "",
       "label": "Popisek",
       "layer": "Vrstva",
       "layertitle": "",
-      "line": "Linie",
       "markers": "",
-      "measurements": "",
       "numericinput": "",
-      "pick": "Výběr",
-      "point": "Bod",
-      "polygon": "Polygon",
-      "rectangle": "",
       "size": "Velikost",
-      "square": "",
-      "text": "Text",
       "transform": ""
     },
     "reports": {
-      "all": "",
-      "download": "",
-      "pick": "",
       "region": "",
       "selectlayer": ""
     },
@@ -584,11 +586,9 @@
       "addlayer": "",
       "addviapoint": "Přes tento bod",
       "arriveat": "",
-      "clear": "",
       "computefailed": "",
       "computing": "",
       "excludepolygons": "",
-      "export": "",
       "fastest": "",
       "fromhere": "Odtud",
       "importerror": "",
@@ -646,6 +646,7 @@
       "themes": ""
     },
     "settings3d": {
+      "fov": "",
       "quality": ""
     },
     "share": {
@@ -700,7 +701,6 @@
       "group": "",
       "groupnone": "",
       "home": "",
-      "loading": "Načítání...",
       "loop": "",
       "markers": "",
       "notemporaldata": "",
@@ -731,17 +731,13 @@
         "months": "",
         "seconds": "",
         "years": ""
-      },
-      "zoomin": "Přiblížit",
-      "zoomout": "Oddálit"
+      }
     },
     "tooltip": {
       "background": "Podkladové mapy",
       "fullscreendisable": "Ukončit režim celé obrazovky",
       "fullscreenenable": "Na celou obrazovku",
-      "home": "Výchozí zobrazení mapy",
-      "zoomin": "Přiblížit",
-      "zoomout": "Oddálit"
+      "home": "Výchozí zobrazení mapy"
     },
     "tourguide": {
       "done": "",
@@ -749,7 +745,6 @@
       "previous": ""
     },
     "valuetool": {
-      "all": "",
       "allbands": "",
       "alllayers": "",
       "bands": "",
@@ -776,7 +771,6 @@
       "storingstate": ""
     },
     "window": {
-      "close": "Zavřít",
       "detach": "",
       "dock": "Přichytit",
       "embed": "",
@@ -785,6 +779,10 @@
       "undock": "Zrušit přichycení",
       "unmaximize": "Obnovit velikost okna",
       "unminimize": "Obnovit velikost okna"
+    },
+    "plotdescr": {
+      "title": "",
+      "requestPdf": ""
     }
   }
 }
