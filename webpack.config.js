@@ -8,6 +8,9 @@ const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 const today = new Date();
 const buildDate = today.getFullYear() + "." + String(1 + today.getMonth()).padStart(2, '0') + "." + String(today.getDate()).padStart(2, '0');
 
+const isQwcLts = 'qwc2-lts' in require('./package.json').dependencies;
+const qwc2ModName = isQwcLts ? 'qwc2-lts' : 'qwc2';
+
 module.exports = (env, argv) => {
     const isProd = argv.mode === "production";
 
@@ -23,7 +26,7 @@ module.exports = (env, argv) => {
             clean: true
         },
         watchOptions: {
-            ignored: /node_modules(\\|\/)(?!qwc2)/
+            ignored: new RegExp(String.raw`node_modules(\\|\/)(?!${qwc2ModName})`)
         },
         devtool: isProd ? 'source-map' : 'inline-source-map',
         optimization: {
@@ -43,14 +46,15 @@ module.exports = (env, argv) => {
         resolve: {
             extensions: [".mjs", ".js", ".jsx"],
             alias: {
-                "@giro3d/giro3d": "@sourcepole/qwc-giro3d"
+                "@giro3d/giro3d": "@sourcepole/qwc-giro3d",
+                "qwc2": qwc2ModName
             },
             fallback: {
                 path: require.resolve("path-browserify")
             }
         },
         snapshot: {
-            managedPaths: [/(.*(\\|\/)node_modules(\\|\/)(?!qwc2))/]
+            managedPaths: [new RegExp(String.raw`(.*(\\|\/)node_modules(\\|\/)(?!${qwc2ModName}))`)]
         },
         plugins: [
             new webpack.DefinePlugin({
@@ -60,7 +64,7 @@ module.exports = (env, argv) => {
                     AvailableLanguages: JSON.stringify(availableLanguages)
                 }
             }),
-            new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "node_modules", "qwc2", "libs", "openlayers")),
+            new webpack.NormalModuleReplacementPlugin(/openlayers$/, path.join(__dirname, "node_modules", qwc2ModName, "libs", "openlayers")),
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, "index.html"),
                 build: buildDate,
@@ -95,7 +99,7 @@ module.exports = (env, argv) => {
                     exclude: /node_modules(\\|\/)(?!qwc2)/,
                     use: {
                         loader: 'babel-loader',
-                        options: { babelrcRoots: ['.', path.resolve(__dirname, 'node_modules', 'qwc2')] }
+                        options: { babelrcRoots: ['.', path.resolve(__dirname, 'node_modules', qwc2ModName)] }
                     }
                 },
                 {
