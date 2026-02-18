@@ -7,7 +7,7 @@
     "repository": "git@github.com:sourcepole/qwc2-demo-app.git",
     "private": true,
     "dependencies": {
-        "qwc2": "2026.02.16"
+        "qwc2-lts": "2026.0.1"
     },
     "devDependencies": {
         "@babel/core": "^7.29.0",
