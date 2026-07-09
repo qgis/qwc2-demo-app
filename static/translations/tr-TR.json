@@ -16,6 +16,7 @@
         "MapExport3D": "",
         "MapFilter": "Harita Filtresi",
         "MapLight3D": "Tarih Zaman",
+        "MeasureObjects3D": "",
         "ObjectList": "",
         "PlotInfoTool": "",
         "Print": "Yazdır",
@@ -23,7 +24,10 @@
         "Settings": "Ayarlar",
         "Settings3D": "",
         "Share": "Bağlantı Paylaş",
+        "SunExposure3D": "",
+        "ThemeBrowser": "",
         "ThemeSwitcher": "Tema",
+        "VisibilityPresets": "",
         "AttributeTable": "Öznitelik Tablosu",
         "AuthenticationLogin": "Giriş",
         "AuthenticationLogout": "Çıkış - {0}",
@@ -33,6 +37,7 @@
         "FeatureSearch": "Obje Arama",
         "GeometryDigitizer": "Geometri Sayısallaştırıcı",
         "IdentifyPoint": "Nokta bilgisi al",
+        "IdentifyRadius": "",
         "IdentifyRegion": "Bölgeden Bilgi Al",
         "LayerCatalog": "Katman Kataloğu",
         "Login": "Giriş",
@@ -40,6 +45,7 @@
         "MapLegend": "Harita Lejandı",
         "Measure": "Ölç",
         "Measure3D": "Ölç",
+        "MeasureObject3D": "",
         "MeasureLineString": "Çizgi Ölç",
         "MeasurePolygon": "Alan Ölç",
         "NewsPopup": "",
@@ -49,6 +55,7 @@
         "PrintScreen3D": "Görüntüyü ver",
         "Redlining": "Serbest Çizim",
         "Routing": "Navigasyon",
+        "SensorThingsTool": "",
         "Tools": "Harita Araçları",
         "TourGuide": "",
         "TimeManager": "Zaman Yöneticisi",
@@ -80,7 +87,10 @@
     "colorschemes": {
       "default": "",
       "dark": "",
-      "highcontrast": ""
+      "highcontrast": "",
+      "default_rounded": "",
+      "dark_rounded": "",
+      "highcontrast_rounded": ""
     },
     "app": {
       "missingbg": "Arkaplan bulunamadı \"{0}\", varsayılan arkaplan gösteriliyor.",
@@ -131,6 +141,7 @@
     },
     "bottombar": {
       "mousepos_label": "Koordinatlar",
+      "quick_select_label": "",
       "scale_label": "Ölçek",
       "terms_label": "Kullanım Şartları",
       "viewertitle_label": "QWC"
@@ -143,10 +154,14 @@
       "clear": "Temizle",
       "clone": "",
       "close": "Kapat",
+      "compute": "",
+      "custom": "",
+      "date": "",
       "delete": "Sil",
       "download": "İndir",
       "ellipse": "Elips",
       "export": "Ver",
+      "false": "",
       "format": "Format:",
       "line": "Çizgi",
       "loading": "Yükleniyor...",
@@ -164,6 +179,7 @@
       "square": "Kare",
       "sync2dview": "Görünümü senkronize et",
       "text": "Metin",
+      "true": "",
       "wait": "Lütfen bekleyiniz...",
       "zoomin": "Yaklaş",
       "zoomout": "Uzaklaş"
@@ -207,6 +223,9 @@
       "rotate": "Döndür",
       "rotation": "Dönüklük",
       "scale": "Ölçek",
+      "snap_2dedge": "",
+      "snap_2dvertex": "",
+      "snap_3dbody": "",
       "sphere": "Küre",
       "subtract": "",
       "thescale": "Ölçek",
@@ -237,6 +256,7 @@
       "create": "Yeni oluştur",
       "discard": "İptal",
       "draw": "Çiz",
+      "emptyvalue": "",
       "feature": "Obje",
       "geomnonzeroz": "Geometri, sıfır olmayan yükseklik değeri içerdiğinden salt okunur",
       "geomreadonly": "",
@@ -351,6 +371,7 @@
       "radius": "Yarıçap"
     },
     "layercatalog": {
+      "openlink": "",
       "windowtitle": "Katman kataloğu"
     },
     "layerinfo": {
@@ -367,12 +388,12 @@
     "layertree": {
       "compare": "En üst katmanı karşılaştır",
       "deletealllayers": "Tüm katmanları kaldır",
-      "hidealllayers": "",
       "importlayer": "Katmanı içeri al",
       "maptip": "Katman harita ipuçlarını göster",
       "printlegend": "Yazdırma Lejandı",
       "separator": "Ayırıcı",
       "separatortooltip": "Ayırıcı ekle",
+      "showallayers": "",
       "togglegroup": "",
       "transparency": "Şeffaflık",
       "visiblefilter": "Görünmeyen katmanları filtrele",
@@ -412,6 +433,7 @@
       "resetrotation": "Dönüklüğü sıfırla"
     },
     "map3d": {
+      "noterrain": "",
       "terrain": "Arazi",
       "title": "3 Boyutlu görünüm"
     },
@@ -444,6 +466,7 @@
     },
     "maplight3d": {
       "animationstep": "",
+      "currentdatetime": "",
       "date": "",
       "dayspersec": "",
       "helpersVisible": "",
@@ -474,6 +497,12 @@
       "pointLabel": "Konum",
       "showmeasurements": "Ölçüleri göster"
     },
+    "measureobjects3d": {
+      "clickonmap": "",
+      "object": "",
+      "remove": "",
+      "removeall": ""
+    },
     "misc": {
       "ctrlclickhint": "Ctrl+Click ile aç"
     },
@@ -496,6 +525,10 @@
       "windowtitle": "Sayısal giriş"
     },
     "obliqueview": {
+      "directionEast": "",
+      "directionNorth": "",
+      "directionSouth": "",
+      "directionWest": "",
       "nodataset": "",
       "title": ""
     },
@@ -533,6 +566,7 @@
       "loading": ""
     },
     "portal": {
+      "close": "",
       "filter": "Temaları filtrele...",
       "menulabel": "Menü"
     },
@@ -568,8 +602,10 @@
       "ctrlhint": "",
       "draw": "Çiz",
       "edit": "Düzenle",
+      "featurelabel": "",
       "freehand": "Serbest çizim",
       "label": "Etiket",
+      "labelselectfeature": "",
       "layer": "Katman",
       "layertitle": "Eskiz",
       "markers": "İşaretçiler",
@@ -623,6 +659,101 @@
     "scratchdrawing": {
       "finish": "Bitir"
     },
+    "sensorthingstool": {
+      "addDatastream": "",
+      "addLocation": "",
+      "addLocationAndDatastreams": "",
+      "datastreamInfo": {
+        "calibration": "",
+        "description": "",
+        "location": "",
+        "name": "",
+        "observedProperty": "",
+        "sensor": "",
+        "thing": "",
+        "title": "",
+        "unit": ""
+      },
+      "datastreamLabel": "",
+      "datastreamNone": "",
+      "datastreamOptions": {
+        "arithmeticMean": "",
+        "percentiles": "",
+        "percentilesDesc": "",
+        "showOnSecondYAxis": "",
+        "showPercentiles": "",
+        "title": ""
+      },
+      "datastreamTable": {
+        "fullPeriod": "",
+        "selectedPeriod": "",
+        "timestamp": "",
+        "title": "",
+        "unit": "",
+        "value": ""
+      },
+      "datastreamsFilter": {
+        "datastream": "",
+        "location": "",
+        "observedProperty": "",
+        "sensor": "",
+        "thing": "",
+        "title": ""
+      },
+      "exportCSV": "",
+      "exportImage": "",
+      "graphOptions": {
+        "reverseAxis": "",
+        "threshold": "",
+        "thresholdLabel": "",
+        "thresholdValue": "",
+        "title": "",
+        "toggleGridLines": "",
+        "toggleSecondYAxis": "",
+        "xAxis": "",
+        "xAxisAtTop": "",
+        "yAuto": "",
+        "yAxis": "",
+        "yMax": "",
+        "yMin": ""
+      },
+      "intervalOptions": {
+        "custom": "",
+        "day": "",
+        "hour": "",
+        "month": "",
+        "week": "",
+        "year": ""
+      },
+      "locationInfo": {
+        "description": "",
+        "inactive": "",
+        "name": "",
+        "platform": "",
+        "qompSensorId": "",
+        "serialNumber": "",
+        "title": ""
+      },
+      "locationLabel": "",
+      "pickLocation": "",
+      "pickLocationDesc": "",
+      "removeDatastream": "",
+      "removeLocation": "",
+      "selectInterval": "",
+      "selectLocation": "",
+      "setEndToNow": "",
+      "setPeriodAfterBegin": "",
+      "setPeriodBeforeEnd": "",
+      "showDefaultPeriod": "",
+      "showFullPeriod": "",
+      "showNextPeriod": "",
+      "showPrevPeriod": "",
+      "statistics": {
+        "arithmeticMean": "",
+        "nthPercentile": ""
+      },
+      "title": ""
+    },
     "serviceinfo": {
       "abstract": "Özet",
       "contactEmail": "Email",
@@ -635,7 +766,6 @@
       "title": "Tema bilgisi"
     },
     "settings": {
-      "bookmarks": "Yer işaretleri",
       "colorscheme": "Renk şeması",
       "confirmlang": "Dil değişikliği için uygulama yeniden yüklenecek. Devam edilsin mi?",
       "default": "Varsayılan",
@@ -647,6 +777,8 @@
     },
     "settings3d": {
       "fov": "",
+      "pointSize": "",
+      "pointSizeAuto": "",
       "quality": ""
     },
     "share": {
@@ -665,6 +797,16 @@
       "loading": "Yakalanan geometriler yükleniyor...",
       "snappingenabled": "Yakalama",
       "vertex": "Kırık noktalarını yakala"
+    },
+    "sunexposure3d": {
+      "end": "",
+      "hoursOfSunlight": "",
+      "includeterrain": "",
+      "irradiation": "",
+      "meanIrradiance": "",
+      "spatialres": "",
+      "start": "",
+      "tempres": ""
     },
     "themelayerslist": {
       "addanyway": "",
@@ -685,6 +827,7 @@
         "title": "Başlık"
       },
       "openintab": "Sekmede aç",
+      "restrictedcontent": "",
       "restrictedthemeinfo": "Bu temayı görmeye yetkiniz yok"
     },
     "timemanager": {
@@ -769,6 +912,18 @@
     },
     "view3d": {
       "storingstate": ""
+    },
+    "visibilitypreset": {
+      "add": "",
+      "addfailed": "",
+      "manage": "",
+      "newpreset": "",
+      "nopresets": "",
+      "notloggedin": "",
+      "open": "",
+      "removefailed": "",
+      "savefailed": "",
+      "update": ""
     },
     "window": {
       "detach": "Çöz",

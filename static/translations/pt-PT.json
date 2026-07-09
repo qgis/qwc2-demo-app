@@ -16,6 +16,7 @@
         "MapExport3D": "",
         "MapFilter": "",
         "MapLight3D": "",
+        "MeasureObjects3D": "",
         "ObjectList": "",
         "PlotInfoTool": "",
         "Print": "Imprimir",
@@ -23,7 +24,10 @@
         "Settings": "Configurações",
         "Settings3D": "",
         "Share": "Partilhar Link",
+        "SunExposure3D": "",
+        "ThemeBrowser": "",
         "ThemeSwitcher": "Tema",
+        "VisibilityPresets": "",
         "AttributeTable": "Tabela de Atributos",
         "AuthenticationLogin": "Iniciar Sessão",
         "AuthenticationLogout": "Terminar Sessão - {0}",
@@ -33,6 +37,7 @@
         "FeatureSearch": "Pesquisa de Recurso",
         "GeometryDigitizer": "",
         "IdentifyPoint": "Identificar Ponto",
+        "IdentifyRadius": "",
         "IdentifyRegion": "Identificar Região",
         "LayerCatalog": "Catálogo de Camadas",
         "Login": "Iniciar Sessão",
@@ -40,6 +45,7 @@
         "MapLegend": "Legenda do Mapa",
         "Measure": "Medir",
         "Measure3D": "",
+        "MeasureObject3D": "",
         "MeasureLineString": "Medir Linha",
         "MeasurePolygon": "Medir Polígono",
         "NewsPopup": "",
@@ -49,6 +55,7 @@
         "PrintScreen3D": "",
         "Redlining": "Marcação",
         "Routing": "Roteamento",
+        "SensorThingsTool": "",
         "Tools": "Ferramentas do Mapa",
         "TourGuide": "",
         "TimeManager": "Gestor de Tempo",
@@ -80,7 +87,10 @@
     "colorschemes": {
       "default": "",
       "dark": "",
-      "highcontrast": ""
+      "highcontrast": "",
+      "default_rounded": "",
+      "dark_rounded": "",
+      "highcontrast_rounded": ""
     },
     "app": {
       "missingbg": "Fundo em falta",
@@ -131,6 +141,7 @@
     },
     "bottombar": {
       "mousepos_label": "Coordenadas",
+      "quick_select_label": "",
       "scale_label": "Escala",
       "terms_label": "Termos de Uso",
       "viewertitle_label": "Visualizador"
@@ -143,10 +154,14 @@
       "clear": "Limpar",
       "clone": "Clonar",
       "close": "Fechar Diálogo",
+      "compute": "",
+      "custom": "",
+      "date": "",
       "delete": "Eliminar",
       "download": "Descarregar",
       "ellipse": "Elipse",
       "export": "Enviar",
+      "false": "",
       "format": "Formato:",
       "line": "Linha",
       "loading": "A carregar",
@@ -164,6 +179,7 @@
       "square": "Quadrado",
       "sync2dview": "",
       "text": "Texto",
+      "true": "",
       "wait": "Por favor, aguarde...",
       "zoomin": "Aumentar Zoom",
       "zoomout": "Diminuir Zoom"
@@ -207,6 +223,9 @@
       "rotate": "",
       "rotation": "",
       "scale": "",
+      "snap_2dedge": "",
+      "snap_2dvertex": "",
+      "snap_3dbody": "",
       "sphere": "",
       "subtract": "",
       "thescale": "",
@@ -237,6 +256,7 @@
       "create": "Criar",
       "discard": "Descartar",
       "draw": "Desenhar",
+      "emptyvalue": "",
       "feature": "Recurso",
       "geomnonzeroz": "Geometria Apenas para Leitura",
       "geomreadonly": "",
@@ -351,6 +371,7 @@
       "radius": ""
     },
     "layercatalog": {
+      "openlink": "",
       "windowtitle": "Catálogo de Camadas"
     },
     "layerinfo": {
@@ -367,12 +388,12 @@
     "layertree": {
       "compare": "Comparar com a Camada Superior",
       "deletealllayers": "Remover Todas as Camadas",
-      "hidealllayers": "",
       "importlayer": "Importar Camada",
       "maptip": "Mostrar Dicas de Mapa das Camadas",
       "printlegend": "Legenda de Impressão",
       "separator": "Separador",
       "separatortooltip": "Adicionar Separador",
+      "showallayers": "",
       "togglegroup": "",
       "transparency": "Transparência",
       "visiblefilter": "Filtrar Camadas Invisíveis",
@@ -412,6 +433,7 @@
       "resetrotation": "Redefinir Rotação"
     },
     "map3d": {
+      "noterrain": "",
       "terrain": "",
       "title": ""
     },
@@ -444,6 +466,7 @@
     },
     "maplight3d": {
       "animationstep": "",
+      "currentdatetime": "",
       "date": "",
       "dayspersec": "",
       "helpersVisible": "",
@@ -474,6 +497,12 @@
       "pointLabel": "Posição",
       "showmeasurements": "Medições"
     },
+    "measureobjects3d": {
+      "clickonmap": "",
+      "object": "",
+      "remove": "",
+      "removeall": ""
+    },
     "misc": {
       "ctrlclickhint": "Ctrl + clique para selecionar múltiplos resultados"
     },
@@ -496,6 +525,10 @@
       "windowtitle": "Entrada Numérica"
     },
     "obliqueview": {
+      "directionEast": "",
+      "directionNorth": "",
+      "directionSouth": "",
+      "directionWest": "",
       "nodataset": "",
       "title": ""
     },
@@ -533,6 +566,7 @@
       "loading": ""
     },
     "portal": {
+      "close": "",
       "filter": "",
       "menulabel": ""
     },
@@ -568,8 +602,10 @@
       "ctrlhint": "",
       "draw": "Desenhar",
       "edit": "Editar",
+      "featurelabel": "",
       "freehand": "Desenho à mão livre",
       "label": "Etiqueta",
+      "labelselectfeature": "",
       "layer": "Camada",
       "layertitle": "",
       "markers": "Marcadores",
@@ -623,6 +659,101 @@
     "scratchdrawing": {
       "finish": "Terminar"
     },
+    "sensorthingstool": {
+      "addDatastream": "",
+      "addLocation": "",
+      "addLocationAndDatastreams": "",
+      "datastreamInfo": {
+        "calibration": "",
+        "description": "",
+        "location": "",
+        "name": "",
+        "observedProperty": "",
+        "sensor": "",
+        "thing": "",
+        "title": "",
+        "unit": ""
+      },
+      "datastreamLabel": "",
+      "datastreamNone": "",
+      "datastreamOptions": {
+        "arithmeticMean": "",
+        "percentiles": "",
+        "percentilesDesc": "",
+        "showOnSecondYAxis": "",
+        "showPercentiles": "",
+        "title": ""
+      },
+      "datastreamTable": {
+        "fullPeriod": "",
+        "selectedPeriod": "",
+        "timestamp": "",
+        "title": "",
+        "unit": "",
+        "value": ""
+      },
+      "datastreamsFilter": {
+        "datastream": "",
+        "location": "",
+        "observedProperty": "",
+        "sensor": "",
+        "thing": "",
+        "title": ""
+      },
+      "exportCSV": "",
+      "exportImage": "",
+      "graphOptions": {
+        "reverseAxis": "",
+        "threshold": "",
+        "thresholdLabel": "",
+        "thresholdValue": "",
+        "title": "",
+        "toggleGridLines": "",
+        "toggleSecondYAxis": "",
+        "xAxis": "",
+        "xAxisAtTop": "",
+        "yAuto": "",
+        "yAxis": "",
+        "yMax": "",
+        "yMin": ""
+      },
+      "intervalOptions": {
+        "custom": "",
+        "day": "",
+        "hour": "",
+        "month": "",
+        "week": "",
+        "year": ""
+      },
+      "locationInfo": {
+        "description": "",
+        "inactive": "",
+        "name": "",
+        "platform": "",
+        "qompSensorId": "",
+        "serialNumber": "",
+        "title": ""
+      },
+      "locationLabel": "",
+      "pickLocation": "",
+      "pickLocationDesc": "",
+      "removeDatastream": "",
+      "removeLocation": "",
+      "selectInterval": "",
+      "selectLocation": "",
+      "setEndToNow": "",
+      "setPeriodAfterBegin": "",
+      "setPeriodBeforeEnd": "",
+      "showDefaultPeriod": "",
+      "showFullPeriod": "",
+      "showNextPeriod": "",
+      "showPrevPeriod": "",
+      "statistics": {
+        "arithmeticMean": "",
+        "nthPercentile": ""
+      },
+      "title": ""
+    },
     "serviceinfo": {
       "abstract": "Resumo",
       "contactEmail": "Email de Contato",
@@ -635,7 +766,6 @@
       "title": "Informação Temática"
     },
     "settings": {
-      "bookmarks": "Marcadores",
       "colorscheme": "Esquema de Cores",
       "confirmlang": "Confirmar Idioma",
       "default": "Padrão",
@@ -647,6 +777,8 @@
     },
     "settings3d": {
       "fov": "",
+      "pointSize": "",
+      "pointSizeAuto": "",
       "quality": ""
     },
     "share": {
@@ -665,6 +797,16 @@
       "loading": "A carregar",
       "snappingenabled": "Ativar Ajuste",
       "vertex": "Vértice"
+    },
+    "sunexposure3d": {
+      "end": "",
+      "hoursOfSunlight": "",
+      "includeterrain": "",
+      "irradiation": "",
+      "meanIrradiance": "",
+      "spatialres": "",
+      "start": "",
+      "tempres": ""
     },
     "themelayerslist": {
       "addanyway": "",
@@ -685,6 +827,7 @@
         "title": "Título"
       },
       "openintab": "Abrir em Aba",
+      "restrictedcontent": "",
       "restrictedthemeinfo": "Não está autorizado a ver o tema ou não iniciou sessão"
     },
     "timemanager": {
@@ -769,6 +912,18 @@
     },
     "view3d": {
       "storingstate": ""
+    },
+    "visibilitypreset": {
+      "add": "",
+      "addfailed": "",
+      "manage": "",
+      "newpreset": "",
+      "nopresets": "",
+      "notloggedin": "",
+      "open": "",
+      "removefailed": "",
+      "savefailed": "",
+      "update": ""
     },
     "window": {
       "detach": "",

@@ -16,6 +16,7 @@
         "MapExport3D": "",
         "MapFilter": "",
         "MapLight3D": "",
+        "MeasureObjects3D": "",
         "ObjectList": "",
         "PlotInfoTool": "",
         "Print": "Skriv ut",
@@ -23,7 +24,10 @@
         "Settings": "",
         "Settings3D": "",
         "Share": "Dela länk",
+        "SunExposure3D": "",
+        "ThemeBrowser": "",
         "ThemeSwitcher": "Tema",
+        "VisibilityPresets": "",
         "AttributeTable": "",
         "AuthenticationLogin": "Logga in",
         "AuthenticationLogout": "Logga ut - {0}",
@@ -33,6 +37,7 @@
         "FeatureSearch": "",
         "GeometryDigitizer": "",
         "IdentifyPoint": "",
+        "IdentifyRadius": "",
         "IdentifyRegion": "Identifiera med område",
         "LayerCatalog": "",
         "Login": "Logga in",
@@ -40,6 +45,7 @@
         "MapLegend": "",
         "Measure": "Mät",
         "Measure3D": "",
+        "MeasureObject3D": "",
         "MeasureLineString": "Mäta en linje",
         "MeasurePolygon": "Mäta en polygon",
         "NewsPopup": "",
@@ -49,6 +55,7 @@
         "PrintScreen3D": "",
         "Redlining": "Rita",
         "Routing": "",
+        "SensorThingsTool": "",
         "Tools": "Kartverktyg",
         "TourGuide": "",
         "TimeManager": "",
@@ -80,7 +87,10 @@
     "colorschemes": {
       "default": "",
       "dark": "",
-      "highcontrast": ""
+      "highcontrast": "",
+      "default_rounded": "",
+      "dark_rounded": "",
+      "highcontrast_rounded": ""
     },
     "app": {
       "missingbg": "",
@@ -131,6 +141,7 @@
     },
     "bottombar": {
       "mousepos_label": "Koordinater",
+      "quick_select_label": "",
       "scale_label": "Skala",
       "terms_label": "Villkor",
       "viewertitle_label": ""
@@ -143,10 +154,14 @@
       "clear": "",
       "clone": "",
       "close": "",
+      "compute": "",
+      "custom": "",
+      "date": "",
       "delete": "",
       "download": "",
       "ellipse": "",
       "export": "",
+      "false": "",
       "format": "Format:",
       "line": "Linje",
       "loading": "",
@@ -164,6 +179,7 @@
       "square": "",
       "sync2dview": "",
       "text": "Text",
+      "true": "",
       "wait": "",
       "zoomin": "Zooma in",
       "zoomout": "Zooma ut"
@@ -207,6 +223,9 @@
       "rotate": "",
       "rotation": "",
       "scale": "",
+      "snap_2dedge": "",
+      "snap_2dvertex": "",
+      "snap_3dbody": "",
       "sphere": "",
       "subtract": "",
       "thescale": "",
@@ -237,6 +256,7 @@
       "create": "",
       "discard": "Förkasta",
       "draw": "Rita",
+      "emptyvalue": "",
       "feature": "Objekt",
       "geomnonzeroz": "",
       "geomreadonly": "",
@@ -351,6 +371,7 @@
       "radius": ""
     },
     "layercatalog": {
+      "openlink": "",
       "windowtitle": ""
     },
     "layerinfo": {
@@ -367,12 +388,12 @@
     "layertree": {
       "compare": "Jämför översta lagret",
       "deletealllayers": "Ta bort alla lager",
-      "hidealllayers": "",
       "importlayer": "Importera lager",
       "maptip": "Visa karttips för lager",
       "printlegend": "Skriv ut teckenförklaring",
       "separator": "",
       "separatortooltip": "",
+      "showallayers": "",
       "togglegroup": "",
       "transparency": "",
       "visiblefilter": "",
@@ -412,6 +433,7 @@
       "resetrotation": ""
     },
     "map3d": {
+      "noterrain": "",
       "terrain": "",
       "title": ""
     },
@@ -444,6 +466,7 @@
     },
     "maplight3d": {
       "animationstep": "",
+      "currentdatetime": "",
       "date": "",
       "dayspersec": "",
       "helpersVisible": "",
@@ -474,6 +497,12 @@
       "pointLabel": "Position",
       "showmeasurements": ""
     },
+    "measureobjects3d": {
+      "clickonmap": "",
+      "object": "",
+      "remove": "",
+      "removeall": ""
+    },
     "misc": {
       "ctrlclickhint": ""
     },
@@ -496,6 +525,10 @@
       "windowtitle": ""
     },
     "obliqueview": {
+      "directionEast": "",
+      "directionNorth": "",
+      "directionSouth": "",
+      "directionWest": "",
       "nodataset": "",
       "title": ""
     },
@@ -533,6 +566,7 @@
       "loading": ""
     },
     "portal": {
+      "close": "",
       "filter": "",
       "menulabel": ""
     },
@@ -568,8 +602,10 @@
       "ctrlhint": "",
       "draw": "Rita",
       "edit": "Redigera",
+      "featurelabel": "",
       "freehand": "",
       "label": "Etikett",
+      "labelselectfeature": "",
       "layer": "Lager",
       "layertitle": "",
       "markers": "",
@@ -623,6 +659,101 @@
     "scratchdrawing": {
       "finish": ""
     },
+    "sensorthingstool": {
+      "addDatastream": "",
+      "addLocation": "",
+      "addLocationAndDatastreams": "",
+      "datastreamInfo": {
+        "calibration": "",
+        "description": "",
+        "location": "",
+        "name": "",
+        "observedProperty": "",
+        "sensor": "",
+        "thing": "",
+        "title": "",
+        "unit": ""
+      },
+      "datastreamLabel": "",
+      "datastreamNone": "",
+      "datastreamOptions": {
+        "arithmeticMean": "",
+        "percentiles": "",
+        "percentilesDesc": "",
+        "showOnSecondYAxis": "",
+        "showPercentiles": "",
+        "title": ""
+      },
+      "datastreamTable": {
+        "fullPeriod": "",
+        "selectedPeriod": "",
+        "timestamp": "",
+        "title": "",
+        "unit": "",
+        "value": ""
+      },
+      "datastreamsFilter": {
+        "datastream": "",
+        "location": "",
+        "observedProperty": "",
+        "sensor": "",
+        "thing": "",
+        "title": ""
+      },
+      "exportCSV": "",
+      "exportImage": "",
+      "graphOptions": {
+        "reverseAxis": "",
+        "threshold": "",
+        "thresholdLabel": "",
+        "thresholdValue": "",
+        "title": "",
+        "toggleGridLines": "",
+        "toggleSecondYAxis": "",
+        "xAxis": "",
+        "xAxisAtTop": "",
+        "yAuto": "",
+        "yAxis": "",
+        "yMax": "",
+        "yMin": ""
+      },
+      "intervalOptions": {
+        "custom": "",
+        "day": "",
+        "hour": "",
+        "month": "",
+        "week": "",
+        "year": ""
+      },
+      "locationInfo": {
+        "description": "",
+        "inactive": "",
+        "name": "",
+        "platform": "",
+        "qompSensorId": "",
+        "serialNumber": "",
+        "title": ""
+      },
+      "locationLabel": "",
+      "pickLocation": "",
+      "pickLocationDesc": "",
+      "removeDatastream": "",
+      "removeLocation": "",
+      "selectInterval": "",
+      "selectLocation": "",
+      "setEndToNow": "",
+      "setPeriodAfterBegin": "",
+      "setPeriodBeforeEnd": "",
+      "showDefaultPeriod": "",
+      "showFullPeriod": "",
+      "showNextPeriod": "",
+      "showPrevPeriod": "",
+      "statistics": {
+        "arithmeticMean": "",
+        "nthPercentile": ""
+      },
+      "title": ""
+    },
     "serviceinfo": {
       "abstract": "",
       "contactEmail": "",
@@ -635,7 +766,6 @@
       "title": ""
     },
     "settings": {
-      "bookmarks": "",
       "colorscheme": "",
       "confirmlang": "",
       "default": "",
@@ -647,6 +777,8 @@
     },
     "settings3d": {
       "fov": "",
+      "pointSize": "",
+      "pointSizeAuto": "",
       "quality": ""
     },
     "share": {
@@ -665,6 +797,16 @@
       "loading": "",
       "snappingenabled": "",
       "vertex": ""
+    },
+    "sunexposure3d": {
+      "end": "",
+      "hoursOfSunlight": "",
+      "includeterrain": "",
+      "irradiation": "",
+      "meanIrradiance": "",
+      "spatialres": "",
+      "start": "",
+      "tempres": ""
     },
     "themelayerslist": {
       "addanyway": "",
@@ -685,6 +827,7 @@
         "title": ""
       },
       "openintab": "",
+      "restrictedcontent": "",
       "restrictedthemeinfo": ""
     },
     "timemanager": {
@@ -769,6 +912,18 @@
     },
     "view3d": {
       "storingstate": ""
+    },
+    "visibilitypreset": {
+      "add": "",
+      "addfailed": "",
+      "manage": "",
+      "newpreset": "",
+      "nopresets": "",
+      "notloggedin": "",
+      "open": "",
+      "removefailed": "",
+      "savefailed": "",
+      "update": ""
     },
     "window": {
       "detach": "",

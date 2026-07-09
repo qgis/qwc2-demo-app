@@ -16,6 +16,7 @@
         "MapExport3D": "Karte exportieren",
         "MapFilter": "Kartenfilter",
         "MapLight3D": "Beleuchtung und Schatten",
+        "MeasureObjects3D": "Objekte bemeßen",
         "ObjectList": "Objektliste",
         "PlotInfoTool": "Grundstücksinformation",
         "Print": "Drucken",
@@ -23,7 +24,10 @@
         "Settings": "Einstellungen",
         "Settings3D": "3D Einstellungen",
         "Share": "Teilen",
+        "SunExposure3D": "Besonnungsanalyse",
+        "ThemeBrowser": "Themenbrowser",
         "ThemeSwitcher": "Themen",
+        "VisibilityPresets": "Sichtbarkeitsprofile",
         "AttributeTable": "Attributtabelle",
         "AuthenticationLogin": "Anmelden",
         "AuthenticationLogout": "Abmelden - {0}",
@@ -33,6 +37,7 @@
         "FeatureSearch": "Objektsuche",
         "GeometryDigitizer": "Geometriedigitalisierung",
         "IdentifyPoint": "Punkt abfragen",
+        "IdentifyRadius": "Radius abfragen",
         "IdentifyRegion": "Region abfragen",
         "LayerCatalog": "Ebenenkatalog",
         "Login": "Anmelden",
@@ -40,6 +45,7 @@
         "MapLegend": "Legende",
         "Measure": "Messen",
         "Measure3D": "Messen",
+        "MeasureObject3D": "Objekte meßen",
         "MeasureLineString": "Messen Linie",
         "MeasurePolygon": "Messen Polygon",
         "NewsPopup": "Aktuelles",
@@ -49,6 +55,7 @@
         "PrintScreen3D": "Raster Export",
         "Redlining": "Zeichnen",
         "Routing": "Routing",
+        "SensorThingsTool": "SensorThings Abfrage",
         "Tools": "Werkzeuge",
         "TourGuide": "Einführung",
         "TimeManager": "Zeitleiste",
@@ -80,7 +87,10 @@
     "colorschemes": {
       "default": "Standard",
       "dark": "Dunkel",
-      "highcontrast": "Hochkontrast"
+      "highcontrast": "Hochkontrast",
+      "default_rounded": "Standard (rund)",
+      "dark_rounded": "Dunkel (rund)",
+      "highcontrast_rounded": "Hochkontrast (rund)"
     },
     "app": {
       "missingbg": "Der Hintergrund \"{0}\" konnte nicht gefunden werden, der Standardhintergrund wird angezeigt.",
@@ -118,7 +128,7 @@
       "add": "Neues Lesezeichen anlegen",
       "addfailed": "Lesezeichen konnte nicht angelegt werden",
       "lastUpdate": "Zuletzt gespeichert",
-      "manage": "Lesezeichen verwalten",
+      "manage": "Lesezeichen",
       "newbookmark": "Neues Lesezeichen",
       "nobookmarks": "Keine Lesezeichen",
       "notloggedin": "Sie müssen angemeldet sein, um Lesezeichen zu verwenden",
@@ -131,6 +141,7 @@
     },
     "bottombar": {
       "mousepos_label": "Koordinaten",
+      "quick_select_label": "Schnellauswahl",
       "scale_label": "Maßstab",
       "terms_label": "Nutzungsbedingungen",
       "viewertitle_label": "Homepage"
@@ -143,10 +154,14 @@
       "clear": "Zurücksetzen",
       "clone": "Kopieren",
       "close": "Schließen",
+      "compute": "Berechnen",
+      "custom": "Benutzerdefiniert",
+      "date": "Datum",
       "delete": "Löschen",
       "download": "Herunterladen",
       "ellipse": "Ellipse",
       "export": "Exportieren",
+      "false": "Nein",
       "format": "Format",
       "line": "Linie",
       "loading": "Laden...",
@@ -164,6 +179,7 @@
       "square": "Quadrat",
       "sync2dview": "Mit 2D Ansicht synchronisieren",
       "text": "Text",
+      "true": "Ja",
       "wait": "Bitte warten...",
       "zoomin": "Hineinzoomen",
       "zoomout": "Hinauszoomen"
@@ -207,6 +223,9 @@
       "rotate": "Rotieren",
       "rotation": "Rotation",
       "scale": "Skalieren",
+      "snap_2dedge": "An Kanten von 2D-Snap-Layern fangen",
+      "snap_2dvertex": "An Eckpunkten von 2D-Snap-Layern fangen",
+      "snap_3dbody": "An 3D-Körpern fangen",
       "sphere": "Kugel",
       "subtract": "Differenz",
       "thescale": "Skalierung",
@@ -237,6 +256,7 @@
       "create": "Erstellen",
       "discard": "Abbrechen",
       "draw": "Zeichnen",
+      "emptyvalue": "Leerer Wert",
       "feature": "Objekt",
       "geomnonzeroz": "Die Geometrie enthält Z-Werte ungleich Null und ist daher nicht veränderbar.",
       "geomreadonly": "Die Geometrie ist nicht veränderbar",
@@ -351,6 +371,7 @@
       "radius": "Radius"
     },
     "layercatalog": {
+      "openlink": "Link öffnen",
       "windowtitle": "Ebenenkatalog"
     },
     "layerinfo": {
@@ -367,15 +388,15 @@
     "layertree": {
       "compare": "Oberste Ebene vergleichen",
       "deletealllayers": "Alle Ebenen entfernen",
-      "hidealllayers": "Alle Ebenen ausblenden",
       "importlayer": "Ebene importieren",
       "maptip": "Kartentipps anzeigen",
       "printlegend": "Legende drucken",
       "separator": "Separator",
       "separatortooltip": "Separator hinzufügen",
+      "showallayers": "Alle Ebenen einblenden",
       "togglegroup": "Inklusive aller Kinder an-/abhaken",
       "transparency": "Transparenz",
-      "visiblefilter": "Unsichtbare Ebenen filtern",
+      "visiblefilter": "Unsichtbare Ebenen ausblenden",
       "zoomtolayer": "Auf den Layer zoomen"
     },
     "layertree3d": {
@@ -412,6 +433,7 @@
       "resetrotation": "Drehung zurücksetzen"
     },
     "map3d": {
+      "noterrain": "Kein Gelände",
       "terrain": "Gelände",
       "title": "3D Ansicht"
     },
@@ -444,6 +466,7 @@
     },
     "maplight3d": {
       "animationstep": "Animationsschritt",
+      "currentdatetime": "Aktueller Tag und Zeit",
       "date": "Datum",
       "dayspersec": "Tage / Sek",
       "helpersVisible": "Hilfen anzeigen",
@@ -474,6 +497,12 @@
       "pointLabel": "Position",
       "showmeasurements": "Messungen anzeigen"
     },
+    "measureobjects3d": {
+      "clickonmap": "Objekte anclicken um sie zu bemessen...",
+      "object": "Objekt",
+      "remove": "Bemassung entfernen",
+      "removeall": "Alle entfernen"
+    },
     "misc": {
       "ctrlclickhint": "Öffne mit Ctrl+Click"
     },
@@ -496,6 +525,10 @@
       "windowtitle": "Numerische Eingabe"
     },
     "obliqueview": {
+      "directionEast": "O",
+      "directionNorth": "N",
+      "directionSouth": "S",
+      "directionWest": "W",
       "nodataset": "Keine Schrägluftbilder verfügbar",
       "title": "Schrägluftbildansicht"
     },
@@ -533,6 +566,7 @@
       "loading": "Daten werden geladen..."
     },
     "portal": {
+      "close": "Portal schließen",
       "filter": "Themen filtern...",
       "menulabel": "Menü"
     },
@@ -568,8 +602,10 @@
       "ctrlhint": "Mehrfachselektion mit Ctrl...",
       "draw": "Zeichnen",
       "edit": "Bearbeiten",
+      "featurelabel": "Objekt beschriften",
       "freehand": "Freihand",
       "label": "Beschriftung",
+      "labelselectfeature": "Zu beschrieftendes Objekt auswählen...",
       "layer": "Ebene",
       "layertitle": "Zeichnung",
       "markers": "Spitzen",
@@ -623,6 +659,101 @@
     "scratchdrawing": {
       "finish": "Abschließen"
     },
+    "sensorthingstool": {
+      "addDatastream": "Datastream zum Graph hinzufügen",
+      "addLocation": "Location hinzufügen",
+      "addLocationAndDatastreams": "Location hinzufügen und alle ihre Datastreams im Graph anzeigen",
+      "datastreamInfo": {
+        "calibration": "Kalibrierung",
+        "description": "Beschreibung",
+        "location": "Location",
+        "name": "Name",
+        "observedProperty": "Observed Property",
+        "sensor": "Sensor",
+        "thing": "Thing",
+        "title": "Datastream-Info",
+        "unit": "Einheit"
+      },
+      "datastreamLabel": "Datastream",
+      "datastreamNone": "Keine Ergebnisse",
+      "datastreamOptions": {
+        "arithmeticMean": "Arithmetisches Mittel",
+        "percentiles": "Perzentile",
+        "percentilesDesc": "Eingabe der Perzentile als kommaseparierte Werte",
+        "showOnSecondYAxis": "Auf zweiter Y-Achse anzeigen",
+        "showPercentiles": "Perzentile anzeigen",
+        "title": "Datastream-Statistik"
+      },
+      "datastreamTable": {
+        "fullPeriod": "Verfügbarer Zeitabschnitt",
+        "selectedPeriod": "Ausgewählter Zeitabschnitt",
+        "timestamp": "Zeitpunkt",
+        "title": "Datastream-Tabelle",
+        "unit": "Einheit",
+        "value": "Wert"
+      },
+      "datastreamsFilter": {
+        "datastream": "Datastream",
+        "location": "Location",
+        "observedProperty": "Observed Property",
+        "sensor": "Sensor",
+        "thing": "Thing",
+        "title": "Datastreams-Filter"
+      },
+      "exportCSV": "Exportieren als CSV",
+      "exportImage": "Exportieren als Bild",
+      "graphOptions": {
+        "reverseAxis": "Achse umkehren",
+        "threshold": "Grenzwert",
+        "thresholdLabel": "Beschriftung",
+        "thresholdValue": "Grenzwert",
+        "title": "Einstellungen",
+        "toggleGridLines": "Gitterlinien",
+        "toggleSecondYAxis": "Zweite Y-Achse",
+        "xAxis": "X-Achse",
+        "xAxisAtTop": "Oben platzieren",
+        "yAuto": "auto",
+        "yAxis": "Y-Achse",
+        "yMax": "Obergrenze",
+        "yMin": "Untergrenze"
+      },
+      "intervalOptions": {
+        "custom": "Benutzerdefiniert",
+        "day": "Tag",
+        "hour": "Stunde",
+        "month": "Monat",
+        "week": "Woche",
+        "year": "Jahr"
+      },
+      "locationInfo": {
+        "description": "Beschreibung",
+        "inactive": "Inaktiv",
+        "name": "Name",
+        "platform": "Platform",
+        "qompSensorId": "QOMP Sensor ID",
+        "serialNumber": "Seriennummer",
+        "title": "Location-Info"
+      },
+      "locationLabel": "Location",
+      "pickLocation": "Location in Karte auswählen",
+      "pickLocationDesc": "Wählen Sie eine Location in der Karte",
+      "removeDatastream": "Datastream entfernen",
+      "removeLocation": "Location entfernen",
+      "selectInterval": "Zeitspanne auswählen",
+      "selectLocation": "Location auswählen",
+      "setEndToNow": "Endzeitpunkt auf jetzt setzen",
+      "setPeriodAfterBegin": "Zeitabschnitt auf Zeitspanne nach Startzeitpunkt setzen",
+      "setPeriodBeforeEnd": "Zeitabschnitt auf Zeitspanne vor Endzeitpunkt setzen",
+      "showDefaultPeriod": "Standard-Zeitabschnitt anzeigen",
+      "showFullPeriod": "Gesamten Zeitabschnitt anzeigen",
+      "showNextPeriod": "Nächsten Zeitabschnitt anzeigen",
+      "showPrevPeriod": "Vorherigen Zeitabschnitt anzeigen",
+      "statistics": {
+        "arithmeticMean": "Arithmetisches Mittel",
+        "nthPercentile": ". Perzentil"
+      },
+      "title": "SensorThings Abfrage"
+    },
     "serviceinfo": {
       "abstract": "Zusammenfassung",
       "contactEmail": "Email",
@@ -635,7 +766,6 @@
       "title": "Informationen zum Thema"
     },
     "settings": {
-      "bookmarks": "Lesezeichen",
       "colorscheme": "Farbschema",
       "confirmlang": "Die Anwendung wird neugeladen, um die Sprache zu wechseln. Fortsetzen?",
       "default": "Standard",
@@ -647,6 +777,8 @@
     },
     "settings3d": {
       "fov": "Sichtfeld",
+      "pointSize": "Punktgröße",
+      "pointSizeAuto": "Auto",
       "quality": "Qualität"
     },
     "share": {
@@ -665,6 +797,16 @@
       "loading": "Einrastungsgeometrien werden geladen...",
       "snappingenabled": "Einrasten",
       "vertex": "An Ecken einrasten"
+    },
+    "sunexposure3d": {
+      "end": "Endzeit",
+      "hoursOfSunlight": "Sonnenstunden",
+      "includeterrain": "Terrain berechnen",
+      "irradiation": "Bestrahlung",
+      "meanIrradiance": "Mittlere Bestrahlungsstärke",
+      "spatialres": "Räumliche Auflösung",
+      "start": "Startzeit",
+      "tempres": "Zeitliche Auflösung"
     },
     "themelayerslist": {
       "addanyway": "Trotzdem hinzufügen",
@@ -685,6 +827,7 @@
         "title": "Titel"
       },
       "openintab": "In Tab öffnen",
+      "restrictedcontent": "Theme mit Inhalten, die auf authentifizierte Benutzer beschränkt sind",
       "restrictedthemeinfo": "Sie sind nicht berechtigt oder sind nicht angemeldet"
     },
     "timemanager": {
@@ -769,6 +912,18 @@
     },
     "view3d": {
       "storingstate": "3D Ansicht wird gespeichert..."
+    },
+    "visibilitypreset": {
+      "add": "Sichtbarkeitsprofil anlegen",
+      "addfailed": "Sichtbarkeitsprofil konnte nicht angelegt werden",
+      "manage": "Sichtbarkeitsprofile",
+      "newpreset": "Neues Sichtbarkeitsprofil",
+      "nopresets": "Keine Sichtbarkeitsprofile angelegt",
+      "notloggedin": "Sie müssen angemeldet sein, um Sichtbarkeitsprofile zu verwenden",
+      "open": "In aktuellem Fenster öffnen",
+      "removefailed": "Sichtbarkeitsprofil konnte nicht entfernt werden",
+      "savefailed": "Sichtbarkeitsprofil konnte nicht aktualisiert werden",
+      "update": "Sichtbarkeitsprofil aktualisieren"
     },
     "window": {
       "detach": "Abkoppeln",

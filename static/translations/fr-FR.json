@@ -16,14 +16,18 @@
         "MapExport3D": "Exporter la carte",
         "MapFilter": "Filtrer la carte",
         "MapLight3D": "Illumination et ombres",
+        "MeasureObjects3D": "Mesurer objets",
         "ObjectList": "Liste d'objets",
-        "PlotInfoTool": "",
+        "PlotInfoTool": "Informations foncières",
         "Print": "Imprimer",
         "Reports": "Rapports",
         "Settings": "Paramètres",
         "Settings3D": "Paramètres 3D",
         "Share": "Partager",
+        "SunExposure3D": "Exposition au soleil",
+        "ThemeBrowser": "Navigateur de thèmes",
         "ThemeSwitcher": "Thèmes",
+        "VisibilityPresets": "Profil de visibilité",
         "AttributeTable": "Table d'attributs",
         "AuthenticationLogin": "Connexion",
         "AuthenticationLogout": "Déconnexion - {0}",
@@ -33,6 +37,7 @@
         "FeatureSearch": "Recherche objet",
         "GeometryDigitizer": "Digitalisation des géométries",
         "IdentifyPoint": "Interroger point",
+        "IdentifyRadius": "Interroger dans un rayon",
         "IdentifyRegion": "Interroger la région",
         "LayerCatalog": "Catalogue des couches",
         "Login": "Connexion",
@@ -40,6 +45,7 @@
         "MapLegend": "Légende",
         "Measure": "Mesurer",
         "Measure3D": "Mesurer",
+        "MeasureObject3D": "Mesurer objects",
         "MeasureLineString": "Mesurer une ligne",
         "MeasurePolygon": "Mesurer un polygone",
         "NewsPopup": "Actualités",
@@ -49,6 +55,7 @@
         "PrintScreen3D": "Export raster",
         "Redlining": "Dessiner",
         "Routing": "Routage",
+        "SensorThingsTool": "Outil SensorThings",
         "Tools": "Outils",
         "TourGuide": "Visite Guidée",
         "TimeManager": "Ligne du temps",
@@ -80,7 +87,10 @@
     "colorschemes": {
       "default": "Défaut",
       "dark": "Sombre",
-      "highcontrast": "Contraste élevé"
+      "highcontrast": "Contraste élevé",
+      "default_rounded": "Défaut arrondi",
+      "dark_rounded": "Sombre arrondi",
+      "highcontrast_rounded": "Contraste élevé arrondi"
     },
     "app": {
       "missingbg": "Impossible de trouver le fond \"{0}\", affichage du fond par défaut.",
@@ -131,6 +141,7 @@
     },
     "bottombar": {
       "mousepos_label": "Coordonnées",
+      "quick_select_label": "Accès rapide",
       "scale_label": "Echelle",
       "terms_label": "Conditions d'utilisation",
       "viewertitle_label": "Page d'accueil"
@@ -143,10 +154,14 @@
       "clear": "Réinitialiser",
       "clone": "Copier",
       "close": "Fermer",
+      "compute": "Calculer",
+      "custom": "Personnalisé",
+      "date": "Date",
       "delete": "Effacer",
       "download": "Télécharger",
       "ellipse": "Ellipse",
       "export": "Exporter",
+      "false": "faux",
       "format": "Format",
       "line": "Ligne",
       "loading": "Chargement en cours...",
@@ -164,6 +179,7 @@
       "square": "Carré",
       "sync2dview": "Synchroniser avec vue 2D",
       "text": "Texte",
+      "true": "vrai",
       "wait": "Veuillez patienter...",
       "zoomin": "Zoomer",
       "zoomout": "Dézoomer"
@@ -207,6 +223,9 @@
       "rotate": "Tourner",
       "rotation": "Rotation",
       "scale": "Redimensionner",
+      "snap_2dedge": "Accrochage aux arêtes des couches d’accrochage 2D",
+      "snap_2dvertex": "Accrochage aux sommets des couches d’accrochage 2D",
+      "snap_3dbody": "Accrochage aux corps 3D",
       "sphere": "Sphère",
       "subtract": "Soustraire",
       "thescale": "Echelle",
@@ -237,6 +256,7 @@
       "create": "Créer",
       "discard": "Rejeter",
       "draw": "Dessiner",
+      "emptyvalue": "Valeur vide",
       "feature": "Objet",
       "geomnonzeroz": "La géométrie contient des valeurs Z non nulles et ne peut donc pas être modifiée.",
       "geomreadonly": "La géométrie e peut pas être modifiée.",
@@ -351,6 +371,7 @@
       "radius": "Rayon"
     },
     "layercatalog": {
+      "openlink": "Lien d'information",
       "windowtitle": "Catalogue de couches"
     },
     "layerinfo": {
@@ -367,12 +388,12 @@
     "layertree": {
       "compare": "Comparer",
       "deletealllayers": "Supprimer toutes les couches",
-      "hidealllayers": "Cacher toutes les couches",
       "importlayer": "Importer une couche",
       "maptip": "Afficher les infobulles",
       "printlegend": "Imprimer la légende",
       "separator": "Séparateur",
       "separatortooltip": "Ajouter séparateur",
+      "showallayers": "Afficher toutes les couches",
       "togglegroup": "Basculer le groupe et toutes les sous-couches",
       "transparency": "Transparence",
       "visiblefilter": "Filtrer couches invisibles",
@@ -412,6 +433,7 @@
       "resetrotation": "Réinitialiser la rotation"
     },
     "map3d": {
+      "noterrain": "Aucun terrain",
       "terrain": "Terrain",
       "title": "Vue 3D"
     },
@@ -444,6 +466,7 @@
     },
     "maplight3d": {
       "animationstep": "Pas d'animation",
+      "currentdatetime": "Date et heure actuelles",
       "date": "Date",
       "dayspersec": "jours / sec",
       "helpersVisible": "Montrer les aides",
@@ -474,6 +497,12 @@
       "pointLabel": "Position",
       "showmeasurements": "Montrer les mesures"
     },
+    "measureobjects3d": {
+      "clickonmap": "Cliquez sur les objets pour les mesurer...",
+      "object": "Objet",
+      "remove": "Supprimer la mesure",
+      "removeall": "Tout supprimer"
+    },
     "misc": {
       "ctrlclickhint": "Ouvrir avec Ctrl+Clic"
     },
@@ -496,30 +525,34 @@
       "windowtitle": "Entrée numérique"
     },
     "obliqueview": {
+      "directionEast": "E",
+      "directionNorth": "N",
+      "directionSouth": "S",
+      "directionWest": "O",
       "nodataset": "Aucune image aérienne oblique disponible",
       "title": "Vue aérienne oblique"
     },
     "oereb": {
-      "concernedThemes": "",
-      "fundationdatastate": "",
-      "fundations": "",
-      "generalInformation": "",
-      "generalinfo": "",
-      "hidefulllegend": "",
-      "hints": "",
-      "legalbasis": "",
-      "notConcernedThemes": "",
-      "nrpoints": "",
-      "perc": "",
-      "regulations": "",
-      "responsibleauthority": "",
-      "responsibleoffice": "",
-      "share": "",
-      "showfulllegend": "",
-      "themeWithoutData": "",
-      "type": "",
-      "title": "",
-      "failed": ""
+      "concernedThemes": "Thèmes concernés",
+      "fundationdatastate": "Données de la mensuration cadastrale. État de la mensuration officielle:",
+      "fundations": "Fondements",
+      "generalInformation": "Informations générales et juridiques",
+      "generalinfo": "Informations générales",
+      "hidefulllegend": "Masquer la légende complète",
+      "hints": "Informations complémentaires et remarques",
+      "legalbasis": "Bases légales",
+      "notConcernedThemes": "Thèmes non concernés",
+      "nrpoints": "point(s)",
+      "perc": "Part en %",
+      "regulations": "Prescriptions",
+      "responsibleauthority": "Autorité compétente",
+      "responsibleoffice": "Service compétent",
+      "share": "Part",
+      "showfulllegend": "Afficher la légende complète",
+      "themeWithoutData": "Thèmes sans données",
+      "type": "Type",
+      "title": "Cadastre RDPPF",
+      "failed": "Échec du chargement de l'extrait RDPPF"
     },
     "panoramax": {
       "notfound": "Il n'y a pas d'image disponible pour cet emplacement.",
@@ -529,10 +562,11 @@
       "querying": "Interrogation"
     },
     "plotinfotool": {
-      "failed": "",
-      "loading": ""
+      "failed": "Échec du chargement des données",
+      "loading": "Chargement des données..."
     },
     "portal": {
+      "close": "Fermer le portail",
       "filter": "Filtrer les thèmes...",
       "menulabel": "Menu"
     },
@@ -568,8 +602,10 @@
       "ctrlhint": "Ctrl pour sélection multiple...",
       "draw": "Dessiner",
       "edit": "Editer",
+      "featurelabel": "Étiqueter objet",
       "freehand": "Dessin à main libre",
       "label": "Texte",
+      "labelselectfeature": "Sélectionner l'objet à étiqueter...",
       "layer": "Couche",
       "layertitle": "Dessin",
       "markers": "Pointes",
@@ -623,6 +659,101 @@
     "scratchdrawing": {
       "finish": "Terminer"
     },
+    "sensorthingstool": {
+      "addDatastream": "Ajouter un flux de données au graphique",
+      "addLocation": "Ajouter un lieu",
+      "addLocationAndDatastreams": "Ajouter un emplacement et afficher tous ses flux de données dans le graphique",
+      "datastreamInfo": {
+        "calibration": "Calibration",
+        "description": "Description",
+        "location": "Emplacement",
+        "name": "Nom",
+        "observedProperty": "Propriété observée",
+        "sensor": "Capteur",
+        "thing": "Objet",
+        "title": "Informations sur le flux de données",
+        "unit": "Unité"
+      },
+      "datastreamLabel": "Flux de données",
+      "datastreamNone": "Aucun résultat",
+      "datastreamOptions": {
+        "arithmeticMean": "Moyenne arithmétique",
+        "percentiles": "Percentiles",
+        "percentilesDesc": "Entrez les percentiles sous forme de valeurs séparées par des virgules",
+        "showOnSecondYAxis": "Afficher sur l’axe Y secondaire",
+        "showPercentiles": "Afficher les percentiles",
+        "title": "Statistiques du flux de données"
+      },
+      "datastreamTable": {
+        "fullPeriod": "Période disponible",
+        "selectedPeriod": "Période sélectionnée",
+        "timestamp": "Horodatage",
+        "title": "Tableau du flux de données",
+        "unit": "Unité",
+        "value": "Valeur"
+      },
+      "datastreamsFilter": {
+        "datastream": "Flux de données",
+        "location": "Emplacement",
+        "observedProperty": "Propriété observée",
+        "sensor": "Capteur",
+        "thing": "Objet",
+        "title": "Filtre des flux de données"
+      },
+      "exportCSV": "Exporter en CSV",
+      "exportImage": "Exporter en image",
+      "graphOptions": {
+        "reverseAxis": "Inverser l’axe",
+        "threshold": "Seuil",
+        "thresholdLabel": "Étiquette",
+        "thresholdValue": "Valeur",
+        "title": "Paramètres",
+        "toggleGridLines": "Lignes de grille",
+        "toggleSecondYAxis": "Axe Y secondaire",
+        "xAxis": "Axe X",
+        "xAxisAtTop": "Position en haut",
+        "yAuto": "auto",
+        "yAxis": "Axe Y",
+        "yMax": "Limite supérieure",
+        "yMin": "Limite inférieure"
+      },
+      "intervalOptions": {
+        "custom": "Personnalisé",
+        "day": "Jour",
+        "hour": "Heure",
+        "month": "Mois",
+        "week": "Semaine",
+        "year": "Année"
+      },
+      "locationInfo": {
+        "description": "Description",
+        "inactive": "Inactif",
+        "name": "Nom",
+        "platform": "Plateforme",
+        "qompSensorId": "ID capteur QOMP",
+        "serialNumber": "Numéro de série",
+        "title": "Informations sur l’emplacement"
+      },
+      "locationLabel": "Emplacement",
+      "pickLocation": "Choisir un emplacement sur la carte",
+      "pickLocationDesc": "Choisissez un emplacement sur la carte",
+      "removeDatastream": "Supprimer le flux de données",
+      "removeLocation": "Supprimer l’emplacement",
+      "selectInterval": "Sélectionner un intervalle",
+      "selectLocation": "Sélectionner un emplacement",
+      "setEndToNow": "Définir la fin à maintenant",
+      "setPeriodAfterBegin": "Définir la période après le début",
+      "setPeriodBeforeEnd": "Définir la période avant la fin",
+      "showDefaultPeriod": "Afficher la période par défaut",
+      "showFullPeriod": "Afficher la période complète",
+      "showNextPeriod": "Afficher la période suivante",
+      "showPrevPeriod": "Afficher la période précédente",
+      "statistics": {
+        "arithmeticMean": "Moyenne arithmétique",
+        "nthPercentile": "ème percentile"
+      },
+      "title": "Requête SensorThings"
+    },
     "serviceinfo": {
       "abstract": "Résumé",
       "contactEmail": "Courrier électronique",
@@ -635,8 +766,7 @@
       "title": "Information sur le thème"
     },
     "settings": {
-      "bookmarks": "Marque-pages",
-      "colorscheme": "Schéma de couleurs",
+      "colorscheme": "Apparence",
       "confirmlang": "L'application sera rechargée pour changer la langue. Procéder?",
       "default": "Par défaut",
       "defaulttheme": "Thème par défaut",
@@ -647,6 +777,8 @@
     },
     "settings3d": {
       "fov": "Champ de vue",
+      "pointSize": "Taille de points",
+      "pointSizeAuto": "Automatique",
       "quality": "Qualité"
     },
     "share": {
@@ -665,6 +797,16 @@
       "loading": "Chargement",
       "snappingenabled": "Snapping activé",
       "vertex": "Snapping aux sommets"
+    },
+    "sunexposure3d": {
+      "end": "Heure de fin",
+      "hoursOfSunlight": "Heures d’ensoleillement",
+      "includeterrain": "Inclure le terrain",
+      "irradiation": "Irradiation",
+      "meanIrradiance": "Irradiance moyenne",
+      "spatialres": "Résolution spatiale",
+      "start": "Heure de début",
+      "tempres": "Résolution temporelle"
     },
     "themelayerslist": {
       "addanyway": "Ajouter quand même",
@@ -685,6 +827,7 @@
         "title": "Titre"
       },
       "openintab": "Ouvrir dans l'onglet",
+      "restrictedcontent": "Thème avec contenu réservé aux utilisateurs authentifiés",
       "restrictedthemeinfo": "Vous n'êtes pas autorisé à voir le thème ou vous n'êtes pas connecté"
     },
     "timemanager": {
@@ -770,6 +913,18 @@
     "view3d": {
       "storingstate": "Enregistrement de la vue 3D..."
     },
+    "visibilitypreset": {
+      "add": "Enregistrer un profil de visibilité",
+      "addfailed": "Impossible d'enregistrer le profil de visibilité",
+      "manage": "Profils de visibilité",
+      "newpreset": "Nouveau profil",
+      "nopresets": "Aucun profil enregistré",
+      "notloggedin": "Vous devez être connecté pour enregistrer des profils de visibilité",
+      "open": "Ouvrir dans la fenêtre actuelle",
+      "removefailed": "Impossible de supprimer le profil de visibilité",
+      "savefailed": "Impossible de mettre à jour le profil de visibilité",
+      "update": "Mettre à jour le profil de visibilité"
+    },
     "window": {
       "detach": "Détacher",
       "dock": "Attacher",
@@ -781,8 +936,8 @@
       "unminimize": "Agrandir"
     },
     "plotdescr": {
-      "title": "",
-      "requestPdf": ""
+      "title": "Description de la parcelle",
+      "requestPdf": "Créer le plan du registre foncier (PDF)"
     }
   }
 }

@@ -16,14 +16,18 @@
         "MapExport3D": "Esporta mappa",
         "MapFilter": "Filta mappa",
         "MapLight3D": "Illuminazione e ombre",
+        "MeasureObjects3D": "Misura oggetti",
         "ObjectList": "Lista oggetti",
-        "PlotInfoTool": "",
+        "PlotInfoTool": "Informazioni sui fondi",
         "Print": "Stampa",
         "Reports": "Rapporti",
         "Settings": "Impostazioni",
         "Settings3D": "Impostazioni 3D",
         "Share": "Condividi",
+        "SunExposure3D": "Esposizione al sole",
+        "ThemeBrowser": "Browser dei temi",
         "ThemeSwitcher": "Temi",
+        "VisibilityPresets": "Profili di visibilità",
         "AttributeTable": "Tabella attributi",
         "AuthenticationLogin": "Accedi",
         "AuthenticationLogout": "Disconnetti - {0}",
@@ -33,6 +37,7 @@
         "FeatureSearch": "Ricerca oggetto",
         "GeometryDigitizer": "Digitalizzazione geometrie",
         "IdentifyPoint": "Identifica punto",
+        "IdentifyRadius": "Identifica in un raggio",
         "IdentifyRegion": "Identifica in un poligono",
         "LayerCatalog": "Catalogo livelli",
         "Login": "Accedi",
@@ -40,6 +45,7 @@
         "MapLegend": "Legenda",
         "Measure": "Misura",
         "Measure3D": "Misura",
+        "MeasureObject3D": "Misura oggetti",
         "MeasureLineString": "Misura una linea",
         "MeasurePolygon": "Misura un poligono",
         "NewsPopup": "Attualità",
@@ -49,6 +55,7 @@
         "PrintScreen3D": "Esporta raster",
         "Redlining": "Strumenti di disegno",
         "Routing": "Routing",
+        "SensorThingsTool": "Strumento SensorThings",
         "Tools": "Strumenti",
         "TourGuide": "Guida introduttiva",
         "TimeManager": "Linea temporale",
@@ -80,7 +87,10 @@
     "colorschemes": {
       "default": "Predefinito",
       "dark": "Scuro",
-      "highcontrast": "Contrasto elevato"
+      "highcontrast": "Contrasto elevato",
+      "default_rounded": "Predefinito (arrotondato)",
+      "dark_rounded": "Scuro (arrotondato)",
+      "highcontrast_rounded": "Contrasto elevato (arrotondato)"
     },
     "app": {
       "missingbg": "Impossibile trovare lo sfondo \"{0}\", viene visualizzato lo sfondo predefinito.",
@@ -118,7 +128,7 @@
       "add": "Crea segnalibro",
       "addfailed": "Impossibile creare il segnalibro",
       "lastUpdate": "Ultimo salvataggio",
-      "manage": "Gestisci segnalibri",
+      "manage": "Segnalibri",
       "newbookmark": "Nuovo segnalibro",
       "nobookmarks": "Nessun segnalibro",
       "notloggedin": "È necessario aver effettuato l'accesso per utilizzare i segnalibri",
@@ -131,6 +141,7 @@
     },
     "bottombar": {
       "mousepos_label": "Coordinate",
+      "quick_select_label": "Selezione rapida",
       "scale_label": "Scala",
       "terms_label": "Condizioni di uso",
       "viewertitle_label": "Homepage"
@@ -143,10 +154,14 @@
       "clear": "Azzera",
       "clone": "Copia",
       "close": "Chiudi",
+      "compute": "Calcola",
+      "custom": "Personalizzato",
+      "date": "Data",
       "delete": "Elimina",
       "download": "Scarica",
       "ellipse": "Ellisse",
       "export": "Esporta",
+      "false": "Falso",
       "format": "Formato",
       "line": "Linea",
       "loading": "Caricamento...",
@@ -164,6 +179,7 @@
       "square": "Quadrato",
       "sync2dview": "Sincronizza con visuale 2D",
       "text": "Testo",
+      "true": "Vero",
       "wait": "Attendere...",
       "zoomin": "Ingrandisci",
       "zoomout": "Rimpicciolisci"
@@ -207,6 +223,9 @@
       "rotate": "Ruota",
       "rotation": "Rotazione",
       "scale": "Scala",
+      "snap_2dedge": "Aggancia ai bordi dei livelli 2D",
+      "snap_2dvertex": "Aggancia ai vertici dei livelli 2D",
+      "snap_3dbody": "Aggancia ai corpi 3D",
       "sphere": "Sfera",
       "subtract": "Differenza",
       "thescale": "Scala",
@@ -237,6 +256,7 @@
       "create": "Crea",
       "discard": "Annulla",
       "draw": "Disegna",
+      "emptyvalue": "Valore vuoto",
       "feature": "Oggetto",
       "geomnonzeroz": "La geometria contiene valori Z non nulli ed è quindi di sola lettura.",
       "geomreadonly": "La geometria è di solo lettura.",
@@ -351,6 +371,7 @@
       "radius": "Raggio"
     },
     "layercatalog": {
+      "openlink": "Apri collegamento",
       "windowtitle": "Catalogo livelli"
     },
     "layerinfo": {
@@ -367,12 +388,12 @@
     "layertree": {
       "compare": "Compara il primo livello",
       "deletealllayers": "Rimuovi tutti i livelli",
-      "hidealllayers": "Nascondi tutti i livelli",
       "importlayer": "Importa livello",
       "maptip": "Attiva maptip",
       "printlegend": "Stampa legenda",
       "separator": "Separatore",
       "separatortooltip": "Aggiungi separatore",
+      "showallayers": "Mostra tutti i livelli",
       "togglegroup": "Attiva/disattiva gruppo e tutti i sottolivelli",
       "transparency": "Trasparenza",
       "visiblefilter": "Filtra livelli non visibili",
@@ -412,6 +433,7 @@
       "resetrotation": "Resetta orientamento"
     },
     "map3d": {
+      "noterrain": "Nessun terreno",
       "terrain": "Terreno",
       "title": "Visuale 3D"
     },
@@ -444,6 +466,7 @@
     },
     "maplight3d": {
       "animationstep": "Passo animazione",
+      "currentdatetime": "Data e ora attuali",
       "date": "Data",
       "dayspersec": "giorni / sec",
       "helpersVisible": "Mostra aiuti",
@@ -474,6 +497,12 @@
       "pointLabel": "Posizione",
       "showmeasurements": "Mostra misurazioni"
     },
+    "measureobjects3d": {
+      "clickonmap": "Clicca sugli oggetti per misurarli...",
+      "object": "Oggetto",
+      "remove": "Rimuovi misura",
+      "removeall": "Rimuovi tutto"
+    },
     "misc": {
       "ctrlclickhint": "Apri con Ctrl+Click"
     },
@@ -496,30 +525,34 @@
       "windowtitle": "Formulario numerico"
     },
     "obliqueview": {
+      "directionEast": "E",
+      "directionNorth": "N",
+      "directionSouth": "S",
+      "directionWest": "O",
       "nodataset": "Nessuna immagine aerea obliqua disponibile",
       "title": "Vista aerea obliqua"
     },
     "oereb": {
-      "concernedThemes": "",
-      "fundationdatastate": "",
-      "fundations": "",
-      "generalInformation": "",
-      "generalinfo": "",
-      "hidefulllegend": "",
-      "hints": "",
-      "legalbasis": "",
-      "notConcernedThemes": "",
-      "nrpoints": "",
-      "perc": "",
-      "regulations": "",
-      "responsibleauthority": "",
-      "responsibleoffice": "",
-      "share": "",
-      "showfulllegend": "",
-      "themeWithoutData": "",
-      "type": "",
-      "title": "",
-      "failed": ""
+      "concernedThemes": "Temi interessati",
+      "fundationdatastate": "Dati rilevamento catastale. Stato del rilievo catastale:",
+      "fundations": "Fondazioni",
+      "generalInformation": "Informazioni generali e legali",
+      "generalinfo": "Informazioni generali",
+      "hidefulllegend": "Nascondi legenda completa",
+      "hints": "Informazioni aggiuntive e suggerimenti",
+      "legalbasis": "Basi legali",
+      "notConcernedThemes": "Temi non interessati",
+      "nrpoints": "punto/i",
+      "perc": "Quota in %",
+      "regulations": "Regolamenti",
+      "responsibleauthority": "Autorità responsabile",
+      "responsibleoffice": "Ufficio responsabile",
+      "share": "Quota",
+      "showfulllegend": "Mostra legenda completa",
+      "themeWithoutData": "Temi senza dati",
+      "type": "Tipo",
+      "title": "Catasto RDPP",
+      "failed": "Caricamento estratto RDPP non riuscito"
     },
     "panoramax": {
       "notfound": "Nessun immagine disponibile per questa posizione",
@@ -529,10 +562,11 @@
       "querying": "Query..."
     },
     "plotinfotool": {
-      "failed": "",
-      "loading": ""
+      "failed": "Impossibile caricare dati",
+      "loading": "Caricando dati..."
     },
     "portal": {
+      "close": "Chiudi portale",
       "filter": "Filtra temi...",
       "menulabel": "Menu"
     },
@@ -568,8 +602,10 @@
       "ctrlhint": "Ctrl per selezione multipla...",
       "draw": "Disegna",
       "edit": "Modifica",
+      "featurelabel": "Ettichetta oggetto",
       "freehand": "Mano libera",
       "label": "Ettichetta",
+      "labelselectfeature": "Selezionare oggetto da ettichettare...",
       "layer": "Layer",
       "layertitle": "Disegno",
       "markers": "Punte",
@@ -623,6 +659,101 @@
     "scratchdrawing": {
       "finish": "Finito"
     },
+    "sensorthingstool": {
+      "addDatastream": "Aggiungi flusso di dati al grafico",
+      "addLocation": "Aggiungi una posizione",
+      "addLocationAndDatastreams": "Aggiungi una posizione e visualizza tutti i relativi flussi di dati nel grafico",
+      "datastreamInfo": {
+        "calibration": "Calibrazione",
+        "description": "Descrizione",
+        "location": "Posizione",
+        "name": "Nome",
+        "observedProperty": "Proprietà osservata",
+        "sensor": "Sensore",
+        "thing": "Oggetto",
+        "title": "Informazioni sul flusso di dati",
+        "unit": "Unità"
+      },
+      "datastreamLabel": "Flusso di dati",
+      "datastreamNone": "Nessun risultato",
+      "datastreamOptions": {
+        "arithmeticMean": "Media aritmetica",
+        "percentiles": "Percentili",
+        "percentilesDesc": "Inserisci i percentili come valori separati da virgole",
+        "showOnSecondYAxis": "Mostra sull'asse Y secondario",
+        "showPercentiles": "Mostra percentili",
+        "title": "Statistiche del flusso di dati"
+      },
+      "datastreamTable": {
+        "fullPeriod": "Periodo disponibile",
+        "selectedPeriod": "Periodo selezionato",
+        "timestamp": "Timestamp",
+        "title": "Tabella del flusso di dati",
+        "unit": "Unità",
+        "value": "Valore"
+      },
+      "datastreamsFilter": {
+        "datastream": "Flusso di dati",
+        "location": "Posizione",
+        "observedProperty": "Proprietà osservata",
+        "sensor": "Sensore",
+        "thing": "Oggetto",
+        "title": "Filtro flussi di dati"
+      },
+      "exportCSV": "Esporta come CSV",
+      "exportImage": "Esporta come immagine",
+      "graphOptions": {
+        "reverseAxis": "Inverti asse",
+        "threshold": "Soglia",
+        "thresholdLabel": "Etichetta",
+        "thresholdValue": "Valore",
+        "title": "Impostazioni",
+        "toggleGridLines": "Linee della griglia",
+        "toggleSecondYAxis": "Asse Y secondario",
+        "xAxis": "Asse X",
+        "xAxisAtTop": "Posizione in alto",
+        "yAuto": "automatico",
+        "yAxis": "Asse Y",
+        "yMax": "Limite superiore",
+        "yMin": "Limite inferiore"
+      },
+      "intervalOptions": {
+        "custom": "Personalizzato",
+        "day": "Giorno",
+        "hour": "Ora",
+        "month": "Mese",
+        "week": "Settimana",
+        "year": "Anno"
+      },
+      "locationInfo": {
+        "description": "Descrizione",
+        "inactive": "Inattivo",
+        "name": "Nome",
+        "platform": "Piattaforma",
+        "qompSensorId": "ID sensore QOMP",
+        "serialNumber": "Numero di serie",
+        "title": "Informazioni sulla posizione"
+      },
+      "locationLabel": "Posizione",
+      "pickLocation": "Seleziona posizione sulla mappa",
+      "pickLocationDesc": "Seleziona una posizione sulla mappa",
+      "removeDatastream": "Rimuovi flusso di dati",
+      "removeLocation": "Rimuovi posizione",
+      "selectInterval": "Seleziona intervallo",
+      "selectLocation": "Seleziona posizione",
+      "setEndToNow": "Imposta fine a ora",
+      "setPeriodAfterBegin": "Imposta periodo come intervallo dopo l'inizio",
+      "setPeriodBeforeEnd": "Imposta periodo come intervallo prima della fine",
+      "showDefaultPeriod": "Mostra periodo predefinito",
+      "showFullPeriod": "Mostra periodo completo",
+      "showNextPeriod": "Mostra periodo successivo",
+      "showPrevPeriod": "Mostra periodo precedente",
+      "statistics": {
+        "arithmeticMean": "Media aritmetica",
+        "nthPercentile": "esimo percentile"
+      },
+      "title": "Query SensorThings"
+    },
     "serviceinfo": {
       "abstract": "Riassunto",
       "contactEmail": "Email",
@@ -635,7 +766,6 @@
       "title": "Informazioni sul tema"
     },
     "settings": {
-      "bookmarks": "Segnalibri",
       "colorscheme": "Stile",
       "confirmlang": "L'applicazione sarà ricaricata per cambiare la lingua. Procedere?",
       "default": "Predefinito",
@@ -647,6 +777,8 @@
     },
     "settings3d": {
       "fov": "Campo visivo",
+      "pointSize": "Dimensione punti",
+      "pointSizeAuto": "Automatico",
       "quality": "Qualità"
     },
     "share": {
@@ -665,6 +797,16 @@
       "loading": "Caricamento delle geometrie per snapping",
       "snappingenabled": "Snapping",
       "vertex": "Snap ai vertici"
+    },
+    "sunexposure3d": {
+      "end": "Fine",
+      "hoursOfSunlight": "Ore di sole",
+      "includeterrain": "Includi terreno",
+      "irradiation": "Irradiazione",
+      "meanIrradiance": "Intensità media di irraggiamento",
+      "spatialres": "Risoluzione spaziale",
+      "start": "Inizio",
+      "tempres": "Risoluzione temporale"
     },
     "themelayerslist": {
       "addanyway": "Aggiungi comunque",
@@ -685,6 +827,7 @@
         "title": "Titolo"
       },
       "openintab": "Apri in nuova scheda",
+      "restrictedcontent": "Tema con contenuti riservati agli utenti autenticati",
       "restrictedthemeinfo": "Non sei autorizzato a visualizzare il tema oppure non hai effettuato il login"
     },
     "timemanager": {
@@ -770,6 +913,18 @@
     "view3d": {
       "storingstate": "Salvando vista 3D..."
     },
+    "visibilitypreset": {
+      "add": "Salva profilo di visibilità",
+      "addfailed": "Impossibile salvare il profilo di visibilità",
+      "manage": "Profili di visibilità",
+      "newpreset": "Nuovo profilo",
+      "nopresets": "Nessun profilo salvato",
+      "notloggedin": "Devi effettuare l'accesso salvare profili di visibilità",
+      "open": "Apri nella finestra corrente",
+      "removefailed": "Impossibile rimuovere il profilo di visibilità",
+      "savefailed": "Impossibile aggiornare il profilo di visibilità",
+      "update": "Aggiorna il profilo di visibilità"
+    },
     "window": {
       "detach": "Staccare",
       "dock": "Aggancia",
@@ -781,8 +936,8 @@
       "unminimize": "Ingrandisci"
     },
     "plotdescr": {
-      "title": "",
-      "requestPdf": ""
+      "title": "Descrizione del lotto",
+      "requestPdf": "Crea planimetria catastale (PDF)"
     }
   }
 }

@@ -16,6 +16,7 @@
         "MapExport3D": "Export Map",
         "MapFilter": "Map Filter",
         "MapLight3D": "Light and Shadows",
+        "MeasureObjects3D": "Measure objects",
         "ObjectList": "Object list",
         "PlotInfoTool": "Real Estate Information",
         "Print": "Print",
@@ -23,7 +24,10 @@
         "Settings": "Settings",
         "Settings3D": "3D Settings",
         "Share": "Share Link",
+        "SunExposure3D": "Sun Exposure",
+        "ThemeBrowser": "Theme Browser",
         "ThemeSwitcher": "Theme",
+        "VisibilityPresets": "Visibility Presets",
         "AttributeTable": "Attribute Table",
         "AuthenticationLogin": "Login",
         "AuthenticationLogout": "Logout - {0}",
@@ -33,6 +37,7 @@
         "FeatureSearch": "Feature Search",
         "GeometryDigitizer": "Geometry digitizer",
         "IdentifyPoint": "Identify Point",
+        "IdentifyRadius": "Identify in Radius",
         "IdentifyRegion": "Identify Region",
         "LayerCatalog": "Layer catalog",
         "Login": "Login",
@@ -40,6 +45,7 @@
         "MapLegend": "Legend",
         "Measure": "Measure",
         "Measure3D": "Measure",
+        "MeasureObject3D": "Measure objects",
         "MeasureLineString": "Measure a line",
         "MeasurePolygon": "Measure a polygon",
         "NewsPopup": "News",
@@ -49,6 +55,7 @@
         "PrintScreen3D": "Raster Export",
         "Redlining": "Redlining",
         "Routing": "Routing",
+        "SensorThingsTool": "SensorThings Query",
         "Tools": "Map Tools",
         "TourGuide": "Tour Guide",
         "TimeManager": "Time Manager",
@@ -80,7 +87,10 @@
     "colorschemes": {
       "default": "Default",
       "dark": "Dark",
-      "highcontrast": "High contrast"
+      "highcontrast": "High contrast",
+      "default_rounded": "Default rounded",
+      "dark_rounded": "Dark rounded",
+      "highcontrast_rounded": "High contrast rounded"
     },
     "app": {
       "missingbg": "Unable to find the background \"{0}\", displaying the default background.",
@@ -118,7 +128,7 @@
       "add": "Create new bookmark",
       "addfailed": "Failed to create bookmark",
       "lastUpdate": "Last saved",
-      "manage": "Manage bookmarks",
+      "manage": "Bookmarks",
       "newbookmark": "New bookmark",
       "nobookmarks": "No bookmarks",
       "notloggedin": "You need to be logged in to store bookmarks",
@@ -131,6 +141,7 @@
     },
     "bottombar": {
       "mousepos_label": "Coordinates",
+      "quick_select_label": "Quick select",
       "scale_label": "Scale",
       "terms_label": "Terms of use",
       "viewertitle_label": "Homepage"
@@ -143,10 +154,14 @@
       "clear": "Clear",
       "clone": "Clone",
       "close": "Close",
+      "compute": "Compute",
+      "custom": "Custom",
+      "date": "Date",
       "delete": "Delete",
       "download": "Download",
       "ellipse": "Ellipse",
       "export": "Export",
+      "false": "false",
       "format": "Format",
       "line": "Line",
       "loading": "Loading...",
@@ -164,6 +179,7 @@
       "square": "Square",
       "sync2dview": "Synchronize with 2D view",
       "text": "Text",
+      "true": "true",
       "wait": "Please wait...",
       "zoomin": "Zoom in",
       "zoomout": "Zoom out"
@@ -207,6 +223,9 @@
       "rotate": "Rotate",
       "rotation": "Rotation",
       "scale": "Scale",
+      "snap_2dedge": "Snap to edges 2D snap layers",
+      "snap_2dvertex": "Snap to vertices of 2D snap layers",
+      "snap_3dbody": "Snap to 3D bodies",
       "sphere": "Sphere",
       "subtract": "Subtract",
       "thescale": "Scale",
@@ -237,6 +256,7 @@
       "create": "Create",
       "discard": "Discard",
       "draw": "Draw",
+      "emptyvalue": "Empty value",
       "feature": "Feature",
       "geomnonzeroz": "The geometry contains non-zero Z values and is therefore read only.",
       "geomreadonly": "The geometry is read only.",
@@ -351,6 +371,7 @@
       "radius": "Radius"
     },
     "layercatalog": {
+      "openlink": "Info link",
       "windowtitle": "Layer catalog"
     },
     "layerinfo": {
@@ -367,12 +388,12 @@
     "layertree": {
       "compare": "Compare top layer",
       "deletealllayers": "Remove all layers",
-      "hidealllayers": "Hide all layers",
       "importlayer": "Import layer",
       "maptip": "Show layer map tips",
       "printlegend": "Print legend",
       "separator": "Separator",
       "separatortooltip": "Add separator",
+      "showallayers": "Show all layers",
       "togglegroup": "Toggle group and all sublayers",
       "transparency": "Trasparency",
       "visiblefilter": "Filter invisible layers",
@@ -412,6 +433,7 @@
       "resetrotation": "Reset rotation"
     },
     "map3d": {
+      "noterrain": "No terrain",
       "terrain": "Terrain",
       "title": "3D View"
     },
@@ -444,6 +466,7 @@
     },
     "maplight3d": {
       "animationstep": "Animation step",
+      "currentdatetime": "Current date and time",
       "date": "Date",
       "dayspersec": "days / second",
       "helpersVisible": "Show helpers",
@@ -474,6 +497,12 @@
       "pointLabel": "Position",
       "showmeasurements": "Show measurements"
     },
+    "measureobjects3d": {
+      "clickonmap": "Click on objects to measure them...",
+      "object": "Object",
+      "remove": "Remove measurement",
+      "removeall": "Remove all"
+    },
     "misc": {
       "ctrlclickhint": "Open with Ctrl+Click"
     },
@@ -496,6 +525,10 @@
       "windowtitle": "Numeric input"
     },
     "obliqueview": {
+      "directionEast": "E",
+      "directionNorth": "N",
+      "directionSouth": "S",
+      "directionWest": "W",
       "nodataset": "No oblique imagery available",
       "title": "Oblique Aerial View"
     },
@@ -519,7 +552,7 @@
       "themeWithoutData": "Themes without data",
       "type": "Type",
       "title": "ÖREB cadastre",
-      "failed": "Failed to load OEREB extract"
+      "failed": "Failed to load ÖREB extract"
     },
     "panoramax": {
       "notfound": "There is no image available for this location.",
@@ -533,6 +566,7 @@
       "loading": "Loading data..."
     },
     "portal": {
+      "close": "Close portal",
       "filter": "Filter themes...",
       "menulabel": "Menu"
     },
@@ -568,8 +602,10 @@
       "ctrlhint": "Use Ctrl for multiselection...",
       "draw": "Draw",
       "edit": "Edit",
+      "featurelabel": "Label feature",
       "freehand": "Freehand drawing",
       "label": "Label",
+      "labelselectfeature": "Select a feature to label...",
       "layer": "Layer",
       "layertitle": "Redlining",
       "markers": "Markers",
@@ -623,6 +659,101 @@
     "scratchdrawing": {
       "finish": "Finish"
     },
+    "sensorthingstool": {
+      "addDatastream": "Add datastream to graph",
+      "addLocation": "Add location",
+      "addLocationAndDatastreams": "Add location and show all its datastreams in the graph",
+      "datastreamInfo": {
+        "calibration": "Calibration",
+        "description": "Description",
+        "location": "Location",
+        "name": "Name",
+        "observedProperty": "Observed Property",
+        "sensor": "Sensor",
+        "thing": "Thing",
+        "title": "Datastream info",
+        "unit": "Unit"
+      },
+      "datastreamLabel": "Datastream",
+      "datastreamNone": "No results",
+      "datastreamOptions": {
+        "arithmeticMean": "Arithmetic mean",
+        "percentiles": "Percentiles",
+        "percentilesDesc": "Enter percentiles as comma-separated values",
+        "showOnSecondYAxis": "Show on second y-axis",
+        "showPercentiles": "Show percentiles",
+        "title": "Datastream statistics"
+      },
+      "datastreamTable": {
+        "fullPeriod": "Available period",
+        "selectedPeriod": "Selected period",
+        "timestamp": "Timestamp",
+        "title": "Datastream table",
+        "unit": "Unit",
+        "value": "Value"
+      },
+      "datastreamsFilter": {
+        "datastream": "Datastream",
+        "location": "Location",
+        "observedProperty": "Observed Property",
+        "sensor": "Sensor",
+        "thing": "Thing",
+        "title": "Datastreams filter"
+      },
+      "exportCSV": "Export as CSV",
+      "exportImage": "Export as image",
+      "graphOptions": {
+        "reverseAxis": "Reverse axis",
+        "threshold": "Threshold",
+        "thresholdLabel": "Label",
+        "thresholdValue": "Value",
+        "title": "Settings",
+        "toggleGridLines": "Grid lines",
+        "toggleSecondYAxis": "Second y-axis",
+        "xAxis": "X-axis",
+        "xAxisAtTop": "Position at the top",
+        "yAuto": "auto",
+        "yAxis": "Y-axis",
+        "yMax": "Upper limit",
+        "yMin": "Lower limit"
+      },
+      "intervalOptions": {
+        "custom": "Custom",
+        "day": "Day",
+        "hour": "Hour",
+        "month": "Month",
+        "week": "Week",
+        "year": "Year"
+      },
+      "locationInfo": {
+        "description": "Description",
+        "inactive": "Inactive",
+        "name": "Name",
+        "platform": "Platform",
+        "qompSensorId": "QOMP Sensor ID",
+        "serialNumber": "Serial Number",
+        "title": "Location Info"
+      },
+      "locationLabel": "Location",
+      "pickLocation": "Pick location in map",
+      "pickLocationDesc": "Pick a location in the map",
+      "removeDatastream": "Remove datastream",
+      "removeLocation": "Remove location",
+      "selectInterval": "Select interval",
+      "selectLocation": "Select location",
+      "setEndToNow": "Set end time to now",
+      "setPeriodAfterBegin": "Set period to interval after start time",
+      "setPeriodBeforeEnd": "Set period to interval before end time",
+      "showDefaultPeriod": "Show default period",
+      "showFullPeriod": "Show full period",
+      "showNextPeriod": "Show next period",
+      "showPrevPeriod": "Show previous period",
+      "statistics": {
+        "arithmeticMean": "Arithmetic mean",
+        "nthPercentile": "th percentile"
+      },
+      "title": "SensorThings Query"
+    },
     "serviceinfo": {
       "abstract": "Abstract",
       "contactEmail": "Email",
@@ -635,8 +766,7 @@
       "title": "Theme Information"
     },
     "settings": {
-      "bookmarks": "Bookmarks",
-      "colorscheme": "Color scheme",
+      "colorscheme": "Appearance",
       "confirmlang": "The application will be reloaded to change the language. Proceed?",
       "default": "Default",
       "defaulttheme": "Default theme",
@@ -647,6 +777,8 @@
     },
     "settings3d": {
       "fov": "Field of view",
+      "pointSize": "Point size",
+      "pointSizeAuto": "Auto",
       "quality": "Quality"
     },
     "share": {
@@ -665,6 +797,16 @@
       "loading": "Loading snapping geometries...",
       "snappingenabled": "Snapping",
       "vertex": "Snap to vertices"
+    },
+    "sunexposure3d": {
+      "end": "End time",
+      "hoursOfSunlight": "Hours of sunlight",
+      "includeterrain": "Include terrain",
+      "irradiation": "Irradiation",
+      "meanIrradiance": "Mean irradiance",
+      "spatialres": "Spatial res.",
+      "start": "Start time",
+      "tempres": "Temporal res."
     },
     "themelayerslist": {
       "addanyway": "Add anyway",
@@ -685,6 +827,7 @@
         "title": "Title"
       },
       "openintab": "Open in Tab",
+      "restrictedcontent": "Theme with content restricted to logged-in users",
       "restrictedthemeinfo": "You are not permitted to view the theme or not logged in"
     },
     "timemanager": {
@@ -769,6 +912,18 @@
     },
     "view3d": {
       "storingstate": "Storing 3D state..."
+    },
+    "visibilitypreset": {
+      "add": "Create new visibility preset",
+      "addfailed": "Failed to create visibility preset",
+      "manage": "Visibility presets",
+      "newpreset": "New visibility preset",
+      "nopresets": "No visibility presets",
+      "notloggedin": "You need to be logged in to store visibilities",
+      "open": "Open visibility in current tab",
+      "removefailed": "Failed to remove visibility preset",
+      "savefailed": "Failed to update visibility preset",
+      "update": "Update visibility preset"
     },
     "window": {
       "detach": "Detach",
