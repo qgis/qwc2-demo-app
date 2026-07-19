@@ -156,6 +156,7 @@
       "close": "Cerrar",
       "compute": "",
       "custom": "",
+      "dataloadfailed": "Error al cargar los datos",
       "date": "",
       "delete": "Eliminar",
       "download": "Descargar",
@@ -170,6 +171,7 @@
       "pick": "Seleccionar",
       "point": "Punto",
       "polygon": "Polígono",
+      "radius": "",
       "rectangle": "Rectángulo",
       "rename": "Renombrar",
       "resolution": "Resolución:",
@@ -365,8 +367,8 @@
       "urlplaceholder": "Ingrese dirección URL o WMS, WMTS, WFS..."
     },
     "infotool": {
-      "clickhelpPoint": "Haga click en una ubicación para identificar en el mapa...",
-      "clickhelpPolygon": "Trace un polígono alrededor de los elementos para identificarlos...",
+      "clickhelpArea": "",
+      "clickhelpPoint": "Selecciona un punto del mapa para identificarlo...",
       "clickhelpRadius": "Define un radio y haga click en una ubicación para identificar los elementos alrededor del punto...",
       "radius": "Radio"
     },
@@ -562,7 +564,6 @@
       "querying": "Consultando..."
     },
     "plotinfotool": {
-      "failed": "Error al cargar los datos",
       "loading": "Cargando datos..."
     },
     "portal": {

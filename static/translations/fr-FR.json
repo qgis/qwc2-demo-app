@@ -156,6 +156,7 @@
       "close": "Fermer",
       "compute": "Calculer",
       "custom": "Personnalisé",
+      "dataloadfailed": "Échec du chargement des données",
       "date": "Date",
       "delete": "Effacer",
       "download": "Télécharger",
@@ -170,6 +171,7 @@
       "pick": "Choisir",
       "point": "Point",
       "polygon": "Polygone",
+      "radius": "Rayon",
       "rectangle": "Rectangle",
       "rename": "Renommer",
       "resolution": "Résolution",
@@ -365,8 +367,8 @@
       "urlplaceholder": "Entrer l'URL d'un WMS, WMTS, WFS..."
     },
     "infotool": {
-      "clickhelpPoint": "Cliquez sur un emplacement pour l'identifier sur la carte...",
-      "clickhelpPolygon": "Dessiner un polygone pour identifier les objets",
+      "clickhelpArea": "Sélectionnez la zone à localiser sur la carte...",
+      "clickhelpPoint": "Sélectionnez un emplacement à localiser sur la carte...",
       "clickhelpRadius": "Configurez un rayon et cliquez sur un emplacement pour identifier les objets autour de ce point",
       "radius": "Rayon"
     },
@@ -562,7 +564,6 @@
       "querying": "Interrogation"
     },
     "plotinfotool": {
-      "failed": "Échec du chargement des données",
       "loading": "Chargement des données..."
     },
     "portal": {

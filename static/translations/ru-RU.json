@@ -156,6 +156,7 @@
       "close": "",
       "compute": "",
       "custom": "",
+      "dataloadfailed": "",
       "date": "",
       "delete": "",
       "download": "",
@@ -170,6 +171,7 @@
       "pick": "",
       "point": "Точка",
       "polygon": "Полигон",
+      "radius": "",
       "rectangle": "",
       "rename": "",
       "resolution": "Разрешение:",
@@ -365,8 +367,8 @@
       "urlplaceholder": "Введите URL для WMS, WMTS, WFS..."
     },
     "infotool": {
+      "clickhelpArea": "",
       "clickhelpPoint": "",
-      "clickhelpPolygon": "Для получения информации обведите регион многоугольником...",
       "clickhelpRadius": "",
       "radius": ""
     },
@@ -562,7 +564,6 @@
       "querying": ""
     },
     "plotinfotool": {
-      "failed": "",
       "loading": ""
     },
     "portal": {

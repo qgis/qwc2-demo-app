@@ -156,6 +156,7 @@
       "close": "Kapat",
       "compute": "",
       "custom": "",
+      "dataloadfailed": "",
       "date": "",
       "delete": "Sil",
       "download": "İndir",
@@ -170,6 +171,7 @@
       "pick": "Seç",
       "point": "Nokta",
       "polygon": "Poligon",
+      "radius": "",
       "rectangle": "Dikdörtgen",
       "rename": "",
       "resolution": "Çözünürlük:",
@@ -365,8 +367,8 @@
       "urlplaceholder": "WMS, WMTS, WFS Adresini giriniz..."
     },
     "infotool": {
+      "clickhelpArea": "",
       "clickhelpPoint": "Haritadan bilgi almak için bir noktayı tıklayınız...",
-      "clickhelpPolygon": "Bilgi alınacak alanı poligon çizerek belirleyiniz...",
       "clickhelpRadius": "Yarıçap belirleyip çevresinden bilgi almak için bir noktayı tıklayınız",
       "radius": "Yarıçap"
     },
@@ -562,7 +564,6 @@
       "querying": "Sorgulanıyor..."
     },
     "plotinfotool": {
-      "failed": "",
       "loading": ""
     },
     "portal": {

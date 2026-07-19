@@ -156,6 +156,7 @@
       "close": "Close",
       "compute": "Compute",
       "custom": "Custom",
+      "dataloadfailed": "Failed to load data",
       "date": "Date",
       "delete": "Delete",
       "download": "Download",
@@ -170,6 +171,7 @@
       "pick": "Pick",
       "point": "Point",
       "polygon": "Polygon",
+      "radius": "Radius",
       "rectangle": "Rectangle",
       "rename": "Rename",
       "resolution": "Resolution",
@@ -365,8 +367,8 @@
       "urlplaceholder": "Enter URL to WMS, WMTS, WFS..."
     },
     "infotool": {
-      "clickhelpPoint": "Click a location to identify in the map...",
-      "clickhelpPolygon": "Draw a polygon around the features to identify...",
+      "clickhelpArea": "Select area to identify in the map...",
+      "clickhelpPoint": "Select a location to identify in the map...",
       "clickhelpRadius": "Set a radius and click a location to identify features around the point...",
       "radius": "Radius"
     },
@@ -562,7 +564,6 @@
       "querying": "Querying..."
     },
     "plotinfotool": {
-      "failed": "Failed to load data",
       "loading": "Loading data..."
     },
     "portal": {
